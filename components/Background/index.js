@@ -5,10 +5,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    fontSize:22,
+    fontSize:20,
+    padding: 5,
   },
 }))
-
 
 const Background = () => {
   const classes = useStyles()

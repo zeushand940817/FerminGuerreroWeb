@@ -1,9 +1,9 @@
-import Background from 'components/Background'
-import Contact from 'components/Contact'
-import Prensa from 'components/Prensa'
-import Awards from 'components/Awards'
-import { makeStyles } from '@material-ui/core/styles'
-
+import Background from 'components/Background';
+import Contact from 'components/Contact';
+import Prensa from 'components/Prensa';
+import Awards from 'components/Awards';
+import { makeStyles } from '@material-ui/core/styles';
+import ScrollTop from 'components/ScrollTop';
 
     const useStyles = makeStyles((theme) => ({
       root: {
@@ -20,7 +20,7 @@ import { makeStyles } from '@material-ui/core/styles'
       },
       a: {
         textDecoration: 'none',
-        color: 'black',
+        color: 'white',
         width: '200px',
         background: 'yellow',
       },
@@ -32,9 +32,10 @@ import { makeStyles } from '@material-ui/core/styles'
         width: '40%',
       },
       img:{
-        width:'100%', 
+        width:'1430px', 
         height: 'auto', 
         padding: '0px 20px 0px 20px',
+        marginBottom: '30px',
       }
     }))
     
@@ -43,11 +44,13 @@ import { makeStyles } from '@material-ui/core/styles'
       
       return (
         <div className={classes.root}>
-         {/* <section> 
-          <img className={classes.img}  src="/aboutmepicture.jpg" alt="ferminImage" />
-        </section>  */}
-    
+         <section> 
+           <img className={classes.img}  src="/aboutmepicture.jpg" alt="ferminImage" />
+        </section>
+
+     
           <section className="menuContainer">
+          <ScrollTop showBelow={1300} />
             {/* <div>
               <SideNav />
             </div> */}

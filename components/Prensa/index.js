@@ -3,25 +3,16 @@ import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    height: 30,
-    alignItems: 'center',
-    padding: '3px 30px 0px 30px',
-  },
-  li: {
-    listStyle: 'none',
-  },
-  a: {
-    textDecoration: 'none',
-    color: 'black',
-  },
+  text: {
+    fontSize:20,
+    color:'white',
+  }
 }))
 
 const Prensa = () => {
   const classes = useStyles()
   return (
-    <>
+    <section className={classes.text}>
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={4} sm={4} />
@@ -96,7 +87,7 @@ const Prensa = () => {
           </Grid>
         </Grid>
       </Grid>
-    </>
+    </section>
   )
 }
 export default Prensa;

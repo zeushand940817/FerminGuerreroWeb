@@ -4,29 +4,17 @@ import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    height: 30,
-    alignItems: 'center',
-    padding: '3px 30px 0px 30px',
-  },
-  li: {
-    listStyle: 'none',
-  },
-  a: {
-    textDecoration: 'none',
-    color: 'white',
-  },
-  premio:{
-    cursor:'pointer',
+  text: {
+    fontSize:20,
+    color:'white',
   }
 }))
 
 const Awards = () => {
   const classes = useStyles()
   return (
-    <>
-      <Grid item xs={12} container>
+    <section className={classes.text}>
+      <Grid item xs={12} container >
         <Grid container direction="row">
           <Grid item xs={0} lg={4} sm={4} />
           <Grid item xs={3} lg={1} sm={1}>
@@ -35,7 +23,7 @@ const Awards = () => {
             </Box>
           </Grid>
           <Grid item xs={6} lg={3} sm={3}>
-            <Box mb={5} mt={3} className={classes.premio}>
+            <Box mb={5} mt={3} >
               LAD - Latin Design Awards. Typeface design category. Project:
               Thesaurus.
             </Box>
@@ -61,7 +49,9 @@ const Awards = () => {
           </Grid>
           <Grid item lg={1}/>
           <Grid item xs={3} lg={2}>
+            <Box className={classes.text}>
             Gold
+            </Box>
           </Grid>
         </Grid>
       </Grid>
@@ -93,7 +83,9 @@ const Awards = () => {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            Gold
+            <Box>
+             Gold
+            </Box>
           </Grid>
         </Grid>
       </Grid>
@@ -185,7 +177,7 @@ const Awards = () => {
           <Grid item xs={3} lg={2} />
         </Grid>
       </Grid>
-    </>
+    </section>
   )
 }
 export default Awards;
