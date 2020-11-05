@@ -490,7 +490,7 @@ const projects = [
     type: "graphic",
     year: '2013',
     landing: '/CoverPhotos/Lading/MiMujer.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/MiMujer.jpg',
     images: {
       img1: '/MiMujer/1.jpg',
       img2: '/MiMujer/2.jpg',
@@ -507,7 +507,7 @@ const projects = [
     type: "graphic",
     year: '2015',
     landing: '/CoverPhotos/Lading/NewYearNewFlight.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/NewYearNewFight.jpg',
     images: {
       img1: '/NewYearNewFight/1.jpg',
       img2: '/NewYearNewFight/2.jpg',
@@ -525,7 +525,7 @@ const projects = [
     type: "graphic",
     year: '2013',
     landing: '/CoverPhotos/Lading/Paleo.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/Paleo.jpg',
     images: {
       img1: '/Paleo/1.jpg',
       img2: '/Paleo/2.jpg',
@@ -545,7 +545,7 @@ const projects = [
     id: '20',
     type: "graphic",
     year: '2012',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/PointDeFuite.jpg',
     images: {
       img1: '/Point/1.jpg',
       img2: '/Point/2.jpg',
@@ -583,7 +583,7 @@ const projects = [
     type: "grahic",
     year: '2014',
     landing: '/CoverPhotos/Lading/DameDeLaMer.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/LaDameDeLaMere.jpg',
     images: {
       img1: '/LaDamedeLaMer/1.jpg',
       img2: '/LaDamedeLaMer/2.jpg',
@@ -610,7 +610,7 @@ const projects = [
     id: '22',
     type: "graphic",
     year: '2012',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/PostTenebrasRock.jpg',
     images: {
       img1: '/PostTenebrasRock/1.jpg',
       img2: '/PostTenebrasRock/2.jpg',
@@ -630,7 +630,7 @@ const projects = [
     type: "typeface",
     year: '2017',
     landing: '/CoverPhotos/Lading/Thesaurus.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/Thesaurus.jpg',
     images: {
       img1: '/Thesaurus/1.jpg',
       img2: '/Thesaurus/2.jpg',
@@ -672,7 +672,7 @@ const projects = [
     type: "graphic",
     year: '2014',
     landing: '/CoverPhotos/Lading/TijuanaPanthers.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/TijuanaPanthers.jpg',
     images: {
       img1: '/TijuanaPanthers/1.jpg',
       img2: '/TijuanaPanthers/2.jpg',
@@ -690,7 +690,7 @@ const projects = [
     type: "graphic",
     year: '2013',
     landing: '/CoverPhotos/Lading/TimeOut.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/TimeOut.jpg',
     images: {
       img1: '/TimeOut/1.jpg',
       img2: '/TimeOut/2.jpg',
@@ -708,7 +708,7 @@ const projects = [
     type: "graphic",
     year: '2013',
     landing: '/CoverPhotos/Lading/Tomorrow.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/Tomorrow.jpg',
     images: {
       img1: '/Tomorrow/1.jpg',
       img2: '/Tomorrow/2.jpg',
@@ -726,7 +726,7 @@ const projects = [
     type: "typeface",
     year: '2013',
     landing: '/CoverPhotos/Lading/TypographyH.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/TypographicHeroes.jpg',
     images: {
       img1: '/TypographyHeroes/1.jpg',
       img2: '/TypographyHeroes/2.jpg',
@@ -770,7 +770,7 @@ const projects = [
     id: '27',
     type: "typeface",
     year: '2011',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/Viga.jpg',
     images: {
       img1: '/Viga/1.jpg',
       img2: '/Viga/2.jpg',
@@ -791,7 +791,7 @@ const projects = [
     type: "graphic",
     year: '2011',
     landing: '/CoverPhotos/Lading/Weltformat.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/CoverPhotos/Galleries/Weltformat.jpg',
     images: {
       img1: '/Welftormat/1.jpg',
       img2: '/Welftormat/2.jpg',
