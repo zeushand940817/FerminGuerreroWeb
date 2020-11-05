@@ -1,0 +1,21 @@
+{
+  "name": "ferminguerrero",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "dotenv": "^8.2.0",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "10.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-icons": "^3.11.0",
+    "react-slick": "^0.27.12",
+    "slick-carousel": "^1.8.1"
+  }
+}
