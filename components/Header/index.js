@@ -47,7 +47,6 @@ const Header = (props) => {
           width: '100%';
           border-bottom: 2px solid white;
           color:white;
-          gap:10px;
           display:grid;
           grid-template-columns:repeat(12, 1fr);
           grid-auto-rows: minmax(35px, auto);    
@@ -59,7 +58,7 @@ const Header = (props) => {
           grid-column: 1/4;
         }
         a:nth-child(2){
-          grid-column: 4/7;
+          grid-column: 5/7;
         }
         a:nth-child(3){
           grid-column: 7/8;

@@ -1,36 +1,35 @@
+
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+
+
+
+const useStyles = makeStyles((theme) => ({
+  nav:{
+    top: 0,
+    marginTop:5,
+    padding: '0px 0px 0px 20px',
+  },
+  a:{
+    textDecoration: 'none',
+    fontSize: 20,
+    color: 'white',
+    display: 'block',
+  }
+}));
+
 const SideNav = () => {
+  const classes = useStyles();
   return(
-    <>
-      <nav id="page-wrap">
-        <a href="#bckg">Background</a>
-        <a href="#contact">Contact</a>
-        <a href="#prensa">Reaserch, Papers & Articles</a>
-        <a href="#awards">Awards & Distinctions</a>
-        <a href="#exhibitions">Exhibitions</a>
-      </nav> 
-
-    <style jsx>{`
-      nav{
-      display: flex;
-      flex-direction: column;
-      grid-row: 1;
-      grid-column: 1/4;
-    }
-    a{
-      text-decoration:none;
-      color:white;
-    }
-
-  @media screen and (max-width: 667px) {
-    nav{
-      
-    }
-  } 
-
-  `}</style>
-</>
-
-
+    <div id="outer-container">
+        <nav className={classes.nav} id="page-wrap">
+          <a className={classes.a} href="#bckg">Background</a>
+          <a className={classes.a} href="#contact">Contact</a>
+          <a className={classes.a} href="#research">Reaserch, Papers & Articles</a>
+          <a className={classes.a} href="#awards">Awards & Distinctions</a>
+          <a className={classes.a} href="#exhibitions">Exhibitions</a>
+       </nav> 
+      </div>
   )
 }
 export default SideNav;
