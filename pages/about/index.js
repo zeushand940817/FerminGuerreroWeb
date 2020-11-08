@@ -48,9 +48,9 @@ import Grid from '@material-ui/core/Grid';
       return (
         <div className={classes.root}>
 
-            <section> 
+          <section> 
             <img className={classes.image}  src="/aboutmepicture.jpg" alt="ferminImage" />
-            </section>
+          </section> 
      
           <section className="menuContainer">
             <ScrollTop showBelow={1300} />

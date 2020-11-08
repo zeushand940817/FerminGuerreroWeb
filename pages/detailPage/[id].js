@@ -2,6 +2,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
 import Box from '@material-ui/core/Box'
+import fetch from 'isomorphic-unfetch'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -34,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function DetailPage({data}) {
+
   const classes = useStyles()
      return (
       <div className={classes.root}>
@@ -54,9 +56,7 @@ export default function DetailPage({data}) {
           {data.attributes.description}
           </Box>
         </Grid>
-        {/* <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
-        </Grid> */}
+
       </Grid>
 
       <Grid container spacing={1}>
@@ -84,7 +84,7 @@ export async function getServerSideProps(context) {
   const { id } = context.params
   const res = await fetch(`${API_URL}/api/projects/${id}`)
   const data = await res.json()
-
+  console.log(data, 'data')
   return {
     props: {
       data: data,

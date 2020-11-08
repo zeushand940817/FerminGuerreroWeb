@@ -16,8 +16,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize:20,
   },
   link: {
+    listStyle:'none',
     textDecoration: 'none',
     color:'#EF6800'
+  },
+  a: {
+    color:'white',
+    display:'inline-block',
   },
 }))
 
@@ -32,40 +37,40 @@ const Header = (props) => {
       <Grid container direction="column">
         <Grid item xs={12} container>
           <Grid item xs={3} md={2} lg={4}>
-            <li>
-            <Link href="/"  as="/" className={classes.link}>
-              <a>Fermin Guerrero</a>
+            <li className={classes.link}>
+            <Link href="/"  as="/">
+              <a className={classes.a}>Fermin Guerrero</a>
             </Link>
             </li>
           </Grid>
           <Grid item xs={3} md={2} lg={2}>
-            <li>
+            <li className={classes.link}>
             <Link href="/graphicDesign" as="/graphicDesign" className={classes.isActive}>
               {/* <a className={router.pathname === '/graphicDesign' ? "active" : " "}>  */}
-              <a>Graphic Design</a>
+              <a className={classes.a}>Graphic Design</a>
               </Link>
               </li>
           </Grid>
           <Grid item xs={2} md={2} lg={1}>
-            <li>
-           <Link href="/all" as="/all" className={classes.link}>
-            <a>&</a>
+            <li className={classes.link}>
+           <Link href="/all" as="/all" >
+            <a className={classes.a}>&</a>
            </Link>
            </li>
           </Grid>
 
           <Grid item xs={3} md={2} lg={4}>
-            <li>
-            <Link href="/typefaceDesign" as="/typefaceDesign" className={classes.link}>
-              <a>Typeface Desgin</a>
+            <li className={classes.link}>
+            <Link href="/typefaceDesign" as="/typefaceDesign" >
+              <a className={classes.a}>Typeface Desgin</a>
             </Link>
             </li>
           </Grid>
 
           <Grid className={classes.about} item xs={1} lg={1} md={2}>
-            <li>
+            <li className={classes.link}>
             <Link href="/about" as="/about" className={classes.link} >
-              <a>About</a>
+              <a className={classes.a}>About</a>
             </Link>
             </li>
           </Grid>

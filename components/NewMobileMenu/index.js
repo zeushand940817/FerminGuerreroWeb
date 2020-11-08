@@ -27,7 +27,6 @@ export default function NewMobileMenu() {
            :
             "linksBurgerMenuContainer"}
         >
-          
           <li className="linksBurgerMenu">
             <Link 
               href="/"  
@@ -94,23 +93,23 @@ export default function NewMobileMenu() {
    .linksBurgerMenuContainer {
       position: absolute;
       width: 100vw;
+      height:40vh;
       display: flex;
       flex-direction: column;
       list-style: none;
       left: 600;
       top: 30px;
-      height: 40vh;
       z-index: 1000;
       justify-content: space-around;
       background-color: black;
       font-size:20px;
       color:white;
+     
   }
     .linksBurgerMenu {
       display: flex;
       flex-direction: column;
       width: 100%;
-     
     }
 
       a{
