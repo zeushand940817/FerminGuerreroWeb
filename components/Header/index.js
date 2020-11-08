@@ -1,99 +1,82 @@
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import withWidth from '@material-ui/core/withWidth'
+import PropTypes from 'prop-types'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    height: 'auto',
+    alignItems: 'center',
+    padding: '3px 20px 5px 20px',
+    borderBottom: '2px solid white',
+    fontSize:20,
+  },
+  link: {
+    textDecoration: 'none',
+    color:'#EF6800'
+  },
+}))
 
 const Header = (props) => {
-  const router = useRouter();
+  const router = useRouter()
+  console.log(router)
+  const classes = useStyles()
+  const { width } = props
 
-  return(
-    <div>
-    {/* <div className="mobile">
-     <Burger />
-      </div>  */}
-     
-    <header className="container">
-      <Link href="/"  as="/" >
-        <a className={router.pathname === '/' ? "active" : " "}>
-          Fermin Guerrero
-        </a>
-      </Link>
-      <Link href="/graphicDesign" as="/graphicDesign" >
-        <a className={router.pathname === '/graphicDesign' ? "active" : " "}>
-          Graphic Design
-        </a>
-      </Link>
-      <Link href="/all" as="/all">
-        <a className={router.pathname === '/all' ? "active" : " "} >
-          &
-        </a>
-      </Link>
-      <Link href="/typefaceDesign" as="/typefaceDesign" >
-        <a className={router.pathname === '/typefaceDesign' ? "active" : " "}>
-          Typeface Desgin
-        </a>
-      </Link>
-      <Link href="/about" as="/about">
-        <a className={router.pathname === '/about' ? "active" : " "}>
-          About
-        </a>
-      </Link>
+  return (
+    <div className={classes.root}>
+      <Grid container direction="column">
+        <Grid item xs={12} container>
+          <Grid item xs={3} md={2} lg={4}>
+            <li>
+            <Link href="/"  as="/" className={classes.link}>
+              <a>Fermin Guerrero</a>
+            </Link>
+            </li>
+          </Grid>
+          <Grid item xs={3} md={2} lg={2}>
+            <li>
+            <Link href="/graphicDesign" as="/graphicDesign" className={classes.isActive}>
+              {/* <a className={router.pathname === '/graphicDesign' ? "active" : " "}>  */}
+              <a>Graphic Design</a>
+              </Link>
+              </li>
+          </Grid>
+          <Grid item xs={2} md={2} lg={1}>
+            <li>
+           <Link href="/all" as="/all" className={classes.link}>
+            <a>&</a>
+           </Link>
+           </li>
+          </Grid>
 
-    </header>
+          <Grid item xs={3} md={2} lg={4}>
+            <li>
+            <Link href="/typefaceDesign" as="/typefaceDesign" className={classes.link}>
+              <a>Typeface Desgin</a>
+            </Link>
+            </li>
+          </Grid>
 
-    <style jsx>{`
-        .container {
-          height: 65;
-          width: '100%';
-          border-bottom: 2px solid white;
-          color:white;
-          display:grid;
-          grid-template-columns:repeat(12, 1fr);
-          grid-auto-rows: minmax(35px, auto);    
-          padding: 3px 20px 0px 20px;
-          font-size:20px;
-        }
-        a:nth-child(1){
-          grid-row:1;
-          grid-column: 1/4;
-        }
-        a:nth-child(2){
-          grid-column: 5/7;
-        }
-        a:nth-child(3){
-          grid-column: 7/8;
-        }
-
-        a:nth-child(4){
-          grid-column: 8/10;
-          margin:10;
-        }
-        a:nth-child(5){
-          grid-column: 12/13;
-        }
-
-        active{
-          color:red;
-        }
-        .mobile{
-          display:none;
-        }
-
-        @media screen and (max-width: 667px) {
-          .container{
-            display:none;
-          }
-          .mobile{
-            display:block;
-          }
-        }
-      `}</style>
-      <style jsx global>{`
-
-      `}</style>
+          <Grid className={classes.about} item xs={1} lg={1} md={2}>
+            <li>
+            <Link href="/about" as="/about" className={classes.link} >
+              <a>About</a>
+            </Link>
+            </li>
+          </Grid>
+        </Grid>
+      </Grid>
     </div>
-        )
+  )
 }
 
+Header.propTypes = {
+  width: PropTypes.oneOf(['lg', 'md', 'sm', 'xl', 'xs']).isRequired,
+}
 
-export default Header;
+export default withWidth()(Header)

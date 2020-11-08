@@ -14,90 +14,87 @@ const Awards = () => {
   const classes = useStyles()
   return (
     <section className={classes.text}>
-      <Grid item xs={12} container >
+      <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1}>
-            <Box id="awards" mt={3}>
-              2019
+          <Grid item xs={0} lg={4} />
+          <Grid item xs={3} lg={1}>
+            <Box>2019</Box>
+          </Grid>
+          <Grid item xs={6} lg={3}>
+            <Box mb={5} pr={2}>
+             LAD - Latin Design Awards. Typeface design category. Project:
+             Thesaurus.
             </Box>
           </Grid>
-          <Grid item xs={6} lg={3} sm={3}>
-            <Box mb={5} mt={3} >
-              LAD - Latin Design Awards. Typeface design category. Project:
+          <Grid item lg={1} />
+          <Grid item xs={3} lg={2}>
+            Gold
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12} container>
+        <Grid container direction="row">
+          <Grid item xs={0} lg={4} />
+          <Grid item xs={3} lg={1}>
+            <Box>2018</Box>
+          </Grid>
+          <Grid item xs={6} lg={3}>
+            <Box mb={5} pr={2}>
+              European Design Awards Typeface design category. Project:
               Thesaurus.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box mt={3}>Gold</Box>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12} container>
-        <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1}>
-            <Box>2018</Box>
-          </Grid>
-          <Grid item xs={6} lg={3} sm={3}>
-            <Box mb={5}>
-              European Design Awards Typeface design category. Project:
-              Thesaurus.
-            </Box>
-          </Grid>
-          <Grid item lg={1}/>
-          <Grid item xs={3} lg={2}>
-            <Box className={classes.text}>
             Gold
-            </Box>
           </Grid>
         </Grid>
       </Grid>
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1} />
-          <Grid item xs={6} lg={3} sm={3}>
-            <Box mb={5}>
+          <Grid item xs={0} lg={4} />
+          <Grid item xs={3} lg={1} />
+          <Grid item xs={6} lg={3}>
+            <Box mb={5} pr={2}>
               Swiss Typefaces selected Thesaurus for their 40 pages specimen
               called Type Life 3, showcasing 19 non-SWTY typefaces they like.
             </Box>
           </Grid>
-          <Grid item lg={2} />
-          <Grid item xs={3} lg={2} />
+          <Grid item lg={1} />
+          <Grid item xs={3} lg={2}>
+            Gold
+          </Grid>
         </Grid>
       </Grid>
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1} />
-          <Grid item xs={6} lg={3} sm={3}>
-            <Box mb={5}>
+          <Grid item xs={0} lg={4} />
+          <Grid item xs={3} lg={1} />
+          <Grid item xs={6} lg={3}>
+            <Box mb={5} pr={2}>
               Type 4 : Typeface Design Competition by Graphis magazine. Project:
               Thesaurus
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box>
-             Gold
-            </Box>
+            Gold
           </Grid>
         </Grid>
       </Grid>
 
+
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1}>
+          <Grid item xs={0} lg={4} />
+          <Grid item xs={3} lg={1}>
             <Box>2019</Box>
           </Grid>
-          <Grid item xs={6} lg={3} sm={3}>
-            <Box mb={5}>
+          <Grid item xs={6} lg={3}>
+            <Box mb={5} pr={2}>
               LAD - Latin Design Awards. Typeface design category. Project:
               Thesaurus.
             </Box>
@@ -108,6 +105,7 @@ const Awards = () => {
           </Grid>
         </Grid>
       </Grid>
+
 
       <Grid item xs={12} container>
         <Grid container direction="row">

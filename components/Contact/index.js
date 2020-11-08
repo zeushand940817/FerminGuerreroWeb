@@ -14,23 +14,24 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontSize:20,
     color:'white',
-  }
+  },
+
 }))
 
 const Contact = () => {
   const classes = useStyles()
   return (
-    <>
+    <section className={classes.container}>
       <Grid item lg={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1}>
+          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={3} lg={1} sm={3}>
             <Box className={classes.text} id="contact" mt={3} sm={1}>
               Email
             </Box>
           </Grid>
-          <Grid item xs={9} lg={2} sm={2}>
-            <Box  className={classes.text}  mb={2} mt={3}>
+          <Grid item xs={9} lg={2} sm={3}>
+            <Box  className={classes.text}  mb={2} mt={3} sm={1}>
               contact@ferminguerrero.com
             </Box>
           </Grid>
@@ -40,9 +41,9 @@ const Contact = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1} />
-          <Grid item xs={9} lg={2} sm={2}>
+          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={3} lg={1} sm={3} />
+          <Grid item xs={9} lg={2} sm={1}>
             <Box  className={classes.text}>Dubai, UAE.</Box>
           </Grid>
         </Grid>
@@ -50,9 +51,9 @@ const Contact = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1} />
-          <Grid item xs={9} lg={2} sm={2}>
+          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={3} lg={1} sm={3} />
+          <Grid item xs={9} lg={2} sm={1}>
             <Box  className={classes.text}  mb={5}>Clock 17:35pm.</Box>
           </Grid>
         </Grid>
@@ -60,8 +61,8 @@ const Contact = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={4} />
-          <Grid item xs={3} lg={1} sm={1}>
+          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={3} lg={1} sm={3}>
             <Box  className={classes.text}  mb={10}>Follow</Box>
           </Grid>
           <Grid item xs={3} sm={4}>
@@ -97,7 +98,7 @@ const Contact = () => {
           </Grid>
         </Grid>
       </Grid>
-    </>
+    </section>
   )
 }
-export default Contact
+export default Contact;

@@ -1,63 +1,83 @@
 const landings = [
   {
-    image: '/CoverPhotos/Lading/DinMachine.jpg',
+    id: '1',
+    image: '/Lading/DinMachine.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/Exentra.jpg',
+    id: '2',
+    image: '/Lading/Exentra.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/FeriaDelLibro.jpg',
+    id: '3',
+    image: '/Lading/FeriaDelLibro.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/FGC.jpg',
+    id: '4',
+    image: '/Lading/FGC.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
+    id: '5',
+    image: '/Lading/GenevaMotorShow.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/GeneveTypeface.jpg',
+    id: '6',
+    image: '/Lading/GeneveTypeface.jpg',
   },
   {
+    id: '7',
     image: '/CoverPhotos/Lading/ItsUpToYou.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/JoieDeLire.jpg',
+    id: '8',
+    image: '/Lading/JoieDeLire.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/MakeAWish.jpg',
+    id: '9',
+    image: '/Lading/MakeAWish.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/Manifesta.jpg',
+    id: '10',
+    image: '/Lading/Manifesta.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/MiMujer.jpg',
+    id: '11',
+    image: '/Lading/MiMujer.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/NewYearNewFlight.jpg',
+    id: '12',
+    image: '/Lading/NewYearNewFlight.jpg',
   },  
   {
-    image: '/CoverPhotos/Lading/Paleo.jpg',
+    id: '13',
+    image: '/Lading/Paleo.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/DameDeLaMer.jpg',
+    id: '14',
+    image: '/Lading/DameDeLaMer.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/Thesaurus.jpg',
+    id: '15',
+    image: '/Lading/Thesaurus.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/TimeOut.jpg',
+    id: '16',
+    image: '/Lading/TimeOut.jpg',
   },  
   {
-    image: '/CoverPhotos/Lading/Tomorrow.jpg',
+    id: '17',
+    image: '/Lading/Tomorrow.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/TypographyH.jpg',
+    id: '18',
+    image: '/Lading/TypographyH.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/Weltformat.jpg',
+    id: '19',
+    image: '/Lading/Weltformat.jpg',
   },
   {
-    image: '/CoverPhotos/Lading/BrickTypefamily.jpg',
+    id: '20',
+    image: '/Lading/BrickTypefamily.jpg',
   },
 ]
 

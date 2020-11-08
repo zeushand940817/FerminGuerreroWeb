@@ -55,11 +55,6 @@ const handleClick = () => {
           <IoIosArrowRoundUp size={52} onClick={handleClick} className={classes.toTop} />
       }
     </div>  
-
-    <style jsx>{`
-   
-
-      `}</style>
     </>
   )
 }

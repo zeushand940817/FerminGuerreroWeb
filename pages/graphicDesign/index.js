@@ -34,7 +34,7 @@ export default function GraphicDesign({ data }) {
       padding: 10px 10px 0px 10px;
       column-count: 3;
     }
-
+   
 @media screen and (max-width: 667px) {
       .imageContainer{
         column-count:1;

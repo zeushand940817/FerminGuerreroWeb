@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   nav:{
     top: 0,
     marginTop:5,
-    padding: '0px 0px 0px 20px',
+
   },
   a:{
     textDecoration: 'none',

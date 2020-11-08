@@ -6,7 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   background: {
     fontSize:20,
-    padding: 5,
   },
 }))
 
@@ -17,11 +16,11 @@ const Background = () => {
     <>
       <Grid container direction="column">
         <Grid item lg={12} container>
-          <Grid item lg={3} sm={2}>
+          <Grid item lg={3} sm={0}>
             <SideNav />
           </Grid>
-          <Grid item lg={1} sm={2} />
-          <Grid item lg={6} sm={6}>
+          <Grid item lg={1} sm={0} />
+          <Grid item lg={6} sm={12}>
             <Box className={classes.background} id="bckg" mb={6}>
               Fermin Guerrero's visual communication practice focusing on
               Graphic and Typeface Design. In 2010, after he finished his
