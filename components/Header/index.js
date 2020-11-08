@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     color:'white',
     display:'inline-block',
   },
+  active: {
+    color:'red',
+  },
 }))
 
 const Header = (props) => {
@@ -45,9 +48,8 @@ const Header = (props) => {
           </Grid>
           <Grid item xs={3} md={2} lg={2}>
             <li className={classes.link}>
-            <Link href="/graphicDesign" as="/graphicDesign" className={classes.isActive}>
-              {/* <a className={router.pathname === '/graphicDesign' ? "active" : " "}>  */}
-              <a className={classes.a}>Graphic Design</a>
+            <Link href="/graphicDesign" as="/graphicDesign">  
+              <a className={router.pathname === '/graphicDesign' ? "active" : " "}>Graphic Design</a>
               </Link>
               </li>
           </Grid>

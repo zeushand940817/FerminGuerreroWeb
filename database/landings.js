@@ -1,83 +1,83 @@
 const landings = [
   {
     id: '1',
-    image: '/Lading/DinMachine.jpg',
+    image: '/CoverPhotos/Landing/DinMachine.jpg',
   },
   {
     id: '2',
-    image: '/Lading/Exentra.jpg',
+    image: '/CoverPhotos/Landing/Exentra.jpg',
   },
   {
     id: '3',
-    image: '/Lading/FeriaDelLibro.jpg',
+    image: '/CoverPhotos/Landing/FeriaDelLibro.jpg',
   },
   {
     id: '4',
-    image: '/Lading/FGC.jpg',
+    image: '/CoverPhotos/Landing/FGC.jpg',
   },
   {
     id: '5',
-    image: '/Lading/GenevaMotorShow.jpg',
+    image: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
   },
   {
     id: '6',
-    image: '/Lading/GeneveTypeface.jpg',
+    image: '/CoverPhotos/Landing/GeneveTypeface.jpg',
   },
   {
     id: '7',
-    image: '/CoverPhotos/Lading/ItsUpToYou.jpg',
+    image: '/CoverPhotos/Landing/Lading/ItsUpToYou.jpg',
   },
   {
     id: '8',
-    image: '/Lading/JoieDeLire.jpg',
+    image: '/CoverPhotos/Landing/JoieDeLire.jpg',
   },
   {
     id: '9',
-    image: '/Lading/MakeAWish.jpg',
+    image: '/CoverPhotos/Landing/MakeAWish.jpg',
   },
   {
     id: '10',
-    image: '/Lading/Manifesta.jpg',
+    image: '/CoverPhotos/Landing/Manifesta.jpg',
   },
   {
     id: '11',
-    image: '/Lading/MiMujer.jpg',
+    image: '/CoverPhotos/Landing/MiMujer.jpg',
   },
   {
     id: '12',
-    image: '/Lading/NewYearNewFlight.jpg',
+    image: '/CoverPhotos/Landing/NewYearNewFlight.jpg',
   },  
   {
     id: '13',
-    image: '/Lading/Paleo.jpg',
+    image: '/CoverPhotos/Landing/Paleo.jpg',
   },
   {
     id: '14',
-    image: '/Lading/DameDeLaMer.jpg',
+    image: '/CoverPhotos/Landing/DameDeLaMer.jpg',
   },
   {
     id: '15',
-    image: '/Lading/Thesaurus.jpg',
+    image: '/CoverPhotos/Landing/Thesaurus.jpg',
   },
   {
     id: '16',
-    image: '/Lading/TimeOut.jpg',
+    image: '/CoverPhotos/Landing/TimeOut.jpg',
   },  
   {
     id: '17',
-    image: '/Lading/Tomorrow.jpg',
+    image: '/CoverPhotos/Landing/Tomorrow.jpg',
   },
   {
     id: '18',
-    image: '/Lading/TypographyH.jpg',
+    image: '/CoverPhotos/Landing/TypographyH.jpg',
   },
   {
     id: '19',
-    image: '/Lading/Weltformat.jpg',
+    image: '/CoverPhotos/Landing/Weltformat.jpg',
   },
   {
     id: '20',
-    image: '/Lading/BrickTypefamily.jpg',
+    image: '/CoverPhotos/Landing/BrickTypefamily.jpg',
   },
 ]
 

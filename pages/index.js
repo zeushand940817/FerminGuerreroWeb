@@ -1,34 +1,29 @@
 import fetch from 'isomorphic-unfetch';
-import landings from 'database/landings';
-import { Component } from 'react';
-
 
 const images = [
 
 ]
 
-class Home extends Component {
-  state = {
-    open: true
-  }
-  toggleImage = () => {
-    this.setState(state => ({ open: !state.open }))
-  }
-
-  getImageName = () => this.state.open ? '1' : '2' 
-
-  render() {
-    const imageName = this.getImageName();
+export default function Home({ data }) {
+  const landings = data
+  
     return (
-      <div>
-    {/* <img style={{maxWidth: '100%', scale: '5.1', transition: '6.1s'}} src={imagesPath[imageName]} onMouseMove={this.toggleImage} />  */}
+      <div>  
+      {landings.map((landing, key) => {
+          return(
+          <div key={landing.id}>
+          <img
+            className='imagen' 
+            src={landing.image}/>  
+            </div>
+              )
+            })} 
       </div>
     );
   }
-}
-export default Home;
 
-// export default function Home({ data }) {
+
+// 
 
 // return(
 //   <>
@@ -40,7 +35,6 @@ export default Home;
 //     </>
 //   )
 // }
-
 
 
 export async function getServerSideProps() {
@@ -56,11 +50,5 @@ export async function getServerSideProps() {
   }
 }
 
-{/* 
-{projects.map((project, key) => (
-      <img
-        className='imagen' 
-        src={project.image}
-        alt={project.name} />  
-        ))}
-   */}
+
+{/* <img style={{maxWidth: '100%', scale: '5.1', transition: '6.1s'}} src={imagesPath[imageName]} onMouseMove={this.toggleImage} />  */}
