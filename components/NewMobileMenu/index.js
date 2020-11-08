@@ -22,18 +22,54 @@ export default function NewMobileMenu() {
         }
 
         </div>
-        <ul className={open !== true ? "linksBurgerMenuContainerInactive" : "linksBurgerMenuContainer"}>
+        <ul className={open !== true ?
+           "linksBurgerMenuContainerInactive" 
+           :
+            "linksBurgerMenuContainer"}
+        >
+          
           <li className="linksBurgerMenu">
-            <Link href="/"  as="/" className="navMenuLinksBurger" activeClassName="activeLinkBurger" onClick={() => this.handleClick()}>Home</Link>
+            <Link 
+              href="/"  
+              as="/" 
+              className="navMenuLinksBurger" 
+              activeClassName="activeLinkBurger" 
+              onClick={() => this.handleClick()}>
+                <a>Home</a>
+            </Link>
           </li>
+
           <li className="linksBurgerMenu">
-            <Link href="/graphicDesign" as="/graphicDesign" className="navMenuLinksBurger" activeClassName="activeLinkBurger" onClick={() => this.handleClick()}>Graphic Design</Link>
+            <Link 
+              href="/graphicDesign" 
+              as="/graphicDesign" 
+              className="navMenuLinksBurger" 
+              activeClassName="activeLinkBurger" 
+              onClick={() => this.handleClick()}>
+                <a>Graphic Design</a>
+            </Link>
           </li>
+
           <li className="linksBurgerMenu">
-            <Link href="/typefaceDesign" as="/typefaceDesign" className="navMenuLinksBurger" activeClassName="activeLinkBurger" onClick={() => this.handleClick()}>Typeface Design</Link>
+            <Link 
+              href="/typefaceDesign" 
+              as="/typefaceDesign" 
+              className="navMenuLinksBurger" 
+              activeClassName="activeLinkBurger" 
+              onClick={() => this.handleClick()}>
+                <a>Typeface Design</a>
+            </Link>
           </li>
+
           <li className="linksBurgerMenu">
-            <Link href="/about" as="/about" className="navMenuLinksBurger" activeClassName="activeLinkBurger" onClick={() =>this.handleClick()}>About</Link>
+            <Link 
+              href="/about" 
+              as="/about" 
+              className="navMenuLinksBurger" 
+              activeClassName="activeLinkBurger" 
+              onClick={() =>this.handleClick()}>
+                <a>About</a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -48,6 +84,7 @@ export default function NewMobileMenu() {
         width: 100%;
         padding: 0;
         position: relative;
+
       }
       .iconBurgerMenu {
         position: relative;
@@ -66,23 +103,18 @@ export default function NewMobileMenu() {
       z-index: 1000;
       justify-content: space-around;
       background-color: black;
-      text-align:center;
       font-size:20px;
       color:white;
   }
     .linksBurgerMenu {
       display: flex;
       flex-direction: column;
-      border-bottom: 1px solid white;
-      width: 85%;
+      width: 100%;
      
     }
-      .navMenuLinksBurger {
-        font-size: 20px;
-        line-height: 26px;
-        margin-bottom: 10px;
-      }
+
       a{
+        display:inline-block;
         list-style: none;
         color: white;
       }
@@ -111,9 +143,10 @@ export default function NewMobileMenu() {
     .linksBurgerMenu {
       display: flex;
       flex-direction: column;
-      border-bottom: 1px solid white;
-      width: 85%;
+      width: 100%;
+     
     }
+
       .navMenuLinksBurger {
         font-size: 20px;
         font-weight: bold;
