@@ -13,12 +13,13 @@ export default function NewMobileMenu() {
 
     return (
       <>
-      <div className="burgerMainContainer" onClick={handleClick}>
+  
+      <div className="burgerMainContainer"onClick={handleClick}>
         <div className="iconBurgerMenu">
         {open !== true ? 
-          <HiOutlineMenuAlt4 size={52} /> 
+          <HiOutlineMenuAlt4 size={32} /> 
            :  
-         <VscChromeClose size={52} />
+         <VscChromeClose size={32} />
         }
 
         </div>
@@ -32,7 +33,6 @@ export default function NewMobileMenu() {
               href="/"  
               as="/" 
               className="navMenuLinksBurger" 
-              activeClassName="activeLinkBurger" 
               onClick={() => this.handleClick()}>
                 <a>Home</a>
             </Link>
@@ -43,7 +43,6 @@ export default function NewMobileMenu() {
               href="/graphicDesign" 
               as="/graphicDesign" 
               className="navMenuLinksBurger" 
-              activeClassName="activeLinkBurger" 
               onClick={() => this.handleClick()}>
                 <a>Graphic Design</a>
             </Link>
@@ -54,7 +53,6 @@ export default function NewMobileMenu() {
               href="/typefaceDesign" 
               as="/typefaceDesign" 
               className="navMenuLinksBurger" 
-              activeClassName="activeLinkBurger" 
               onClick={() => this.handleClick()}>
                 <a>Typeface Design</a>
             </Link>
@@ -65,7 +63,6 @@ export default function NewMobileMenu() {
               href="/about" 
               as="/about" 
               className="navMenuLinksBurger" 
-              activeClassName="activeLinkBurger" 
               onClick={() =>this.handleClick()}>
                 <a>About</a>
             </Link>
@@ -73,18 +70,19 @@ export default function NewMobileMenu() {
         </ul>
       </div>
 
+
       <style jsx>{`
+       
       .burgerMainContainer {
         background-color: black;
         display: flex;
         flex-direction: row;
-        height: 100%;
         justify-content: flex-end;
         width: 100%;
         padding: 0;
         position: relative;
-
       }
+
       .iconBurgerMenu {
         position: relative;
         cursor: pointer;
@@ -118,13 +116,6 @@ export default function NewMobileMenu() {
         color: white;
       }
       
-      .activeLinkBurger {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 26px;
-        margin-bottom: 10px;
-      }
-
 
   .linksBurgerMenuContainerInactive {
     z-index: 1000;

@@ -1,14 +1,24 @@
 import fetch from 'isomorphic-unfetch';
-
-const images = [
-
-]
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 export default function Home({ data }) {
+  const settings = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+  }
+
   const landings = data
   
     return (
-      <div>  
+      <>
+      <Slider {...settings}>
+      <div className='images'> 
+    
       {landings.map((landing, key) => {
           return(
           <div key={landing.id}>
@@ -18,7 +28,16 @@ export default function Home({ data }) {
             </div>
               )
             })} 
+
       </div>
+    </Slider>
+
+<style jsx>{`
+  .images{
+    max-width:400px;
+  }
+  `}</style>
+      </>
     );
   }
 

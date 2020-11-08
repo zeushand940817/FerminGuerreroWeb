@@ -1,6 +1,5 @@
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import SideNav from 'components/SideNav';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -16,9 +15,7 @@ const Background = () => {
     <>
       <Grid container direction="column">
         <Grid item lg={12} container>
-          <Grid item lg={3} sm={0}>
-            <SideNav />
-          </Grid>
+          <Grid item lg={3} sm={0}/> 
           <Grid item lg={1} sm={0} />
           <Grid item lg={6} sm={12}>
             <Box className={classes.background} id="bckg" mb={6}>

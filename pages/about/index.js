@@ -4,9 +4,7 @@ import Prensa from 'components/Prensa';
 import Awards from 'components/Awards';
 import { makeStyles } from '@material-ui/core/styles';
 import ScrollTop from 'components/ScrollTop';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-
+import SideNav from 'components/SideNav';
 
 
     const useStyles = makeStyles((theme) => ({
@@ -39,7 +37,9 @@ import Grid from '@material-ui/core/Grid';
       sideNavContainer: {
         display: 'flex',
         width: '40%',
+        position:"fixed",
       },
+
     }))
     
     const About = () => {
@@ -51,7 +51,9 @@ import Grid from '@material-ui/core/Grid';
           <section> 
             <img className={classes.image}  src="/aboutmepicture.jpg" alt="ferminImage" />
           </section> 
-     
+          <div className='sideNavContainer'>
+          <SideNav />
+          </div>
           <section className="menuContainer">
             <ScrollTop showBelow={1300} />
             <Background />
