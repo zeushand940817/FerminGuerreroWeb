@@ -14,25 +14,15 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
     alignItems: 'center',
     padding: '3px 20px 5px 20px',
-    borderBottom: '2px solid white',
     fontSize:20,
+    backgroundColor: 'black',
+    position:'fixed',
+    width:'100vw',
   },
   link: {
     listStyle:'none',
     textDecoration: 'none',
     color:'#EF6800'
-  },
-  a: {
-    color:'white',
-    display:'inline-block',
-    listStyle:'none',
-    color:'white',
-    // "&:hover":{
-    //   color:'red',
-    // }
-    active:{
-      color:'red',
-    }
   },
  
 }))

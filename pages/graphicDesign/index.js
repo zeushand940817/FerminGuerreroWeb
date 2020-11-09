@@ -47,13 +47,14 @@ export default function GraphicDesign({ data }) {
 @media screen and (max-width: 667px) {
       .imageContainer{
         column-count:1;
+        overflow-y: hidden;
         }   
       } 
     .col{
       height: auto;
     }
     .image{
-      padding: 10px;
+      padding-bottom: 10px;
       opacity: 1;
       display: inline-block;
       width: 100%;

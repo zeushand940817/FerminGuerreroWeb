@@ -18,6 +18,15 @@ body {
   color: white;
 }
 
+/* @media only screen and (max-width: 600px) {
+  html,
+  body,
+  #root,
+  .App {
+    height: 100vh;
+  }
+} */
+
 a {
   text-decoration: none;
 }

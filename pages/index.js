@@ -1,59 +1,42 @@
 import fetch from 'isomorphic-unfetch';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import AnimatedBg from "react-animated-bg";
 
-export default function Home({ data }) {
-  const settings = {
-    focusOnSelect: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    speed: 500,
-  }
 
-  const landings = data
   
-    return (
-      <>
-      <Slider {...settings}>
-      <div className='images'> 
-    
-      {landings.map((landing, key) => {
-          return(
-          <div key={landing.id}>
-          <img
-            className='imagen' 
-            src={landing.image}/>  
-            </div>
-              )
-            })} 
-
+export default function Home(){
+  const imagesList = [
+    'url("/CoverPhotos/Landing/DinMachine.jpg")',
+    'url("/CoverPhotos/Landing/Exentra.jpg")',
+    'url("/CoverPhotos/Landing/FeriaDelLibro.jpg")',
+    'url("/CoverPhotos/Landing/FGC.jpg")',
+    'url("/CoverPhotos/Lading/GenevaMotorShow.jpg")'
+  ];
+      return(
+        <>
+        <AnimatedBg   
+        colors={imagesList}
+        duration={2}
+        delay={false}
+        timingFunction="step-end"
+    >
+      <div className='image'>
+        
       </div>
-    </Slider>
+    </AnimatedBg>
+
+        
+
 
 <style jsx>{`
-  .images{
-    max-width:400px;
+  .image{
+   width:100vw;
+   height:100vh;
+   position:center;
   }
   `}</style>
       </>
     );
   }
-
-
-// 
-
-// return(
-//   <>
-
-//     <style jsx>{`
-  
-  
-//     `}</style>
-//     </>
-//   )
-// }
 
 
 export async function getServerSideProps() {
@@ -71,3 +54,18 @@ export async function getServerSideProps() {
 
 
 {/* <img style={{maxWidth: '100%', scale: '5.1', transition: '6.1s'}} src={imagesPath[imageName]} onMouseMove={this.toggleImage} />  */}
+
+
+// <div className='images'> 
+    
+// {landings.map((landing, key) => {
+//     return(
+//     <div key={landing.id}>
+//     <img
+//       className='imagen' 
+//       src={landing.image}/>  
+//       </div>
+//         )
+//       })} 
+
+// </div>

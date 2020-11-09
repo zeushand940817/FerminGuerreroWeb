@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import Header from 'components/Header';
-import NewMobileMenu from '@components/NewMobileMenu';
+import MobileMenu from '@components/MobileMenu';
 
 
 function MyApp({ Component, pageProps }) {
@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <Header />
   </div>
   <div className='mobile'>
-    <NewMobileMenu />
+    <MobileMenu />
   </div>
   <Component {...pageProps} />
 

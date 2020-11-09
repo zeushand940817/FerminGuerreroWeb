@@ -10,16 +10,20 @@ import SideNav from 'components/SideNav';
     const useStyles = makeStyles((theme) => ({
       root: {
         flexGrow: 1,
-        height: 30,
         alignItems: 'center',
-        padding: '3px 30px 0px 30px',
+        padding: '3px 20px 0px 20px',
+        display:'flex',
+        flexWrap:'wrap',
       },
       span: {
         color: 'red',
       },
+      section: {
+        width:'100%',
+      },
       image: {
+        marginTop:40,
         display: 'block',
-        margin: 'auto',
         width: '100%',
       },
       li: {
@@ -33,10 +37,11 @@ import SideNav from 'components/SideNav';
       },
       menuContainer: {
         display: 'flex',
+        width:'85%',
       },
       sideNavContainer: {
         display: 'flex',
-        width: '40%',
+        width: '15%',
         position:"fixed",
       },
 

@@ -1,55 +1,167 @@
-import Link  from 'next/link';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { VscChromeClose } from 'react-icons/vsc';
+import Link from 'next/link';
 import { useState } from 'react';
-import * as S from './styles';
 
 
+export default function NewMobileMenu() {
+  const [open, setOpen] = useState(false);
 
-export default function MobileMenu() {
-  const [openMenu, setOpenMenu] = useState(false);
+ const handleClick = () => {
+    setOpen(!open); 
+  }
+
+    return (
+      <>
+      <section>
   
-  const handleClick = () => {
-    setOpenMenu(!openMenu); 
-    console.log(openMenu, 'SOY OPENMENY CONSOLE'); 
-    
+      <div className="burgerMainContainer"onClick={handleClick}>
+        <div className="iconBurgerMenu">
+        {open !== true ? 
+          <HiOutlineMenuAlt4 size={32} /> 
+           :  
+         <VscChromeClose size={32} />
+        }
+
+        </div>
+        <ul className={open !== true ?
+           "linksBurgerMenuContainerInactive" 
+           :
+            "linksBurgerMenuContainer"}
+        >
+          <li className="linksBurgerMenu">
+            <Link 
+              href="/"  
+              as="/" 
+              className="navMenuLinksBurger" 
+              onClick={() => this.handleClick()}>
+                <a>Fermin Guerrero</a>
+            </Link>
+          </li>
+
+          <li className="linksBurgerMenu">
+            <Link 
+              href="/graphicDesign" 
+              as="/graphicDesign" 
+              className="navMenuLinksBurger" 
+              onClick={() => this.handleClick()}>
+                <a>Graphic Design</a>
+            </Link>
+          </li>
+
+          <li className="linksBurgerMenu">
+            <Link 
+              href="/typefaceDesign" 
+              as="/typefaceDesign" 
+              className="navMenuLinksBurger" 
+              onClick={() => this.handleClick()}>
+                <a>Typeface Design</a>
+            </Link>
+          </li>
+
+          <li className="linksBurgerMenu">
+            <Link 
+              href="/about" 
+              as="/about" 
+              className="navMenuLinksBurger" 
+              onClick={() =>this.handleClick()}>
+                <a>About</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+      </section>
+
+      <style jsx>{`
+
+        section{
+          width:100%;
+         
+
+
+        }
+       
+      .burgerMainContainer {
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0;
+        position: relative;
+      }
+
+      .iconBurgerMenu {
+        position: relative;
+        cursor: pointer;
+      }
+ 
+   .linksBurgerMenuContainer {
+      position: absolute;
+      width: 100vw;
+      height:40vh;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      left: 600;
+      top: 15px;
+      z-index: 1000;
+      justify-content: space-around;
+      background-color: black;
+      font-size:20px;
+      color:white;
+     
   }
+    .linksBurgerMenu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
 
+      a{
+        display:inline-block;
+        list-style: none;
+        color: white;
+      }
+      
 
-  return(
-    <>
-<S.HeaderContainer>
-<S.Button onClick={handleClick}>
-  {openMenu !== true ? 
-    <HiOutlineMenuAlt4 size={52} /> 
-    :  
-    <VscChromeClose size={52} />
+  .linksBurgerMenuContainerInactive {
+    z-index: 1000;
+    position: absolute;
+    left: -800px;
+    top:30px;
+    height: 40vh;
+    display: flex;
+    width: 100vw;
+    transition: all .5s ease-in-out;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
   }
-</S.Button>  
-    <S.MenuContainer className={openMenu !== true ? " " : "open" }>  
-     <S.NavContainer>
-      <ul>
-        <Link href="/"  as="/" >
-          <a>Fermin Guerrero</a>
-        </Link>
-        <Link href="/graphicDesign"  as="/graphicDesign" >
-          <a>Graphic Design</a>
-        </Link>
-        <Link href="/typefaceDesign"  as="/typefaceDesign" >
-          <a>Typeface Design</a>
-        </Link>
-        <Link href="/about"  as="/about" >
-          <a>About</a>
-        </Link>
-      </ul>
-      </S.NavContainer>
-    </S.MenuContainer>  
+    .linksBurgerMenu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+     
+    }
 
-</S.HeaderContainer>
+      .navMenuLinksBurger {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+      .activeLinkBurger {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
 
-
-</>
-  )
-}
+        `}</style>
+      </>
+    )
+  }
 
 
