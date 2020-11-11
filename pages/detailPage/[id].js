@@ -1,81 +1,147 @@
-import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import Paper from '@material-ui/core/Paper'
-import Box from '@material-ui/core/Box'
 import fetch from 'isomorphic-unfetch'
 
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    flexGrow: 1,
-    alignItems: 'center',
-    padding: '0px 20px 0px 20px',
-  },
-  img:{
-    width:'100%' 
-  },
-  imgGallery:{
-    width:'100%',
-    height: '100%',
-  paddingTop:'20px'
-  },
-  paper: {
-    height: 140,
-    width: 200,
-    boxShadow: 'none',
-  },
-  description:{
-    flexWrap: 'wrap',
-  }
-}))
-
 
 export default function DetailPage({data}) {
+  console.log(data, 'HOLA SOY DATA EN DETAIL PAGE')
 
-  const classes = useStyles()
-     return (
-      <div className={classes.root}>
-        <Grid container lg={12}>
-          <img className={classes.img} src={data.image} />
-        </Grid>
+  return (
+    <>
+   <div className='container'>
+     <Grid container lg={12}>
+       <img className='mainImage' src={data.image} />
+     </Grid> 
 
-      <Grid container lg={12}>
-        <Grid item xs={3} lg={3}>
-          <Paper className={classes.paper}>{data.name}</Paper>
-        </Grid>
-        <Grid item xs={12} sm={6} lg={3}>
-        <Paper className={classes.paper}>{data.year}</Paper>
-        <Paper className={classes.paper}> Tags: Poster, Illustration, Visual Identity</Paper>
-        </Grid>
-        <Grid item xs={12} sm={3} lg={3}>
-          <Box className={classes.description}>
-          {data.attributes.description}
-          </Box>
-        </Grid>
+   <Grid container lg={12}>
+    <div className='gridContainer'>
+     <Grid item xs={3} lg={2}>
+       <div className='name'>
+        {data.name}
+       </div>
+     </Grid>
+     <Grid item xs={12} sm={6} lg={4}>
+       <div className='yearandtags'>
+        <p>{data.year}</p>
+        <p>Tags: Poster, Illustration, Visual Identity</p>
+       </div>
+     </Grid>
+     <Grid item xs={12} sm={3} lg={6}>
+       <div className="description">
+        {data.attributes.description}
+       </div>
 
-      </Grid>
+     </Grid>
+     </div>
+   </Grid>
 
+   <Grid container spacing={1}>
+        <Grid item lg={6}>
+          <img className='imgGallery' src={data.images.img1} />
+        </Grid>
+        <Grid item lg={6}>
+          <img className='imgGallery' src={data.images.img2} />
+        </Grid>
+       </Grid>
       <Grid container spacing={1}>
         <Grid item lg={6}>
-          <img className={classes.imgGallery} src={data.images.img2} />
+          <img className='imgGallery' src={data.images.img3} />
         </Grid>
         <Grid item lg={6}>
-          <img className={classes.imgGallery} src={data.images.img3} />
+          <img className='imgGallery' src={data.images.img4} />
         </Grid>
-       </Grid>
-       <Grid container spacing={1}>
+      </Grid>
+      <Grid container spacing={1}>
         <Grid item lg={6}>
-          <img className={classes.imgGallery} src={data.images.img4} />
+          <img className='imgGallery' src={data.images.img5} />
         </Grid>
         <Grid item lg={6}>
-          <img className={classes.imgGallery} src={data.images.img5} />
+          <img className='imgGallery' src={data.images.img6} />
         </Grid>
-       </Grid>
-    </div>
+      </Grid>
+
+      <Grid container  spacing={1}>
+        <Grid item lg={12}>
+          <img className='imgGallery' src={data.images.img7} />
+        </Grid>
+      </Grid>
+      <Grid container spacing={1}>
+        <Grid item lg={6}>
+          <img className='imgGallery' src={data.images.img8} />
+        </Grid>
+        <Grid item lg={6}>
+          <img className='imgGallery' src={data.images.img9} />
+        </Grid>
+      </Grid>
+      <Grid container spacing={1}>
+        <Grid item lg={12}>
+          <img className='imgGallery' src={data.images.img10} />
+        </Grid>
+      </Grid>
+      <Grid container spacing={1}>
+        <Grid item lg={12}>
+          <img className='imgGallery' src={data.images.img12} />
+        </Grid>
+      </Grid>
+ 
+
+
+ </div>
+          
+      <style jsx>{`
+      .container{
+        width: 100%;
+        font-size:20px;
+        padding: 3px 20px 5px 20px;
+      }
+      .imageContainer{
+        max-width: 100vw;
+        height:auto;
+        padding: 10px 10px 0px 10px;
+        column-count: 3;
+      }
+
+      .gridContainer{
+        display:flex;
+        flex-direction:row;
+        height:auto;
+        margin-bottom:30px;
+        padding: 3px 20px 5px 20px;
+        
+      }
+      .mainImage{
+        width:100vw;
+        height:auto;
+        padding: 3px 20px 5px 20px;
+
+    
+      }
+      .name{
+        display:flex;
+        flex-direction:row;
+        margin:20px 0px;
+       
+      }
+
+      .description{
+        display:flex;
+        height:auto;
+        flex-wrap:wrap; 
+        margin:20px 0px;
+      }
+
+      .yearandtags{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        height:100%;
+      }
+
+      .imgGallery{
+        width:100%;
+      }
+        `}</style>
+    </>
   )
 }
 

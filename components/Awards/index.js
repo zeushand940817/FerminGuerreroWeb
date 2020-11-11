@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 const Awards = () => {
   const classes = useStyles()
   return (
-    <section className={classes.text}>
+    <section className={classes.text} id="awards">
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={4} />

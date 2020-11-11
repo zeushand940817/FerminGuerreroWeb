@@ -104,13 +104,3 @@ export async function getServerSideProps() {
     },
   }
 }
-
-
-
-// width:100%;
-// border-radius:10px;
-// padding: 10px;
-// cursor:pointer;
-// display: inline-block;
-// overflow: hidden;
-// position: relative;

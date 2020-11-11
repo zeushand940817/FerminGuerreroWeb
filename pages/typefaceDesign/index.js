@@ -16,10 +16,15 @@ export default function GraphicDesign({ data }) {
          href={`/detailPage/${projectFilter.id}`}
          as={`/detailPage/${projectFilter.id}`} >
          <a>
+         <div className='container'>
            <img
-             className='imagen' 
+             className='image' 
              src={projectFilter.image}
              alt={projectFilter.name} />  
+             <div className='middle'>
+              <p className="text">{projectFilter.name}</p>
+            </div>
+            </div>
           </a>
          </Link>
          ))}
@@ -32,21 +37,51 @@ export default function GraphicDesign({ data }) {
       padding: 10px 10px 0px 10px;
       column-count: 3;
     }
-
+   
+   .container{
+    position: relative;
+    width: 100%;
+   }
 @media screen and (max-width: 667px) {
       .imageContainer{
         column-count:1;
+        overflow-y: hidden;
         }   
       } 
     .col{
       height: auto;
     }
+    .image{
+      padding-bottom: 10px;
+      opacity: 1;
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    .container:hover .image {
+    opacity: 0.3;
+    }
+    .container:hover .middle {
+      opacity: 1;
+    }
 
-    .imagen{
-      width:100%;
-      border-radius:10px;
-      padding: 10px;
-      cursor:pointer;
+    .text {
+      background-color: orange;
+      color: white;
+      font-size: 20px;
+      padding: 16px 32px;
     }
      `}</style>
    </div>

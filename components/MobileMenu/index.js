@@ -14,8 +14,9 @@ export default function NewMobileMenu() {
     return (
       <>
       <section>
-  
+     
       <div className="burgerMainContainer"onClick={handleClick}>
+  
         <div className="iconBurgerMenu">
         {open !== true ? 
           <HiOutlineMenuAlt4 size={32} /> 
@@ -23,7 +24,8 @@ export default function NewMobileMenu() {
          <VscChromeClose size={32} />
         }
 
-        </div>
+      </div>   
+           
         <ul className={open !== true ?
            "linksBurgerMenuContainerInactive" 
            :
@@ -73,12 +75,8 @@ export default function NewMobileMenu() {
       </section>
 
       <style jsx>{`
-
         section{
           width:100%;
-         
-
-
         }
        
       .burgerMainContainer {
@@ -110,8 +108,7 @@ export default function NewMobileMenu() {
       background-color: black;
       font-size:20px;
       color:white;
-     
-  }
+    }
     .linksBurgerMenu {
       display: flex;
       flex-direction: column;
@@ -123,7 +120,6 @@ export default function NewMobileMenu() {
         list-style: none;
         color: white;
       }
-      
 
   .linksBurgerMenuContainerInactive {
     z-index: 1000;
@@ -137,12 +133,11 @@ export default function NewMobileMenu() {
     flex-direction: column;
     list-style: none;
     justify-content: space-around;
-  }
+    }
     .linksBurgerMenu {
       display: flex;
       flex-direction: column;
       width: 100%;
-     
     }
 
       .navMenuLinksBurger {

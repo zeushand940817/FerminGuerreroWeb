@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import Header from 'components/Header';
-import MobileMenu from '@components/MobileMenu';
-
+import MobileMenu from 'components/MobileMenu';
+import Footer from 'components/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,7 +12,8 @@ function MyApp({ Component, pageProps }) {
   <div className='mobile'>
     <MobileMenu />
   </div>
-  <Component {...pageProps} />
+    <Component {...pageProps} />
+    <Footer/> 
 
   <style jsx>{`
   .desktop{

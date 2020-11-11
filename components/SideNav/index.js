@@ -1,7 +1,11 @@
+import ExampleView from 'components/ExampleView';
+
+
 const SideNav = () => {
   return(
     <>
     <div className="container" id="outer-container">
+   <ExampleView />
         <nav className="nav" id="page-wrap">
           <a href="#bckg">Background</a>
           <a  href="#contact">Contact</a>
@@ -9,12 +13,14 @@ const SideNav = () => {
           <a  href="#awards">Awards & Distinctions</a>
           <a  href="#exhibitions">Exhibitions</a>
        </nav> 
+      
       </div>
       
       <style jsx>{`
         .container{
-          position:relative;
-          top:150px;
+          position: relative;
+          top: 50px;
+         
         }
         .nav{
           top: 0;
@@ -40,25 +46,3 @@ const SideNav = () => {
   )
 }
 export default SideNav;
-
-
-
-// import { makeStyles } from '@material-ui/core/styles';
-// const classes = useStyles();
-
-// const useStyles = makeStyles((theme) => ({
-//   nav:{
-//     top: 0,
-//     marginTop:5,
-//   },
-//   container:{
-//     position:'relative',
-//     top:'150px',
-//   },
-//   a:{
-//     textDecoration: 'none',
-//     fontSize: 20,
-//     color: 'white',
-//     display: 'block',
-//   }
-// }));

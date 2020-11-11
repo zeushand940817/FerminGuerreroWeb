@@ -626,7 +626,7 @@ const projects = [
   },
   {
     name: 'Thesaurus',
-    id: '22',
+    id: '23',
     type: "typeface",
     year: '2017',
     landing: '/CoverPhotos/Lading/Thesaurus.jpg',
@@ -668,7 +668,7 @@ const projects = [
   },
   {
     name: 'Tijuana Panthers',
-    id: '23',
+    id: '24',
     type: "graphic",
     year: '2014',
     landing: '/CoverPhotos/Lading/TijuanaPanthers.jpg',
@@ -686,7 +686,7 @@ const projects = [
   },
   {
     name: 'Time Out',
-    id: '24',
+    id: '25',
     type: "graphic",
     year: '2013',
     landing: '/CoverPhotos/Lading/TimeOut.jpg',
@@ -704,7 +704,7 @@ const projects = [
   },
   {
     name: 'Tomorrow',
-    id: '25',
+    id: '26',
     type: "graphic",
     year: '2013',
     landing: '/CoverPhotos/Lading/Tomorrow.jpg',
@@ -722,7 +722,7 @@ const projects = [
   },
   {
     name: 'Typography Heroes',
-    id: '26',
+    id: '27',
     type: "typeface",
     year: '2013',
     landing: '/CoverPhotos/Lading/TypographyH.jpg',
@@ -767,7 +767,7 @@ const projects = [
   },
   {
     name: 'Viga',
-    id: '27',
+    id: '28',
     type: "typeface",
     year: '2011',
     image: '/CoverPhotos/Galleries/Viga.jpg',
@@ -787,7 +787,7 @@ const projects = [
   },
   {
     name: 'Welftormat',
-    id: '28',
+    id: '29',
     type: "graphic",
     year: '2011',
     landing: '/CoverPhotos/Lading/Weltformat.jpg',
@@ -805,7 +805,7 @@ const projects = [
   },
   {
     name: 'Brick',
-    id: '28',
+    id: '30',
     type: "typeface",
     year: '2019',
     landing: '/CoverPhotos/Lading/BrickTypefamily.jpg',

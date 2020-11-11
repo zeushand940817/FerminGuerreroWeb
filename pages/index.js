@@ -1,31 +1,32 @@
 import fetch from 'isomorphic-unfetch';
-import AnimatedBg from "react-animated-bg";
+import { Component } from 'react'
+import landings from 'database/landings'
 
+const imagesPath = {
+  '1': landings[0].image,
+  '2': landings[1].image,
+  '3': landings[2].image,
+  '4': landings[3].image,
+}
 
-  
-export default function Home(){
-  const imagesList = [
-    'url("/CoverPhotos/Landing/DinMachine.jpg")',
-    'url("/CoverPhotos/Landing/Exentra.jpg")',
-    'url("/CoverPhotos/Landing/FeriaDelLibro.jpg")',
-    'url("/CoverPhotos/Landing/FGC.jpg")',
-    'url("/CoverPhotos/Lading/GenevaMotorShow.jpg")'
-  ];
-      return(
-        <>
-        <AnimatedBg   
-        colors={imagesList}
-        duration={2}
-        delay={false}
-        timingFunction="step-end"
-    >
-      <div className='image'>
-        
+class Home extends Component {
+  state = {
+    open: true
+  }
+  toggleImage = () => {
+    this.setState(state => ({ open: !state.open }))
+  }
+
+  getImageName = () => this.state.open ? '1' : '2' 
+
+  render() {
+    const imageName = this.getImageName();
+    return (
+      <>
+      <div>
+       <img style={{maxWidth: '100%', transition: 'transform 1s', transition: 'all .5s ease'}} src={imagesPath[imageName]} onMouseMove={this.toggleImage} /> 
       </div>
-    </AnimatedBg>
-
-        
-
+  
 
 <style jsx>{`
   .image{
@@ -37,7 +38,8 @@ export default function Home(){
       </>
     );
   }
-
+}
+export default Home;
 
 export async function getServerSideProps() {
   const { API_URL } = process.env
@@ -51,21 +53,3 @@ export async function getServerSideProps() {
     },
   }
 }
-
-
-{/* <img style={{maxWidth: '100%', scale: '5.1', transition: '6.1s'}} src={imagesPath[imageName]} onMouseMove={this.toggleImage} />  */}
-
-
-// <div className='images'> 
-    
-// {landings.map((landing, key) => {
-//     return(
-//     <div key={landing.id}>
-//     <img
-//       className='imagen' 
-//       src={landing.image}/>  
-//       </div>
-//         )
-//       })} 
-
-// </div>
