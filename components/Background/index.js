@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const Background = () => {
+export default function Background() {
   const classes = useStyles()
 
   return (
@@ -44,4 +44,4 @@ const Background = () => {
     </>
   )
 }
-export default Background;
+

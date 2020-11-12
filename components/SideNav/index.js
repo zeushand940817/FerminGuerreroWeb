@@ -1,11 +1,9 @@
-import ExampleView from 'components/ExampleView';
 
 
-const SideNav = () => {
+export default function SideNav() {
   return(
     <>
     <div className="container" id="outer-container">
-   <ExampleView />
         <nav className="nav" id="page-wrap">
           <a href="#bckg">Background</a>
           <a  href="#contact">Contact</a>
@@ -13,14 +11,13 @@ const SideNav = () => {
           <a  href="#awards">Awards & Distinctions</a>
           <a  href="#exhibitions">Exhibitions</a>
        </nav> 
-      
-      </div>
+    </div>
       
       <style jsx>{`
         .container{
-          position: relative;
+          position: fixed;
           top: 50px;
-         
+
         }
         .nav{
           top: 0;
@@ -45,4 +42,3 @@ const SideNav = () => {
       </>
   )
 }
-export default SideNav;

@@ -18,10 +18,10 @@ const useStyles = makeStyles((theme) => ({
 
 }))
 
-const Contact = () => {
+export default function Contact() {
   const classes = useStyles()
   return (
-    <section className={classes.container}>
+    <section>
       <Grid item lg={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={4} sm={0} />
@@ -101,4 +101,3 @@ const Contact = () => {
     </section>
   )
 }
-export default Contact;
