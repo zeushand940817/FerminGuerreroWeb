@@ -12,12 +12,9 @@ export default function SideNav() {
           <a  href="#exhibitions">Exhibitions</a>
        </nav> 
     </div>
-      
-      <style jsx>{`
+    <style jsx>{`
         .container{
-          position: fixed;
-          top: 50px;
-
+          
         }
         .nav{
           top: 0;
@@ -29,7 +26,6 @@ export default function SideNav() {
           color: white;
           display: block;
         }
-
         @media screen and (max-width: 667px) {
           .container{
           position:relative;
@@ -38,7 +34,6 @@ export default function SideNav() {
           }
         }
         `}</style>
-      
       </>
   )
 }

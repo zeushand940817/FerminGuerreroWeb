@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '3px 20px 5px 20px',
     fontSize:20,
     backgroundColor: 'black',
-    width:'100vw',
+    width:'100%',
   },
   link: {
     listStyle:'none',
