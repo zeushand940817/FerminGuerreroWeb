@@ -6,23 +6,25 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontSize:20,
     color:'white',
+    marginTop:50,
   }
+
 }))
 
-const Prensa = () => {
+export default function Prensa() {
   const classes = useStyles()
   return (
     <section className={classes.text}>
-      <Grid item xs={12} container>
+      <Grid item xs={12} id="research" container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={0} lg={2} sm={0} />
           <Grid item xs={3} lg={1} sm={3}>
-            <Box id="research" mb={10} mt={3}>
+            <Box>
               2020
             </Box>
           </Grid>
           <Grid item xs={9} lg={3} sm={6}>
-            <Box mt={3} mb={10}>
+            <Box>
               Brick; A New Font Brewing. Published at Medium.
             </Box>
           </Grid>
@@ -31,7 +33,7 @@ const Prensa = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={0} lg={2} sm={0} />
           <Grid item xs={3} lg={1} sm={3}>
             <Box id="research" mb={10}>
               2017
@@ -46,7 +48,7 @@ const Prensa = () => {
 
         <Grid item xs={12} container>
           <Grid container direction="row">
-            <Grid item xs={0} lg={4} sm={0} />
+            <Grid item xs={0} lg={2} sm={0} />
             <Grid item xs={3} lg={1} sm={3}>
               <Box mb={10}>2015</Box>
             </Grid>
@@ -62,7 +64,7 @@ const Prensa = () => {
 
         <Grid item xs={12} container>
           <Grid container direction="row">
-            <Grid item xs={0} lg={4} sm={0} />
+            <Grid item xs={0} lg={2} sm={0} />
             <Grid item xs={3} lg={1} sm={3} />
             <Grid item xs={9} lg={3} sm={6}>
               <Box mb={10}>
@@ -75,7 +77,7 @@ const Prensa = () => {
 
         <Grid item xs={12} container>
           <Grid container direction="row">
-            <Grid item xs={0} lg={4} sm={0} />
+            <Grid item xs={0} lg={2} sm={0} />
             <Grid item xs={3} lg={1} sm={3}>
               <Box mb={10}>2014</Box>
             </Grid>
@@ -90,4 +92,3 @@ const Prensa = () => {
     </section>
   )
 }
-export default Prensa;

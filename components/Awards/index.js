@@ -7,7 +7,9 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontSize:20,
     color:'white',
+    marginTop: 50,
   }
+
 }))
 
 const Awards = () => {
@@ -16,7 +18,7 @@ const Awards = () => {
     <section className={classes.text} id="awards">
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1}>
             <Box>2019</Box>
           </Grid>
@@ -35,7 +37,7 @@ const Awards = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1}>
             <Box>2018</Box>
           </Grid>
@@ -54,7 +56,7 @@ const Awards = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={3}>
             <Box mb={5} pr={2}>
@@ -71,7 +73,7 @@ const Awards = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={3}>
             <Box mb={5} pr={2}>
@@ -89,7 +91,7 @@ const Awards = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1}>
             <Box>2019</Box>
           </Grid>
@@ -109,7 +111,7 @@ const Awards = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1}>
             <Box>2018</Box>
           </Grid>
@@ -128,7 +130,7 @@ const Awards = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1}>
             <Box>2015</Box>
           </Grid>
@@ -147,12 +149,12 @@ const Awards = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1}>
             <Box>2014</Box>
           </Grid>
           <Grid item xs={6} lg={3}>
-            <Box mb={5}>
+            <Box>
               Rolex's Foundation (Hans Wilsdorf) awarded me their schoolarship
               for my BA graduate project.
             </Box>
@@ -164,7 +166,7 @@ const Awards = () => {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} />
+          <Grid item xs={0} lg={2} />
           <Grid item xs={3} lg={1}>
             <Box>2014</Box>
           </Grid>

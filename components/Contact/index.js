@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     color: 'white',
   },
+  li:{
+    listStyle: 'none',
+  },
   text: {
     fontSize:20,
     color:'white',
@@ -24,7 +27,7 @@ export default function Contact() {
     <section>
       <Grid item lg={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={0} lg={2} sm={0} />
           <Grid item xs={3} lg={1} sm={3}>
             <Box className={classes.text} id="contact" mt={3} sm={1}>
               Email
@@ -41,17 +44,17 @@ export default function Contact() {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={0} lg={2} sm={0} />
           <Grid item xs={3} lg={1} sm={3} />
           <Grid item xs={9} lg={2} sm={1}>
-            <Box  className={classes.text}>Dubai, UAE.</Box>
+            <Box className={classes.text}>Dubai, UAE.</Box>
           </Grid>
         </Grid>
       </Grid>
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={0} lg={2} sm={0} />
           <Grid item xs={3} lg={1} sm={3} />
           <Grid item xs={9} lg={2} sm={1}>
             <Box  className={classes.text}  mb={5}>Clock 17:35pm.</Box>
@@ -61,7 +64,7 @@ export default function Contact() {
 
       <Grid item xs={12} container>
         <Grid container direction="row">
-          <Grid item xs={0} lg={4} sm={0} />
+          <Grid item xs={0} lg={2} sm={0} />
           <Grid item xs={3} lg={1} sm={3}>
             <Box  className={classes.text}  mb={10}>Follow</Box>
           </Grid>

@@ -14,11 +14,10 @@ export default function Background() {
   return (
     <>
       <Grid container direction="column">
-        <Grid item lg={12} container>
-          <Grid item lg={3} sm={0}/> 
-          <Grid item lg={1} sm={0} />
-          <Grid item lg={6} sm={12}>
-            <Box className={classes.background} id="bckg" mb={6}>
+        <Grid item className={classes.background} id="bckg"  lg={12} container>
+          <Grid item lg={2} sm={0}/> 
+          <Grid item lg={7} sm={12}>
+            <Box>
               Fermin Guerrero's visual communication practice focusing on
               Graphic and Typeface Design. In 2010, after he finished his
               bachelor in Industrial Design at Escuela Universitaria Centro de
@@ -38,6 +37,7 @@ export default function Background() {
               Graphic Designer.
             </Box>
           </Grid>
+          <Grid item lg={2} sm={2} />
           <Grid item lg={2} sm={2} />
         </Grid>
       </Grid>
