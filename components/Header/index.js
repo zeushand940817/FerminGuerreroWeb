@@ -1,4 +1,3 @@
-import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import withWidth from '@material-ui/core/withWidth';
@@ -26,9 +25,8 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Header = (props) => {
-  const router = useRouter()
-  console.log(router, 'SOY EL ROUTER')
-  const classes = useStyles()
+  const router = useRouter();
+  const classes = useStyles();
   const { width } = props
 
   return (

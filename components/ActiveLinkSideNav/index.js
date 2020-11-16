@@ -1,10 +1,9 @@
 import { useRouter } from 'next/router'
 
-function ActiveLinkSideNav({ children, href }) {
+function ActiveLink({ children, href }) {
   const router = useRouter()
   const style = {
-    marginRight: 10,
-    color: router.pathname === href ? 'blue' : 'yellow',
+    backgroundColor: router.pathname === href ? 'orange' : 'blue',
   }
 
   const handleClick = (e) => {
@@ -19,4 +18,4 @@ function ActiveLinkSideNav({ children, href }) {
   )
 }
 
-export default ActiveLinkSideNav;
+export default ActiveLink;

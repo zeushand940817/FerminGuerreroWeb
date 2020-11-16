@@ -14,9 +14,7 @@ export default function NewMobileMenu() {
     return (
       <>
       <section>
-     
-      <div className="burgerMainContainer"onClick={handleClick}>
-  
+      <div className="burgerMainContainer" onClick={handleClick}>
         <div className="iconBurgerMenu">
         {open !== true ? 
           <HiOutlineMenuAlt4 size={32} /> 
@@ -31,41 +29,37 @@ export default function NewMobileMenu() {
            :
             "linksBurgerMenuContainer"}
         >
-          <li className="linksBurgerMenu">
+          <li>
             <Link 
               href="/"  
               as="/" 
-              className="navMenuLinksBurger" 
               onClick={() => this.handleClick()}>
                 <a>Fermin Guerrero</a>
             </Link>
           </li>
 
-          <li className="linksBurgerMenu">
+          <li>
             <Link 
               href="/graphicDesign" 
               as="/graphicDesign" 
-              className="navMenuLinksBurger" 
               onClick={() => this.handleClick()}>
                 <a>Graphic Design</a>
             </Link>
           </li>
 
-          <li className="linksBurgerMenu">
+          <li>
             <Link 
               href="/typefaceDesign" 
               as="/typefaceDesign" 
-              className="navMenuLinksBurger" 
               onClick={() => this.handleClick()}>
                 <a>Typeface Design</a>
             </Link>
           </li>
 
-          <li className="linksBurgerMenu">
+          <li>
             <Link 
               href="/about" 
               as="/about" 
-              className="navMenuLinksBurger" 
               onClick={() =>this.handleClick()}>
                 <a>About</a>
             </Link>
@@ -74,27 +68,27 @@ export default function NewMobileMenu() {
       </div>
       </section>
 
-      <style jsx>{`
-        section{
-          width:100%;
-        }
+  <style jsx>{`
+    section{
+      width:100%;
+    }
        
-      .burgerMainContainer {
-        background-color: black;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        width: 100%;
-        padding: 0;
-        position: relative;
-      }
+    .burgerMainContainer {
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+      padding: 0;
+      position: relative;
+    }
 
-      .iconBurgerMenu {
-        position: relative;
-        cursor: pointer;
-      }
+    .iconBurgerMenu {
+      position: relative;
+      cursor: pointer;
+    }
  
-   .linksBurgerMenuContainer {
+    .linksBurgerMenuContainer {
       position: absolute;
       width: 100vw;
       height:40vh;
@@ -109,19 +103,13 @@ export default function NewMobileMenu() {
       font-size:20px;
       color:white;
     }
-    .linksBurgerMenu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+    a{
+      display:inline-block;
+      list-style: none;
+      color: white;
     }
 
-      a{
-        display:inline-block;
-        list-style: none;
-        color: white;
-      }
-
-  .linksBurgerMenuContainerInactive {
+   .linksBurgerMenuContainerInactive {
     z-index: 1000;
     position: absolute;
     left: -800px;
@@ -134,29 +122,8 @@ export default function NewMobileMenu() {
     list-style: none;
     justify-content: space-around;
     }
-    .linksBurgerMenu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-      .navMenuLinksBurger {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 26px;
-        margin-bottom: 10px;
-      }
-      .activeLinkBurger {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 26px;
-        margin-bottom: 10px;
-      }
-
-        `}</style>
+    
+`}</style>
       </>
     )
   }
-
-

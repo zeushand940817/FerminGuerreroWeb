@@ -11,16 +11,16 @@ export default function About() {
   <div className='mainWrapper'>
     <img className='image' src="/aboutmepicture.jpg" />
   <div className="container">
-  <div className="body">
-    <div className="sidebar">
-      <SideNav />
-    </div>
-    <div className="content">
-      <Background />
-      <Contact />
-      <Awards />
-      <Prensa />
-    </div>
+    <div className="wrap">
+      <div className="sidebar">
+        <SideNav />
+      </div>
+      <div className="content">
+        <Background />
+        <Contact />
+        <Awards />
+        <Prensa />
+      </div>
   </div>
 </div>
 </div>
@@ -31,6 +31,7 @@ export default function About() {
     overflow:hidden;
     padding: 0px 20px 5px 20px;
     font-size:20px;
+    
     }
 
     .container {
@@ -38,13 +39,12 @@ export default function About() {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr;
+      margin-top:50px;
     }
-
     .image{
       width:100%;
     }
-
-    .body {
+    .wrap {
       display: grid;
       grid-template-columns: 1fr 5fr;
       overflow: hidden;
@@ -54,6 +54,18 @@ export default function About() {
       overflow-y: scroll;
       scroll-behavior: smooth;
     }
+
+    @media screen and (max-width: 667px) {
+      .wrap{
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar{
+        margin-bottom:40px;
+      }
+    }
+
+    @media screen and (max-width: 667px) {}
     
       `}</style>
     </>

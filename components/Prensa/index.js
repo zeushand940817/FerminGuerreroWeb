@@ -6,27 +6,28 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontSize:20,
     color:'white',
+  },
+  wrapper: {
+    fontSize:20,
+  },
+  box: {
     marginTop:50,
   }
-
 }))
 
 export default function Prensa() {
-  const classes = useStyles()
+  const classes = useStyles();
+  
   return (
-    <section className={classes.text}>
+    <section className={classes.wrapper}>
       <Grid item xs={12} id="research" container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} sm={0} />
           <Grid item xs={3} lg={1} sm={3}>
-            <Box>
-              2020
-            </Box>
+            <Box className={classes.box}> 2020 </Box>
           </Grid>
-          <Grid item xs={9} lg={3} sm={6}>
-            <Box>
-              Brick; A New Font Brewing. Published at Medium.
-            </Box>
+          <Grid item xs={9} lg={4} sm={6}>
+            <Box mb={5} className={classes.box}> Brick; A New Font Brewing. Published at Medium. </Box>
           </Grid>
         </Grid>
       </Grid>
@@ -35,14 +36,10 @@ export default function Prensa() {
         <Grid container direction="row">
           <Grid item xs={0} lg={2} sm={0} />
           <Grid item xs={3} lg={1} sm={3}>
-            <Box id="research" mb={10}>
-              2017
-            </Box>
+            <Box id="research" mb={10}> 2017 </Box>
           </Grid>
-          <Grid item xs={9} lg={3} sm={6}>
-            <Box mb={10}>
-              Thesaurus’s development. Published at I Love Typography
-            </Box>
+          <Grid item xs={9} lg={4} sm={6}>
+            <Box mb={5}> Thesaurus’s development. Published at I Love Typography </Box>
           </Grid>
         </Grid>
 
@@ -52,12 +49,10 @@ export default function Prensa() {
             <Grid item xs={3} lg={1} sm={3}>
               <Box mb={10}>2015</Box>
             </Grid>
-            <Grid item xs={9} lg={3} sm={6}>
-              <Box mb={10}>
-                A study of the development of monograms: from Ancient Greek
+            <Grid item xs={9} lg={4} sm={6}>
+              <Box mb={5}> A study of the development of monograms: from Ancient Greek
                 coins to contemporary logos. MATD’s dissertation. Published in
-                Academia.
-              </Box>
+                Academia.</Box>
             </Grid>
           </Grid>
         </Grid>
@@ -66,9 +61,8 @@ export default function Prensa() {
           <Grid container direction="row">
             <Grid item xs={0} lg={2} sm={0} />
             <Grid item xs={3} lg={1} sm={3} />
-            <Grid item xs={9} lg={3} sm={6}>
-              <Box mb={10}>
-                An inside look at the creation process of Exentra. MATD’s R.O.P.
+            <Grid item xs={9} lg={4} sm={6}>
+              <Box mb={5}> An inside look at the creation process of Exentra. MATD’s R.O.P.
                 (reflection on practice).
               </Box>
             </Grid>
@@ -79,12 +73,10 @@ export default function Prensa() {
           <Grid container direction="row">
             <Grid item xs={0} lg={2} sm={0} />
             <Grid item xs={3} lg={1} sm={3}>
-              <Box mb={10}>2014</Box>
+              <Box mb={10}> 2014 </Box>
             </Grid>
-            <Grid item xs={6} lg={3} sm={6}>
-              <Box mb={10}>
-                If Geneva was a typeface. Bachelor thesis at HEAD.
-              </Box>
+            <Grid item xs={6} lg={4} sm={6}>
+              <Box mb={30}> If Geneva was a typeface. Bachelor thesis at HEAD. </Box>
             </Grid>
           </Grid>
         </Grid>

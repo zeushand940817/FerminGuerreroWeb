@@ -19,4 +19,4 @@ function ActiveLink({ children, href }) {
   )
 }
 
-export default ActiveLink
+export default ActiveLink;

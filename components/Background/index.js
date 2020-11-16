@@ -3,21 +3,24 @@ import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-  background: {
+  wrapper: {
     fontSize:20,
   },
+  box: {
+    marginTop:50,
+  }
 }))
 
 export default function Background() {
   const classes = useStyles()
 
   return (
-    <>
+    <section className={classes.wrapper}>
       <Grid container direction="column">
-        <Grid item className={classes.background} id="bckg"  lg={12} container>
-          <Grid item lg={2} sm={0}/> 
+        <Grid item id="background"  lg={12} container>
+          <Grid item  lg={2} sm={0}/> 
           <Grid item lg={7} sm={12}>
-            <Box>
+            <Box mb={15} className={classes.box}>
               Fermin Guerrero's visual communication practice focusing on
               Graphic and Typeface Design. In 2010, after he finished his
               bachelor in Industrial Design at Escuela Universitaria Centro de
@@ -41,7 +44,8 @@ export default function Background() {
           <Grid item lg={2} sm={2} />
         </Grid>
       </Grid>
-    </>
+      </section>
+
   )
 }
 
