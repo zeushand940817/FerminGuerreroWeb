@@ -1,7 +1,8 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Grid from '@material-ui/core/Grid'
-import Box from '@material-ui/core/Box'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
@@ -13,8 +14,9 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-export default function Awards() {
+export default function Awards({data}) {
   const classes = useStyles()
+  
 
   return (
     <section className={classes.wrapper} id="awards">
@@ -34,6 +36,7 @@ export default function Awards() {
           <Grid item xs={3} lg={2}>
             <Box className={classes.box}>Gold</Box>
           </Grid>
+  
         </Grid>
       </Grid>
 
@@ -182,4 +185,3 @@ export default function Awards() {
     </section>
   )
 }
-

@@ -37,10 +37,7 @@ const Header = (props) => {
             <li className={classes.link}>
             <Link href="/" 
              as="/" 
-             activeClassName="active"
-             >
-              <a>Fermin Guerrero</a>
-            </Link>
+             activeClassName="active">Fermin Guerrero</Link>
             </li>
           </Grid>
           <Grid item xs={3} md={2} lg={2}>
@@ -48,10 +45,7 @@ const Header = (props) => {
             <Link 
             href="/graphicDesign" 
             as="/graphicDesign" 
-            activeClassName="active"
-            >  
-              <a>Graphic Design</a>
-            </Link>
+            activeClassName="active">Graphic Design</Link>
               </li>
           </Grid>
           <Grid item xs={2} md={2} lg={1}>
@@ -59,10 +53,7 @@ const Header = (props) => {
            <Link 
            href="/all" 
            as="/all" 
-           activeClassName="active"
-           >
-            <a>&</a>
-           </Link>
+           activeClassName="active">&</Link>
            </li>
           </Grid>
 
@@ -71,10 +62,7 @@ const Header = (props) => {
             <Link 
             href="/typefaceDesign" 
             as="/typefaceDesign" 
-            activeClassName="active"
-            >
-              <a>Typeface Desgin</a>
-            </Link>
+            activeClassName="active">Typeface Desgin</Link>
             </li>
           </Grid>
 
@@ -83,10 +71,7 @@ const Header = (props) => {
             <Link 
             href="/about" 
             as="/about" 
-            activeClassName="active"
-            >
-              <a>About</a>
-            </Link>
+            activeClassName="active">About</Link>
             </li>
           </Grid>
         </Grid>

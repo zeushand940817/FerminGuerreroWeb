@@ -1,30 +1,15 @@
-import {  AiOutlineLinkedin, 
-          AiOutlineInstagram, 
-          AiOutlineFile, 
-          AiOutlineTwitter,
-          AiOutlineMail
-        } from 'react-icons/ai';
-
-
 export default function Footer() {
   return(
     <>
     <footer>
-      <div>
+      <div className='footermove'>
         Copyright © . All rights reserved.
-        </div>
-      
-      <div>
-        <AiOutlineMail size={22} color='white'/>
-        <AiOutlineLinkedin size={22} color='white'/>
-        <AiOutlineInstagram size={22} color='white'/>
-        <AiOutlineFile size={22} color='white'/>
-        <AiOutlineTwitter size={22} color='white'/>
       </div>
+
     </footer>
     
     <style jsx>{`
-      footer{
+    footer{
         width:100%;
         height:50px;
         background-color:black;
@@ -35,6 +20,22 @@ export default function Footer() {
         display:flex;
         justify-content:space-between;
         text-align:center;
+      }
+
+      .footermove{
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        animation: moveSlideshow 10s linear infinite;
+      }
+      @keyframes moveSlideshow {
+        100% { 
+          transform: translateX(-66.6666%);  
+        }
+    } 
+      @keyframes move-left {
+        to {
+          transform: translateX(-100%);
+        }
       }
 
       `}</style>
