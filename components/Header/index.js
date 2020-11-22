@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
   },
   a: {
     textDecoration: 'none',
+    fontSize:20,
+    ouline:'none',
   }
  
 }))
@@ -33,21 +35,21 @@ const Header = (props) => {
         <Grid item xs={12} container>
           <Grid item xs={3} md={2} lg={4}>
             <li className={classes.link}>
-            <Link href="/" as="/" activeClassName="active">
+            <Link href="/" as="/" activeClassName="active" passHref>
               Fermin Guerrero
             </Link>
             </li>
           </Grid>
           <Grid item xs={3} md={2} lg={2}>
             <li className={classes.link}>
-            <Link href="/graphicDesign" as="/graphicDesign" activeClassName="active">
+            <Link href="/graphicDesign" as="/graphicDesign" activeClassName="active" passHref>
               Graphic Design
             </Link>
             </li>
           </Grid>
           <Grid item xs={2} md={2} lg={1}>
             <li className={classes.link}>
-            <Link href="/all" as="/all" activeClassName="active">
+            <Link href="/all" as="/all" activeClassName="active" passHref>
               &
             </Link>
            </li>
@@ -55,7 +57,7 @@ const Header = (props) => {
 
           <Grid item xs={3} md={2} lg={4}>
             <li className={classes.link}>
-            <Link href="/typefaceDesign" as="/typefaceDesign" activeClassName="active">
+            <Link href="/typefaceDesign" as="/typefaceDesign" activeClassName="active" passHref>
               Typeface Desgin
             </Link>
             </li>
@@ -63,7 +65,7 @@ const Header = (props) => {
 
           <Grid className={classes.about} item xs={1} lg={1} md={2}>
             <li className={classes.link}>
-            <Link href="/about" as="/about" activeClassName="active">
+            <Link href="/about" as="/about" activeClassName="active" passHref>
               About
             </Link>
             </li>
