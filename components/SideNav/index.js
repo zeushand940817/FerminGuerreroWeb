@@ -1,37 +1,52 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-
+import { useRouter } from 'next/router'
 
 export default function SideNav() {
-//console.log(Router.asPath)
- const router = Router.asPath 
+const router = useRouter();
 
   return(
     <>
     <div className="container" id="outer-container">
         <nav className="navbar" id="page-wrap">
-        <Link href="/about#background" as="/about#background">
-          <a className={router === "/about#background" ? "active" : ""}>
+        <Link 
+          href="/about#background" 
+          as="/about#background" 
+          >
+          <a className={router.asPath === "/about#background" ? "active" : ""}>
             Background
           </a>
+
         </Link>
-        <Link href="/about#contact" as="/about#contact">
-          <a className={router === "/about#contact" ? "active" : ""}>
+        <Link 
+          href="/about#contact" 
+          as="/about#contact"
+          >
+          <a className={router.asPath === "/about#contact" ? "active" : ""}>
             Contact
           </a>
         </Link>
-        <Link href="/about#awards" as="/about#awards">
-          <a className={router === "/about#awards" ? "active" : ""}>
+        <Link 
+          href="/about#awards" 
+          as="/about#awards"
+          >
+          <a className={router.asPath === "/about#awards" ? "active" : ""}>
             Awards & Distinctions
           </a>
         </Link>
-        <Link href="/about#research" as="/about#research">
-          <a className={router === "/about#research" ? "active" : ""}>
+        <Link 
+          href="/about#research" 
+          as="/about#research"
+          >
+          <a className={router.asPath === "/about#research" ? "active" : ""}>
             Research & Articles
           </a>
         </Link>
-        <Link href="/about#exhibitions" as="/about#exhibitions">
+        <Link 
+          href="/about#exhibitions" 
+          as="/about#exhibitions"
+          >
           <a>Exhibitions</a>
         </Link>
        </nav>
