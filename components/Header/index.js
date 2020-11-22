@@ -1,8 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import withWidth from '@material-ui/core/withWidth';
-import PropTypes from 'prop-types';
-import { useRouter } from 'next/router';
 import Link from '../ActiveLink';
 
 
@@ -21,13 +18,14 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     color:'#EF6800'
   },
+  a: {
+    textDecoration: 'none',
+  }
  
 }))
 
 const Header = (props) => {
-  const router = useRouter();
   const classes = useStyles();
-  const { width } = props
 
   return (
     <div className={classes.root}>
@@ -35,43 +33,39 @@ const Header = (props) => {
         <Grid item xs={12} container>
           <Grid item xs={3} md={2} lg={4}>
             <li className={classes.link}>
-            <Link href="/" 
-             as="/" 
-             activeClassName="active">Fermin Guerrero</Link>
+            <Link href="/" as="/" activeClassName="active">
+              Fermin Guerrero
+            </Link>
             </li>
           </Grid>
           <Grid item xs={3} md={2} lg={2}>
             <li className={classes.link}>
-            <Link 
-            href="/graphicDesign" 
-            as="/graphicDesign" 
-            activeClassName="active">Graphic Design</Link>
-              </li>
+            <Link href="/graphicDesign" as="/graphicDesign" activeClassName="active">
+              Graphic Design
+            </Link>
+            </li>
           </Grid>
           <Grid item xs={2} md={2} lg={1}>
             <li className={classes.link}>
-           <Link 
-           href="/all" 
-           as="/all" 
-           activeClassName="active">&</Link>
+            <Link href="/all" as="/all" activeClassName="active">
+              &
+            </Link>
            </li>
           </Grid>
 
           <Grid item xs={3} md={2} lg={4}>
             <li className={classes.link}>
-            <Link 
-            href="/typefaceDesign" 
-            as="/typefaceDesign" 
-            activeClassName="active">Typeface Desgin</Link>
+            <Link href="/typefaceDesign" as="/typefaceDesign" activeClassName="active">
+              Typeface Desgin
+            </Link>
             </li>
           </Grid>
 
           <Grid className={classes.about} item xs={1} lg={1} md={2}>
             <li className={classes.link}>
-            <Link 
-            href="/about" 
-            as="/about" 
-            activeClassName="active">About</Link>
+            <Link href="/about" as="/about" activeClassName="active">
+              About
+            </Link>
             </li>
           </Grid>
         </Grid>
@@ -80,8 +74,4 @@ const Header = (props) => {
   )
 }
 
-Header.propTypes = {
-  width: PropTypes.oneOf(['lg', 'md', 'sm', 'xl', 'xs']).isRequired,
-}
-
-export default withWidth()(Header)
+export default Header;

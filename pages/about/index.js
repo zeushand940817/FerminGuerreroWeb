@@ -1,19 +1,16 @@
 import Background from 'components/Background';
 import SideNav from 'components/SideNav';
 import Awards from 'components/Awards';
-import Prensa from 'components/Prensa';
 import Contact from 'components/Contact';
 
-import { useState } from 'react';
 import fetch from 'isomorphic-unfetch';
-import Item from '@components/PressShow/Item';
-import Media from 'components/PressShow/Media';
+import Item from '@components/Press/Item';
+
 
 
 
 export default function About({ data }) {
   const articles = data
-  const [activeIndex, setActiveIndex ] = useState(-1);
 
   return(
   <>
@@ -28,50 +25,33 @@ export default function About({ data }) {
         <Background />
         <Contact />
         <Awards />
-        {/* <Prensa /> */}
+        
 
-     
-      <div className='pageWrapper'>
-
-      <div className='projectList'>
-
-     
-      {articles.map(({title, id, description, year}, index) => 
-        <div key={id}>
-          <Item 
-            description={description} 
-            year={year} 
-            title={title} 
-            setActiveIndex={setActiveIndex} 
-            index={index}/>
+      <div className='boxPress'>
+        <div className="pageWrapper">
+        <div className="projectList">
+          {articles.map(({ title, id, description, year }, index) => (
+            <div key={id}>
+              <Item
+                description={description}
+                year={year}
+                title={title}
+                index={index}
+                articles={articles}
+              />
+            </div>
+          ))}
         </div>
-      )}
-    
-      </div>
-
-      <div className='projectMedia'>
-     
-        {articles.map(({image, id}, index) => {
-          const isActive = index === activeIndex; 
-        return (
-        <div key={id}>
-          <Media image={image} active={isActive} />
         </div>
-        )})}
-      
-      </div>  
     </div>
   </div>
   </div>
 </div>
 
-
-
-   
 </div>
 
     <style jsx>{`
-  
+
     .mainWrapper {
     overflow:hidden;
     padding: 0px 20px 5px 20px;
@@ -110,10 +90,9 @@ export default function About({ data }) {
       }
     }
 
-    .pageWrapper{
-      display:flex;
+    .boxPress{
+      margin-bottom:200px;
     }
-   
 
       `}</style>
     </>

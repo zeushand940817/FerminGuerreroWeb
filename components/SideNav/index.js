@@ -1,9 +1,15 @@
+import { useRouter } from 'next/router';
+import Link from '../ActiveLink';
+
+
 export default function SideNav() { 
   return(
     <>
     <div className="container" id="outer-container">
         <nav className="navbar" id="page-wrap">
-          <a href="#background">Background</a>    
+        <Link href="#background" as="#background" activeClassName="active">
+          <a>Background</a> 
+        </Link>
           <a href="#contact">Contact</a>
           <a href="#awards">Awards & Distinctions</a>
           <a href="#research">Research & Articles</a>
@@ -19,17 +25,6 @@ export default function SideNav() {
           font-size: 20px;
           color: white;
           display: block;
-        }
-        .active{
-          color:orange;
-        }
-
-        .red{
-          color:red;
-        }
-
-        .lightblue{
-          color:blue;
         }
         `}</style>
       </>
