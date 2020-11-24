@@ -28,6 +28,7 @@ const scrollTo = ele => {
 
 export default function About({data}){
   const articles = data
+
   const [visibleSection, setVisibleSection] = useState();
 
   const sidenavRef = useRef(null);
@@ -120,17 +121,21 @@ export default function About({data}){
     <div className='boxPress'>
       <div className="pageWrapper">
         <div className="projectList">
-          {articles.map(({ title, id, description, year }, index) => (
+        
+          {articles.map(({ url, id, description, year }, index) => (
+            <a className='linkArticle' href={url} target="_blank">
             <div key={id}>
               <Item
+                href={url} 
                 description={description}
                 year={year}
-                title={title}
                 index={index}
                 articles={articles}
               />
             </div>
+            </a>
           ))}
+          
          </div>
          </div>
          </div>
@@ -175,11 +180,11 @@ export default function About({data}){
   }
 
   .header {
-  width:auto;
   background-color:transparent;
   display: flex;
   flex-direction:column;
   margin-top: 50px;
+  width: 400px;
   }
 
   .header_link {
@@ -191,22 +196,25 @@ export default function About({data}){
   border: none;
   cursor: pointer;
   outline: none;
-  
   }
 
-.selected {
+  .selected {
   font-style:italic;
-  color: yellow;
-}
+  color: gray;
+  }
 
-.section {
+  .section {
   background:transparent;
   height: auto;
-}
+  }
 
-#background {
+  .linkArticle{
+    outline:none;
+  }
+
+  #background {
   margin-top:-150px;
-}
+  }
 
       `}</style>
 

@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
+import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
@@ -17,14 +18,14 @@ const useStyles = makeStyles((theme) => ({
 
 }))
 
-export default function ({ title, description, year, index, articles }) {
+export default function ({ url, description, year, index, articles }) {
   const classes = useStyles();
   const [activeIndex, setActiveIndex] = useState(-1);
 
   return (   
     <>
     <section className={classes.wrapper} id="research">
-    <Grid item xs={12} container>
+    <Grid item xs={12} container >
         <Grid container direction="row"
          onMouseEnter={() => setActiveIndex(index)}
          onMouseLeave={() => setActiveIndex(-1)}>
