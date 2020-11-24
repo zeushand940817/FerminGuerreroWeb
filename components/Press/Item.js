@@ -29,6 +29,7 @@ export default function ({ title, description, year, index, articles }) {
          onMouseEnter={() => setActiveIndex(index)}
          onMouseLeave={() => setActiveIndex(-1)}>
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1} className={classes.box}>
             <Box>{year}</Box>
           </Grid>

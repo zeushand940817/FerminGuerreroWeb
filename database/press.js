@@ -17,7 +17,7 @@ const press = [
     title: 'Monograms',
     id: '3',
     image: '/Articles/Monograms.png',
-    description: 'Monograms: A study of the development of monograms: from Ancient Greek coins to contemporary logos. MATD’s dissertation. Published in Academia.',
+    description: 'A study of the development of monograms: from Ancient Greek coins to contemporary logos. MATD’s dissertation. Published in Academia.',
     year:'2020'
   },
   {

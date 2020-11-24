@@ -33,6 +33,7 @@ export default function Contact() {
       <Grid item lg={12}container>
         <Grid container  direction="row">
           <Grid item xs={0} lg={2} sm={0} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1} sm={3}>
             <Box className={classes.box} sm={1}>
               Email
@@ -50,6 +51,7 @@ export default function Contact() {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} sm={0} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1} sm={3} />
           <Grid item xs={9} lg={2} sm={1}>
             <Box className={classes.text} mt={2}>Dubai, UAE.</Box>
@@ -60,6 +62,7 @@ export default function Contact() {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} sm={0} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1} sm={3} />
           <Grid item xs={9} lg={2} sm={1}>
             <Box  className={classes.text}  mb={4}>Local time 17:35pm.</Box>
@@ -70,6 +73,7 @@ export default function Contact() {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} sm={0} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1} sm={3}>
             <Box  className={classes.text}>Follow</Box>
           </Grid>

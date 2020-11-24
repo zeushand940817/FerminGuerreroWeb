@@ -23,6 +23,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1}>
             <Box className={classes.box}>2019</Box>
           </Grid>
@@ -43,6 +44,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1}>
             <Box>2018</Box>
           </Grid>
@@ -62,6 +64,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={4}>
             <Box mb={4}>
@@ -79,6 +82,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={4}>
             <Box mb={4}>
@@ -97,6 +101,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1}>
             <Box>2019</Box>
           </Grid>
@@ -117,6 +122,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1}>
             <Box>2018</Box>
           </Grid>
@@ -136,6 +142,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1}>
             <Box>2015</Box>
           </Grid>
@@ -155,6 +162,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1}>
             <Box>2014</Box>
           </Grid>
@@ -172,6 +180,7 @@ export default function Awards({data}) {
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
+          <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1}>
             <Box>2014</Box>
           </Grid>

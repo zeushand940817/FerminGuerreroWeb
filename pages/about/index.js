@@ -7,8 +7,6 @@ import fetch from 'isomorphic-unfetch';
 import Item from '@components/Press/Item';
 
 
-
-
 export default function About({ data }) {
   const articles = data
 
@@ -44,6 +42,8 @@ export default function About({ data }) {
         </div>
         </div>
     </div>
+ 
+
   </div>
   </div>
 </div>
@@ -56,7 +56,6 @@ export default function About({ data }) {
     overflow:hidden;
     padding: 0px 20px 5px 20px;
     font-size:20px;
-    
     }
 
     .container {
