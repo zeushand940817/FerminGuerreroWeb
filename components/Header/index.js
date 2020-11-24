@@ -9,13 +9,12 @@ const useStyles = makeStyles((theme) => ({
     height: '40px',
     alignItems: 'center',
     padding: '3px 20px 5px 20px',
-    fontSize:20,
+    fontSize:'20px',
     backgroundColor: 'black',
     width:'100%',
   },
   a: {
     textDecoration: 'none',
-    fontSize:20,
     ouline:'none',
   }
  
