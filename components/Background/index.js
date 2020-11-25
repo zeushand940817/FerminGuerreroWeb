@@ -2,12 +2,24 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 
+
+
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize:20,
+    ['@media (max-width:677px)']: {
+      fontSize:16,
+    },
+    ['@media (max-width:1024px)']: {
+      fontSize:20,
+    },
   },
   box: {
     marginTop:50,
+    ['@media (max-width:677px)']: {
+      marginTop:10,
+      marginBottom:20,
+    }
   }
 }))
 
@@ -19,9 +31,9 @@ export default function Background() {
       <Grid container direction="column">
         <Grid item id="background" lg={12} container>
           <Grid item  lg={2} sm={0}/> 
-          <Grid item  lg={2} sm={0}/> 
+          <Grid item  lg={2} sm={1}/>          
           <Grid item lg={7} sm={12}>
-           <Box mb={15} className={classes.box}>
+           <Box className={classes.box}>
               Fermin Guerrero's visual communication practice focusing on
               Graphic and Typeface Design. In 2010, after he finished his
               bachelor in Industrial Design at Escuela Universitaria Centro de

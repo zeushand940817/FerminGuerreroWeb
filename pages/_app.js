@@ -2,10 +2,17 @@ import '../styles/globals.css';
 import Header from 'components/Header';
 import MobileMenu from 'components/MobileMenu';
 import Footer from 'components/Footer';
+import Head from 'next/head';
+
 
 function MyApp({ Component, pageProps }) {
   return (
   <>
+  <Head>
+  <title>Fermin G</title>
+    <link rel="icon"  href="/ferIcon.gif" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  </Head>
   <div className='desktop'>
     <Header />
   </div>
@@ -13,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     <MobileMenu />
   </div>
     <Component {...pageProps} />
-    <Footer/> 
+    {/* <Footer/>  */}
 
   <style jsx>{`
   .desktop{
@@ -28,6 +35,15 @@ function MyApp({ Component, pageProps }) {
     }
     .mobile{
       display:block;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .desktop{
+      display:block;
+    }
+    .mobile{
+      display:none;
     }
   }
 

@@ -6,14 +6,21 @@ export default function ({ image }) {
       </div>
       <style jsx>{`
         img {
-          width: 200px;
+          width: 250px;
           object-fit: contain;
           cursor: pointer;
           pointer-events: none;
+          padding-left:10px;
         } 
         .container {
           height: 100px;
         }
+        @media screen and (max-width: 1024px) {
+          img{
+            padding:15px;
+          }
+        }
+
       `}</style>
     </>
 

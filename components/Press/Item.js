@@ -3,19 +3,17 @@ import Media from './Media';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
-import Hidden from '@material-ui/core/Hidden';
-import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
+
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize:20,
     color:'white',
   },
-
-  box: {
+  content:{
     marginTop:50,
+    marginBottom:20,
   }
-
 }))
 
 export default function ({ url, description, year, index, articles }) {
@@ -31,17 +29,14 @@ export default function ({ url, description, year, index, articles }) {
          onMouseLeave={() => setActiveIndex(-1)}>
           <Grid item xs={0} lg={2} />
           <Grid item  lg={2} sm={0}/> 
-          <Grid item xs={3} lg={1} className={classes.box}>
-            <Box>{year}</Box>
+          <Grid item xs={3} lg={1} className={classes.content}>
+            {year}
           </Grid>
-          <Grid item xs={6} lg={4}>
-          <Box className={classes.box}>{description}</Box> 
+          <Grid item xs={6} lg={4}className={classes.content}>
+          {description}
           </Grid>
-          <Grid item lg={1} xs={0} />
-          <Grid item xs={1} lg={2} >
-            <Hidden xsDown>
+          <Grid item xs={1} lg={1} >
             <Media image={articles[activeIndex]?.image} />
-            </Hidden>
           </Grid>
         </Grid>
       </Grid>
