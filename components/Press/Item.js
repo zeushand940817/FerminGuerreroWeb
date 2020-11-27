@@ -27,13 +27,13 @@ export default function ({ url, description, year, index, articles }) {
         <Grid container direction="row"
          onMouseEnter={() => setActiveIndex(index)}
          onMouseLeave={() => setActiveIndex(-1)}>
-          <Grid item xs={0} lg={2} />
-          <Grid item  lg={2} sm={0}/> 
-          <Grid item xs={3} lg={1} className={classes.content}>
-            {year}
+          <Grid item lg={2} />
+          <Grid item  lg={2} /> 
+          <Grid item xs={3} lg={1}>
+          <Box className={classes.content}>{year}</Box>
           </Grid>
-          <Grid item xs={6} lg={4}className={classes.content}>
-          {description}
+          <Grid item xs={6} lg={4}>
+          <Box className={classes.content}>{description}</Box>
           </Grid>
           <Grid item xs={1} lg={1} >
             <Media image={articles[activeIndex]?.image} />

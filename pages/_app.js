@@ -15,36 +15,33 @@ function MyApp({ Component, pageProps }) {
   </Head>
   <div className='desktop'>
     <Header />
-  </div>
+  </div> 
   <div className='mobile'>
     <MobileMenu />
   </div>
     <Component {...pageProps} />
-    {/* <Footer/>  */}
+    <Footer/>  
 
   <style jsx>{`
-  .desktop{
-    display:block;
-  } 
-  .mobile{
-    display:none;
-  }
-  @media screen and (max-width: 667px) {
+    .desktop{
+      display:block;
+    }
+    .mobile{
+      display:none;
+    }
+
+  @media only screen and (max-width: 677px){
     .desktop{
       display:none;
     }
     .mobile{
-      display:block;
+      width:100%;
+      display:inline-block;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .desktop{
-      display:block;
-    }
-    .mobile{
-      display:none;
-    }
+
   }
 
 

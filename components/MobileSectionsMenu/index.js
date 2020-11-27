@@ -2,18 +2,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import TreeView from '@material-ui/lab/TreeView';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import TreeItem from '@material-ui/lab/TreeItem';
+import MuiTreeItem from "@material-ui/lab/TreeItem";
+import { withStyles } from "@material-ui/core/styles";
 
 //Components
 import Background from 'components/Background';
 import Contact from 'components/Contact';
-import Awards from 'components/AwardsMobile';
 import PressMobile from 'components/PressMobile';
 import AwardsMobile from 'components/AwardsMobile';
 
-//
-import MuiTreeItem from "@material-ui/lab/TreeItem";
-import { withStyles } from "@material-ui/core/styles";
 
 
 const useStyles = makeStyles({

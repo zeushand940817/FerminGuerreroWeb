@@ -1,4 +1,4 @@
-export default function ({ image }) {
+export default function Media({ image }) {
   return (
     <>
      <div className="container">

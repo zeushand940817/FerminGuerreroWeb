@@ -135,8 +135,8 @@ return(
       <div className="pageWrapper">
         <div className="projectList">
           {articles.map(({ url, id, description, year }, index) => (
-            <a className='linkArticle' href={url} target="_blank">
             <div key={id}>
+            <a className='linkArticle' href={url} target="_blank">
               <Item
                 href={url} 
                 description={description}
@@ -144,8 +144,8 @@ return(
                 index={index}
                 articles={articles}
               />
+              </a>
             </div>
-            </a>
           ))}
       </div>
       </div>
@@ -189,6 +189,7 @@ return(
   left: 0;
   right: 0;
   z-index: 10;
+  width:400px;
   }
 
   .header {
@@ -223,6 +224,7 @@ return(
 
   .linkArticle{
     outline:none;
+    color:white;
   }
 
   #background {
@@ -232,36 +234,25 @@ return(
   #exhibitions{
     height:60vh;
   }
-
   .mobileAbout{
-    display:none;
-  }
-
-
-
-  @media screen and (max-width: 667px) {
-  .image{
-    width:90%;
-  }
-    #background {
-    margin-top:0px;
-    }
-    .content{
-    margin-top:0px;
-    display:none;
-    }
-    .section{
-      padding:10px;
-    }
-
-    .sticky{
       display:none;
     }
 
+
+  @media only screen and (max-width: 677px){
+    .topSpacer{
+      width:100%;
+    }
+
     .mobileAbout{
-      display:inline-block;
+      display:block;
+    }
+  
+    .content{
+      display:none;
     }
   }
+
  
 
   @media screen and (max-width: 1024px) {
@@ -302,7 +293,6 @@ return(
       flex-direction:row;
       justify-content:center;
       width:100%;
-     
     }
     .sticky {
       background-color:black;

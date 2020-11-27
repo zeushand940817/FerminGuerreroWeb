@@ -4,35 +4,35 @@ import landings from 'database/landings';
 
 
 class Home extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      imgs: [
-        landings[0].image,
-        landings[1].image,
-        landings[2].image,
-        landings[3].image,
-      ],
-      activeImageIndex: 0,
-    }
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     imgs: [
+  //       landings[0].image,
+  //       landings[1].image,
+  //       landings[2].image,
+  //       landings[3].image,
+  //     ],
+  //     activeImageIndex: 0,
+  //   }
+  // }
 
-  componentDidMount() {
-    setInterval(() => {
-      let newActiveIndex =
-        this.state.activeImageIndex === 3 ? 0 : this.state.activeImageIndex + 1
-      this.setState({
-        activeImageIndex: newActiveIndex,
-      })
-    }, 3000)
-  }
+  // componentDidMount() {
+  //   setInterval(() => {
+  //     let newActiveIndex =
+  //       this.state.activeImageIndex === 3 ? 0 : this.state.activeImageIndex + 1
+  //     this.setState({
+  //       activeImageIndex: newActiveIndex,
+  //     })
+  //   }, 3000)
+  // }
 
   render() {
-    const imgIndex = this.state.activeImageIndex;
+    // const imgIndex = this.state.activeImageIndex;
     return (
       <>
         <div>
-          <img src={this.state.imgs[imgIndex]} />
+          {/* <img src={this.state.imgs[imgIndex]} /> */}
         </div>
 
         <style jsx>{`

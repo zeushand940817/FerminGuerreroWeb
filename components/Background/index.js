@@ -30,10 +30,10 @@ export default function Background() {
     <section className={classes.wrapper}>
       <Grid container direction="column">
         <Grid item id="background" lg={12} container>
-          <Grid item  lg={2} sm={0}/> 
+          <Grid item  lg={2} sm={false} /> 
           <Grid item  lg={2} sm={1}/>          
           <Grid item lg={7} sm={12}>
-           <Box className={classes.box}>
+           <Box component="p" className={classes.box}>
               Fermin Guerrero's visual communication practice focusing on
               Graphic and Typeface Design. In 2010, after he finished his
               bachelor in Industrial Design at Escuela Universitaria Centro de
