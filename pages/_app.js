@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
   <>
   <Head>
-  <title>Fermin G</title>
+  <title>Fermin Guerrero</title>
     <link rel="icon"  href="/ferIcon.gif" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   </Head>

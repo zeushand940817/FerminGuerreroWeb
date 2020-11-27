@@ -11,19 +11,13 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     marginBottom:20,
+    marginTop:20,
   },
   prize: {
     marginBottom:30,
-    ['@media (max-width:1024px)']: {
-      paddingLeft:30,
-    },
   },
   box:{
     marginTop:50,
-    ['@media (max-width:677px)']: {
-      marginTop:10,
-      marginBottom:20,
-    }
   },
 }))
 
@@ -62,12 +56,12 @@ export default function Awards({data}) {
           <Grid item xs={0} lg={2} />
           <Grid item  lg={2} sm={0}/> 
           <Grid item xs={3} lg={1}>
-          <Box className={classes.box}>
+          <Box className={classes.text}>
             2018
           </Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-          <Box className={classes.box}>
+          <Box className={classes.text}>
             European Design Awards Typeface design category. Project:
             Thesaurus.
           </Box>

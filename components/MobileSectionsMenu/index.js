@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import TreeView from '@material-ui/lab/TreeView';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
 import MuiTreeItem from "@material-ui/lab/TreeItem";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -18,6 +18,7 @@ const useStyles = makeStyles({
     height: 'auto',
     flexGrow: 1,
     maxWidth: 400,
+    fontSize:'30px',
   },
 });
 
@@ -37,8 +38,8 @@ export default function FileSystemNavigator() {
   return (
     <TreeView
       className={classes.root}
-      defaultCollapseIcon={<ExpandMoreIcon />}
-      defaultExpandIcon={<ChevronRightIcon />}
+      defaultCollapseIcon={<RemoveIcon />}
+      defaultExpandIcon={<AddIcon />}
     >
       <TreeItem1 nodeId="1" label="Background">
           <Background />

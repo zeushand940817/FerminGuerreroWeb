@@ -1,11 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles';
-import TreeView from '@material-ui/lab/TreeView';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import TreeItem from '@material-ui/lab/TreeItem';
-import { BiLink } from 'react-icons/bi';
-import MuiTreeItem from "@material-ui/lab/TreeItem";
 import { withStyles } from "@material-ui/core/styles";
+import TreeView from '@material-ui/lab/TreeView';
+import TreeItem from '@material-ui/lab/TreeItem';
+import MuiTreeItem from "@material-ui/lab/TreeItem";
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
 
 
 const useStyles = makeStyles({
@@ -37,8 +36,8 @@ export default function PressMobile(){
   return(
     <TreeView
     className={classes.root}
-    defaultCollapseIcon={<ExpandMoreIcon />}
-    defaultExpandIcon={<ChevronRightIcon />}
+    defaultCollapseIcon={<RemoveIcon />}
+    defaultExpandIcon={<AddIcon />}
   >
    
     <TreeItem1 nodeId="1" label="Brick." >
@@ -47,7 +46,6 @@ export default function PressMobile(){
          target="_blank">
         <BiLink size={18} color="white" />
     </a>
-      
       <TreeItem nodeId="2" label="Brick: A New Font Brewing."/> 
       <TreeItem nodeId="3" label="Published at Medium."/>
       <TreeItem nodeId="4" label="Year: 2020."/>

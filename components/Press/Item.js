@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import Media from './Media';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';

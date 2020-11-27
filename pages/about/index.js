@@ -162,8 +162,6 @@ return(
 
   .wrapper{    
   font-size:20px;
-  display:grid;
-  grid-template-columns: 1fr;
   padding: 0px 20px 5px 20px;
   }
 
@@ -239,17 +237,42 @@ return(
     }
 
 
-  @media only screen and (max-width: 677px){
-    .topSpacer{
-      width:100%;
+    @media screen and (max-width: 677px) {
+      .wrapper{
+      padding: 0px 20px 0px 20px;
+    }
+    .mobileAbout{
+      display:inline-block;
+    }
+ 
+    .image{
+      width:90%;
+    }
+    .header_link{
+      display:none;
+    }
+    .header {
+    display:block;  
+    width:100%;
+    }
+    
+    #background{
+      display:none;
+      font-size:16;
+    }
+    #contact{
+      display:none;
+      font-size:16;
     }
 
-    .mobileAbout{
-      display:block;
-    }
-  
-    .content{
+    #awards{
       display:none;
+      font-size:16;
+    }
+
+    #press{
+      display:none;
+      font-size:16;
     }
   }
 
@@ -262,9 +285,6 @@ return(
     #background {
     margin-top:0px;
     }
-    .content{
-    margin-top:0px;
-    }
     .section{
       padding:10px;
     }
@@ -272,11 +292,11 @@ return(
       width:100%;
     }
     .mobileAbout{
-      display:none;
+      visibility:none;
     }
     .content{
     margin-top:0px;
-    display:inline-block;
+    display:block;
     }
     #exhibitions{
     height:0px;
