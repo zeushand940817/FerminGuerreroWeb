@@ -71,6 +71,7 @@ export default function NewMobileMenu() {
   <style jsx>{`
     section{
       width:100%;
+      padding: 10px;
     }
        
     .burgerMainContainer {
@@ -90,8 +91,7 @@ export default function NewMobileMenu() {
  
     .linksBurgerMenuContainer {
       position: absolute;
-      width: 100vw;
-      height:40vh;
+      width: 100%;
       display: flex;
       flex-direction: column;
       list-style: none;
@@ -102,6 +102,7 @@ export default function NewMobileMenu() {
       background-color: black;
       font-size:20px;
       color:white;
+
     }
     a{
       display:inline-block;
@@ -112,15 +113,8 @@ export default function NewMobileMenu() {
    .linksBurgerMenuContainerInactive {
     z-index: 1000;
     position: absolute;
-    left: -800px;
-    top:30px;
-    height: 40vh;
-    display: flex;
-    width: 100vw;
-    transition: all .5s ease-in-out;
-    flex-direction: column;
-    list-style: none;
-    justify-content: space-around;
+    left: -1000px;
+    width: 100%;
     }
     
 `}</style>

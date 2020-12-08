@@ -30,11 +30,11 @@ export default function GraphicDesign({ data }) {
          ))}
        </div>
  
-   <style jsx>{`
-   .imageContainer{
-      max-width: 100vw;
+       <style jsx>{`
+  .imageContainer{
+      max-width: 100%;
       height:auto;
-      padding: 10px 10px 0px 10px;
+      padding: 40px 10px 0px 10px;
       column-count: 3;
     }
    
@@ -42,12 +42,7 @@ export default function GraphicDesign({ data }) {
     position: relative;
     width: 100%;
    }
-@media screen and (max-width: 667px) {
-      .imageContainer{
-        column-count:1;
-        overflow-y: hidden;
-        }   
-      } 
+
     .col{
       height: auto;
     }
@@ -64,26 +59,26 @@ export default function GraphicDesign({ data }) {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 70%;
+    left: 60%;
     text-align: center;
+    border-top: 1px solid white;
     }
     .container:hover .image {
-    opacity: 0.3;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      filter:grayscale(100%); 
     }
     .container:hover .middle {
       opacity: 1;
     }
 
     .text {
-      background-color: orange;
-      color: white;
       font-size: 20px;
       padding: 16px 32px;
+      color:white;
     }
-     `}</style>
+    `}</style>
    </div>
  
    </>

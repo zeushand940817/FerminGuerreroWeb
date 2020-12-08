@@ -23,8 +23,10 @@ import { withStyles } from "@material-ui/core/styles";
     "&.Mui-selected > .MuiTreeItem-content": {
       color: "tomato",
       display:'flex',
-      flexDirection:'row'
+      flexDirection:'row',
+      marginBottom:5,
     },
+
   }
 })(MuiTreeItem);
 
@@ -41,7 +43,7 @@ export default function AwardsMobile() {
           <TreeItem1 nodeId="5" label="Latin Design Awards.">
            <TreeItem nodeId="6" label="Prize: Gold." />
             <TreeItem nodeId="7" label="Project: Thesaurus." />
-            <TreeItem nodeId="8" label="Category: Typeface design." />
+            <TreeItem nodeId="8" label="Category: Typeface design." /> 
          </TreeItem1>
            </TreeItem1>
           <TreeItem1 nodeId="9" label="2018">

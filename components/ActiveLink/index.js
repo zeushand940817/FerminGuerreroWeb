@@ -5,6 +5,7 @@ function ActiveLink({ children, href }) {
   const style = {
     marginRight: 10,
     color: router.pathname === href ? 'orange' : 'white',
+    fontStyle: router.pathname === href ? 'bold' : 'regular'
   }
 
   const handleClick = (e) => {

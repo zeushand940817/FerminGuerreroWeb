@@ -2,10 +2,18 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 
+//Components
+import Time from '@components/Time';
+
+
+
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize:20,
     marginTop:50,
+    ['@media (max-width: 677px)']: { 
+      marginTop:10,
+    }
   },
   li: {
     listStyle: 'none',
@@ -13,16 +21,28 @@ const useStyles = makeStyles((theme) => ({
   box:{
     marginTop:50,
     marginBottom:20,
+    ['@media (max-width: 677px)']: { 
+      fontSize:16,
+      marginTop:10,
+      marginBottom:10,
+    }
   },
   a: {
     fontSize:20,
     textDecoration: 'none',
     color: 'white',
+    ['@media (max-width: 677px)']: { 
+      fontSize:16,
+    }
   },
   text: {
     fontSize:20,
     color:'white',
     marginBottom:10,
+    ['@media (max-width: 677px)']: { 
+      fontSize:16,
+      marginTop:10,
+    }
   },
 }))
 
@@ -61,7 +81,7 @@ export default function Contact() {
           <Grid item lg={2} /> 
           <Grid item xs={3} lg={1} sm={3} />
           <Grid item xs={9} lg={2} sm={1}>
-          <Box className={classes.text}> current time </Box>
+          <Box className={classes.text}> <Time /> </Box>
           </Grid>
         </Grid>
       </Grid>

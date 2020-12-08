@@ -1,11 +1,13 @@
 import { useRef, useEffect, useState } from "react";
 import fetch from 'isomorphic-unfetch';
 
+//Components
 import Item from '@components/Press/Item';
 import Background from 'components/Background';
 import Awards from 'components/Awards';
 import Contact from 'components/Contact';
 import MobileSectionsMenu from 'components/MobileSectionsMenu';
+
 
 
 const getDimensions = ele => {
@@ -162,7 +164,7 @@ return(
 
   .wrapper{    
   font-size:20px;
-  padding: 0px 20px 5px 20px;
+  padding: 40px 20px 5px 20px;
   }
 
   .image{
@@ -240,9 +242,10 @@ return(
     @media screen and (max-width: 677px) {
       .wrapper{
       padding: 0px 20px 0px 20px;
+      height:auto;
     }
     .mobileAbout{
-      display:inline-block;
+      display:block;
     }
  
     .image{

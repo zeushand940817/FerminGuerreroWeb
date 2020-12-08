@@ -21,7 +21,7 @@ export default function All({ data }) {
     .imageContainer{
       max-width: 100vw;
       height:auto;
-      padding: 10px 10px 0px 10px;
+      padding: 40px 10px 0px 10px;
       column-count: 3;
     }
 

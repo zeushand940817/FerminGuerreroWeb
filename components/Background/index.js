@@ -10,6 +10,10 @@ const useStyles = makeStyles((theme) => ({
   },
   box: {
     marginTop:50,
+    ['@media (max-width: 677px)']: { 
+      fontSize:16,
+      marginTop:10,
+    }
   }
 }))
 
