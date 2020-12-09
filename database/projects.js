@@ -127,8 +127,8 @@ const projects = [
     image: '/CoverPhotos/Galleries/FeriaDelLibro.jpg',
     images: {
       img1: '/FeriaDelLibro/1.jpg',
-      img2: '/FeriaDelLibro/2.jpg',
       img3: '/FeriaDelLibro/3.jpg',
+      img2: '/FeriaDelLibro/2.jpg',
       img4: '/FeriaDelLibro/4.jpg',
     },
     attributes: {
@@ -224,6 +224,21 @@ const projects = [
     landing: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
     image: '/CoverPhotos/Galleries/GenevaMotorShow.jpg',
     images: {
+      img17: '/GenevaMotorShow/17.jpg',
+      img18: '/GenevaMotorShow/18.jpg',
+      img19: '/GenevaMotorShow/19.jpg',
+      img20: '/GenevaMotorShow/20.jpg',
+      img21: '/GenevaMotorShow/21.jpg',
+      img22: '/GenevaMotorShow/22.jpg',
+      img23: '/GenevaMotorShow/23.jpg',
+      img24: '/GenevaMotorShow/24.jpg',
+      img25: '/GenevaMotorShow/25.jpg',
+      img26: '/GenevaMotorShow/26.jpg',
+      img30: '/GenevaMotorShow/30.jpg',
+      img27: '/GenevaMotorShow/27.jpg',
+      img28: '/GenevaMotorShow/28.jpg',
+      img29: '/GenevaMotorShow/29.jpg',
+
       img1: '/GenevaMotorShow/1.jpg',
       img2: '/GenevaMotorShow/2.jpg',
       img3: '/GenevaMotorShow/3.jpg',
@@ -240,21 +255,9 @@ const projects = [
       img14: '/GenevaMotorShow/14.JPG',
       img15: '/GenevaMotorShow/15.JPG',
       img16: '/GenevaMotorShow/16.JPG',
-      img17: '/GenevaMotorShow/17.jpg',
-      img18: '/GenevaMotorShow/18.jpg',
-      img19: '/GenevaMotorShow/19.jpg',
-      img20: '/GenevaMotorShow/20.jpg',
-      img21: '/GenevaMotorShow/21.jpg',
-      img22: '/GenevaMotorShow/22.jpg',
-      img23: '/GenevaMotorShow/23.jpg',
-      img24: '/GenevaMotorShow/24.jpg',
-      img25: '/GenevaMotorShow/25.jpg',
-      img26: '/GenevaMotorShow/26.jpg',
-      img27: '/GenevaMotorShow/27.jpg',
-      img28: '/GenevaMotorShow/28.jpg',
-      img29: '/GenevaMotorShow/29.jpg',
-      img30: '/GenevaMotorShow/30.jpg',
-      img31: '/GenevaMotorShow/31.jpg',
+
+      
+      
     },
     attributes: {
       description:'1rst Prize at the contest, holded by HEAD, for Geneva Motor Show 2014\'/s poster design and art direction. This graphic was used in all of the different national and international communication campaigns for the 2014 Geneva International Motor Show. I wanted to propose a different design concept that goes further than the � regular � style of the Motor Show. Therefore I wanted to avoid the typical representative car and automobile references and busy images. I also noticed that quite often in the previous poster campaigns, text and image were treated as two completely distinct elements and were therefore very distant from one another. The text took the shape of a rigid block that was very often placed the same way on all the visual identity media. My goal was to create, on one hand, an uncluttered, minimal and abstract design that evokes feelings and emotions related to the automobile sector and to bring outthe positive aspects of the Motor Show (speed, movement, freedom, diversity and joy) more than concentrate on the actual car itself. On the other hand, I wanted to make the text the protagonist element of my design. The creation and composition of the poster is entirely drawn out typographically. I propose a design with different reading levels, where the lines suggest a network of roads which evoke the number of visitors coming to visit the Motor Show every year from around the world. They also insinuate the shape of certain elements that are part of the traditional Genevan landscape: Cars, mountains, the Jet D\'/eau, etc. As for the colours, I was inspired by the season in which the Geneva Motor Show takes place, spring. '
@@ -346,8 +349,8 @@ const projects = [
     image: '/CoverPhotos/Galleries/GoesArround.jpg',
     images: {
       img1: '/GoesAround/1.jpg',
-      img2: '/GoesAround/2.jpg',
       img3: '/GoesAround/3.jpg',
+      img2: '/GoesAround/2.jpg',
       img4: '/GoesAround/4.jpg',
     },
     attributes: {
@@ -444,9 +447,10 @@ const projects = [
     landing: '/CoverPhotos/Lading/MakeAWish.jpg',
     image: '/CoverPhotos/Galleries/MakeAwish.jpg',
     images: {
+      img3: '/MakeAWhish/3.jpg',
       img1: '/MakeAWhish/1.jpg',
       img2: '/MakeAWhish/2.jpg',
-      img3: '/MakeAWhish/3.jpg',
+      
       },
     attributes: {
       description:'In many cultures around the world, a shooting star is associated with dreams and hope, as it is believed that this phenomenon (a shooting star) has the magical power of granting us a wish. I wanted to play with this idea on my 2018 greeting poster. Therefore, I created an idealistic sky, full of shooting stars, where the main ones are suggesting the numbers 2018 with their movements. A shooting star is also a very ephemeral thing, which echoes with the idea of life itself. The result is a 2018 made out of opportunities, hopes and magic, that has to be fully exploited before vanishing forever. The poster becomes an invitation to dream and reflect on what we would really wish to happen in this new year if we were granted a wish.'   
@@ -460,7 +464,13 @@ const projects = [
     landing: '/CoverPhotos/Lading/Manifesta.jpg',
     image: '/CoverPhotos/Galleries/ManifestaV.jpg',
     images: {
-      img1: '/Manifesta/1.jpg',
+      img10: '/Manifesta/10.jpg',
+      img11: '/Manifesta/11.JPG',
+      img12: '/Manifesta/12.JPG',
+      img13: '/Manifesta/13.JPG',
+      img14: '/Manifesta/14.JPG',
+      img19: '/Manifesta/Vb.jpg',
+
       img2: '/Manifesta/2.jpg',
       img3: '/Manifesta/3.jpg',
       img4: '/Manifesta/4.jpg',
@@ -469,16 +479,11 @@ const projects = [
       img7: '/Manifesta/7.jpg',
       img8: '/Manifesta/8.jpg',
       img9: '/Manifesta/9.jpg',
-      img10: '/Manifesta/10.jpg',
-      img11: '/Manifesta/11.JPG',
-      img12: '/Manifesta/12.JPG',
-      img13: '/Manifesta/13.JPG',
-      img14: '/Manifesta/14.JPG',
-      img15: '/Manifesta/15.jpg',
+      
       img16: '/Manifesta/Bold.jpg',
       img17: '/Manifesta/Light.jpg',
       img18: '/Manifesta/Regular.jpg',
-      img19: '/Manifesta/Vb.jpg',
+      
       },
     attributes: {
       description:'Title or short-text font, influenced both by the geometry-favoring artistic movements of the beginning of the 20th Century and the work of Dutch designer Max Kisman. This fontface aims to explore the relationship between the different parts of the letterforms as well as their hierarchy, while teasing with the limits of legibility. The MANIFESTA font family is formed by four different weights (light, regular, medium, bold), each one with uppercase and lowercase letters, numbers, punctuation marks and diacritic characters.'
@@ -657,10 +662,6 @@ const projects = [
       img24: '/Thesaurus/24.jpg',
       img25: '/Thesaurus/25.jpg',
       img26: '/Thesaurus/26.jpg',
-      img27: '/Thesaurus/27.jpg',
-      img28: '/Thesaurus/28.jpg',
-      img29: '/Thesaurus/29.jpg',
-      img30: '/Thesaurus/30.jpg',
     },
     attributes: {
       description:'Thesaurus is a typeface inspired by the typographic history of the city of Geneva. Thesaurus is based on the types that Robert Estienne brought from Paris to Geneva, which were later used by his son, Henri II Estienne, for printing the famous book Thesaurus Graecae Linguae. These metal types served, in some way, as a bridge between France and Switzerland, between Catholicism and Protestantism, and now, through Thesaurus, between past and present. Thesaurus was released by Typotheque. Below, some pictures from Thesaurus\'/ Specimen, which I have designed for Typothque. Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American typedesign biennial by Tipos Latinos, 2018 - out of 444 projects submitted this year. Thesaurus was selected in the Superfamily category. It has also been awarded with "Gold" in the Graphis Type 4: Typeface Design Competition.'
@@ -712,9 +713,10 @@ const projects = [
     images: {
       img1: '/Tomorrow/1.jpg',
       img2: '/Tomorrow/2.jpg',
+      img5: '/Tomorrow/5.jpg',
       img3: '/Tomorrow/3.jpg',
       img4: '/Tomorrow/4.jpg',
-      img5: '/Tomorrow/5.jpg',
+     
     },
     attributes: {
       description:'The poster flirts with the concepts of luck and randomness, which are strongly related to the idea of future (tomorrow), since no matter how much effort we put into it, things might not turn out the way we\'/d planned.'
@@ -772,7 +774,6 @@ const projects = [
     year: '2011',
     image: '/CoverPhotos/Galleries/Viga.jpg',
     images: {
-      img1: '/Viga/1.jpg',
       img2: '/Viga/2.jpg',
       img3: '/Viga/3.jpg',
       img4: '/Viga/4.jpg',
@@ -786,18 +787,17 @@ const projects = [
      },
   },
   {
-    name: 'Welftormat',
+    name: 'Weltformat',
     id: '29',
     type: "graphic",
     year: '2011',
     landing: '/CoverPhotos/Lading/Weltformat.jpg',
     image: '/CoverPhotos/Galleries/Weltformat.jpg',
     images: {
-      img1: '/Welftormat/1.jpg',
-      img2: '/Welftormat/2.jpg',
-      img3: '/Welftormat/3.jpg',
-      img4: '/Welftormat/4.jpg',
-      img5: '/Welftormat/5.jpg',
+      img1: '/Weltformat/1.jpg',
+      img2: '/Weltformat/2.jpg',
+      img3: '/Weltformat/3.jpg',
+      img5: '/Weltformat/5.jpg',
     },
     attributes: {
       description:'Finalist in the students\'/ international contest of the Weltformat 2011 poster festival at Lucerne - Switzerland, this poster was chosen between more than 400 students of 20 different countries as a response to the theme: poster for the poster.'

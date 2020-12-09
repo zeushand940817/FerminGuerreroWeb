@@ -1,7 +1,6 @@
-import fetch from 'isomorphic-unfetch';
-import { Component } from 'react';
-import landings from 'database/landings';
-
+import fetch from 'isomorphic-unfetch'
+import { Component } from 'react'
+import landings from 'database/landings'
 
 class Home extends Component {
   // constructor(props) {
@@ -31,9 +30,7 @@ class Home extends Component {
     // const imgIndex = this.state.activeImageIndex;
     return (
       <>
-        <div>
-          {/* <img src={this.state.imgs[imgIndex]} /> */}
-        </div>
+        <div>{/* <img src={this.state.imgs[imgIndex]} /> */}</div>
 
         <style jsx>{`
           .image {

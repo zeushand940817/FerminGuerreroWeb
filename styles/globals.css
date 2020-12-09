@@ -35,8 +35,7 @@ a {
   box-sizing: border-box;
 }
 
-
-.footermove:hover{
+.footermove:hover {
   animation: move-left 2s linear infinite;
 }
 @keyframes move-left {

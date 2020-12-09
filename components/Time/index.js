@@ -1,19 +1,15 @@
-import {useState} from 'react';
+import { useState } from 'react'
 
+export default function Time() {
+  let time = new Date().toLocaleTimeString()
+  const [Ctime, setCtime] = useState(time)
 
-export default function Time(){
-let time = new Date().toLocaleTimeString();
-const [ Ctime, setCtime] = useState(time);
+  const updateTime = () => {
+    time = new Date().toLocaleTimeString()
+    setCtime(time)
+  }
 
+  setInterval(updateTime, 1000)
 
-const updateTime = () => {
-    time = new Date().toLocaleTimeString();
-   setCtime(time)
- }
-
- setInterval(updateTime, 1000);
-  
-  return(
-    <div>{time}</div>
-  )
+  return <div>{time}</div>
 }
