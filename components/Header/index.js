@@ -1,63 +1,45 @@
-import Grid from '@material-ui/core/Grid'
-import Box from '@material-ui/core/Box'
 import Link from '../ActiveLink'
 
 export default function Header(props) {
   return (
     <>
       <div className="headerWrapper">
-        <Grid container direction="column">
-          <Grid item xs={12} container>
-            <Grid item xs={3} md={2} lg={4}>
-              <Link href="/" as="/" activeClassName="active" passHref>
-                <Box className="a " component="a">
-                  Fermin Guerrero
-                </Box>
-              </Link>
-            </Grid>
-            <Grid item xs={3} md={2} lg={2}>
-              <Link
-                href="/graphicDesign"
-                as="/graphicDesign"
-                activeClassName="active"
-                passHref
-              >
-                <Box className="a" component="a">
-                  Graphic Design
-                </Box>
-              </Link>
-            </Grid>
-            <Grid item xs={2} md={2} lg={1}>
-              <Link href="/all" as="/all" activeClassName="active" passHref>
-                <Box className="a" component="a">
-                  &
-                </Box>
-              </Link>
-            </Grid>
+        <div>
+          <Link href="/" as="/" activeClassName="active" passHref>
+            <a>Fermin Guerrero</a>
+          </Link>
+        </div>
+        <div>
+          <Link
+            href="/graphicDesign"
+            as="/graphicDesign"
+            activeClassName="active"
+            passHref
+          >
+            <a>Graphic Design</a>
+          </Link>
+        </div>
+        <div>
+          <Link href="/all" as="/all" activeClassName="active" passHref>
+            <a>&</a>
+          </Link>
+        </div>
+        <div>
+          <Link
+            href="/typefaceDesign"
+            as="/typefaceDesign"
+            activeClassName="active"
+            passHref
+          >
+            <a>Typeface Desgin</a>
+          </Link>
+        </div>
 
-            <Grid item xs={3} md={2} lg={4}>
-              <Link
-                href="/typefaceDesign"
-                as="/typefaceDesign"
-                activeClassName="active"
-                passHref
-              >
-                <Box className="a" component="a">
-                  {' '}
-                  Typeface Desgin
-                </Box>
-              </Link>
-            </Grid>
-
-            <Grid item xs={1} lg={1} md={2}>
-              <Link href="/about" as="/about" activeClassName="active" passHref>
-                <Box className="a" component="a">
-                  About
-                </Box>
-              </Link>
-            </Grid>
-          </Grid>
-        </Grid>
+        <div>
+          <Link href="/about" as="/about" activeClassName="active" passHref>
+            <a>About</a>
+          </Link>
+        </div>
       </div>
 
       <style jsx>{`
@@ -73,9 +55,35 @@ export default function Header(props) {
           z-index: 1;
           font-size: 20px;
           outline: none;
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          grid-template-rows: 1;
         }
 
-        .a {
+        div:nth-child(1) {
+          grid-column: 1/5;
+        }
+        div:nth-child(2) {
+          grid-column: 5/7;
+          padding-left: 5px;
+        }
+        div:nth-child(3) {
+          grid-column: 7;
+        }
+        div:nth-child(4) {
+          grid-column: 8 /10;
+        }
+        div:nth-child(5) {
+          grid-column: 11/12;
+        }
+
+        a {
+          text-decoration: none;
+          outline: none;
+        }
+
+        .ampersan {
+          padding-left: 8px;
           text-decoration: none;
           outline: none;
         }

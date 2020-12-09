@@ -6,11 +6,11 @@ const projects = [
     year: '2013',
     image: '/CoverPhotos/Galleries/CarteBlancheH.jpg',
     images: {
-      img1: '/CartaBlanche/1.jpg',
-      img2: '/CartaBlanche/2.JPG',
-      img3: '/CartaBlanche/3.JPG',
       img4: '/CartaBlanche/4.JPG',
       img5: '/CartaBlanche/5.JPG',
+      img2: '/CartaBlanche/2.JPG',
+      img3: '/CartaBlanche/3.JPG',
+
       img6: '/CartaBlanche/6.JPG',
       img7: '/CartaBlanche/7.JPG',
     },
@@ -350,9 +350,10 @@ const projects = [
     id: '11',
     type: 'graphic',
     year: '2014',
-    image: '/CoverPhotos/Galleries/GoesArround.jpg',
+    image: '/GoesAround/1.jpg',
     images: {
-      img1: '/GoesAround/1.jpg',
+     
+      img1: '/CoverPhotos/Galleries/GoesArround.jpg',
       img3: '/GoesAround/3.jpg',
       img2: '/GoesAround/2.jpg',
       img4: '/GoesAround/4.jpg',
@@ -549,8 +550,6 @@ const projects = [
       img7: '/Paleo/BoiteDefinitive-all.jpg',
       img6: '/Paleo/BoiteDefinitive-02c.jpg',
       img5: '/Paleo/5.jpg',
-
-     
 
       img8: '/Paleo/Paleo.jpg',
     },

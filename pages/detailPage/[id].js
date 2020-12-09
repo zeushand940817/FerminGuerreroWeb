@@ -1,5 +1,6 @@
 import Grid from '@material-ui/core/Grid'
 import fetch from 'isomorphic-unfetch'
+import GoBack from 'components/GoBack'
 
 export default function DetailPage({ data }) {
   const images = data.images
@@ -12,12 +13,13 @@ export default function DetailPage({ data }) {
         <Grid container lg={12}>
           <img className="mainImage" src={data.image} />
         </Grid>
+        {/* <GoBack/> */}
         <Grid container lg={12}>
           <div className="gridContainer">
-            <Grid item xs={3} lg={2}>
+            <Grid item xs={12} lg={2}>
               <div className="name"> {data.name}</div>
             </Grid>
-            <Grid item xs={12} sm={6} lg={4}>
+            <Grid item xs={12} sm={12} lg={4}>
               <div className="yearandtags">
                 <p>{data.year}</p>
                 <p>
@@ -56,11 +58,10 @@ export default function DetailPage({ data }) {
 
         .wrapperGalleria img:nth-child(3),
         .wrapperGalleria img:nth-child(4),
-        .wrapperGalleria img:nth-child(6),
-        .wrapperGalleria img:nth-child(8),
-        .wrapperGalleria img:last-child {
+        .wrapperGalleria img:nth-child(8) {
           grid-column: span 2;
         }
+
 
         .img {
           width: 100%;
@@ -102,6 +103,35 @@ export default function DetailPage({ data }) {
         .goBack {
           text-align: right;
           margin: 30px;
+        }
+
+         {
+          /* Media Queries */
+        }
+
+        @media screen and (max-width: 667px) {
+          .wrapperGalleria {
+            grid-template-columns: repeat(1, 1fr);
+          }
+
+          .img {
+            width: 100%;
+            grid-column: 1;
+          }
+
+          .wrapperGalleria img:nth-child(3),
+          .wrapperGalleria img:nth-child(4),
+          .wrapperGalleria img:nth-child(6),
+          .wrapperGalleria img:nth-child(8),
+          .wrapperGalleria img:last-child {
+            grid-column: 1;
+          }
+
+          .gridContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
         }
       `}</style>
     </>

@@ -36,7 +36,7 @@ export default function GraphicDesign({ data }) {
           .imageContainer {
             max-width: 100%;
             height: auto;
-            padding: 40px 10px 0px 10px;
+            padding: 40px 20px 0px 20px;
             column-count: 3;
           }
 
@@ -57,6 +57,7 @@ export default function GraphicDesign({ data }) {
             transition: 0.5s ease;
             backface-visibility: hidden;
           }
+
           .middle {
             position: absolute;
             bottom: 0;
