@@ -31,36 +31,46 @@ export default function DetailPage({ data }) {
           </div>
         </Grid>
 
-        <div className="imageContainer">
-          <div className="col">
-            {Object.values(images).map((image) => (
-              <img className="imagesGallery" src={image} />
-            ))}
-          </div>
+        <div className="wrapperGalleria">
+          {Object.values(images).map((image) => (
+            <img className="img" src={image} />
+          ))}
         </div>
       </div>
 
       <style jsx>{`
         .container {
           width: 100%;
+          height: 100%;
           font-size: 20px;
           padding: 40px 10px 0px 10px;
+          margin-bottom: 30px;
         }
-        .imageContainer {
-          height: auto;
+
+        .wrapperGalleria {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 15px;
+          grid-auto-flow: dense;
+        }
+
+        .wrapperGalleria img:nth-child(3),
+        .wrapperGalleria img:nth-child(4),
+        .wrapperGalleria img:nth-child(6),
+        .wrapperGalleria img:nth-child(8),
+        .wrapperGalleria img:last-child {
+          grid-column: span 2;
+        }
+
+        .img {
           width: 100%;
-          column-count: 2;
+          grid-column: span 1;
         }
 
         .gridContainer {
           display: flex;
           flex-direction: row;
           height: auto;
-        }
-
-        .imagesGallery {
-          width: 100%;
-          padding-bottom: 13px;
         }
 
         .mainImage {

@@ -64,7 +64,7 @@ export default function GraphicDesign({ data }) {
             width: 100%;
             border-top: 1px solid white;
             opacity: 0;
-            text-align: right;
+            text-align: left;
             font-weight: bold;
             transition: ease 0.5s all;
           }
@@ -80,7 +80,7 @@ export default function GraphicDesign({ data }) {
           .text {
             font-size: 20px;
             color: white;
-            margin: 15px 30px 30px 0px;
+            padding: 5px 10px 25px 10px;
           }
         `}</style>
       </div>
