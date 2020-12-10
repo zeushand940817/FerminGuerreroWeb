@@ -4,16 +4,20 @@ import GoBack from 'components/GoBack'
 
 export default function DetailPage({ data }) {
   const images = data.images
-  console.log(Object.keys(images), 'KEYS')
-  console.log(Object.values(images), 'VALUES')
+  // console.log(Object.keys(images), 'KEYS')
+  // console.log(Object.values(images), 'VALUES')
 
   return (
     <>
       <div className="container">
         <Grid container lg={12}>
-          <img className="mainImage" src={data.image} />
+          {data.horizontal === true ? (
+            <img className="mainImage" src={data.image} />
+          ) : (
+            <img className="mainImage" src={data.images.img1} />
+          )}
         </Grid>
-        {/* <GoBack/> */}
+        {/* <GoBack/>  */}
         <Grid container lg={12}>
           <div className="gridContainer">
             <Grid item xs={12} lg={2}>
@@ -61,7 +65,6 @@ export default function DetailPage({ data }) {
         .wrapperGalleria img:nth-child(8) {
           grid-column: span 2;
         }
-
 
         .img {
           width: 100%;
@@ -131,6 +134,18 @@ export default function DetailPage({ data }) {
             width: 100%;
             display: flex;
             flex-direction: column;
+          }
+          .yearandtags {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 10px;
+          }
+          .name {
+            display: flex;
+            flex-direction: row;
+            margin-top: 1em;
+            padding-left: 10px;
           }
         }
       `}</style>

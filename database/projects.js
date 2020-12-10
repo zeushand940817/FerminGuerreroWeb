@@ -1,16 +1,18 @@
+import { FormatListBulletedRounded } from '@material-ui/icons'
+
 const projects = [
   {
     name: 'Carte Blanche',
     id: '1',
     type: 'graphic',
     year: '2013',
+    horizontal: true,
     image: '/CoverPhotos/Galleries/CarteBlancheH.jpg',
     images: {
-      img4: '/CartaBlanche/4.JPG',
-      img5: '/CartaBlanche/5.JPG',
+      img1: '/CartaBlanche/1.JPG',
       img2: '/CartaBlanche/2.JPG',
       img3: '/CartaBlanche/3.JPG',
-
+      img4: '/CartaBlanche/4.JPG',
       img6: '/CartaBlanche/6.JPG',
       img7: '/CartaBlanche/7.JPG',
     },
@@ -24,6 +26,7 @@ const projects = [
     id: '2',
     type: 'typeface',
     year: '2011',
+    horizontal: false,
     image: '/CoverPhotos/Galleries/CircH.jpg',
     images: {
       img1: '/Circ/1.JPG',
@@ -44,10 +47,11 @@ const projects = [
     id: '3',
     type: 'graphic',
     year: '2014',
+    horizontal: true,
     landing: '/CoverPhotos/Lading/DinMachine.jpg',
     image: '/CoverPhotos/Galleries/DinMachine.jpg',
     images: {
-      img2: '/DinMachine/2.jpg',
+      img1: '/DinMachine/2.jpg',
       img4: '/DinMachine/4.jpg',
       img5: '/DinMachine/5.jpg',
       img3: '/DinMachine/3.jpg',
@@ -83,6 +87,7 @@ const projects = [
     id: '4',
     type: 'typeface',
     year: '2015',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/Exentra.jpg',
     image: '/CoverPhotos/Galleries/ExentraV.jpg',
     images: {
@@ -125,6 +130,7 @@ const projects = [
     id: '5',
     type: 'graphic',
     year: '2018',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/FeriaDelLibro.jpg',
     image: '/CoverPhotos/Galleries/FeriaDelLibro.jpg',
     images: {
@@ -143,6 +149,7 @@ const projects = [
     id: '6',
     type: 'graphic',
     year: '2012',
+    horizontal: true,
     landing: '/CoverPhotos/Lading/FGC.jpg',
     image: '/CoverPhotos/Galleries/FGC.jpg',
     images: {
@@ -188,6 +195,7 @@ const projects = [
     id: '7',
     type: 'graphic',
     year: '2017',
+    horizontal: true,
     landing: '/CoverPhotos/Lading/FlagOfPeace.jpg',
     image: '/CoverPhotos/Galleries/FlagOfPeace.jpg',
     images: {
@@ -210,6 +218,7 @@ const projects = [
     id: '8',
     type: 'graphic',
     year: '2017',
+    horizontal: false,
     image: '/CoverPhotos/Galleries/FreedomOfMovement.jpg',
     images: {
       img1: '/FreedomOfMovement/1.jpg',
@@ -226,10 +235,11 @@ const projects = [
     id: '9',
     type: 'graphic',
     year: '2014',
+    horizontal: true,
     landing: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
     image: '/CoverPhotos/Galleries/GenevaMotorShow.jpg',
     images: {
-      img17: '/GenevaMotorShow/17.jpg',
+      img1: '/GenevaMotorShow/17.jpg',
       img18: '/GenevaMotorShow/18.jpg',
       img19: '/GenevaMotorShow/19.jpg',
       img20: '/GenevaMotorShow/20.jpg',
@@ -271,6 +281,7 @@ const projects = [
     id: '10',
     type: 'typeface',
     year: '2014',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/GeneveTypeface.jpg',
     image: '/CoverPhotos/Galleries/GeneveTypeface.jpg',
     images: {
@@ -350,9 +361,9 @@ const projects = [
     id: '11',
     type: 'graphic',
     year: '2014',
+    horizontal: false,
     image: '/GoesAround/1.jpg',
     images: {
-     
       img1: '/CoverPhotos/Galleries/GoesArround.jpg',
       img3: '/GoesAround/3.jpg',
       img2: '/GoesAround/2.jpg',
@@ -368,6 +379,7 @@ const projects = [
     id: '12',
     type: 'graphic',
     year: '2014',
+    horizontal: true,
     landing: '/CoverPhotos/Lading/ItsUpToYou.jpg',
     image: '/CoverPhotos/Galleries/ItsUpToYou.jpg',
     images: {
@@ -397,6 +409,7 @@ const projects = [
     id: '13',
     type: 'graphic',
     year: '2012',
+    horizontal: true,
     landing: '/CoverPhotos/Lading/JoieDeLire.jpg',
     image: '/CoverPhotos/Galleries/JoieDeLire.jpg',
     images: {
@@ -416,6 +429,7 @@ const projects = [
     id: '14',
     type: 'grahic',
     year: '2013',
+    horizontal: false,
     image: '/CoverPhotos/Galleries/LetterStamps.jpg',
     images: {
       img1: '/LetterStamps/1.jpg',
@@ -453,12 +467,13 @@ const projects = [
     id: '15',
     type: 'graphic',
     year: '2018',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/MakeAWish.jpg',
     image: '/CoverPhotos/Galleries/MakeAwish.jpg',
     images: {
-      img3: '/MakeAWhish/3.jpg',
-      img1: '/MakeAWhish/1.jpg',
-      img2: '/MakeAWhish/2.jpg',
+      img1: '/MakeAWhish/3.jpg',
+      img2: '/MakeAWhish/1.jpg',
+      img3: '/MakeAWhish/2.jpg',
     },
     attributes: {
       description:
@@ -470,10 +485,11 @@ const projects = [
     id: '16',
     type: 'typeface',
     year: '2012',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/Manifesta.jpg',
     image: '/CoverPhotos/Galleries/ManifestaV.jpg',
     images: {
-      img10: '/Manifesta/10.jpg',
+      img1: '/Manifesta/10.jpg',
       img11: '/Manifesta/11.JPG',
       img12: '/Manifesta/12.JPG',
       img13: '/Manifesta/13.JPG',
@@ -503,6 +519,7 @@ const projects = [
     id: '17',
     type: 'graphic',
     year: '2013',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/MiMujer.jpg',
     image: '/CoverPhotos/Galleries/MiMujer.jpg',
     images: {
@@ -521,6 +538,7 @@ const projects = [
     id: '18',
     type: 'graphic',
     year: '2015',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/NewYearNewFlight.jpg',
     image: '/CoverPhotos/Galleries/NewYearNewFight.jpg',
     images: {
@@ -540,6 +558,7 @@ const projects = [
     id: '19',
     type: 'graphic',
     year: '2013',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/Paleo.jpg',
     image: '/CoverPhotos/Galleries/Paleo.jpg',
     images: {
@@ -563,6 +582,7 @@ const projects = [
     id: '20',
     type: 'graphic',
     year: '2012',
+    horizontal: true,
     image: '/CoverPhotos/Galleries/PointDeFuite.jpg',
     images: {
       img1: '/Point/1.jpg',
@@ -601,6 +621,7 @@ const projects = [
     id: '21',
     type: 'grahic',
     year: '2014',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/DameDeLaMer.jpg',
     image: '/CoverPhotos/Galleries/LaDameDeLaMere.jpg',
     images: {
@@ -630,6 +651,7 @@ const projects = [
     id: '22',
     type: 'graphic',
     year: '2012',
+    horizontal: false,
     image: '/CoverPhotos/Galleries/PostTenebrasRock.jpg',
     images: {
       img1: '/PostTenebrasRock/1.jpg',
@@ -650,6 +672,7 @@ const projects = [
     id: '23',
     type: 'typeface',
     year: '2017',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/Thesaurus.jpg',
     image: '/CoverPhotos/Galleries/Thesaurus.jpg',
     images: {
@@ -689,6 +712,7 @@ const projects = [
     id: '24',
     type: 'graphic',
     year: '2014',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/TijuanaPanthers.jpg',
     image: '/CoverPhotos/Galleries/TijuanaPanthers.jpg',
     images: {
@@ -708,6 +732,7 @@ const projects = [
     id: '25',
     type: 'graphic',
     year: '2013',
+    horizontal: true,
     landing: '/CoverPhotos/Lading/TimeOut.jpg',
     image: '/CoverPhotos/Galleries/TimeOut.jpg',
     images: {
@@ -727,6 +752,7 @@ const projects = [
     id: '26',
     type: 'graphic',
     year: '2013',
+    horizontal: true,
     landing: '/CoverPhotos/Lading/Tomorrow.jpg',
     image: '/CoverPhotos/Galleries/Tomorrow.jpg',
     images: {
@@ -746,6 +772,7 @@ const projects = [
     id: '27',
     type: 'typeface',
     year: '2013',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/TypographyH.jpg',
     image: '/CoverPhotos/Galleries/TypographicHeroes.jpg',
     images: {
@@ -792,9 +819,10 @@ const projects = [
     id: '28',
     type: 'typeface',
     year: '2011',
+    horizontal: false,
     image: '/CoverPhotos/Galleries/Viga.jpg',
     images: {
-      img2: '/Viga/2.jpg',
+      img1: '/Viga/2.jpg',
       img3: '/Viga/3.jpg',
       img4: '/Viga/4.jpg',
       img5: '/Viga/5.jpg',
@@ -812,6 +840,7 @@ const projects = [
     id: '29',
     type: 'graphic',
     year: '2011',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/Weltformat.jpg',
     image: '/CoverPhotos/Galleries/Weltformat.jpg',
     images: {
@@ -830,6 +859,7 @@ const projects = [
     id: '30',
     type: 'typeface',
     year: '2019',
+    horizontal: false,
     landing: '/CoverPhotos/Lading/BrickTypefamily.jpg',
     image: '/CoverPhotos/Galleries/BrickTypefamilyLandscape.jpg',
     attributes: {

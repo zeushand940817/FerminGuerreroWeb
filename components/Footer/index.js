@@ -9,6 +9,7 @@ export default function Footer() {
         footer {
           width: 100%;
           height: 50px;
+          bottom: 0;
           background-color: black;
           border-top: 1px solid white;
           font-size: 16px;

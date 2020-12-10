@@ -40,6 +40,13 @@ function MyApp({ Component, pageProps }) {
         }
 
         @media screen and (max-width: 1024px) {
+          .desktop {
+            display: none;
+          }
+          .mobile {
+            width: 100%;
+            display: inline-block;
+          }
         }
       `}</style>
     </>

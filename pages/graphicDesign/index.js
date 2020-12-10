@@ -83,6 +83,22 @@ export default function GraphicDesign({ data }) {
             color: white;
             padding: 5px 10px 25px 10px;
           }
+          @media screen and (max-width: 667px) {
+            .imageContainer {
+              max-width: 100%;
+              height: auto;
+              padding: 40px 20px 0px 20px;
+              column-count: 1;
+            }
+          }
+          @media screen and (max-width: 1024px) {
+            .imageContainer {
+              max-width: 100%;
+              height: auto;
+              padding: 40px 20px 0px 20px;
+              column-count: 2;
+            }
+          }
         `}</style>
       </div>
     </>

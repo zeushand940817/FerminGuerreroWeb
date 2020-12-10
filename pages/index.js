@@ -1,47 +1,39 @@
 import fetch from 'isomorphic-unfetch'
-import { Component } from 'react'
+import { useEffect, useState } from 'react'
 import landings from 'database/landings'
 
-class Home extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     imgs: [
-  //       landings[0].image,
-  //       landings[1].image,
-  //       landings[2].image,
-  //       landings[3].image,
-  //     ],
-  //     activeImageIndex: 0,
-  //   }
-  // }
+const Home = ({ data }) => {
+  const imagenes = data
+  console.log(imagenes[0].image, 'SOY IMAGES')
 
-  // componentDidMount() {
-  //   setInterval(() => {
-  //     let newActiveIndex =
-  //       this.state.activeImageIndex === 3 ? 0 : this.state.activeImageIndex + 1
-  //     this.setState({
-  //       activeImageIndex: newActiveIndex,
-  //     })
-  //   }, 3000)
-  // }
+  return (
+    <>
+      <div className="wrapper">
+        <img src={imagenes[0].image} />
+      </div>
 
-  render() {
-    // const imgIndex = this.state.activeImageIndex;
-    return (
-      <>
-        <div>{/* <img src={this.state.imgs[imgIndex]} /> */}</div>
+      <style jsx>{`
+        .wrapper {
+          padding: 40px 10px 0px 10px;
+          width: 100%;
+          height: 100%;
+        }
+        img {
+          width: 100%;
+        }
 
-        <style jsx>{`
-          .image {
-            height: 100vh;
-            position: center;
-          }
-        `}</style>
-      </>
-    )
-  }
+        h1 {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          font-size: 40px;
+          margin-top: 50px;
+        }
+      `}</style>
+    </>
+  )
 }
+
 export default Home
 
 export async function getServerSideProps() {
