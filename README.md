@@ -1,1 +1,1 @@
-## NextJS Graphic Designer Web 🌿 + Material UI 🎨
+## NextJS Graphic Designer Web 🌿 
