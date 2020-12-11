@@ -1,4 +1,4 @@
-import { FormatListBulletedRounded } from '@material-ui/icons'
+import { TramRounded } from '@material-ui/icons'
 
 const projects = [
   {
@@ -6,15 +6,15 @@ const projects = [
     id: '1',
     type: 'graphic',
     year: '2013',
-    horizontal: true,
-    image: '/CoverPhotos/Galleries/CarteBlancheH.jpg',
+    horizontal: false,
+    image: '/CartaBlanche/4.JPG',
+    img1: '/CartaBlanche/1.JPG',
     images: {
-      img1: '/CartaBlanche/1.JPG',
       img2: '/CartaBlanche/2.JPG',
       img3: '/CartaBlanche/3.JPG',
-      img4: '/CartaBlanche/4.JPG',
+      img4: '/CoverPhotos/Galleries/CarteBlancheH.jpg',
+      img5: '/CartaBlanche/5.JPG',
       img6: '/CartaBlanche/6.JPG',
-      img7: '/CartaBlanche/7.JPG',
     },
     attributes: {
       description:
@@ -26,16 +26,16 @@ const projects = [
     id: '2',
     type: 'typeface',
     year: '2011',
-    horizontal: false,
+    horizontal: true,
     image: '/CoverPhotos/Galleries/CircH.jpg',
+
     images: {
-      img1: '/Circ/1.JPG',
-      img2: '/Circ/2.JPG',
-      img3: '/Circ/3.JPG',
-      img4: '/Circ/4.JPG',
-      img5: '/Circ/5.JPG',
-      img6: '/Circ/6.JPG',
-      img7: '/Circ/7.JPG',
+      img1: '/Circ/2.JPG',
+      img2: '/Circ/3.JPG',
+      img3: '/Circ/4.JPG',
+      img4: '/Circ/5.JPG',
+      img5: '/Circ/6.JPG',
+      img6: '/Circ/7.JPG',
     },
     attributes: {
       description:
@@ -90,8 +90,8 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/Exentra.jpg',
     image: '/CoverPhotos/Galleries/ExentraV.jpg',
+    img1: '/Exentra/1.jpg',
     images: {
-      img1: '/Exentra/1.jpg',
       img2: '/Exentra/2.JPG',
       img3: '/Exentra/3.JPG',
       img4: '/Exentra/4.JPG',
@@ -133,8 +133,8 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/FeriaDelLibro.jpg',
     image: '/CoverPhotos/Galleries/FeriaDelLibro.jpg',
+    img1: '/FeriaDelLibro/1.jpg',
     images: {
-      img1: '/FeriaDelLibro/1.jpg',
       img3: '/FeriaDelLibro/3.jpg',
       img2: '/FeriaDelLibro/2.jpg',
       img4: '/FeriaDelLibro/4.jpg',
@@ -151,7 +151,7 @@ const projects = [
     year: '2012',
     horizontal: true,
     landing: '/CoverPhotos/Lading/FGC.jpg',
-    image: '/CoverPhotos/Galleries/FGC.jpg',
+    image: '/FGC/7.gif',
     images: {
       img1: '/FGC/1.jpg',
       img2: '/FGC/2.jpg',
@@ -281,9 +281,9 @@ const projects = [
     id: '10',
     type: 'typeface',
     year: '2014',
-    horizontal: false,
+    horizontal: true,
     landing: '/CoverPhotos/Lading/GeneveTypeface.jpg',
-    image: '/CoverPhotos/Galleries/GeneveTypeface.jpg',
+    image: '/GeneveTypeface/36.jpg',
     images: {
       img1: '/GeneveTypeface/1.jpg',
       img2: '/GeneveTypeface/2.jpg',
@@ -320,7 +320,6 @@ const projects = [
       img33: '/GeneveTypeface/33.jpg',
       img34: '/GeneveTypeface/34.jpg',
       img35: '/GeneveTypeface/35.jpg',
-      img36: '/GeneveTypeface/36.jpg',
       img37: '/GeneveTypeface/37.jpg',
       img38: '/GeneveTypeface/38.jpg',
       img39: '/GeneveTypeface/39.jpg',
@@ -381,7 +380,8 @@ const projects = [
     year: '2014',
     horizontal: true,
     landing: '/CoverPhotos/Lading/ItsUpToYou.jpg',
-    image: '/CoverPhotos/Galleries/ItsUpToYou.jpg',
+    image: '/ItsUpToYou/5.JPG',
+    // image: '/CoverPhotos/Galleries/ItsUpToYou.jpg',
     images: {
       img1: '/ItsUpToYou/1.jpg',
       img2: '/ItsUpToYou/2.jpg',
@@ -427,9 +427,9 @@ const projects = [
   {
     name: 'Letter Stamps',
     id: '14',
-    type: 'grahic',
+    type: 'typeface',
     year: '2013',
-    horizontal: false,
+    horizontal: true,
     image: '/CoverPhotos/Galleries/LetterStamps.jpg',
     images: {
       img1: '/LetterStamps/1.jpg',
@@ -470,9 +470,9 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/MakeAWish.jpg',
     image: '/CoverPhotos/Galleries/MakeAwish.jpg',
+    img1: '/MakeAWhish/1.jpg',
     images: {
-      img1: '/MakeAWhish/3.jpg',
-      img2: '/MakeAWhish/1.jpg',
+      img2: '/MakeAWhish/3.jpg',
       img3: '/MakeAWhish/2.jpg',
     },
     attributes: {
@@ -487,12 +487,12 @@ const projects = [
     year: '2012',
     horizontal: false,
     landing: '/CoverPhotos/Lading/Manifesta.jpg',
-    image: '/CoverPhotos/Galleries/ManifestaV.jpg',
+    image: '/Manifesta/13.gif',
     images: {
       img1: '/Manifesta/10.jpg',
       img11: '/Manifesta/11.JPG',
       img12: '/Manifesta/12.JPG',
-      img13: '/Manifesta/13.JPG',
+      img13: '/Manifesta/13.gif',
       img14: '/Manifesta/14.JPG',
       img19: '/Manifesta/Vb.jpg',
 
@@ -534,12 +534,12 @@ const projects = [
     },
   },
   {
-    name: 'New Year, New Flight',
+    name: 'New Year, New Fight',
     id: '18',
     type: 'graphic',
     year: '2015',
     horizontal: false,
-    landing: '/CoverPhotos/Lading/NewYearNewFlight.jpg',
+    landing: '/CoverPhotos/Lading/NewYearNewFight.jpg',
     image: '/CoverPhotos/Galleries/NewYearNewFight.jpg',
     images: {
       img1: '/NewYearNewFight/1.jpg',
@@ -619,9 +619,9 @@ const projects = [
   {
     name: 'La Dame De La Mer',
     id: '21',
-    type: 'grahic',
+    type: 'graphic',
     year: '2014',
-    horizontal: false,
+    horizontal: true,
     landing: '/CoverPhotos/Lading/DameDeLaMer.jpg',
     image: '/CoverPhotos/Galleries/LaDameDeLaMere.jpg',
     images: {
@@ -653,8 +653,8 @@ const projects = [
     year: '2012',
     horizontal: false,
     image: '/CoverPhotos/Galleries/PostTenebrasRock.jpg',
+    img1: '/PostTenebrasRock/1.jpg',
     images: {
-      img1: '/PostTenebrasRock/1.jpg',
       img2: '/PostTenebrasRock/2.jpg',
       img3: '/PostTenebrasRock/3.jpg',
       img4: '/PostTenebrasRock/4.jpg',
@@ -672,7 +672,7 @@ const projects = [
     id: '23',
     type: 'typeface',
     year: '2017',
-    horizontal: false,
+    horizontal: true,
     landing: '/CoverPhotos/Lading/Thesaurus.jpg',
     image: '/CoverPhotos/Galleries/Thesaurus.jpg',
     images: {
@@ -712,7 +712,7 @@ const projects = [
     id: '24',
     type: 'graphic',
     year: '2014',
-    horizontal: false,
+    horizontal: true,
     landing: '/CoverPhotos/Lading/TijuanaPanthers.jpg',
     image: '/CoverPhotos/Galleries/TijuanaPanthers.jpg',
     images: {
@@ -720,7 +720,6 @@ const projects = [
       img2: '/TijuanaPanthers/2.jpg',
       img3: '/TijuanaPanthers/3.jpg',
       img4: '/TijuanaPanthers/4.jpg',
-      img5: '/TijuanaPanthers/5.jpg',
     },
     attributes: {
       description:
@@ -752,9 +751,9 @@ const projects = [
     id: '26',
     type: 'graphic',
     year: '2013',
-    horizontal: true,
+    horizontal: false,
     landing: '/CoverPhotos/Lading/Tomorrow.jpg',
-    image: '/CoverPhotos/Galleries/Tomorrow.jpg',
+    image: '/Tomorrow/1.jpg',
     images: {
       img1: '/Tomorrow/1.jpg',
       img2: '/Tomorrow/2.jpg',
@@ -772,7 +771,7 @@ const projects = [
     id: '27',
     type: 'typeface',
     year: '2013',
-    horizontal: false,
+    horizontal: true,
     landing: '/CoverPhotos/Lading/TypographyH.jpg',
     image: '/CoverPhotos/Galleries/TypographicHeroes.jpg',
     images: {
@@ -819,7 +818,7 @@ const projects = [
     id: '28',
     type: 'typeface',
     year: '2011',
-    horizontal: false,
+    horizontal: true,
     image: '/CoverPhotos/Galleries/Viga.jpg',
     images: {
       img1: '/Viga/2.jpg',
@@ -859,9 +858,29 @@ const projects = [
     id: '30',
     type: 'typeface',
     year: '2019',
-    horizontal: false,
+    horizontal: true,
     landing: '/CoverPhotos/Lading/BrickTypefamily.jpg',
     image: '/CoverPhotos/Galleries/BrickTypefamilyLandscape.jpg',
+    images: {
+      img1: '/Brick/1.jpg',
+      img2: '/Brick/2.jpg',
+      img3: '/Brick/3.jpg',
+      img4: '/Brick/4.jpg',
+      img5: '/Brick/5.jpg',
+      img6: '/Brick/6.jpg',
+      img7: '/Brick/7.jpg',
+      img8: '/Brick/8.jpg',
+      img9: '/Brick/9.jpg',
+      img10: '/Brick/10.jpg',
+      img11: '/Brick/11.jpg',
+      img12: '/Brick/12.jpg',
+      img13: '/Brick/13.jpg',
+      img14: '/Brick/14.jpg',
+      img15: '/Brick/15.jpg',
+      img16: '/Brick/16.jpg',
+      img17: '/Brick/17.jpg',
+      img18: '/Brick/18.jpg',
+    },
     attributes: {
       description: 'Brick',
     },

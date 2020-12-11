@@ -14,7 +14,7 @@ export default function DetailPage({ data }) {
           {data.horizontal === true ? (
             <img className="mainImage" src={data.image} />
           ) : (
-            <img className="mainImage" src={data.images.img1} />
+            <img className="mainImage" src={data.img1} />
           )}
         </Grid>
         {/* <GoBack/>  */}
