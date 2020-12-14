@@ -6,7 +6,7 @@ export default function Header(props) {
       <div className="headerWrapper">
         <div>
           <Link href="/" as="/" activeClassName="active" passHref>
-            <a>Fermin Guerrero</a>
+            Fermin Guerrero
           </Link>
         </div>
         <div>
@@ -16,12 +16,12 @@ export default function Header(props) {
             activeClassName="active"
             passHref
           >
-            <a>Graphic Design</a>
+            Graphic Design
           </Link>
         </div>
         <div>
           <Link href="/all" as="/all" activeClassName="active" passHref>
-            <a>&</a>
+            &
           </Link>
         </div>
         <div>
@@ -31,13 +31,13 @@ export default function Header(props) {
             activeClassName="active"
             passHref
           >
-            <a>Typeface Desgin</a>
+            Typeface Desgin
           </Link>
         </div>
 
         <div>
           <Link href="/about" as="/about" activeClassName="active" passHref>
-            <a>About</a>
+            About
           </Link>
         </div>
       </div>

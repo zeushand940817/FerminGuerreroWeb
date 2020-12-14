@@ -1,27 +1,41 @@
 import fetch from 'isomorphic-unfetch'
-import { useEffect, useState } from 'react'
-import landings from 'database/landings'
+import { useState } from 'react'
 
 const Home = ({ data }) => {
   const imagenes = data
-  console.log(imagenes[0].image, 'SOY IMAGES')
+
+  const [imageNumber, setImageNumber] = useState(0)
+
+  function handleMouseMove() {
+    setImageNumber(Math.floor(Math.random() * 12))
+  }
 
   return (
     <>
       <div className="wrapper">
-        <img src={imagenes[0].image} />
+        <div
+          style={{
+            width: '100vw',
+            height: '100%',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundImage: `url(${imagenes[imageNumber].image})`,
+          }}
+          href=""
+          onMouseMove={handleMouseMove}
+        ></div>
       </div>
 
       <style jsx>{`
         .wrapper {
-          padding: 40px 10px 0px 10px;
-          width: 100%;
-          height: 100%;
+          width: 100vw;
+          height: 95vh;
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
         }
         img {
           width: 100%;
         }
-
         h1 {
           display: flex;
           text-align: center;
@@ -40,7 +54,6 @@ export async function getServerSideProps() {
   const { API_URL } = process.env
   const res = await fetch(`${API_URL}/api/landings`)
   const data = await res.json()
-  console.log(data, 'data')
 
   return {
     props: {

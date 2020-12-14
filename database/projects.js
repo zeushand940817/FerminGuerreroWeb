@@ -1,5 +1,3 @@
-import { TramRounded } from '@material-ui/icons'
-
 const projects = [
   {
     name: 'Carte Blanche',
@@ -8,13 +6,13 @@ const projects = [
     year: '2013',
     horizontal: false,
     image: '/CartaBlanche/4.JPG',
-    img1: '/CartaBlanche/1.JPG',
+    img1: '/CartaBlanche/1.jpg',
     images: {
-      img2: '/CartaBlanche/2.JPG',
+      img1: '/CartaBlanche/2.JPG',
       img3: '/CartaBlanche/3.JPG',
-      img4: '/CoverPhotos/Galleries/CarteBlancheH.jpg',
-      img5: '/CartaBlanche/5.JPG',
-      img6: '/CartaBlanche/6.JPG',
+      img6: '/CartaBlanche/5.JPG',
+      img4: '/CartaBlanche/4.JPG',
+      img5: '/CartaBlanche/6.JPG',
     },
     attributes: {
       description:
@@ -354,13 +352,12 @@ const projects = [
         'Geneve is a type family inspired by the rich typographic history of Geneva.- Bachelor thesis at HEAD, Geneva - Designed to be used on any type of printed support, Gen�ve is a typography with personality and flexibility, which allows designers to express their ideas in different ways without losing coherence. In developing Gen�ve I was inspired by the typeface used by French printer/editor/publisher Henri II Estienne in his famous book Thesaurus Lingu� Gr�c�, published in Geneva in 1572. This typeface was brought to Geneva by Henri�s father, Robert Estienne, who, before settling in Geneva and working as Calvin�s printer, was the printer of France�s King, Fran�ois I. This typeface highly influenced the typographers and printers in Geneva at that time. Henri and Robert Estienne�s work in Geneva helped it to become one of the most important cities in Europe for print and typography in the sixteenth century. Gen�ve consists of four styles: Classique (Humanist serif), Aust�re (Geometric serif), Spontan�e (Humanist sans-serif) and Alternative (Stencil, display version). These styles correspond to the different profiles of the city, reflecting its multiculturalism and diversity. This typography acts as a bridge between the past and present of the city. I received the BEA Fondation Award for Young Artists for my work on the Gen�ve Typeface.',
     },
   },
-
   {
     name: 'Goes Around',
     id: '11',
     type: 'graphic',
     year: '2014',
-    horizontal: false,
+    horizontal: true,
     image: '/GoesAround/1.jpg',
     images: {
       img1: '/CoverPhotos/Galleries/GoesArround.jpg',
@@ -387,17 +384,16 @@ const projects = [
       img2: '/ItsUpToYou/2.jpg',
       img3: '/ItsUpToYou/3.jpg',
       img4: '/ItsUpToYou/4.jpg',
-      img5: '/ItsUpToYou/5.jpg',
-      img6: '/ItsUpToYou/6.jpg',
-      img7: '/ItsUpToYou/7.jpg',
-      img8: '/ItsUpToYou/8.jpg',
-      img9: '/ItsUpToYou/9.jpg',
-      img10: '/ItsUpToYou/10.jpg',
-      img11: '/ItsUpToYou/11.JPG',
-      img12: '/ItsUpToYou/12.JPG',
-      img13: '/ItsUpToYou/13.JPG',
-      img14: '/ItsUpToYou/14.JPG',
-      img15: '/ItsUpToYou/15.JPG',
+      img5: '/ItsUpToYou/6.jpg',
+      img6: '/ItsUpToYou/7.jpg',
+      img7: '/ItsUpToYou/8.jpg',
+      img8: '/ItsUpToYou/9.jpg',
+      img9: '/ItsUpToYou/10.jpg',
+      img10: '/ItsUpToYou/11.JPG',
+      img11: '/ItsUpToYou/12.JPG',
+      img12: '/ItsUpToYou/13.JPG',
+      img13: '/ItsUpToYou/14.JPG',
+      img14: '/ItsUpToYou/15.JPG',
     },
     attributes: {
       description:
@@ -639,7 +635,6 @@ const projects = [
       img12: '/LaDamedeLaMer/12.JPG',
       img13: '/LaDamedeLaMer/13.JPG',
       img14: '/LaDamedeLaMer/14.JPG',
-      img15: '/LaDamedeLaMer/15.JPG',
     },
     attributes: {
       description:
@@ -818,10 +813,10 @@ const projects = [
     id: '28',
     type: 'typeface',
     year: '2011',
-    horizontal: true,
-    image: '/CoverPhotos/Galleries/Viga.jpg',
+    horizontal: false,
+    image: '/Viga/7.jpg',
+    img1: '/Viga/2.jpg',
     images: {
-      img1: '/Viga/2.jpg',
       img3: '/Viga/3.jpg',
       img4: '/Viga/4.jpg',
       img5: '/Viga/5.jpg',

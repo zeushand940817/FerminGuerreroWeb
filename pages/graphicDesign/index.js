@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 
+
 export default function GraphicDesign({ data }) {
   const projectsFilter = data
     .filter((project) => project.type === 'graphic')

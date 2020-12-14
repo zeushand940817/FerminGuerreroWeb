@@ -55,19 +55,30 @@ export default function DetailPage({ data }) {
 
         .wrapperGalleria {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+ 
           grid-gap: 15px;
-          grid-auto-flow: dense;
         }
 
-        .wrapperGalleria img:nth-child(3),
-        .wrapperGalleria img:nth-child(4),
-        .wrapperGalleria img:nth-child(8) {
+         {
+          /* .wrapperGalleria img:nth-child(5n + 1), 
+        .wrapperGalleria img:nth-child(5){
+          grid-row-end: span 2;
+        } */
+       
+       
+        {/* grid-template-columns: repeat(2, 1fr); */}
+        }
+
+        .wrapperGalleria img:nth-child(5),
+        .wrapperGalleria img:nth-child(8),
+        .wrapperGalleria img:last-child {
           grid-column: span 2;
         }
 
         .img {
           width: 100%;
+          object-fit: cover;
           grid-column: span 1;
         }
 
@@ -165,3 +176,5 @@ export async function getServerSideProps(context) {
     },
   }
 }
+
+// grid-template-columns: repeat(2, 1fr);
