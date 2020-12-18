@@ -10,10 +10,10 @@ export default function Footer() {
           width: 100%;
           height: 50px;
           bottom: 0;
-          background-color: black;
-          border-top: 1px solid white;
+          background-color: transparent;
           font-size: 16px;
-          color: white;
+          mix-blend-mode: difference;
+          position: fixed;
           padding: 10px 20px 10px 20px;
           display: flex;
           justify-content: space-between;

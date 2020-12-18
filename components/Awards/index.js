@@ -170,7 +170,7 @@ export default function Awards({ data }) {
             <Box className={classes.text}>2014</Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.prize}>
+            <Box className={classes.text}>
               BEA fondation award for young artists.
             </Box>
           </Grid>

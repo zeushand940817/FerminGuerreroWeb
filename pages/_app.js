@@ -4,6 +4,8 @@ import MobileMenu from 'components/MobileMenu'
 import Footer from 'components/Footer'
 import Head from 'next/head'
 
+
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -12,13 +14,16 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/ferIcon.gif" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+     
       <div className="desktop">
         <Header />
       </div>
       <div className="mobile">
         <MobileMenu />
       </div>
-      <Component {...pageProps} />
+    
+        <Component {...pageProps} />
+    
       <Footer />
 
       <style jsx>{`

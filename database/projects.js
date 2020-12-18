@@ -7,13 +7,33 @@ const projects = [
     horizontal: false,
     image: '/CartaBlanche/4.JPG',
     img1: '/CartaBlanche/1.jpg',
-    images: {
-      img1: '/CartaBlanche/2.JPG',
-      img3: '/CartaBlanche/3.JPG',
-      img6: '/CartaBlanche/5.JPG',
-      img4: '/CartaBlanche/4.JPG',
-      img5: '/CartaBlanche/6.JPG',
-    },
+    images: [
+      {
+        img: '/CartaBlanche/5.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/CartaBlanche/4.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/CartaBlanche/2.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/CartaBlanche/3.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/CartaBlanche/6.JPG',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         'I had the honor of being invited by Form magazine to design a poster for their "Carte Blanche" limited edition poster series, for their May/June 2013 issue, in collaboration with the Berlin furniture design Studio Hausen.',
@@ -26,15 +46,38 @@ const projects = [
     year: '2011',
     horizontal: true,
     image: '/CoverPhotos/Galleries/CircH.jpg',
-
-    images: {
-      img1: '/Circ/2.JPG',
-      img2: '/Circ/3.JPG',
-      img3: '/Circ/4.JPG',
-      img4: '/Circ/5.JPG',
-      img5: '/Circ/6.JPG',
-      img6: '/Circ/7.JPG',
-    },
+    images: [
+      {
+        img: '/Circ/2.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Circ/3.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Circ/7.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Circ/5.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Circ/6.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Circ/4.JPG',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         'CIRC is an experimental title font, based on geometic forms deriving from the circle.',
@@ -48,33 +91,125 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/DinMachine.jpg',
     image: '/CoverPhotos/Galleries/DinMachine.jpg',
-    images: {
-      img1: '/DinMachine/2.jpg',
-      img4: '/DinMachine/4.jpg',
-      img5: '/DinMachine/5.jpg',
-      img3: '/DinMachine/3.jpg',
-      img6: '/DinMachine/6.jpg',
-      img7: '/DinMachine/7.jpg',
-      img8: '/DinMachine/8.jpg',
-      img9: '/DinMachine/9.jpg',
-      img10: '/DinMachine/10.jpg',
-      img11: '/DinMachine/11.jpg',
-      img12: '/DinMachine/12.jpg',
-      img13: '/DinMachine/13.jpg',
-      img14: '/DinMachine/14.jpg',
-      img15: '/DinMachine/15.jpg',
-      img16: '/DinMachine/16.jpg',
-      img17: '/DinMachine/17.jpg',
-      img18: '/DinMachine/18.jpg',
-      img19: '/DinMachine/19.jpg',
-      img20: '/DinMachine/20.jpg',
-      img21: '/DinMachine/21.jpg',
-      img22: '/DinMachine/22.jpg',
-      img24: '/DinMachine/24.jpg',
-      img25: '/DinMachine/25.jpg',
-      img23: '/DinMachine/23.jpg',
-      img26: '/DinMachine/26.jpg',
-    },
+    images: [
+      {
+        img: '/DinMachine/2.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/DinMachine/3.jpg',
+        rows: 2,
+        cols: 3,
+      },
+      {
+        img: '/DinMachine/6.jpg',
+        rows: 2,
+        cols: 1,
+      },
+      {
+        img: '/DinMachine/7.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/DinMachine/4.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/DinMachine/8.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/9.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/12.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/11.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/10.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/17.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/18.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/20.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/DinMachine/13.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/DinMachine/14.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/15.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/16.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/DinMachine/19.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/DinMachine/21.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/DinMachine/24.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/25.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/23.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/DinMachine/26.jpg',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         "Logo and CD cover design for the New York based electronic experimental rock band DinMachine Created for their first album �Dance to reason. I also designed a t-shirt to accompany the CD launching. DinMachine is a collaboration between Nisi Jacobs and Michael J. Schumacher. They have been making music together since 2009 and have performed at MoMA New York. Ken Jacobs (a world renowned experimental film maker) has used both Schumacher�s and DinMachine�s music for his published films. Asking Nisi and Michael about themselves, the band and the music they create together, they came up with some things that I found very interesting to work graphically on: We want to grab people with the music, get them moving. DinMachine�s music has been generally described as non-classifiable. Our music, we feel, has elements that are very engaging and involving, and others that need distance and detachment. We like the idea of hot vs cold, engaging sexiness. For the logo, I decided to work with the idea of both �non-classifiable� as well as contrast/opposite. My approach to the logo was very experimental, mixing uppercase and lowercase letters in order to create something of an originality which defies classification. The letters are all cut differently which adds movement and vibration to the logo which echoes DinMachine'/s music. For the CD cover I created a concept which plays with the idea of sexiness, opposite (cold vs hot, engage/detach) and movement. From a distance you can see an abstract image, an involving composition of a mix of colors and shapes. But when looking closely, you discover the details, a scene containing human bodies, people moving combined with something as coldand lifeless as dry black trees. The inside vs the outside of the cover also plays with this idea of contrast/opposite..",
@@ -89,35 +224,93 @@ const projects = [
     landing: '/CoverPhotos/Lading/Exentra.jpg',
     image: '/CoverPhotos/Galleries/ExentraV.jpg',
     img1: '/Exentra/1.jpg',
-    images: {
-      img2: '/Exentra/2.JPG',
-      img3: '/Exentra/3.JPG',
-      img4: '/Exentra/4.JPG',
-      img5: '/Exentra/5.JPG',
-      img6: '/Exentra/6.JPG',
-      img7: '/Exentra/7.JPG',
-      img8: '/Exentra/8.jpg',
-      img9: '/Exentra/9.jpg',
-      img10: '/Exentra/10.jpg',
-      img11: '/Exentra/11.jpg',
-      img12: '/Exentra/12.jpg',
-      img13: '/Exentra/13.jpg',
-      img14: '/Exentra/14.jpg',
-      img15: '/Exentra/15.jpg',
-      img16: '/Exentra/16.jpg',
-      img17: '/Exentra/17.jpg',
-      img18: '/Exentra/18.jpg',
-      img19: '/Exentra/19.jpg',
-      img20: '/Exentra/20.jpg',
-      img21: '/Exentra/21.jpg',
-      img22: '/Exentra/22.jpg',
-      img23: '/Exentra/23.jpg',
-      img24: '/Exentra/24.jpg',
-      img25: '/Exentra/25.jpg',
-      img26: '/Exentra/26.jpg',
-      img27: '/Exentra/27.jpg',
-      img28: '/Exentra/28.jpg',
-    },
+    images: [
+      {
+        img: '/Exentra/3.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/2.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/4.JPG',
+      },
+      {
+        img: '/Exentra/5.JPG',
+      },
+      {
+        img: '/Exentra/6.JPG',
+      },
+      {
+        img: '/Exentra/7.JPG',
+      },
+      {
+        img: '/Exentra/8.jpg',
+      },
+      {
+        img: '/Exentra/9.jpg',
+      },
+      {
+        img: '/Exentra/10.jpg',
+      },
+      {
+        img: '/Exentra/11.jpg',
+      },
+      {
+        img: '/Exentra/12.jpg',
+      },
+      {
+        img: '/Exentra/13.jpg',
+      },
+      {
+        img: '/Exentra/14.jpg',
+      },
+      {
+        img: '/Exentra/15.jpg',
+      },
+      {
+        img: '/Exentra/16.jpg',
+      },
+      {
+        img: '/Exentra/17.jpg',
+      },
+      {
+        img: '/Exentra/18.jpg',
+      },
+      {
+        img: '/Exentra/19.jpg',
+      },
+      {
+        img: '/Exentra/20.jpg',
+      },
+      {
+        img: '/Exentra/21.jpg',
+      },
+      {
+        img: '/Exentra/22.jpg',
+      },
+      {
+        img: '/Exentra/23.jpg',
+      },
+      {
+        img: '/Exentra/24.jpg',
+      },
+      {
+        img: '/Exentra/25.jpg',
+      },
+      {
+        img: '/Exentra/26.jpg',
+      },
+      {
+        img: '/Exentra/27.jpg',
+      },
+      {
+        img: '/Exentra/28.jpg',
+      },
+    ],
     attributes: {
       description:
         "Exentra is the project I developed at the MATD course 2014-15, in Reading. My intention for the MATD project was to design an innovative and unique typeface that would appeal to designers doing forward-looking design. Therefore, this Typeface family was concevied for publications promoting forward-thinking through a contemporary and experimental vision of modern culture and trends. Its style combines the elegance and warmth of calligraphy with the precision and digital sharpness of the computer process that give it a contemporary look. Unconventional letter shapes, and the playful and dynamic design, reinforce the idiosyncrasy of the typeface. Exentra consist of Latin (7 cuts for the text version, Italic, Sans Serif and two Display versions) Gurmukhi and Greek. The images below belong to Exentra�s Specimen Book. Don'/t hesitate to request the pdf version of the Specimen.",
@@ -181,7 +374,6 @@ const projects = [
       img28: '/FGC/28.jpg',
       img29: '/FGC/29.jpg',
       img30: '/FGC/30.jpg',
-      img31: '/FGC/31.jpg',
     },
     attributes: {
       description:
@@ -197,14 +389,12 @@ const projects = [
     landing: '/CoverPhotos/Lading/FlagOfPeace.jpg',
     image: '/CoverPhotos/Galleries/FlagOfPeace.jpg',
     images: {
-      img1: '/FlagOfPeace/1.jpg',
       img2: '/FlagOfPeace/2.jpg',
       img3: '/FlagOfPeace/3.jpg',
       img4: '/FlagOfPeace/4.jpg',
       img5: '/FlagOfPeace/5.jpg',
       img6: '/FlagOfPeace/6.jpg',
       img7: '/FlagOfPeace/7.jpg',
-      img8: '/FlagOfPeace/8.jpg',
     },
     attributes: {
       description:
@@ -237,21 +427,6 @@ const projects = [
     landing: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
     image: '/CoverPhotos/Galleries/GenevaMotorShow.jpg',
     images: {
-      img1: '/GenevaMotorShow/17.jpg',
-      img18: '/GenevaMotorShow/18.jpg',
-      img19: '/GenevaMotorShow/19.jpg',
-      img20: '/GenevaMotorShow/20.jpg',
-      img21: '/GenevaMotorShow/21.jpg',
-      img22: '/GenevaMotorShow/22.jpg',
-      img23: '/GenevaMotorShow/23.jpg',
-      img24: '/GenevaMotorShow/24.jpg',
-      img25: '/GenevaMotorShow/25.jpg',
-      img26: '/GenevaMotorShow/26.jpg',
-      img30: '/GenevaMotorShow/30.jpg',
-      img27: '/GenevaMotorShow/27.jpg',
-      img28: '/GenevaMotorShow/28.jpg',
-      img29: '/GenevaMotorShow/29.jpg',
-
       img1: '/GenevaMotorShow/1.jpg',
       img2: '/GenevaMotorShow/2.jpg',
       img3: '/GenevaMotorShow/3.jpg',
@@ -268,6 +443,16 @@ const projects = [
       img14: '/GenevaMotorShow/14.JPG',
       img15: '/GenevaMotorShow/15.JPG',
       img16: '/GenevaMotorShow/16.JPG',
+      img17: '/GenevaMotorShow/17.jpg',
+      img18: '/GenevaMotorShow/18.jpg',
+      img19: '/GenevaMotorShow/19.jpg',
+      img20: '/GenevaMotorShow/20.jpg',
+      img21: '/GenevaMotorShow/21.jpg',
+      img22: '/GenevaMotorShow/22.jpg',
+      img23: '/GenevaMotorShow/23.jpg',
+      img24: '/GenevaMotorShow/24.jpg',
+      img25: '/GenevaMotorShow/25.jpg',
+      img26: '/GenevaMotorShow/26.jpg',
     },
     attributes: {
       description:
@@ -409,7 +594,6 @@ const projects = [
     landing: '/CoverPhotos/Lading/JoieDeLire.jpg',
     image: '/CoverPhotos/Galleries/JoieDeLire.jpg',
     images: {
-      img1: '/JoieDeLire/1.jpg',
       img2: '/JoieDeLire/2.JPG',
       img3: '/JoieDeLire/3.JPG',
       img4: '/JoieDeLire/4.JPG',
@@ -518,8 +702,8 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/MiMujer.jpg',
     image: '/CoverPhotos/Galleries/MiMujer.jpg',
+    img1: '/MiMujer/1.jpg',
     images: {
-      img1: '/MiMujer/1.jpg',
       img2: '/MiMujer/2.jpg',
       img3: '/MiMujer/3.jpg',
       img4: '/MiMujer/4.jpg',
@@ -537,8 +721,8 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/NewYearNewFight.jpg',
     image: '/CoverPhotos/Galleries/NewYearNewFight.jpg',
+    img1: '/NewYearNewFight/1.jpg',
     images: {
-      img1: '/NewYearNewFight/1.jpg',
       img2: '/NewYearNewFight/2.jpg',
       img3: '/NewYearNewFight/3.jpg',
       img4: '/NewYearNewFight/4.jpg',
@@ -734,7 +918,6 @@ const projects = [
       img2: '/TimeOut/2.jpg',
       img3: '/TimeOut/3.jpg',
       img4: '/TimeOut/4.jpg',
-      img5: '/TimeOut/5.jpg',
     },
     attributes: {
       description:
@@ -749,12 +932,12 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/Tomorrow.jpg',
     image: '/Tomorrow/1.jpg',
+    img1: '/Tomorrow/5.jpg',
     images: {
-      img1: '/Tomorrow/1.jpg',
-      img2: '/Tomorrow/2.jpg',
-      img5: '/Tomorrow/5.jpg',
-      img3: '/Tomorrow/3.jpg',
-      img4: '/Tomorrow/4.jpg',
+      img2: '/Tomorrow/1.jpg',
+      img3: '/Tomorrow/2.jpg',
+      img4: '/Tomorrow/3.jpg',
+      img5: '/Tomorrow/4.jpg',
     },
     attributes: {
       description:
@@ -837,11 +1020,11 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/Weltformat.jpg',
     image: '/CoverPhotos/Galleries/Weltformat.jpg',
+    img1: '/Weltformat/5.jpg',
     images: {
-      img1: '/Weltformat/1.jpg',
-      img2: '/Weltformat/2.jpg',
-      img3: '/Weltformat/3.jpg',
-      img5: '/Weltformat/5.jpg',
+      img2: '/Weltformat/1.jpg',
+      img3: '/Weltformat/2.jpg',
+      img4: '/Weltformat/3.jpg',
     },
     attributes: {
       description:

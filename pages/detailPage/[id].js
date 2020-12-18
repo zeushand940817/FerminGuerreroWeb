@@ -1,11 +1,29 @@
 import Grid from '@material-ui/core/Grid'
 import fetch from 'isomorphic-unfetch'
 import GoBack from 'components/GoBack'
+import { makeStyles } from '@material-ui/core/styles'
+import ImageList from '@material-ui/core/ImageList'
+import ImageListItem from '@material-ui/core/ImageListItem'
+
+const useStyles = makeStyles({
+  root: {
+    width: 500,
+    height: 450,
+  },
+  imagen: {
+    objectFit: 'cover',
+    objectPosition: 'center',
+  },
+})
+
+function srcset(image, size, rows = 1, cols = 1) {
+  return `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format 1x,
+  ${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
+}
 
 export default function DetailPage({ data }) {
   const images = data.images
-  // console.log(Object.keys(images), 'KEYS')
-  // console.log(Object.values(images), 'VALUES')
+  const classes = useStyles()
 
   return (
     <>
@@ -37,11 +55,23 @@ export default function DetailPage({ data }) {
           </div>
         </Grid>
 
-        <div className="wrapperGalleria">
+        <ImageList
+          gap={12}
+          variant="quilted"
+          cols={4}
+          rowHeight="auto"
+          className={classes.root}
+        >
           {Object.values(images).map((image) => (
-            <img className="img" src={image} />
+            <ImageListItem cols={image.cols || 1} rows={image.rows || 1}>
+              <img
+                srcSet={srcset(image.img, 121, image.rows, image.cols)}
+                alt=""
+                className={classes.imagen}
+              />
+            </ImageListItem>
           ))}
-        </div>
+        </ImageList>
       </div>
 
       <style jsx>{`
@@ -52,36 +82,6 @@ export default function DetailPage({ data }) {
           padding: 40px 10px 0px 10px;
           margin-bottom: 30px;
         }
-
-        .wrapperGalleria {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
- 
-          grid-gap: 15px;
-        }
-
-         {
-          /* .wrapperGalleria img:nth-child(5n + 1), 
-        .wrapperGalleria img:nth-child(5){
-          grid-row-end: span 2;
-        } */
-       
-       
-        {/* grid-template-columns: repeat(2, 1fr); */}
-        }
-
-        .wrapperGalleria img:nth-child(5),
-        .wrapperGalleria img:nth-child(8),
-        .wrapperGalleria img:last-child {
-          grid-column: span 2;
-        }
-
-        .img {
-          width: 100%;
-          object-fit: cover;
-          grid-column: span 1;
-        }
-
         .gridContainer {
           display: flex;
           flex-direction: row;
@@ -119,28 +119,9 @@ export default function DetailPage({ data }) {
           margin: 30px;
         }
 
-         {
-          /* Media Queries */
-        }
+        /* Media Queries */
 
         @media screen and (max-width: 667px) {
-          .wrapperGalleria {
-            grid-template-columns: repeat(1, 1fr);
-          }
-
-          .img {
-            width: 100%;
-            grid-column: 1;
-          }
-
-          .wrapperGalleria img:nth-child(3),
-          .wrapperGalleria img:nth-child(4),
-          .wrapperGalleria img:nth-child(6),
-          .wrapperGalleria img:nth-child(8),
-          .wrapperGalleria img:last-child {
-            grid-column: 1;
-          }
-
           .gridContainer {
             width: 100%;
             display: flex;
@@ -176,5 +157,3 @@ export async function getServerSideProps(context) {
     },
   }
 }
-
-// grid-template-columns: repeat(2, 1fr);

@@ -1,51 +1,47 @@
-// import { Link } from 'next/link'
-
+// import Link from 'next/link'
 
 export default function All({ data }) {
-  const projects = data;
+  const projects = data
 
   return (
-    <div className='imageContainer'>
-      <div className='col'>
-      {projects.map((project, key) => (
+    <div className="imageContainer">
+      <div className="col">
+        {projects.map((project, key) => (
           <img
-            className='imagen' 
+            className="imagen"
             key={project.id}
             src={project.image}
             alt={project.name}
-            />  
-           ))}
+          />
+        ))}
       </div>
 
-    <style jsx>{`
-    .imageContainer{
-      max-width: 100vw;
-      height:auto;
-      padding: 40px 10px 0px 10px;
-      column-count: 3;
-    }
+      <style jsx>{`
+        .imageContainer {
+          max-width: 100vw;
+          height: auto;
+          padding: 40px 10px 0px 10px;
+          column-count: 3;
+        }
 
-@media screen and (max-width: 667px) {
-      .imageContainer{
-        column-count:1;
-        }   
-      } 
-    .col{
-      height: auto;
-    }
+        @media screen and (max-width: 667px) {
+          .imageContainer {
+            column-count: 1;
+          }
+        }
+        .col {
+          height: auto;
+        }
 
-    .imagen{
-      width:100%;
-      border-radius:10px;
-      padding: 10px;
-    }
-
+        .imagen {
+          width: 100%;
+          border-radius: 10px;
+          padding: 10px;
+        }
       `}</style>
     </div>
-
-  );
+  )
 }
-
 
 export async function getServerSideProps() {
   const { API_URL } = process.env
@@ -58,5 +54,3 @@ export async function getServerSideProps() {
     },
   }
 }
-
-

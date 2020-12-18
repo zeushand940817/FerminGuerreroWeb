@@ -65,7 +65,6 @@ export default function Header(props) {
         }
         div:nth-child(2) {
           grid-column: 5/7;
-          padding-left: 5px;
         }
         div:nth-child(3) {
           grid-column: 7;
