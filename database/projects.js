@@ -237,78 +237,147 @@ const projects = [
       },
       {
         img: '/Exentra/4.JPG',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/Exentra/5.JPG',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Exentra/6.JPG',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Exentra/7.JPG',
-      },
-      {
-        img: '/Exentra/8.jpg',
-      },
-      {
-        img: '/Exentra/9.jpg',
-      },
-      {
-        img: '/Exentra/10.jpg',
-      },
-      {
-        img: '/Exentra/11.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/Exentra/12.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/Exentra/13.jpg',
-      },
-      {
-        img: '/Exentra/14.jpg',
-      },
-      {
-        img: '/Exentra/15.jpg',
-      },
-      {
-        img: '/Exentra/16.jpg',
-      },
-      {
-        img: '/Exentra/17.jpg',
-      },
-      {
-        img: '/Exentra/18.jpg',
-      },
-      {
-        img: '/Exentra/19.jpg',
-      },
-      {
-        img: '/Exentra/20.jpg',
-      },
-      {
-        img: '/Exentra/21.jpg',
-      },
-      {
-        img: '/Exentra/22.jpg',
-      },
-      {
-        img: '/Exentra/23.jpg',
-      },
-      {
-        img: '/Exentra/24.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/Exentra/25.jpg',
-      },
-      {
-        img: '/Exentra/26.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/Exentra/27.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
-        img: '/Exentra/28.jpg',
+        img: '/Exentra/15.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/16.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/17.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/19.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/8.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Exentra/32.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/Exentra/21.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/20.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/Exentra/18.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/29.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/26.jpg',
+        rows: 2,
+        cols: 3,
+      },
+      {
+        img: '/Exentra/24.jpg',
+        rows: 2,
+        cols: 1,
+      },
+      {
+        img: '/Exentra/31.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/11.jpg',
+        rows: 2,
+        cols: 1,
+      },
+      {
+        img: '/Exentra/22.jpg',
+        rows: 2,
+        cols: 3,
+      },
+
+      {
+        img: '/Exentra/14.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Exentra/23.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/Exentra/30.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Exentra/10.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Exentra/9.jpg',
+        rows: 2,
+        cols: 2,
       },
     ],
     attributes: {
@@ -325,11 +394,19 @@ const projects = [
     landing: '/CoverPhotos/Lading/FeriaDelLibro.jpg',
     image: '/CoverPhotos/Galleries/FeriaDelLibro.jpg',
     img1: '/FeriaDelLibro/1.jpg',
-    images: {
-      img3: '/FeriaDelLibro/3.jpg',
-      img2: '/FeriaDelLibro/2.jpg',
-      img4: '/FeriaDelLibro/4.jpg',
-    },
+    images: [
+      {
+        img: '/FeriaDelLibro/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FeriaDelLibro/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      { img: '/FeriaDelLibro/2.jpg', rows: 2, cols: 4 },
+    ],
     attributes: {
       description:
         'Proposition I made for the poster competition for the "18th Book Fair for children and young people" in Uruguay - which I did not win. My intention was to create an image that would show books in a playful and intriguing manner, that would appeal to kids\'/ curiosity and encourage them to go explore the discoveries opportunities a book faire offers. More generally, I wanted kid to perceive a book faire as an exciting place to visit. My mottos were: Knowledge is freedom. Reading is fun.',
@@ -340,41 +417,171 @@ const projects = [
     id: '6',
     type: 'graphic',
     year: '2012',
-    horizontal: true,
+    horizontal: false,
     landing: '/CoverPhotos/Lading/FGC.jpg',
     image: '/FGC/7.gif',
-    images: {
-      img1: '/FGC/1.jpg',
-      img2: '/FGC/2.jpg',
-      img3: '/FGC/3.jpg',
-      img4: '/FGC/4.jpg',
-      img5: '/FGC/5.jpg',
-      img6: '/FGC/6.gif',
-      img7: '/FGC/7.gif',
-      img8: '/FGC/8.jpg',
-      img9: '/FGC/9.gif',
-      img10: '/FGC/10.jpg',
-      img11: '/FGC/11.JPG',
-      img12: '/FGC/12.JPG',
-      img13: '/FGC/13.JPG',
-      img14: '/FGC/14.JPG',
-      img15: '/FGC/15.JPG',
-      img16: '/FGC/16.JPG',
-      img17: '/FGC/17.jpg',
-      img18: '/FGC/18.jpg',
-      img19: '/FGC/19.jpg',
-      img20: '/FGC/20.jpg',
-      img21: '/FGC/21.jpg',
-      img22: '/FGC/22.jpg',
-      img23: '/FGC/23.jpg',
-      img24: '/FGC/24.jpg',
-      img25: '/FGC/25.jpg',
-      img26: '/FGC/26.jpg',
-      img27: '/FGC/27.jpg',
-      img28: '/FGC/28.jpg',
-      img29: '/FGC/29.jpg',
-      img30: '/FGC/30.jpg',
-    },
+    img1: '/FGC/FGC.jpg',
+    images: [
+      {
+        img: '/FGC/19.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/2.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/FGC/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/5.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/6.gif',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/7.gif',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/8.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/9.gif',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/10.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/31.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/32.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/18.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/FGC/12.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/13.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/14.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/FGC/15.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/16.JPG',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/FGC/17.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/FGC/20.jpg',
+        rows: 1,
+        cols: 4,
+      },
+      {
+        img: '/FGC/23.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/FGC/22.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/24.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/25.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/FGC/21.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/FGC/26.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/27.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/28.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/FGC/30.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FGC/29.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         "First prize in the contest for the re-design of Fédération Genevoise de Coopération'/s corporate identity - 2012. The FGC regroups about fifty associations with headquarters in Geneva. The aim behind this cooperation is to aid developing countries and raise public awareness. Therefore, the Fédération Genevoise de Coopération finances projects which help battle inequality and provide freedom of choice to these countries.",
@@ -388,14 +595,38 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/FlagOfPeace.jpg',
     image: '/CoverPhotos/Galleries/FlagOfPeace.jpg',
-    images: {
-      img2: '/FlagOfPeace/2.jpg',
-      img3: '/FlagOfPeace/3.jpg',
-      img4: '/FlagOfPeace/4.jpg',
-      img5: '/FlagOfPeace/5.jpg',
-      img6: '/FlagOfPeace/6.jpg',
-      img7: '/FlagOfPeace/7.jpg',
-    },
+    images: [
+      {
+        img: '/FlagOfPeace/2.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/FlagOfPeace/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FlagOfPeace/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FlagOfPeace/6.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FlagOfPeace/8.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FlagOfPeace/7.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         'Flags of Peace (NL) honoured me with an invitation to design an international peace flag to represent my country (Uruguay) in their international exhibition Flags of Peace which travels around the world. Many bold designers and studios have already joined the great cause behind this project by designing the flag for their respective countries. My thoughts: I believe that for a flag to be International it has to represent/address all cultures equally. Therefore, we cannot rely on words, since language only represent a certain culture. Although there are some symbols that are internationally associate with peace, when looking at their origins, research showed me that, for the most part, their either represented something else or were linked to a specific religion. Accordingly, the use of them was judged inappropriate. There are normally two sides in a conflict putting peace away, where either two persons, or groups (nations, towns, etc.) are confronted for things such as religion, genre, skin color, social class, origins, and so on. For peace to take place, these two sides need to come to terms and see each other as equals in order to impart mutual respect. Concept: My flag carries a message of hope, showing these opposite sides finding common ground, complementing each other and sharing instead of dividing and excluding. Symmetry was used as means of representing equality and balance between two sides that although they look different (color), they are equals (form). The symmetrical image is also an analogy for a mirror, encouraging people to find a piece of themselves in the one in front of us.',
@@ -408,12 +639,24 @@ const projects = [
     year: '2017',
     horizontal: false,
     image: '/CoverPhotos/Galleries/FreedomOfMovement.jpg',
-    images: {
-      img1: '/FreedomOfMovement/1.jpg',
-      img2: '/FreedomOfMovement/2.jpg',
-      img3: '/FreedomOfMovement/3.jpg',
-      img4: '/FreedomOfMovement/4.jpg',
-    },
+    img1: '/FreedomOfMovement/2.jpg',
+    images: [
+      {
+        img: '/FreedomOfMovement/1.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/FreedomOfMovement/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/FreedomOfMovement/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description: '',
     },
@@ -425,35 +668,129 @@ const projects = [
     year: '2014',
     horizontal: true,
     landing: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
-    image: '/CoverPhotos/Galleries/GenevaMotorShow.jpg',
-    images: {
-      img1: '/GenevaMotorShow/1.jpg',
-      img2: '/GenevaMotorShow/2.jpg',
-      img3: '/GenevaMotorShow/3.jpg',
-      img4: '/GenevaMotorShow/4.jpg',
-      img5: '/GenevaMotorShow/5.jpg',
-      img6: '/GenevaMotorShow/6.jpg',
-      img7: '/GenevaMotorShow/7.jpg',
-      img8: '/GenevaMotorShow/8.jpg',
-      img9: '/GenevaMotorShow/9.jpg',
-      img10: '/GenevaMotorShow/10.jpg',
-      img11: '/GenevaMotorShow/11.JPG',
-      img12: '/GenevaMotorShow/12.JPG',
-      img13: '/GenevaMotorShow/13.JPG',
-      img14: '/GenevaMotorShow/14.JPG',
-      img15: '/GenevaMotorShow/15.JPG',
-      img16: '/GenevaMotorShow/16.JPG',
-      img17: '/GenevaMotorShow/17.jpg',
-      img18: '/GenevaMotorShow/18.jpg',
-      img19: '/GenevaMotorShow/19.jpg',
-      img20: '/GenevaMotorShow/20.jpg',
-      img21: '/GenevaMotorShow/21.jpg',
-      img22: '/GenevaMotorShow/22.jpg',
-      img23: '/GenevaMotorShow/23.jpg',
-      img24: '/GenevaMotorShow/24.jpg',
-      img25: '/GenevaMotorShow/25.jpg',
-      img26: '/GenevaMotorShow/26.jpg',
-    },
+    image: '/GenevaMotorShow/19.jpg',
+    images: [
+      {
+        img: '/GenevaMotorShow/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/2.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/8.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GenevaMotorShow/9.jpg',
+        rows: 2,
+        cols: 1,
+      },
+      {
+        img: '/GenevaMotorShow/10.jpg',
+        rows: 2,
+        cols: 3,
+      },
+      {
+        img: '/GenevaMotorShow/11.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/13.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/12.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GenevaMotorShow/15.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/16.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/17.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GenevaMotorShow/14.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GenevaMotorShow/20.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GenevaMotorShow/23.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/25.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/24.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/22.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/7.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GenevaMotorShow/6.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/5.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GenevaMotorShow/26.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GenevaMotorShow/18.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         "1rst Prize at the contest, holded by HEAD, for Geneva Motor Show 2014'/s poster design and art direction. This graphic was used in all of the different national and international communication campaigns for the 2014 Geneva International Motor Show. I wanted to propose a different design concept that goes further than the � regular � style of the Motor Show. Therefore I wanted to avoid the typical representative car and automobile references and busy images. I also noticed that quite often in the previous poster campaigns, text and image were treated as two completely distinct elements and were therefore very distant from one another. The text took the shape of a rigid block that was very often placed the same way on all the visual identity media. My goal was to create, on one hand, an uncluttered, minimal and abstract design that evokes feelings and emotions related to the automobile sector and to bring outthe positive aspects of the Motor Show (speed, movement, freedom, diversity and joy) more than concentrate on the actual car itself. On the other hand, I wanted to make the text the protagonist element of my design. The creation and composition of the poster is entirely drawn out typographically. I propose a design with different reading levels, where the lines suggest a network of roads which evoke the number of visitors coming to visit the Motor Show every year from around the world. They also insinuate the shape of certain elements that are part of the traditional Genevan landscape: Cars, mountains, the Jet D'/eau, etc. As for the colours, I was inspired by the season in which the Geneva Motor Show takes place, spring. ",
@@ -467,71 +804,285 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/GeneveTypeface.jpg',
     image: '/GeneveTypeface/36.jpg',
-    images: {
-      img1: '/GeneveTypeface/1.jpg',
-      img2: '/GeneveTypeface/2.jpg',
-      img3: '/GeneveTypeface/3.jpg',
-      img4: '/GeneveTypeface/4.jpg',
-      img5: '/GeneveTypeface/5.jpg',
-      img6: '/GeneveTypeface/6.jpg',
-      img7: '/GeneveTypeface/7.jpg',
-      img8: '/GeneveTypeface/8.jpg',
-      img9: '/GeneveTypeface/9.jpg',
-      img10: '/GeneveTypeface/10.jpg',
-      img11: '/GeneveTypeface/11.JPG',
-      img12: '/GeneveTypeface/12.JPG',
-      img13: '/GeneveTypeface/13.JPG',
-      img14: '/GeneveTypeface/14.JPG',
-      img15: '/GeneveTypeface/15.JPG',
-      img16: '/GeneveTypeface/16.JPG',
-      img17: '/GeneveTypeface/17.jpg',
-      img18: '/GeneveTypeface/18.jpg',
-      img19: '/GeneveTypeface/19.jpg',
-      img20: '/GeneveTypeface/20.jpg',
-      img21: '/GeneveTypeface/21.jpg',
-      img22: '/GeneveTypeface/22.jpg',
-      img23: '/GeneveTypeface/23.jpg',
-      img24: '/GeneveTypeface/24.jpg',
-      img25: '/GeneveTypeface/25.jpg',
-      img26: '/GeneveTypeface/26.jpg',
-      img27: '/GeneveTypeface/27.jpg',
-      img28: '/GeneveTypeface/28.jpg',
-      img29: '/GeneveTypeface/29.jpg',
-      img30: '/GeneveTypeface/30.jpg',
-      img31: '/GeneveTypeface/31.jpg',
-      img32: '/GeneveTypeface/32.jpg',
-      img33: '/GeneveTypeface/33.jpg',
-      img34: '/GeneveTypeface/34.jpg',
-      img35: '/GeneveTypeface/35.jpg',
-      img37: '/GeneveTypeface/37.jpg',
-      img38: '/GeneveTypeface/38.jpg',
-      img39: '/GeneveTypeface/39.jpg',
-      img40: '/GeneveTypeface/40.jpg',
-      img41: '/GeneveTypeface/41.JPG',
-      img42: '/GeneveTypeface/42.JPG',
-      img43: '/GeneveTypeface/43.JPG',
-      img44: '/GeneveTypeface/44.JPG',
-      img45: '/GeneveTypeface/45.JPG',
-      img46: '/GeneveTypeface/46.JPG',
-      img47: '/GeneveTypeface/47.jpg',
-      img48: '/GeneveTypeface/48.jpg',
-      img49: '/GeneveTypeface/49.jpg',
-      img50: '/GeneveTypeface/50.jpg',
-      img51: '/GeneveTypeface/51.jpg',
-      img52: '/GeneveTypeface/52.jpg',
-      img53: '/GeneveTypeface/53.jpg',
-      img54: '/GeneveTypeface/54.jpg',
-      img55: '/GeneveTypeface/55.jpg',
-      img56: '/GeneveTypeface/56.jpg',
-      img57: '/GeneveTypeface/57.jpg',
-      img58: '/GeneveTypeface/58.jpg',
-      img59: '/GeneveTypeface/59.jpg',
-      img60: '/GeneveTypeface/59b.jpg',
-      img61: '/GeneveTypeface/60.jpg',
-      img62: '/GeneveTypeface/61.jpg',
-      img63: '/GeneveTypeface/62.jpg',
-      img64: '/GeneveTypeface/63.jpg',
-    },
+    images: [
+      {
+        img: '/GeneveTypeface/1.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/2.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/16.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/8.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/9.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/10.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/11.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/20.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/24.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/25.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/26.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/27.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/28.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/29.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/32.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/31.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/30.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/33.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/34.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/GeneveTypeface/37.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/38.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/39.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/41.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/42.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/43.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/59b.jpg',
+        rows: 2,
+        cols: 1,
+      },
+
+      {
+        img: '/GeneveTypeface/44.JPG',
+        rows: 2,
+        cols: 3,
+      },
+      {
+        img: '/GeneveTypeface/22.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/23.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/45.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/46.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/48.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/49.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/50.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/51.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/52.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/53.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/54.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/55.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/57.jpg',
+        rows: 2,
+        cols: 3,
+      },
+      {
+        img: '/GeneveTypeface/58.jpg',
+        rows: 2,
+        cols: 1,
+      },
+      {
+        img: '/GeneveTypeface/60.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/61.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/62.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GeneveTypeface/64.jpg',
+        rows: 2,
+        cols: 1,
+      },
+      {
+        img: '/GeneveTypeface/65.jpg',
+        rows: 2,
+        cols: 3,
+      },
+      {
+        img: '/GeneveTypeface/66.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/GeneveTypeface/68.jpg',
+        rows: 2,
+        cols: 1,
+      },
+      {
+        img: '/GeneveTypeface/69.jpg',
+        rows: 2,
+        cols: 3,
+      },
+      {
+        img: '/GeneveTypeface/67.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      // {
+      //   img: '/GeneveTypeface/12.JPG',
+      //   rows: 2,
+      //   cols: 2,
+      // },
+      // {
+      //   img: '/GeneveTypeface/13.JPG',
+      //   rows: 2,
+      //   cols: 2,
+      // },
+      // {
+      //   img: '/GeneveTypeface/14.JPG',
+      //   rows: 2,
+      //   cols: 2,
+      // },
+      // {
+      //   img: '/GeneveTypeface/15.JPG',
+      //   rows: 2,
+      //   cols: 2,
+      // },
+    ],
     attributes: {
       description:
         'Geneve is a type family inspired by the rich typographic history of Geneva.- Bachelor thesis at HEAD, Geneva - Designed to be used on any type of printed support, Gen�ve is a typography with personality and flexibility, which allows designers to express their ideas in different ways without losing coherence. In developing Gen�ve I was inspired by the typeface used by French printer/editor/publisher Henri II Estienne in his famous book Thesaurus Lingu� Gr�c�, published in Geneva in 1572. This typeface was brought to Geneva by Henri�s father, Robert Estienne, who, before settling in Geneva and working as Calvin�s printer, was the printer of France�s King, Fran�ois I. This typeface highly influenced the typographers and printers in Geneva at that time. Henri and Robert Estienne�s work in Geneva helped it to become one of the most important cities in Europe for print and typography in the sixteenth century. Gen�ve consists of four styles: Classique (Humanist serif), Aust�re (Geometric serif), Spontan�e (Humanist sans-serif) and Alternative (Stencil, display version). These styles correspond to the different profiles of the city, reflecting its multiculturalism and diversity. This typography acts as a bridge between the past and present of the city. I received the BEA Fondation Award for Young Artists for my work on the Gen�ve Typeface.',
@@ -542,14 +1093,26 @@ const projects = [
     id: '11',
     type: 'graphic',
     year: '2014',
-    horizontal: true,
+    horizontal: false,
     image: '/GoesAround/1.jpg',
-    images: {
-      img1: '/CoverPhotos/Galleries/GoesArround.jpg',
-      img3: '/GoesAround/3.jpg',
-      img2: '/GoesAround/2.jpg',
-      img4: '/GoesAround/4.jpg',
-    },
+    img1: '/GoesAround/5.jpg',
+    images: [
+      {
+        img: '/GoesAround/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/GoesAround/1.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/GoesAround/2.jpg',
+        rows: 1,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         'For a school project in collaboration with the RATP (Parisian autonomous transport society), we were asked to create a 10 second long animation to wish the passengers a happy new year 2014. The animations were shown on the large HD screens at the Franklin Roosevelt and Europe metro stops in Paris, France, from December 24, 2013 to January 8, 2014. My intention was to confront themselves, that they reflect on who they are and how they behave with others. I found this most interesting and thought that I could respond to this in various ways. Therefore I decided to also create two posters: one derived from the animation and the other, completely independent - Both with no intention of being shown on the RATP -. For the independent poster �2014 goes around...comes around� (see above), I handled the subject in a more explicit and trashy way.',
@@ -564,22 +1127,80 @@ const projects = [
     landing: '/CoverPhotos/Lading/ItsUpToYou.jpg',
     image: '/ItsUpToYou/5.JPG',
     // image: '/CoverPhotos/Galleries/ItsUpToYou.jpg',
-    images: {
-      img1: '/ItsUpToYou/1.jpg',
-      img2: '/ItsUpToYou/2.jpg',
-      img3: '/ItsUpToYou/3.jpg',
-      img4: '/ItsUpToYou/4.jpg',
-      img5: '/ItsUpToYou/6.jpg',
-      img6: '/ItsUpToYou/7.jpg',
-      img7: '/ItsUpToYou/8.jpg',
-      img8: '/ItsUpToYou/9.jpg',
-      img9: '/ItsUpToYou/10.jpg',
-      img10: '/ItsUpToYou/11.JPG',
-      img11: '/ItsUpToYou/12.JPG',
-      img12: '/ItsUpToYou/13.JPG',
-      img13: '/ItsUpToYou/14.JPG',
-      img14: '/ItsUpToYou/15.JPG',
-    },
+    images: [
+      {
+        img: '/ItsUpToYou/13.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/7.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/8.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/ItsUpToYou/14.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/ItsUpToYou/10.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/ItsUpToYou/11.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/12.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/6.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/2.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/ItsUpToYou/3.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/ItsUpToYou/9.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/ItsUpToYou/15.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/4.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         "For a school project in collaboration with the RATP (Parisian autonomous transport society), we were asked to create a 10 second long animation to wish the passengers a happy new year 2014 The animations were shown on the large HD screens at the Franklin Roosevelt and Europe metro stops in Paris, France, from December 24, 2013 to January 8, 2014. My intention was to make people to confront themselves so that they reflect on who they are and how they behave with others. I found this most interesting and thought that I could respond to this in various ways. Therefore I decided to also create two posters: one derived from the animation and the other completely independent - both with no intention of being shown on the RATP. I inserted a small text in the center of the mirror. This text aims to make people approach and get up close to the poster in order to read the sentence it'/s up to you, and at the same time, they see themselves in the mirror and are confronted to themselves.",
@@ -593,12 +1214,28 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/JoieDeLire.jpg',
     image: '/CoverPhotos/Galleries/JoieDeLire.jpg',
-    images: {
-      img2: '/JoieDeLire/2.JPG',
-      img3: '/JoieDeLire/3.JPG',
-      img4: '/JoieDeLire/4.JPG',
-      img5: '/JoieDeLire/5.JPG',
-    },
+    images: [
+      {
+        img: '/JoieDeLire/2.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/JoieDeLire/4.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/JoieDeLire/5.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/JoieDeLire/3.JPG',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         "'/Jeu de regards'/: Poster design for the exhibition commemorating the 25th anniversary of Geneva'/s own publishing house, La Joie de Lire, which took place at the 26 me Salon International du livre et de la presse, in Geneva.",
@@ -611,32 +1248,129 @@ const projects = [
     year: '2013',
     horizontal: true,
     image: '/CoverPhotos/Galleries/LetterStamps.jpg',
-    images: {
-      img1: '/LetterStamps/1.jpg',
-      img2: '/LetterStamps/2.jpg',
-      img3: '/LetterStamps/3.jpg',
-      img4: '/LetterStamps/4.jpg',
-      img5: '/LetterStamps/5.jpg',
-      img6: '/LetterStamps/6.jpg',
-      img7: '/LetterStamps/7.jpg',
-      img8: '/LetterStamps/8.jpg',
-      img9: '/LetterStamps/9.jpg',
-      img10: '/LetterStamps/10.jpg',
-      img11: '/LetterStamps/11.JPG',
-      img12: '/LetterStamps/12.JPG',
-      img13: '/LetterStamps/13.JPG',
-      img14: '/LetterStamps/14.JPG',
-      img15: '/LetterStamps/15.JPG',
-      img16: '/LetterStamps/16.jpg',
-      img17: '/LetterStamps/17.JPG',
-      img18: '/LetterStamps/18.JPG',
-      img19: '/LetterStamps/19.JPG',
-      img20: '/LetterStamps/20.JPG',
-      img21: '/LetterStamps/21.JPG',
-      img22: '/LetterStamps/22.JPG',
-      img23: '/LetterStamps/23.JPG',
-      img24: '/LetterStamps/24.JPG',
-    },
+    images: [
+      {
+        img: '/LetterStamps/1.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/LetterStamps/2.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/4.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/LetterStamps/24.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/LetterStamps/6.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/5.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/7.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/8.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/9.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/10.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/LetterStamps/13.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/15.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/14.JPG',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/LetterStamps/12.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/23.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/11.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/LetterStamps/16.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/18.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/19.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/17.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/22.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/LetterStamps/20.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/21.JPG',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         'For a school projet we were asked to make typographic stamps in order to create an alphabet and then design posters with it. The challenge I set myself was to create a stamp that would stand out for its versatility and simplicity. I decided to use rope as the stamp material. For this, I designed a matrix which would work both as a support to the rope as well as a grid for the typeface. It allows for the composition of all the glyphs of the alphabet and 4 different weights (light, regular, medium and bold).',
@@ -651,10 +1385,18 @@ const projects = [
     landing: '/CoverPhotos/Lading/MakeAWish.jpg',
     image: '/CoverPhotos/Galleries/MakeAwish.jpg',
     img1: '/MakeAWhish/1.jpg',
-    images: {
-      img2: '/MakeAWhish/3.jpg',
-      img3: '/MakeAWhish/2.jpg',
-    },
+    images: [
+      {
+        img: '/MakeAWhish/3.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/MakeAWhish/2.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         'In many cultures around the world, a shooting star is associated with dreams and hope, as it is believed that this phenomenon (a shooting star) has the magical power of granting us a wish. I wanted to play with this idea on my 2018 greeting poster. Therefore, I created an idealistic sky, full of shooting stars, where the main ones are suggesting the numbers 2018 with their movements. A shooting star is also a very ephemeral thing, which echoes with the idea of life itself. The result is a 2018 made out of opportunities, hopes and magic, that has to be fully exploited before vanishing forever. The poster becomes an invitation to dream and reflect on what we would really wish to happen in this new year if we were granted a wish.',
@@ -668,27 +1410,78 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/Manifesta.jpg',
     image: '/Manifesta/13.gif',
-    images: {
-      img1: '/Manifesta/10.jpg',
-      img11: '/Manifesta/11.JPG',
-      img12: '/Manifesta/12.JPG',
-      img13: '/Manifesta/13.gif',
-      img14: '/Manifesta/14.JPG',
-      img19: '/Manifesta/Vb.jpg',
+    images: [
+      {
+        img: '/Manifesta/2.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Manifesta/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Manifesta/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
 
-      img2: '/Manifesta/2.jpg',
-      img3: '/Manifesta/3.jpg',
-      img4: '/Manifesta/4.jpg',
-      img5: '/Manifesta/5.jpg',
-      img6: '/Manifesta/6.jpg',
-      img7: '/Manifesta/7.jpg',
-      img8: '/Manifesta/8.jpg',
-      img9: '/Manifesta/9.jpg',
+      {
+        img: '/Manifesta/3.JPG',
+        rows: 2,
+        cols: 4,
+      },
 
-      img16: '/Manifesta/Bold.jpg',
-      img17: '/Manifesta/Light.jpg',
-      img18: '/Manifesta/Regular.jpg',
-    },
+      {
+        img: '/Manifesta/5.JPG',
+      },
+      {
+        img: '/Manifesta/6.jpg',
+      },
+      {
+        img: '/Manifesta/7.jpg',
+      },
+      {
+        img: '/Manifesta/8.jpg',
+      },
+      {
+        img: '/Manifesta/9.jpg',
+      },
+      {
+        img: '/Manifesta/10.jpg',
+      },
+      {
+        img: '/Manifesta/11.jpg',
+      },
+      {
+        img: '/Manifesta/12.jpg',
+      },
+      {
+        img: '/Manifesta/13.gif',
+      },
+      {
+        img: '/Manifesta/14.jpg',
+      },
+      {
+        img: '/Manifesta/15.jpg',
+      },
+      {
+        img: '/Manifesta/16.jpg',
+      },
+      {
+        img: '/Manifesta/17.jpg',
+      },
+      {
+        img: '/Manifesta/18.jpg',
+      },
+      {
+        img: '/Manifesta/19.jpg',
+      },
+      {
+        img: '/Manifesta/20.jpg',
+      },
+    ],
     attributes: {
       description:
         'Title or short-text font, influenced both by the geometry-favoring artistic movements of the beginning of the 20th Century and the work of Dutch designer Max Kisman. This fontface aims to explore the relationship between the different parts of the letterforms as well as their hierarchy, while teasing with the limits of legibility. The MANIFESTA font family is formed by four different weights (light, regular, medium, bold), each one with uppercase and lowercase letters, numbers, punctuation marks and diacritic characters.',
@@ -703,11 +1496,17 @@ const projects = [
     landing: '/CoverPhotos/Lading/MiMujer.jpg',
     image: '/CoverPhotos/Galleries/MiMujer.jpg',
     img1: '/MiMujer/1.jpg',
-    images: {
-      img2: '/MiMujer/2.jpg',
-      img3: '/MiMujer/3.jpg',
-      img4: '/MiMujer/4.jpg',
-    },
+    images: [
+      {
+        img: '/MiMujer/2.jpg',
+      },
+      {
+        img: '/MiMujer/3.jpg',
+      },
+      {
+        img: '/MiMujer/4.jpg',
+      },
+    ],
     attributes: {
       description:
         "Poster design inspired by Nicolas Jaar's song Mi MujerSchool Project.",
@@ -722,12 +1521,20 @@ const projects = [
     landing: '/CoverPhotos/Lading/NewYearNewFight.jpg',
     image: '/CoverPhotos/Galleries/NewYearNewFight.jpg',
     img1: '/NewYearNewFight/1.jpg',
-    images: {
-      img2: '/NewYearNewFight/2.jpg',
-      img3: '/NewYearNewFight/3.jpg',
-      img4: '/NewYearNewFight/4.jpg',
-      img5: '/NewYearNewFight/5.jpg',
-    },
+    images: [
+      {
+        img: '/NewYearNewFight/2.jpg',
+      },
+      {
+        img: '/NewYearNewFight/3.jpg',
+      },
+      {
+        img: '/NewYearNewFight/4.jpg',
+      },
+      {
+        img: '/NewYearNewFight/5.jpg',
+      },
+    ],
     attributes: {
       description:
         'I designed this poster at the end of 2014, just to share my thoughts about the new year 2015, which I knew was going to be a particularly tough one for me. This poster obtained an Honorary Mention at Trnava Poster Triennial International competition 2015.',
@@ -741,17 +1548,32 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/Paleo.jpg',
     image: '/CoverPhotos/Galleries/Paleo.jpg',
-    images: {
-      img1: '/Paleo/1.jpg',
-      img2: '/Paleo/2.jpg',
-      img3: '/Paleo/3.jpg',
-      img4: '/Paleo/4.jpg',
-      img7: '/Paleo/BoiteDefinitive-all.jpg',
-      img6: '/Paleo/BoiteDefinitive-02c.jpg',
-      img5: '/Paleo/5.jpg',
-
-      img8: '/Paleo/Paleo.jpg',
-    },
+    images: [
+      {
+        img: '/Paleo/1.jpg',
+      },
+      {
+        img: '/Paleo/2.jpg',
+      },
+      {
+        img: '/Paleo/3.jpg',
+      },
+      {
+        img: '/Paleo/4.jpg',
+      },
+      {
+        img: '/Paleo/BoiteDefinitive-all.jpg',
+      },
+      {
+        img: '/Paleo/BoiteDefinitive-02c.jpg',
+      },
+      {
+        img: '/Paleo/5.jpg',
+      },
+      {
+        img: '/Paleo/Paleo.jpg',
+      },
+    ],
     attributes: {
       description:
         "Second prize at the Paléo Festival Nyon poster contest. Paléo Festival is today one of Europe'/s most important musical events.",
@@ -764,33 +1586,83 @@ const projects = [
     year: '2012',
     horizontal: true,
     image: '/CoverPhotos/Galleries/PointDeFuite.jpg',
-    images: {
-      img1: '/Point/1.jpg',
-      img2: '/Point/2.jpg',
-      img3: '/Point/3.jpg',
-      img4: '/Point/4.jpg',
-      img5: '/Point/5.jpg',
-      img6: '/Point/6.jpg',
-      img7: '/Point/7.jpg',
-      img8: '/Point/8.jpg',
-      img9: '/Point/9.jpg',
-      img10: '/Point/10.jpg',
-      img11: '/Point/11.JPG',
-      img12: '/Point/12.JPG',
-      img13: '/Point/13.JPG',
-      img14: '/Point/14.JPG',
-      img15: '/Point/15.jpg',
-      img16: '/Point/16.jpg',
-      img17: '/Point/17.jpg',
-      img18: '/Point/18.jpg',
-      img19: '/Point/19.JPG',
-      img20: '/Point/20.jpg',
-      img21: '/Point/21.jpg',
-      img22: '/Point/22.jpg',
-      img23: '/Point/23.jpg',
-      img24: '/Point/24.jpg',
-      img25: '/Point/25.jpg',
-    },
+    images: [
+      {
+        img: '/Point/1.jpg',
+      },
+      {
+        img: '/Point/2.jpg',
+      },
+      {
+        img: '/Point/3.jpg',
+      },
+      {
+        img: '/Point/4.jpg',
+      },
+      {
+        img: '/Point/5.jpg',
+      },
+      {
+        img: '/Point/6.jpg',
+      },
+      {
+        img: '/Point/7.jpg',
+      },
+      {
+        img: '/Point/8.jpg',
+      },
+      {
+        img: '/Point/9.jpg',
+      },
+      {
+        img: '/Point/10.jpg',
+      },
+      {
+        img: '/Point/11.JPG',
+      },
+      {
+        img: '/Point/12.JPG',
+      },
+      {
+        img: '/Point/13.JPG',
+      },
+      {
+        img: '/Point/14.JPG',
+      },
+      {
+        img: '/Point/15.jpg',
+      },
+      {
+        img: '/Point/16.jpg',
+      },
+      {
+        img: '/Point/17.jpg',
+      },
+      {
+        img: '/Point/18.jpg',
+      },
+      {
+        img: '/Point/19.JPG',
+      },
+      {
+        img: '/Point/20.jpg',
+      },
+      {
+        img: '/Point/21.jpg',
+      },
+      {
+        img: '/Point/22.jpg',
+      },
+      {
+        img: '/Point/23.jpg',
+      },
+      {
+        img: '/Point/24.jpg',
+      },
+      {
+        img: '/Point/25.jpg',
+      },
+    ],
     attributes: {
       description:
         "Conception and mounting of the exhibition '/Point de Fuite'/, which presented artist Isabelle Pralong'/s career retrospective and took place in Geneva'/s Biblioth�que de la Cit� from Dec 9th, 2011 to Jan 31st, 2012. Done in collaboration with Tammara Leites, Alexia Segura, Pierre Schilling et Antoine Schmitt, as an assignment for Sandrine Pelletier'/s scenography course at HEAD - Geneve.",
@@ -804,22 +1676,50 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/DameDeLaMer.jpg',
     image: '/CoverPhotos/Galleries/LaDameDeLaMere.jpg',
-    images: {
-      img1: '/LaDamedeLaMer/1.jpg',
-      img2: '/LaDamedeLaMer/2.jpg',
-      img3: '/LaDamedeLaMer/3.jpg',
-      img4: '/LaDamedeLaMer/4.jpg',
-      img5: '/LaDamedeLaMer/5.jpg',
-      img6: '/LaDamedeLaMer/6.jpg',
-      img7: '/LaDamedeLaMer/7.jpg',
-      img8: '/LaDamedeLaMer/8.jpg',
-      img9: '/LaDamedeLaMer/9.jpg',
-      img10: '/LaDamedeLaMer/10.jpg',
-      img11: '/LaDamedeLaMer/11.JPG',
-      img12: '/LaDamedeLaMer/12.JPG',
-      img13: '/LaDamedeLaMer/13.JPG',
-      img14: '/LaDamedeLaMer/14.JPG',
-    },
+    images: [
+      {
+        img: '/LaDamedeLaMer/1.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/2.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/3.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/4.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/5.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/6.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/7.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/8.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/9.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/10.jpg',
+      },
+      {
+        img: '/LaDamedeLaMer/11.JPG',
+      },
+      {
+        img: '/LaDamedeLaMer/12.JPG',
+      },
+      {
+        img: '/LaDamedeLaMer/13.JPG',
+      },
+      {
+        img: '/LaDamedeLaMer/14.JPG',
+      },
+    ],
     attributes: {
       description:
         'For a school photography project, in collaboration with the Carouge Theatre and the Fusterie exhibition space, we were asked to reinterpret the play �The lady from the sea� written by Henrik Ibsen. As a joint project with eleven other students, our work was exhibited at the Fusterie church in Geneva, as part of an audio-visual installation. My work deals with an everyday life overtaken by fear and anguish provoked by ghosts of a past love. Past and present blend, memories and reality confuse and collide and dreams becomes real.',
