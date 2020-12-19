@@ -1129,16 +1129,6 @@ const projects = [
     // image: '/CoverPhotos/Galleries/ItsUpToYou.jpg',
     images: [
       {
-        img: '/ItsUpToYou/13.JPG',
-        rows: 2,
-        cols: 2,
-      },
-      {
-        img: '/ItsUpToYou/7.jpg',
-        rows: 2,
-        cols: 2,
-      },
-      {
         img: '/ItsUpToYou/8.jpg',
         rows: 2,
         cols: 4,
@@ -1148,29 +1138,25 @@ const projects = [
         rows: 2,
         cols: 4,
       },
+      // {
+      //   img: '/ItsUpToYou/7.jpg',
+      //   rows: 2,
+      //   cols: 2,
+      // },
       {
-        img: '/ItsUpToYou/10.jpg',
-        rows: 2,
-        cols: 4,
-      },
-      {
-        img: '/ItsUpToYou/11.JPG',
-        rows: 2,
-        cols: 2,
-      },
-      {
-        img: '/ItsUpToYou/12.JPG',
+        img: '/ItsUpToYou/13.JPG',
         rows: 2,
         cols: 2,
       },
+      {
+        img: '/ItsUpToYou/1.JPG',
+        rows: 1,
+        cols: 2,
+      },
+
       {
         img: '/ItsUpToYou/6.jpg',
-        rows: 2,
-        cols: 2,
-      },
-      {
-        img: '/ItsUpToYou/1.jpg',
-        rows: 2,
+        rows: 1,
         cols: 2,
       },
       {
@@ -1178,27 +1164,50 @@ const projects = [
         rows: 2,
         cols: 4,
       },
+
       {
-        img: '/ItsUpToYou/3.jpg',
+        img: '/ItsUpToYou/11.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/10.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/ItsUpToYou/12.jpg',
         rows: 2,
         cols: 4,
       },
 
       {
-        img: '/ItsUpToYou/9.jpg',
+        img: '/ItsUpToYou/3.jpg',
         rows: 2,
         cols: 2,
       },
-
       {
         img: '/ItsUpToYou/15.JPG',
         rows: 2,
         cols: 2,
       },
       {
-        img: '/ItsUpToYou/4.jpg',
+        img: '/ItsUpToYou/9.jpg',
         rows: 2,
         cols: 4,
+      },
+      {
+        img: '/ItsUpToYou/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+    ],
+    video: true,
+    videoList: [
+      {
+        video: '/ItsUpToYou/Animation.mp4',
+        rows: 2,
+        cols: 2,
       },
     ],
     attributes: {
@@ -1238,7 +1247,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "'/Jeu de regards'/: Poster design for the exhibition commemorating the 25th anniversary of Geneva'/s own publishing house, La Joie de Lire, which took place at the 26 me Salon International du livre et de la presse, in Geneva.",
+        "'Jeu de regards': Poster design for the exhibition commemorating the 25th anniversary of Geneva'/s own publishing house, La Joie de Lire, which took place at the 26 me Salon International du livre et de la presse, in Geneva.",
     },
   },
   {
@@ -1336,6 +1345,21 @@ const projects = [
         cols: 4,
       },
       {
+        img: '/LetterStamps/22.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/LetterStamps/20.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LetterStamps/21.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
         img: '/LetterStamps/16.jpg',
         rows: 2,
         cols: 2,
@@ -1352,21 +1376,6 @@ const projects = [
       },
       {
         img: '/LetterStamps/17.JPG',
-        rows: 2,
-        cols: 2,
-      },
-      {
-        img: '/LetterStamps/22.JPG',
-        rows: 2,
-        cols: 4,
-      },
-      {
-        img: '/LetterStamps/20.JPG',
-        rows: 2,
-        cols: 2,
-      },
-      {
-        img: '/LetterStamps/21.JPG',
         rows: 2,
         cols: 2,
       },
@@ -1389,12 +1398,12 @@ const projects = [
       {
         img: '/MakeAWhish/3.jpg',
         rows: 2,
-        cols: 4,
+        cols: 2,
       },
       {
         img: '/MakeAWhish/2.jpg',
         rows: 2,
-        cols: 4,
+        cols: 2,
       },
     ],
     attributes: {
@@ -1410,6 +1419,7 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/Manifesta.jpg',
     image: '/Manifesta/13.gif',
+    img1: '/Manifesta/5.jpg',
     images: [
       {
         img: '/Manifesta/2.JPG',
@@ -1417,69 +1427,75 @@ const projects = [
         cols: 4,
       },
       {
-        img: '/Manifesta/1.jpg',
+        img: '/Manifesta/7.jpg',
         rows: 2,
         cols: 2,
       },
       {
-        img: '/Manifesta/4.jpg',
+        img: '/Manifesta/13.gif',
         rows: 2,
         cols: 2,
-      },
-
-      {
-        img: '/Manifesta/3.JPG',
-        rows: 2,
-        cols: 4,
-      },
-
-      {
-        img: '/Manifesta/5.JPG',
       },
       {
         img: '/Manifesta/6.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
-        img: '/Manifesta/7.jpg',
+        img: '/Manifesta/16.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
-        img: '/Manifesta/8.jpg',
+        img: '/Manifesta/19.jpg',
+        rows: 2,
+        cols: 2,
       },
+      {
+        img: '/Manifesta/18.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Manifesta/15.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Manifesta/4.JPG',
+        rows: 2,
+        cols: 1,
+      },
+
+      {
+        img: '/Manifesta/3.jpg',
+        rows: 2,
+        cols: 3,
+      },
+      {
+        img: '/Manifesta/11.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Manifesta/14.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
       {
         img: '/Manifesta/9.jpg',
       },
       {
-        img: '/Manifesta/10.jpg',
+        img: '/Manifesta/17.jpg',
       },
-      {
-        img: '/Manifesta/11.jpg',
-      },
+
       {
         img: '/Manifesta/12.jpg',
       },
+
       {
-        img: '/Manifesta/13.gif',
-      },
-      {
-        img: '/Manifesta/14.jpg',
-      },
-      {
-        img: '/Manifesta/15.jpg',
-      },
-      {
-        img: '/Manifesta/16.jpg',
-      },
-      {
-        img: '/Manifesta/17.jpg',
-      },
-      {
-        img: '/Manifesta/18.jpg',
-      },
-      {
-        img: '/Manifesta/19.jpg',
-      },
-      {
-        img: '/Manifesta/20.jpg',
+        img: '/Manifesta/10.jpg',
       },
     ],
     attributes: {
@@ -1499,12 +1515,18 @@ const projects = [
     images: [
       {
         img: '/MiMujer/2.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/MiMujer/3.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/MiMujer/4.jpg',
+        rows: 2,
+        cols: 4,
       },
     ],
     attributes: {
@@ -1523,16 +1545,25 @@ const projects = [
     img1: '/NewYearNewFight/1.jpg',
     images: [
       {
-        img: '/NewYearNewFight/2.jpg',
+        img: '/NewYearNewFight/3.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
-        img: '/NewYearNewFight/3.jpg',
+        img: '/NewYearNewFight/2.jpg',
+        rows: 2,
+        cols: 2,
       },
+
       {
         img: '/NewYearNewFight/4.jpg',
+        rows: 1,
+        cols: 2,
       },
       {
         img: '/NewYearNewFight/5.jpg',
+        rows: 1,
+        cols: 2,
       },
     ],
     attributes: {
@@ -1548,30 +1579,42 @@ const projects = [
     horizontal: false,
     landing: '/CoverPhotos/Lading/Paleo.jpg',
     image: '/CoverPhotos/Galleries/Paleo.jpg',
+    img1: '/Paleo/1.jpg',
     images: [
       {
-        img: '/Paleo/1.jpg',
-      },
-      {
         img: '/Paleo/2.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/Paleo/3.jpg',
-      },
-      {
-        img: '/Paleo/4.jpg',
-      },
-      {
-        img: '/Paleo/BoiteDefinitive-all.jpg',
-      },
-      {
-        img: '/Paleo/BoiteDefinitive-02c.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Paleo/5.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Paleo/4.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/Paleo/Paleo.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Paleo/6.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Paleo/BoiteDefinitive-02c.jpg',
+        rows: 2,
+        cols: 4,
       },
     ],
     attributes: {
@@ -1589,78 +1632,119 @@ const projects = [
     images: [
       {
         img: '/Point/1.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Point/2.jpg',
-      },
-      {
-        img: '/Point/3.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Point/4.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Point/5.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Point/6.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Point/7.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Point/8.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Point/9.jpg',
-      },
-      {
-        img: '/Point/10.jpg',
-      },
-      {
-        img: '/Point/11.JPG',
-      },
-      {
-        img: '/Point/12.JPG',
-      },
-      {
-        img: '/Point/13.JPG',
-      },
-      {
-        img: '/Point/14.JPG',
-      },
-      {
-        img: '/Point/15.jpg',
-      },
-      {
-        img: '/Point/16.jpg',
-      },
-      {
-        img: '/Point/17.jpg',
-      },
-      {
-        img: '/Point/18.jpg',
-      },
-      {
-        img: '/Point/19.JPG',
-      },
-      {
-        img: '/Point/20.jpg',
-      },
-      {
-        img: '/Point/21.jpg',
-      },
-      {
-        img: '/Point/22.jpg',
-      },
-      {
-        img: '/Point/23.jpg',
-      },
-      {
-        img: '/Point/24.jpg',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/Point/25.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Point/10.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/11.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/12.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/13.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/14.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/15.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/16.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/17.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/18.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/19.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/20.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/24.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Point/22.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/Point/21.jpg',
+        rows: 2,
+        cols: 2,
       },
     ],
     attributes: {
@@ -1679,45 +1763,71 @@ const projects = [
     images: [
       {
         img: '/LaDamedeLaMer/1.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/LaDamedeLaMer/2.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/LaDamedeLaMer/3.jpg',
-      },
-      {
-        img: '/LaDamedeLaMer/4.jpg',
-      },
-      {
-        img: '/LaDamedeLaMer/5.jpg',
-      },
-      {
-        img: '/LaDamedeLaMer/6.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/LaDamedeLaMer/7.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/LaDamedeLaMer/6.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/LaDamedeLaMer/5.jpg',
+        rows: 1,
+        cols: 2,
       },
       {
         img: '/LaDamedeLaMer/8.jpg',
+        rows: 2,
+        cols: 4,
       },
+
       {
-        img: '/LaDamedeLaMer/9.jpg',
+        img: '/LaDamedeLaMer/4.jpg',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/LaDamedeLaMer/10.jpg',
-      },
-      {
-        img: '/LaDamedeLaMer/11.JPG',
+        rows: 2,
+        cols: 4,
       },
       {
         img: '/LaDamedeLaMer/12.JPG',
+        rows: 2,
+        cols: 2,
       },
       {
         img: '/LaDamedeLaMer/13.JPG',
+        rows: 2,
+        cols: 2,
       },
+
+      {
+        img: '/LaDamedeLaMer/11.JPG',
+        rows: 2,
+        cols: 2,
+      },
+
       {
         img: '/LaDamedeLaMer/14.JPG',
+        rows: 2,
+        cols: 2,
       },
     ],
     attributes: {
@@ -1733,14 +1843,30 @@ const projects = [
     horizontal: false,
     image: '/CoverPhotos/Galleries/PostTenebrasRock.jpg',
     img1: '/PostTenebrasRock/1.jpg',
-    images: {
-      img2: '/PostTenebrasRock/2.jpg',
-      img3: '/PostTenebrasRock/3.jpg',
-      img4: '/PostTenebrasRock/4.jpg',
-      img5: '/PostTenebrasRock/5.jpg',
-      img6: '/PostTenebrasRock/6.jpg',
-      img7: '/PostTenebrasRock/7.jpg',
-    },
+    images: [
+      {
+        img: '/PostTenebrasRock/2.jpg',
+      },
+      {
+        img: '/PostTenebrasRock/3.jpg',
+      },
+      {
+        img: '/PostTenebrasRock/4.jpg',
+      },
+      {
+        img: '/PostTenebrasRock/5.jpg',
+      },
+      {
+        img: '/PostTenebrasRock/6.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/PostTenebrasRock/7.jpg',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         "Posters & flyers proposition for Post Tenebras Rock (2011) concerts at l'/Usine, Geneva",
@@ -1754,33 +1880,131 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/Thesaurus.jpg',
     image: '/CoverPhotos/Galleries/Thesaurus.jpg',
-    images: {
-      img1: '/Thesaurus/1.jpg',
-      img2: '/Thesaurus/2.jpg',
-      img3: '/Thesaurus/3.jpg',
-      img4: '/Thesaurus/4.jpg',
-      img5: '/Thesaurus/5.jpg',
-      img6: '/Thesaurus/6.jpg',
-      img7: '/Thesaurus/7.jpg',
-      img9: '/Thesaurus/9.jpg',
-      img10: '/Thesaurus/10.jpg',
-      img11: '/Thesaurus/11.JPG',
-      img12: '/Thesaurus/12.JPG',
-      img13: '/Thesaurus/13.JPG',
-      img14: '/Thesaurus/14.JPG',
-      img15: '/Thesaurus/15.jpg',
-      img16: '/Thesaurus/16.jpg',
-      img17: '/Thesaurus/17.jpg',
-      img18: '/Thesaurus/18.jpg',
-      img19: '/Thesaurus/19.JPG',
-      img20: '/Thesaurus/20.jpg',
-      img21: '/Thesaurus/21.jpg',
-      img22: '/Thesaurus/22.jpg',
-      img23: '/Thesaurus/23.jpg',
-      img24: '/Thesaurus/24.jpg',
-      img25: '/Thesaurus/25.jpg',
-      img26: '/Thesaurus/26.jpg',
-    },
+    images: [
+      {
+        img: '/Thesaurus/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Thesaurus/2.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/Thesaurus/3.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/Thesaurus/4.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/Thesaurus/6.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/7.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/9.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/10.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/11.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/12.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/13.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/14.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Thesaurus/26.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Thesaurus/15.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/Thesaurus/17.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/18.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/19.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/20.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/21.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/22.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/23.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/24.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Thesaurus/25.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/Thesaurus/16.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         'Thesaurus is a typeface inspired by the typographic history of the city of Geneva. Thesaurus is based on the types that Robert Estienne brought from Paris to Geneva, which were later used by his son, Henri II Estienne, for printing the famous book Thesaurus Graecae Linguae. These metal types served, in some way, as a bridge between France and Switzerland, between Catholicism and Protestantism, and now, through Thesaurus, between past and present. Thesaurus was released by Typotheque. Below, some pictures from Thesaurus\'/ Specimen, which I have designed for Typothque. Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American typedesign biennial by Tipos Latinos, 2018 - out of 444 projects submitted this year. Thesaurus was selected in the Superfamily category. It has also been awarded with "Gold" in the Graphis Type 4: Typeface Design Competition.',
@@ -1794,12 +2018,24 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/TijuanaPanthers.jpg',
     image: '/CoverPhotos/Galleries/TijuanaPanthers.jpg',
-    images: {
-      img1: '/TijuanaPanthers/1.jpg',
-      img2: '/TijuanaPanthers/2.jpg',
-      img3: '/TijuanaPanthers/3.jpg',
-      img4: '/TijuanaPanthers/4.jpg',
-    },
+    images: [
+      {
+        img: '/TijuanaPanthers/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TijuanaPanthers/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/TijuanaPanthers/2.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         'I was asked by Rock This Town (association which organises concerts in Geneva) to design a poster to promote the concert of Californian band Tijuana Panthers.',
@@ -1813,12 +2049,23 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/TimeOut.jpg',
     image: '/CoverPhotos/Galleries/TimeOut.jpg',
-    images: {
-      img1: '/TimeOut/1.jpg',
-      img2: '/TimeOut/2.jpg',
-      img3: '/TimeOut/3.jpg',
-      img4: '/TimeOut/4.jpg',
-    },
+    images: [
+      {
+        img: '/TimeOut/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TimeOut/3.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/TimeOut/4.jpg',
+        rows: 1,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         'The New York magazine TimeOut asked me to design the cover for his spring preview issue (late February, 2013), and wanted me to reinvent my Beyond the Box poster. For me, spring is aboout flowers, paper windmills and kaleidoscopes, so my visual concept was inspired by this mood.',
@@ -1833,12 +2080,28 @@ const projects = [
     landing: '/CoverPhotos/Lading/Tomorrow.jpg',
     image: '/Tomorrow/1.jpg',
     img1: '/Tomorrow/5.jpg',
-    images: {
-      img2: '/Tomorrow/1.jpg',
-      img3: '/Tomorrow/2.jpg',
-      img4: '/Tomorrow/3.jpg',
-      img5: '/Tomorrow/4.jpg',
-    },
+    images: [
+      {
+        img: '/Tomorrow/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Tomorrow/2.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Tomorrow/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Tomorrow/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         "The poster flirts with the concepts of luck and randomness, which are strongly related to the idea of future (tomorrow), since no matter how much effort we put into it, things might not turn out the way we'/d planned.",
@@ -1852,40 +2115,156 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/TypographyH.jpg',
     image: '/CoverPhotos/Galleries/TypographicHeroes.jpg',
-    images: {
-      img1: '/TypographyHeroes/1.jpg',
-      img2: '/TypographyHeroes/2.jpg',
-      img3: '/TypographyHeroes/3.jpg',
-      img4: '/TypographyHeroes/4.jpg',
-      img5: '/TypographyHeroes/5.jpg',
-      img6: '/TypographyHeroes/6.jpg',
-      img7: '/TypographyHeroes/7.jpg',
-      img9: '/TypographyHeroes/9.jpg',
-      img10: '/TypographyHeroes/10.jpg',
-      img11: '/TypographyHeroes/11.JPG',
-      img12: '/TypographyHeroes/12.JPG',
-      img13: '/TypographyHeroes/13.JPG',
-      img14: '/TypographyHeroes/14.JPG',
-      img15: '/TypographyHeroes/15.jpg',
-      img16: '/TypographyHeroes/16.jpg',
-      img17: '/TypographyHeroes/17.jpg',
-      img18: '/TypographyHeroes/18.jpg',
-      img19: '/TypographyHeroes/19.JPG',
-      img20: '/TypographyHeroes/20.jpg',
-      img21: '/TypographyHeroes/21.jpg',
-      img22: '/TypographyHeroes/22.jpg',
-      img23: '/TypographyHeroes/23.jpg',
-      img24: '/TypographyHeroes/24.jpg',
-      img25: '/TypographyHeroes/25.jpg',
-      img26: '/TypographyHeroes/26.jpg',
-      img27: '/TypographyHeroes/27.jpg',
-      img28: '/TypographyHeroes/28.jpg',
-      img29: '/TypographyHeroes/29.jpg',
-      img30: '/TypographyHeroes/30.jpg',
-      img31: '/TypographyHeroes/31.jpg',
-      img32: '/TypographyHeroes/32.jpg',
-      img33: '/TypographyHeroes/33.jpg',
-    },
+    images: [
+      {
+        img: '/TypographyHeroes/1.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/TypographyHeroes/2.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/5.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/6.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/TypographyHeroes/7.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/9.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/10.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/TypographyHeroes/11.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/13.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/12.JPG',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/TypographyHeroes/14.JPG',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/15.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/17.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/18.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/21.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/22.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/24.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/25.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/26.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/TypographyHeroes/28.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/TypographyHeroes/29.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/30.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/31.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/TypographyHeroes/32.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/TypographyHeroes/33.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        img: '/TypographyHeroes/16.jpg',
+        rows: 2,
+        cols: 4,
+      },
+
+      {
+        img: '/TypographyHeroes/23.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description:
         'My concept was to combine two printing techniques; One of the latest: the Risograph (RISO), with one of the oldest printing methods: movable type page setting and press printing. First of all, the portrait images were printed with the RISO. Then, all the texts were composed by hand printing over the portraits using a press. I chose these 4 designers taking in consideration several aspects: the impact their typefaces had in the world of typography and the availability of the metal characters at school. I also picked these 4 designers because they all lived in a different period of time. Therefore they faced different problems. Their work somehow represents the evolution in typography This is a school project in progress, the two other posters will be up soon.',
@@ -1898,15 +2277,44 @@ const projects = [
     year: '2011',
     horizontal: false,
     image: '/Viga/7.jpg',
-    img1: '/Viga/2.jpg',
-    images: {
-      img3: '/Viga/3.jpg',
-      img4: '/Viga/4.jpg',
-      img5: '/Viga/5.jpg',
-      img6: '/Viga/6.jpg',
-      img7: '/Viga/7.jpg',
-      img8: '/Viga/8.jpg',
-    },
+    img1: '/Viga/1.jpg',
+    images: [
+      {
+        img: '/Viga/2.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Viga/3.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Viga/4.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Viga/7.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Viga/6.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Viga/5.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Viga/8.jpg',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         'VIGA is an experimental capitals-only display font influenced by constructivism, with a high level of abstraction. The grid I created for developing VIGA was inspired by metal joists used in architecture.',
@@ -1921,11 +2329,28 @@ const projects = [
     landing: '/CoverPhotos/Lading/Weltformat.jpg',
     image: '/CoverPhotos/Galleries/Weltformat.jpg',
     img1: '/Weltformat/5.jpg',
-    images: {
-      img2: '/Weltformat/1.jpg',
-      img3: '/Weltformat/2.jpg',
-      img4: '/Weltformat/3.jpg',
-    },
+    images: [
+      {
+        img: '/Weltformat/1.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Weltformat/2.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Weltformat/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Weltformat/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+    ],
     attributes: {
       description:
         "Finalist in the students'/ international contest of the Weltformat 2011 poster festival at Lucerne - Switzerland, this poster was chosen between more than 400 students of 20 different countries as a response to the theme: poster for the poster.",
@@ -1939,30 +2364,133 @@ const projects = [
     horizontal: true,
     landing: '/CoverPhotos/Lading/BrickTypefamily.jpg',
     image: '/CoverPhotos/Galleries/BrickTypefamilyLandscape.jpg',
-    images: {
-      img1: '/Brick/1.jpg',
-      img2: '/Brick/2.jpg',
-      img3: '/Brick/3.jpg',
-      img4: '/Brick/4.jpg',
-      img5: '/Brick/5.jpg',
-      img6: '/Brick/6.jpg',
-      img7: '/Brick/7.jpg',
-      img8: '/Brick/8.jpg',
-      img9: '/Brick/9.jpg',
-      img10: '/Brick/10.jpg',
-      img11: '/Brick/11.jpg',
-      img12: '/Brick/12.jpg',
-      img13: '/Brick/13.jpg',
-      img14: '/Brick/14.jpg',
-      img15: '/Brick/15.jpg',
-      img16: '/Brick/16.jpg',
-      img17: '/Brick/17.jpg',
-      img18: '/Brick/18.jpg',
-    },
+    images: [
+      {
+        img: '/Brick/2.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/3.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/4.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/5.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/6.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/7.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/8.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/9.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/10.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/11.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/12.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/13.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/14.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/15.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/16.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/17.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        img: '/Brick/18.jpg',
+        rows: 2,
+        cols: 4,
+      },
+    ],
     attributes: {
       description: 'Brick',
     },
   },
+  // {
+  //   name: 'Architecture+',
+  //   id: '31',
+  //   type: 'graphic',
+  //   year: '2020',
+  //   horizontal: false,
+  //   landing: '',
+  //   image: '',
+  //   img1: '/Architecture+/5.jpg',
+  //   images: [
+  //     {
+  //       img: '/Weltformat/1.jpg',
+  //       rows: 2,
+  //       cols: 2,
+  //     },
+  //     {
+  //       img: '/Weltformat/2.jpg',
+  //       rows: 2,
+  //       cols: 2,
+  //     },
+  //     {
+  //       img: '/Weltformat/3.jpg',
+  //       rows: 2,
+  //       cols: 2,
+  //     },
+  //     {
+  //       img: '/Weltformat/4.jpg',
+  //       rows: 2,
+  //       cols: 2,
+  //     },
+  //   ],
+  //   attributes: {
+  //     description:
+  //       "Finalist in the students'/ international contest of the Weltformat 2011 poster festival at Lucerne - Switzerland, this poster was chosen between more than 400 students of 20 different countries as a response to the theme: poster for the poster.",
+  //   },
+  // },
 ]
 
 export default projects

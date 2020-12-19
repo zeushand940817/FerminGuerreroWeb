@@ -23,6 +23,10 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 export default function DetailPage({ data }) {
   const images = data.images
+  const video = data.videoList
+
+  console.log(video, 'SOY VIDEO LIST')
+
   const classes = useStyles()
 
   return (
@@ -69,6 +73,10 @@ export default function DetailPage({ data }) {
                 alt=""
                 className={classes.imagen}
               />
+
+              {/* <video autoplay width="500px" height="500px">
+                <source src={video[0]} type="video/mp4" />
+              </video> */}
             </ImageListItem>
           ))}
         </ImageList>
