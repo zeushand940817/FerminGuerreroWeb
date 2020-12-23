@@ -1,10 +1,27 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
+import Image from 'next/image'
+import { makeStyles } from '@material-ui/core/styles'
+import ImageList from '@material-ui/core/ImageList'
+import ImageListItem from '@material-ui/core/ImageListItem'
+
+const useStyles = makeStyles({
+  root: {
+    width: 500,
+    height: 450,
+    overflowY: 'scroll',
+  },
+})
 
 export default function GraphicDesign({ data }) {
+  const classes = useStyles()
+
   const projectsFilter = data
     .filter((project) => project.type === 'graphic')
     .map(({ id, image, name }) => ({ id, image, name }))
+
+  const videoMp4 = data.filter((elem) => elem.id === '31')
+  const extractVideo = videoMp4[0].mp4Video
 
   return (
     <>
@@ -18,11 +35,17 @@ export default function GraphicDesign({ data }) {
             >
               <a>
                 <div className="container">
-                  <img
-                    className="image"
-                    src={projectFilter.image}
-                    alt={projectFilter.name}
-                  />
+                  {projectFilter.id == 31 ? (
+                    <video autoPlay muted loop width="100%" height="auto">
+                      <source src={extractVideo} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <img
+                      className="image"
+                      src={projectFilter.image}
+                      alt={projectFilter.name}
+                    />
+                  )}
                   <div className="middle">
                     <p className="text">{projectFilter.name}</p>
                   </div>
@@ -31,7 +54,6 @@ export default function GraphicDesign({ data }) {
             </Link>
           ))}
         </div>
-
         <style jsx>{`
           .imageContainer {
             max-width: 100%;

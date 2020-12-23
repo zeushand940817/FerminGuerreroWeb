@@ -1,12 +1,14 @@
 import { useRef, useEffect, useState } from 'react'
 import fetch from 'isomorphic-unfetch'
+import dynamic from 'next/dynamic'
 
-//Components
-import Item from '@components/Press/Item'
-import Background from 'components/Background'
-import Awards from 'components/Awards'
-import Contact from 'components/Contact'
-import MobileSectionsMenu from 'components/MobileSectionsMenu'
+const Background = dynamic(() => import('components/Background'))
+const Awards = dynamic(() => import('components/Awards'))
+const Item = dynamic(() => import('../../components/Press/Item'))
+const Contact = dynamic(() => import('components/Contact'))
+const MobileSectionsMenu = dynamic(() =>
+  import('components/MobileSectionsMenu')
+)
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect()

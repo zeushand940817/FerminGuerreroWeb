@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-unfetch'
-import { urlObjectKeys } from 'next/dist/next-server/lib/utils'
 import { useState } from 'react'
+
 
 const Home = ({ data }) => {
   const imagenes = data

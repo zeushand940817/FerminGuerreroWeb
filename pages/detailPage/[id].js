@@ -1,6 +1,7 @@
 import Grid from '@material-ui/core/Grid'
 import fetch from 'isomorphic-unfetch'
 import GoBack from 'components/GoBack'
+// import Tags from 'components/Tags'
 import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
@@ -14,6 +15,14 @@ const useStyles = makeStyles({
     objectFit: 'cover',
     objectPosition: 'center',
   },
+  description: {
+    display: 'flex',
+    height: 'auto',
+    flexWrap: 'wrap',
+    marginTop: '1em',
+    marginBottom: '1em',
+    paddingLeft: '10px',
+  },
 })
 
 function srcset(image, size, rows = 1, cols = 1) {
@@ -22,25 +31,23 @@ function srcset(image, size, rows = 1, cols = 1) {
 }
 
 export default function DetailPage({ data }) {
-  const images = data.images
-  const video = data.videoList
-
-  console.log(video, 'SOY VIDEO LIST')
-
+  const sources = data.sources
   const classes = useStyles()
 
   return (
     <>
       <div className="container">
-        <Grid container lg={12}>
-          {data.horizontal === true ? (
-            <img className="mainImage" src={data.image} />
-          ) : (
-            <img className="mainImage" src={data.img1} />
+        <Grid container>
+          {data.horizontal && <img className="mainImage" src={data.image} />}
+          {!data.horizontal && <img className="mainImage" src={data.img1} />}
+          {data.mp4 && (
+            <video autoPlay muted loop width="100%" height="auto">
+              <source src={data.mp41} type="video/mp4" />
+            </video>
           )}
         </Grid>
         {/* <GoBack/>  */}
-        <Grid container lg={12}>
+        <Grid container>
           <div className="gridContainer">
             <Grid item xs={12} lg={2}>
               <div className="name"> {data.name}</div>
@@ -49,12 +56,14 @@ export default function DetailPage({ data }) {
               <div className="yearandtags">
                 <p>{data.year}</p>
                 <p>
-                  <u>Tags:</u> Poster, Illustration, Visual Identity
+                  <u>Tags:</u>
                 </p>
               </div>
             </Grid>
             <Grid item xs={12} sm={3} lg={6}>
-              <div className="description">{data.attributes.description}</div>
+              <div className={classes.description}>
+                {data.attributes.description}
+              </div>
             </Grid>
           </div>
         </Grid>
@@ -66,17 +75,26 @@ export default function DetailPage({ data }) {
           rowHeight="auto"
           className={classes.root}
         >
-          {Object.values(images).map((image) => (
-            <ImageListItem cols={image.cols || 1} rows={image.rows || 1}>
-              <img
-                srcSet={srcset(image.img, 121, image.rows, image.cols)}
-                alt=""
-                className={classes.imagen}
-              />
-
-              {/* <video autoplay width="500px" height="500px">
-                <source src={video[0]} type="video/mp4" />
-              </video> */}
+          {Object.values(sources).map((source) => (
+            <ImageListItem
+              cols={source.cols || 1}
+              rows={source.rows || 1}
+              key={data.id}
+            >
+              {source.type === 'img' ? (
+                <img
+                  srcSet={srcset(source.img, 121, source.rows, source.cols)}
+                  alt=""
+                  className={classes.imagen}
+                />
+              ) : (
+                <video autoPlay muted loop className={classes.imagen}>
+                  <source
+                    src={srcset(source.url, 121, source.rows, source.cols)}
+                    type="video/mp4"
+                  />
+                </video>
+              )}
             </ImageListItem>
           ))}
         </ImageList>
@@ -107,13 +125,15 @@ export default function DetailPage({ data }) {
           margin-top: 1em;
         }
 
-        .description {
+         {
+          /* .description {
           display: flex;
           height: auto;
           flex-wrap: wrap;
           margin-top: 1em;
           margin-bottom: 1em;
           padding-left: 10px;
+        } */
         }
 
         .yearandtags {

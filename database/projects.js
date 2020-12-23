@@ -4,7 +4,9 @@ const projects = [
     id: '1',
     type: 'graphic',
     year: '2013',
+    Tags: ['Poster', 'Visual Identity'],
     horizontal: false,
+    mp4: false,
     image: '/CartaBlanche/4.JPG',
     img1: '/CartaBlanche/1.jpg',
     images: [
@@ -34,6 +36,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         'I had the honor of being invited by Form magazine to design a poster for their "Carte Blanche" limited edition poster series, for their May/June 2013 issue, in collaboration with the Berlin furniture design Studio Hausen.',
@@ -44,7 +47,9 @@ const projects = [
     id: '2',
     type: 'typeface',
     year: '2011',
+    Tags: ['Animation', 'Visual Identity'],
     horizontal: true,
+    mp4: false,
     image: '/CoverPhotos/Galleries/CircH.jpg',
     images: [
       {
@@ -78,6 +83,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         'CIRC is an experimental title font, based on geometic forms deriving from the circle.',
@@ -88,7 +94,9 @@ const projects = [
     id: '3',
     type: 'graphic',
     year: '2014',
+    Tags: ['Poster'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/DinMachine.jpg',
     image: '/CoverPhotos/Galleries/DinMachine.jpg',
     images: [
@@ -210,6 +218,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         "Logo and CD cover design for the New York based electronic experimental rock band DinMachine Created for their first album �Dance to reason. I also designed a t-shirt to accompany the CD launching. DinMachine is a collaboration between Nisi Jacobs and Michael J. Schumacher. They have been making music together since 2009 and have performed at MoMA New York. Ken Jacobs (a world renowned experimental film maker) has used both Schumacher�s and DinMachine�s music for his published films. Asking Nisi and Michael about themselves, the band and the music they create together, they came up with some things that I found very interesting to work graphically on: We want to grab people with the music, get them moving. DinMachine�s music has been generally described as non-classifiable. Our music, we feel, has elements that are very engaging and involving, and others that need distance and detachment. We like the idea of hot vs cold, engaging sexiness. For the logo, I decided to work with the idea of both �non-classifiable� as well as contrast/opposite. My approach to the logo was very experimental, mixing uppercase and lowercase letters in order to create something of an originality which defies classification. The letters are all cut differently which adds movement and vibration to the logo which echoes DinMachine'/s music. For the CD cover I created a concept which plays with the idea of sexiness, opposite (cold vs hot, engage/detach) and movement. From a distance you can see an abstract image, an involving composition of a mix of colors and shapes. But when looking closely, you discover the details, a scene containing human bodies, people moving combined with something as coldand lifeless as dry black trees. The inside vs the outside of the cover also plays with this idea of contrast/opposite..",
@@ -220,7 +229,9 @@ const projects = [
     id: '4',
     type: 'typeface',
     year: '2015',
+    Tags: ['Visual Identity'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/Exentra.jpg',
     image: '/CoverPhotos/Galleries/ExentraV.jpg',
     img1: '/Exentra/1.jpg',
@@ -380,6 +391,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         "Exentra is the project I developed at the MATD course 2014-15, in Reading. My intention for the MATD project was to design an innovative and unique typeface that would appeal to designers doing forward-looking design. Therefore, this Typeface family was concevied for publications promoting forward-thinking through a contemporary and experimental vision of modern culture and trends. Its style combines the elegance and warmth of calligraphy with the precision and digital sharpness of the computer process that give it a contemporary look. Unconventional letter shapes, and the playful and dynamic design, reinforce the idiosyncrasy of the typeface. Exentra consist of Latin (7 cuts for the text version, Italic, Sans Serif and two Display versions) Gurmukhi and Greek. The images below belong to Exentra�s Specimen Book. Don'/t hesitate to request the pdf version of the Specimen.",
@@ -390,7 +402,9 @@ const projects = [
     id: '5',
     type: 'graphic',
     year: '2018',
+    Tags: ['Illustration', 'Visual Identity'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/FeriaDelLibro.jpg',
     image: '/CoverPhotos/Galleries/FeriaDelLibro.jpg',
     img1: '/FeriaDelLibro/1.jpg',
@@ -407,6 +421,7 @@ const projects = [
       },
       { img: '/FeriaDelLibro/2.jpg', rows: 2, cols: 4 },
     ],
+    video: false,
     attributes: {
       description:
         'Proposition I made for the poster competition for the "18th Book Fair for children and young people" in Uruguay - which I did not win. My intention was to create an image that would show books in a playful and intriguing manner, that would appeal to kids\'/ curiosity and encourage them to go explore the discoveries opportunities a book faire offers. More generally, I wanted kid to perceive a book faire as an exciting place to visit. My mottos were: Knowledge is freedom. Reading is fun.',
@@ -417,7 +432,9 @@ const projects = [
     id: '6',
     type: 'graphic',
     year: '2012',
+    Tags: ['Illustration', 'Visual Identity'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/FGC.jpg',
     image: '/FGC/7.gif',
     img1: '/FGC/FGC.jpg',
@@ -582,6 +599,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         "First prize in the contest for the re-design of Fédération Genevoise de Coopération'/s corporate identity - 2012. The FGC regroups about fifty associations with headquarters in Geneva. The aim behind this cooperation is to aid developing countries and raise public awareness. Therefore, the Fédération Genevoise de Coopération finances projects which help battle inequality and provide freedom of choice to these countries.",
@@ -592,7 +610,9 @@ const projects = [
     id: '7',
     type: 'graphic',
     year: '2017',
+    Tags: ['Poster'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/FlagOfPeace.jpg',
     image: '/CoverPhotos/Galleries/FlagOfPeace.jpg',
     images: [
@@ -627,6 +647,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         'Flags of Peace (NL) honoured me with an invitation to design an international peace flag to represent my country (Uruguay) in their international exhibition Flags of Peace which travels around the world. Many bold designers and studios have already joined the great cause behind this project by designing the flag for their respective countries. My thoughts: I believe that for a flag to be International it has to represent/address all cultures equally. Therefore, we cannot rely on words, since language only represent a certain culture. Although there are some symbols that are internationally associate with peace, when looking at their origins, research showed me that, for the most part, their either represented something else or were linked to a specific religion. Accordingly, the use of them was judged inappropriate. There are normally two sides in a conflict putting peace away, where either two persons, or groups (nations, towns, etc.) are confronted for things such as religion, genre, skin color, social class, origins, and so on. For peace to take place, these two sides need to come to terms and see each other as equals in order to impart mutual respect. Concept: My flag carries a message of hope, showing these opposite sides finding common ground, complementing each other and sharing instead of dividing and excluding. Symmetry was used as means of representing equality and balance between two sides that although they look different (color), they are equals (form). The symmetrical image is also an analogy for a mirror, encouraging people to find a piece of themselves in the one in front of us.',
@@ -637,7 +658,9 @@ const projects = [
     id: '8',
     type: 'graphic',
     year: '2017',
+    Tags: ['Illustration', 'Poster'],
     horizontal: false,
+    mp4: false,
     image: '/CoverPhotos/Galleries/FreedomOfMovement.jpg',
     img1: '/FreedomOfMovement/2.jpg',
     images: [
@@ -657,6 +680,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description: '',
     },
@@ -666,7 +690,9 @@ const projects = [
     id: '9',
     type: 'graphic',
     year: '2014',
+    Tags: ['Visual Identity'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
     image: '/GenevaMotorShow/19.jpg',
     images: [
@@ -791,6 +817,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         "1rst Prize at the contest, holded by HEAD, for Geneva Motor Show 2014'/s poster design and art direction. This graphic was used in all of the different national and international communication campaigns for the 2014 Geneva International Motor Show. I wanted to propose a different design concept that goes further than the � regular � style of the Motor Show. Therefore I wanted to avoid the typical representative car and automobile references and busy images. I also noticed that quite often in the previous poster campaigns, text and image were treated as two completely distinct elements and were therefore very distant from one another. The text took the shape of a rigid block that was very often placed the same way on all the visual identity media. My goal was to create, on one hand, an uncluttered, minimal and abstract design that evokes feelings and emotions related to the automobile sector and to bring outthe positive aspects of the Motor Show (speed, movement, freedom, diversity and joy) more than concentrate on the actual car itself. On the other hand, I wanted to make the text the protagonist element of my design. The creation and composition of the poster is entirely drawn out typographically. I propose a design with different reading levels, where the lines suggest a network of roads which evoke the number of visitors coming to visit the Motor Show every year from around the world. They also insinuate the shape of certain elements that are part of the traditional Genevan landscape: Cars, mountains, the Jet D'/eau, etc. As for the colours, I was inspired by the season in which the Geneva Motor Show takes place, spring. ",
@@ -801,7 +828,9 @@ const projects = [
     id: '10',
     type: 'typeface',
     year: '2014',
+    Tags: ['Photography'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/GeneveTypeface.jpg',
     image: '/GeneveTypeface/36.jpg',
     images: [
@@ -1062,27 +1091,8 @@ const projects = [
         rows: 2,
         cols: 4,
       },
-      // {
-      //   img: '/GeneveTypeface/12.JPG',
-      //   rows: 2,
-      //   cols: 2,
-      // },
-      // {
-      //   img: '/GeneveTypeface/13.JPG',
-      //   rows: 2,
-      //   cols: 2,
-      // },
-      // {
-      //   img: '/GeneveTypeface/14.JPG',
-      //   rows: 2,
-      //   cols: 2,
-      // },
-      // {
-      //   img: '/GeneveTypeface/15.JPG',
-      //   rows: 2,
-      //   cols: 2,
-      // },
     ],
+    video: false,
     attributes: {
       description:
         'Geneve is a type family inspired by the rich typographic history of Geneva.- Bachelor thesis at HEAD, Geneva - Designed to be used on any type of printed support, Gen�ve is a typography with personality and flexibility, which allows designers to express their ideas in different ways without losing coherence. In developing Gen�ve I was inspired by the typeface used by French printer/editor/publisher Henri II Estienne in his famous book Thesaurus Lingu� Gr�c�, published in Geneva in 1572. This typeface was brought to Geneva by Henri�s father, Robert Estienne, who, before settling in Geneva and working as Calvin�s printer, was the printer of France�s King, Fran�ois I. This typeface highly influenced the typographers and printers in Geneva at that time. Henri and Robert Estienne�s work in Geneva helped it to become one of the most important cities in Europe for print and typography in the sixteenth century. Gen�ve consists of four styles: Classique (Humanist serif), Aust�re (Geometric serif), Spontan�e (Humanist sans-serif) and Alternative (Stencil, display version). These styles correspond to the different profiles of the city, reflecting its multiculturalism and diversity. This typography acts as a bridge between the past and present of the city. I received the BEA Fondation Award for Young Artists for my work on the Gen�ve Typeface.',
@@ -1093,7 +1103,9 @@ const projects = [
     id: '11',
     type: 'graphic',
     year: '2014',
+    Tags: ['Poster'],
     horizontal: false,
+    mp4: false,
     image: '/GoesAround/1.jpg',
     img1: '/GoesAround/5.jpg',
     images: [
@@ -1113,6 +1125,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         'For a school project in collaboration with the RATP (Parisian autonomous transport society), we were asked to create a 10 second long animation to wish the passengers a happy new year 2014. The animations were shown on the large HD screens at the Franklin Roosevelt and Europe metro stops in Paris, France, from December 24, 2013 to January 8, 2014. My intention was to confront themselves, that they reflect on who they are and how they behave with others. I found this most interesting and thought that I could respond to this in various ways. Therefore I decided to also create two posters: one derived from the animation and the other, completely independent - Both with no intention of being shown on the RATP -. For the independent poster �2014 goes around...comes around� (see above), I handled the subject in a more explicit and trashy way.',
@@ -1123,10 +1136,11 @@ const projects = [
     id: '12',
     type: 'graphic',
     year: '2014',
+    Tags: ['Visual Identity'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/ItsUpToYou.jpg',
     image: '/ItsUpToYou/5.JPG',
-    // image: '/CoverPhotos/Galleries/ItsUpToYou.jpg',
     images: [
       {
         img: '/ItsUpToYou/8.jpg',
@@ -1138,11 +1152,6 @@ const projects = [
         rows: 2,
         cols: 4,
       },
-      // {
-      //   img: '/ItsUpToYou/7.jpg',
-      //   rows: 2,
-      //   cols: 2,
-      // },
       {
         img: '/ItsUpToYou/13.JPG',
         rows: 2,
@@ -1199,15 +1208,15 @@ const projects = [
       {
         img: '/ItsUpToYou/4.jpg',
         rows: 2,
-        cols: 2,
+        cols: 4,
       },
     ],
     video: true,
-    videoList: [
+    videos: [
       {
-        video: '/ItsUpToYou/Animation.mp4',
+        url: '/ItsUpToYou/Animation.mp4',
         rows: 2,
-        cols: 2,
+        cols: 4,
       },
     ],
     attributes: {
@@ -1220,7 +1229,9 @@ const projects = [
     id: '13',
     type: 'graphic',
     year: '2012',
+    Tags: ['Illustration'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/JoieDeLire.jpg',
     image: '/CoverPhotos/Galleries/JoieDeLire.jpg',
     images: [
@@ -1245,6 +1256,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         "'Jeu de regards': Poster design for the exhibition commemorating the 25th anniversary of Geneva'/s own publishing house, La Joie de Lire, which took place at the 26 me Salon International du livre et de la presse, in Geneva.",
@@ -1255,7 +1267,9 @@ const projects = [
     id: '14',
     type: 'typeface',
     year: '2013',
+    Tags: ['Poster'],
     horizontal: true,
+    mp4: false,
     image: '/CoverPhotos/Galleries/LetterStamps.jpg',
     images: [
       {
@@ -1380,6 +1394,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         'For a school projet we were asked to make typographic stamps in order to create an alphabet and then design posters with it. The challenge I set myself was to create a stamp that would stand out for its versatility and simplicity. I decided to use rope as the stamp material. For this, I designed a matrix which would work both as a support to the rope as well as a grid for the typeface. It allows for the composition of all the glyphs of the alphabet and 4 different weights (light, regular, medium and bold).',
@@ -1390,7 +1405,9 @@ const projects = [
     id: '15',
     type: 'graphic',
     year: '2018',
+    Tags: ['Visual Identity'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/MakeAWish.jpg',
     image: '/CoverPhotos/Galleries/MakeAwish.jpg',
     img1: '/MakeAWhish/1.jpg',
@@ -1406,6 +1423,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         'In many cultures around the world, a shooting star is associated with dreams and hope, as it is believed that this phenomenon (a shooting star) has the magical power of granting us a wish. I wanted to play with this idea on my 2018 greeting poster. Therefore, I created an idealistic sky, full of shooting stars, where the main ones are suggesting the numbers 2018 with their movements. A shooting star is also a very ephemeral thing, which echoes with the idea of life itself. The result is a 2018 made out of opportunities, hopes and magic, that has to be fully exploited before vanishing forever. The poster becomes an invitation to dream and reflect on what we would really wish to happen in this new year if we were granted a wish.',
@@ -1416,7 +1434,9 @@ const projects = [
     id: '16',
     type: 'typeface',
     year: '2012',
+    Tags: ['Photography'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/Manifesta.jpg',
     image: '/Manifesta/13.gif',
     img1: '/Manifesta/5.jpg',
@@ -1498,6 +1518,7 @@ const projects = [
         img: '/Manifesta/10.jpg',
       },
     ],
+    video: false,
     attributes: {
       description:
         'Title or short-text font, influenced both by the geometry-favoring artistic movements of the beginning of the 20th Century and the work of Dutch designer Max Kisman. This fontface aims to explore the relationship between the different parts of the letterforms as well as their hierarchy, while teasing with the limits of legibility. The MANIFESTA font family is formed by four different weights (light, regular, medium, bold), each one with uppercase and lowercase letters, numbers, punctuation marks and diacritic characters.',
@@ -1508,7 +1529,9 @@ const projects = [
     id: '17',
     type: 'graphic',
     year: '2013',
+    Tags: ['Visual Identity'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/MiMujer.jpg',
     image: '/CoverPhotos/Galleries/MiMujer.jpg',
     img1: '/MiMujer/1.jpg',
@@ -1529,6 +1552,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         "Poster design inspired by Nicolas Jaar's song Mi MujerSchool Project.",
@@ -1539,7 +1563,9 @@ const projects = [
     id: '18',
     type: 'graphic',
     year: '2015',
+    Tags: ['Photography'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/NewYearNewFight.jpg',
     image: '/CoverPhotos/Galleries/NewYearNewFight.jpg',
     img1: '/NewYearNewFight/1.jpg',
@@ -1566,6 +1592,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         'I designed this poster at the end of 2014, just to share my thoughts about the new year 2015, which I knew was going to be a particularly tough one for me. This poster obtained an Honorary Mention at Trnava Poster Triennial International competition 2015.',
@@ -1576,7 +1603,9 @@ const projects = [
     id: '19',
     type: 'graphic',
     year: '2013',
+    Tags: ['Illustration', 'Photography'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/Paleo.jpg',
     image: '/CoverPhotos/Galleries/Paleo.jpg',
     img1: '/Paleo/1.jpg',
@@ -1617,6 +1646,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         "Second prize at the Paléo Festival Nyon poster contest. Paléo Festival is today one of Europe'/s most important musical events.",
@@ -1627,7 +1657,9 @@ const projects = [
     id: '20',
     type: 'graphic',
     year: '2012',
+    Tags: ['Visual Identity'],
     horizontal: true,
+    mp4: false,
     image: '/CoverPhotos/Galleries/PointDeFuite.jpg',
     images: [
       {
@@ -1747,6 +1779,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         "Conception and mounting of the exhibition '/Point de Fuite'/, which presented artist Isabelle Pralong'/s career retrospective and took place in Geneva'/s Biblioth�que de la Cit� from Dec 9th, 2011 to Jan 31st, 2012. Done in collaboration with Tammara Leites, Alexia Segura, Pierre Schilling et Antoine Schmitt, as an assignment for Sandrine Pelletier'/s scenography course at HEAD - Geneve.",
@@ -1757,7 +1790,9 @@ const projects = [
     id: '21',
     type: 'graphic',
     year: '2014',
+    Tags: ['Poster'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/DameDeLaMer.jpg',
     image: '/CoverPhotos/Galleries/LaDameDeLaMere.jpg',
     images: [
@@ -1830,6 +1865,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         'For a school photography project, in collaboration with the Carouge Theatre and the Fusterie exhibition space, we were asked to reinterpret the play �The lady from the sea� written by Henrik Ibsen. As a joint project with eleven other students, our work was exhibited at the Fusterie church in Geneva, as part of an audio-visual installation. My work deals with an everyday life overtaken by fear and anguish provoked by ghosts of a past love. Past and present blend, memories and reality confuse and collide and dreams becomes real.',
@@ -1840,7 +1876,9 @@ const projects = [
     id: '22',
     type: 'graphic',
     year: '2012',
+    Tags: ['Poster', 'Photography'],
     horizontal: false,
+    mp4: false,
     image: '/CoverPhotos/Galleries/PostTenebrasRock.jpg',
     img1: '/PostTenebrasRock/1.jpg',
     images: [
@@ -1867,6 +1905,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         "Posters & flyers proposition for Post Tenebras Rock (2011) concerts at l'/Usine, Geneva",
@@ -1877,7 +1916,9 @@ const projects = [
     id: '23',
     type: 'typeface',
     year: '2017',
+    Tags: ['Visual Identity'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/Thesaurus.jpg',
     image: '/CoverPhotos/Galleries/Thesaurus.jpg',
     images: [
@@ -2005,6 +2046,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         'Thesaurus is a typeface inspired by the typographic history of the city of Geneva. Thesaurus is based on the types that Robert Estienne brought from Paris to Geneva, which were later used by his son, Henri II Estienne, for printing the famous book Thesaurus Graecae Linguae. These metal types served, in some way, as a bridge between France and Switzerland, between Catholicism and Protestantism, and now, through Thesaurus, between past and present. Thesaurus was released by Typotheque. Below, some pictures from Thesaurus\'/ Specimen, which I have designed for Typothque. Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American typedesign biennial by Tipos Latinos, 2018 - out of 444 projects submitted this year. Thesaurus was selected in the Superfamily category. It has also been awarded with "Gold" in the Graphis Type 4: Typeface Design Competition.',
@@ -2015,7 +2057,9 @@ const projects = [
     id: '24',
     type: 'graphic',
     year: '2014',
+    Tags: ['Illustration', 'Poster'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/TijuanaPanthers.jpg',
     image: '/CoverPhotos/Galleries/TijuanaPanthers.jpg',
     images: [
@@ -2036,6 +2080,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         'I was asked by Rock This Town (association which organises concerts in Geneva) to design a poster to promote the concert of Californian band Tijuana Panthers.',
@@ -2046,7 +2091,9 @@ const projects = [
     id: '25',
     type: 'graphic',
     year: '2013',
+    Tags: ['Illustration'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/TimeOut.jpg',
     image: '/CoverPhotos/Galleries/TimeOut.jpg',
     images: [
@@ -2066,6 +2113,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         'The New York magazine TimeOut asked me to design the cover for his spring preview issue (late February, 2013), and wanted me to reinvent my Beyond the Box poster. For me, spring is aboout flowers, paper windmills and kaleidoscopes, so my visual concept was inspired by this mood.',
@@ -2076,7 +2124,9 @@ const projects = [
     id: '26',
     type: 'graphic',
     year: '2013',
+    Tags: ['Poster'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/Tomorrow.jpg',
     image: '/Tomorrow/1.jpg',
     img1: '/Tomorrow/5.jpg',
@@ -2102,6 +2152,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         "The poster flirts with the concepts of luck and randomness, which are strongly related to the idea of future (tomorrow), since no matter how much effort we put into it, things might not turn out the way we'/d planned.",
@@ -2112,7 +2163,9 @@ const projects = [
     id: '27',
     type: 'typeface',
     year: '2013',
+    Tags: ['Visual Identity'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/TypographyH.jpg',
     image: '/CoverPhotos/Galleries/TypographicHeroes.jpg',
     images: [
@@ -2265,6 +2318,7 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description:
         'My concept was to combine two printing techniques; One of the latest: the Risograph (RISO), with one of the oldest printing methods: movable type page setting and press printing. First of all, the portrait images were printed with the RISO. Then, all the texts were composed by hand printing over the portraits using a press. I chose these 4 designers taking in consideration several aspects: the impact their typefaces had in the world of typography and the availability of the metal characters at school. I also picked these 4 designers because they all lived in a different period of time. Therefore they faced different problems. Their work somehow represents the evolution in typography This is a school project in progress, the two other posters will be up soon.',
@@ -2275,7 +2329,9 @@ const projects = [
     id: '28',
     type: 'typeface',
     year: '2011',
+    Tags: ['Illustration', 'Photography'],
     horizontal: false,
+    mp4: false,
     image: '/Viga/7.jpg',
     img1: '/Viga/1.jpg',
     images: [
@@ -2315,6 +2371,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         'VIGA is an experimental capitals-only display font influenced by constructivism, with a high level of abstraction. The grid I created for developing VIGA was inspired by metal joists used in architecture.',
@@ -2325,7 +2382,9 @@ const projects = [
     id: '29',
     type: 'graphic',
     year: '2011',
+    Tags: ['Illustration'],
     horizontal: false,
+    mp4: false,
     landing: '/CoverPhotos/Lading/Weltformat.jpg',
     image: '/CoverPhotos/Galleries/Weltformat.jpg',
     img1: '/Weltformat/5.jpg',
@@ -2351,6 +2410,7 @@ const projects = [
         cols: 2,
       },
     ],
+    video: false,
     attributes: {
       description:
         "Finalist in the students'/ international contest of the Weltformat 2011 poster festival at Lucerne - Switzerland, this poster was chosen between more than 400 students of 20 different countries as a response to the theme: poster for the poster.",
@@ -2361,7 +2421,9 @@ const projects = [
     id: '30',
     type: 'typeface',
     year: '2019',
+    Tags: ['Visual Identity'],
     horizontal: true,
+    mp4: false,
     landing: '/CoverPhotos/Lading/BrickTypefamily.jpg',
     image: '/CoverPhotos/Galleries/BrickTypefamilyLandscape.jpg',
     images: [
@@ -2451,46 +2513,184 @@ const projects = [
         cols: 4,
       },
     ],
+    video: false,
     attributes: {
       description: 'Brick',
     },
   },
-  // {
-  //   name: 'Architecture+',
-  //   id: '31',
-  //   type: 'graphic',
-  //   year: '2020',
-  //   horizontal: false,
-  //   landing: '',
-  //   image: '',
-  //   img1: '/Architecture+/5.jpg',
-  //   images: [
-  //     {
-  //       img: '/Weltformat/1.jpg',
-  //       rows: 2,
-  //       cols: 2,
-  //     },
-  //     {
-  //       img: '/Weltformat/2.jpg',
-  //       rows: 2,
-  //       cols: 2,
-  //     },
-  //     {
-  //       img: '/Weltformat/3.jpg',
-  //       rows: 2,
-  //       cols: 2,
-  //     },
-  //     {
-  //       img: '/Weltformat/4.jpg',
-  //       rows: 2,
-  //       cols: 2,
-  //     },
-  //   ],
-  //   attributes: {
-  //     description:
-  //       "Finalist in the students'/ international contest of the Weltformat 2011 poster festival at Lucerne - Switzerland, this poster was chosen between more than 400 students of 20 different countries as a response to the theme: poster for the poster.",
-  //   },
-  // },
+  {
+    name: 'Architecture +',
+    id: '31',
+    type: 'graphic',
+    year: '2020',
+    horizontal: false,
+    mp4: true,
+    mp4Video: '/Architecture/forGalleryShorter.mp4',
+    mp41: '/Architecture/Cover.mp4',
+    sources: [
+      {
+        type: 'img',
+        img: '/Architecture/S1/0.png',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S1/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        type: 'img',
+        img: '/Architecture/S1/5.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S1/7.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: '/Architecture/S1/12.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S2/0.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S2/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S2/5.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S2/7.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S3/2.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S3/3.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S3/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/S3/4.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/1.png',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/2.png',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/3.png',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/4.png',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/5.png',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/Architecture/6.png',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'video',
+        url: '/Architecture/S1/1.mp4',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        type: 'video',
+        url: '/Architecture/S1/2.mp4',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        type: 'video',
+        url: '/Architecture/S1/4.mp4',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        type: 'video',
+        url: '/Architecture/S1/6.mp4',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        type: 'video',
+        url: '/Architecture/S1/9.mp4',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        type: 'video',
+        url: '/Architecture/S1/10.mp4',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        type: 'video',
+        url: '/Architecture/S1/11.mp4',
+        rows: 2,
+        cols: 4,
+      },
+    ],
+
+    attributes: {
+      description:
+        "Finalist in the students'/ international contest of the Weltformat 2011 poster festival at Lucerne - Switzerland, this poster was chosen between more than 400 students of 20 different countries as a response to the theme: poster for the poster.",
+    },
+  },
 ]
 
 export default projects
