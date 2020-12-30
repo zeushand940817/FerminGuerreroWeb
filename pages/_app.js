@@ -1,10 +1,14 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
+import Header from 'components/Header'
+import MobileMenu from 'components/MobileMenu'
+import Footer from 'components/Footer'
 
-const Header = dynamic(import('../components/Header'))
-const MobileMenu = dynamic(import('../components/Header'))
-const Footer = dynamic(import('../components/Footer'))
+// import dynamic from 'next/dynamic'
+
+// const Header = dynamic(import('../components/Header'))
+// const MobileMenu = dynamic(import('../components/Header'))
+// const Footer = dynamic(import('../components/Footer'))
 
 // export function reportWebVitals(metric) {
 //   console.log(metric)

@@ -30,7 +30,7 @@ const TreeItem1 = withStyles({
   },
 })(MuiTreeItem)
 
-export default function FileSystemNavigator() {
+export default function MobileSectionsMenu() {
   const classes = useStyles()
 
   return (

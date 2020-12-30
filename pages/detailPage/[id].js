@@ -10,10 +10,31 @@ const useStyles = makeStyles({
   root: {
     width: 500,
     height: 450,
+    ['@media screen and (max-width:677px)']: {
+      border: '3px solid red',
+    },
   },
+  // '&.MuiImageListRoot': {
+  //   border: '3px solid blue',
+  //   width: 500,
+  //   height: 450,
+  //   ['@media (max-width: 677px)']: {
+  //     border: '3px solid yellow',
+  //     display: 'flex',
+  //     flexDirection: 'column',
+  //     width: 'auto',
+  //     height: 'auto',
+  //   },
+  // },
   imagen: {
     objectFit: 'cover',
     objectPosition: 'center',
+  },
+  video: {
+    objectFit: 'cover',
+    objectPosition: 'center',
+    width: '703px',
+    height: 'auto',
   },
   description: {
     display: 'flex',
@@ -30,7 +51,7 @@ function srcset(image, size, rows = 1, cols = 1) {
   ${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
 }
 
-export default function DetailPage({ data }) {
+const DetailPage = ({ data }) => {
   const sources = data.sources
   const classes = useStyles()
 
@@ -61,9 +82,7 @@ export default function DetailPage({ data }) {
               </div>
             </Grid>
             <Grid item xs={12} sm={3} lg={6}>
-              <div className={classes.description}>
-                {data.attributes.description}
-              </div>
+              <div className="description">{data.attributes.description}</div>
             </Grid>
           </div>
         </Grid>
@@ -88,12 +107,13 @@ export default function DetailPage({ data }) {
                   className={classes.imagen}
                 />
               ) : (
-                <video autoPlay muted loop className={classes.imagen}>
-                  <source
-                    src={srcset(source.url, 121, source.rows, source.cols)}
-                    type="video/mp4"
-                  />
-                </video>
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  className={classes.video}
+                  src={srcset(source.url, 121, source.rows, source.cols)}
+                />
               )}
             </ImageListItem>
           ))}
@@ -125,17 +145,6 @@ export default function DetailPage({ data }) {
           margin-top: 1em;
         }
 
-         {
-          /* .description {
-          display: flex;
-          height: auto;
-          flex-wrap: wrap;
-          margin-top: 1em;
-          margin-bottom: 1em;
-          padding-left: 10px;
-        } */
-        }
-
         .yearandtags {
           display: flex;
           flex-direction: column;
@@ -147,6 +156,29 @@ export default function DetailPage({ data }) {
           margin: 30px;
         }
 
+        .imageList {
+          width: 500px;
+          height: 450px;
+        }
+
+        .imagen {
+          object-fit: cover;
+          object-position: center;
+        }
+        .video {
+          objectfit: cover;
+          object-position: center;
+          width: 703px;
+          height: auto;
+        }
+        .description {
+          display: flex;
+          height: auto;
+          flex-wrap: wrap;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          padding-left: 10px;
+        }
         /* Media Queries */
 
         @media screen and (max-width: 667px) {
@@ -167,11 +199,19 @@ export default function DetailPage({ data }) {
             margin-top: 1em;
             padding-left: 10px;
           }
+          .imageList {
+            display: inline-block;
+            border: 2px solid pink;
+            width: auto;
+            height: auto;
+          }
         }
       `}</style>
     </>
   )
 }
+
+export default DetailPage
 
 export async function getServerSideProps(context) {
   const { API_URL } = process.env
