@@ -1,8 +1,8 @@
 const projects = [
   {
     name: 'Carte Blanche',
-    slug:'carte-blanche',
-    id : '1',
+    slug: 'carte-blanche',
+    id: '1',
     type: 'graphic',
     year: '2013',
     Tags: ['Poster', 'Visual Identity'],
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     name: 'Circ',
-    slug:'circ',
+    slug: 'circ',
     id: '2',
     type: 'typeface',
     year: '2011',
@@ -102,7 +102,7 @@ const projects = [
   },
   {
     name: 'DinMachine',
-    slug:'din-machine',
+    slug: 'din-machine',
     id: '3',
     type: 'graphic',
     year: '2014',
@@ -260,7 +260,7 @@ const projects = [
   },
   {
     name: 'Exentra',
-    slug:'exentra',
+    slug: 'exentra',
     id: '4',
     type: 'typeface',
     year: '2015',
@@ -460,7 +460,7 @@ const projects = [
   },
   {
     name: 'Feria Del Libro',
-    slug:'feria-del-libro',
+    slug: 'feria-del-libro',
     id: '5',
     type: 'graphic',
     year: '2018',
@@ -492,7 +492,7 @@ const projects = [
   },
   {
     name: 'Fédération Genevoise de Coopération',
-    slug:'federation-genevoise-de-cooperation',
+    slug: 'federation-genevoise-de-cooperation',
     id: '6',
     type: 'graphic',
     year: '2012',
@@ -698,7 +698,7 @@ const projects = [
   },
   {
     name: 'Flag Of Peace',
-    slug:'flag-of-peace',
+    slug: 'flag-of-peace',
     id: '7',
     type: 'graphic',
     year: '2017',
@@ -752,7 +752,7 @@ const projects = [
   },
   {
     name: 'Freedom Of Movement',
-    slug:'freedom-of-movement', 
+    slug: 'freedom-of-movement',
     id: '8',
     type: 'graphic',
     year: '2017',
@@ -782,7 +782,7 @@ const projects = [
   },
   {
     name: 'Geneva Motor Show',
-    slug:'geneva-motor-show',
+    slug: 'geneva-motor-show',
     id: '9',
     type: 'graphic',
     year: '2014',
@@ -944,7 +944,7 @@ const projects = [
   },
   {
     name: 'Genève Typeface',
-    slug:'geneve-typeface',
+    slug: 'geneve-typeface',
     id: '10',
     type: 'typeface',
     year: '2014',
@@ -1268,7 +1268,7 @@ const projects = [
   },
   {
     name: 'Goes Around',
-    slug:'goes-around',
+    slug: 'goes-around',
     id: '11',
     type: 'graphic',
     year: '2014',
@@ -1304,7 +1304,7 @@ const projects = [
   },
   {
     name: 'Its Up To You',
-    slug:'its-up-to-you',
+    slug: 'its-up-to-you',
     id: '12',
     type: 'graphic',
     year: '2014',
@@ -1406,7 +1406,7 @@ const projects = [
   },
   {
     name: 'Jeu De Regards',
-    slug:'jeu-de-regards',
+    slug: 'jeu-de-regards',
     id: '13',
     type: 'graphic',
     year: '2012',
@@ -1448,7 +1448,7 @@ const projects = [
   },
   {
     name: 'Letter Stamps',
-    slug:'letter-stamps',
+    slug: 'letter-stamps',
     id: '14',
     type: 'typeface',
     year: '2013',
@@ -1609,7 +1609,7 @@ const projects = [
   },
   {
     name: 'Make A Whish',
-    slug:'make-a-whish',
+    slug: 'make-a-whish',
     id: '15',
     type: 'graphic',
     year: '2018',
@@ -1640,7 +1640,7 @@ const projects = [
   },
   {
     name: 'Manifesta',
-    slug:'manifesta',
+    slug: 'manifesta',
     id: '16',
     type: 'typeface',
     year: '2012',
@@ -1748,7 +1748,7 @@ const projects = [
   },
   {
     name: 'Mi Mujer',
-    slug:'mi-mujer',
+    slug: 'mi-mujer',
     id: '17',
     type: 'graphic',
     year: '2013',
@@ -1785,7 +1785,7 @@ const projects = [
   },
   {
     name: 'New Year, New Fight',
-    slug:'new-year-new-fight',
+    slug: 'new-year-new-fight',
     id: '18',
     type: 'graphic',
     year: '2015',
@@ -1829,7 +1829,7 @@ const projects = [
   },
   {
     name: 'Paléo',
-    slug:'paleo',
+    slug: 'paleo',
     id: '19',
     type: 'graphic',
     year: '2013',
@@ -1890,7 +1890,7 @@ const projects = [
   },
   {
     name: 'Point de Fuite',
-    slug:'point-de-fuite',
+    slug: 'point-de-fuite',
     id: '20',
     type: 'graphic',
     year: '2012',
@@ -2046,7 +2046,7 @@ const projects = [
   },
   {
     name: 'La Dame De La Mer',
-    slug:'la-dame-de-la-mer',
+    slug: 'la-dame-de-la-mer',
     id: '21',
     type: 'graphic',
     year: '2014',
@@ -2142,7 +2142,7 @@ const projects = [
   },
   {
     name: 'Post Tenebras Rock',
-    slug:'post-tenebras-rock',
+    slug: 'post-tenebras-rock',
     id: '22',
     type: 'graphic',
     year: '2012',
@@ -2188,7 +2188,7 @@ const projects = [
   },
   {
     name: 'Thesaurus',
-    slug:'thesaurus',
+    slug: 'thesaurus',
     id: '23',
     type: 'typeface',
     year: '2017',
@@ -2352,7 +2352,7 @@ const projects = [
   },
   {
     name: 'Tijuana Panthers',
-    slug:'tijuana-panthers',
+    slug: 'tijuana-panthers',
     id: '24',
     type: 'graphic',
     year: '2014',
@@ -2389,7 +2389,7 @@ const projects = [
   },
   {
     name: 'Time Out',
-    slug:'time-out',
+    slug: 'time-out',
     id: '25',
     type: 'graphic',
     year: '2013',
@@ -2425,7 +2425,7 @@ const projects = [
   },
   {
     name: 'Tomorrow',
-    slug:'tomorrow',
+    slug: 'tomorrow',
     id: '26',
     type: 'graphic',
     year: '2013',
@@ -2468,7 +2468,7 @@ const projects = [
   },
   {
     name: 'Typography Heroes',
-    slug:'typography-heroes',
+    slug: 'typography-heroes',
     id: '27',
     type: 'typeface',
     year: '2013',
@@ -2663,7 +2663,7 @@ const projects = [
   },
   {
     name: 'Viga',
-    slug:'viga',
+    slug: 'viga',
     id: '28',
     type: 'typeface',
     year: '2011',
@@ -2723,7 +2723,7 @@ const projects = [
   },
   {
     name: 'Weltformat',
-    slug:'weltformat',
+    slug: 'weltformat',
     id: '29',
     type: 'graphic',
     year: '2011',
@@ -2766,7 +2766,7 @@ const projects = [
   },
   {
     name: 'Brick',
-    slug:'brick',
+    slug: 'brick',
     id: '30',
     type: 'typeface',
     year: '2019',
@@ -2885,7 +2885,7 @@ const projects = [
   },
   {
     name: 'Architecture +',
-    slug:'architecture-+',
+    slug: 'architecture-+',
     id: '31',
     type: 'graphic',
     year: '2020',

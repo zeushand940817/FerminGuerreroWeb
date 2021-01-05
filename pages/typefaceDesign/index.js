@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function TypefaceDesign({ data }) {
   const projectsFilter = data
     .filter((project) => project.type === 'typeface')
-    .map(({ id, image, name }) => ({ id, image, name }))
+    .map(({ id, image, name, slug }) => ({ id, image, name, slug }))
 
   return (
     <>
@@ -13,7 +13,8 @@ export default function TypefaceDesign({ data }) {
           {projectsFilter.map((projectFilter, key) => (
             <Link
               key={projectFilter.id}
-              href={`/detailPage/${projectFilter.id}`}
+              href={`/projects/[slug]`}
+              as={`/projects/${projectFilter.slug}`}
             >
               <a>
                 <div className="container">

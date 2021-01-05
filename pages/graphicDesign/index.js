@@ -1,19 +1,8 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Image from 'next/image'
-import { makeStyles } from '@material-ui/core/styles'
-
-const useStyles = makeStyles({
-  root: {
-    width: 500,
-    height: 450,
-    overflowY: 'scroll',
-  },
-})
 
 export default function GraphicDesign({ data }) {
-  const classes = useStyles()
-
   const projectsFilter = data
     .filter((project) => project.type === 'graphic')
     .map(({ id, image, name, slug }) => ({ id, image, name, slug }))
@@ -39,15 +28,16 @@ export default function GraphicDesign({ data }) {
                     </video>
                   ) : (
                     <Image
-                      layout="responsive"
-                      width="100%"
-                      height="100%"
-                      className="image"
-                      loading="lazy"
-                      src={projectFilter.image}
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="center"
+                      // sizes="(max-width: 667px) 100vw, "
+                      // className="image"
                       alt={projectFilter.name}
+                      src={projectFilter.image}
                     />
                   )}
+
                   <div className="middle">
                     <p className="text">{projectFilter.name}</p>
                   </div>
@@ -57,16 +47,24 @@ export default function GraphicDesign({ data }) {
           ))}
         </div>
         <style jsx>{`
-          .imageContainer {
+           {
+            /* .imageContainer {
             max-width: 100%;
-            height: auto;
-            padding: 40px 20px 0px 20px;
+            padding: 100px 20px 0px 20px;
             column-count: 3;
+          } */
           }
-
-          .container {
+.container{
+  border:3px solid pink;
+  width:600px;
+    height:600px;
+  position:relative;
+}
+         {
+            /* .container {
             position: relative;
             width: 100%;
+            height: auto;
             padding: 10px;
           }
 
@@ -74,13 +72,12 @@ export default function GraphicDesign({ data }) {
             height: auto;
           }
           .image {
-            object-fit: cover;
-            object-position: center;
+            width: 100%;
+            height: 100%;
             opacity: 1;
             display: inline-block;
             transition: 0.5s ease;
             backface-visibility: hidden;
-            padding: 20px;
           }
 
           .middle {
@@ -110,7 +107,8 @@ export default function GraphicDesign({ data }) {
             font-size: 20px;
             color: white;
             padding: 5px 10px 25px 10px;
-          }
+          } */
+          {/* }
           @media screen and (max-width: 667px) {
             .imageContainer {
               max-width: 100%;
@@ -127,7 +125,7 @@ export default function GraphicDesign({ data }) {
               padding: 40px 20px 0px 20px;
               column-count: 2;
             }
-          }
+          } */}
         `}</style>
       </div>
     </>
