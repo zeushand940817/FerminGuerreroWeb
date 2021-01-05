@@ -1,57 +1,34 @@
 import Grid from '@material-ui/core/Grid'
 import fetch from 'isomorphic-unfetch'
-import GoBack from 'components/GoBack'
-// import Tags from 'components/Tags'
+import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles'
-import ImageList from '@material-ui/core/ImageList'
-import ImageListItem from '@material-ui/core/ImageListItem'
+import GridList from '@material-ui/core/GridList'
+import GridListTile from '@material-ui/core/GridListTile'
 
-const useStyles = makeStyles({
+//     // ['@media screen and (max-width:677px)']: {
+//     //   border: '3px solid red',
+//     // },
+
+const useStyles = makeStyles((theme) => ({
   root: {
-    width: 500,
-    height: 450,
-    ['@media screen and (max-width:677px)']: {
-      border: '3px solid red',
-    },
-  },
-  // '&.MuiImageListRoot': {
-  //   border: '3px solid blue',
-  //   width: 500,
-  //   height: 450,
-  //   ['@media (max-width: 677px)']: {
-  //     border: '3px solid yellow',
-  //     display: 'flex',
-  //     flexDirection: 'column',
-  //     width: 'auto',
-  //     height: 'auto',
-  //   },
-  // },
-  imagen: {
-    objectFit: 'cover',
-    objectPosition: 'center',
-  },
-  video: {
-    objectFit: 'cover',
-    objectPosition: 'center',
-    width: '703px',
-    height: 'auto',
-  },
-  description: {
     display: 'flex',
-    height: 'auto',
     flexWrap: 'wrap',
-    marginTop: '1em',
-    marginBottom: '1em',
-    paddingLeft: '10px',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
   },
-})
+  imagen: {
+    height: '100%',
+    width: '100%',
+    objectFit: 'cover',
+    objectPosition: 'center',
+  },
+  gridList: {
+    height: '100%',
+    width: '100%',
+  },
+}))
 
-function srcset(image, size, rows = 1, cols = 1) {
-  return `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format 1x,
-  ${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
-}
-
-const DetailPage = ({ data }) => {
+const Projects = ({ data }) => {
   const sources = data.sources
   const classes = useStyles()
 
@@ -87,37 +64,41 @@ const DetailPage = ({ data }) => {
           </div>
         </Grid>
 
-        <ImageList
-          gap={12}
-          variant="quilted"
+        <GridList
+          cellHeight={260}
           cols={4}
-          rowHeight="auto"
-          className={classes.root}
+          spacing={12}
+          className={classes.gridList}
         >
-          {Object.values(sources).map((source) => (
-            <ImageListItem
-              cols={source.cols || 1}
-              rows={source.rows || 1}
-              key={data.id}
-            >
-              {source.type === 'img' ? (
-                <img
-                  srcSet={srcset(source.img, 121, source.rows, source.cols)}
-                  alt=""
-                  className={classes.imagen}
-                />
-              ) : (
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  className={classes.video}
-                  src={srcset(source.url, 121, source.rows, source.cols)}
-                />
-              )}
-            </ImageListItem>
-          ))}
-        </ImageList>
+          {Object.values(sources).map((source) => {
+            return (
+              <GridListTile
+                key={data.id}
+                cols={source.cols || 1}
+                rows={source.rows || 1}
+                className={classes.gridList}
+              >
+                {source.type === 'img' ? (
+                  <Image
+                    quality={100}
+                    layout="fill"
+                    loading="lazy"
+                    src={source.img}
+                    alt={data.name}
+                  />
+                ) : (
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    className={classes.video}
+                    src={source.url}
+                  />
+                )}
+              </GridListTile>
+            )
+          })}
+        </GridList>
       </div>
 
       <style jsx>{`
@@ -127,11 +108,13 @@ const DetailPage = ({ data }) => {
           font-size: 20px;
           padding: 40px 10px 0px 10px;
           margin-bottom: 30px;
+          color: white;
         }
         .gridContainer {
           display: flex;
           flex-direction: row;
           height: auto;
+          width: 100%;
         }
 
         .mainImage {
@@ -211,17 +194,26 @@ const DetailPage = ({ data }) => {
   )
 }
 
-export default DetailPage
-
-export async function getServerSideProps(context) {
+export async function getStaticPaths() {
   const { API_URL } = process.env
-  const { id } = context.params
-  const res = await fetch(`${API_URL}/api/projects/${id}`)
-  const data = await res.json()
-  console.log(data, 'data')
+  const req = await fetch(`${API_URL}/api/projects`)
+  const data = await req.json()
+
+  const paths = data.map((element) => ({
+    params: { slug: element.slug },
+  }))
+  return { paths, fallback: false }
+}
+
+export async function getStaticProps({ params }) {
+  const { API_URL } = process.env
+  const req = await fetch(`${API_URL}/api/projects/${params.slug}`)
+  const data = await req.json()
   return {
     props: {
       data: data,
     },
   }
 }
+
+export default Projects

@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 
-export default function GraphicDesign({ data }) {
+export default function TypefaceDesign({ data }) {
   const projectsFilter = data
     .filter((project) => project.type === 'typeface')
     .map(({ id, image, name }) => ({ id, image, name }))
@@ -14,7 +14,6 @@ export default function GraphicDesign({ data }) {
             <Link
               key={projectFilter.id}
               href={`/detailPage/${projectFilter.id}`}
-              as={`/detailPage/${projectFilter.id}`}
             >
               <a>
                 <div className="container">
@@ -86,7 +85,7 @@ export default function GraphicDesign({ data }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const { API_URL } = process.env
   const res = await fetch(`${API_URL}/api/projects`)
   const data = await res.json()

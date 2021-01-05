@@ -1,44 +1,47 @@
-import '../styles/globals.css'
+import React from 'react'
 import Head from 'next/head'
+import '../styles/globals.css'
+import { ThemeProvider } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import theme from './theme'
 import Header from 'components/Header'
 import MobileMenu from 'components/MobileMenu'
 import Footer from 'components/Footer'
 
-// import dynamic from 'next/dynamic'
+export default function MyApp(props) {
+  const { Component, pageProps } = props
 
-// const Header = dynamic(import('../components/Header'))
-// const MobileMenu = dynamic(import('../components/Header'))
-// const Footer = dynamic(import('../components/Footer'))
+  React.useEffect(() => {
+    // Remove the server-side injected CSS.
+    const jssStyles = document.querySelector('#jss-server-side')
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles)
+    }
+  }, [])
 
-// export function reportWebVitals(metric) {
-//   console.log(metric)
-// }
-
-// export function reportWebVitals(metric) {
-//   if (metric.label === 'custom') {
-//     console.log(metric) // The metric object ({ id, name, startTime, value, label }) is logged to the console
-//   }
-// }
-
-function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>Fermin Guerrero</title>
-        <link rel="icon" href="/ferIcon.gif" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
       </Head>
-
-      <div className="desktop">
-        <Header />
-      </div>
-      <div className="mobile">
-        <MobileMenu />
-      </div>
-
-      <Component {...pageProps} />
-
-      <Footer />
+      <ThemeProvider theme={theme}>
+        <div className="main-wrapper">
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <CssBaseline />
+          <div className="desktop">
+            <Header />
+          </div>
+          <div className="mobile">
+            <MobileMenu />
+          </div>
+          <Component {...pageProps} />
+          <Footer />
+        </div>
+      </ThemeProvider>
 
       <style jsx>{`
         .desktop {
@@ -68,8 +71,6 @@ function MyApp({ Component, pageProps }) {
           }
         }
       `}</style>
-    </>
+    </React.Fragment>
   )
 }
-
-export default MyApp

@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import { VscDebugBreakpointFunctionUnverified } from 'react-icons/vsc'
 
 function ActiveLink({ children, href }) {
   const router = useRouter()

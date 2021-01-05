@@ -2,8 +2,6 @@ import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles'
-import ImageList from '@material-ui/core/ImageList'
-import ImageListItem from '@material-ui/core/ImageListItem'
 
 const useStyles = makeStyles({
   root: {
@@ -18,7 +16,7 @@ export default function GraphicDesign({ data }) {
 
   const projectsFilter = data
     .filter((project) => project.type === 'graphic')
-    .map(({ id, image, name }) => ({ id, image, name }))
+    .map(({ id, image, name, slug }) => ({ id, image, name, slug }))
 
   const videoMp4 = data.filter((elem) => elem.id === '31')
   const extractVideo = videoMp4[0].mp4Video
@@ -30,8 +28,8 @@ export default function GraphicDesign({ data }) {
           {projectsFilter.map((projectFilter, key) => (
             <Link
               key={projectFilter.id}
-              href={`/detailPage/${projectFilter.id}`}
-              as={`/detailPage/${projectFilter.id}`}
+              href={`/projects/[slug]`}
+              as={`/projects/${projectFilter.slug}`}
             >
               <a>
                 <div className="container">
@@ -40,8 +38,12 @@ export default function GraphicDesign({ data }) {
                       <source src={extractVideo} type="video/mp4" />
                     </video>
                   ) : (
-                    <img
+                    <Image
+                      layout="responsive"
+                      width="100%"
+                      height="100%"
                       className="image"
+                      loading="lazy"
                       src={projectFilter.image}
                       alt={projectFilter.name}
                     />
@@ -65,22 +67,24 @@ export default function GraphicDesign({ data }) {
           .container {
             position: relative;
             width: 100%;
+            padding: 10px;
           }
 
           .col {
             height: auto;
           }
           .image {
-            padding-bottom: 10px;
+            object-fit: cover;
+            object-position: center;
             opacity: 1;
             display: inline-block;
-            width: 100%;
-            height: auto;
             transition: 0.5s ease;
             backface-visibility: hidden;
+            padding: 20px;
           }
 
           .middle {
+            padding: 20px;
             position: absolute;
             bottom: 0;
             right: 0;
@@ -95,8 +99,10 @@ export default function GraphicDesign({ data }) {
             opacity: 0.5;
             transition: ease 0.5s all;
             filter: grayscale(100%);
+            padding: 20px;
           }
           .container:hover .middle {
+            padding: 20px;
             opacity: 1;
           }
 
@@ -110,7 +116,8 @@ export default function GraphicDesign({ data }) {
               max-width: 100%;
               height: auto;
               padding: 40px 20px 0px 20px;
-              column-count: 1;
+              display: flex;
+              flex-direction: column;
             }
           }
           @media screen and (max-width: 1024px) {
@@ -127,7 +134,7 @@ export default function GraphicDesign({ data }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const { API_URL } = process.env
   const res = await fetch(`${API_URL}/api/projects`)
   const data = await res.json()

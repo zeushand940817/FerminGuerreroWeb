@@ -30,37 +30,25 @@ export default function NewMobileMenu() {
             }
           >
             <li>
-              <Link href="/" as="/" onClick={() => this.handleClick()}>
+              <Link href="/" onClick={() => this.handleClick()}>
                 <a>Fermin Guerrero</a>
               </Link>
             </li>
 
             <li>
-              <Link
-                href="/graphicDesign"
-                as="/graphicDesign"
-                onClick={() => this.handleClick()}
-              >
+              <Link href="/graphicDesign" onClick={() => this.handleClick()}>
                 <a>Graphic Design</a>
               </Link>
             </li>
 
             <li>
-              <Link
-                href="/typefaceDesign"
-                as="/typefaceDesign"
-                onClick={() => this.handleClick()}
-              >
+              <Link href="/typefaceDesign" onClick={() => this.handleClick()}>
                 <a>Typeface Design</a>
               </Link>
             </li>
 
             <li>
-              <Link
-                href="/about"
-                as="/about"
-                onClick={() => this.handleClick()}
-              >
+              <Link href="/about" onClick={() => this.handleClick()}>
                 <a>About</a>
               </Link>
             </li>
@@ -72,6 +60,7 @@ export default function NewMobileMenu() {
         section {
           width: 100%;
           padding: 10px;
+          color: white;
         }
 
         .burgerMainContainer {

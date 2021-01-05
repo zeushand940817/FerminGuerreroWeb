@@ -1,7 +1,8 @@
 const projects = [
   {
     name: 'Carte Blanche',
-    id: '1',
+    slug:'carte-blanche',
+    id : '1',
     type: 'graphic',
     year: '2013',
     Tags: ['Poster', 'Visual Identity'],
@@ -13,19 +14,19 @@ const projects = [
       {
         type: 'img',
         img: '/CartaBlanche/5.JPG',
-        rows: 2,
+        rows: 4,
         cols: 2,
       },
       {
         type: 'img',
         img: '/CartaBlanche/4.JPG',
-        rows: 2,
+        rows: 4,
         cols: 2,
       },
       {
         type: 'img',
         img: '/CartaBlanche/2.JPG',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
@@ -48,6 +49,7 @@ const projects = [
   },
   {
     name: 'Circ',
+    slug:'circ',
     id: '2',
     type: 'typeface',
     year: '2011',
@@ -71,7 +73,7 @@ const projects = [
       {
         type: 'img',
         img: '/Circ/7.JPG',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
@@ -89,7 +91,7 @@ const projects = [
       {
         type: 'img',
         img: '/Circ/4.JPG',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
     ],
@@ -100,6 +102,7 @@ const projects = [
   },
   {
     name: 'DinMachine',
+    slug:'din-machine',
     id: '3',
     type: 'graphic',
     year: '2014',
@@ -136,7 +139,7 @@ const projects = [
       {
         type: 'img',
         img: '/DinMachine/4.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
@@ -167,7 +170,7 @@ const projects = [
         type: 'img',
         img: '/DinMachine/10.jpg',
         rows: 1,
-        cols: 2,
+        cols: 4,
       },
       {
         type: 'img',
@@ -257,6 +260,7 @@ const projects = [
   },
   {
     name: 'Exentra',
+    slug:'exentra',
     id: '4',
     type: 'typeface',
     year: '2015',
@@ -456,6 +460,7 @@ const projects = [
   },
   {
     name: 'Feria Del Libro',
+    slug:'feria-del-libro',
     id: '5',
     type: 'graphic',
     year: '2018',
@@ -487,6 +492,7 @@ const projects = [
   },
   {
     name: 'Fédération Genevoise de Coopération',
+    slug:'federation-genevoise-de-cooperation',
     id: '6',
     type: 'graphic',
     year: '2012',
@@ -692,6 +698,7 @@ const projects = [
   },
   {
     name: 'Flag Of Peace',
+    slug:'flag-of-peace',
     id: '7',
     type: 'graphic',
     year: '2017',
@@ -745,6 +752,7 @@ const projects = [
   },
   {
     name: 'Freedom Of Movement',
+    slug:'freedom-of-movement', 
     id: '8',
     type: 'graphic',
     year: '2017',
@@ -774,6 +782,7 @@ const projects = [
   },
   {
     name: 'Geneva Motor Show',
+    slug:'geneva-motor-show',
     id: '9',
     type: 'graphic',
     year: '2014',
@@ -935,6 +944,7 @@ const projects = [
   },
   {
     name: 'Genève Typeface',
+    slug:'geneve-typeface',
     id: '10',
     type: 'typeface',
     year: '2014',
@@ -1258,6 +1268,7 @@ const projects = [
   },
   {
     name: 'Goes Around',
+    slug:'goes-around',
     id: '11',
     type: 'graphic',
     year: '2014',
@@ -1292,7 +1303,8 @@ const projects = [
     },
   },
   {
-    name: 'Its up to you',
+    name: 'Its Up To You',
+    slug:'its-up-to-you',
     id: '12',
     type: 'graphic',
     year: '2014',
@@ -1393,7 +1405,8 @@ const projects = [
     },
   },
   {
-    name: 'Jeu de regards',
+    name: 'Jeu De Regards',
+    slug:'jeu-de-regards',
     id: '13',
     type: 'graphic',
     year: '2012',
@@ -1435,6 +1448,7 @@ const projects = [
   },
   {
     name: 'Letter Stamps',
+    slug:'letter-stamps',
     id: '14',
     type: 'typeface',
     year: '2013',
@@ -1595,6 +1609,7 @@ const projects = [
   },
   {
     name: 'Make A Whish',
+    slug:'make-a-whish',
     id: '15',
     type: 'graphic',
     year: '2018',
@@ -1625,6 +1640,7 @@ const projects = [
   },
   {
     name: 'Manifesta',
+    slug:'manifesta',
     id: '16',
     type: 'typeface',
     year: '2012',
@@ -1732,6 +1748,7 @@ const projects = [
   },
   {
     name: 'Mi Mujer',
+    slug:'mi-mujer',
     id: '17',
     type: 'graphic',
     year: '2013',
@@ -1768,6 +1785,7 @@ const projects = [
   },
   {
     name: 'New Year, New Fight',
+    slug:'new-year-new-fight',
     id: '18',
     type: 'graphic',
     year: '2015',
@@ -1811,6 +1829,7 @@ const projects = [
   },
   {
     name: 'Paléo',
+    slug:'paleo',
     id: '19',
     type: 'graphic',
     year: '2013',
@@ -1871,6 +1890,7 @@ const projects = [
   },
   {
     name: 'Point de Fuite',
+    slug:'point-de-fuite',
     id: '20',
     type: 'graphic',
     year: '2012',
@@ -2026,6 +2046,7 @@ const projects = [
   },
   {
     name: 'La Dame De La Mer',
+    slug:'la-dame-de-la-mer',
     id: '21',
     type: 'graphic',
     year: '2014',
@@ -2121,6 +2142,7 @@ const projects = [
   },
   {
     name: 'Post Tenebras Rock',
+    slug:'post-tenebras-rock',
     id: '22',
     type: 'graphic',
     year: '2012',
@@ -2166,6 +2188,7 @@ const projects = [
   },
   {
     name: 'Thesaurus',
+    slug:'thesaurus',
     id: '23',
     type: 'typeface',
     year: '2017',
@@ -2315,7 +2338,6 @@ const projects = [
         rows: 2,
         cols: 4,
       },
-
       {
         type: 'img',
         img: '/Thesaurus/16.jpg',
@@ -2330,6 +2352,7 @@ const projects = [
   },
   {
     name: 'Tijuana Panthers',
+    slug:'tijuana-panthers',
     id: '24',
     type: 'graphic',
     year: '2014',
@@ -2366,6 +2389,7 @@ const projects = [
   },
   {
     name: 'Time Out',
+    slug:'time-out',
     id: '25',
     type: 'graphic',
     year: '2013',
@@ -2401,6 +2425,7 @@ const projects = [
   },
   {
     name: 'Tomorrow',
+    slug:'tomorrow',
     id: '26',
     type: 'graphic',
     year: '2013',
@@ -2443,6 +2468,7 @@ const projects = [
   },
   {
     name: 'Typography Heroes',
+    slug:'typography-heroes',
     id: '27',
     type: 'typeface',
     year: '2013',
@@ -2637,6 +2663,7 @@ const projects = [
   },
   {
     name: 'Viga',
+    slug:'viga',
     id: '28',
     type: 'typeface',
     year: '2011',
@@ -2696,6 +2723,7 @@ const projects = [
   },
   {
     name: 'Weltformat',
+    slug:'weltformat',
     id: '29',
     type: 'graphic',
     year: '2011',
@@ -2738,6 +2766,7 @@ const projects = [
   },
   {
     name: 'Brick',
+    slug:'brick',
     id: '30',
     type: 'typeface',
     year: '2019',
@@ -2750,103 +2779,103 @@ const projects = [
       {
         type: 'img',
         img: '/Brick/2.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/3.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/4.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/5.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/6.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/7.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/8.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/9.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/10.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/11.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/12.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/13.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/14.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/15.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/16.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/17.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
       {
         type: 'img',
         img: '/Brick/18.jpg',
-        rows: 2,
+        rows: 4,
         cols: 4,
       },
     ],
@@ -2856,6 +2885,7 @@ const projects = [
   },
   {
     name: 'Architecture +',
+    slug:'architecture-+',
     id: '31',
     type: 'graphic',
     year: '2020',
@@ -2979,7 +3009,6 @@ const projects = [
         rows: 2,
         cols: 2,
       },
-
       {
         type: 'video',
         url: '/Architecture/S2/8.mp4',
@@ -3040,7 +3069,6 @@ const projects = [
         rows: 2,
         cols: 2,
       },
-
       {
         type: 'video',
         url: '/Architecture/S3/Mina.mp4',
@@ -3065,7 +3093,6 @@ const projects = [
         rows: 2,
         cols: 2,
       },
-
       {
         type: 'img',
         img: '/Architecture/2.png',

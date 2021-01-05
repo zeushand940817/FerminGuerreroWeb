@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const Home = ({ data }) => {
   const imagenes = data
-  // console.log(imagenes[0].image, 'SOY LA IMAGE')
 
   const imageBack = imagenes[19].image
  
@@ -36,6 +35,7 @@ const Home = ({ data }) => {
           height: 100vh;
           display: grid;
           grid-template-columns: repeat(12, 1fr);
+          color:white;
         }
         img {
           width: 100%;
@@ -52,9 +52,7 @@ const Home = ({ data }) => {
   )
 }
 
-export default Home
-
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const { API_URL } = process.env
   const res = await fetch(`${API_URL}/api/landings`)
   const data = await res.json()
@@ -65,3 +63,5 @@ export async function getServerSideProps() {
     },
   }
 }
+
+export default Home

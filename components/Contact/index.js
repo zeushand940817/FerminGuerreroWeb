@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
     marginTop: 50,
+    color: 'white',
     ['@media (max-width: 677px)']: {
       marginTop: 10,
     },
