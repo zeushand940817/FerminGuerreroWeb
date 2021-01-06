@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Image from 'next/image'
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 export default function GraphicDesign({ data }) {
   const projectsFilter = data
@@ -12,120 +13,88 @@ export default function GraphicDesign({ data }) {
 
   return (
     <>
-      <div className="imageContainer">
-        <div className="col">
-          {projectsFilter.map((projectFilter, key) => (
-            <Link
-              key={projectFilter.id}
-              href={`/projects/[slug]`}
-              as={`/projects/${projectFilter.slug}`}
-            >
-              <a>
-                <div className="container">
-                  {projectFilter.id == 31 ? (
-                    <video autoPlay muted loop width="100%" height="auto">
-                      <source src={extractVideo} type="video/mp4" />
-                    </video>
-                  ) : (
-                    <Image
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
-                      // sizes="(max-width: 667px) 100vw, "
-                      // className="image"
-                      alt={projectFilter.name}
-                      src={projectFilter.image}
-                    />
-                  )}
-
-                  <div className="middle">
-                    <p className="text">{projectFilter.name}</p>
+      <div className="mainWrapper">
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry columnsCount={3} gutter={4}>
+            {projectsFilter.map((projectFilter, key) => (
+              <Link
+                key={projectFilter.id}
+                href={`/projects/[slug]`}
+                as={`/projects/${projectFilter.slug}`}
+              >
+                <a>
+                  <div className="container">
+                    {projectFilter.id == 31 ? (
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        width="100%"
+                        height="auto"
+                        className="videoClass"
+                      >
+                        <source src={extractVideo} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <img
+                        className="imagen"
+                        alt={projectFilter.name}
+                        src={projectFilter.image}
+                      />
+                    )}
+                    <div className="middle">
+                      <p className="text">{projectFilter.name}</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </Link>
-          ))}
-        </div>
-        <style jsx>{`
-           {
-            /* .imageContainer {
-            max-width: 100%;
-            padding: 100px 20px 0px 20px;
-            column-count: 3;
-          } */
-          }
-.container{
-  border:3px solid pink;
-  width:600px;
-    height:600px;
-  position:relative;
-}
-         {
-            /* .container {
-            position: relative;
-            width: 100%;
-            height: auto;
-            padding: 10px;
-          }
+                </a>
+              </Link>
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
 
-          .col {
-            height: auto;
+        <style jsx>{`
+          .mainWrapper {
+            width: 100%;
+            padding: 40px 0px 0px 0px;
           }
-          .image {
+          .imagen {
+            padding-left: 10px;
+            padding-bottom: 4px;
             width: 100%;
             height: 100%;
-            opacity: 1;
-            display: inline-block;
-            transition: 0.5s ease;
-            backface-visibility: hidden;
           }
 
+          .container {
+            position: relative;
+          }
           .middle {
             padding: 20px;
             position: absolute;
             bottom: 0;
             right: 0;
             width: 100%;
-            border-top: 1px solid white;
             opacity: 0;
-            text-align: left;
+            text-align: center;
             font-weight: bold;
             transition: ease 0.5s all;
           }
-          .container:hover .image {
+          .container:hover img {
             opacity: 0.5;
-            transition: ease 0.5s all;
             filter: grayscale(100%);
-            padding: 20px;
-          }
-          .container:hover .middle {
-            padding: 20px;
-            opacity: 1;
           }
 
+          .container:hover .videoClass {
+            opacity: 0.5;
+            filter: grayscale(100%);
+          }
+          .container:hover .middle {
+            opacity: 1;
+          }
           .text {
             font-size: 20px;
             color: white;
             padding: 5px 10px 25px 10px;
-          } */
-          {/* }
-          @media screen and (max-width: 667px) {
-            .imageContainer {
-              max-width: 100%;
-              height: auto;
-              padding: 40px 20px 0px 20px;
-              display: flex;
-              flex-direction: column;
-            }
           }
-          @media screen and (max-width: 1024px) {
-            .imageContainer {
-              max-width: 100%;
-              height: auto;
-              padding: 40px 20px 0px 20px;
-              column-count: 2;
-            }
-          } */}
         `}</style>
       </div>
     </>
