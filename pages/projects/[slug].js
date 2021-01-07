@@ -9,8 +9,10 @@ const useStyles = makeStyles({
   root: {
     width: '100%',
     height: '100%',
-    // ['@media screen and (max-width:677px)']: {
-    // },
+    ['@media (max-width:677px)']: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
   },
 })
 
@@ -49,7 +51,7 @@ const Projects = ({ data }) => {
                 </p>
               </div>
             </Grid>
-            <Grid item xs={12} sm={3} lg={6}>
+            <Grid item xs={12} sm={12} lg={6}>
               <div className="description">{data.attributes.description}</div>
             </Grid>
           </div>
@@ -153,6 +155,31 @@ const Projects = ({ data }) => {
         /* Media Queries */
 
         @media screen and (max-width: 667px) {
+          .gridContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+          .yearandtags {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 10px;
+          }
+          .name {
+            display: flex;
+            flex-direction: row;
+            margin-top: 1em;
+            padding-left: 10px;
+          }
+          .imageList {
+            display: inline-block;
+            border: 2px solid pink;
+            width: auto;
+            height: auto;
+          }
+        }
+        @media screen and (max-width: 1024px) {
           .gridContainer {
             width: 100%;
             display: flex;
