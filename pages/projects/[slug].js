@@ -1,32 +1,23 @@
 import Grid from '@material-ui/core/Grid'
 import fetch from 'isomorphic-unfetch'
-import Image from 'next/image'
+//import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles'
-import GridList from '@material-ui/core/GridList'
-import GridListTile from '@material-ui/core/GridListTile'
+import ImageList from '@material-ui/core/ImageList'
+import ImageListItem from '@material-ui/core/ImageListItem'
 
-//     // ['@media screen and (max-width:677px)']: {
-//     //   border: '3px solid red',
-//     // },
-
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-  },
-  imagen: {
-    height: '100%',
     width: '100%',
-    objectFit: 'cover',
-    objectPosition: 'center',
-  },
-  gridList: {
     height: '100%',
-    width: '100%',
+    // ['@media screen and (max-width:677px)']: {
+    // },
   },
-}))
+})
+
+function srcset(image, size, rows = 1, cols = 1) {
+  return `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format 1x,
+  ${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
+}
 
 const Projects = ({ data }) => {
   const sources = data.sources
@@ -64,27 +55,24 @@ const Projects = ({ data }) => {
           </div>
         </Grid>
 
-        <GridList
-          cellHeight={260}
+        <ImageList
+          variant="quilted"
           cols={4}
-          spacing={12}
-          className={classes.gridList}
+          rowHeight="auto"
+          className={classes.root}
         >
           {Object.values(sources).map((source) => {
             return (
-              <GridListTile
+              <ImageListItem
                 key={data.id}
-                cols={source.cols || 1}
-                rows={source.rows || 1}
-                className={classes.gridList}
+                cols={source.cols}
+                rows={source.rows}
               >
                 {source.type === 'img' ? (
-                  <Image
-                    quality={100}
-                    layout="fill"
-                    loading="lazy"
+                  <img
                     src={source.img}
-                    alt={data.name}
+                    alt="image-project "
+                    srcSet={srcset(source.img, 121, source.rows, source.cols)}
                   />
                 ) : (
                   <video
@@ -95,10 +83,10 @@ const Projects = ({ data }) => {
                     src={source.url}
                   />
                 )}
-              </GridListTile>
+              </ImageListItem>
             )
           })}
-        </GridList>
+        </ImageList>
       </div>
 
       <style jsx>{`

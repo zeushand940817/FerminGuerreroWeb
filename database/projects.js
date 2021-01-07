@@ -163,8 +163,8 @@ const projects = [
       {
         type: 'img',
         img: '/DinMachine/11.jpg',
-        rows: 1,
-        cols: 2,
+        rows: 4,
+        cols: 4,
       },
       {
         type: 'img',
