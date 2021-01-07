@@ -41,14 +41,24 @@ const Projects = ({ data }) => {
         <Grid container>
           <div className="gridContainer">
             <Grid item xs={12} lg={2}>
-              <div className="name"> {data.name}</div>
+              <div className="name">{data.name}</div>
             </Grid>
             <Grid item xs={12} sm={12} lg={4}>
               <div className="yearandtags">
                 <p>{data.year}</p>
-                <p>
-                  <u>Tags:</u>
-                </p>
+                {data.Tags === null ? (
+                  ''
+                ) : (
+                  <p>
+                    Tags:{' '}
+                    {data.Tags.map((Tag) => (
+                      <button className="tagStyle">
+                        {' '}
+                        <u>{Tag}</u>
+                      </button>
+                    ))}
+                  </p>
+                )}
               </div>
             </Grid>
             <Grid item xs={12} sm={12} lg={6}>
@@ -58,6 +68,7 @@ const Projects = ({ data }) => {
         </Grid>
 
         <ImageList
+          gap={10}
           variant="quilted"
           cols={4}
           rowHeight="auto"
@@ -96,7 +107,7 @@ const Projects = ({ data }) => {
           width: 100%;
           height: 100%;
           font-size: 20px;
-          padding: 40px 10px 0px 10px;
+          padding: 40px 20px 0px 20px;
           margin-bottom: 30px;
           color: white;
         }
@@ -122,6 +133,7 @@ const Projects = ({ data }) => {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          margin-top: 1em;
         }
 
         .goBack {
@@ -151,6 +163,15 @@ const Projects = ({ data }) => {
           margin-top: 1em;
           margin-bottom: 1em;
           padding-left: 10px;
+        }
+
+        .tagStyle {
+          background-color: transparent;
+          border: none;
+          font-size: 18px;
+          color: white;
+          cursor: pointer;
+          outline: none;
         }
         /* Media Queries */
 

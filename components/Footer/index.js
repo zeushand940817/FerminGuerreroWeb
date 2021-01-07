@@ -11,13 +11,9 @@ export default function Footer() {
           height: 50px;
           bottom: 0;
           background-color: transparent;
-          font-size: 16px;
           mix-blend-mode: difference;
           position: fixed;
           padding: 10px 20px 10px 20px;
-          display: flex;
-          justify-content: space-between;
-          text-align: center;
         }
 
         @media screen and (max-width: 667px) {
@@ -27,18 +23,21 @@ export default function Footer() {
             bottom: 0;
             width: 100%;
             color: white;
-            text-align: center;
+            font-size: 16px;
           }
         }
 
         .footermove {
+          width: 100%;
           overflow: hidden;
           transform: translate3d(0, 0, 0);
-          animation: moveSlideshow 10s linear infinite;
+          animation: moveSlideshow 5s linear infinite;
+          font-size: 24px;
+          color: white;
         }
         @keyframes moveSlideshow {
           100% {
-            transform: translateX(-66.6666%);
+            transform: translateX(100%);
           }
         }
         @keyframes move-left {

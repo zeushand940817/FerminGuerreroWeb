@@ -57,7 +57,12 @@ export default function Contact() {
             <Box className={classes.box}> Email </Box>
           </Grid>
           <Grid item xs={9} lg={2} sm={3}>
-            <Box className={classes.box}> contact@ferminguerrero.com </Box>
+            <Box className={classes.box}>
+              {' '}
+              <a className={classes.a} href="mailto:contact@ferminguerrero.com">
+                contact@ferminguerrero.com
+              </a>
+            </Box>
           </Grid>
           <Grid item lg={4} sm={2} />
         </Grid>

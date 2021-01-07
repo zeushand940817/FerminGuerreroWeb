@@ -1,6 +1,5 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
-import Image from 'next/image'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 export default function GraphicDesign({ data }) {
@@ -94,6 +93,13 @@ export default function GraphicDesign({ data }) {
             font-size: 20px;
             color: white;
             padding: 5px 10px 25px 10px;
+          }
+
+          /* media queries */
+          @media screen and (max-width: 667px) {
+            .mainWrapper {
+              padding: 10px;
+            }
           }
         `}</style>
       </div>
