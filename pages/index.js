@@ -13,6 +13,10 @@ const Home = ({ data }) => {
   return (
     <>
       <div className="wrapper">
+        <img
+          style={{ position: 'absolute', width: '100%', height: '100%' }}
+          src={imagenes[0].image}
+        />
         <div
           className="box"
           style={{
@@ -20,6 +24,7 @@ const Home = ({ data }) => {
             height: '100%',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
+            position: 'relative',
             backgroundImage: `url(${imagenes[imageNumber].image})`,
           }}
           href=""
@@ -37,6 +42,12 @@ const Home = ({ data }) => {
         }
 
         @media screen and (max-width: 667px) {
+          .box {
+            width: 100%;
+          }
+          img {
+            width: 100%;
+          }
         }
       `}</style>
     </>

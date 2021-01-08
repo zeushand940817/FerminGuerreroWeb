@@ -777,7 +777,8 @@ const projects = [
       },
     ],
     attributes: {
-      description: '',
+      description:
+        "The poster reflects on the position that USA has recently adopted with regards to foreign citizens. The jenga (board game) is an analogy for USA’s society from which the president is picking up people after their origins/nationality to decide whether they belong in or out its territory, with no regard for the impact these actions could have on those peoples’ lives as well as on USA's own society. The jenga echoes the increasing tension, weakening and instability taking place in USA's society, since each ‘move' represents (through cultural impoverishment, international friction and the possibility of retaliation that comes with it, among other things) a higher risk of collapse.",
     },
   },
   {
@@ -2347,7 +2348,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'Thesaurus is a typeface family with one foot in the past & one foot in the present which was inspired by the typographic history of the city of Geneva. Thesaurus is based on the types that Robert Estienne brought from Paris to Geneva, which were later used by his son Henri II Estienne for printing the famous book "Thesaurus Græcæ Linguæ" in 1572. These metal types served, in some way, as a bridge between France and Switzerland, between Catholicism and Protestantism, and now, through Thesaurus, between past and present. Thesaurus had a first released in January 2017 and a second release in 2018. You can get thesaurus at Typotheque. Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American type-design biennial by Tipos Latinos (TL8) – out of 444 projects submitted this year. It was selected in the Superfamily category. It has also been awarded with Gold in the Graphis Type 4: Typeface Design Competition. Get Thesaurus at Typotheque.com',
+        'Thesaurus is a super type-family (16 styles) with one foot in the past & one foot in the present which was inspired by the typographic history of the city of Geneva.Thesaurus is based on the types that Robert Estienne brought from Paris to Geneva, which were later used by his son Henri II Estienne for printing the famous book "Thesaurus Græcæ Linguæ" in 1572. These metal types served, in some way, as a bridge between France and Switzerland, between Catholicism and Protestantism, and now, through Thesaurus, between past and present. Thesaurus had a first release in January 2017 and was further extended in 2018 adding the Display Italic styles, making Thesaurus sharper and even more dignified. These new styles were developed taking into consideration the feedback I\'ve got from Thesaurus\' first users. The creation of the Display Italic styles requested me to rethink many of the original terminations and remove optical compensations designed to enhance small sizes.  Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American type-design biennial by Tipos Latinos (TL8) – out of 444 projects submitted this year. It was selected in the Superfamily category. It has also been awarded with Gold in the Graphis Type 4: Typeface Design Competition. Get Thesaurus at Typotheque.com',
     },
   },
   {
@@ -3123,6 +3124,74 @@ const projects = [
     attributes: {
       description:
         "Visual Identity for Sharjah Architecture Triennial's series of podcasts.ARCHITECTURE + is a series of online conversations that aim to create dialogues exploring the social responsibilities of architects, urban planners, academics and their multidisciplinary interlocutors. Times of crisis, such as the current pandemic, demand that we question what we value in our respective disciplines and collectively rethink environmental and social sustainability at various scales. The ‘+’ is the connection, allowing us to mix and combine. It becomes the sight, the window that enables us to zoom in and out, to look closer and further, to focus and to see differently. You can listen to the podcasts here: https://www.sharjaharchitecture.org/pages/programs/architecture-plus",
+    },
+  },
+  {
+    name: 'Beyond The Box',
+    slug: 'beyond-the-box',
+    id: '32',
+    type: 'graphic',
+    year: '2011',
+    tags: ['Poster', 'Visual Identity'],
+    horizontal: true,
+    mp4: false,
+    landing: '/BeyondTheBox/1.jpg',
+    image: '/BeyondTheBox/1.jpg',
+    sources: [
+      {
+        type: 'img',
+        img: '/BeyondTheBox/2.jpg',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/BeyondTheBox/3.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/BeyondTheBox/4.jpg',
+        rows: 1,
+        cols: 2,
+      },
+
+      {
+        type: 'img',
+        img: '/BeyondTheBox/5.jpg',
+        rows: 1,
+        cols: 1,
+      },
+      {
+        type: 'img',
+        img: '/BeyondTheBox/9.jpg',
+        rows: 1,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/BeyondTheBox/7.jpg',
+        rows: 1,
+        cols: 1,
+      },
+      {
+        type: 'img',
+        img: '/BeyondTheBox/8.jpg',
+        rows: 2,
+        cols: 2,
+      },
+
+      {
+        type: 'img',
+        img: '/BeyondTheBox/6.jpg',
+        rows: 2,
+        cols: 2,
+      },
+    ],
+    attributes: {
+      description:
+        'Identity, flyer and Poster design for an art exhibition under the theme Supergraphics. School project.',
     },
   },
 ]

@@ -6,7 +6,6 @@ function ActiveLink({ children, href }) {
     marginRight: 10,
     color: router.pathname === href ? 'white' : 'white',
     fontWeight: router.pathname === href ? 'bold' : 'lighter',
-    borderBottom: router.pathname === href ? '1px solid white' : 'none',
   }
 
   const handleClick = (e) => {
@@ -19,8 +18,6 @@ function ActiveLink({ children, href }) {
       <a href={href} onClick={handleClick} style={style}>
         {children}
       </a>
-
-      <style jsx>{``}</style>
     </>
   )
 }
