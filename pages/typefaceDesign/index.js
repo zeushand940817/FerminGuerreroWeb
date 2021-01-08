@@ -4,8 +4,11 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 export default function TypefaceDesign({ data }) {
   const projectsFilter = data
+    .sort(function (a, b) {
+      return parseInt(b.year) - parseInt(a.year)
+    })
     .filter((project) => project.type === 'typeface')
-    .map(({ id, image, name, slug }) => ({ id, image, name, slug }))
+    .map(({ id, image, name, slug, year }) => ({ id, image, name, slug, year }))
 
   const videoMp4 = data.filter((elem) => elem.id === '31')
   const extractVideo = videoMp4[0].mp4Video
@@ -92,6 +95,15 @@ export default function TypefaceDesign({ data }) {
             font-size: 20px;
             color: white;
             padding: 5px 10px 25px 10px;
+          }
+
+          @media screen and (max-width: 667px) {
+            .mainWrapper {
+              padding: 10px;
+            }
+            .imagen {
+              padding: 0px;
+            }
           }
         `}</style>
       </div>

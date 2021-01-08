@@ -4,6 +4,7 @@ import fetch from 'isomorphic-unfetch'
 import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+import Link from 'next/link'
 
 const useStyles = makeStyles({
   root: {
@@ -46,16 +47,18 @@ const Projects = ({ data }) => {
             <Grid item xs={12} sm={12} lg={4}>
               <div className="yearandtags">
                 <p>{data.year}</p>
-                {data.Tags === null ? (
-                  ''
-                ) : (
+                {data.tags && (
                   <p>
                     Tags:{' '}
-                    {data.Tags.map((Tag) => (
-                      <button className="tagStyle">
-                        {' '}
-                        <u>{Tag}</u>
-                      </button>
+                    {data.tags.map((tag) => (
+                      <Link
+                        key={data.id}
+                        href={`/projects/[tag]`}
+                        as={`/projects/${data.tags[0]}`}
+                        className="tagStyle"
+                      >
+                        <u>{tag}</u>
+                      </Link>
                     ))}
                   </p>
                 )}
@@ -84,7 +87,7 @@ const Projects = ({ data }) => {
                 {source.type === 'img' ? (
                   <img
                     src={source.img}
-                    alt="image-project "
+                    alt="image-project"
                     srcSet={srcset(source.img, 121, source.rows, source.cols)}
                   />
                 ) : (

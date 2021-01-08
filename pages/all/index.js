@@ -2,7 +2,9 @@ import Link from 'next/link'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 export default function All({ data }) {
-  const projects = data
+  const projects = data.sort(function (a, b) {
+    return parseInt(b.year) - parseInt(a.year)
+  })
   const videoMp4 = data.filter((elem) => elem.id === '31')
   const extractVideo = videoMp4[0].mp4Video
 
@@ -31,7 +33,7 @@ export default function All({ data }) {
                     </video>
                   ) : (
                     <img
-                      className="imagen"
+                      className="imageAll"
                       alt={project.name}
                       src={project.image}
                     />
@@ -52,12 +54,6 @@ export default function All({ data }) {
           padding: 40px 0px 0px 0px;
         }
 
-        @media screen and (max-width: 667px) {
-          .imageContainer {
-            column-count: 1;
-          }
-        }
-
         .containerAll {
           position: relative;
         }
@@ -73,7 +69,7 @@ export default function All({ data }) {
         .containerAll:hover .middleAll {
           opacity: 1;
         }
-        .imagen {
+        .imageAll {
           width: 100%;
           padding-left: 10px;
           padding-bottom: 5px;
@@ -96,6 +92,14 @@ export default function All({ data }) {
           font-size: 20px;
           color: white;
           padding: 5px 10px 25px 10px;
+        }
+        @media screen and (max-width: 667px) {
+          .wrapperAll {
+            padding: 10px;
+          }
+          .imageAll {
+            padding: 0px;
+          }
         }
       `}</style>
     </div>

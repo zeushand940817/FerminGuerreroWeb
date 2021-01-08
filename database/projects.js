@@ -5,7 +5,7 @@ const projects = [
     id: '1',
     type: 'graphic',
     year: '2013',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     image: '/CartaBlanche/4.JPG',
@@ -53,7 +53,7 @@ const projects = [
     id: '2',
     type: 'typeface',
     year: '2011',
-    Tags: null,
+    tags: null,
     horizontal: true,
     mp4: false,
     image: '/CoverPhotos/Galleries/CircH.jpg',
@@ -97,7 +97,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'CIRC is an experimental title font, based on geometic forms deriving from the circle.',
+        'Circ is a modular display font, based on geometric forms deriving from the circle.',
     },
   },
   {
@@ -106,7 +106,7 @@ const projects = [
     id: '3',
     type: 'graphic',
     year: '2014',
-    Tags: ['Poster', 'Visual Identity', 'Packaging'],
+    tags: ['Poster', 'Visual Identity', 'Packaging'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/DinMachine.jpg',
@@ -255,7 +255,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "Logo and CD cover design for the New York based electronic experimental rock band DinMachine Created for their first album �Dance to reason. I also designed a t-shirt to accompany the CD launching. DinMachine is a collaboration between Nisi Jacobs and Michael J. Schumacher. They have been making music together since 2009 and have performed at MoMA New York. Ken Jacobs (a world renowned experimental film maker) has used both Schumacher�s and DinMachine�s music for his published films. Asking Nisi and Michael about themselves, the band and the music they create together, they came up with some things that I found very interesting to work graphically on: We want to grab people with the music, get them moving. DinMachine�s music has been generally described as non-classifiable. Our music, we feel, has elements that are very engaging and involving, and others that need distance and detachment. We like the idea of hot vs cold, engaging sexiness. For the logo, I decided to work with the idea of both �non-classifiable� as well as contrast/opposite. My approach to the logo was very experimental, mixing uppercase and lowercase letters in order to create something of an originality which defies classification. The letters are all cut differently which adds movement and vibration to the logo which echoes DinMachine'/s music. For the CD cover I created a concept which plays with the idea of sexiness, opposite (cold vs hot, engage/detach) and movement. From a distance you can see an abstract image, an involving composition of a mix of colors and shapes. But when looking closely, you discover the details, a scene containing human bodies, people moving combined with something as coldand lifeless as dry black trees. The inside vs the outside of the cover also plays with this idea of contrast/opposite..",
+        'The New York based electronic experimental rock band DinMachine, hired me to develop the Logo & CD cover design for their first album Dance to Reason. I also designed a t-shirt for the CD launching. DinMachine is a collaboration between Nisi Jacobs and Michael J. Schumacher. They have been making music together since 2009 and have performed at renown places, such as MoMA New York. Ken Jacobs (a world renowned experimental filmmaker) has used both Schumacher’s and DinMachine’s music for his published films. When asking Nisi and Michael about themselves, the band and the music they create together, they came up with some information that I found very interesting to work with: “We want to grab people with the music, get them moving”. “DinMachine’s music has been generally described as non-classifiable”. “Our music, we feel, has elements that are very engaging and involving, and others that need distance and detachment”. “We like the idea of hot vs cold, engaging sexiness”. For the logo, I decided to work with the concept of “non-classifiable” as well as the idea of contrast/opposite. I made an experimental logo, mixing capital and lower cases letters in order to create something that defies classification. The letters are all cut differently which adds movement and vibration to the logo which echoes the music they produce. As for the CD cover, I played with the idea of sexiness, opposition (cold vs hot, engage/detach) and movement.',
     },
   },
   {
@@ -264,7 +264,7 @@ const projects = [
     id: '4',
     type: 'typeface',
     year: '2015',
-    Tags: ['Editorial'],
+    tags: ['Editorial'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/Exentra.jpg',
@@ -455,7 +455,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "Exentra is the project I developed at the MATD course 2014-15, in Reading. My intention for the MATD project was to design an innovative and unique typeface that would appeal to designers doing forward-looking design. Therefore, this Typeface family was concevied for publications promoting forward-thinking through a contemporary and experimental vision of modern culture and trends. Its style combines the elegance and warmth of calligraphy with the precision and digital sharpness of the computer process that give it a contemporary look. Unconventional letter shapes, and the playful and dynamic design, reinforce the idiosyncrasy of the typeface. Exentra consist of Latin (7 cuts for the text version, Italic, Sans Serif and two Display versions) Gurmukhi and Greek. The images below belong to Exentra�s Specimen Book. Don'/t hesitate to request the pdf version of the Specimen.",
+        'Exentra is the project I developed during the MATD (Masters in Typeface Design) course 2014–15 at the University of Reading. My intention was to design an innovative and unique typeface that would appeal to designers doing forward-looking designs. Therefore, this typeface family was conceived for publications promoting forward-thinking through a contemporary and experimental vision of modern culture and trends. Its style combines the elegance and warmth of calligraphy with the precision and digital sharpness of the computer process that give it a contemporary look. Unconventional letter shapes, and the playful and dynamic design reinforce the idiosyncrasy of the typeface.',
     },
   },
   {
@@ -464,7 +464,7 @@ const projects = [
     id: '5',
     type: 'graphic',
     year: '2018',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/FeriaDelLibro.jpg',
@@ -496,7 +496,7 @@ const projects = [
     id: '6',
     type: 'graphic',
     year: '2012',
-    Tags: ['Illustration', 'Visual Identity'],
+    tags: ['Illustration', 'Visual Identity'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/FGC.jpg',
@@ -693,7 +693,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "First prize in the contest for the re-design of Fédération Genevoise de Coopération'/s corporate identity - 2012. The FGC regroups about fifty associations with headquarters in Geneva. The aim behind this cooperation is to aid developing countries and raise public awareness. Therefore, the Fédération Genevoise de Coopération finances projects which help battle inequality and provide freedom of choice to these countries.",
+        'Re-branding of Fédération Genevoise de Coopération (FGC). The Fédération Genevoise de Coopération reassembles about fifty associations with headquarters in Geneva. The aim behind it is to aid developing countries and raise public awareness by financing and mentoring projects helping to battle inequality and provide freedom of choice to these communities.',
     },
   },
   {
@@ -702,7 +702,7 @@ const projects = [
     id: '7',
     type: 'graphic',
     year: '2017',
-    Tags: null,
+    tags: null,
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/FlagOfPeace.jpg',
@@ -747,7 +747,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'Flags of Peace (NL) honoured me with an invitation to design an international peace flag to represent my country (Uruguay) in their international exhibition Flags of Peace which travels around the world. Many bold designers and studios have already joined the great cause behind this project by designing the flag for their respective countries. My thoughts: I believe that for a flag to be International it has to represent/address all cultures equally. Therefore, we cannot rely on words, since language only represent a certain culture. Although there are some symbols that are internationally associate with peace, when looking at their origins, research showed me that, for the most part, their either represented something else or were linked to a specific religion. Accordingly, the use of them was judged inappropriate. There are normally two sides in a conflict putting peace away, where either two persons, or groups (nations, towns, etc.) are confronted for things such as religion, genre, skin color, social class, origins, and so on. For peace to take place, these two sides need to come to terms and see each other as equals in order to impart mutual respect. Concept: My flag carries a message of hope, showing these opposite sides finding common ground, complementing each other and sharing instead of dividing and excluding. Symmetry was used as means of representing equality and balance between two sides that although they look different (color), they are equals (form). The symmetrical image is also an analogy for a mirror, encouraging people to find a piece of themselves in the one in front of us.',
+        'Flags of Peace (NL) honoured me with an invitation to design an international peace flag to represent my country (Uruguay) in their international exhibition “Flags of Peace” which travels around the world. Many bold designers and studios have already joined the great cause behind this project by designing the flag for their respective countries. I believe that for a flag to be International it has to represent/address all cultures equally. Therefore, we cannot rely on words, since language only represents a certain culture. Although there are some symbols that are internationally associated with peace, when looking at their origins research showed me that, for the most part, they either originally represented something else or were linked to a specific religion. Accordingly, the use of them was judged inappropriate. I observed that there are normally two sides in a conflict putting peace away, where either two persons or groups (nations, towns, etc.) are confronted for things such as religion, genre, skin color, social class, origins, and so on. For peace to take place, these two sides need to come to terms and see each other as equals in order to impart mutual respect. My flag carries a message of hope, showing these opposite sides finding common ground, complementing each other and sharing, instead of dividing or excluding. Symmetry was used as a means of representing equality and balance between two sides that despite looking different (color), they are equals (surface and shape). The symmetrical image is also an analogy for a mirror, encouraging people to find a piece of themselves in the one in front of us.',
     },
   },
   {
@@ -756,7 +756,7 @@ const projects = [
     id: '8',
     type: 'graphic',
     year: '2017',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     image: '/CoverPhotos/Galleries/FreedomOfMovement.jpg',
@@ -786,7 +786,7 @@ const projects = [
     id: '9',
     type: 'graphic',
     year: '2014',
-    Tags: ['Visual Identity', 'Animation', 'Packaging'],
+    tags: ['Visual Identity', 'Animation', 'Packaging'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
@@ -939,7 +939,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "1rst Prize at the contest, holded by HEAD, for Geneva Motor Show 2014'/s poster design and art direction. This graphic was used in all of the different national and international communication campaigns for the 2014 Geneva International Motor Show. I wanted to propose a different design concept that goes further than the � regular � style of the Motor Show. Therefore I wanted to avoid the typical representative car and automobile references and busy images. I also noticed that quite often in the previous poster campaigns, text and image were treated as two completely distinct elements and were therefore very distant from one another. The text took the shape of a rigid block that was very often placed the same way on all the visual identity media. My goal was to create, on one hand, an uncluttered, minimal and abstract design that evokes feelings and emotions related to the automobile sector and to bring outthe positive aspects of the Motor Show (speed, movement, freedom, diversity and joy) more than concentrate on the actual car itself. On the other hand, I wanted to make the text the protagonist element of my design. The creation and composition of the poster is entirely drawn out typographically. I propose a design with different reading levels, where the lines suggest a network of roads which evoke the number of visitors coming to visit the Motor Show every year from around the world. They also insinuate the shape of certain elements that are part of the traditional Genevan landscape: Cars, mountains, the Jet D'/eau, etc. As for the colours, I was inspired by the season in which the Geneva Motor Show takes place, spring. ",
+        "This visual identity was used in all of the different national and international communication campaigns for the Geneva International Motor Show 2014. I wanted to propose a design concept that really deferred from the “regular” style of the Geneva Motor Show which typically consisted of busy images including figurative automobile representations. Furthermore, I also noticed that text and image were treated as two completely distinct elements lacking integration. The text ended up taking the shape of a rigid block that was placed the same way across all supports. My goal was then to create a minimal and abstract design that evokes feelings and emotions related to the automobile sector rather than focusing on the actual car itself. Additionally, I wanted to make the text the protagonist element of my design. Thus, I proposed a design with different reading levels, where the lines suggest a network of roads which evoke the number of visitors coming to visit the Motor Show every year from around all over the world. They also suggest the shape of the most iconic landmarks composing the traditional Genevan landscape: Cars, mountains, the Jet D'eau, and so on. As for the colours, I was inspired by the season in which the Geneva Motor Show takes place, spring. The creation and composition of the poster is entirely drawn out typographically.",
     },
   },
   {
@@ -948,7 +948,7 @@ const projects = [
     id: '10',
     type: 'typeface',
     year: '2014',
-    Tags: ['Editorial', 'Poster'],
+    tags: ['Editorial', 'Poster'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/GeneveTypeface.jpg',
@@ -1263,7 +1263,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'Geneve is a type family inspired by the rich typographic history of Geneva.- Bachelor thesis at HEAD, Geneva - Designed to be used on any type of printed support, Gen�ve is a typography with personality and flexibility, which allows designers to express their ideas in different ways without losing coherence. In developing Gen�ve I was inspired by the typeface used by French printer/editor/publisher Henri II Estienne in his famous book Thesaurus Lingu� Gr�c�, published in Geneva in 1572. This typeface was brought to Geneva by Henri�s father, Robert Estienne, who, before settling in Geneva and working as Calvin�s printer, was the printer of France�s King, Fran�ois I. This typeface highly influenced the typographers and printers in Geneva at that time. Henri and Robert Estienne�s work in Geneva helped it to become one of the most important cities in Europe for print and typography in the sixteenth century. Gen�ve consists of four styles: Classique (Humanist serif), Aust�re (Geometric serif), Spontan�e (Humanist sans-serif) and Alternative (Stencil, display version). These styles correspond to the different profiles of the city, reflecting its multiculturalism and diversity. This typography acts as a bridge between the past and present of the city. I received the BEA Fondation Award for Young Artists for my work on the Gen�ve Typeface.',
+        'Genève is a type family inspired by the rich typographic history of Geneva and was conceived as part of my Bachelor thesis at HEAD University, Geneva. In developing Genève I was inspired by the typeface used by French printer/editor/publisher Henri II Estienne in his famous book Thesaurus Linguæ Græcæ, published in Geneva in 1572. This typeface was brought to Geneva by Henri’s father, Robert Estienne, who, before settling in Geneva and working as Calvin’s printer, was the printer of France’s King, François I. This typeface highly influenced the typographers and printers in Geneva at that time. Henri and Robert Estienne’s work in Geneva helped it to become one of the most important cities in Europe for print and typography in the sixteenth century. Designed to be used on any type of printed support, Genève is a typography with personality and flexibility, which allows designers to express their ideas in different ways without losing coherence. Genève consists of four styles: Classique (Humanist serif), Austère (Geometric serif), Spontanée (Humanist sans-serif) and Alternative (Stencil, display version). These styles correspond to the different profiles of the city, reflecting its multiculturalism and diversity. I received the BEA Fondation Award for Young Artists for my work on the Genève Typeface. Some years later Genève typeface was further developed and became Thesaurus.Credits: Binding and photos of “Genève: The making of”: Aniello Frasca',
     },
   },
   {
@@ -1272,7 +1272,7 @@ const projects = [
     id: '11',
     type: 'graphic',
     year: '2014',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     image: '/GoesAround/1.jpg',
@@ -1308,7 +1308,7 @@ const projects = [
     id: '12',
     type: 'graphic',
     year: '2014',
-    Tags: ['Poster', 'Animation'],
+    tags: ['Poster', 'Animation'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/ItsUpToYou.jpg',
@@ -1401,7 +1401,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "For a school project in collaboration with the RATP (Parisian autonomous transport society), we were asked to create a 10 second long animation to wish the passengers a happy new year 2014 The animations were shown on the large HD screens at the Franklin Roosevelt and Europe metro stops in Paris, France, from December 24, 2013 to January 8, 2014. My intention was to make people to confront themselves so that they reflect on who they are and how they behave with others. I found this most interesting and thought that I could respond to this in various ways. Therefore I decided to also create two posters: one derived from the animation and the other completely independent - both with no intention of being shown on the RATP. I inserted a small text in the center of the mirror. This text aims to make people approach and get up close to the poster in order to read the sentence it'/s up to you, and at the same time, they see themselves in the mirror and are confronted to themselves.",
+        'For a school project at HEAD - Geneva, in collaboration with the RATP (Parisian autonomous transport society), we were invited to create a 10 second long animation to wish the passengers a happy new year 2014. The animations were shown on the large HD screens at the Franklin Roosevelt and Europe metro stops in Paris, France. My intention was to confront the public with themselves and make them reflect on who they are and how they behave with others. I thought that I could address this premise in various ways. Thus, I decided to also create two posters: one derived from the animation and the other completely independent . For "2014 it\'s up to you" (poster based on the animation), I handled the subject in a more subtle, abstract and, somehow, poetic way. I inserted a small text in the center of the mirror so that people would have to get closer to the poster in order to read the text «it\'s up to you» and, at the same time they discover the text they would see themselves  reflected in the mirror from a really close range enhancing the effect of confrontation. Poster: 50x70cm / Screen printing: black and white on mirror paper / 20 copies You can find the other poster “2014 goes around… comes around” here.',
     },
   },
   {
@@ -1410,7 +1410,7 @@ const projects = [
     id: '13',
     type: 'graphic',
     year: '2012',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/JoieDeLire.jpg',
@@ -1452,7 +1452,7 @@ const projects = [
     id: '14',
     type: 'typeface',
     year: '2013',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: true,
     mp4: false,
     image: '/CoverPhotos/Galleries/LetterStamps.jpg',
@@ -1604,7 +1604,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'For a school projet we were asked to make typographic stamps in order to create an alphabet and then design posters with it. The challenge I set myself was to create a stamp that would stand out for its versatility and simplicity. I decided to use rope as the stamp material. For this, I designed a matrix which would work both as a support to the rope as well as a grid for the typeface. It allows for the composition of all the glyphs of the alphabet and 4 different weights (light, regular, medium and bold).',
+        'For a school project we were asked to make typographic stamps in order to create an alphabet and then design posters with it. The challenge I set myself was to create a stamp that would stand out for its versatility and simplicity. I decided to use rope as the stamp material. For this, I designed a matrix which would work both as a support for the rope as well as a grid for the typeface. My matrix allows for the composition of all the glyphs of the alphabet and 4 different weights (light, regular, medium and bold).',
     },
   },
   {
@@ -1613,7 +1613,7 @@ const projects = [
     id: '15',
     type: 'graphic',
     year: '2018',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/MakeAWish.jpg',
@@ -1635,7 +1635,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'In many cultures around the world, a shooting star is associated with dreams and hope, as it is believed that this phenomenon (a shooting star) has the magical power of granting us a wish. I wanted to play with this idea on my 2018 greeting poster. Therefore, I created an idealistic sky, full of shooting stars, where the main ones are suggesting the numbers 2018 with their movements. A shooting star is also a very ephemeral thing, which echoes with the idea of life itself. The result is a 2018 made out of opportunities, hopes and magic, that has to be fully exploited before vanishing forever. The poster becomes an invitation to dream and reflect on what we would really wish to happen in this new year if we were granted a wish.',
+        'In many cultures around the world a shooting star is associated with dreams and hope, as it is believed that this phenomenon (a shooting star) has the magical power of granting us a wish. Furthermore, a shooting star is a very ephemeral thing, which echoes the idea of life itself. I wanted to play with this concept on my 2018 greeting poster. Thus, I created a sky full of shooting stars, where the main ones are suggesting the numbers 2, 0, 1, 8. The result is a 2018 made out of opportunities, hopes and magic, that has to be fully exploited before vanishing forever. The poster becomes an invitation to dream and reflect on what we would wish happen this new year if we were granted a wish.',
     },
   },
   {
@@ -1644,7 +1644,7 @@ const projects = [
     id: '16',
     type: 'typeface',
     year: '2012',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/Manifesta.jpg',
@@ -1743,7 +1743,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'Title or short-text font, influenced both by the geometry-favoring artistic movements of the beginning of the 20th Century and the work of Dutch designer Max Kisman. This fontface aims to explore the relationship between the different parts of the letterforms as well as their hierarchy, while teasing with the limits of legibility. The MANIFESTA font family is formed by four different weights (light, regular, medium, bold), each one with uppercase and lowercase letters, numbers, punctuation marks and diacritic characters.',
+        'Title or short-text font, influenced both by the geometry-favoring artistic movements of the beginning of the 20th Century and the work of Dutch designer Max Kisman. This typeface aims to explore the relationship between the different parts of the letterforms as well as their hierarchy, while teasing with the limits of legibility. Manifesta family is formed by four different weights (light, regular, medium, bold), each one with uppercase and lowercase letters, numbers, punctuation marks and diacritic characters. ',
     },
   },
   {
@@ -1752,7 +1752,7 @@ const projects = [
     id: '17',
     type: 'graphic',
     year: '2013',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/MiMujer.jpg',
@@ -1789,7 +1789,7 @@ const projects = [
     id: '18',
     type: 'graphic',
     year: '2015',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/NewYearNewFight.jpg',
@@ -1833,7 +1833,7 @@ const projects = [
     id: '19',
     type: 'graphic',
     year: '2013',
-    Tags: ['Poster', 'Visual Identity'],
+    tags: ['Poster', 'Visual Identity'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/Paleo.jpg',
@@ -1885,7 +1885,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "Second prize at the Paléo Festival Nyon poster contest. Paléo Festival is today one of Europe'/s most important musical events.",
+        'Second prize at the Paléo Festival Nyon Poster and Identity contest (Poster + merchandising). Paléo Festival is today one of Europe’s most important musical events.',
     },
   },
   {
@@ -1894,7 +1894,7 @@ const projects = [
     id: '20',
     type: 'graphic',
     year: '2012',
-    Tags: ['Visual Identity'],
+    tags: ['Visual Identity'],
     horizontal: true,
     mp4: false,
     image: '/CoverPhotos/Galleries/PointDeFuite.jpg',
@@ -2045,12 +2045,12 @@ const projects = [
     },
   },
   {
-    name: 'La Dame De La Mer',
-    slug: 'la-dame-de-la-mer',
+    name: 'The Lady from The Sea',
+    slug: 'the-lady-from-the-sea',
     id: '21',
     type: 'graphic',
     year: '2014',
-    Tags: ['Photography'],
+    tags: ['Photography'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/DameDeLaMer.jpg',
@@ -2137,7 +2137,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'For a school photography project, in collaboration with the Carouge Theatre and the Fusterie exhibition space, we were asked to reinterpret the play �The lady from the sea� written by Henrik Ibsen. As a joint project with eleven other students, our work was exhibited at the Fusterie church in Geneva, as part of an audio-visual installation. My work deals with an everyday life overtaken by fear and anguish provoked by ghosts of a past love. Past and present blend, memories and reality confuse and collide and dreams becomes real.',
+        'For an University project, in collaboration with the Carouge Theatre (Geneva), we were asked to reinterpret the play ”The lady from the sea” written by Henrik Ibsen through a series of photographs. My work deals with an everyday life overtaken by fear and anguish provoked by ghosts of a past love. Past and present blend together, memories and reality collide and dreams become real. The photos were exhibited at the Fusterie exhibition space – Geneva.',
     },
   },
   {
@@ -2146,7 +2146,7 @@ const projects = [
     id: '22',
     type: 'graphic',
     year: '2012',
-    Tags: ['Poster', 'Visual Identity'],
+    tags: ['Poster', 'Visual Identity'],
     horizontal: false,
     mp4: false,
     image: '/CoverPhotos/Galleries/PostTenebrasRock.jpg',
@@ -2183,7 +2183,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "Posters & flyers proposition for Post Tenebras Rock (2011) concerts at l'/Usine, Geneva",
+        "Posters & flyers proposition for Post Tenebras Rock (2011) concerts at l'Usine, Geneva.This is a platform for young new artists to perform and potentially launch their career. This is a place where many renown artists were ‘born’. Hence, I felt the idea of fertilization was highly relevant as I believe it clearly echoes all these young artists competing to get to the stage, to stand out, to be the best, and eventually be the one that makes it to become an artist.",
     },
   },
   {
@@ -2192,7 +2192,7 @@ const projects = [
     id: '23',
     type: 'typeface',
     year: '2017',
-    Tags: ['Visual Identity'],
+    tags: ['Visual Identity'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/Thesaurus.jpg',
@@ -2347,7 +2347,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'Thesaurus is a typeface inspired by the typographic history of the city of Geneva. Thesaurus is based on the types that Robert Estienne brought from Paris to Geneva, which were later used by his son, Henri II Estienne, for printing the famous book Thesaurus Graecae Linguae. These metal types served, in some way, as a bridge between France and Switzerland, between Catholicism and Protestantism, and now, through Thesaurus, between past and present. Thesaurus was released by Typotheque. Below, some pictures from Thesaurus\'/ Specimen, which I have designed for Typothque. Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American typedesign biennial by Tipos Latinos, 2018 - out of 444 projects submitted this year. Thesaurus was selected in the Superfamily category. It has also been awarded with "Gold" in the Graphis Type 4: Typeface Design Competition.',
+        'Thesaurus is a typeface family with one foot in the past & one foot in the present which was inspired by the typographic history of the city of Geneva. Thesaurus is based on the types that Robert Estienne brought from Paris to Geneva, which were later used by his son Henri II Estienne for printing the famous book "Thesaurus Græcæ Linguæ" in 1572. These metal types served, in some way, as a bridge between France and Switzerland, between Catholicism and Protestantism, and now, through Thesaurus, between past and present. Thesaurus had a first released in January 2017 and a second release in 2018. You can get thesaurus at Typotheque. Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American type-design biennial by Tipos Latinos (TL8) – out of 444 projects submitted this year. It was selected in the Superfamily category. It has also been awarded with Gold in the Graphis Type 4: Typeface Design Competition. Get Thesaurus at Typotheque.com',
     },
   },
   {
@@ -2356,7 +2356,7 @@ const projects = [
     id: '24',
     type: 'graphic',
     year: '2014',
-    Tags: ['Illustration', 'Poster'],
+    tags: ['Illustration', 'Poster'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/TijuanaPanthers.jpg',
@@ -2393,7 +2393,7 @@ const projects = [
     id: '25',
     type: 'graphic',
     year: '2013',
-    Tags: ['Cover Design'],
+    tags: ['Cover Design'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/TimeOut.jpg',
@@ -2420,7 +2420,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'The New York magazine TimeOut asked me to design the cover for his spring preview issue (late February, 2013), and wanted me to reinvent my Beyond the Box poster. For me, spring is aboout flowers, paper windmills and kaleidoscopes, so my visual concept was inspired by this mood.',
+        'The New York magazine TimeOut asked me to design the cover of its "spring preview" issue (late February, 2013), and wanted me to reinvent my "Beyond the Box" poster (link this). For me, spring is about flowers, paper windmills and kaleidoscopes, so my visual concept was inspired by this mood board.',
     },
   },
   {
@@ -2429,7 +2429,7 @@ const projects = [
     id: '26',
     type: 'graphic',
     year: '2013',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/Tomorrow.jpg',
@@ -2472,7 +2472,7 @@ const projects = [
     id: '27',
     type: 'typeface',
     year: '2013',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/TypographyH.jpg',
@@ -2667,7 +2667,7 @@ const projects = [
     id: '28',
     type: 'typeface',
     year: '2011',
-    Tags: null,
+    tags: null,
     horizontal: false,
     mp4: false,
     image: '/Viga/7.jpg',
@@ -2718,7 +2718,7 @@ const projects = [
     ],
     attributes: {
       description:
-        'VIGA is an experimental capitals-only display font influenced by constructivism, with a high level of abstraction. The grid I created for developing VIGA was inspired by metal joists used in architecture.',
+        'Viga is an experimental capitals-only display font influenced by constructivism, with a high level of abstraction. The grid I created for developing Viga was inspired by truss beams used in architecture.',
     },
   },
   {
@@ -2727,7 +2727,7 @@ const projects = [
     id: '29',
     type: 'graphic',
     year: '2011',
-    Tags: ['Poster'],
+    tags: ['Poster'],
     horizontal: false,
     mp4: false,
     landing: '/CoverPhotos/Lading/Weltformat.jpg',
@@ -2761,7 +2761,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "Finalist in the students'/ international contest of the Weltformat 2011 poster festival at Lucerne - Switzerland, this poster was chosen between more than 400 students of 20 different countries as a response to the theme: poster for the poster.",
+        'Finalist in the students\' international contest of the Weltformat 11 poster festival, Luzern, Switzerland. This poster was chosen between more than 400 students of 20 different countries as a response to the theme "Poster for the Poster". The brief: The posters are reflections of the society that views them and for whom they are produced and hung in masses. The high requests and the interest from society are reflected in this fascinating media: its needs, its wishes and its dreams. The students are being challenged to consider the advantages and the powers of posters as an advertisement- and communication media. Posters for the poster - this must be the visual statement of the poster design. My poster was exhibited across Luzern during the Weltformat festival. http://www.weltform.at/',
     },
   },
   {
@@ -2770,7 +2770,7 @@ const projects = [
     id: '30',
     type: 'typeface',
     year: '2019',
-    Tags: null,
+    tags: null,
     horizontal: true,
     mp4: false,
     landing: '/CoverPhotos/Lading/BrickTypefamily.jpg',
@@ -2880,7 +2880,8 @@ const projects = [
       },
     ],
     attributes: {
-      description: 'Brick',
+      description:
+        "Brick’s foundations lie in the signage of three prominent pubs in London’s East End, The Jolly Butchers (Brick Lane – now closed), The Royal Oak (Columbia Road), and The Prince Albert (Acton Street). Referencing their Art Deco traits, with a trace of Art Nouveau heritage, Brick is Fermín Guerrero’s re-interpretation and continuation of the vernaculars elegant gestures, brought into the 21st century. Guerrero first discovered the vernacular of Brick Lane street during one of his visits to London, in 2015, while studying Typeface Design in Reading. It wasn’t until several years later that the collective forms and development of the design began to materialise. Brick was initially released in 2019, in three weights, and was further extended in 2020 becoming a five weights (ExtraLight, Light, Regular, Medium & Black) type family, across two optical sizes (Text & Display) and it is available to license exclusively through www.Colophon-Foundry.com, in both Standard (‘STD’) and Professional (‘PRO’) versions. The latter encapsulates the prominent Truman brewery’s unique personality through an exhaustive series of OpenType features and stylistic alternates available within the PRO variant. If you want to know more about Brick's development, don't miss the article I wrote with Colophon, where you can learn a lot more about the project – here.",
     },
   },
   {
@@ -2889,7 +2890,7 @@ const projects = [
     id: '31',
     type: 'graphic',
     year: '2020',
-    Tags: ['Visual Identity', 'Animation', 'Editorial'],
+    tags: ['Visual Identity', 'Animation', 'Editorial'],
     horizontal: false,
     mp4: true,
     mp4Video: '/Architecture/forGalleryShorter.mp4',
@@ -3121,7 +3122,7 @@ const projects = [
     ],
     attributes: {
       description:
-        "Finalist in the students'/ international contest of the Weltformat 2011 poster festival at Lucerne - Switzerland, this poster was chosen between more than 400 students of 20 different countries as a response to the theme: poster for the poster.",
+        "Visual Identity for Sharjah Architecture Triennial's series of podcasts.ARCHITECTURE + is a series of online conversations that aim to create dialogues exploring the social responsibilities of architects, urban planners, academics and their multidisciplinary interlocutors. Times of crisis, such as the current pandemic, demand that we question what we value in our respective disciplines and collectively rethink environmental and social sustainability at various scales. The ‘+’ is the connection, allowing us to mix and combine. It becomes the sight, the window that enables us to zoom in and out, to look closer and further, to focus and to see differently. You can listen to the podcasts here: https://www.sharjaharchitecture.org/pages/programs/architecture-plus",
     },
   },
 ]
