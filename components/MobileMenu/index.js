@@ -2,12 +2,14 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { VscChromeClose } from 'react-icons/vsc'
 import Link from 'next/link'
 import { useState } from 'react'
+import { Spin as Hamburger } from 'hamburger-react'
 
-export default function NewMobileMenu() {
-  const [open, setOpen] = useState(false)
+export default function MobileMenu() {
+  //const [open, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false)
 
   const handleClick = () => {
-    setOpen(!open)
+    setOpen(!isOpen)
   }
 
   return (
@@ -15,40 +17,55 @@ export default function NewMobileMenu() {
       <section>
         <div className="burgerMainContainer" onClick={handleClick}>
           <div className="iconBurgerMenu">
-            {open !== true ? (
-              <HiOutlineMenuAlt4 size={32} />
-            ) : (
-              <VscChromeClose size={32} />
-            )}
+            <li>
+              <Link href="/" as="/home" onClick={() => this.handleClick()}>
+                <a>Fermin Guerrero</a>
+              </Link>
+            </li>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
-
           <ul
             className={
-              open !== true
+              isOpen !== true
                 ? 'linksBurgerMenuContainerInactive'
                 : 'linksBurgerMenuContainer'
             }
           >
             <li>
-              <Link href="/" onClick={() => this.handleClick()}>
-                <a>Fermin Guerrero</a>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/graphicDesign" onClick={() => this.handleClick()}>
+              <Link
+                href="/graphicDesign"
+                as="/graphic-design"
+                onClick={() => this.handleClick()}
+              >
                 <a>Graphic Design</a>
               </Link>
             </li>
+            <li>
+              <Link
+                href="/all"
+                as="/all-projects"
+                onClick={() => this.handleClick()}
+              >
+                <a>&</a>
+              </Link>
+            </li>
 
             <li>
-              <Link href="/typefaceDesign" onClick={() => this.handleClick()}>
+              <Link
+                href="/typefaceDesign"
+                as="/typeface-design"
+                onClick={() => this.handleClick()}
+              >
                 <a>Typeface Design</a>
               </Link>
             </li>
 
             <li>
-              <Link href="/about" onClick={() => this.handleClick()}>
+              <Link
+                href="/about"
+                as="/about"
+                onClick={() => this.handleClick()}
+              >
                 <a>About</a>
               </Link>
             </li>
@@ -58,24 +75,38 @@ export default function NewMobileMenu() {
 
       <style jsx>{`
         section {
+          position: absolute;
+          top: 0;
           width: 100%;
-          padding: 10px;
           color: white;
+          position: absolute;
+          z-index: 1;
+          background: black;
         }
 
         .burgerMainContainer {
-          background-color: black;
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
           width: 100%;
           padding: 0;
           position: relative;
+          transition: all 0.5s ease;
+          mix-blend-mode: difference;
         }
 
         .iconBurgerMenu {
           position: relative;
+          list-style: none;
+          text-decoration: none;
+          font-size: 20px;
           cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 100%;
         }
 
         .linksBurgerMenuContainer {
@@ -84,12 +115,15 @@ export default function NewMobileMenu() {
           display: flex;
           flex-direction: column;
           list-style: none;
-          left: 600;
-          top: 15px;
+          padding-left: 10px;
+          padding-top: 50px;
+          top: 25px;
           z-index: 1000;
-          justify-content: space-around;
+          justify-content: left;
+          font-size: 18px;
+          line-height: 30px;
           background-color: black;
-          font-size: 20px;
+          height: 100vh;
           color: white;
         }
         a {

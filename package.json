@@ -18,6 +18,8 @@
     "babel-plugin-emotion": "^11.0.0",
     "emotion": "^11.0.0",
     "emotion-server": "^11.0.0",
+    "framer-motion": "^3.2.0",
+    "hamburger-react": "^2.4.0",
     "isomorphic-unfetch": "^3.1.0",
     "moment": "^2.29.1",
     "next": "10.0.1",

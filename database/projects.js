@@ -885,13 +885,7 @@ const projects = [
       },
       {
         type: 'img',
-        img: '/GenevaMotorShow/23.jpg',
-        rows: 2,
-        cols: 2,
-      },
-      {
-        type: 'img',
-        img: '/GenevaMotorShow/25.jpg',
+        img: '/GenevaMotorShow/22.jpg',
         rows: 2,
         cols: 2,
       },
@@ -903,7 +897,19 @@ const projects = [
       },
       {
         type: 'img',
-        img: '/GenevaMotorShow/22.jpg',
+        img: '/GenevaMotorShow/23.jpg',
+        rows: 2,
+        cols: 4,
+      },
+      {
+        type: 'video',
+        url: '/GenevaMotorShow/MotorShowVideo.mp4',
+        rows: 2,
+        cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/GenevaMotorShow/25copy.jpg',
         rows: 2,
         cols: 2,
       },
@@ -3181,12 +3187,17 @@ const projects = [
         rows: 2,
         cols: 2,
       },
-
       {
         type: 'img',
         img: '/BeyondTheBox/6.jpg',
         rows: 2,
         cols: 2,
+      },
+      {
+        type: 'img',
+        img: '/BeyondTheBox/10.jpg',
+        rows: 2,
+        cols: 4,
       },
     ],
     attributes: {

@@ -34,7 +34,7 @@ export default function MyApp(props) {
       </Head>
 
       <ThemeProvider theme={theme}>
-        <div className="main-wrapper">
+        <div className="main-app-wrapper">
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
           <div className="desktop">
@@ -43,12 +43,17 @@ export default function MyApp(props) {
           <div className="mobile">
             <DynamicMobileMenu />
           </div>
+
           <Component {...pageProps} />
           <Footer />
         </div>
       </ThemeProvider>
 
       <style jsx>{`
+        .main-app-wrapper {
+          height: 100%;
+          width: 100%;
+        }
         .desktop {
           display: block;
         }

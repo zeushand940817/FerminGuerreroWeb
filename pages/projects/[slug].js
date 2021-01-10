@@ -91,13 +91,16 @@ const Projects = ({ data }) => {
                     srcSet={srcset(source.img, 121, source.rows, source.cols)}
                   />
                 ) : (
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    className={classes.video}
-                    src={source.url}
-                  />
+                  <div className="videoContainer">
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      className="video"
+                      src={source.url}
+                      srcSet={srcset(source.url, 121, source.rows, source.cols)}
+                    />
+                  </div>
                 )}
               </ImageListItem>
             )
@@ -153,16 +156,15 @@ const Projects = ({ data }) => {
           object-fit: cover;
           object-position: center;
         }
+
         .video {
-          objectfit: cover;
+          width: 695px;
+          height: auto;
+          object-fit: cover;
           object-position: center;
-          width: 703px;
-          height: auto;
         }
+
         .description {
-          display: flex;
-          height: auto;
-          flex-wrap: wrap;
           margin-top: 1em;
           margin-bottom: 1em;
           padding-left: 10px;

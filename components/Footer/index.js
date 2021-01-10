@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className="footermove">Copyright © . All rights reserved.</div>
+        <div className="footermove">Fermin Guerrero</div>
       </footer>
 
       <style jsx>{`
