@@ -16,15 +16,19 @@ const useStyles = makeStyles({
     height: 'auto',
     flexGrow: 1,
     maxWidth: 400,
-    fontSize: '30px',
+
     color: 'white',
+  },
+  label: {
+    fontSize: '24px',
   },
 })
 
 const TreeItem1 = withStyles({
   root: {
     '&.Mui-selected > .MuiTreeItem-content': {
-      color: 'tomato',
+      fontStyle: 'italic',
+      fontWeight: 'bold',
       display: 'flex',
       flexDirection: 'row',
     },
@@ -40,16 +44,24 @@ export default function MobileSectionsMenu() {
       defaultCollapseIcon={<RemoveIcon />}
       defaultExpandIcon={<AddIcon />}
     >
-      <TreeItem1 nodeId="1" label="Background">
+      <TreeItem1
+        nodeId="1"
+        label="Background"
+        classes={{ label: classes.label }}
+      >
         <Background />
       </TreeItem1>
-      <TreeItem1 nodeId="2" label="Contact">
+      <TreeItem1 nodeId="2" label="Contact" classes={{ label: classes.label }}>
         <Contact />
       </TreeItem1>
-      <TreeItem1 nodeId="3" label="Awards">
+      <TreeItem1 nodeId="3" label="Awards" classes={{ label: classes.label }}>
         <AwardsMobile />
       </TreeItem1>
-      <TreeItem1 nodeId="4" label="Articles & papers">
+      <TreeItem1
+        nodeId="4"
+        label="Articles & papers"
+        classes={{ label: classes.label }}
+      >
         <PressMobile />
       </TreeItem1>
     </TreeView>
