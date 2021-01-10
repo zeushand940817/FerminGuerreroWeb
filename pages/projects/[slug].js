@@ -113,7 +113,7 @@ const Projects = ({ data }) => {
           width: 100%;
           height: 100%;
           font-size: 20px;
-          padding: 40px 20px 0px 20px;
+          padding: 20px 20px 0px 20px;
           margin-bottom: 30px;
           color: white;
         }
@@ -204,6 +204,12 @@ const Projects = ({ data }) => {
             width: auto;
             height: auto;
           }
+          .video {
+            width: 335px;
+            height: 335px;
+            object-fit: cover;
+            object-position: center;
+          }
         }
         @media screen and (max-width: 1024px) {
           .gridContainer {
@@ -225,9 +231,15 @@ const Projects = ({ data }) => {
           }
           .imageList {
             display: inline-block;
-            border: 2px solid pink;
             width: auto;
             height: auto;
+          }
+          .video {
+            display: inline-block;
+            width: 359px;
+            height: 359px;
+            object-fit: cover;
+            object-position: center;
           }
         }
       `}</style>
