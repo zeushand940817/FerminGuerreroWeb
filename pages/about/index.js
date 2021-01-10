@@ -9,6 +9,7 @@ const Contact = dynamic(() => import('components/Contact'))
 const MobileSectionsMenu = dynamic(() =>
   import('components/MobileSectionsMenu')
 )
+const Exhibitions = dynamic(() => import('components/Exhibitions'))
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect()
@@ -176,7 +177,9 @@ export default function About({ data }) {
               </div>
             </div>
           </div>
-          <div className="section" id="exhibitions" ref={exhibitionsRef} />
+          <div className="section" id="exhibitions" ref={exhibitionsRef}>
+            <Exhibitions />
+          </div>
         </div>
         <div className="bottomSpacer" />
       </div>
@@ -294,6 +297,10 @@ export default function About({ data }) {
           }
 
           #press {
+            display: none;
+            font-size: 16;
+          }
+          #exhibitions {
             display: none;
             font-size: 16;
           }

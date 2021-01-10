@@ -10,13 +10,13 @@ import Background from 'components/Background'
 import Contact from 'components/Contact'
 import PressMobile from 'components/PressMobile'
 import AwardsMobile from 'components/AwardsMobile'
+import ExhibitionsMobile from '@components/ExhibitionsMobile'
 
 const useStyles = makeStyles({
   root: {
     height: 'auto',
     flexGrow: 1,
     maxWidth: 400,
-
     color: 'white',
   },
   label: {
@@ -63,6 +63,13 @@ export default function MobileSectionsMenu() {
         classes={{ label: classes.label }}
       >
         <PressMobile />
+      </TreeItem1>
+      <TreeItem1
+        nodeId="5"
+        label="Exhibitions"
+        classes={{ label: classes.label }}
+      >
+        <ExhibitionsMobile />
       </TreeItem1>
     </TreeView>
   )

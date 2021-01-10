@@ -22,27 +22,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function Awards({ data }) {
+export default function Exhibitions({ data }) {
   const classes = useStyles()
 
   return (
-    <section className={classes.wrapper} id="awards">
+    <section className={classes.wrapper} id="exhibitions">
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={false} lg={2} sm={false} />
           <Grid item lg={2} sm={false} xs={false} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.box}>2019</Box>
+            <Box className={classes.box}>2018</Box>
           </Grid>
           <Grid item xs={6} lg={4} sm={false}>
             <Box className={classes.box}>
-              LAD - Latin Design Awards. Typeface design category. Project:
-              Thesaurus.
+              Latin-American typedesign biennial organized by Typos Latinos.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.box}>Gold</Box>
+            <Box className={classes.box}>Colombia.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -52,75 +51,16 @@ export default function Awards({ data }) {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2018</Box>
+            <Box className={classes.text}>2016</Box>
           </Grid>
           <Grid item xs={6} lg={4}>
             <Box className={classes.text}>
-              European Design Awards Typeface design category. Project:
-              Thesaurus.
+              Type Masters Exhibition organized by the Berliner Typostammtisch.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Gold</Box>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12} container>
-        <Grid container direction="row">
-          <Grid item xs={0} lg={2} />
-          <Grid item lg={2} sm={0} />
-          <Grid item xs={3} lg={1} />
-          <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
-              Swiss Typefaces selected Thesaurus for their 40 pages specimen
-              called Type Life 3, showcasing 19 non-SWTY typefaces they like.
-            </Box>
-          </Grid>
-          <Grid item lg={1} />
-          <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Gold</Box>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12} container>
-        <Grid container direction="row">
-          <Grid item xs={0} lg={2} />
-          <Grid item lg={2} sm={0} />
-          <Grid item xs={3} lg={1} />
-          <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
-              Type 4 : Typeface Design Competition by Graphis magazine. Project:
-              Thesaurus
-            </Box>
-          </Grid>
-          <Grid item lg={1} />
-          <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Gold</Box>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12} container>
-        <Grid container direction="row">
-          <Grid item xs={0} lg={2} />
-          <Grid item lg={2} sm={0} />
-          <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2018</Box>
-          </Grid>
-          <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
-              Latin-American typedesign biennial (Tipos Latinos). Superfamily
-              category Project: Thesaurus.
-            </Box>
-          </Grid>
-          <Grid item lg={1} />
-          <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>
-              Mention of Exellence (First Prize).
-            </Box>
+            <Box className={classes.prize}>Berlin.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -134,49 +74,101 @@ export default function Awards({ data }) {
           </Grid>
           <Grid item xs={6} lg={4}>
             <Box className={classes.text}>
-              Trnava Poster Triennial International competition. Project: New
-              Year, New Fight.
+              50 Diplômes exhibition organized by Étapes magazine and RedBull
+              Studios.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Honorary mention.</Box>
+            <Box className={classes.prize}>Paris.</Box>
           </Grid>
         </Grid>
       </Grid>
-
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2014</Box>
+            <Box className={classes.text}></Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
-              Rolex's Foundation (Hans Wilsdorf) awarded me their schoolarship
-              for my BA graduate project.
-            </Box>
+            <Box className={classes.text}>Trnava Poster Triennial.</Box>
           </Grid>
-          <Grid item lg={2} />
-          <Grid item xs={3} lg={2} />
+          <Grid item lg={1} />
+          <Grid item xs={3} lg={2}>
+            <Box className={classes.prize}>Slovakia.</Box>
+          </Grid>
         </Grid>
       </Grid>
-
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2014</Box>
+            <Box className={classes.text}></Box>
           </Grid>
           <Grid item xs={6} lg={4}>
             <Box className={classes.text}>
-              BEA fondation award for young artists.
+              World’s best poster designers 2015, International Invitational
+              Exhibition. Organized by Guan Shanyue Art Museum.
             </Box>
           </Grid>
-          <Grid item lg={2} />
-          <Grid item xs={3} lg={2} />
+          <Grid item lg={1} />
+          <Grid item xs={3} lg={2}>
+            <Box className={classes.prize}>China.</Box>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item xs={12} container>
+        <Grid container direction="row">
+          <Grid item xs={0} lg={2} />
+          <Grid item lg={2} sm={0} />
+          <Grid item xs={3} lg={1}>
+            <Box className={classes.text}></Box>
+          </Grid>
+          <Grid item xs={6} lg={4}>
+            <Box className={classes.text}>
+              These Woods Have Ears. Organized by Rock This Town.
+            </Box>
+          </Grid>
+          <Grid item lg={1} />
+          <Grid item xs={3} lg={2}>
+            <Box className={classes.prize}>Geneva, Switzerland.</Box>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item xs={12} container>
+        <Grid container direction="row">
+          <Grid item xs={0} lg={2} />
+          <Grid item lg={2} sm={0} />
+          <Grid item xs={3} lg={1}>
+            <Box className={classes.text}>2013</Box>
+          </Grid>
+          <Grid item xs={6} lg={4}>
+            <Box className={classes.text}>
+              100 typographic posters International Invitational Exhibition.
+            </Box>
+          </Grid>
+          <Grid item lg={1} />
+          <Grid item xs={3} lg={2}>
+            <Box className={classes.prize}>China.</Box>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item xs={12} container>
+        <Grid container direction="row">
+          <Grid item xs={0} lg={2} />
+          <Grid item lg={2} sm={0} />
+          <Grid item xs={3} lg={1}>
+            <Box className={classes.text}>2011</Box>
+          </Grid>
+          <Grid item xs={6} lg={4}>
+            <Box className={classes.text}>Weltformat Poster Festival.</Box>
+          </Grid>
+          <Grid item lg={1} />
+          <Grid item xs={3} lg={2}>
+            <Box className={classes.prize}>Lucerne, Switzerland.</Box>
+          </Grid>
         </Grid>
       </Grid>
     </section>
