@@ -11,17 +11,24 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 50,
     color: 'white',
     ['@media (max-width: 677px)']: {
+      fontSize: 18,
+      lineHeight: 1.2,
       marginTop: 10,
+      marginBottom: 20,
     },
   },
   li: {
     listStyle: 'none',
+    ['@media (max-width: 677px)']: {
+      fontSize: 18,
+      marginBottom: 5,
+    },
   },
   box: {
     marginTop: 50,
     marginBottom: 20,
     ['@media (max-width: 677px)']: {
-      fontSize: 16,
+      fontSize: 18,
       marginTop: 10,
       marginBottom: 10,
     },
@@ -31,16 +38,27 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     color: 'white',
     ['@media (max-width: 677px)']: {
-      fontSize: 16,
+      fontSize: 18,
     },
   },
+
   text: {
     fontSize: 20,
     color: 'white',
     marginBottom: 10,
     ['@media (max-width: 677px)']: {
-      fontSize: 16,
-      marginTop: 10,
+      fontSize: 18,
+      marginBottom: 5,
+    },
+  },
+  textFollow: {
+    fontSize: 20,
+    color: 'white',
+    marginBottom: 10,
+    ['@media (max-width: 677px)']: {
+      fontSize: 18,
+      marginBottom: 5,
+      marginTop: 5,
     },
   },
 }))
@@ -58,7 +76,6 @@ export default function Contact() {
           </Grid>
           <Grid item xs={9} lg={2} sm={3}>
             <Box className={classes.box}>
-              {' '}
               <a className={classes.a} href="mailto:contact@ferminguerrero.com">
                 contact@ferminguerrero.com
               </a>
@@ -86,8 +103,7 @@ export default function Contact() {
           <Grid item xs={3} lg={1} sm={3} />
           <Grid item xs={9} lg={2} sm={1}>
             <Box className={classes.text}>
-              {' '}
-              <Time />{' '}
+              <Time />
             </Box>
           </Grid>
         </Grid>
@@ -98,17 +114,16 @@ export default function Contact() {
           <Grid item lg={2} />
           <Grid item lg={2} />
           <Grid item xs={3} lg={1} sm={3}>
-            <Box className={classes.text}> Follow </Box>
+            <Box className={classes.textFollow}>Follow </Box>
           </Grid>
-          <Grid item xs={3} sm={4} className={classes.text}>
+          <Grid item xs={3} sm={4} className={classes.textFollow}>
             <li className={classes.li}>
               <a
                 className={classes.a}
                 href="https://www.instagram.com/ferminguerrero_design/"
                 target="_blank"
               >
-                {' '}
-                Instagram{' '}
+                Instagram
               </a>
             </li>
             <li className={classes.li}>
@@ -117,8 +132,7 @@ export default function Contact() {
                 href="https://twitter.com/fermin_guerrero"
                 target="_blank"
               >
-                {' '}
-                Twitter{' '}
+                Twitter
               </a>
             </li>
             <li className={classes.li}>
@@ -127,8 +141,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/fermin-guerrero-616237173/"
                 target="_blank"
               >
-                {' '}
-                Linkedin{' '}
+                Linkedin
               </a>
             </li>
           </Grid>

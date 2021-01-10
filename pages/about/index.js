@@ -186,6 +186,8 @@ export default function About({ data }) {
 
       <style jsx>{`
         .wrapper {
+          height: 100%;
+          width: 100%;
           font-size: 20px;
           padding: 40px 20px 5px 20px;
         }
@@ -265,7 +267,8 @@ export default function About({ data }) {
         @media screen and (max-width: 677px) {
           .wrapper {
             padding: 0px 20px 0px 20px;
-            height: auto;
+            height: 100%;
+            width: 100%;
           }
           .mobileAbout {
             display: block;

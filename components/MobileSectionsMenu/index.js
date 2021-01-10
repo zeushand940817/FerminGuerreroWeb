@@ -18,9 +18,13 @@ const useStyles = makeStyles({
     flexGrow: 1,
     maxWidth: 400,
     color: 'white',
+    marginTop: 10,
+    backgroundColor: 'transparent',
   },
   label: {
-    fontSize: '24px',
+    fontSize: '20px',
+    paddingTop: 4,
+    paddingBottom: 4,
   },
 })
 
