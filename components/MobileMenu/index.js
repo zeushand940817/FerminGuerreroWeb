@@ -1,11 +1,9 @@
-import { HiOutlineMenuAlt4 } from 'react-icons/hi'
-import { VscChromeClose } from 'react-icons/vsc'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Spin as Hamburger } from 'hamburger-react'
+import { motion } from 'framer-motion'
 
 export default function MobileMenu() {
-  //const [open, setOpen] = useState(false)
   const [isOpen, setOpen] = useState(false)
 
   const handleClick = () => {
@@ -18,12 +16,13 @@ export default function MobileMenu() {
         <div className="burgerMainContainer" onClick={handleClick}>
           <div className="iconBurgerMenu">
             <li>
-              <Link href="/" as="/home" onClick={() => this.handleClick()}>
+              <Link href="/" as="/" onClick={() => this.handleClick()}>
                 <a>Fermin Guerrero</a>
               </Link>
             </li>
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
+
           <ul
             className={
               isOpen !== true
@@ -83,7 +82,6 @@ export default function MobileMenu() {
           z-index: 1;
           background: black;
         }
-
         .burgerMainContainer {
           display: flex;
           flex-direction: row;
@@ -91,12 +89,10 @@ export default function MobileMenu() {
           width: 100%;
           padding: 0;
           position: relative;
-          transition: all 0.5s ease;
-          mix-blend-mode: difference;
         }
-
         .iconBurgerMenu {
-          position: relative;
+          background-color: black;
+          position: fixed;
           list-style: none;
           text-decoration: none;
           font-size: 20px;
@@ -108,9 +104,8 @@ export default function MobileMenu() {
           padding-right: 10px;
           width: 100%;
         }
-
         .linksBurgerMenuContainer {
-          position: absolute;
+          position: fixed;
           width: 100%;
           display: flex;
           flex-direction: column;
@@ -118,22 +113,23 @@ export default function MobileMenu() {
           padding-left: 10px;
           padding-top: 50px;
           top: 25px;
-          z-index: 1000;
+          z-index: 1000px;
           justify-content: left;
           font-size: 18px;
           line-height: 30px;
           background-color: black;
-          height: 100vh;
+          height: 677px;
           color: white;
         }
         a {
           display: inline-block;
           list-style: none;
           color: white;
+          font-size: 24px;
+          padding: 10px;
         }
-
         .linksBurgerMenuContainerInactive {
-          z-index: 1000;
+          z-index: 1000px;
           position: absolute;
           left: -1000px;
           width: 100%;

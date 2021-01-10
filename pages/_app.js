@@ -43,7 +43,6 @@ export default function MyApp(props) {
           <div className="mobile">
             <DynamicMobileMenu />
           </div>
-
           <Component {...pageProps} />
           <Footer />
         </div>

@@ -1,13 +1,17 @@
 import fetch from 'isomorphic-unfetch'
 import { useState } from 'react'
 
+
+
 const Home = ({ data }) => {
   const imagenes = data
   const [imageNumber, setImageNumber] = useState(0)
 
+
   function handleMouseMove() {
     setImageNumber(Math.floor(Math.random() * 12))
   }
+
 
   const fadeProperties = {
     duration: 3000,
@@ -44,16 +48,13 @@ const Home = ({ data }) => {
         ></div>
       </div>
       <div className="homeMobile">
-        {/* 
-        <div className="containerMobile">
-          {imagenes.map((image) => (
-            <img src={image.image} />
-          ))}
-        </div> */}
-
-        {imagenes.map((image) => (
-          <img src={image.image} />
-        ))}
+      
+          <div className="containerMobile" >
+            {imagenes.map((image) => (
+              <img src={image.image} />
+            ))}
+          </div>
+ 
       </div>
 
       <style jsx>{`
@@ -65,10 +66,14 @@ const Home = ({ data }) => {
           display: none;
         }
 
+        .mobileOnly {
+          display: none;
+        }
         @media screen and (max-width: 667px) {
           .wrapper {
             display: none;
           }
+
           .homeMobile {
             display: block;
           }

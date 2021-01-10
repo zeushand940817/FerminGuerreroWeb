@@ -2,6 +2,7 @@ import projects from 'database/projects'
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export default function GraphicDesign({ data }) {
   const projectsFilter = data
@@ -39,6 +40,12 @@ export default function GraphicDesign({ data }) {
                         <source src={extractVideo} type="video/mp4" />
                       </video>
                     ) : (
+                      // <LazyLoadImage
+                      //   style={{ width: '100%', height: 'auto' }}
+                      //   className="imagen"
+                      //   alt={projectFilter.name}
+                      //   src={projectFilter.image}
+                      // />
                       <img
                         className="imagen"
                         alt={projectFilter.name}
