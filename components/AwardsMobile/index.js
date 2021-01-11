@@ -13,26 +13,41 @@ const useStyles = makeStyles({
     maxWidth: 400,
     marginBottom: 10,
     marginTop: 10,
-    fontSize: 20,
+    fontSize: 18,
     backgroundColor: 'transparent',
+    // '&.hover, &.MuiTreeItem-content': {
+    //   display: 'flex',
+    //   alignItems: 'flex-start',
+    // },
   },
   texto: {
     fontSize: 18,
+    alignItems: 'flex-start',
+  },
+  text1: {
+    fontSize: 18,
+    display: 'flex',
+    width: '100%',
+    alignItems: 'flex-start',
   },
   lastChild: {
     fontSize: 18,
     paddingBottom: 10,
   },
+  firstChild: {
+    fontSize: 18,
+  },
 })
 
 const TreeItem1 = withStyles({
   root: {
-    '&.Mui-selected > .MuiTreeItem-content': {
+    '&.Mui-selected > .MuiTreeItem-content > .MuiTreeItem-label': {
       display: 'flex',
       flexDirection: 'row',
       fontStyle: 'italic',
-      fontSize: 20,
+      fontSize: 18,
       backgroundColor: 'transparent',
+      alignItems: 'flex-start',
     },
   },
 })(MuiTreeItem)
@@ -45,16 +60,20 @@ export default function AwardsMobile() {
       defaultCollapseIcon={<RemoveIcon />}
       defaultExpandIcon={<AddIcon />}
     >
-      <TreeItem1 nodeId="4" label="2019" classes={{ label: classes.texto }}>
+      <TreeItem1
+        nodeId="4"
+        label="2019"
+        classes={{ label: classes.firstChild }}
+      >
         <TreeItem1
           nodeId="5"
           label="Latin Design Awards."
-          classes={{ label: classes.texto }}
+          classes={{ label: classes.firstChild }}
         >
           <TreeItem
             nodeId="6"
             label="Prize: Gold."
-            classes={{ label: classes.texto }}
+            classes={{ label: classes.firstChild }}
           />
           <TreeItem
             nodeId="7"
@@ -131,7 +150,7 @@ export default function AwardsMobile() {
         <TreeItem1
           nodeId="21"
           label="Latin-American typedesign biennial."
-          classes={{ label: classes.texto }}
+          classes={{ label: classes.texto1 }}
         >
           <TreeItem
             nodeId="22"

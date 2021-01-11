@@ -15,6 +15,7 @@ export default function Footer() {
             Laura.
           </a>
         </div>
+
         <div>
           <a href="https://twitter.com/fermin_guerrero" target="_blank">
             Twitter
@@ -86,12 +87,13 @@ export default function Footer() {
 
         @media screen and (max-width: 667px) {
           footer {
-            position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
             color: white;
             font-size: 16px;
+            display: flex;
+            flex-direction: column;
           }
         }
       `}</style>

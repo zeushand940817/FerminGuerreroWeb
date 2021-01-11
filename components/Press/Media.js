@@ -19,6 +19,7 @@ export default function Media({ image }) {
         @media screen and (max-width: 1024px) {
           img {
             padding: 15px;
+            width: 150px;
           }
         }
       `}</style>

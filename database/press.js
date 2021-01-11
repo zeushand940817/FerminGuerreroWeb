@@ -36,7 +36,7 @@ const press = [
       'Reflection on Practice: An inside look at the creation process of Exentra.',
     description2: 'MATD’s R.O.P. (reflection on practice).',
     year: '2015',
-    url: 'https://drive.google.com/file/d/0B-QGJpCKyJVIMnBCdFgwUjgyMVU/view',
+    url: '/AninsideLookAtTheCreationProcessOfExentra.pdf',
   },
   {
     title: 'Geneve',
@@ -45,8 +45,7 @@ const press = [
     description: 'If Geneva was a typeface.',
     description2: 'Bachelor thesis at HEAD.',
     year: '2014',
-    url:
-      'https://drive.google.com/file/d/1BPO5B35zRuYPh-QjuLWg-5TTMOYH0eNi/view',
+    url: '/BachelorThesis.pdf',
   },
 ]
 

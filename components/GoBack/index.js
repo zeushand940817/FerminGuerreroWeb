@@ -1,7 +1,14 @@
-import { MdArrowBack } from 'react-icons/md'
+import { VscClose } from 'react-icons/vsc'
+import Link from 'next/link'
 
 const GoBack = () => {
-  return <MdArrowBack size={43} color="white" />
+  return (
+    <>
+      <VscClose size={45} color="white" />
+
+      <style jsx>{``}</style>
+    </>
+  )
 }
 
 export default GoBack

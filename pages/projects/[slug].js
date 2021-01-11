@@ -1,11 +1,12 @@
 import Grid from '@material-ui/core/Grid'
 import fetch from 'isomorphic-unfetch'
-//import Image from 'next/image'
+// import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import Link from 'next/link'
 import Footer from 'components/Footer'
+import GoBack from 'components/GoBack'
 
 const useStyles = makeStyles({
   root: {
@@ -30,6 +31,7 @@ const Projects = ({ data }) => {
   return (
     <>
       <div className="container">
+        <GoBack />
         <Grid container>
           {data.horizontal && <img className="mainImage" src={data.image} />}
           {!data.horizontal && <img className="mainImage" src={data.img1} />}
@@ -39,7 +41,7 @@ const Projects = ({ data }) => {
             </video>
           )}
         </Grid>
-        {/* <GoBack/>  */}
+
         <Grid container>
           <div className="gridContainer">
             <Grid item xs={12} lg={2}>

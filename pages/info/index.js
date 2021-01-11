@@ -11,6 +11,7 @@ const MobileSectionsMenu = dynamic(() =>
   import('components/MobileSectionsMenu')
 )
 const Exhibitions = dynamic(() => import('components/Exhibitions'))
+const PressMobile = dynamic(() => import('components/PressMobile'))
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect()
@@ -184,15 +185,19 @@ export default function Info({ data }) {
           <div className="section" id="exhibitions" ref={exhibitionsRef}>
             <Exhibitions />
           </div>
+          <div className="bottomSpacer" />
+          <div className="footerDiv">
+            <Footer />
+          </div>
         </div>
-        <div className="bottomSpacer" />
       </div>
-
-      <Footer />
 
       <style jsx>{`
         .pageWrapper {
           padding-top: 60px;
+        }
+        .footerDiv {
+          bottom: 0;
         }
         .wrapper {
           height: 100%;
@@ -214,7 +219,7 @@ export default function Info({ data }) {
         }
 
         .bottomSpacer {
-          height: 30vh;
+          height: 40vh;
         }
 
         .sticky {
@@ -290,22 +295,18 @@ export default function Info({ data }) {
             display: none;
           }
           .header {
-            display: block;
-            width: 100%;
+            display: none;
           }
 
           #about {
             display: none;
-            font-size: 16;
           }
           #contact {
             display: none;
-            font-size: 16;
           }
 
           #awards {
             display: none;
-            font-size: 16;
           }
 
           #press {
@@ -320,13 +321,14 @@ export default function Info({ data }) {
 
         @media screen and (max-width: 1024px) {
           .wrapper {
+            height: 100%;
+            width: 100%;
             padding: 0px 20px 0px 20px;
           }
-          #about {
-            margin-top: 0px;
-          }
           .section {
-            padding: 10px;
+            background: transparent;
+            height: auto;
+            margin-top: 0px;
           }
           .image {
             width: 100%;
@@ -341,26 +343,34 @@ export default function Info({ data }) {
           #exhibitions {
             height: 0px;
           }
-          .boxPress {
-            margin-top: 50px;
-            margin-bottom: 500px;
+          #awards {
+            padding-top: 40px;
+          }
+
+          #press {
+            padding-top: 40px;
+          }
+
+          #exhibitions {
+            padding-top: 40px;
           }
           .bottomSpacer {
-            height: 0px;
+            height: 30vh;
           }
           .header {
             display: flex;
             flex-direction: row;
             justify-content: center;
             width: 100%;
+            background-color: 'pink';
           }
           .sticky {
+            width: 100%;
+            border-bottom: '1px solid white';
             background-color: black;
-            position: sticky;
-            top: 0;
+            bottom: 0;
             left: 0;
             right: 0;
-            z-index: 10;
           }
         }
       `}</style>

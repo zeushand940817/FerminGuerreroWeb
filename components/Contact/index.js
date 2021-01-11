@@ -30,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
       marginTop: 10,
       marginBottom: 10,
+      paddingTop: 0,
+    },
+    ['@media (max-width: 1024px)']: {
+      fontSize: 18,
     },
   },
   a: {
@@ -70,7 +74,7 @@ export default function Contact() {
       <Grid item lg={12} container>
         <Grid container direction="row">
           <Grid item lg={2} sm={false} />
-          <Grid item lg={2} sm={1} />
+          <Grid item lg={2} sm={false} />
           <Grid item xs={3} lg={1}>
             <Box className={classes.box}>Email</Box>
           </Grid>
