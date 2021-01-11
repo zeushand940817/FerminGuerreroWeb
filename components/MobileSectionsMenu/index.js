@@ -6,7 +6,7 @@ import MuiTreeItem from '@material-ui/lab/TreeItem'
 import { withStyles } from '@material-ui/core/styles'
 
 //Components
-import Background from 'components/Background'
+import About from '@components/About'
 import Contact from 'components/Contact'
 import PressMobile from 'components/PressMobile'
 import AwardsMobile from 'components/AwardsMobile'
@@ -48,12 +48,8 @@ export default function MobileSectionsMenu() {
       defaultCollapseIcon={<RemoveIcon />}
       defaultExpandIcon={<AddIcon />}
     >
-      <TreeItem1
-        nodeId="1"
-        label="Background"
-        classes={{ label: classes.label }}
-      >
-        <Background />
+      <TreeItem1 nodeId="1" label="About" classes={{ label: classes.label }}>
+        <About />
       </TreeItem1>
       <TreeItem1 nodeId="2" label="Contact" classes={{ label: classes.label }}>
         <Contact />

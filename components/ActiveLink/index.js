@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 function ActiveLink({ children, href }) {
   const router = useRouter()
   const style = {
-    marginRight: 10,
     color: router.pathname === href ? 'white' : 'white',
     fontWeight: router.pathname === href ? 'bold' : 'lighter',
   }

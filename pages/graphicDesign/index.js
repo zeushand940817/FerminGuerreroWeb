@@ -3,6 +3,7 @@ import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import Footer from 'components/Footer'
 
 export default function GraphicDesign({ data }) {
   const projectsFilter = data
@@ -61,6 +62,7 @@ export default function GraphicDesign({ data }) {
             ))}
           </Masonry>
         </ResponsiveMasonry>
+        <Footer />
 
         <style jsx>{`
           .mainWrapper {

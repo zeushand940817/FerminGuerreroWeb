@@ -36,8 +36,8 @@ export default function Header(props) {
         </div>
 
         <div>
-          <Link href="/about" activeClassName="active" passHref>
-            About
+          <Link href="/info" activeClassName="active" passHref>
+            Info
           </Link>
         </div>
       </div>
@@ -74,7 +74,9 @@ export default function Header(props) {
           grid-column: 8 /10;
         }
         div:nth-child(5) {
-          grid-column: 11/12;
+          grid-column: 12;
+          margin-right: 0;
+          text-align: right;
         }
 
         a {

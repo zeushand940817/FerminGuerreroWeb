@@ -6,19 +6,18 @@ const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
     color: 'white',
-    marginTop: 50,
+    marginTop: 60,
     marginBottom: 50,
   },
   text: {
-    marginBottom: 20,
-    marginTop: 20,
+    marginBottom: 35,
   },
-  prize: {
-    marginBottom: 20,
-    marginTop: 20,
+  sameYearText: {
+    marginBottom: 10,
   },
-  box: {
-    marginTop: 50,
+
+  firstBox: {
+    marginBottom: 35,
   },
 }))
 
@@ -32,16 +31,16 @@ export default function Exhibitions({ data }) {
           <Grid item xs={false} lg={2} sm={false} />
           <Grid item lg={2} sm={false} xs={false} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.box}>2018</Box>
+            <Box className={classes.firstBox}>2018</Box>
           </Grid>
           <Grid item xs={6} lg={4} sm={false}>
-            <Box className={classes.box}>
+            <Box className={classes.firstBox}>
               Latin-American typedesign biennial organized by Typos Latinos.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.box}>Colombia.</Box>
+            <Box className={classes.firstBox}>Colombia.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -60,7 +59,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Berlin.</Box>
+            <Box className={classes.text}>Berlin.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -70,17 +69,17 @@ export default function Exhibitions({ data }) {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2015</Box>
+            <Box className={classes.sameYearText}>2015</Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
+            <Box className={classes.sameYearText}>
               50 Diplômes exhibition organized by Étapes magazine and RedBull
               Studios.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Paris.</Box>
+            <Box className={classes.sameYearText}>Paris.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -89,14 +88,14 @@ export default function Exhibitions({ data }) {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}></Box>
+            <Box className={classes.sameYearText}></Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>Trnava Poster Triennial.</Box>
+            <Box className={classes.sameYearText}>Trnava Poster Triennial.</Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Slovakia.</Box>
+            <Box className={classes.sameYearText}>Slovakia.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -105,17 +104,17 @@ export default function Exhibitions({ data }) {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}></Box>
+            <Box className={classes.sameYearText}></Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
+            <Box className={classes.sameYearText}>
               World’s best poster designers 2015, International Invitational
               Exhibition. Organized by Guan Shanyue Art Museum.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>China.</Box>
+            <Box className={classes.sameYearText}>China.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -133,7 +132,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Geneva, Switzerland.</Box>
+            <Box className={classes.text}>Geneva, Switzerland.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -151,7 +150,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>China.</Box>
+            <Box className={classes.text}>China.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -160,14 +159,14 @@ export default function Exhibitions({ data }) {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2011</Box>
+            <Box className={classes.box}>2011</Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>Weltformat Poster Festival.</Box>
+            <Box className={classes.box}>Weltformat Poster Festival.</Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Lucerne, Switzerland.</Box>
+            <Box className={classes.box}>Lucerne, Switzerland.</Box>
           </Grid>
         </Grid>
       </Grid>

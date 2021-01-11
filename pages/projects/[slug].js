@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import Link from 'next/link'
+import Footer from 'components/Footer'
 
 const useStyles = makeStyles({
   root: {
@@ -107,6 +108,7 @@ const Projects = ({ data }) => {
           })}
         </ImageList>
       </div>
+      <Footer />
 
       <style jsx>{`
         .container {

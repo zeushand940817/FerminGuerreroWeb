@@ -1,8 +1,9 @@
 import { useRef, useEffect, useState } from 'react'
 import fetch from 'isomorphic-unfetch'
 import dynamic from 'next/dynamic'
+import Footer from 'components/Footer'
 
-const Background = dynamic(() => import('components/Background'))
+const About = dynamic(() => import('@components/About'))
 const Awards = dynamic(() => import('components/Awards'))
 const Item = dynamic(() => import('../../components/Press/Item'))
 const Contact = dynamic(() => import('components/Contact'))
@@ -30,20 +31,20 @@ const scrollTo = (ele) => {
   })
 }
 
-export default function About({ data }) {
+export default function Info({ data }) {
   const articles = data
 
   const [visibleSection, setVisibleSection] = useState()
 
   const sidenavRef = useRef(null)
-  const backgroundRef = useRef(null)
+  const aboutRef = useRef(null)
   const contactRef = useRef(null)
   const awardsRef = useRef(null)
   const pressRef = useRef(null)
   const exhibitionsRef = useRef(null)
 
   const sectionRefs = [
-    { section: 'background', ref: backgroundRef },
+    { section: 'about', ref: aboutRef },
     { section: 'contact', ref: contactRef },
     { section: 'awards', ref: awardsRef },
     { section: 'press', ref: pressRef },
@@ -92,13 +93,13 @@ export default function About({ data }) {
               <button
                 type="button"
                 className={`header_link ${
-                  visibleSection === 'background' ? 'selected' : ''
+                  visibleSection === 'about' ? 'selected' : ''
                 }`}
                 onClick={() => {
-                  scrollTo(backgroundRef.current)
+                  scrollTo(aboutRef.current)
                 }}
               >
-                Background
+                About
               </button>
               <button
                 type="button"
@@ -147,8 +148,8 @@ export default function About({ data }) {
             </div>
           </div>
 
-          <div className="section" id="background" ref={backgroundRef}>
-            <Background />
+          <div className="section" id="about" ref={aboutRef}>
+            <About />
           </div>
           <div className="section" id="contact" ref={contactRef}>
             <Contact />
@@ -160,19 +161,22 @@ export default function About({ data }) {
             <div className="boxPress">
               <div className="pageWrapper">
                 <div className="projectList">
-                  {articles.map(({ url, id, description, year }, index) => (
-                    <div key={id}>
-                      <a className="linkArticle" href={url} target="_blank">
-                        <Item
-                          href={url}
-                          description={description}
-                          year={year}
-                          index={index}
-                          articles={articles}
-                        />
-                      </a>
-                    </div>
-                  ))}
+                  {articles.map(
+                    ({ url, id, description, year, description2 }, index) => (
+                      <div key={id}>
+                        <a className="linkArticle" href={url} target="_blank">
+                          <Item
+                            href={url}
+                            description={description}
+                            description2={description2}
+                            year={year}
+                            index={index}
+                            articles={articles}
+                          />
+                        </a>
+                      </div>
+                    )
+                  )}
                 </div>
               </div>
             </div>
@@ -184,7 +188,12 @@ export default function About({ data }) {
         <div className="bottomSpacer" />
       </div>
 
+      <Footer />
+
       <style jsx>{`
+        .pageWrapper {
+          padding-top: 60px;
+        }
         .wrapper {
           height: 100%;
           width: 100%;
@@ -205,7 +214,7 @@ export default function About({ data }) {
         }
 
         .bottomSpacer {
-          height: 50vh;
+          height: 30vh;
         }
 
         .sticky {
@@ -253,7 +262,7 @@ export default function About({ data }) {
           color: white;
         }
 
-        #background {
+        #about {
           margin-top: -180px;
         }
 
@@ -285,7 +294,7 @@ export default function About({ data }) {
             width: 100%;
           }
 
-          #background {
+          #about {
             display: none;
             font-size: 16;
           }
@@ -313,7 +322,7 @@ export default function About({ data }) {
           .wrapper {
             padding: 0px 20px 0px 20px;
           }
-          #background {
+          #about {
             margin-top: 0px;
           }
           .section {

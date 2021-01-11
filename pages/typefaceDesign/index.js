@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import Footer from 'components/Footer'
 
 export default function TypefaceDesign({ data }) {
   const projectsFilter = data
@@ -52,6 +53,8 @@ export default function TypefaceDesign({ data }) {
             ))}
           </Masonry>
         </ResponsiveMasonry>
+
+        <Footer />
 
         <style jsx>{`
           .mainWrapper {

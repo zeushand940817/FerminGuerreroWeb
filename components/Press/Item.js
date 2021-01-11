@@ -10,12 +10,21 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
   },
   content: {
-    marginTop: 50,
-    marginBottom: 20,
+    height: 'auto',
+  },
+  descriptiontwo: {
+    marginBottom: 35,
   },
 }))
 
-export default function ({ url, description, year, index, articles }) {
+export default function ({
+  url,
+  description,
+  year,
+  index,
+  articles,
+  description2,
+}) {
   const classes = useStyles()
   const [activeIndex, setActiveIndex] = useState(-1)
 
@@ -32,10 +41,13 @@ export default function ({ url, description, year, index, articles }) {
             <Grid item lg={2} />
             <Grid item lg={2} />
             <Grid item xs={3} lg={1}>
-              <Box className={classes.content}>{year}</Box>
+              <Box className={classes.box}>{year}</Box>
             </Grid>
             <Grid item xs={6} lg={4}>
-              <Box className={classes.content}>{description}</Box>
+              <Box className={classes.content}>
+                <u>{description}</u>
+              </Box>
+              <Box className={classes.descriptiontwo}>{description2}</Box>
             </Grid>
             <Grid item xs={1} lg={1}>
               <Media image={articles[activeIndex]?.image} />

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import Footer from 'components/Footer'
 
 export default function All({ data }) {
   const projects = data.sort(function (a, b) {
@@ -47,6 +48,8 @@ export default function All({ data }) {
           ))}
         </Masonry>
       </ResponsiveMasonry>
+
+      <Footer />
 
       <style jsx>{`
         .wrapperAll {

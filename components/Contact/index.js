@@ -8,7 +8,6 @@ import Time from '@components/Time'
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
-    marginTop: 50,
     color: 'white',
     ['@media (max-width: 677px)']: {
       fontSize: 18,
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   box: {
     marginTop: 50,
-    marginBottom: 20,
+    marginBottom: 10,
     ['@media (max-width: 677px)']: {
       fontSize: 18,
       marginTop: 10,
@@ -37,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     textDecoration: 'none',
     color: 'white',
+    borderBottom: '1px solid white',
     ['@media (max-width: 677px)']: {
       fontSize: 18,
     },
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontSize: 20,
     color: 'white',
-    marginBottom: 10,
+    marginBottom: 20,
     ['@media (max-width: 677px)']: {
       fontSize: 18,
       marginBottom: 5,
@@ -72,7 +72,7 @@ export default function Contact() {
           <Grid item lg={2} sm={false} />
           <Grid item lg={2} sm={1} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.box}> Email </Box>
+            <Box className={classes.box}>Email</Box>
           </Grid>
           <Grid item xs={9} lg={2} sm={3}>
             <Box className={classes.box}>
@@ -91,7 +91,7 @@ export default function Contact() {
           <Grid item lg={2} />
           <Grid item xs={3} lg={1} sm={3} />
           <Grid item xs={9} lg={2} sm={1}>
-            <Box className={classes.text}> Dubai, UAE.</Box>
+            <Box>Dubai, UAE.</Box>
           </Grid>
         </Grid>
       </Grid>

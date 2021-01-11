@@ -1,6 +1,4 @@
-// import { IoCode } from 'react-icons/Io'
-
-export default function Footer() {
+export default function FooterHome() {
   return (
     <>
       <footer>
@@ -45,6 +43,7 @@ export default function Footer() {
           padding: 3px 20px 5px 20px;
           mix-blend-mode: difference;
           background: none;
+          position: fixed;
           bottom: 0;
           z-index: 1;
           font-size: 20px;
@@ -61,17 +60,16 @@ export default function Footer() {
         }
         div:nth-child(2) {
           grid-column: 5/10;
-
           color: #666666;
         }
         div:nth-child(3) {
-          grid-column: 10;
-        }
-        div:nth-child(4) {
           grid-column: 11;
         }
-        div:nth-child(5) {
+        div:nth-child(4) {
           grid-column: 12;
+        }
+        div:nth-child(5) {
+          grid-column: 13;
         }
 
         a {

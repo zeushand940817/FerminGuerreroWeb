@@ -6,23 +6,28 @@ const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
     color: 'white',
-    marginTop: 50,
+    marginTop: 60,
     marginBottom: 50,
   },
   text: {
-    marginBottom: 20,
-    marginTop: 20,
+    marginBottom: 10,
+    marginTop: 10,
   },
-  prize: {
-    marginBottom: 20,
-    marginTop: 20,
+  textSectionLast: {
+    marginBottom: 0,
+    marginTop: 10,
   },
-  box: {
+
+  firstBox: {
+    marginTop: 50,
+    marginBottom: 35,
+  },
+  secondBox: {
     marginTop: 50,
   },
 }))
 
-export default function Awards({ data }) {
+export default function Awards() {
   const classes = useStyles()
 
   return (
@@ -32,17 +37,17 @@ export default function Awards({ data }) {
           <Grid item xs={false} lg={2} sm={false} />
           <Grid item lg={2} sm={false} xs={false} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.box}>2019</Box>
+            <Box className={classes.firstBox}>2019</Box>
           </Grid>
           <Grid item xs={6} lg={4} sm={false}>
-            <Box className={classes.box}>
+            <Box className={classes.firstBox}>
               LAD - Latin Design Awards. Typeface design category. Project:
               Thesaurus.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.box}>Gold</Box>
+            <Box className={classes.firstBox}>Gold</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -62,7 +67,7 @@ export default function Awards({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Gold</Box>
+            <Box className={classes.text}>Gold</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -80,7 +85,7 @@ export default function Awards({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Gold</Box>
+            <Box className={classes.text}>Gold</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -92,33 +97,30 @@ export default function Awards({ data }) {
           <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={4}>
             <Box className={classes.text}>
-              Type 4 : Typeface Design Competition by Graphis magazine. Project:
-              Thesaurus
+              Type 4: Typeface Design Competition by Graphis magazine. Project:
+              Thesaurus.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Gold</Box>
+            <Box className={classes.text}>Gold</Box>
           </Grid>
         </Grid>
       </Grid>
-
       <Grid item xs={12} container>
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
-          <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2018</Box>
-          </Grid>
+          <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
+            <Box className={classes.textSectionLast}>
               Latin-American typedesign biennial (Tipos Latinos). Superfamily
               category Project: Thesaurus.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>
+            <Box className={classes.textSectionLast}>
               Mention of Exellence (First Prize).
             </Box>
           </Grid>
@@ -130,17 +132,17 @@ export default function Awards({ data }) {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2015</Box>
+            <Box className={classes.secondBox}>2015</Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
+            <Box className={classes.secondBox}>
               Trnava Poster Triennial International competition. Project: New
               Year, New Fight.
             </Box>
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.prize}>Honorary mention.</Box>
+            <Box className={classes.secondBox}>Honorary mention.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -150,10 +152,10 @@ export default function Awards({ data }) {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2014</Box>
+            <Box className={classes.secondBox}>2014</Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
+            <Box className={classes.secondBox}>
               Rolex's Foundation (Hans Wilsdorf) awarded me their schoolarship
               for my BA graduate project.
             </Box>
@@ -168,10 +170,10 @@ export default function Awards({ data }) {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
           <Grid item xs={3} lg={1}>
-            <Box className={classes.text}>2014</Box>
+            <Box className={classes.secondBox}>2014</Box>
           </Grid>
           <Grid item xs={6} lg={4}>
-            <Box className={classes.text}>
+            <Box className={classes.secondBox}>
               BEA fondation award for young artists.
             </Box>
           </Grid>

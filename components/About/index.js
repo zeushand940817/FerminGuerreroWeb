@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
   },
   box: {
-    marginTop: 50,
+    marginTop: 60,
     ['@media (max-width: 677px)']: {
       fontSize: 20,
       lineHeight: 1.2,
@@ -18,13 +18,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function Background() {
+export default function About() {
   const classes = useStyles()
 
   return (
     <section className={classes.wrapper}>
       <Grid container direction="column">
-        <Grid item id="background" lg={12} container>
+        <Grid item id="about" lg={12} container>
           <Grid item lg={2} sm={false} />
           <Grid item lg={2} sm={1} />
           <Grid item lg={7} sm={12}>
