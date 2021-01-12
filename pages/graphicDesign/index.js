@@ -1,4 +1,3 @@
-import projects from 'database/projects'
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'

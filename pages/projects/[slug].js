@@ -6,7 +6,6 @@ import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import Link from 'next/link'
 import Footer from 'components/Footer'
-import GoBack from 'components/GoBack'
 
 const useStyles = makeStyles({
   root: {
@@ -31,7 +30,6 @@ const Projects = ({ data }) => {
   return (
     <>
       <div className="container">
-        <GoBack />
         <Grid container>
           {data.horizontal && <img className="mainImage" src={data.image} />}
           {!data.horizontal && <img className="mainImage" src={data.img1} />}
@@ -50,17 +48,20 @@ const Projects = ({ data }) => {
             <Grid item xs={12} sm={12} lg={4}>
               <div className="yearandtags">
                 <p>{data.year}</p>
+
                 {data.tags && (
-                  <p>
-                    Tags:{' '}
-                    {data.tags.map((tag) => (
+                  <p className="tagName">
+                    {data.tags.map((tag, index) => (
                       <Link
                         key={data.id}
-                        href={`/projects/[tag]`}
-                        as={`/projects/${data.tags[0]}`}
-                        className="tagStyle"
+                        href={`/tag/[tag]`}
+                        as={`/tag/${tag}`}
                       >
-                        <u>{tag}</u>
+                        <a>
+                          <span>
+                            <u>{(index ? ' , ' : '') + tag}</u>
+                          </span>
+                        </a>
                       </Link>
                     ))}
                   </p>
@@ -68,7 +69,14 @@ const Projects = ({ data }) => {
               </div>
             </Grid>
             <Grid item xs={12} sm={12} lg={6}>
-              <div className="description">{data.attributes.description}</div>
+              <div className="description">
+                {data.attributes.description}{' '}
+                {data.attributes.urlDescription && (
+                  <a href={data.attributes.urlDescription} target="_blank">
+                    <u>here.</u>
+                  </a>
+                )}
+              </div>
             </Grid>
           </div>
         </Grid>
@@ -182,6 +190,12 @@ const Projects = ({ data }) => {
           cursor: pointer;
           outline: none;
         }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
         /* Media Queries */
 
         @media screen and (max-width: 667px) {
@@ -215,6 +229,7 @@ const Projects = ({ data }) => {
             object-position: center;
           }
         }
+
         @media screen and (max-width: 1024px) {
           .gridContainer {
             width: 100%;
