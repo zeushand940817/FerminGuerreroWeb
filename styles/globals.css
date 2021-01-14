@@ -33,15 +33,6 @@ a {
   box-sizing: border-box;
 }
 
-/* .footermove:hover {
-  animation: move-left 2s linear infinite;
-}
-@keyframes move-left {
-  to {
-    transform: translateX(-100%);
-  }
-} */
-
 ol,
 ul {
   list-style: none;

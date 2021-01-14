@@ -59,7 +59,7 @@ export default function TypefaceDesign({ data }) {
         <style jsx>{`
           .mainWrapper {
             width: 100%;
-            padding: 40px 0px 0px 0px;
+            padding: 40px 20px 0px 20px;
           }
           .imagen {
             padding-left: 10px;

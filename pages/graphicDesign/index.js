@@ -40,12 +40,6 @@ export default function GraphicDesign({ data }) {
                         <source src={extractVideo} type="video/mp4" />
                       </video>
                     ) : (
-                      // <LazyLoadImage
-                      //   style={{ width: '100%', height: 'auto' }}
-                      //   className="imagen"
-                      //   alt={projectFilter.name}
-                      //   src={projectFilter.image}
-                      // />
                       <img
                         className="imagen"
                         alt={projectFilter.name}
@@ -66,7 +60,7 @@ export default function GraphicDesign({ data }) {
         <style jsx>{`
           .mainWrapper {
             width: 100%;
-            padding: 40px 0px 0px 0px;
+            padding: 40px 20px 0px 20px;
           }
           .imagen {
             padding-left: 10px;

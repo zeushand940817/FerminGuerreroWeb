@@ -48,24 +48,37 @@ const Projects = ({ data }) => {
             <Grid item xs={12} sm={12} lg={4}>
               <div className="yearandtags">
                 <p>{data.year}</p>
-
-                {data.tags && (
-                  <p className="tagName">
-                    {data.tags.map((tag, index) => (
-                      <Link
-                        key={data.id}
-                        href={`/tag/[tag]`}
-                        as={`/tag/${tag}`}
-                      >
-                        <a>
-                          <span>
-                            <u>{(index ? ' , ' : '') + tag}</u>
-                          </span>
-                        </a>
-                      </Link>
+                <p className="tagName">
+                  {data.tags &&
+                    data.tags.map((tag) => (
+                      <span>
+                        {tag == 'Visual-Identity' && (
+                          <Link href="/tags/VisualIdentity">{tag}</Link>
+                        )}
+                        {tag == 'Editorial' && (
+                          <Link href="/tags/Editorial">{tag}</Link>
+                        )}
+                        {tag == 'Photography' && (
+                          <Link href="/tags/Photography">{tag}</Link>
+                        )}
+                        {tag == 'Animation' && (
+                          <Link href="/tags/Animation">{tag}</Link>
+                        )}
+                        {tag == 'Cover-Design' && (
+                          <Link href="/tags/CoverDesign">{tag}</Link>
+                        )}
+                        {tag == 'Illustration' && (
+                          <Link href="/tags/Illustration">{tag}</Link>
+                        )}
+                        {tag == 'Packaging' && (
+                          <Link href="/tags/Packaging">{tag}</Link>
+                        )}
+                        {tag == 'Poster' && (
+                          <Link href="/tags/Poster">{tag}</Link>
+                        )}
+                      </span>
                     ))}
-                  </p>
-                )}
+                </p>
               </div>
             </Grid>
             <Grid item xs={12} sm={12} lg={6}>
@@ -125,7 +138,7 @@ const Projects = ({ data }) => {
           width: 100%;
           height: 100%;
           font-size: 20px;
-          padding: 20px 20px 0px 20px;
+          padding: 40px 20px 0px;
           margin-bottom: 30px;
           color: white;
         }
@@ -274,7 +287,7 @@ export async function getStaticPaths() {
   const paths = data.map((element) => ({
     params: { slug: element.slug },
   }))
-  return { paths, fallback: false }
+  return { paths, fallback: true }
 }
 
 export async function getStaticProps({ params }) {
