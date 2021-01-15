@@ -6,14 +6,12 @@ export default function Animation({ data }) {
     .sort(function (a, b) {
       return parseInt(b.year) - parseInt(a.year)
     })
-    .map(({ tags, image, name, horizontal, mp4, mp4Video, img1 }) => ({
+    .map(({ tags, image, mp4Video, mp4, img1 }) => ({
       tags,
       image,
-      img1,
-      name,
-      horizontal,
-      mp4,
       mp4Video,
+      mp4,
+      img1,
     }))
 
   const animation = getAllTags.filter(
@@ -22,17 +20,12 @@ export default function Animation({ data }) {
 
   return (
     <>
-      <div className="animationMainWrapper">
+      <div className="animationWrapper">
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry columnsCount={3} gutter={4}>
+          <Masonry columnsCount={2} gutter={3}>
             {animation.map((elem) => (
               <div>
-                {elem.horizontal == true ? (
-                  <img src={elem.image} />
-                ) : (
-                  <img src={elem.img1} />
-                )}
-
+                <img className="mainImage" src={elem.image} />
                 {elem.mp4 && (
                   <video autoPlay muted loop width="100%" height="auto">
                     <source src={elem.mp4Video} type="video/mp4" />
@@ -45,9 +38,9 @@ export default function Animation({ data }) {
       </div>
 
       <style jsx>{`
-        .animationMainWrapper {
+        .animationWrapper {
           width: 100%;
-          padding: 40px 0px 0px 0px;
+          padding: 40px 10px 0px 10px;
         }
         img {
           padding-left: 10px;
@@ -56,10 +49,53 @@ export default function Animation({ data }) {
           height: 100%;
         }
         video {
+          margin-top: -23px;
           padding-left: 10px;
           padding-bottom: 4px;
           width: 100%;
           height: 100%;
+        }
+        
+        /* media queries */
+        @media only screen and (min-width:375px) and (max-width:677px) and (orientation:portrait){
+          .visualIdentityWrapper {
+            width: 100%;
+            padding: 10px 0px 0px 0px;
+          }
+          img {
+            padding: 0px 0px 0px 0px;
+            width: 100%;
+            height: 100%;
+          }
+          video {
+            padding: 0px 0px 0px 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        @media screen and (max-width: 1024px) {
+          .visualIdentityWrapper {
+            width: 100%;
+            padding: 10px 10px 10px 10px;
+          }
+          img {
+            padding-left: 5px;
+            padding-bottom: 0px;
+            padding-top:0px;
+            padding-right:0px;
+            width: 100%;
+            height: 100%;
+          }
+          video {
+            padding-left: 5px;
+            padding-bottom: 0px;
+            padding-top:0px;
+            padding-right:0px;
+            width: 100%;
+            height: 100%;
+          }
+        }
         }
       `}</style>
     </>

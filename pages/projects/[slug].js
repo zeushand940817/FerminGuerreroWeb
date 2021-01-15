@@ -26,13 +26,14 @@ function srcset(image, size, rows = 1, cols = 1) {
 const Projects = ({ data }) => {
   const sources = data.sources
   const classes = useStyles()
+  const tags = data.tags
 
   return (
     <>
       <div className="container">
         <Grid container>
           {data.horizontal && <img className="mainImage" src={data.image} />}
-          {!data.horizontal && <img className="mainImage" src={data.img1} />}
+          {/* {!data.horizontal && <img className="mainImage" src={data.img1} />} */}
           {data.mp4 && (
             <video autoPlay muted loop width="100%" height="auto">
               <source src={data.mp41} type="video/mp4" />
@@ -49,32 +50,74 @@ const Projects = ({ data }) => {
               <div className="yearandtags">
                 <p>{data.year}</p>
                 <p className="tagName">
-                  {data.tags &&
-                    data.tags.map((tag) => (
+                  {tags &&
+                    tags.map((tag) => (
                       <span>
-                        {tag == 'Visual-Identity' && (
-                          <Link href="/tags/VisualIdentity">{tag}</Link>
+                        {tag > 0 ? tag + ' , ' : ' '}
+                        {tag == 'Visual Identity' && (
+                          <Link
+                            href="/tags/VisualIdentity"
+                            as="/tags/visual-identity"
+                          >
+                            <a>
+                              <u>{tag}</u>
+                            </a>
+                          </Link>
                         )}
                         {tag == 'Editorial' && (
-                          <Link href="/tags/Editorial">{tag}</Link>
+                          <Link href="/tags/Editorial" as="/tags/editorial">
+                            <a>
+                              <u>{tag}</u>
+                            </a>
+                          </Link>
                         )}
                         {tag == 'Photography' && (
-                          <Link href="/tags/Photography">{tag}</Link>
+                          <Link href="/tags/Photography" as="/tags/photography">
+                            <a>
+                              <u>{tag}</u>
+                            </a>
+                          </Link>
                         )}
                         {tag == 'Animation' && (
-                          <Link href="/tags/Animation">{tag}</Link>
+                          <Link href="/tags/Animation" as="/tags/animation">
+                            <a>
+                              <u>{tag}</u>
+                            </a>
+                          </Link>
                         )}
-                        {tag == 'Cover-Design' && (
-                          <Link href="/tags/CoverDesign">{tag}</Link>
+                        {tag == 'Cover Design' && (
+                          <Link
+                            href="/tags/CoverDesign"
+                            as="/tags/cover-design"
+                          >
+                            <a>
+                              <u>{tag}</u>
+                            </a>
+                          </Link>
                         )}
                         {tag == 'Illustration' && (
-                          <Link href="/tags/Illustration">{tag}</Link>
+                          <Link
+                            href="/tags/Illustration"
+                            as="/tags/illustration"
+                          >
+                            <a>
+                              <u>{tag}</u>
+                            </a>
+                          </Link>
                         )}
                         {tag == 'Packaging' && (
-                          <Link href="/tags/Packaging">{tag}</Link>
+                          <Link href="/tags/Packaging" as="/tags/packaging">
+                            <a>
+                              <u>{tag}</u>
+                            </a>
+                          </Link>
                         )}
                         {tag == 'Poster' && (
-                          <Link href="/tags/Poster">{tag}</Link>
+                          <Link href="/tags/Poster" as="/tags/poster">
+                            <a>
+                              <u>{tag}</u>
+                            </a>
+                          </Link>
                         )}
                       </span>
                     ))}
