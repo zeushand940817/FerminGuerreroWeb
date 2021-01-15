@@ -1,18 +1,28 @@
 import fetch from 'isomorphic-unfetch'
 import { useState } from 'react'
 import FooterHome from 'components/FooterHome'
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
 
 const Home = ({ data }) => {
   const imagenes = data
   const [imageNumber, setImageNumber] = useState(0)
 
   function handleMouseMove() {
-    setImageNumber(Math.floor(Math.random() * 12))
+    setImageNumber(Math.floor(Math.random() * 24))
   }
 
-  const fadeProperties = {
-    duration: 3000,
-    canSwipe: false,
+  const responsive = {
+    tablet: {
+      breakpoint: { max: 1024, min: 677 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 677, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
   }
 
   return (
@@ -23,18 +33,18 @@ const Home = ({ data }) => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             position: 'absolute',
-            width: '100%',
-            height: '100%',
+            width: '100vw',
+            height: '100vh',
             top: '0',
           }}
-          src={imagenes[2].image}
+          src={imagenes[3].image}
         />
         <div
           className="box"
           style={{
             top: '0',
-            width: '100%',
-            height: '100%',
+            width: '100vw',
+            height: '100vh',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             position: 'relative',
@@ -45,11 +55,31 @@ const Home = ({ data }) => {
         ></div>
       </div>
       <div className="homeMobile">
-        <div className="containerMobile">
-          {imagenes.map((image) => (
-            <img src={image.image} />
-          ))}
-        </div>
+        <Carousel
+          responsive={responsive}
+          ssr={true}
+          infinite={true}
+          autoPlaySpeed={3000}
+          swipeable={true}
+          customTransition="transform 300ms ease-in-out"
+          draggable={false}
+          autoPlay
+          arrows={false}
+          showDots={true}
+        >
+          <img className="imageMobileSlider" src={imagenes[24].image} />
+          <img className="imageMobileSlider" src={imagenes[25].image} />
+          <img className="imageMobileSlider" src={imagenes[26].image} />
+          <img className="imageMobileSlider" src={imagenes[27].image} />
+          <img className="imageMobileSlider" src={imagenes[28].image} />
+          <img className="imageMobileSlider" src={imagenes[29].image} />
+          <img className="imageMobileSlider" src={imagenes[30].image} />
+          <img className="imageMobileSlider" src={imagenes[31].image} />
+          <img className="imageMobileSlider" src={imagenes[32].image} />
+          <img className="imageMobileSlider" src={imagenes[33].image} />
+          <img className="imageMobileSlider" src={imagenes[34].image} />
+          <img className="imageMobileSlider" src={imagenes[35].image} />
+        </Carousel>
       </div>
       <FooterHome />
 
@@ -65,6 +95,10 @@ const Home = ({ data }) => {
         .mobileOnly {
           display: none;
         }
+
+        .box {
+          height: 100%;
+        }
         @media screen and (max-width: 667px) {
           .wrapper {
             display: none;
@@ -73,23 +107,29 @@ const Home = ({ data }) => {
           .homeMobile {
             display: block;
           }
-          .containerMobile {
-            height: 100%;
-            height: 677px;
-            border: 1px solid tomato;
-          }
-          img {
-            width: 300px;
-            height: 677px;
-          }
-          .box {
-            width: 100%;
-          }
+
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: top bottom;
+            object-position: center;
+          }
+
+          .imageMobileSlider {
+            height: 100vh;
+            top: 0;
+          }
+        }
+
+        @media screen and (max-width: 1024px) {
+          .wrapper {
+            height: 100vh;
+            width: 100vw;
+          }
+
+          .homeMobile {
+            display: block;
+            margin-top: -25px;
           }
         }
       `}</style>

@@ -84,12 +84,15 @@ export default function FooterHome() {
 
         @media screen and (max-width: 667px) {
           footer {
-            position: fixed;
+            /* position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
+            height: auto;
             color: white;
-            font-size: 16px;
+            font-size: 16px; */
+
+            display: none;
           }
         }
       `}</style>

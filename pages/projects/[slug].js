@@ -33,7 +33,7 @@ const Projects = ({ data }) => {
       <div className="container">
         <Grid container>
           {data.horizontal && <img className="mainImage" src={data.image} />}
-          {/* {!data.horizontal && <img className="mainImage" src={data.img1} />} */}
+          {!data.horizontal && <img className="mainImage" src={data.img1} />}
           {data.mp4 && (
             <video autoPlay muted loop width="100%" height="auto">
               <source src={data.mp41} type="video/mp4" />

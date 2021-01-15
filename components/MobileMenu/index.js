@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Spin as Hamburger } from 'hamburger-react'
-import { motion } from 'framer-motion'
 
 export default function MobileMenu() {
   const [isOpen, setOpen] = useState(false)
@@ -14,13 +13,20 @@ export default function MobileMenu() {
     <>
       <section>
         <div className="burgerMainContainer" onClick={handleClick}>
-          <div className="iconBurgerMenu">
+          <div
+            className={
+              isOpen !== true ? 'iconBurgerMenuClose' : 'iconBurgerMenuOpen'
+            }
+            onClick={handleClick}
+          >
             <li>
               <Link href="/" as="/" onClick={() => this.handleClick()}>
-                <a>Fermin Guerrero</a>
+                <a className="home">Fermin Guerrero</a>
               </Link>
             </li>
-            <Hamburger toggled={isOpen} toggle={setOpen} />
+            <div className="burger">
+              <Hamburger toggled={isOpen} toggle={setOpen} />
+            </div>
           </div>
 
           <ul
@@ -78,11 +84,11 @@ export default function MobileMenu() {
           top: 0;
           width: 100%;
           color: white;
-          position: absolute;
           z-index: 1;
-          background: black;
+          height: 30px;
         }
         .burgerMainContainer {
+          background: black;
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
@@ -90,8 +96,8 @@ export default function MobileMenu() {
           padding: 0;
           position: relative;
         }
-        .iconBurgerMenu {
-          background-color: black;
+
+        .iconBurgerMenuClose {
           position: fixed;
           list-style: none;
           text-decoration: none;
@@ -100,9 +106,27 @@ export default function MobileMenu() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding-left: 10px;
           padding-right: 10px;
           width: 100%;
+        }
+        .iconBurgerMenuOpen {
+          position: fixed;
+          list-style: none;
+          text-decoration: none;
+          font-size: 20px;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: 10px;
+          width: 100%;
+          background-color: black;
+        }
+        .home {
+          width: 100%;
+        }
+        .burger {
+          width: 10%;
         }
         .linksBurgerMenuContainer {
           position: fixed;
@@ -113,7 +137,7 @@ export default function MobileMenu() {
           padding-left: 10px;
           padding-top: 50px;
           top: 25px;
-          z-index: 1000px;
+          z-index: 2;
           justify-content: left;
           font-size: 18px;
           line-height: 30px;
@@ -129,7 +153,7 @@ export default function MobileMenu() {
           padding: 10px;
         }
         .linksBurgerMenuContainerInactive {
-          z-index: 1000px;
+          z-index: 2;
           position: absolute;
           left: -1000px;
           width: 100%;

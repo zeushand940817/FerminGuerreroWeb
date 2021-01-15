@@ -8,7 +8,7 @@ const projects = [
     tags: ['Poster'],
     horizontal: false,
     mp4: false,
-    image: '/CartaBlanche/4.JPG',
+    image: '/CoverPhotos/Galleries/CarteBlancheV.jpg',
     img1: '/CartaBlanche/1.jpg',
     sources: [
       {
@@ -109,7 +109,6 @@ const projects = [
     tags: ['Poster', 'Visual Identity', 'Packaging'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/DinMachine.jpg',
     image: '/CoverPhotos/Galleries/DinMachine.jpg',
     sources: [
       {
@@ -267,7 +266,6 @@ const projects = [
     tags: ['Editorial'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/Exentra.jpg',
     image: '/CoverPhotos/Galleries/ExentraV.jpg',
     img1: '/Exentra/1.jpg',
     sources: [
@@ -468,7 +466,6 @@ const projects = [
 
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/FeriaDelLibro.jpg',
     image: '/CoverPhotos/Galleries/FeriaDelLibro.jpg',
     img1: '/FeriaDelLibro/1.jpg',
     sources: [
@@ -500,7 +497,6 @@ const projects = [
     tags: ['Visual Identity', 'Illustration'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/FGC.jpg',
     image: '/FGC/7.gif',
     img1: '/FGC/FGC.jpg',
     sources: [
@@ -706,7 +702,6 @@ const projects = [
     tags: null,
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/FlagOfPeace.jpg',
     image: '/CoverPhotos/Galleries/FlagOfPeace.jpg',
     sources: [
       {
@@ -791,8 +786,7 @@ const projects = [
     tags: ['Visual Identity', 'Animation', 'Packaging'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/GenevaMotorShow.jpg',
-    image: '/GenevaMotorShow/19.jpg',
+    image: '/CoverPhotos/Galleries/GenevaMotorShow.jpg',
     sources: [
       {
         type: 'img',
@@ -959,8 +953,7 @@ const projects = [
     tags: ['Editorial', 'Poster'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/GeneveTypeface.jpg',
-    image: '/GeneveTypeface/36.jpg',
+    image: '/CoverPhotos/Galleries/GeneveTypeface.jpg',
     sources: [
       {
         type: 'img',
@@ -1283,7 +1276,7 @@ const projects = [
     tags: ['Poster'],
     horizontal: false,
     mp4: false,
-    image: '/GoesAround/1.jpg',
+    image: '/CoverPhotos/Galleries/GoesArround.jpg',
     img1: '/GoesAround/5.jpg',
     sources: [
       {
@@ -1319,7 +1312,6 @@ const projects = [
     tags: ['Animation', 'Poster'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/ItsUpToYou.jpg',
     image: '/ItsUpToYou/5.JPG',
     sources: [
       {
@@ -1421,7 +1413,6 @@ const projects = [
     tags: ['Poster'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/JoieDeLire.jpg',
     image: '/CoverPhotos/Galleries/JoieDeLire.jpg',
     sources: [
       {
@@ -1624,7 +1615,6 @@ const projects = [
     tags: ['Poster'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/MakeAWish.jpg',
     image: '/CoverPhotos/Galleries/MakeAwish.jpg',
     img1: '/MakeAWhish/1.jpg',
     sources: [
@@ -1655,7 +1645,7 @@ const projects = [
     tags: ['Poster'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/Manifesta.jpg',
+
     image: '/Manifesta/13.gif',
     img1: '/Manifesta/5.jpg',
     sources: [
@@ -1763,7 +1753,6 @@ const projects = [
     tags: ['Poster'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/MiMujer.jpg',
     image: '/CoverPhotos/Galleries/MiMujer.jpg',
     img1: '/MiMujer/1.jpg',
     sources: [
@@ -1800,7 +1789,6 @@ const projects = [
     tags: ['Poster'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/NewYearNewFight.jpg',
     image: '/CoverPhotos/Galleries/NewYearNewFight.jpg',
     img1: '/NewYearNewFight/1.jpg',
     sources: [
@@ -1844,7 +1832,6 @@ const projects = [
     tags: ['Visual Identity', 'Poster'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/Paleo.jpg',
     image: '/CoverPhotos/Galleries/Paleo.jpg',
     img1: '/Paleo/1.jpg',
     sources: [
@@ -2061,7 +2048,6 @@ const projects = [
     tags: ['Photography'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/DameDeLaMer.jpg',
     image: '/CoverPhotos/Galleries/LaDameDeLaMere.jpg',
     sources: [
       {
@@ -2203,7 +2189,6 @@ const projects = [
     tags: ['Visual Identity'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/Thesaurus.jpg',
     image: '/CoverPhotos/Galleries/Thesaurus.jpg',
     sources: [
       {
@@ -2367,7 +2352,6 @@ const projects = [
     tags: ['Illustration', 'Poster'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/TijuanaPanthers.jpg',
     image: '/CoverPhotos/Galleries/TijuanaPanthers.jpg',
     sources: [
       {
@@ -2404,7 +2388,6 @@ const projects = [
     tags: ['Cover Design'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/TimeOut.jpg',
     image: '/CoverPhotos/Galleries/TimeOut.jpg',
     sources: [
       {
@@ -2440,7 +2423,6 @@ const projects = [
     tags: ['Poster'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/Tomorrow.jpg',
     image: '/Tomorrow/1.jpg',
     img1: '/Tomorrow/5.jpg',
     sources: [
@@ -2478,12 +2460,11 @@ const projects = [
     name: 'Typography Heroes',
     slug: 'typography-heroes',
     id: '27',
-    type: 'typeface',
+    type: 'graphic',
     year: '2013',
     tags: ['Poster'],
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/TypographyH.jpg',
     image: '/CoverPhotos/Galleries/TypographicHeroes.jpg',
     sources: [
       {
@@ -2738,7 +2719,6 @@ const projects = [
     tags: ['Poster'],
     horizontal: false,
     mp4: false,
-    landing: '/CoverPhotos/Lading/Weltformat.jpg',
     image: '/CoverPhotos/Galleries/Weltformat.jpg',
     img1: '/Weltformat/5.jpg',
     sources: [
@@ -2781,7 +2761,6 @@ const projects = [
     tags: null,
     horizontal: true,
     mp4: false,
-    landing: '/CoverPhotos/Lading/BrickTypefamily.jpg',
     image: '/CoverPhotos/Galleries/BrickTypefamilyLandscape.jpg',
     sources: [
       {
@@ -3146,7 +3125,6 @@ const projects = [
     tags: ['Visual Identity', 'Poster'],
     horizontal: true,
     mp4: false,
-    landing: '/BeyondTheBox/1.jpg',
     image: '/BeyondTheBox/1.jpg',
     sources: [
       {
