@@ -156,13 +156,13 @@ export default function MobileMenu() {
           width: 100%;
           font-size: 20px;
           mix-blend-mode: difference;
-          padding: 10px;
+          padding: 15px;
         }
         .homeClose {
           width: 100%;
           font-size: 20px;
           background: black;
-          padding: 10px;
+          padding: 15px;
         }
         .burger {
           display: flex;
@@ -175,7 +175,7 @@ export default function MobileMenu() {
           display: flex;
           flex-direction: column;
           list-style: none;
-          top: 45px;
+          top: 43px;
           z-index: 2;
           justify-content: left;
           font-size: 18px;
