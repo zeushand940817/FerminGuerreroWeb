@@ -12,20 +12,25 @@ export default function MobileMenu() {
   return (
     <>
       <section>
+        <Link href="/" as="/">
+          <a className={isOpen !== true ? 'homeOpen' : 'homeClose'}>
+            Fermin Guerrero
+          </a>
+        </Link>
         <div className="burgerMainContainer" onClick={handleClick}>
           <div
+            onClick={handleClick}
             className={
               isOpen !== true ? 'iconBurgerMenuClose' : 'iconBurgerMenuOpen'
             }
-            onClick={handleClick}
           >
-            <li>
-              <Link href="/" as="/" onClick={() => this.handleClick()}>
-                <a className="home">Fermin Guerrero</a>
-              </Link>
-            </li>
             <div className="burger">
-              <Hamburger toggled={isOpen} toggle={setOpen} size={22} />
+              <Hamburger
+                toggled={isOpen}
+                toggle={setOpen}
+                size={22}
+                onClick={handleClick}
+              />
             </div>
           </div>
 
@@ -117,14 +122,12 @@ export default function MobileMenu() {
           width: 100%;
           color: white;
           z-index: 1;
-          height: 30px;
+          display: flex;
         }
         .burgerMainContainer {
-          background: black;
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
-          width: 100%;
           padding: 0;
           position: relative;
         }
@@ -138,11 +141,7 @@ export default function MobileMenu() {
           text-decoration: none;
           font-size: 20px;
           cursor: pointer;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-right: 10px;
-          width: 100%;
+          mix-blend-mode: difference;
         }
         .iconBurgerMenuOpen {
           position: fixed;
@@ -150,22 +149,25 @@ export default function MobileMenu() {
           text-decoration: none;
           font-size: 20px;
           cursor: pointer;
-          display: flex;
-          justify-content: space-between;
           align-items: center;
-          padding-right: 10px;
-          width: 100%;
           background-color: black;
         }
-        .home {
+        .homeOpen {
           width: 100%;
           font-size: 20px;
-          padding-left: 15px;
+          mix-blend-mode: difference;
+          padding: 10px;
+        }
+        .homeClose {
+          width: 100%;
+          font-size: 20px;
+          background: black;
+          padding: 10px;
         }
         .burger {
-          width: 10%;
-          font-size: 20px;
-          padding-right: 45px;
+          display: flex;
+          justify-content: flex-end;
+          padding-left: 10px;
         }
         .linksBurgerMenuContainer {
           position: fixed;
