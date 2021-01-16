@@ -4,6 +4,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from './theme'
 import dynamic from 'next/dynamic'
+import NewMenuu from 'components/NewMenuu'
 
 const DynamicHeader = dynamic(() => import('components/Header'))
 const DynamicMobileMenu = dynamic(() => import('components/MobileMenu'))

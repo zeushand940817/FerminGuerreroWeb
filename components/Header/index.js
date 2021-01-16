@@ -10,12 +10,7 @@ export default function Header(props) {
           </Link>
         </div>
         <div>
-          <Link
-            href="/graphicDesign"
-            as="/graphicDesign"
-            activeClassName="active"
-            passHref
-          >
+          <Link href="/graphicDesign" activeClassName="active" passHref>
             Graphic Design
           </Link>
         </div>
@@ -25,12 +20,7 @@ export default function Header(props) {
           </Link>
         </div>
         <div>
-          <Link
-            href="/typefaceDesign"
-            as="/typefaceDesign"
-            activeClassName="active"
-            passHref
-          >
+          <Link href="/typefaceDesign" activeClassName="active" passHref>
             Typeface Desgin
           </Link>
         </div>

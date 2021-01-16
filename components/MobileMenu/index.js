@@ -12,8 +12,8 @@ export default function MobileMenu() {
   return (
     <>
       <section>
-        <Link href="/" as="/">
-          <a className={isOpen !== true ? 'homeOpen' : 'homeClose'}>
+        <Link href="/">
+          <a className={isOpen !== true ? 'homeClose' : 'homeOpen'}>
             Fermin Guerrero
           </a>
         </Link>
@@ -28,7 +28,7 @@ export default function MobileMenu() {
               <Hamburger
                 toggled={isOpen}
                 toggle={setOpen}
-                size={22}
+                size={21}
                 onClick={handleClick}
               />
             </div>
@@ -43,11 +43,7 @@ export default function MobileMenu() {
           >
             <ul>
               <li>
-                <Link
-                  href="/graphicDesign"
-                  as="/graphic-design"
-                  onClick={() => this.handleClick()}
-                >
+                <Link href="/graphicDesign" onClick={() => this.handleClick()}>
                   <a>Graphic Design</a>
                 </Link>
               </li>
@@ -62,21 +58,13 @@ export default function MobileMenu() {
               </li>
 
               <li>
-                <Link
-                  href="/typefaceDesign"
-                  as="/typeface-design"
-                  onClick={() => this.handleClick()}
-                >
+                <Link href="/typefaceDesign" onClick={() => this.handleClick()}>
                   <a>Typeface Design</a>
                 </Link>
               </li>
 
               <li>
-                <Link
-                  href="/info"
-                  as="/info"
-                  onClick={() => this.handleClick()}
-                >
+                <Link href="/info" onClick={() => this.handleClick()}>
                   <a>Info</a>
                 </Link>
               </li>
@@ -120,7 +108,6 @@ export default function MobileMenu() {
           position: absolute;
           top: 0;
           width: 100%;
-          color: white;
           z-index: 1;
           display: flex;
         }
@@ -137,28 +124,28 @@ export default function MobileMenu() {
 
         .iconBurgerMenuClose {
           position: fixed;
-          list-style: none;
-          text-decoration: none;
-          font-size: 20px;
           cursor: pointer;
-          mix-blend-mode: difference;
+          top: 0;
+          right: 0;
         }
         .iconBurgerMenuOpen {
           position: fixed;
-          list-style: none;
-          text-decoration: none;
           font-size: 20px;
           cursor: pointer;
-          align-items: center;
           background-color: black;
-        }
-        .homeOpen {
-          width: 100%;
-          font-size: 20px;
-          mix-blend-mode: difference;
-          padding: 15px;
+          top: 0;
+          right: 0;
         }
         .homeClose {
+          position: fixed;
+          width: 100%;
+          font-size: 20px;
+          padding: 15px;
+          mix-blend-mode: difference;
+        }
+
+        .homeOpen {
+          position: fixed;
           width: 100%;
           font-size: 20px;
           background: black;
@@ -167,24 +154,29 @@ export default function MobileMenu() {
         .burger {
           display: flex;
           justify-content: flex-end;
-          padding-left: 10px;
+          padding: 8px;
+          padding-right: 2px;
+          padding-top: 5px;
         }
         .linksBurgerMenuContainer {
-          position: fixed;
           width: 100%;
           display: flex;
           flex-direction: column;
           list-style: none;
-          top: 43px;
+          margin-top: 50px;
           z-index: 2;
           justify-content: left;
           font-size: 18px;
           background-color: black;
           color: white;
           padding-left: 15px;
-          height: 50%;
+          height: 50vh;
+          width: 100vw;
           display: flex;
           justify-content: space-between;
+          position: fixed;
+          top: 50;
+          left: 0;
         }
         a {
           display: inline-block;

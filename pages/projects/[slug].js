@@ -65,55 +65,49 @@ const Projects = ({ data }) => {
                           </Link>
                         )}
                         {tag == 'Editorial' && (
-                          <Link href="/tags/Editorial" as="/tags/editorial">
+                          <Link href="/tags/Editorial">
                             <a>
                               <u>{tag}</u>
                             </a>
                           </Link>
                         )}
                         {tag == 'Photography' && (
-                          <Link href="/tags/Photography" as="/tags/photography">
+                          <Link href="/tags/Photography">
                             <a>
                               <u>{tag}</u>
                             </a>
                           </Link>
                         )}
                         {tag == 'Animation' && (
-                          <Link href="/tags/Animation" as="/tags/animation">
+                          <Link href="/tags/Animation">
                             <a>
                               <u>{tag}</u>
                             </a>
                           </Link>
                         )}
                         {tag == 'Cover Design' && (
-                          <Link
-                            href="/tags/CoverDesign"
-                            as="/tags/cover-design"
-                          >
+                          <Link href="/tags/CoverDesign">
                             <a>
                               <u>{tag}</u>
                             </a>
                           </Link>
                         )}
                         {tag == 'Illustration' && (
-                          <Link
-                            href="/tags/Illustration"
-                            as="/tags/illustration"
-                          >
+                          <Link href="/tags/Illustration">
                             <a>
                               <u>{tag}</u>
                             </a>
                           </Link>
                         )}
                         {tag == 'Packaging' && (
-                          <Link href="/tags/Packaging" as="/tags/packaging">
+                          <Link href="/tags/Packaging">
                             <a>
                               <u>{tag}</u>
                             </a>
                           </Link>
                         )}
                         {tag == 'Poster' && (
-                          <Link href="/tags/Poster" as="/tags/poster">
+                          <Link href="/tags/Poster">
                             <a>
                               <u>{tag}</u>
                             </a>
