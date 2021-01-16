@@ -25,56 +25,88 @@ export default function MobileMenu() {
               </Link>
             </li>
             <div className="burger">
-              <Hamburger toggled={isOpen} toggle={setOpen} />
+              <Hamburger toggled={isOpen} toggle={setOpen} size={22} />
             </div>
           </div>
 
-          <ul
+          <div
             className={
               isOpen !== true
                 ? 'linksBurgerMenuContainerInactive'
                 : 'linksBurgerMenuContainer'
             }
           >
-            <li>
-              <Link
-                href="/graphicDesign"
-                as="/graphic-design"
-                onClick={() => this.handleClick()}
-              >
-                <a>Graphic Design</a>
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/all"
-                as="/all-projects"
-                onClick={() => this.handleClick()}
-              >
-                <a>&</a>
-              </Link>
-            </li>
+            <ul>
+              <li>
+                <Link
+                  href="/graphicDesign"
+                  as="/graphic-design"
+                  onClick={() => this.handleClick()}
+                >
+                  <a>Graphic Design</a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/all"
+                  as="/all-projects"
+                  onClick={() => this.handleClick()}
+                >
+                  <a>&</a>
+                </Link>
+              </li>
 
-            <li>
-              <Link
-                href="/typefaceDesign"
-                as="/typeface-design"
-                onClick={() => this.handleClick()}
-              >
-                <a>Typeface Design</a>
-              </Link>
-            </li>
+              <li>
+                <Link
+                  href="/typefaceDesign"
+                  as="/typeface-design"
+                  onClick={() => this.handleClick()}
+                >
+                  <a>Typeface Design</a>
+                </Link>
+              </li>
 
-            <li>
-              <Link
-                href="/about"
-                as="/about"
-                onClick={() => this.handleClick()}
-              >
-                <a>About</a>
-              </Link>
-            </li>
-          </ul>
+              <li>
+                <Link
+                  href="/info"
+                  as="/info"
+                  onClick={() => this.handleClick()}
+                >
+                  <a>Info</a>
+                </Link>
+              </li>
+            </ul>
+
+            <div className="socialMedia">
+              <span>
+                <a
+                  className="social"
+                  href="https://www.instagram.com/ferminguerrero_design/"
+                  target="_blank"
+                >
+                  <u>Instagram</u>
+                </a>
+              </span>
+              <span>
+                <a
+                  className="social"
+                  href="https://twitter.com/fermin_guerrero"
+                  target="_blank"
+                >
+                  <u>Twitter</u>
+                </a>
+              </span>
+              <span>
+                <a
+                  className="social"
+                  href="https://www.linkedin.com/in/fermin-guerrero-616237173/"
+                  target="_blank"
+                >
+                  <u>Linkedin</u>
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -95,6 +127,9 @@ export default function MobileMenu() {
           width: 100%;
           padding: 0;
           position: relative;
+        }
+        ul {
+          padding: 0px;
         }
 
         .iconBurgerMenuClose {
@@ -124,9 +159,13 @@ export default function MobileMenu() {
         }
         .home {
           width: 100%;
+          font-size: 20px;
+          padding-left: 15px;
         }
         .burger {
           width: 10%;
+          font-size: 20px;
+          padding-right: 45px;
         }
         .linksBurgerMenuContainer {
           position: fixed;
@@ -134,29 +173,40 @@ export default function MobileMenu() {
           display: flex;
           flex-direction: column;
           list-style: none;
-          padding-left: 10px;
-          padding-top: 50px;
-          top: 25px;
+          top: 45px;
           z-index: 2;
           justify-content: left;
           font-size: 18px;
-          line-height: 30px;
           background-color: black;
-          height: 677px;
           color: white;
+          padding-left: 15px;
+          height: 50%;
+          display: flex;
+          justify-content: space-between;
         }
         a {
           display: inline-block;
           list-style: none;
           color: white;
-          font-size: 24px;
-          padding: 10px;
+          font-size: 20px;
+        }
+        li {
+          padding-bottom: 5px;
         }
         .linksBurgerMenuContainerInactive {
           z-index: 2;
           position: absolute;
           left: -1000px;
           width: 100%;
+        }
+
+        .socialMedia {
+          padding-bottom: 20px;
+        }
+        .social {
+          color: white;
+          padding-right: 20px;
+          font-size: 18px;
         }
       `}</style>
     </>

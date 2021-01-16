@@ -114,10 +114,14 @@ export default function GraphicDesign({ data }) {
           /* media queries */
           @media screen and (max-width: 667px) {
             .mainWrapper {
-              padding: 10px;
+              width: 100%;
+              padding: 40px 15px 0px 15px;
             }
             .imagen {
-              padding: 0px;
+              padding-right: 0px;
+            }
+            .videoClass {
+              padding-right: 0px;
             }
           }
         `}</style>
