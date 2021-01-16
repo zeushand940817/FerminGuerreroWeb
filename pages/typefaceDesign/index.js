@@ -62,44 +62,55 @@ export default function TypefaceDesign({ data }) {
             padding: 40px 20px 0px 20px;
           }
           .imagen {
-            padding-left: 10px;
-            padding-bottom: 4px;
             width: 100%;
             height: 100%;
+            padding-right: 10px;
+          }
+          .videoClass {
+            width: 100%;
+            height: 100%;
+            padding-right: 10px;
           }
 
           .container {
             position: relative;
           }
-          .middle {
-            padding: 20px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            opacity: 0;
-            text-align: center;
+          .container:hover {
+            opacity: 1;
+            -webkit-animation: flash 1.5s;
+            animation: flash 1.5s;
             font-weight: bold;
-            transition: ease 0.5s all;
           }
-          .container:hover img {
-            opacity: 0.5;
-            filter: grayscale(100%);
+          @-webkit-keyframes flash {
+            0% {
+              opacity: 0.4;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+          @keyframes flash {
+            0% {
+              opacity: 0.4;
+            }
+            100% {
+              opacity: 1;
+            }
           }
 
           .container:hover .videoClass {
-            opacity: 0.5;
-            filter: grayscale(100%);
-          }
-          .container:hover .middle {
             opacity: 1;
+            -webkit-animation: flash 1.5s;
+            animation: flash 1.5s;
           }
+
           .text {
             font-size: 20px;
             color: white;
-            padding: 5px 10px 25px 10px;
+            padding-bottom: 15px;
           }
 
+          /* media queries */
           @media screen and (max-width: 667px) {
             .mainWrapper {
               padding: 10px;

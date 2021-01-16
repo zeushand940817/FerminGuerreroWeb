@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
   box: {
     marginTop: 60,
+    lineHeight: 1.4,
     ['@media (max-width: 677px)']: {
       fontSize: 20,
       lineHeight: 1.2,
@@ -38,23 +39,29 @@ export default function About() {
           <Grid item lg={2} sm={1} />
           <Grid item lg={7} sm={12}>
             <Box component="p" className={classes.box}>
-              Fermin Guerrero's visual communication practice focusing on
-              Graphic and Typeface Design. In 2010, after he finished his
-              bachelor in Industrial Design at Escuela Universitaria Centro de
-              Diseño - Uruguay, Fermin Guerrero moved to Switzerland to study
-              Visual Communication at the Haute École d’Art et de Design (HEAD)
-              - Geneva, where he received his BA with first class honours. He
-              subsequently went on to complete a Masters in Typeface Design at
-              the University of Reading–UK, receiving his MA with Distinction in
-              September 2015. Fermin has worked as an independent designer for
-              more than 13 years, having won several prestigious prizes and
-              commission for reknown international clients. His work has been
-              featured in the most relevant international press. His curiosity,
-              which has led him to move to out of his country in the quest for
-              personal and professional development, keeps him constantly
-              searching for new ways to express his ideas. He is currently based
-              in the UAE, since 2018, where he has been appointed the Senior
-              Graphic Designer.
+              Online platform for Fermin Guerrero's visual communication
+              practice focusing on Graphic Design/Art Direction and Typeface
+              Design. <br />
+              For over 10 years, Fermin has worked for renown international
+              clients on a wide range of projects across different platforms and
+              disciplines. His work has received many prestigious prizes and
+              awards and has been highlighted by the most relevant international
+              design press. From 2015 to 2018, Guerrero taught a variety of
+              Graphic Design and Typography related courses at the School of Art
+              and Design (HEAD), Geneva. His curiosity, which has led him to
+              move out of his country in the quest for personal and professional
+              development, keeps him constantly searching for new ways to
+              express his ideas. He is currently based in the UAE, since 2018,
+              where he has been appointed the Senior Graphic Designer at Sharjah
+              Architecture Triennial.
+              <br /> Fermin was born in Uruguay in 1983. In 2010, after he
+              finished his bachelor in Industrial Design at Escuela
+              Universitaria Centro de Diseño - Uruguay, Fermin moved to
+              Switzerland to study Visual Communication at the Haute École d’Art
+              et de Design (HEAD) - Geneva, where he received his BA with first
+              class honours. He subsequently went on to complete a Masters in
+              Typeface Design at the University of Reading–UK, receiving his MA
+              with Distinction in September 2015.
             </Box>
           </Grid>
           <Grid item lg={2} sm={2} />

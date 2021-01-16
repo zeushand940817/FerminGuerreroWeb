@@ -77,6 +77,7 @@ export default function Header(props) {
           grid-column: 12;
           margin-right: 0;
           text-align: right;
+          padding-right: 10px;
         }
 
         a {

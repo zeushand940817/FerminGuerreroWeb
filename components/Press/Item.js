@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
     color: 'white',
+    lineHeight: 1.4,
   },
   content: {
     height: 'auto',
@@ -17,14 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function ({
-  url,
-  description,
-  year,
-  index,
-  articles,
-  description2,
-}) {
+export default function ({ description, year, index, articles, description2 }) {
   const classes = useStyles()
   const [activeIndex, setActiveIndex] = useState(-1)
 

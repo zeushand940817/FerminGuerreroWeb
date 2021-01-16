@@ -12,7 +12,7 @@ export default function All({ data }) {
   return (
     <div className="wrapperAll">
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-        <Masonry columnsCount={3} gutter={4}>
+        <Masonry columnsCount={3} gutter={3}>
           {projects.map((project, key) => (
             <Link
               key={project.id}
@@ -56,45 +56,54 @@ export default function All({ data }) {
           width: 100%;
           padding: 40px 20px 0px 20px;
         }
+        .imageAll {
+          width: 100%;
+          height: 100%;
+          padding-right: 10px;
+        }
+        .videoClass {
+          width: 100%;
+          height: 100%;
+          padding-right: 10px;
+        }
 
         .containerAll {
           position: relative;
         }
-        .containerAll:hover img {
-          opacity: 0.5;
-          filter: grayscale(100%);
+
+        .containerAll:hover {
+          opacity: 1;
+          -webkit-animation: flash 1.5s;
+          animation: flash 1.5s;
+          font-weight: bold;
+        }
+        @-webkit-keyframes flash {
+          0% {
+            opacity: 0.4;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        @keyframes flash {
+          0% {
+            opacity: 0.4;
+          }
+          100% {
+            opacity: 1;
+          }
         }
 
         .containerAll:hover .videoClass {
-          opacity: 0.5;
-          filter: grayscale(100%);
-        }
-        .containerAll:hover .middleAll {
           opacity: 1;
-        }
-        .imageAll {
-          width: 100%;
-          padding-left: 10px;
-          padding-bottom: 5px;
-          width: 100%;
-          height: 100%;
-        }
-        .middleAll {
-          padding: 20px;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 100%;
-          opacity: 0;
-          text-align: center;
-          font-weight: bold;
-          transition: ease 0.5s all;
+          -webkit-animation: flash 1.5s;
+          animation: flash 1.5s;
         }
 
         .textAll {
           font-size: 20px;
           color: white;
-          padding: 5px 10px 25px 10px;
+          padding-bottom: 15px;
         }
         @media screen and (max-width: 667px) {
           .wrapperAll {

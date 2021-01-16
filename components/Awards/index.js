@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     marginTop: 60,
     marginBottom: 50,
+    lineHeight: 1.4,
   },
   text: {
     marginBottom: 10,
