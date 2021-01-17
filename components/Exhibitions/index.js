@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 60,
     marginBottom: 50,
     lineHeight: 1.4,
+    paddingLeft: '3px',
   },
   text: {
     marginBottom: 35,

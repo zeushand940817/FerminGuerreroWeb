@@ -132,7 +132,7 @@ const Projects = ({ data }) => {
         </Grid>
 
         <ImageList
-          gap={10}
+          gap={13}
           variant="quilted"
           cols={4}
           rowHeight="auto"
@@ -229,7 +229,7 @@ const Projects = ({ data }) => {
         .description {
           margin-top: 1em;
           margin-bottom: 1em;
-          padding-left: 10px;
+          padding-left: 6.5px;
         }
 
         .tagStyle {

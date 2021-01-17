@@ -61,6 +61,7 @@ export default function FooterHome() {
         div:nth-child(2) {
           grid-column: 5/10;
           color: #666666;
+          padding-left: 3px;
         }
         div:nth-child(3) {
           grid-column: 11;

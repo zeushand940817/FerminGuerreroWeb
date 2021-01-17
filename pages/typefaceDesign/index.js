@@ -1,9 +1,25 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import Footer from 'components/Footer'
+import { makeStyles } from '@material-ui/core/styles'
+import ImageList from '@material-ui/core/ImageList'
+import ImageListItem from '@material-ui/core/ImageListItem'
+
+const useStyles = makeStyles({
+  root: {
+    width: '100%',
+    height: '100%',
+  },
+  label: {
+    ['@media (max-width:677px)']: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
+  },
+})
 
 export default function TypefaceDesign({ data }) {
+  const classes = useStyles()
   const projectsFilter = data
     .sort(function (a, b) {
       return parseInt(b.year) - parseInt(a.year)
@@ -13,11 +29,17 @@ export default function TypefaceDesign({ data }) {
 
   const videoMp4 = data.filter((elem) => elem.id === '31')
   const extractVideo = videoMp4[0].mp4Video
+
   return (
     <>
       <div className="mainWrapper">
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry columnsCount={3} gutter={4}>
+        <div className={classes.root}>
+          <ImageList
+            variant="masonry"
+            cols={3}
+            gap={13}
+            className={classes.label}
+          >
             {projectsFilter.map((projectFilter, key) => (
               <Link
                 key={projectFilter.id}
@@ -26,55 +48,51 @@ export default function TypefaceDesign({ data }) {
               >
                 <a>
                   <div className="container">
-                    {projectFilter.id == 31 ? (
-                      <video
-                        autoPlay
-                        muted
-                        loop
-                        width="100%"
-                        height="auto"
-                        className="videoClass"
-                      >
-                        <source src={extractVideo} type="video/mp4" />
-                      </video>
-                    ) : (
-                      <img
-                        className="imagen"
-                        alt={projectFilter.name}
-                        src={projectFilter.image}
-                      />
-                    )}
-                    <div className="middle">
-                      <p className="text">{projectFilter.name}</p>
-                    </div>
+                    <ImageListItem key={projectFilter.id}>
+                      {projectFilter.id == 31 ? (
+                        <video
+                          autoPlay
+                          muted
+                          loop
+                          width="100%"
+                          height="auto"
+                          className="videoClass"
+                        >
+                          <source src={extractVideo} type="video/mp4" />
+                        </video>
+                      ) : (
+                        <img
+                          className="imagen"
+                          alt={projectFilter.name}
+                          src={projectFilter.image}
+                        />
+                      )}
+                      <div className="text">
+                        <p>{projectFilter.name}</p>
+                      </div>
+                    </ImageListItem>
                   </div>
                 </a>
               </Link>
             ))}
-          </Masonry>
-        </ResponsiveMasonry>
+          </ImageList>
+        </div>
 
         <Footer />
-
         <style jsx>{`
           .mainWrapper {
             width: 100%;
-            padding: 40px 20px 0px 20px;
+            padding: 30px 20px 0px;
           }
           .imagen {
             width: 100%;
             height: 100%;
-            padding-right: 10px;
           }
           .videoClass {
             width: 100%;
             height: 100%;
-            padding-right: 10px;
           }
 
-          .container {
-            position: relative;
-          }
           .container:hover {
             opacity: 1;
             -webkit-animation: flash 1.5s;
@@ -107,16 +125,21 @@ export default function TypefaceDesign({ data }) {
           .text {
             font-size: 20px;
             color: white;
-            padding-bottom: 15px;
+            padding-top: 20px;
+            padding-bottom: 25px;
           }
 
           /* media queries */
           @media screen and (max-width: 667px) {
             .mainWrapper {
-              padding: 10px;
+              width: 100%;
+              padding: 40px 15px 0px 15px;
             }
             .imagen {
-              padding: 0px;
+              padding-right: 0px;
+            }
+            .videoClass {
+              padding-right: 0px;
             }
           }
         `}</style>

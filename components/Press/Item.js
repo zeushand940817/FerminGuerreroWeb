@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     color: 'white',
     lineHeight: 1.4,
+    paddingLeft: '3px',
   },
   content: {
     height: 'auto',

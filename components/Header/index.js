@@ -56,18 +56,20 @@ export default function Header(props) {
         }
         div:nth-child(2) {
           grid-column: 5/7;
+          padding-left: 3px;
         }
         div:nth-child(3) {
           grid-column: 7;
+          padding-left: 6.5px;
         }
         div:nth-child(4) {
           grid-column: 8 /10;
+          padding-left: 6.5px;
         }
         div:nth-child(5) {
           grid-column: 12;
           margin-right: 0;
           text-align: right;
-          padding-right: 10px;
         }
 
         a {

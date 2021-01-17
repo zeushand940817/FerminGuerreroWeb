@@ -1,8 +1,25 @@
+import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import Footer from 'components/Footer'
+import { makeStyles } from '@material-ui/core/styles'
+import ImageList from '@material-ui/core/ImageList'
+import ImageListItem from '@material-ui/core/ImageListItem'
+
+const useStyles = makeStyles({
+  root: {
+    width: '100%',
+    height: '100%',
+  },
+  label: {
+    ['@media (max-width:677px)']: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
+  },
+})
 
 export default function All({ data }) {
+  const classes = useStyles()
   const projects = data.sort(function (a, b) {
     return parseInt(b.year) - parseInt(a.year)
   })
@@ -10,9 +27,14 @@ export default function All({ data }) {
   const extractVideo = videoMp4[0].mp4Video
 
   return (
-    <div className="wrapperAll">
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-        <Masonry columnsCount={3} gutter={3}>
+    <div className="mainWrapper">
+      <div className={classes.root}>
+        <ImageList
+          variant="masonry"
+          cols={3}
+          gap={13}
+          className={classes.label}
+        >
           {projects.map((project, key) => (
             <Link
               key={project.id}
@@ -20,58 +42,53 @@ export default function All({ data }) {
               as={`/projects/${project.slug}`}
             >
               <a>
-                <div className="containerAll">
-                  {project.id == 31 ? (
-                    <video
-                      autoPlay
-                      muted
-                      loop
-                      width="100%"
-                      height="auto"
-                      className="videoClass"
-                    >
-                      <source src={extractVideo} type="video/mp4" />
-                    </video>
-                  ) : (
-                    <img
-                      className="imageAll"
-                      alt={project.name}
-                      src={project.image}
-                    />
-                  )}
-                  <div className="middleAll">
-                    <p className="textAll">{project.name}</p>
-                  </div>
+                <div className="container">
+                  <ImageListItem key={project.id}>
+                    {project.id == 31 ? (
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        width="100%"
+                        height="auto"
+                        className="videoClass"
+                      >
+                        <source src={extractVideo} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <img
+                        className="imagen"
+                        alt={project.name}
+                        src={project.image}
+                      />
+                    )}
+                    <div className="text">
+                      <p>{project.name}</p>
+                    </div>
+                  </ImageListItem>
                 </div>
               </a>
             </Link>
           ))}
-        </Masonry>
-      </ResponsiveMasonry>
+        </ImageList>
+      </div>
 
       <Footer />
-
       <style jsx>{`
-        .wrapperAll {
+        .mainWrapper {
           width: 100%;
-          padding: 40px 20px 0px 20px;
+          padding: 30px 20px 0px;
         }
-        .imageAll {
+        .imagen {
           width: 100%;
           height: 100%;
-          padding-right: 10px;
         }
         .videoClass {
           width: 100%;
           height: 100%;
-          padding-right: 10px;
         }
 
-        .containerAll {
-          position: relative;
-        }
-
-        .containerAll:hover {
+        .container:hover {
           opacity: 1;
           -webkit-animation: flash 1.5s;
           animation: flash 1.5s;
@@ -94,23 +111,30 @@ export default function All({ data }) {
           }
         }
 
-        .containerAll:hover .videoClass {
+        .container:hover .videoClass {
           opacity: 1;
           -webkit-animation: flash 1.5s;
           animation: flash 1.5s;
         }
 
-        .textAll {
+        .text {
           font-size: 20px;
           color: white;
-          padding-bottom: 15px;
+          padding-top: 20px;
+          padding-bottom: 25px;
         }
+
+        /* media queries */
         @media screen and (max-width: 667px) {
-          .wrapperAll {
-            padding: 10px;
+          .mainWrapper {
+            width: 100%;
+            padding: 40px 15px 0px 15px;
           }
-          .imageAll {
-            padding: 0px;
+          .imagen {
+            padding-right: 0px;
+          }
+          .videoClass {
+            padding-right: 0px;
           }
         }
       `}</style>
@@ -118,7 +142,7 @@ export default function All({ data }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const { API_URL } = process.env
   const res = await fetch(`${API_URL}/api/projects`)
   const data = await res.json()

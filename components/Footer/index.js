@@ -43,8 +43,9 @@ export default function Footer() {
         footer {
           width: 100%;
           height: 40px;
-          padding: 3px 20px 5px 20px;
           mix-blend-mode: difference;
+          align-items: center;
+          justify-content: center;
           background: none;
           bottom: 0;
           z-index: 1;
@@ -63,6 +64,7 @@ export default function Footer() {
         div:nth-child(2) {
           grid-column: 5/10;
 
+          padding-left: 3px;
           color: #666666;
         }
         div:nth-child(3) {
@@ -73,6 +75,7 @@ export default function Footer() {
         }
         div:nth-child(5) {
           grid-column: 12;
+          text-align: right;
         }
 
         a {

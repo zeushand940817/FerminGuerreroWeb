@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
   box: {
     marginTop: 60,
+    paddingLeft: '3px',
     lineHeight: 1.4,
     ['@media (max-width: 677px)']: {
       fontSize: 20,
