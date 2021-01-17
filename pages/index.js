@@ -12,6 +12,8 @@ const Home = ({ data }) => {
     setImageNumber(Math.floor(Math.random() * 24))
   }
 
+  const arrMobile = imagenes.slice(23)
+
   const responsive = {
     tablet: {
       breakpoint: { max: 1024, min: 677 },
@@ -67,18 +69,9 @@ const Home = ({ data }) => {
           arrows={false}
           showDots={true}
         >
-          <img className="imageMobileSlider" src={imagenes[24].image} />
-          <img className="imageMobileSlider" src={imagenes[25].image} />
-          <img className="imageMobileSlider" src={imagenes[26].image} />
-          <img className="imageMobileSlider" src={imagenes[27].image} />
-          <img className="imageMobileSlider" src={imagenes[28].image} />
-          <img className="imageMobileSlider" src={imagenes[29].image} />
-          <img className="imageMobileSlider" src={imagenes[30].image} />
-          <img className="imageMobileSlider" src={imagenes[31].image} />
-          <img className="imageMobileSlider" src={imagenes[32].image} />
-          <img className="imageMobileSlider" src={imagenes[33].image} />
-          <img className="imageMobileSlider" src={imagenes[34].image} />
-          <img className="imageMobileSlider" src={imagenes[35].image} />
+          {arrMobile.map((elem, key) => (
+            <img className="imageSlider" src={elem.image} key={elem.id} />
+          ))}
         </Carousel>
       </div>
       <FooterHome />
@@ -115,7 +108,7 @@ const Home = ({ data }) => {
             object-position: center;
           }
 
-          .imageMobileSlider {
+          .imageSlider {
             height: 100vh;
             top: 0;
           }

@@ -28,8 +28,7 @@
     "react-icons": "^3.11.0",
     "react-lazy-load-image-component": "^1.5.1",
     "react-live-clock": "^5.0.13",
-    "react-multi-carousel": "^2.6.1",
-    "react-responsive-masonry": "^2.1.1"
+    "react-multi-carousel": "^2.6.1"
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^11.0.0"
