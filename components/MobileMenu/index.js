@@ -117,6 +117,7 @@ export default function MobileMenu() {
           justify-content: flex-end;
           padding: 0;
           position: relative;
+          mix-blend-mode: difference;
         }
         ul {
           padding: 0px;
@@ -198,7 +199,6 @@ export default function MobileMenu() {
           padding-bottom: 20px;
         }
         .social {
-          color: white;
           padding-right: 20px;
           font-size: 18px;
         }

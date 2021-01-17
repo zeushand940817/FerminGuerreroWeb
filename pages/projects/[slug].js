@@ -249,6 +249,14 @@ const Projects = ({ data }) => {
         /* Media Queries */
 
         @media screen and (max-width: 667px) {
+          .container {
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            padding: 40px 10px 0px;
+            margin-bottom: 30px;
+            color: white;
+          }
           .gridContainer {
             width: 100%;
             display: flex;
@@ -278,9 +286,29 @@ const Projects = ({ data }) => {
             object-fit: cover;
             object-position: center;
           }
+
+          .tagName {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .description {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
         }
 
         @media screen and (max-width: 1024px) {
+          .container {
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            padding: 40px 10px 0px;
+            margin-bottom: 30px;
+            color: white;
+          }
           .gridContainer {
             width: 100%;
             display: flex;

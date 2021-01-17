@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     backgroundColor: 'transparent',
   },
   label: {
-    fontSize: '20px',
+    fontSize: 20,
     paddingTop: 4,
     paddingBottom: 4,
   },
@@ -35,6 +35,7 @@ const TreeItem1 = withStyles({
       fontWeight: 'bold',
       display: 'flex',
       flexDirection: 'row',
+      fontSize: 20,
     },
   },
 })(MuiTreeItem)

@@ -27,6 +27,35 @@ const Home = ({ data }) => {
     },
   }
 
+  const CustomDot = ({ onClick, active, index, carouselState }) => {
+    const { currentSlide } = carouselState
+    return (
+      <li
+        style={{
+          background: active ? 'white' : 'transparent',
+          mixBlendMode: 'difference',
+          borderRadius: '100px',
+          marginBottom: '20px',
+          marginRight: '5px',
+          height: '16px',
+          border: '1px solid white',
+        }}
+      >
+        <button
+          style={{
+            background: 'transparent',
+            mixBlendMode: 'difference',
+            borderRadius: '100px',
+            outline: 'none',
+            border: 'none',
+            height: '16px',
+          }}
+          onClick={() => onClick()}
+        />
+      </li>
+    )
+  }
+
   return (
     <>
       <div className="wrapper">
@@ -68,6 +97,7 @@ const Home = ({ data }) => {
           autoPlay
           arrows={false}
           showDots={true}
+          customDot={<CustomDot />}
         >
           {arrMobile.map((elem, key) => (
             <img className="imageSlider" src={elem.image} key={elem.id} />
@@ -91,6 +121,19 @@ const Home = ({ data }) => {
 
         .box {
           height: 100%;
+        }
+
+        .carousel-with-custom-dots {
+          margin-top: 100px;
+          padding-bottom: 100px;
+        }
+        .custom-dot {
+          border: none;
+          outline: none;
+        }
+        .custom-dot--active {
+          transform: scale(1.3);
+          outline: auto;
         }
         @media screen and (max-width: 667px) {
           .wrapper {

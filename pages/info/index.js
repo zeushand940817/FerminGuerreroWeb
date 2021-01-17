@@ -280,7 +280,7 @@ export default function Info({ data }) {
 
         @media screen and (max-width: 677px) {
           .wrapper {
-            padding: 0px 20px 0px 20px;
+            padding: 40px 10px 0px 10px;
             height: 100%;
             width: 100%;
           }
@@ -323,7 +323,7 @@ export default function Info({ data }) {
           .wrapper {
             height: 100%;
             width: 100%;
-            padding: 0px 20px 0px 20px;
+            padding: 40px 20px 0px 20px;
           }
           .section {
             background: transparent;
