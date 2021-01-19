@@ -11,7 +11,7 @@ export default function MobileMenu() {
 
   return (
     <>
-      <section>
+      <section className={isOpen == true ? 'sectionOpen' : 'sectionClose'}>
         <Link href="/">
           <a className={isOpen !== true ? 'homeClose' : 'homeOpen'}>
             Fermin Guerrero
@@ -43,7 +43,7 @@ export default function MobileMenu() {
           >
             <ul>
               <li>
-                <Link href="/graphicDesign" onClick={() => this.handleClick()}>
+                <Link href="/graphicDesign" onClick={() => handleClick()}>
                   <a>Graphic Design</a>
                 </Link>
               </li>
@@ -51,20 +51,20 @@ export default function MobileMenu() {
                 <Link
                   href="/all"
                   as="/all-projects"
-                  onClick={() => this.handleClick()}
+                  onClick={() => handleClick()}
                 >
                   <a>&</a>
                 </Link>
               </li>
 
               <li>
-                <Link href="/typefaceDesign" onClick={() => this.handleClick()}>
+                <Link href="/typefaceDesign" onClick={() => handleClick()}>
                   <a>Typeface Design</a>
                 </Link>
               </li>
 
               <li>
-                <Link href="/info" onClick={() => this.handleClick()}>
+                <Link href="/info" onClick={() => handleClick()}>
                   <a>Info</a>
                 </Link>
               </li>
@@ -110,6 +110,9 @@ export default function MobileMenu() {
           width: 100%;
           z-index: 1;
           display: flex;
+        }
+        .sectionClose {
+          mix-blend-mode: difference;
         }
         .burgerMainContainer {
           display: flex;

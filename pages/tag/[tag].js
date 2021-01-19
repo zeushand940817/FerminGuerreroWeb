@@ -1,7 +1,7 @@
-import fetch from 'isomorphic-unfetch'
 import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+import { getPathTags, getProjectsData } from 'utils/getData'
 
 const useStyles = makeStyles({
   root: {
@@ -37,23 +37,10 @@ const useStyles = makeStyles({
   },
 })
 
-export default function Poster({ data }) {
+export default function Animation({ data, path }) {
   const classes = useStyles()
-  const getAllTags = data
-    .sort(function (a, b) {
-      return parseInt(b.year) - parseInt(a.year)
-    })
-    .map(({ tags, image, mp4Video, mp4, img1, name }) => ({
-      tags,
-      image,
-      mp4Video,
-      mp4,
-      img1,
-      name,
-    }))
-
-  const poster = getAllTags.filter(
-    (project) => project.tags && project.tags.includes('Poster')
+  const animation = data.filter(
+    (project) => project.tags && project.tags.includes(path)
   )
 
   return (
@@ -65,7 +52,7 @@ export default function Poster({ data }) {
           gap={13}
           className={classes.label}
         >
-          {poster.map((elem) => (
+          {animation.map((elem) => (
             <div className="container">
               <ImageListItem key={elem.id}>
                 {elem.image && (
@@ -99,14 +86,21 @@ export default function Poster({ data }) {
   )
 }
 
-export async function getStaticProps() {
-  const { API_URL } = process.env
-  const res = await fetch(`${API_URL}/api/projects`)
-  const data = await res.json()
+export async function getStaticPaths() {
+  const paths = await getPathTags()
+  return {
+    paths,
+    fallback: false,
+  }
+}
 
+export async function getStaticProps({params}) {
+  const path = params.tag;
+  const data = await getProjectsData();
   return {
     props: {
-      data: data,
+      data,
+      path
     },
   }
 }

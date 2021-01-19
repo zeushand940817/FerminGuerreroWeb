@@ -21,11 +21,10 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: 20,
       paddingTop: 0,
     },
-    // ['@media (max-width: 1024px)']: {
-    //   fontSize: 20,
-    //   paddingTop: 50,
-    //   lineHeight: 1.2,
-    // },
+    ['@media (max-width: 1024px)']: {
+      fontSize: 20,
+      lineHeight: 1.2,
+    },
   },
 }))
 

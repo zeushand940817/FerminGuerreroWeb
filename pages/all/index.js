@@ -1,9 +1,9 @@
-import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Footer from 'components/Footer'
 import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+import { getProjectsData } from 'utils/getData'
 
 const useStyles = makeStyles({
   root: {
@@ -18,14 +18,8 @@ const useStyles = makeStyles({
   },
 })
 
-export default function All({ data }) {
+export default function All({ data, extractVideo }) {
   const classes = useStyles()
-  const projects = data.sort(function (a, b) {
-    return parseInt(b.year) - parseInt(a.year)
-  })
-  const videoMp4 = data.filter((elem) => elem.id === '31')
-  const extractVideo = videoMp4[0].mp4Video
-
   return (
     <div className="mainWrapper">
       <div className={classes.root}>
@@ -35,7 +29,7 @@ export default function All({ data }) {
           gap={13}
           className={classes.label}
         >
-          {projects.map((project, key) => (
+          {data.map((project) => (
             <Link
               key={project.id}
               href={`/projects/[slug]`}
@@ -143,13 +137,13 @@ export default function All({ data }) {
 }
 
 export async function getStaticProps() {
-  const { API_URL } = process.env
-  const res = await fetch(`${API_URL}/api/projects`)
-  const data = await res.json()
-
+  const data = await getProjectsData()
+  const videoMp4 = data.filter((elem) => elem.id === 31)
+  const extractVideo = videoMp4[0].mp4Video
   return {
     props: {
-      data: data,
+      data,
+      extractVideo,
     },
   }
 }

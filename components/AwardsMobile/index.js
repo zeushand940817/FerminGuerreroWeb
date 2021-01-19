@@ -15,10 +15,6 @@ const useStyles = makeStyles({
     marginTop: 10,
     fontSize: 18,
     backgroundColor: 'transparent',
-    // '&.hover, &.MuiTreeItem-content': {
-    //   display: 'flex',
-    //   alignItems: 'flex-start',
-    // },
   },
   texto: {
     fontSize: 18,
@@ -51,6 +47,18 @@ const TreeItem1 = withStyles({
     },
   },
 })(MuiTreeItem)
+
+// const TreeContent = withStyles({
+//   root: {
+//     '&.MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label': {
+//       display: 'flex',
+//       flexDirection: 'row',
+//       color: 'pink',
+//       fontSize: 18,
+//       backgroundColor: 'transparent',
+//     },
+//   },
+// })(MuiTreeItem)
 
 export default function AwardsMobile() {
   const classes = useStyles()

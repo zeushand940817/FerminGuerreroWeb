@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function ({ description, year, index, articles, description2 }) {
+  console.log({ articles })
   const classes = useStyles()
   const [activeIndex, setActiveIndex] = useState(-1)
 

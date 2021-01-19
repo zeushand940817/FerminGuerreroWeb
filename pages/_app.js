@@ -4,6 +4,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from './theme'
 import dynamic from 'next/dynamic'
+import { useEffect } from 'react'
 
 const DynamicHeader = dynamic(() => import('components/Header'))
 const DynamicMobileMenu = dynamic(() => import('components/MobileMenu'))
@@ -11,7 +12,7 @@ const DynamicMobileMenu = dynamic(() => import('components/MobileMenu'))
 export default function MyApp(props) {
   const { Component, pageProps } = props
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side')
     if (jssStyles) {
@@ -19,6 +20,7 @@ export default function MyApp(props) {
     }
   }, [])
 
+  console.log({ Component })
   return (
     <React.Fragment>
       <Head>
@@ -65,6 +67,9 @@ export default function MyApp(props) {
           .mobile {
             width: 100%;
             display: inline-block;
+          }
+          .hiddenMobile {
+            display: none;
           }
         }
 

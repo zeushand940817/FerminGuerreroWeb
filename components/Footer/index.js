@@ -1,18 +1,20 @@
 // import { IoCode } from 'react-icons/Io'
 
-export default function Footer() {
+export default function Footer({ component }) {
   return (
     <>
-      <footer>
+      <footer
+        className={component === 'home' ? 'footerHome' : 'footerComponent'}
+      >
         <div>©2021 - Fermin Guerrero</div>
         <div>
-          Web development:
+          Developed by{' '}
           <a
             className="lauraLink"
             href="https://lauradiaz.vercel.app/"
             target="_blank"
           >
-            Laura.
+            Laura Diaz.
           </a>
         </div>
 
@@ -57,6 +59,9 @@ export default function Footer() {
           font-size: 20px;
           color: white;
         }
+        .footerHome {
+          position: fixed;
+        }
 
         div:nth-child(1) {
           grid-column: 1/5;
@@ -96,7 +101,10 @@ export default function Footer() {
             color: white;
             font-size: 16px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+          }
+          .footerHome {
+            display: none;
           }
         }
       `}</style>

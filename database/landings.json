@@ -1,0 +1,192 @@
+{
+  "lading1": {
+    "id": 1,
+    "image": "/CoverPhotos/Landing/BeyondTheBox.jpg",
+    "type": "desktop"
+  },
+  "landing2": {
+    "id": 2,
+    "image": "/CoverPhotos/Landing/BrickTypefamily.jpg",
+    "type": "desktop"
+  },
+  "landing3": {
+    "id": 3,
+    "image": "/CoverPhotos/Landing/DameDeLaMer.jpg",
+    "type": "desktop"
+  },
+  "landing4": {
+    "id": 4,
+    "image": "/CoverPhotos/Landing/DinMachine.jpg",
+    "type": "desktop"
+  },
+  "landing5": {
+    "id": 5,
+    "image": "/CoverPhotos/Lading/Exentra.jpg",
+    "type": "desktop"
+  },
+  "landing6": {
+    "id": 6,
+    "image": "/CoverPhotos/Landing/FeriadelLibro.jpg",
+    "type": "desktop"
+  },
+  "landing7": {
+    "id": 7,
+    "image": "/CoverPhotos/Landing/Lading/FGC.jpg",
+    "type": "desktop"
+  },
+  "landing8": {
+    "id": 8,
+    "image": "/CoverPhotos/Landing/FlagOfPeace.jpg",
+    "type": "desktop"
+  },
+  "landing9": {
+    "id": 9,
+    "image": "/CoverPhotos/Landing/Form.jpg",
+    "type": "desktop"
+  },
+  "landing10": {
+    "id": 10,
+    "image": "/CoverPhotos/Landing/GenevaMotorShow.jpg",
+    "type": "desktop"
+  },
+  "landing11": {
+    "id": 11,
+    "image": "/CoverPhotos/Landing/GeneveTypeface.jpg",
+    "type": "desktop"
+  },
+  "landing12": {
+    "id": 12,
+    "image": "/CoverPhotos/Landing/GeneveTypefaceb.jpg",
+    "type": "desktop"
+  },
+  "landing13": {
+    "id": 13,
+    "image": "/CoverPhotos/Landing/ItsUpToYou.jpg",
+    "type": "desktop"
+  },
+  "landing14": {
+    "id": 14,
+    "image": "/CoverPhotos/Landing/JoieDeLire.jpg",
+    "type": "desktop"
+  },
+  "landing15": {
+    "id": 15,
+    "image": "/CoverPhotos/Landing/MakeAWish.jpg",
+    "type": "desktop"
+  },
+  "landing16": {
+    "id": 16,
+    "image": "/CoverPhotos/Landing/Manifesta.jpg",
+    "type": "desktop"
+  },
+  "landing17": {
+    "id": 17,
+    "image": "/CoverPhotos/Landing/NewYearNewFight.jpg",
+    "type": "desktop"
+  },
+  "landing18": {
+    "id": 18,
+    "image": "/CoverPhotos/Landing/Thesaurus-1.jpg",
+    "type": "desktop"
+  },
+  "landing19": {
+    "id": 19,
+    "image": "/CoverPhotos/Landing/TijuanaPanthers.jpg",
+    "type": "desktop"
+  },
+  "landing20": {
+    "id": 20,
+    "image": "/CoverPhotos/Landing/TimeOut.jpg",
+    "type": "desktop"
+  },
+  "landing21": {
+    "id": 21,
+    "image": "/CoverPhotos/Landing/Tomorrow.jpg",
+    "type": "desktop"
+  },
+  "landing22": {
+    "id": 22,
+    "image": "/CoverPhotos/Landing/TypographyH.jpg",
+    "type": "desktop"
+  },
+  "landing23": {
+    "id": 23,
+    "image": "/CoverPhotos/Landing/TypographyHeroes3.jpg",
+    "type": "desktop"
+  },
+  "landing24": {
+    "id": 24,
+    "image": "/CoverPhotos/Landing/Weltformat.jpg",
+    "type": "desktop"
+  },
+  "landing25": {
+    "id": 25,
+    "image": "/CoverPhotos/Mobile/1.jpg",
+    "type": "mobile"
+  },
+  "landing26": {
+    "id": 26,
+    "image": "/CoverPhotos/Mobile/2.jpg",
+    "type": "mobile"
+  },
+  "landing27": {
+    "id": 27,
+    "image": "/CoverPhotos/Mobile/3.jpg",
+    "type": "mobile"
+  },
+  "landing28": {
+    "id": 28,
+    "image": "/CoverPhotos/Mobile/4.jpg",
+    "type": "mobile"
+  },
+  "landing29": {
+    "id": 29,
+    "image": "/CoverPhotos/Mobile/5.jpg",
+    "type": "mobile"
+  },
+  "landing30": {
+    "id": 30,
+    "image": "/CoverPhotos/Mobile/6.jpg",
+    "type": "mobile"
+  },
+  "landing31": {
+    "id": 31,
+    "image": "/CoverPhotos/Mobile/7.jpg",
+    "type": "mobile"
+  },
+  "landing32": {
+    "id": 32,
+    "image": "/CoverPhotos/Mobile/8.jpg",
+    "type": "mobile"
+  },
+  "landing33": {
+    "id": 33,
+    "image": "/CoverPhotos/Mobile/9.jpg",
+    "type": "mobile"
+  },
+  "landing34": {
+    "id": 34,
+    "image": "/CoverPhotos/Mobile/10.jpg",
+    "type": "mobile"
+  },
+  "landing35": {
+    "id": 35,
+    "image": "/CoverPhotos/Mobile/11.jpg",
+    "type": "mobile"
+  },
+  "landing36": {
+    "id": 36,
+    "image": "/CoverPhotos/Mobile/12.jpg",
+    "type": "mobile"
+  },
+  "landing37": {
+    "id": 37,
+    "image": "/CoverPhotos/Mobile/13.jpg",
+    "type": "mobile"
+  },
+  "landing38": {
+    "id": 38,
+    "image": "/CoverPhotos/Mobile/14.jpg",
+    "type": "mobile"
+  }
+}

@@ -1,11 +1,11 @@
 import Grid from '@material-ui/core/Grid'
-import fetch from 'isomorphic-unfetch'
 // import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import Link from 'next/link'
 import Footer from 'components/Footer'
+import { getPaths, getProject } from 'utils/getData'
 
 const useStyles = makeStyles({
   root: {
@@ -24,149 +24,115 @@ function srcset(image, size, rows = 1, cols = 1) {
 }
 
 const Projects = ({ data }) => {
-  const sources = data.sources
   const classes = useStyles()
-  const tags = data.tags
-
   return (
     <>
       <div className="container">
-        <Grid container>
-          {data.horizontal && <img className="mainImage" src={data.image} />}
-          {!data.horizontal && <img className="mainImage" src={data.img1} />}
-          {data.mp4 && (
-            <video autoPlay muted loop width="100%" height="auto">
-              <source src={data.mp41} type="video/mp4" />
-            </video>
-          )}
-        </Grid>
-
-        <Grid container>
-          <div className="gridContainer">
-            <Grid item xs={12} lg={2}>
-              <div className="name">{data.name}</div>
-            </Grid>
-            <Grid item xs={12} sm={12} lg={4}>
-              <div className="yearandtags">
-                <p>{data.year}</p>
-                <p className="tagName">
-                  {tags &&
-                    tags.map((tag) => (
-                      <span>
-                        {tag > 0 ? tag + ' , ' : ' '}
-                        {tag == 'Visual Identity' && (
-                          <Link
-                            href="/tags/VisualIdentity"
-                            as="/tags/visual-identity"
-                          >
-                            <a>
-                              <u>{tag}</u>
-                            </a>
-                          </Link>
-                        )}
-                        {tag == 'Editorial' && (
-                          <Link href="/tags/Editorial">
-                            <a>
-                              <u>{tag}</u>
-                            </a>
-                          </Link>
-                        )}
-                        {tag == 'Photography' && (
-                          <Link href="/tags/Photography">
-                            <a>
-                              <u>{tag}</u>
-                            </a>
-                          </Link>
-                        )}
-                        {tag == 'Animation' && (
-                          <Link href="/tags/Animation">
-                            <a>
-                              <u>{tag}</u>
-                            </a>
-                          </Link>
-                        )}
-                        {tag == 'Cover Design' && (
-                          <Link href="/tags/CoverDesign">
-                            <a>
-                              <u>{tag}</u>
-                            </a>
-                          </Link>
-                        )}
-                        {tag == 'Illustration' && (
-                          <Link href="/tags/Illustration">
-                            <a>
-                              <u>{tag}</u>
-                            </a>
-                          </Link>
-                        )}
-                        {tag == 'Packaging' && (
-                          <Link href="/tags/Packaging">
-                            <a>
-                              <u>{tag}</u>
-                            </a>
-                          </Link>
-                        )}
-                        {tag == 'Poster' && (
-                          <Link href="/tags/Poster">
-                            <a>
-                              <u>{tag}</u>
-                            </a>
-                          </Link>
-                        )}
-                      </span>
-                    ))}
-                </p>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={12} lg={6}>
-              <div className="description">
-                {data.attributes.description}{' '}
-                {data.attributes.urlDescription && (
-                  <a href={data.attributes.urlDescription} target="_blank">
-                    <u>here.</u>
-                  </a>
-                )}
-              </div>
-            </Grid>
-          </div>
-        </Grid>
-
-        <ImageList
-          gap={13}
-          variant="quilted"
-          cols={4}
-          rowHeight="auto"
-          className={classes.root}
-        >
-          {Object.values(sources).map((source) => {
-            return (
-              <ImageListItem
-                key={data.id}
-                cols={source.cols}
-                rows={source.rows}
-              >
-                {source.type === 'img' ? (
-                  <img
-                    src={source.img}
-                    alt="image-project"
-                    srcSet={srcset(source.img, 121, source.rows, source.cols)}
-                  />
+        {data.map((element) => {
+          return (
+            <>
+              <Grid container>
+                {element.horizontal ? (
+                  <img className="mainImage" src={element.image} />
                 ) : (
-                  <div className="videoContainer">
-                    <video
-                      autoPlay
-                      muted
-                      loop
-                      className="video"
-                      src={source.url}
-                      srcSet={srcset(source.url, 121, source.rows, source.cols)}
-                    />
-                  </div>
+                  <img className="mainImage" src={element.img1} />
                 )}
-              </ImageListItem>
-            )
-          })}
-        </ImageList>
+                {element.mp4 && (
+                  <video autoPlay muted loop width="100%" height="auto">
+                    <source src={element.mp41} type="video/mp4" />
+                  </video>
+                )}
+              </Grid>
+
+              <Grid container>
+                <div className="gridContainer">
+                  <Grid item xs={12} lg={2}>
+                    <div className="name">{element.name}</div>
+                  </Grid>
+                  <Grid item xs={12} sm={12} lg={4}>
+                    <div className="yearandtags">
+                      <p>{element.year}</p>
+                      <p className="tagName">
+                        {element.tags &&
+                          element.tags.map((tag) => {
+                            console.log({ tag })
+                            const transformName = tag.replace('-', ' ')
+                            return (
+                              <>
+                                <Link href={`/tag/${tag}`}>
+                                  <a>
+                                    <u>{transformName}</u>
+                                  </a>
+                                </Link>{' '}
+                              </>
+                            )
+                          })}
+                      </p>
+                    </div>
+                  </Grid>
+
+                  <Grid item xs={12} sm={12} lg={6}>
+                    <div className="description">
+                      {element.description}{' '}
+                      {element.urlDescription && (
+                        <a href={element.urlDescription} target="_blank">
+                          <u>here.</u>
+                        </a>
+                      )}
+                    </div>
+                  </Grid>
+                </div>
+              </Grid>
+
+              <ImageList
+                gap={13}
+                variant="quilted"
+                cols={4}
+                rowHeight="auto"
+                className={classes.root}
+              >
+                {Object.values(element.sources).map((source) => {
+                  return (
+                    <ImageListItem
+                      key={element.id}
+                      cols={source.cols}
+                      rows={source.rows}
+                    >
+                      {source.type === 'img' ? (
+                        <img
+                          src={source.img}
+                          alt="image-project"
+                          srcSet={srcset(
+                            source.img,
+                            121,
+                            source.rows,
+                            source.cols
+                          )}
+                        />
+                      ) : (
+                        <div className="videoContainer">
+                          <video
+                            autoPlay
+                            muted
+                            loop
+                            className="video"
+                            src={source.url}
+                            srcSet={srcset(
+                              source.url,
+                              121,
+                              source.rows,
+                              source.cols
+                            )}
+                          />
+                        </div>
+                      )}
+                    </ImageListItem>
+                  )
+                })}
+              </ImageList>
+            </>
+          )
+        })}
       </div>
       <Footer />
 
@@ -345,23 +311,16 @@ const Projects = ({ data }) => {
 }
 
 export async function getStaticPaths() {
-  const { API_URL } = process.env
-  const req = await fetch(`${API_URL}/api/projects`)
-  const data = await req.json()
-
-  const paths = data.map((element) => ({
-    params: { slug: element.slug },
-  }))
-  return { paths, fallback: true }
+  const paths = await getPaths()
+  return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
-  const { API_URL } = process.env
-  const req = await fetch(`${API_URL}/api/projects/${params.slug}`)
-  const data = await req.json()
+  const path = params.slug
+  const data = await getProject(path)
   return {
     props: {
-      data: data,
+      data,
     },
   }
 }

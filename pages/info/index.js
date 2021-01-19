@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
-import fetch from 'isomorphic-unfetch'
 import dynamic from 'next/dynamic'
 import Footer from 'components/Footer'
+import { getPressData } from 'utils/getData'
 
 const About = dynamic(() => import('@components/About'))
 const Awards = dynamic(() => import('components/Awards'))
@@ -33,7 +33,7 @@ const scrollTo = (ele) => {
 }
 
 export default function Info({ data }) {
-  const articles = data
+  const articles = Object.values(data).map((element) => element)
 
   const [visibleSection, setVisibleSection] = useState()
 
@@ -162,22 +162,24 @@ export default function Info({ data }) {
             <div className="boxPress">
               <div className="pageWrapper">
                 <div className="projectList">
-                  {articles.map(
-                    ({ url, id, description, year, description2 }, index) => (
-                      <div key={id}>
-                        <a className="linkArticle" href={url} target="_blank">
-                          <Item
-                            href={url}
-                            description={description}
-                            description2={description2}
-                            year={year}
-                            index={index}
-                            articles={articles}
-                          />
-                        </a>
-                      </div>
-                    )
-                  )}
+                  {articles.map((item, index) => (
+                    <div key={item.id}>
+                      <a
+                        className="linkArticle"
+                        href={item.url}
+                        target="_blank"
+                      >
+                        <Item
+                          href={item.url}
+                          description={item.description}
+                          description2={item.description2}
+                          year={item.year}
+                          index={index}
+                          articles={articles}
+                        />
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -379,13 +381,10 @@ export default function Info({ data }) {
 }
 
 export async function getServerSideProps() {
-  const { API_URL } = process.env
-  const res = await fetch(`${API_URL}/api/press`)
-  const data = await res.json()
-
+  const press = await getPressData()
   return {
     props: {
-      data: data,
+      data: press,
     },
   }
 }

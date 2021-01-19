@@ -1,18 +1,18 @@
-import fetch from 'isomorphic-unfetch'
 import { useState } from 'react'
-import FooterHome from 'components/FooterHome'
+import Footer from 'components/Footer'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
-const Home = ({ data }) => {
-  const imagenes = data
+import { getLandingData } from '../utils/getData'
+
+const Home = ({ dataParse }) => {
+  const mobileImages = dataParse.mobile
+  const desktopImages = dataParse.desktop
   const [imageNumber, setImageNumber] = useState(0)
 
   function handleMouseMove() {
-    setImageNumber(Math.floor(Math.random() * 24))
+    setImageNumber(Math.floor(Math.random() * desktopImages.length))
   }
-
-  const arrMobile = imagenes.slice(23)
 
   const responsive = {
     tablet: {
@@ -28,7 +28,6 @@ const Home = ({ data }) => {
   }
 
   const CustomDot = ({ onClick, active, index, carouselState }) => {
-    const { currentSlide } = carouselState
     return (
       <li
         style={{
@@ -68,7 +67,7 @@ const Home = ({ data }) => {
             height: '100vh',
             top: '0',
           }}
-          src={imagenes[3].image}
+          src={desktopImages[3]}
         />
         <div
           className="box"
@@ -79,7 +78,7 @@ const Home = ({ data }) => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             position: 'relative',
-            backgroundImage: `url(${imagenes[imageNumber].image})`,
+            backgroundImage: `url(${desktopImages[imageNumber]})`,
           }}
           href=""
           onMouseMove={handleMouseMove}
@@ -99,12 +98,12 @@ const Home = ({ data }) => {
           showDots={true}
           customDot={<CustomDot />}
         >
-          {arrMobile.map((elem, key) => (
-            <img className="imageSlider" src={elem.image} key={elem.id} />
+          {mobileImages.map((image, key) => (
+            <img className="imageSlider" src={image} key={`${key} ${image}`} />
           ))}
         </Carousel>
       </div>
-      <FooterHome />
+      <Footer component="home" />
 
       <style jsx>{`
         .wrapper {
@@ -174,13 +173,10 @@ const Home = ({ data }) => {
 }
 
 export async function getStaticProps() {
-  const { API_URL } = process.env
-  const res = await fetch(`${API_URL}/api/landings`)
-  const data = await res.json()
-
+  const dataJson = await getLandingData()
   return {
     props: {
-      data: data,
+      dataParse: dataJson,
     },
   }
 }

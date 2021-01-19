@@ -1,9 +1,10 @@
-import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 import Footer from 'components/Footer'
 import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+
+import { getProjectsData } from 'utils/getData'
 
 const useStyles = makeStyles({
   root: {
@@ -18,18 +19,8 @@ const useStyles = makeStyles({
   },
 })
 
-export default function GraphicDesign({ data }) {
+export default function GraphicDesign({ data, extractVideo }) {
   const classes = useStyles()
-  const projectsFilter = data
-    .sort(function (a, b) {
-      return parseInt(b.year) - parseInt(a.year)
-    })
-    .filter((project) => project.type === 'graphic')
-    .map(({ id, image, name, slug, year }) => ({ id, image, name, slug, year }))
-
-  const videoMp4 = data.filter((elem) => elem.id === '31')
-  const extractVideo = videoMp4[0].mp4Video
-
   return (
     <>
       <div className="mainWrapper">
@@ -40,7 +31,7 @@ export default function GraphicDesign({ data }) {
             gap={13}
             className={classes.label}
           >
-            {projectsFilter.map((projectFilter, key) => (
+            {data.map((projectFilter) => (
               <Link
                 key={projectFilter.id}
                 href={`/projects/[slug]`}
@@ -149,13 +140,14 @@ export default function GraphicDesign({ data }) {
 }
 
 export async function getStaticProps() {
-  const { API_URL } = process.env
-  const res = await fetch(`${API_URL}/api/projects`)
-  const data = await res.json()
-
+  const data = await getProjectsData()
+  const filteredData = data.filter((element) => element.type === 'graphic')
+  const videoMp4 = data.filter((elem) => elem.id === 31)
+  const extractVideo = videoMp4[0].mp4Video
   return {
     props: {
-      data: data,
+      data: filteredData,
+      extractVideo,
     },
   }
 }

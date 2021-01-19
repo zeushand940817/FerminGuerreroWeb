@@ -25,6 +25,7 @@ const useStyles = makeStyles({
     fontSize: 20,
     paddingTop: 4,
     paddingBottom: 4,
+    background: 'none',
   },
 })
 
@@ -36,6 +37,17 @@ const TreeItem1 = withStyles({
       display: 'flex',
       flexDirection: 'row',
       fontSize: 20,
+      background: 'none',
+    },
+  },
+})(MuiTreeItem)
+
+const TreeItemMain = withStyles({
+  root: {
+    '&.MuiTreeItem-content': {
+      fontSize: 20,
+      paddingTop: 4,
+      paddingBottom: 4,
     },
   },
 })(MuiTreeItem)
