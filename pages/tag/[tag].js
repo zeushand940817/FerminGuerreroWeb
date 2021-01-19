@@ -1,6 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles'
+
+//Components
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+
+//Data fetching
 import { getPathTags, getProjectsData } from 'utils/getData'
 
 const useStyles = makeStyles({
@@ -94,13 +98,13 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({params}) {
-  const path = params.tag;
-  const data = await getProjectsData();
+export async function getStaticProps({ params }) {
+  const path = params.tag
+  const data = await getProjectsData()
   return {
     props: {
       data,
-      path
+      path,
     },
   }
 }

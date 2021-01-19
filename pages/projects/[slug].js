@@ -1,11 +1,19 @@
-import Grid from '@material-ui/core/Grid'
-// import Image from 'next/image'
+import Link from 'next/link'
+
+//Styles
 import { makeStyles } from '@material-ui/core/styles'
+
+//Components
+import Footer from 'components/Footer'
+import Grid from '@material-ui/core/Grid'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
-import Link from 'next/link'
-import Footer from 'components/Footer'
+
+//Data fetching
 import { getPaths, getProject } from 'utils/getData'
+
+//Media queries
+import device from 'utils/media-queries'
 
 const useStyles = makeStyles({
   root: {
@@ -141,132 +149,57 @@ const Projects = ({ data }) => {
           width: 100%;
           height: 100%;
           font-size: 20px;
-          padding: 40px 20px 0px;
+          padding: 40px 10px 0px;
           margin-bottom: 30px;
           color: white;
         }
         .gridContainer {
-          display: flex;
-          flex-direction: row;
-          height: auto;
           width: 100%;
-        }
-
-        .mainImage {
-          width: 100%;
-          height: auto;
-        }
-
-        .name {
           display: flex;
-          flex-direction: row;
-          margin-top: 1em;
+          flex-direction: column;
         }
-
         .yearandtags {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          margin-top: 1em;
+          padding-left: 10px;
         }
-
-        .goBack {
-          text-align: right;
-          margin: 30px;
-        }
-
-        .imageList {
-          width: 500px;
-          height: 450px;
-        }
-
-        .imagen {
-          object-fit: cover;
-          object-position: center;
-        }
-
-        .video {
-          width: 695px;
+        .mainImage {
+          width: 100%;
           height: auto;
+        }
+        .name {
+          display: flex;
+          flex-direction: row;
+          margin-top: 1em;
+          padding-left: 10px;
+        }
+        .imageList {
+          display: inline-block;
+          border: 2px solid pink;
+          width: auto;
+          height: auto;
+        }
+        .video {
+          width: 335px;
+          height: 335px;
           object-fit: cover;
           object-position: center;
+        }
+
+        .tagName {
+          display: flex;
+          flex-direction: column;
         }
 
         .description {
           margin-top: 1em;
           margin-bottom: 1em;
-          padding-left: 6.5px;
+          padding-left: 10px;
+          padding-right: 10px;
         }
 
-        .tagStyle {
-          background-color: transparent;
-          border: none;
-          font-size: 18px;
-          color: white;
-          cursor: pointer;
-          outline: none;
-        }
-
-        a {
-          color: white;
-          text-decoration: none;
-        }
-
-        /* Media Queries */
-
-        @media screen and (max-width: 667px) {
-          .container {
-            width: 100%;
-            height: 100%;
-            font-size: 20px;
-            padding: 40px 10px 0px;
-            margin-bottom: 30px;
-            color: white;
-          }
-          .gridContainer {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-          }
-          .yearandtags {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-left: 10px;
-          }
-          .name {
-            display: flex;
-            flex-direction: row;
-            margin-top: 1em;
-            padding-left: 10px;
-          }
-          .imageList {
-            display: inline-block;
-            border: 2px solid pink;
-            width: auto;
-            height: auto;
-          }
-          .video {
-            width: 335px;
-            height: 335px;
-            object-fit: cover;
-            object-position: center;
-          }
-
-          .tagName {
-            display: flex;
-            flex-direction: column;
-          }
-
-          .description {
-            margin-top: 1em;
-            margin-bottom: 1em;
-            padding-left: 10px;
-            padding-right: 10px;
-          }
-        }
-
-        @media screen and (max-width: 1024px) {
+        @media only Screen and ${device.tablet} {
           .container {
             width: 100%;
             height: 100%;
@@ -303,6 +236,83 @@ const Projects = ({ data }) => {
             height: 359px;
             object-fit: cover;
             object-position: center;
+          }
+        }
+
+        @media only Screen and ${device.desktop} {
+          .container {
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            padding: 40px 20px 0px;
+            margin-bottom: 30px;
+            color: white;
+          }
+          .gridContainer {
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            width: 100%;
+          }
+
+          .mainImage {
+            width: 100%;
+            height: auto;
+          }
+
+          .name {
+            display: flex;
+            flex-direction: row;
+            margin-top: 1em;
+          }
+
+          .yearandtags {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 1em;
+          }
+
+          .goBack {
+            text-align: right;
+            margin: 30px;
+          }
+
+          .imageList {
+            width: 500px;
+            height: 450px;
+          }
+
+          .imagen {
+            object-fit: cover;
+            object-position: center;
+          }
+
+          .video {
+            width: 695px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          .description {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding-left: 6.5px;
+          }
+
+          .tagStyle {
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            outline: none;
+          }
+
+          a {
+            color: white;
+            text-decoration: none;
           }
         }
       `}</style>

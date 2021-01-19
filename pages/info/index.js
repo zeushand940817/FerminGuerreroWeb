@@ -1,17 +1,22 @@
 import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
-import Footer from 'components/Footer'
+
+//Data fetching
 import { getPressData } from 'utils/getData'
 
+//Dynamic imports / Components
 const About = dynamic(() => import('@components/About'))
 const Awards = dynamic(() => import('components/Awards'))
 const Item = dynamic(() => import('../../components/Press/Item'))
 const Contact = dynamic(() => import('components/Contact'))
+const Exhibitions = dynamic(() => import('components/Exhibitions'))
+const Footer = dynamic(() => import('components/Footer'))
 const MobileSectionsMenu = dynamic(() =>
   import('components/MobileSectionsMenu')
 )
-const Exhibitions = dynamic(() => import('components/Exhibitions'))
-const PressMobile = dynamic(() => import('components/PressMobile'))
+
+//Media queries
+import device from 'utils/media-queries'
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect()
@@ -188,177 +193,88 @@ export default function Info({ data }) {
             <Exhibitions />
           </div>
           <div className="bottomSpacer" />
-          <div className="footerDiv">
-            <Footer />
-          </div>
+        </div>
+        <div className="footerDiv">
+          <Footer />
         </div>
       </div>
 
       <style jsx>{`
-        .pageWrapper {
-          padding-top: 60px;
-        }
-        .footerDiv {
-          bottom: 0;
-        }
         .wrapper {
+          padding: 40px 10px 0px 10px;
           height: 100%;
           width: 100%;
-          font-size: 20px;
-          padding: 40px 20px 5px 20px;
+        }
+        .mobileAbout {
+          display: block;
         }
 
         .image {
-          width: 100%;
+          width: 90%;
         }
-
-        .content {
-          margin-top: 50px;
-        }
-
-        .topSpacer {
-          height: auto;
-        }
-
-        .bottomSpacer {
-          height: 40vh;
-        }
-
-        .sticky {
-          position: sticky;
-          top: 50px;
-          left: 0;
-          right: 0;
-          z-index: 10;
-          width: 400px;
-        }
-
-        .header {
-          background-color: transparent;
-          display: flex;
-          flex-direction: column;
-          margin-top: 50px;
-          width: 400px;
-        }
-
         .header_link {
-          background-color: transparent;
-          display: flex;
-          justify-content: left;
-          font-size: 20px;
-          color: white;
-          border: none;
-          cursor: pointer;
-          outline: none;
+          display: none;
         }
-
-        .selected {
-          font-style: italic;
-          font-weight: bold;
-          color: white;
-        }
-
-        .section {
-          background: transparent;
-          height: auto;
-          margin-top: 50px;
-        }
-
-        .linkArticle {
-          outline: none;
-          color: white;
-        }
-
-        #about {
-          margin-top: -180px;
-        }
-
-        #exhibitions {
-          height: 60vh;
-        }
-        .mobileAbout {
+        .header {
           display: none;
         }
 
-        @media screen and (max-width: 677px) {
-          .wrapper {
-            padding: 40px 10px 0px 10px;
-            height: 100%;
-            width: 100%;
-          }
-          .mobileAbout {
-            display: block;
-          }
-
-          .image {
-            width: 90%;
-          }
-          .header_link {
-            display: none;
-          }
-          .header {
-            display: none;
-          }
-
-          #about {
-            display: none;
-          }
-          #contact {
-            display: none;
-          }
-
-          #awards {
-            display: none;
-          }
-
-          #press {
-            display: none;
-            font-size: 16;
-          }
-          #exhibitions {
-            display: none;
-            font-size: 16;
-          }
+        #about {
+          display: none;
+        }
+        #contact {
+          display: none;
         }
 
-        @media screen and (max-width: 1024px) {
+        #awards {
+          display: none;
+        }
+
+        #press {
+          display: none;
+          font-size: 16;
+        }
+        #exhibitions {
+          display: none;
+          font-size: 16;
+        }
+
+        @media only Screen and ${device.tablet} {
+          .pageWrapper {
+            padding-top: 60px;
+          }
+          .footerDiv {
+            bottom: 0;
+          }
           .wrapper {
-            height: 100%;
-            width: 100%;
+            font-size: 20px;
             padding: 40px 20px 0px 20px;
           }
-          .section {
-            background: transparent;
-            height: auto;
-            margin-top: 0px;
-          }
+
           .image {
             width: 100%;
           }
-          .mobileAbout {
-            visibility: none;
-          }
+
           .content {
-            margin-top: 0px;
-            display: block;
-          }
-          #exhibitions {
-            height: 0px;
-          }
-          #awards {
-            padding-top: 40px;
+            margin-top: 50px;
           }
 
-          #press {
-            padding-top: 40px;
+          .topSpacer {
+            height: auto;
           }
 
-          #exhibitions {
-            padding-top: 40px;
-          }
           .bottomSpacer {
-            height: 30vh;
+            height: 40vh;
           }
+
+          .sticky {
+            width: 100%;
+            background-color: black;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
+
           .header {
             display: flex;
             flex-direction: row;
@@ -366,13 +282,81 @@ export default function Info({ data }) {
             width: 100%;
             background-color: 'pink';
           }
+
+          .header_link {
+            background-color: transparent;
+            display: flex;
+            justify-content: left;
+            font-size: 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+          }
+
+          .selected {
+            font-style: italic;
+            font-weight: bold;
+            color: white;
+          }
+          .section {
+            background: transparent;
+            height: auto;
+            margin-top: 50px;
+          }
+
+          .linkArticle {
+            outline: none;
+            color: white;
+          }
+
+          #about {
+            margin-top: 0px;
+            display: block;
+          }
+
+          #contact {
+            display: block;
+          }
+
+          #awards {
+            display: block;
+          }
+
+          #press {
+            margin-top: 20px;
+            display: block;
+            font-size: 16;
+          }
+          #exhibitions {
+            display: block;
+            height: 60vh;
+          }
+
+          .mobileAbout {
+            display: none;
+          }
+        }
+        @media only Screen and ${device.desktop} {
           .sticky {
-            width: 100%;
-            border-bottom: '1px solid white';
-            background-color: black;
-            bottom: 0;
+            position: sticky;
+            top: 50px;
             left: 0;
             right: 0;
+            z-index: 10;
+            width: 400px;
+          }
+
+          .header {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            width: 400px;
+          }
+
+          #about {
+            margin-top: -180px;
           }
         }
       `}</style>

@@ -1,16 +1,19 @@
 import Link from 'next/link'
-import Footer from 'components/Footer'
-import { makeStyles } from '@material-ui/core/styles'
+
+//Components
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+import Footer from 'components/Footer'
+import { makeStyles } from '@material-ui/core/styles'
+
+//Data fetching
 import { getProjectsData } from 'utils/getData'
 
+//Media queries
+import device from 'utils/media-queries'
+
 const useStyles = makeStyles({
-  root: {
-    width: '100%',
-    height: '100%',
-  },
-  label: {
+  imageList: {
     ['@media (max-width:677px)']: {
       display: 'flex',
       flexDirection: 'column',
@@ -23,12 +26,12 @@ export default function TypefaceDesign({ data }) {
   return (
     <>
       <div className="mainWrapper">
-        <div className={classes.root}>
+        <div className="root">
           <ImageList
             variant="masonry"
             cols={3}
             gap={13}
-            className={classes.label}
+            className={classes.imageList}
           >
             {data.map((projectFilter) => (
               <Link
@@ -60,15 +63,13 @@ export default function TypefaceDesign({ data }) {
         <style jsx>{`
           .mainWrapper {
             width: 100%;
-            padding: 30px 20px 0px;
+            padding: 40px 15px 0px 15px;
           }
           .imagen {
-            width: 100%;
-            height: 100%;
+            padding-right: 0px;
           }
           .videoClass {
-            width: 100%;
-            height: 100%;
+            padding-right: 0px;
           }
 
           .container:hover {
@@ -77,6 +78,7 @@ export default function TypefaceDesign({ data }) {
             animation: flash 1.5s;
             font-weight: bold;
           }
+
           @-webkit-keyframes flash {
             0% {
               opacity: 0.4;
@@ -107,8 +109,17 @@ export default function TypefaceDesign({ data }) {
             padding-bottom: 25px;
           }
 
-          /* media queries */
-          @media screen and (max-width: 667px) {
+          .root {
+            width: 100%;
+            height: 100%;
+          }
+
+          .imageList{
+            display: flex;
+            flex-direction: column;
+          }
+
+          @media only Screen and ${device.tablet} {
             .mainWrapper {
               width: 100%;
               padding: 40px 15px 0px 15px;
@@ -119,6 +130,27 @@ export default function TypefaceDesign({ data }) {
             .videoClass {
               padding-right: 0px;
             }
+            .root {
+            width: '100%';
+            height: '100%';
+          }
+
+          @media only Screen and ${device.desktop} {
+            .mainWrapper {
+              width: 100%;
+              padding: 30px 20px 0px;
+            }
+            .imagen {
+              width: 100%;
+              height: 100%;
+            }
+            .videoClass {
+              width: 100%;
+              height: 100%;
+            }
+            .root {
+            width: '100%';
+            height: '100%';
           }
         `}</style>
       </div>

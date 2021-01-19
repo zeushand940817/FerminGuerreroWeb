@@ -5,7 +5,7 @@ import Box from '@material-ui/core/Box'
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
-    color: 'white',
+    color: 'white', 
     marginTop: 60,
     marginBottom: 50,
     lineHeight: 1.4,

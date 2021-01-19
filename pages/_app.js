@@ -1,10 +1,17 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
+
+//Global styles
 import '../styles/globals.css'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from './theme'
+
+//Dynamic imports
 import dynamic from 'next/dynamic'
-import { useEffect } from 'react'
+
+//media queries
+import device from 'utils/media-queries'
 
 const DynamicHeader = dynamic(() => import('components/Header'))
 const DynamicMobileMenu = dynamic(() => import('components/MobileMenu'))
@@ -20,7 +27,6 @@ export default function MyApp(props) {
     }
   }, [])
 
-  console.log({ Component })
   return (
     <React.Fragment>
       <Head>
@@ -49,37 +55,36 @@ export default function MyApp(props) {
       </ThemeProvider>
 
       <style jsx>{`
-        .main-app-wrapper {
-          height: 100%;
-          width: 100%;
-        }
         .desktop {
-          display: block;
+          display: none;
         }
         .mobile {
+          width: 100%;
+          display: inline-block;
+        }
+        .hiddenMobile {
           display: none;
         }
 
-        @media only screen and (max-width: 677px) {
+        @media only Screen and ${device.tablet} {
           .desktop {
             display: none;
           }
           .mobile {
             width: 100%;
             display: inline-block;
-          }
-          .hiddenMobile {
-            display: none;
           }
         }
-
-        @media screen and (max-width: 1024px) {
+        @media only Screen and ${device.desktop} {
+          .main-app-wrapper {
+            height: 100%;
+            width: 100%;
+          }
           .desktop {
-            display: none;
+            display: block;
           }
           .mobile {
-            width: 100%;
-            display: inline-block;
+            display: none;
           }
         }
       `}</style>

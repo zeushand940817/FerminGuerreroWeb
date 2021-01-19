@@ -1,9 +1,15 @@
 import { useState } from 'react'
+
+//Data fetching
+import { getLandingData } from '../utils/getData'
+
+//components
 import Footer from 'components/Footer'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
-import { getLandingData } from '../utils/getData'
+//media queries
+import device from 'utils/media-queries'
 
 const Home = ({ dataParse }) => {
   const mobileImages = dataParse.mobile
@@ -107,21 +113,24 @@ const Home = ({ dataParse }) => {
 
       <style jsx>{`
         .wrapper {
-          width: 100vw;
-          height: 100vh;
+          display: none;
         }
+
         .homeMobile {
-          display: none;
+          display: block;
         }
 
-        .mobileOnly {
-          display: none;
-        }
-
-        .box {
+        img {
+          width: 100%;
           height: 100%;
+          object-fit: cover;
+          object-position: center;
         }
 
+        .imageSlider {
+          height: 100vh;
+          top: 0;
+        }
         .carousel-with-custom-dots {
           margin-top: 100px;
           padding-bottom: 100px;
@@ -134,7 +143,8 @@ const Home = ({ dataParse }) => {
           transform: scale(1.3);
           outline: auto;
         }
-        @media screen and (max-width: 667px) {
+
+        @media only Screen and ${device.tablet} {
           .wrapper {
             display: none;
           }
@@ -154,17 +164,35 @@ const Home = ({ dataParse }) => {
             height: 100vh;
             top: 0;
           }
+          .carousel-with-custom-dots {
+            margin-top: 100px;
+            padding-bottom: 100px;
+          }
+          .custom-dot {
+            border: none;
+            outline: none;
+          }
+          .custom-dot--active {
+            transform: scale(1.3);
+            outline: auto;
+          }
         }
-
-        @media screen and (max-width: 1024px) {
+        @media only Screen and ${device.desktop} {
           .wrapper {
-            height: 100vh;
+            display: block;
             width: 100vw;
+            height: 100vh;
+          }
+          .homeMobile {
+            display: none;
           }
 
-          .homeMobile {
-            display: block;
-            margin-top: -25px;
+          .mobileOnly {
+            display: none;
+          }
+
+          .box {
+            height: 100%;
           }
         }
       `}</style>
