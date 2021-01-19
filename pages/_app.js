@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import '../styles/globals.css'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from './theme'
+import Theme from './theme'
 
 //Dynamic imports
 import dynamic from 'next/dynamic'
@@ -41,7 +41,7 @@ export default function MyApp(props) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={Theme}>
         <div className="main-app-wrapper">
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
