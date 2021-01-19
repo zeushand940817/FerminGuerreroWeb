@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import '../styles/globals.css'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from './theme'
+import theme from '../utils/theme'
 
 //Dynamic imports
 import dynamic from 'next/dynamic'
