@@ -48,45 +48,78 @@ export default function Animation({ data, path }) {
   )
 
   return (
-    <div className={classes.tagWrapper}>
-      <div className={classes.root}>
-        <ImageList
-          variant="masonry"
-          cols={3}
-          gap={13}
-          className={classes.label}
-        >
-          {animation.map((elem) => (
-            <div className="container">
-              <ImageListItem key={elem.id}>
-                {elem.image && (
-                  <img
-                    className={classes.imagen}
-                    alt="graphic-design-photo"
-                    src={elem.image}
-                  />
-                )}
-                {elem.mp4 && (
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    width="100%"
-                    height="auto"
-                    className={classes.videoClass}
-                  >
-                    <source src={elem.mp4Video} type="video/mp4" />
-                  </video>
-                )}
-                <div className={classes.text}>
-                  <p>{elem.name}</p>
-                </div>
-              </ImageListItem>
-            </div>
-          ))}
-        </ImageList>
+    <>
+      <div className={classes.tagWrapper}>
+        <div className={classes.root}>
+          <ImageList
+            variant="masonry"
+            cols={3}
+            gap={13}
+            className={classes.label}
+          >
+            {animation.map((elem) => (
+              <div className="container">
+                <ImageListItem key={elem.id}>
+                  {elem.image && (
+                    <img
+                      className={classes.imagen}
+                      alt="graphic-design-photo"
+                      src={elem.image}
+                    />
+                  )}
+                  {elem.mp4 && (
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      width="100%"
+                      height="auto"
+                      className={classes.videoClass}
+                    >
+                      <source src={elem.mp4Video} type="video/mp4" />
+                    </video>
+                  )}
+                  <div className={classes.text}>
+                    <p>{elem.name}</p>
+                  </div>
+                </ImageListItem>
+              </div>
+            ))}
+          </ImageList>
+        </div>
       </div>
-    </div>
+
+      <style jsx>{`
+        .container:hover {
+          opacity: 1;
+          -webkit-animation: flash 1.5s;
+          animation: flash 1.5s;
+          font-weight: bold;
+        }
+        @-webkit-keyframes flash {
+          0% {
+            opacity: 0.4;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        @keyframes flash {
+          0% {
+            opacity: 0.4;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        .container:hover .videoClass {
+          opacity: 1;
+          -webkit-animation: flash 1.5s;
+          animation: flash 1.5s;
+        }
+      `}</style>
+    </>
   )
 }
 

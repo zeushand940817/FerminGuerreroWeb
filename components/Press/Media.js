@@ -1,3 +1,6 @@
+//Media queries
+import device from 'utils/media-queries'
+
 export default function Media({ image }) {
   return (
     <>
@@ -6,20 +9,21 @@ export default function Media({ image }) {
       </div>
       <style jsx>{`
         img {
-          width: 250px;
+          width: 150px;
           height: auto;
           object-fit: contain;
           cursor: pointer;
           pointer-events: none;
-          padding-left: 10px;
+          padding: 15px;
         }
         .container {
           height: 100px;
         }
-        @media screen and (max-width: 1024px) {
+
+        @media only Screen and ${device.tablet} {
           img {
-            padding: 15px;
-            width: 150px;
+            padding-left: 10px;
+            width: 250px;
           }
         }
       `}</style>

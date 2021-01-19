@@ -30,6 +30,7 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
+        <link rel="shortcut icon" href="/fermin-icon.jpg" />
         <title>Fermin Guerrero</title>
         <meta
           property="og:title"

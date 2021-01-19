@@ -1,11 +1,14 @@
+//Styles
 import { makeStyles } from '@material-ui/core/styles'
+
+//Components
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
-    color: 'white', 
+    color: 'white',
     marginTop: 60,
     marginBottom: 50,
     lineHeight: 1.4,
@@ -19,10 +22,10 @@ const useStyles = makeStyles((theme) => ({
   },
 
   firstBox: {
-    marginTop: 50,
+    paddingTop: 50,
     marginBottom: 35,
 
-    ['@media (max-width: 1024px)']: {
+    ['@media (min-width: 768px)']: {
       marginTop: 0,
     },
   },

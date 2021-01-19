@@ -204,13 +204,17 @@ export default function Info({ data }) {
           padding: 40px 10px 0px 10px;
           height: 100%;
           width: 100%;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: space-between;
         }
         .mobileAbout {
           display: block;
         }
 
         .image {
-          width: 90%;
+          width: 100%;
         }
         .header_link {
           display: none;
