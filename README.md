@@ -1,1 +1,1 @@
-## NextJS Graphic Designer Web 🌿 
+## NextJs Graphic Designer Web 🌿 
