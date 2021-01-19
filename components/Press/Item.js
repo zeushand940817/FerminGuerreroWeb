@@ -1,7 +1,11 @@
 import { useState } from 'react'
+
+//Components
 import Media from './Media'
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
+
+//Styles
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
@@ -20,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function ({ description, year, index, articles, description2 }) {
-  console.log({ articles })
   const classes = useStyles()
   const [activeIndex, setActiveIndex] = useState(-1)
 

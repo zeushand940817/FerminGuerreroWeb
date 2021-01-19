@@ -60,22 +60,21 @@ const Projects = ({ data }) => {
                   <Grid item xs={12} sm={12} lg={4}>
                     <div className="yearandtags">
                       <p>{element.year}</p>
-                      <p className="tagName">
+                      <div className="tagName">
                         {element.tags &&
                           element.tags.map((tag) => {
-                            console.log({ tag })
                             const transformName = tag.replace('-', ' ')
                             return (
                               <>
                                 <Link href={`/tag/${tag}`}>
-                                  <a>
+                                  <a className="tagLink">
                                     <u>{transformName}</u>
                                   </a>
                                 </Link>{' '}
                               </>
                             )
                           })}
-                      </p>
+                      </div>
                     </div>
                   </Grid>
 
@@ -181,8 +180,8 @@ const Projects = ({ data }) => {
           height: auto;
         }
         .video {
-          width: 335px;
-          height: 335px;
+          width: 100%;
+          height: auto;
           object-fit: cover;
           object-position: center;
         }
@@ -197,6 +196,10 @@ const Projects = ({ data }) => {
           margin-bottom: 1em;
           padding-left: 10px;
           padding-right: 10px;
+        }
+
+        a:visited {
+          color: white;
         }
 
         @media only Screen and ${device.tablet} {
@@ -230,12 +233,14 @@ const Projects = ({ data }) => {
             width: auto;
             height: auto;
           }
-          .video {
-            display: inline-block;
-            width: 359px;
-            height: 359px;
-            object-fit: cover;
-            object-position: center;
+      
+          }
+          .tagName {
+            display: flex;
+            flex-direction: row;
+          }
+          .tagLink {
+            margin-right: 8px;
           }
         }
 

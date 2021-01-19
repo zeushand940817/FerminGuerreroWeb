@@ -1,27 +1,27 @@
+//Styles
+import { makeStyles } from '@material-ui/core/styles'
+
+//Componets
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
-import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
     color: 'white',
-    // ['@media (max-width: 1024px)']: {
-    //   paddingTop: 130,
-    // },
   },
   box: {
     marginTop: 60,
     paddingLeft: '3px',
     lineHeight: 1.4,
-    ['@media (max-width: 677px)']: {
+    ['@media (max-width:677px)']: {
       fontSize: 20,
       lineHeight: 1.2,
       marginTop: 10,
       marginBottom: 20,
       paddingTop: 0,
     },
-    ['@media (max-width: 1024px)']: {
+    ['@media (min-width: 768px)']: {
       fontSize: 20,
       lineHeight: 1.2,
     },

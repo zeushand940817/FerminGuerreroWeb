@@ -1,10 +1,15 @@
+//Styles
 import { makeStyles } from '@material-ui/core/styles'
+import { withStyles } from '@material-ui/core/styles'
+
+//Components
 import TreeView from '@material-ui/lab/TreeView'
-import AddIcon from '@material-ui/icons/Add'
-import RemoveIcon from '@material-ui/icons/Remove'
 import TreeItem from '@material-ui/lab/TreeItem'
 import MuiTreeItem from '@material-ui/lab/TreeItem'
-import { withStyles } from '@material-ui/core/styles'
+
+//Icons
+import AddIcon from '@material-ui/icons/Add'
+import RemoveIcon from '@material-ui/icons/Remove'
 
 const useStyles = makeStyles({
   root: {
@@ -47,18 +52,6 @@ const TreeItem1 = withStyles({
     },
   },
 })(MuiTreeItem)
-
-// const TreeContent = withStyles({
-//   root: {
-//     '&.MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label': {
-//       display: 'flex',
-//       flexDirection: 'row',
-//       color: 'pink',
-//       fontSize: 18,
-//       backgroundColor: 'transparent',
-//     },
-//   },
-// })(MuiTreeItem)
 
 export default function AwardsMobile() {
   const classes = useStyles()

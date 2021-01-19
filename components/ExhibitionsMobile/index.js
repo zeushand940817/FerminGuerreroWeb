@@ -1,10 +1,14 @@
-import { makeStyles } from '@material-ui/core/styles'
-import TreeView from '@material-ui/lab/TreeView'
+//Icons
 import AddIcon from '@material-ui/icons/Add'
 import RemoveIcon from '@material-ui/icons/Remove'
-import TreeItem from '@material-ui/lab/TreeItem'
+
+//Components
+import TreeView from '@material-ui/lab/TreeView'
 import MuiTreeItem from '@material-ui/lab/TreeItem'
+
+//Styles
 import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
   root: {

@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
+
+//Component
 import { Spin as Hamburger } from 'hamburger-react'
 
 export default function MobileMenu() {
@@ -13,7 +15,10 @@ export default function MobileMenu() {
     <>
       <section className={isOpen == true ? 'sectionOpen' : 'sectionClose'}>
         <Link href="/">
-          <a className={isOpen !== true ? 'homeClose' : 'homeOpen'}>
+          <a
+            className={isOpen !== true ? 'homeClose' : 'homeOpen'}
+            onClick={() => handleClick()}
+          >
             Fermin Guerrero
           </a>
         </Link>

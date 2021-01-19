@@ -1,4 +1,7 @@
+//Styles
 import { makeStyles } from '@material-ui/core/styles'
+
+//Componets
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 
@@ -14,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
   text: {
     marginBottom: 10,
     marginTop: 10,
+    ['@media (min-width: 378px)']: {
+      paddingRight: 10,
+    },
   },
   textSectionLast: {
     marginBottom: 0,

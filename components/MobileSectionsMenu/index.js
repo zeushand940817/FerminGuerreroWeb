@@ -1,16 +1,23 @@
+import dynamic from 'next/dynamic'
+
+//Styles
 import { makeStyles } from '@material-ui/core/styles'
-import TreeView from '@material-ui/lab/TreeView'
-import AddIcon from '@material-ui/icons/Add'
-import RemoveIcon from '@material-ui/icons/Remove'
-import MuiTreeItem from '@material-ui/lab/TreeItem'
 import { withStyles } from '@material-ui/core/styles'
 
+//Icons
+import AddIcon from '@material-ui/icons/Add'
+import RemoveIcon from '@material-ui/icons/Remove'
+
 //Components
-import About from '@components/About'
-import Contact from 'components/Contact'
-import PressMobile from 'components/PressMobile'
-import AwardsMobile from 'components/AwardsMobile'
-import ExhibitionsMobile from '@components/ExhibitionsMobile'
+import TreeView from '@material-ui/lab/TreeView'
+import MuiTreeItem from '@material-ui/lab/TreeItem'
+
+//Dynamic imports
+const About = dynamic(() => import('@components/About'))
+const Contact = dynamic(() => import('@components/Contact'))
+const PressMobile = dynamic(() => import('@components/PressMobile'))
+const AwardsMobile = dynamic(() => import('@components/AwardsMobile'))
+const ExhibitionsMobile = dynamic(() => import('@components/ExhibitionsMobile'))
 
 const useStyles = makeStyles({
   root: {
@@ -38,16 +45,6 @@ const TreeItem1 = withStyles({
       flexDirection: 'row',
       fontSize: 20,
       background: 'none',
-    },
-  },
-})(MuiTreeItem)
-
-const TreeItemMain = withStyles({
-  root: {
-    '&.MuiTreeItem-content': {
-      fontSize: 20,
-      paddingTop: 4,
-      paddingBottom: 4,
     },
   },
 })(MuiTreeItem)

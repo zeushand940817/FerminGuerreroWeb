@@ -1,8 +1,9 @@
+//Styles
 import { makeStyles } from '@material-ui/core/styles'
-import Grid from '@material-ui/core/Grid'
-import Box from '@material-ui/core/Box'
 
 //Components
+import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
 import Time from '@components/Time'
 
 const useStyles = makeStyles((theme) => ({
@@ -11,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     lineHeight: 1.4,
     paddingLeft: '3px',
-    ['@media (max-width: 677px)']: {
+    ['@media (min-width: 378px)']: {
       fontSize: 18,
       lineHeight: 1.2,
       marginTop: 10,
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   li: {
     listStyle: 'none',
-    ['@media (max-width: 677px)']: {
+    ['@media (max-width:677px)']: {
       fontSize: 18,
       marginBottom: 5,
     },
@@ -28,13 +29,13 @@ const useStyles = makeStyles((theme) => ({
   box: {
     marginTop: 50,
     marginBottom: 10,
-    ['@media (max-width: 677px)']: {
+    ['@media (max-width:677px)']: {
       fontSize: 18,
       marginTop: 10,
       marginBottom: 10,
       paddingTop: 0,
     },
-    ['@media (max-width: 1024px)']: {
+    ['@media (min-width: 768px)']: {
       fontSize: 18,
     },
   },
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     color: 'white',
     borderBottom: '1px solid white',
-    ['@media (max-width: 677px)']: {
+    ['@media (max-width:677px)']: {
       fontSize: 18,
     },
   },
@@ -52,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     color: 'white',
     marginBottom: 20,
-    ['@media (max-width: 677px)']: {
+    ['@media (max-width:677px)']: {
       fontSize: 18,
       marginBottom: 5,
     },
@@ -61,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     color: 'white',
     marginBottom: 10,
-    ['@media (max-width: 677px)']: {
+    ['@media (max-width:677px)']: {
       fontSize: 18,
       marginBottom: 5,
       marginTop: 5,

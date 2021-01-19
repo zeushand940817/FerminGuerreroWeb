@@ -1,10 +1,18 @@
 import Link from 'next/link'
+
+//Components
 import Footer from 'components/Footer'
-import { makeStyles } from '@material-ui/core/styles'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 
+//Styles
+import { makeStyles } from '@material-ui/core/styles'
+
+//Data fetching
 import { getProjectsData } from 'utils/getData'
+
+//Media queries
+import device from 'utils/media-queries'
 
 const useStyles = makeStyles({
   root: {
@@ -73,15 +81,17 @@ export default function GraphicDesign({ data, extractVideo }) {
         <style jsx>{`
           .mainWrapper {
             width: 100%;
-            padding: 30px 20px 0px;
+            padding: 40px 15px 0px 15px;
           }
           .imagen {
             width: 100%;
             height: 100%;
+            padding-right: 0px;
           }
           .videoClass {
             width: 100%;
             height: 100%;
+            padding-right: 0px;
           }
 
           .container:hover {
@@ -118,19 +128,16 @@ export default function GraphicDesign({ data, extractVideo }) {
             color: white;
             padding-top: 20px;
             padding-bottom: 25px;
+            line-height: 18px;
           }
 
-          /* media queries */
-          @media screen and (max-width: 667px) {
+          @media only Screen and ${device.tablet} {
             .mainWrapper {
-              width: 100%;
-              padding: 40px 15px 0px 15px;
+              padding: 30px 20px 0px;
             }
-            .imagen {
-              padding-right: 0px;
-            }
-            .videoClass {
-              padding-right: 0px;
+            .text {
+              font-size: 18px;
+              color: white;
             }
           }
         `}</style>

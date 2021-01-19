@@ -107,6 +107,7 @@ export default function TypefaceDesign({ data }) {
             color: white;
             padding-top: 20px;
             padding-bottom: 25px;
+            line-height: 18px;
           }
 
           .root {
