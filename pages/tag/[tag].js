@@ -1,3 +1,6 @@
+import Link from 'next/link'
+
+//Styles
 import { makeStyles } from '@material-ui/core/styles'
 
 //Components
@@ -58,32 +61,40 @@ export default function Animation({ data, path }) {
             className={classes.label}
           >
             {animation.map((elem) => (
-              <div className="container">
-                <ImageListItem key={elem.id}>
-                  {elem.image && (
-                    <img
-                      className={classes.imagen}
-                      alt="graphic-design-photo"
-                      src={elem.image}
-                    />
-                  )}
-                  {elem.mp4 && (
-                    <video
-                      autoPlay
-                      muted
-                      loop
-                      width="100%"
-                      height="auto"
-                      className={classes.videoClass}
-                    >
-                      <source src={elem.mp4Video} type="video/mp4" />
-                    </video>
-                  )}
-                  <div className={classes.text}>
-                    <p>{elem.name}</p>
+              <Link
+                key={elem.id}
+                href={`/projects/[slug]`}
+                as={`/projects/${elem.slug}`}
+              >
+                <a>
+                  <div className="container">
+                    <ImageListItem key={elem.id}>
+                      {elem.image && (
+                        <img
+                          className={classes.imagen}
+                          alt="graphic-design-photo"
+                          src={elem.image}
+                        />
+                      )}
+                      {elem.mp4 && (
+                        <video
+                          autoPlay
+                          muted
+                          loop
+                          width="100%"
+                          height="auto"
+                          className={classes.videoClass}
+                        >
+                          <source src={elem.mp4Video} type="video/mp4" />
+                        </video>
+                      )}
+                      <div className={classes.text}>
+                        <p>{elem.name}</p>
+                      </div>
+                    </ImageListItem>
                   </div>
-                </ImageListItem>
-              </div>
+                </a>
+              </Link>
             ))}
           </ImageList>
         </div>
