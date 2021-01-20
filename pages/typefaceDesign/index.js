@@ -13,6 +13,10 @@ import { getProjectsData } from 'utils/getData'
 import device from 'utils/media-queries'
 
 const useStyles = makeStyles({
+  root: {
+    width: '100%',
+    height: '100%',
+  },
   imageList: {
     ['@media (max-width:677px)']: {
       display: 'flex',
@@ -26,7 +30,7 @@ export default function TypefaceDesign({ data }) {
   return (
     <>
       <div className="mainWrapper">
-        <div className="root">
+        <div className={classes.root}>
           <ImageList
             variant="masonry"
             cols={3}
@@ -63,12 +67,16 @@ export default function TypefaceDesign({ data }) {
         <style jsx>{`
           .mainWrapper {
             width: 100%;
-            padding: 40px 15px 0px 15px;
+            padding: 30px 15px 0px 15px;
           }
           .imagen {
+            width: 100%;
+            height: 100%;
             padding-right: 0px;
           }
           .videoClass {
+            width: 100%;
+            height: 100%;
             padding-right: 0px;
           }
 
@@ -107,52 +115,27 @@ export default function TypefaceDesign({ data }) {
             color: white;
             padding-top: 20px;
             padding-bottom: 25px;
-            line-height: 18px;
-          }
-
-          .root {
-            width: 100%;
-            height: 100%;
-          }
-
-          .imageList{
-            display: flex;
-            flex-direction: column;
           }
 
           @media only Screen and ${device.tablet} {
-            .mainWrapper {
-              width: 100%;
-              padding: 40px 15px 0px 15px;
+            .text{
+              font-size: 18px;
+              color: white;
+              line-height: 18px;
+              padding-top: 5px;
             }
-            .imagen {
-              padding-right: 0px;
-            }
-            .videoClass {
-              padding-right: 0px;
-            }
-            .root {
-            width: '100%';
-            height: '100%';
           }
 
           @media only Screen and ${device.desktop} {
             .mainWrapper {
-              width: 100%;
-              padding: 30px 20px 0px;
+              padding: 30px 20px 0px 20px;
             }
-            .imagen {
-              width: 100%;
-              height: 100%;
+         
+            .text{
+              font-size: 20px;
+              line-height: 0px;
+              padding-top: 20px;
             }
-            .videoClass {
-              width: 100%;
-              height: 100%;
-            }
-            .root {
-            width: '100%';
-            height: '100%';
-          }
         `}</style>
       </div>
     </>

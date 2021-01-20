@@ -7,7 +7,9 @@ export default function Footer({ component }) {
       <footer
         className={component === 'home' ? 'footerHome' : 'footerComponent'}
       >
-        <div>©2021 - Fermin Guerrero</div>
+        <div>
+          ©2021 <span>&#8212; </span> Fermin Guerrero
+        </div>
         <div>
           Developed by{' '}
           <a
@@ -15,7 +17,7 @@ export default function Footer({ component }) {
             href="https://lauradiaz.vercel.app/"
             target="_blank"
           >
-            <u>Laura Diaz.</u>
+            <u>Laura Diaz</u>
           </a>
         </div>
 
@@ -49,87 +51,102 @@ export default function Footer({ component }) {
       </footer>
 
       <style jsx>{`
-        footer {
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          color: white;
-          font-size: 16px;
-          display: flex;
-          flex-direction: row;
+         
+         .footerHome{
+           display:none;
+         }
+
+         .footerComponent{
+          display:flex;
+          flex-direction:column;
         }
-        .footerHome {
-          display: none;
-        }
-        .social {
-          display: none;
-        }
-        a {
+         a {
+          outline: none;
           color: white;
         }
+
+        a:visited {
+          color:white;
+        }
+        .lauraLink {}
 
         div:nth-child(2) {
           color: #666666;
+          
         }
-        .footerHome {
-          display: none;
-        }
-
         @media only Screen and ${device.tablet} {
-          footer {
-            width: 100%;
-            height: 40px;
-            mix-blend-mode: difference;
-            background: none;
-            bottom: 0;
-            z-index: 1;
-            font-size: 20px;
-            outline: none;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 1;
-            font-size: 20px;
-            color: white;
-          }
           .footerHome {
-            position: fixed;
-          }
-          .social {
-            display: block;
-          }
-
-          div:nth-child(1) {
-            grid-column: 1/5;
-          }
-          div:nth-child(2) {
-            grid-column: 5/10;
-            padding-left: 3px;
-            color: #666666;
-          }
-          div:nth-child(3) {
-            grid-column: 10;
-          }
-          div:nth-child(4) {
-            grid-column: 11;
-          }
-          div:nth-child(5) {
-            grid-column: 12;
-            text-align: right;
-          }
-
-          a {
-            text-decoration: none;
-            outline: none;
-            color: white;
-          }
-          .lauraLink {
-            color: #666666;
-            text-decoration: none;
-          }
-          .footerHome {
-            display: flex;
+            display:none;
           }
         }
+
+        @media only Screen and ${device.desktop} {
+        .footerHome {
+          padding: 0px 20px 0px 20px;
+          width: 100%;
+          height: 40px;
+          mix-blend-mode: difference;
+          background: none;
+          bottom: 0;
+          z-index: 1;
+          font-size: 20px;
+          outline: none;
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          grid-template-rows: 1;
+          font-size: 20px;
+          color: white;
+          position: fixed;
+        }
+        .footerComponent{
+          width: 100%;
+          height: 40px;
+          background: none;
+          bottom: 0;
+          font-size: 20px;
+          outline: none;
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          grid-template-rows: 1;
+          font-size: 20px;
+          color: white; 
+        }
+
+        div:nth-child(1) {
+          grid-column: 1/5;
+        }
+        div:nth-child(2) {
+          grid-column: 5/10;
+          padding-left: 3px;
+          color: #424242;
+        }
+        div:nth-child(3) {
+          grid-column: 10;
+        }
+
+        div:nth-child(4) {
+          grid-column: 11;
+        }
+        div:nth-child(5) {
+          grid-column: 12;
+          text-align: right;
+        }
+
+        div:nth-child(6) {
+          grid-column: 12;
+          text-align: right;
+        }
+      
+        .lauraLink {
+          color: #424242 !important;
+          text-decoration: none;
+          font-size:20px;
+        }
+
+        .developer{
+          display:none;
+        }
+       
       `}</style>
     </>
   )

@@ -81,7 +81,7 @@ export default function GraphicDesign({ data, extractVideo }) {
         <style jsx>{`
           .mainWrapper {
             width: 100%;
-            padding: 40px 15px 0px 15px;
+            padding: 30px 15px 0px 15px;
           }
           .imagen {
             width: 100%;
@@ -128,16 +128,25 @@ export default function GraphicDesign({ data, extractVideo }) {
             color: white;
             padding-top: 20px;
             padding-bottom: 25px;
-            line-height: 18px;
           }
 
           @media only Screen and ${device.tablet} {
-            .mainWrapper {
-              padding: 30px 20px 0px;
-            }
             .text {
               font-size: 18px;
               color: white;
+              line-height: 18px;
+              padding-top: 5px;
+            }
+          }
+
+          @media only Screen and ${device.desktop} {
+            .mainWrapper {
+              padding: 30px 20px 0px 20px;
+            }
+            .text {
+              font-size: 20px;
+              line-height: 0px;
+              padding-top: 20px;
             }
           }
         `}</style>

@@ -15,10 +15,7 @@ export default function MobileMenu() {
     <>
       <section className={isOpen == true ? 'sectionOpen' : 'sectionClose'}>
         <Link href="/">
-          <a
-            className={isOpen !== true ? 'homeClose' : 'homeOpen'}
-            onClick={() => handleClick()}
-          >
+          <a className={isOpen !== true ? 'homeClose' : 'homeOpen'}>
             Fermin Guerrero
           </a>
         </Link>
