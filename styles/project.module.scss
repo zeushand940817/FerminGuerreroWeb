@@ -1,0 +1,69 @@
+@import './mixins';
+
+.container {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  padding: 30px 10px 0px 10px;
+  margin-bottom: 30px;
+  color: white;
+}
+.gridContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.yearandtags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.mainImage {
+  width: 100%;
+  height: auto;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  padding-left: 10px;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tagName {
+  display: flex;
+  flex-direction: row;
+  .tagLink {
+    margin-right: 8px;
+  }
+}
+
+.description {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@include respond(tablet) {
+  .gridContainer {
+    flex-direction: row;
+  }
+
+  .tagName {
+    flex-direction: row;
+  }
+}
+
+@include respond(desktop) {
+  .gridContainer {
+    flex-direction: column;
+  }
+}

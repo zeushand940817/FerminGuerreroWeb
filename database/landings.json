@@ -121,22 +121,22 @@
   },
   "landing25": {
     "id": 25,
-    "image": "/CoverPhotos/Mobile/1.jpg",
+    "image": "/CoverPhotos/Mobile/0.jpg",
     "type": "mobile"
   },
   "landing26": {
     "id": 26,
-    "image": "/CoverPhotos/Mobile/2.jpg",
+    "image": "/CoverPhotos/Mobile/1.jpg",
     "type": "mobile"
   },
   "landing27": {
     "id": 27,
-    "image": "/CoverPhotos/Mobile/3.jpg",
+    "image": "/CoverPhotos/Mobile/2.jpg",
     "type": "mobile"
   },
   "landing28": {
     "id": 28,
-    "image": "/CoverPhotos/Mobile/4.jpg",
+    "image": "/CoverPhotos/Mobile/3.jpg",
     "type": "mobile"
   },
   "landing29": {
@@ -152,41 +152,6 @@
   "landing31": {
     "id": 31,
     "image": "/CoverPhotos/Mobile/7.jpg",
-    "type": "mobile"
-  },
-  "landing32": {
-    "id": 32,
-    "image": "/CoverPhotos/Mobile/8.jpg",
-    "type": "mobile"
-  },
-  "landing33": {
-    "id": 33,
-    "image": "/CoverPhotos/Mobile/9.jpg",
-    "type": "mobile"
-  },
-  "landing34": {
-    "id": 34,
-    "image": "/CoverPhotos/Mobile/10.jpg",
-    "type": "mobile"
-  },
-  "landing35": {
-    "id": 35,
-    "image": "/CoverPhotos/Mobile/11.jpg",
-    "type": "mobile"
-  },
-  "landing36": {
-    "id": 36,
-    "image": "/CoverPhotos/Mobile/12.jpg",
-    "type": "mobile"
-  },
-  "landing37": {
-    "id": 37,
-    "image": "/CoverPhotos/Mobile/13.jpg",
-    "type": "mobile"
-  },
-  "landing38": {
-    "id": 38,
-    "image": "/CoverPhotos/Mobile/14.jpg",
     "type": "mobile"
   }
 }

@@ -33,7 +33,7 @@ const Home = ({ dataParse }) => {
     },
   }
 
-  const CustomDot = ({ onClick, active, index, carouselState }) => {
+  const CustomDot = ({ onClick, active }) => {
     return (
       <li
         style={{
@@ -42,8 +42,10 @@ const Home = ({ dataParse }) => {
           borderRadius: '100px',
           marginBottom: '20px',
           marginRight: '5px',
-          height: '16px',
-          border: '1px solid white',
+          width: '15px',
+          height: '15px',
+          border: '2px solid white',
+          borderRadius: '10px',
         }}
       >
         <button
@@ -63,8 +65,9 @@ const Home = ({ dataParse }) => {
 
   return (
     <>
-      <div className="wrapper">
+      <div className="hero">
         <img
+          className="backgroundImage"
           style={{
             backgroundPosition: 'center',
             backgroundSize: 'cover',
@@ -73,7 +76,7 @@ const Home = ({ dataParse }) => {
             height: '100vh',
             top: '0',
           }}
-          src={desktopImages[3]}
+          src={desktopImages[0].image}
         />
         <div
           className="box"
@@ -112,7 +115,7 @@ const Home = ({ dataParse }) => {
       <Footer component="home" />
 
       <style jsx>{`
-        .wrapper {
+        .hero {
           display: none;
         }
 
@@ -145,7 +148,7 @@ const Home = ({ dataParse }) => {
         }
 
         @media only Screen and ${device.tablet} {
-          .wrapper {
+          .hero {
             display: none;
           }
 
@@ -178,7 +181,7 @@ const Home = ({ dataParse }) => {
           }
         }
         @media only Screen and ${device.desktop} {
-          .wrapper {
+          .hero {
             display: block;
             width: 100vw;
             height: 100vh;

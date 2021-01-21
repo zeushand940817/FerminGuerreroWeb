@@ -11,11 +11,8 @@ import styles from 'styles/app.module.scss'
 //Dynamic imports
 import dynamic from 'next/dynamic'
 
-//media queries
-import device from 'utils/media-queries'
-
-const DynamicHeader = dynamic(() => import('components/Header'))
-const DynamicMobileMenu = dynamic(() => import('components/MobileMenu'))
+const Header = dynamic(() => import('components/Header'))
+const MobileMenu = dynamic(() => import('components/MobileMenu'))
 
 export default function MyApp(props) {
   const { Component, pageProps } = props
@@ -43,50 +40,18 @@ export default function MyApp(props) {
       </Head>
 
       <ThemeProvider theme={theme}>
-        <div className="mainAppWrapper">
+        <div className={styles.mainAppWrapper}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
-          <div className="desktop">
-            <DynamicHeader />
+          <div className={styles.desktop}>
+            <Header />
           </div>
-          <div className="mobile">
-            <DynamicMobileMenu />
+          <div className={styles.mobile}>
+            <MobileMenu />
           </div>
           <Component {...pageProps} />
         </div>
       </ThemeProvider>
-
-      <style jsx>{`
-        .desktop {
-          display: none;
-        }
-        .mobile {
-          width: 100%;
-          display: inline-block;
-        }
-
-        @media only Screen and ${device.tablet} {
-          .desktop {
-            display: none;
-          }
-          .mobile {
-            width: 100%;
-            display: inline-block;
-          }
-        }
-        @media only Screen and ${device.desktop} {
-          .mainAppWrapper {
-            height: 100%;
-            width: 100%;
-          }
-          .desktop {
-            display: block;
-          }
-          .mobile {
-            display: none;
-          }
-        }
-      `}</style>
     </React.Fragment>
   )
 }

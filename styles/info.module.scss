@@ -1,0 +1,145 @@
+@import './mixins';
+
+.wrapper {
+  padding: 30px 10px 0px 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+
+  .topSpacer {
+    .image {
+      width: 100%;
+    }
+  }
+  .mobileAbout {
+    display: block;
+  }
+  .content {
+    .sticky {
+      .header {
+        display: none;
+
+        .selected {
+        }
+      }
+    }
+
+    .section {
+      display: none;
+      #about {
+      }
+      #contact {
+      }
+      #awards {
+      }
+      #press {
+        .boxPress {
+          .pageWrapper {
+            .projectList {
+              .linkArticle {
+              }
+            }
+          }
+        }
+      }
+      #exhibitions {
+      }
+      .bottomSpacer {
+      }
+      .footerDiv {
+      }
+    }
+  }
+}
+
+@include respond(tablet) {
+  .mobileAbout {
+    display: none;
+  }
+  .content {
+    margin-top: 50px;
+    .sticky {
+      width: 100%;
+      background-color: black;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      background-color: 'pink';
+    }
+
+    .header_link {
+      background-color: transparent;
+      display: flex;
+      justify-content: left;
+      font-size: 20px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .selected {
+      font-style: italic;
+      font-weight: bold;
+      color: white;
+    }
+    .section {
+      background: transparent;
+      display: block;
+      height: auto;
+      margin-top: 50px;
+      #exhibitions {
+        display: block;
+        height: 60vh;
+      }
+    }
+
+    .linkArticle {
+      outline: none;
+      color: white;
+    }
+  }
+
+  .topSpacer {
+    height: auto;
+  }
+  .pageWrapper {
+    padding-top: 60px;
+  }
+
+  .bottomSpacer {
+    height: 40vh;
+  }
+}
+@include respond(desktop) {
+  .sticky {
+    position: sticky;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 400px;
+  }
+
+  .header {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 400px;
+  }
+
+  #about {
+    margin-top: -180px;
+  }
+}

@@ -1,32 +1,29 @@
 @import './mixins';
 
-.mainwrapperapp {
-  height: 100%;
-  width: 100%;
-
-  .desktopwrapperapp {
-    display: none;
-  }
-  .mobilewrapperapp {
-    width: 100%;
-    display: block;
-  }
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
 }
 
 @include respond(tablet) {
-  .desktopwrapperapp {
-    display: flex;
+  .desktop {
+    display: block;
   }
-  .mobilewrapperapp {
+  .mobile {
     display: none;
   }
 }
-
 @include respond(desktop) {
-  .desktopwrapperapp {
-    display: block;
-  }
-  .mobilewrapperapp {
-    display: none;
+  .mainAppWrapper {
+    height: 100%;
+    width: 100%;
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
   }
 }

@@ -1,8 +1,13 @@
 import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 
+//Styles
+import styles from 'styles/info.module.scss'
+
 //Data fetching
 import { getPressData } from 'utils/getData'
+
+import device from 'utils/media-queries'
 
 //Dynamic imports / Components
 const About = dynamic(() => import('@components/About'))
@@ -14,9 +19,6 @@ const Footer = dynamic(() => import('components/Footer'))
 const MobileSectionsMenu = dynamic(() =>
   import('components/MobileSectionsMenu')
 )
-
-// //Media queries
-// import device from 'utils/media-queries'
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect()

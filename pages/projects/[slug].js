@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
+import styles from 'styles/project.module.scss'
 
 //Components
 import Footer from 'components/Footer'
@@ -12,11 +13,8 @@ import ImageListItem from '@material-ui/core/ImageListItem'
 //Data fetching
 import { getPaths, getProject } from 'utils/getData'
 
-//Media queries
-import device from 'utils/media-queries'
-
 const useStyles = makeStyles({
-  root: {
+  imageList: {
     width: '100%',
     height: '100%',
     ['@media (max-width:677px)']: {
@@ -35,15 +33,15 @@ const Projects = ({ data }) => {
   const classes = useStyles()
   return (
     <>
-      <div className="container">
+      <div className={styles.container}>
         {data.map((element) => {
           return (
             <>
               <Grid container>
                 {element.horizontal ? (
-                  <img className="mainImage" src={element.image} />
+                  <img className={styles.mainImage} src={element.image} />
                 ) : (
-                  <img className="mainImage" src={element.img1} />
+                  <img className={styles.mainImage} src={element.img1} />
                 )}
                 {element.mp4 && (
                   <video autoPlay muted loop width="100%" height="auto">
@@ -53,21 +51,21 @@ const Projects = ({ data }) => {
               </Grid>
 
               <Grid container>
-                <div className="gridContainer">
+                <div className={styles.gridContainer}>
                   <Grid item xs={12} lg={2}>
                     <div className="name">{element.name}</div>
                   </Grid>
                   <Grid item xs={12} sm={12} lg={4}>
-                    <div className="yearandtags">
+                    <div className={styles.yearandtags}>
                       <p>{element.year}</p>
-                      <div className="tagName">
+                      <div className={styles.tagName}>
                         {element.tags &&
                           element.tags.map((tag) => {
                             const transformName = tag.replace('-', ' ')
                             return (
                               <>
                                 <Link href={`/tag/${tag}`}>
-                                  <a className="tagLink">
+                                  <a className={styles.tagLink}>
                                     <u>{transformName}</u>
                                   </a>
                                 </Link>{' '}
@@ -77,9 +75,8 @@ const Projects = ({ data }) => {
                       </div>
                     </div>
                   </Grid>
-
                   <Grid item xs={12} sm={12} lg={6}>
-                    <div className="description">
+                    <div className={styles.description}>
                       {element.description}{' '}
                       {element.urlDescription && (
                         <a href={element.urlDescription} target="_blank">
@@ -96,7 +93,7 @@ const Projects = ({ data }) => {
                 variant="quilted"
                 cols={4}
                 rowHeight="auto"
-                className={classes.root}
+                className={classes.imageList}
               >
                 {Object.values(element.sources).map((source) => {
                   return (
@@ -117,12 +114,12 @@ const Projects = ({ data }) => {
                           )}
                         />
                       ) : (
-                        <div className="videoContainer">
+                        <div className={styles.videoContainer}>
                           <video
                             autoPlay
                             muted
                             loop
-                            className="video"
+                            className={styles.video}
                             src={source.url}
                             srcSet={srcset(
                               source.url,
@@ -142,185 +139,6 @@ const Projects = ({ data }) => {
         })}
       </div>
       <Footer />
-
-      <style jsx>{`
-        .container {
-          width: 100%;
-          height: 100%;
-          font-size: 20px;
-          padding: 40px 10px 0px;
-          margin-bottom: 30px;
-          color: white;
-        }
-        .gridContainer {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-        }
-        .yearandtags {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding-left: 10px;
-        }
-        .mainImage {
-          width: 100%;
-          height: auto;
-        }
-        .name {
-          display: flex;
-          flex-direction: row;
-          margin-top: 1em;
-          padding-left: 10px;
-        }
-        .imageList {
-          display: inline-block;
-          border: 2px solid pink;
-          width: auto;
-          height: auto;
-        }
-        .video {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-          object-position: center;
-        }
-
-        .tagName {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .description {
-          margin-top: 1em;
-          margin-bottom: 1em;
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-
-        a:visited {
-          color: white;
-        }
-
-        @media only Screen and ${device.tablet} {
-          .container {
-            width: 100%;
-            height: 100%;
-            font-size: 20px;
-            padding: 40px 10px 0px;
-            margin-bottom: 30px;
-            color: white;
-          }
-          .gridContainer {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-          }
-          .yearandtags {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-left: 10px;
-          }
-          .name {
-            display: flex;
-            flex-direction: row;
-            margin-top: 1em;
-            padding-left: 10px;
-          }
-          .imageList {
-            display: inline-block;
-            width: auto;
-            height: auto;
-          }
-      
-          }
-          .tagName {
-            display: flex;
-            flex-direction: row;
-          }
-          .tagLink {
-            margin-right: 8px;
-          }
-        }
-
-        @media only Screen and ${device.desktop} {
-          .container {
-            width: 100%;
-            height: 100%;
-            font-size: 20px;
-            padding: 40px 20px 0px;
-            margin-bottom: 30px;
-            color: white;
-          }
-          .gridContainer {
-            display: flex;
-            flex-direction: row;
-            height: auto;
-            width: 100%;
-          }
-
-          .mainImage {
-            width: 100%;
-            height: auto;
-          }
-
-          .name {
-            display: flex;
-            flex-direction: row;
-            margin-top: 1em;
-          }
-
-          .yearandtags {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 1em;
-          }
-
-          .goBack {
-            text-align: right;
-            margin: 30px;
-          }
-
-          .imageList {
-            width: 500px;
-            height: 450px;
-          }
-
-          .imagen {
-            object-fit: cover;
-            object-position: center;
-          }
-
-          .video {
-            width: 695px;
-            height: auto;
-            object-fit: cover;
-            object-position: center;
-          }
-
-          .description {
-            margin-top: 1em;
-            margin-bottom: 1em;
-            padding-left: 6.5px;
-          }
-
-          .tagStyle {
-            background-color: transparent;
-            border: none;
-            font-size: 18px;
-            color: white;
-            cursor: pointer;
-            outline: none;
-          }
-
-          a {
-            color: white;
-            text-decoration: none;
-          }
-        }
-      `}</style>
     </>
   )
 }

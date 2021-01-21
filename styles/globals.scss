@@ -1,6 +1,5 @@
 /* autoprefixer grid: autoplace */
 @import url('https://use.typekit.net/yjx8ces.css');
-@import './mixins';
 
 * {
   box-sizing: border-box;
@@ -35,4 +34,8 @@ ul {
 p {
   margin: 0;
   padding: 0;
+}
+
+a:visited {
+  color: white;
 }

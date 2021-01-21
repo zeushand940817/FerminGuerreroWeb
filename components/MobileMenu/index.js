@@ -200,6 +200,7 @@ export default function MobileMenu() {
         }
         .socialMedia {
           padding-bottom: 20px;
+          background: black;
         }
         .social {
           padding-right: 20px;

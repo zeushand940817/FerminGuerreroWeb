@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
+import styles from 'styles/pages.module.scss'
 
 //Components
 import ImageList from '@material-ui/core/ImageList'
@@ -21,27 +22,6 @@ const useStyles = makeStyles({
       flexDirection: 'column',
     },
   },
-  tagWrapper: {
-    width: '100%',
-    padding: '30px 20px 0px',
-    ['@media (max-width:677px)']: {
-      padding: '20px 15px 0px',
-    },
-  },
-  imagen: {
-    width: '100%',
-    height: '100%',
-  },
-  videoClass: {
-    width: '100%',
-    height: '100%',
-  },
-  text: {
-    fontSize: '20px',
-    color: 'white',
-    paddingTop: '20px',
-    paddingBottom: '25px',
-  },
 })
 
 export default function Animation({ data, path }) {
@@ -51,86 +31,53 @@ export default function Animation({ data, path }) {
   )
 
   return (
-    <>
-      <div className={classes.tagWrapper}>
-        <div className={classes.root}>
-          <ImageList
-            variant="masonry"
-            cols={3}
-            gap={13}
-            className={classes.label}
-          >
-            {animation.map((elem) => (
-              <Link
-                key={elem.id}
-                href={`/projects/[slug]`}
-                as={`/projects/${elem.slug}`}
-              >
-                <a>
-                  <div className="container">
-                    <ImageListItem key={elem.id}>
-                      {elem.image && (
-                        <img
-                          className={classes.imagen}
-                          alt="graphic-design-photo"
-                          src={elem.image}
-                        />
-                      )}
-                      {elem.mp4 && (
-                        <video
-                          autoPlay
-                          muted
-                          loop
-                          width="100%"
-                          height="auto"
-                          className={classes.videoClass}
-                        >
-                          <source src={elem.mp4Video} type="video/mp4" />
-                        </video>
-                      )}
-                      <div className={classes.text}>
-                        <p>{elem.name}</p>
-                      </div>
-                    </ImageListItem>
-                  </div>
-                </a>
-              </Link>
-            ))}
-          </ImageList>
-        </div>
+    <div className={styles.mainWrapper}>
+      <div className={classes.root}>
+        <ImageList
+          variant="masonry"
+          cols={3}
+          gap={13}
+          className={classes.label}
+        >
+          {animation.map((elem) => (
+            <Link
+              key={elem.id}
+              href={`/projects/[slug]`}
+              as={`/projects/${elem.slug}`}
+            >
+              <a>
+                <div className={styles.container}>
+                  <ImageListItem key={elem.id}>
+                    {elem.image && (
+                      <img
+                        className={styles.imagen}
+                        alt="graphic-design-photo"
+                        src={elem.image}
+                      />
+                    )}
+                    {elem.mp4 && (
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        width="100%"
+                        height="auto"
+                        className={styles.videoClass}
+                      >
+                        <source src={elem.mp4Video} type="video/mp4" />
+                      </video>
+                    )}
+                    <div className={styles.text}>
+                      <p>{elem.name}</p>
+                    </div>
+                  </ImageListItem>
+                </div>
+              </a>
+            </Link>
+          ))}
+        </ImageList>
       </div>
-
-      <style jsx>{`
-        .container:hover {
-          opacity: 1;
-          -webkit-animation: flash 1.5s;
-          animation: flash 1.5s;
-          font-weight: bold;
-        }
-        @-webkit-keyframes flash {
-          0% {
-            opacity: 0.4;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
-        @keyframes flash {
-          0% {
-            opacity: 0.4;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
-
-        .container:hover .videoClass {
-          opacity: 1;
-          -webkit-animation: flash 1.5s;
-          animation: flash 1.5s;
-        }
-      `}</style>
-    </>
+    </div>
   )
 }
 
