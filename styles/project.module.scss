@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   font-size: 20px;
-  padding: 30px 10px 0px 10px;
+  padding: 40px 20px 0px 20px;
   margin-bottom: 30px;
   color: white;
 }
@@ -12,12 +12,12 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding-top: 10px;
 }
 .yearandtags {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 10px;
 }
 .mainImage {
   width: 100%;
@@ -41,29 +41,92 @@
   display: flex;
   flex-direction: row;
   .tagLink {
+    color: white;
     margin-right: 8px;
+  }
+  .tagLink:selected {
+    color: white;
   }
 }
 
 .description {
   margin-top: 1em;
   margin-bottom: 1em;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 6.5px;
 }
 
 @include respond(tablet) {
-  .gridContainer {
-    flex-direction: row;
-  }
+  .container {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    padding: 50px 20px 0px 20px;
+    margin-bottom: 30px;
+    color: white;
 
-  .tagName {
-    flex-direction: row;
+    .gridContainer {
+      flex-direction: column;
+    }
+
+    .tagName {
+      flex-direction: row;
+    }
   }
 }
 
-@include respond(desktop) {
-  .gridContainer {
-    flex-direction: column;
+@include respond(phone) {
+  .container {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    padding: 50px 20px 0px 20px;
+    margin-bottom: 30px;
+    color: white;
+
+    .gridContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .yearandtags {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .mainImage {
+      width: 100%;
+      height: auto;
+    }
+    .name {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1em;
+      padding-left: 10px;
+    }
+
+    .video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .tagName {
+      display: flex;
+      flex-direction: row;
+      .tagLink {
+        color: white;
+        margin-right: 8px;
+      }
+      .tagLink:selected {
+        color: white;
+      }
+    }
+
+    .description {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding-left: 0px;
+    }
   }
 }

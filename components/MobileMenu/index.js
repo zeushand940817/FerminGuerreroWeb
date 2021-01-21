@@ -112,6 +112,9 @@ export default function MobileMenu() {
           width: 100%;
           z-index: 1;
           display: flex;
+          justify-content: center;
+          padding: 20px;
+          align-items: center;
         }
         .sectionClose {
           mix-blend-mode: difference;
@@ -120,7 +123,6 @@ export default function MobileMenu() {
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
-          padding: 0;
           position: relative;
           mix-blend-mode: difference;
         }
@@ -144,37 +146,33 @@ export default function MobileMenu() {
         .homeClose {
           position: fixed;
           width: 100%;
-          font-size: 20px;
-          padding: 15px;
           mix-blend-mode: difference;
+          padding: 20px;
         }
         .homeOpen {
           position: fixed;
           width: 100%;
-          font-size: 20px;
           background: black;
-          padding: 15px;
+          padding: 20px;
         }
         .burger {
           color: white;
           display: flex;
           justify-content: flex-end;
-          padding: 8px;
-          padding-right: 2px;
-          padding-top: 5px;
+          padding-right: 8px;
         }
         .linksBurgerMenuContainer {
           width: 100%;
           display: flex;
           flex-direction: column;
           list-style: none;
-          margin-top: 50px;
+          margin-top: 35px;
           z-index: 2;
           justify-content: left;
           font-size: 18px;
           background-color: black;
           color: white;
-          padding-left: 15px;
+          padding-left: 20px;
           height: 50vh;
           width: 100vw;
           display: flex;

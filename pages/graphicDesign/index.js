@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Footer from 'components/Footer'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -48,6 +49,8 @@ export default function GraphicDesign({ data, extractVideo }) {
                     <ImageListItem key={projectFilter.id}>
                       {projectFilter.id == 31 ? (
                         <video
+                          preload="none"
+                          playsinline
                           autoPlay
                           muted
                           loop
@@ -58,7 +61,7 @@ export default function GraphicDesign({ data, extractVideo }) {
                           <source src={extractVideo} type="video/mp4" />
                         </video>
                       ) : (
-                        <img
+                        <LazyLoadImage
                           className={styles.imagen}
                           alt={projectFilter.name}
                           src={projectFilter.image}

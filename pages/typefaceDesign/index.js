@@ -4,6 +4,7 @@ import Link from 'next/link'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import Footer from 'components/Footer'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -46,7 +47,7 @@ export default function TypefaceDesign({ data }) {
                 <a>
                   <div className={styles.container}>
                     <ImageListItem key={projectFilter.id}>
-                      <img
+                      <LazyLoadImage
                         className={styles.imagen}
                         alt={projectFilter.name}
                         src={projectFilter.image}

@@ -44,7 +44,16 @@ const Projects = ({ data }) => {
                   <img className={styles.mainImage} src={element.img1} />
                 )}
                 {element.mp4 && (
-                  <video autoPlay muted loop width="100%" height="auto">
+                  <video
+                    preload="none"
+                    playsinline
+                    autoPlay
+                    muted
+                    loop
+                    controls
+                    width="100%"
+                    height="auto"
+                  >
                     <source src={element.mp41} type="video/mp4" />
                   </video>
                 )}
@@ -119,6 +128,7 @@ const Projects = ({ data }) => {
                             autoPlay
                             muted
                             loop
+                            controls
                             className={styles.video}
                             src={source.url}
                             srcSet={srcset(
