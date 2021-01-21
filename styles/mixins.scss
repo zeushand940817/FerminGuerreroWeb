@@ -1,0 +1,21 @@
+// 320px — 480px: Mobile devices.
+// 481px — 768px: iPads, Tablets.
+// 769px — 1024px: Small screens, laptops.
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}

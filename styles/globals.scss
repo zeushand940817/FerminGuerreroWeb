@@ -1,5 +1,10 @@
 /* autoprefixer grid: autoplace */
 @import url('https://use.typekit.net/yjx8ces.css');
+@import './mixins';
+
+* {
+  box-sizing: border-box;
+}
 
 html,
 body,
@@ -20,10 +25,6 @@ body,
 
 a {
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 ol,

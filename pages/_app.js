@@ -2,10 +2,11 @@ import Head from 'next/head'
 import { useEffect } from 'react'
 
 //Global styles
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../utils/theme'
+import styles from 'styles/app.module.scss'
 
 //Dynamic imports
 import dynamic from 'next/dynamic'
@@ -42,7 +43,7 @@ export default function MyApp(props) {
       </Head>
 
       <ThemeProvider theme={theme}>
-        <div className="main-app-wrapper">
+        <div className="mainAppWrapper">
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
           <div className="desktop">
@@ -63,9 +64,6 @@ export default function MyApp(props) {
           width: 100%;
           display: inline-block;
         }
-        .hiddenMobile {
-          display: none;
-        }
 
         @media only Screen and ${device.tablet} {
           .desktop {
@@ -77,7 +75,7 @@ export default function MyApp(props) {
           }
         }
         @media only Screen and ${device.desktop} {
-          .main-app-wrapper {
+          .mainAppWrapper {
             height: 100%;
             width: 100%;
           }

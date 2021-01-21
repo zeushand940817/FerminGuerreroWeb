@@ -127,7 +127,6 @@ export default function MobileMenu() {
         ul {
           padding: 0px;
         }
-
         .iconBurgerMenuClose {
           position: fixed;
           cursor: pointer;
@@ -149,7 +148,6 @@ export default function MobileMenu() {
           padding: 15px;
           mix-blend-mode: difference;
         }
-
         .homeOpen {
           position: fixed;
           width: 100%;
@@ -158,6 +156,7 @@ export default function MobileMenu() {
           padding: 15px;
         }
         .burger {
+          color: white;
           display: flex;
           justify-content: flex-end;
           padding: 8px;
@@ -199,7 +198,6 @@ export default function MobileMenu() {
           left: -1000px;
           width: 100%;
         }
-
         .socialMedia {
           padding-bottom: 20px;
         }

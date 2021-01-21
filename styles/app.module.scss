@@ -1,0 +1,32 @@
+@import './mixins';
+
+.mainwrapperapp {
+  height: 100%;
+  width: 100%;
+
+  .desktopwrapperapp {
+    display: none;
+  }
+  .mobilewrapperapp {
+    width: 100%;
+    display: block;
+  }
+}
+
+@include respond(tablet) {
+  .desktopwrapperapp {
+    display: flex;
+  }
+  .mobilewrapperapp {
+    display: none;
+  }
+}
+
+@include respond(desktop) {
+  .desktopwrapperapp {
+    display: block;
+  }
+  .mobilewrapperapp {
+    display: none;
+  }
+}

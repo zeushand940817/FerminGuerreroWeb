@@ -15,8 +15,8 @@ const MobileSectionsMenu = dynamic(() =>
   import('components/MobileSectionsMenu')
 )
 
-//Media queries
-import device from 'utils/media-queries'
+// //Media queries
+// import device from 'utils/media-queries'
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect()

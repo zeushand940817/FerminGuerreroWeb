@@ -1,0 +1,103 @@
+@import './mixins';
+
+section {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+}
+.sectionClose {
+  mix-blend-mode: difference;
+}
+.burgerMainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
+  position: relative;
+  mix-blend-mode: difference;
+}
+ul {
+  padding: 0px;
+}
+
+.iconBurgerMenuClose {
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+.iconBurgerMenuOpen {
+  position: fixed;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  top: 0;
+  right: 0;
+}
+.homeClose {
+  position: fixed;
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+  mix-blend-mode: difference;
+}
+
+.homeOpen {
+  position: fixed;
+  width: 100%;
+  font-size: 20px;
+  background: black;
+  padding: 15px;
+}
+.burger {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+  padding-right: 2px;
+  padding-top: 5px;
+}
+.linksBurgerMenuContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 50px;
+  z-index: 2;
+  justify-content: left;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  padding-left: 15px;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 50;
+  left: 0;
+}
+a {
+  display: inline-block;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+}
+li {
+  padding-bottom: 5px;
+}
+.linksBurgerMenuContainerInactive {
+  z-index: 2;
+  position: absolute;
+  left: -1000px;
+  width: 100%;
+}
+
+.socialMedia {
+  padding-bottom: 20px;
+}
+.social {
+  padding-right: 20px;
+  font-size: 18px;
+}

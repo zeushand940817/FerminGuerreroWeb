@@ -1,0 +1,65 @@
+@import './mixins';
+
+.mainWrapper {
+  width: 100%;
+  padding: 30px 15px 0px 15px;
+
+  .container:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+    font-weight: bold;
+  }
+  @-webkit-keyframes flash {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .imagen {
+    width: 100%;
+    height: 100%;
+    padding-right: 0px;
+  }
+  .videoClass {
+    width: 100%;
+    height: 100%;
+    padding-right: 0px;
+  }
+
+  .text {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+@include respond(tablet) {
+  .text {
+    font-size: 18px;
+    color: white;
+    line-height: 18px;
+    padding-top: 5px;
+  }
+}
+@include respond(desktop) {
+  .mainWrapper {
+    padding: 30px 20px 0px 20px;
+    .text {
+      font-size: 20px;
+      line-height: 0px;
+      padding-top: 20px;
+    }
+  }
+}
