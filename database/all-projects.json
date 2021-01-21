@@ -2602,7 +2602,7 @@
     "tags": null,
     "horizontal": false,
     "mp4": false,
-    "image": "/Viga/7.jpg",
+    "image": "/CoverPhotos/Galleries/7.jpg",
     "img1": "/Viga/1.jpg",
     "description": "Viga is an experimental capitals-only display font influenced by constructivism, with a high level of abstraction. The grid I created for developing Viga was inspired by truss beams used in architecture.",
     "sources": [
@@ -3070,16 +3070,9 @@
       {
         "type": "img",
         "img": "/BeyondTheBox/3.jpg",
-        "rows": 1,
+        "rows": 2,
         "cols": 2
       },
-      {
-        "type": "img",
-        "img": "/BeyondTheBox/4.jpg",
-        "rows": 1,
-        "cols": 2
-      },
-
       {
         "type": "img",
         "img": "/BeyondTheBox/5.jpg",
