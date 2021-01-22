@@ -10,7 +10,7 @@ import Footer from 'components/Footer'
 import Grid from '@material-ui/core/Grid'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import LazyLoad from 'react-lazyload'
 
 //Data fetching
 import { getPaths, getProject } from 'utils/getData'
@@ -33,6 +33,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 const Projects = ({ data }) => {
   const classes = useStyles()
+
   return (
     <>
       <div className={styles.container}>
@@ -41,30 +42,31 @@ const Projects = ({ data }) => {
             <>
               <Grid container>
                 {element.horizontal ? (
-                  <LazyLoadImage
-                    className={styles.mainImage}
-                    src={element.image}
-                  />
+                  <LazyLoad height="100%">
+                    <img className={styles.mainImage} src={element.image} />
+                  </LazyLoad>
                 ) : (
-                  <LazyLoadImage
-                    className={styles.mainImage}
-                    src={element.img1}
-                  />
+                  <LazyLoad height="100%">
+                    <img className={styles.mainImage} src={element.img1} />
+                  </LazyLoad>
                 )}
                 {element.mp4 && (
-                  <video
-                    controlsList="nofullscreen"
-                    preload="none"
-                    playsinline
-                    autoPlay
-                    muted
-                    loop
-                    controls
-                    width="100%"
-                    height="auto"
-                  >
-                    <source src={element.mp41} type="video/mp4" />
-                  </video>
+                  <LazyLoad height="100%">
+                    <video
+                      controlsList="nofullscreen"
+                      preload="none"
+                      webkit-playsinline
+                      playsinline
+                      autoPlay
+                      muted
+                      loop
+                      controls
+                      width="100%"
+                      height="auto"
+                    >
+                      <source src={element.mp41} type="video/mp4" />
+                    </video>
+                  </LazyLoad>
                 )}
               </Grid>
 
@@ -121,34 +123,43 @@ const Projects = ({ data }) => {
                       rows={source.rows}
                     >
                       {source.type === 'img' ? (
-                        <img
-                          src={source.img}
-                          alt="image-project"
-                          srcSet={srcset(
-                            source.img,
-                            121,
-                            source.rows,
-                            source.cols
-                          )}
-                        />
-                      ) : (
-                        <div className={styles.videoContainer}>
-                          <video
-                            playsinline
-                            controlsList="nofullscreen"
-                            autoPlay
-                            muted
-                            loop
-                            controls
-                            className={styles.video}
-                            src={source.url}
+                        <LazyLoad height="auto">
+                          <img
+                            style={{ width: '100%', height: '100%' }}
+                            src={source.img}
+                            alt="image-project"
                             srcSet={srcset(
-                              source.url,
+                              source.img,
                               121,
                               source.rows,
                               source.cols
                             )}
                           />
+                        </LazyLoad>
+                      ) : (
+                        <div className={styles.videoContainer}>
+                          <LazyLoad height="100%">
+                            <video
+                              autoplay
+                              muted
+                              loop
+                              playsinline
+                              webkit-playsinline
+                              controls
+                              controlsList="nofullscreen"
+                              className={styles.video}
+                            >
+                              <source
+                                src={source.url}
+                                srcSet={srcset(
+                                  source.url,
+                                  121,
+                                  source.rows,
+                                  source.cols
+                                )}
+                              />
+                            </video>
+                          </LazyLoad>
                         </div>
                       )}
                     </ImageListItem>
