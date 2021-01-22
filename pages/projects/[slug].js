@@ -10,6 +10,7 @@ import Footer from 'components/Footer'
 import Grid from '@material-ui/core/Grid'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Data fetching
 import { getPaths, getProject } from 'utils/getData'
@@ -38,23 +39,14 @@ const Projects = ({ data }) => {
         {data.map((element) => {
           return (
             <>
-              <Grid
-                container
-                style={{
-                  position: 'relative',
-                  height: '900px',
-                  width: '100%',
-                }}
-              >
+              <Grid container>
                 {element.horizontal ? (
-                  <Image
-                    layout="fill"
+                  <LazyLoadImage
                     className={styles.mainImage}
                     src={element.image}
                   />
                 ) : (
-                  <Image
-                    layout="fill"
+                  <LazyLoadImage
                     className={styles.mainImage}
                     src={element.img1}
                   />

@@ -132,6 +132,7 @@ const Home = ({ dataParse }) => {
 
         .imageSlider {
           height: 100vh;
+          width: 100vw;
           top: 0;
         }
         .carousel-with-custom-dots {
