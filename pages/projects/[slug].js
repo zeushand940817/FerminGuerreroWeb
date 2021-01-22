@@ -53,6 +53,7 @@ const Projects = ({ data }) => {
                 )}
                 {element.mp4 && (
                   <video
+                    controlsList="nofullscreen"
                     preload="none"
                     playsinline
                     autoPlay
@@ -133,6 +134,8 @@ const Projects = ({ data }) => {
                       ) : (
                         <div className={styles.videoContainer}>
                           <video
+                            playsinline
+                            controlsList="nofullscreen"
                             autoPlay
                             muted
                             loop
