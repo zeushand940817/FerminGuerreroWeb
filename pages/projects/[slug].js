@@ -41,18 +41,22 @@ const Projects = ({ data }) => {
         {data.map((element) => {
           return (
             <>
-              <Grid container>
+              <Grid
+                container
+                style={{ position: 'relative', height: '900px', with: '100%' }}
+              >
                 {element.horizontal ? (
-                  // <LazyLoad>
-                  <LazyLoadImage
+                  <Image
+                    layout="fill"
                     className={styles.mainImage}
                     src={element.image}
                   />
                 ) : (
-                  // </LazyLoad>
-                  // <LazyLoad>
-                  <img className={styles.mainImage} src={element.img1} />
-                  // </LazyLoad>
+                  <Image
+                    layout="fill"
+                    className={styles.mainImage}
+                    src={element.img1}
+                  />
                 )}
                 {element.mp4 && (
                   <LazyLoad height="100%">
