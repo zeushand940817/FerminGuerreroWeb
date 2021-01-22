@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import LazyLoad from 'react-lazyload'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Data fetching
 import { getPaths, getProject } from 'utils/getData'
@@ -42,19 +43,21 @@ const Projects = ({ data }) => {
             <>
               <Grid container>
                 {element.horizontal ? (
-                  <LazyLoad height="100%">
-                    <img className={styles.mainImage} src={element.image} />
-                  </LazyLoad>
+                  // <LazyLoad>
+                  <LazyLoadImage
+                    className={styles.mainImage}
+                    src={element.image}
+                  />
                 ) : (
-                  <LazyLoad height="100%">
-                    <img className={styles.mainImage} src={element.img1} />
-                  </LazyLoad>
+                  // </LazyLoad>
+                  // <LazyLoad>
+                  <img className={styles.mainImage} src={element.img1} />
+                  // </LazyLoad>
                 )}
                 {element.mp4 && (
                   <LazyLoad height="100%">
                     <video
                       controlsList="nofullscreen"
-                      preload="none"
                       webkit-playsinline
                       playsinline
                       autoPlay
