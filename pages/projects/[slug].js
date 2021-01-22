@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -37,11 +38,26 @@ const Projects = ({ data }) => {
         {data.map((element) => {
           return (
             <>
-              <Grid container>
+              <Grid
+                container
+                style={{
+                  position: 'relative',
+                  height: '900px',
+                  width: '100%',
+                }}
+              >
                 {element.horizontal ? (
-                  <img className={styles.mainImage} src={element.image} />
+                  <Image
+                    layout="fill"
+                    className={styles.mainImage}
+                    src={element.image}
+                  />
                 ) : (
-                  <img className={styles.mainImage} src={element.img1} />
+                  <Image
+                    layout="fill"
+                    className={styles.mainImage}
+                    src={element.img1}
+                  />
                 )}
                 {element.mp4 && (
                   <video

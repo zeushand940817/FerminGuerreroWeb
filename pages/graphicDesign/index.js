@@ -50,7 +50,8 @@ export default function GraphicDesign({ data, extractVideo }) {
                       {projectFilter.id == 31 ? (
                         <video
                           preload="none"
-                          playsinline
+                          playsinline="0"
+                          webkit-playsinline="0"
                           autoPlay
                           muted
                           loop
