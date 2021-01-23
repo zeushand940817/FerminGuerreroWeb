@@ -11,7 +11,6 @@ import Grid from '@material-ui/core/Grid'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import LazyLoad from 'react-lazyload'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Data fetching
 import { getPaths, getProject } from 'utils/getData'
@@ -41,41 +40,41 @@ const Projects = ({ data }) => {
         {data.map((element) => {
           return (
             <>
-              <Grid
-                container
-                style={{ position: 'relative', height: '900px', with: '100%' }}
-              >
-                {element.horizontal ? (
-                  <Image
-                    layout="fill"
-                    className={styles.mainImage}
-                    src={element.image}
-                  />
-                ) : (
-                  <Image
-                    layout="fill"
-                    className={styles.mainImage}
-                    src={element.img1}
-                  />
-                )}
-                {element.mp4 && (
-                  <LazyLoad height="100%">
-                    <video
-                      controlsList="nofullscreen"
-                      webkit-playsinline
-                      playsinline
-                      autoPlay
-                      muted
-                      loop
-                      controls
-                      width="100%"
-                      height="auto"
-                    >
-                      <source src={element.mp41} type="video/mp4" />
-                    </video>
-                  </LazyLoad>
-                )}
-              </Grid>
+              {element.horizontal ? (
+                <Image
+                  alt="graphic-design"
+                  src={element.image}
+                  layout="responsive"
+                  width={800}
+                  height={534}
+                />
+              ) : (
+                <Image
+                  layout="responsive"
+                  width={800}
+                  height={534}
+                  className={styles.mainImage}
+                  src={element.img1}
+                />
+              )}
+
+              {element.mp4 && (
+                <LazyLoad height="100%">
+                  <video
+                    controlsList="nofullscreen"
+                    webkit-playsinline
+                    playsinline
+                    autoPlay
+                    muted
+                    loop
+                    controls
+                    width="100%"
+                    height="auto"
+                  >
+                    <source src={element.mp41} type="video/mp4" />
+                  </video>
+                </LazyLoad>
+              )}
 
               <Grid container>
                 <div className={styles.gridContainer}>
