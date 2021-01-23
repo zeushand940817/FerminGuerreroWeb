@@ -84,7 +84,7 @@ export default function All({ data, extractVideo }) {
 export async function getStaticProps() {
   const data = await getProjectsData()
   const videoMp4 = data.filter((elem) => elem.id === 31)
-  const extractVideo = videoMp4[0].mp4Video
+  const extractVideo = videoMp4[0].mp4Gallery
   return {
     props: {
       data,

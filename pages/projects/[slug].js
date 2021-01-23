@@ -41,28 +41,7 @@ const Projects = ({ data }) => {
         {data.map((element) => {
           return (
             <>
-              {element.horizontal ? (
-                <Image
-                  alt="graphic-design"
-                  layout="responsive"
-                  src={element.image}
-                  width={800}
-                  height={534}
-                  quality={100}
-                  className={styles.mainImage}
-                />
-              ) : (
-                <Image
-                  alt="graphic-design"
-                  layout="responsive"
-                  src={element.img1}
-                  width={800}
-                  height={534}
-                  quality={100}
-                  className={styles.mainImage}
-                />
-              )}
-              {element.mp4 && (
+              {element.mp4 ? (
                 <video
                   controlsList="nofullscreen"
                   webkit-playsinline
@@ -71,9 +50,22 @@ const Projects = ({ data }) => {
                   muted
                   loop
                   controls
+                  className={styles.video}
                 >
-                  <source src={element.mp41} type="video/mp4" />
+                  <source src={element.mp4Slug} type="video/mp4" />
                 </video>
+              ) : (
+                <div>
+                  <Image
+                    alt="graphic-design"
+                    layout="responsive"
+                    src={element.imageSlag}
+                    width={800}
+                    height={534}
+                    quality={100}
+                    className={styles.mainImage}
+                  />
+                </div>
               )}
 
               <Grid container>
@@ -113,7 +105,6 @@ const Projects = ({ data }) => {
                   </Grid>
                 </div>
               </Grid>
-
               <ImageList
                 gap={13}
                 variant="quilted"
