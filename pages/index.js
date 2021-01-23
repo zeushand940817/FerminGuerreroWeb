@@ -8,6 +8,8 @@ import Footer from 'components/Footer'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 //media queries
 import device from 'utils/media-queries'
 
@@ -108,7 +110,12 @@ const Home = ({ dataParse }) => {
           customDot={<CustomDot />}
         >
           {mobileImages.map((image, key) => (
-            <img className="imageSlider" src={image} key={`${key} ${image}`} />
+            <LazyLoadImage
+              style={{ width: '100%', height: '100%' }}
+              className="imageSlider"
+              src={image}
+              key={`${key} ${image}`}
+            />
           ))}
         </Carousel>
       </div>
