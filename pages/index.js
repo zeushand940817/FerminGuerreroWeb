@@ -113,7 +113,7 @@ const Home = ({ dataParse }) => {
             <img
               style={{
                 width: '100%',
-                height: '98%',
+                height: '100%',
               }}
               src={image}
               key={`${key} ${image}`}
