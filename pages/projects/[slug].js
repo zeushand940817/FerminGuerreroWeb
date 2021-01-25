@@ -120,7 +120,12 @@ const Projects = ({ data }) => {
                       rows={source.rows}
                     >
                       {source.type === 'img' ? (
-                        <img
+                        <Image
+                          layout="responsive"
+                          height="100%"
+                          width="100%"
+                          objectFit="cover"
+                          objectPosition="center"
                           src={source.img}
                           alt="graphic-design"
                           srcSet={srcset(

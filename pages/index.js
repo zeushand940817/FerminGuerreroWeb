@@ -67,7 +67,7 @@ const Home = ({ dataParse }) => {
 
   return (
     <>
-      <div className="hero">
+      <div className="hero" id="#home">
         <img
           className="backgroundImage"
           style={{

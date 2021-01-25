@@ -1287,7 +1287,7 @@
     "year": "2014",
     "tags": ["Animation", "Poster"],
     "mp4": false,
-    "image": "/ItsUpToYou/1.jpg",
+    "image": "/ItsUpToYou/5.jpg",
     "imageSlag": "/ItsUpToYou/8.jpg",
     "description": "For a school project at HEAD - Geneva, in collaboration with the RATP (Parisian autonomous transport society), we were invited to create a 10 second long animation to wish the passengers a happy new year 2014. The animations were shown on the large HD screens at the Franklin Roosevelt and Europe metro stops in Paris, France. My intention was to confront the public with themselves and make them reflect on who they are and how they behave with others. I thought that I could address this premise in various ways. Thus, I decided to also create two posters: one derived from the animation and the other completely independent . For '/2014 it'/s up to you' (poster based on the animation), I handled the subject in a more subtle, abstract and, somehow, poetic way. I inserted a small text in the center of the mirror so that people would have to get closer to the poster in order to read the text «it'/s up to you» and, at the same time they discover the text they would see themselves  reflected in the mirror from a really close range enhancing the effect of confrontation. Poster: 50x70cm / Screen printing: black and white on mirror paper / 20 copies You can find the other poster “2014 goes around… comes around” here.",
     "sources": [
@@ -1342,6 +1342,12 @@
       {
         "type": "img",
         "img": "/ItsUpToYou/12.jpg",
+        "rows": 2,
+        "cols": 4
+      },
+      {
+        "type": "img",
+        "img": "/ItsUpToYou/5.jpg",
         "rows": 2,
         "cols": 4
       },
