@@ -12,7 +12,7 @@ import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 
 //Lazyloading
-import LazyLoad from 'react-lazyload'
+import LazyLoad, { Widget } from 'react-lazyload'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Data fetching
@@ -45,18 +45,18 @@ const Projects = ({ data }) => {
           return (
             <>
               {element.mp4 ? (
-                <LazyLoad>
-                  <video
-                    autoplay
-                    loop
-                    playsinline
-                    webkit-playsinline
-                    controlsList="nofullscreen"
-                    className={styles.mainVideo}
-                  >
-                    <source src={element.mp4Slug} type="video/mp4" />
-                  </video>
-                </LazyLoad>
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  webkit-playsinline
+                  controls
+                  controlsList="nofullscreen"
+                  className={styles.mainVideo}
+                >
+                  <source src={element.mp4Slug} type="video/mp4" />
+                </video>
               ) : (
                 <div>
                   <Image

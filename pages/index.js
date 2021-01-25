@@ -8,7 +8,6 @@ import Footer from 'components/Footer'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
-
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //media queries
@@ -110,12 +109,11 @@ const Home = ({ dataParse }) => {
           showDots={true}
           customDot={<CustomDot />}
         >
-  
           {mobileImages.map((image, key) => (
             <img
               style={{
                 width: '100%',
-                height: '100vh',
+                height: '98%',
               }}
               src={image}
               key={`${key} ${image}`}
@@ -135,6 +133,7 @@ const Home = ({ dataParse }) => {
           height: 100vh;
           border: 3px solid yellow;
           display: block;
+          overflow: hidden;
         }
 
         img {
@@ -143,7 +142,6 @@ const Home = ({ dataParse }) => {
           object-fit: cover;
           object-position: center;
         }
-
 
         .carousel-with-custom-dots {
           margin-top: 100px;
@@ -173,7 +171,6 @@ const Home = ({ dataParse }) => {
             object-position: center;
           }
 
-  
           .carousel-with-custom-dots {
             margin-top: 100px;
             padding-bottom: 100px;
