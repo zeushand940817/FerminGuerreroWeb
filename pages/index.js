@@ -122,14 +122,17 @@ const Home = ({ dataParse }) => {
           autoPlay={3000}
         >
           {mobileImages.map((image, key) => (
-            <div className="photoMobileContainer">
-              <LazyLoadImage
-                style={{ width: '100%', height: '100%' }}
-                className="imageSlider"
-                src={image}
-                key={`${key} ${image}`}
-              />
-            </div>
+            // <div className="photoMobileContainer">
+            <img
+              style={{
+                width: '100vw',
+                height: '100vh',
+              }}
+              // className="imageSlider"
+              src={image}
+              key={`${key} ${image}`}
+            />
+            // </div>
           ))}
         </Carousel>
       </div>
@@ -144,9 +147,11 @@ const Home = ({ dataParse }) => {
           display: block;
         }
 
-        .photoMobileContainer {
+         {
+          /* .photoMobileContainer {
           height: 100vh;
           border: 3px solid tomato;
+        } */
         }
 
         img {
@@ -156,11 +161,13 @@ const Home = ({ dataParse }) => {
           object-position: center;
         }
 
-        .imageSlider {
+         {
+          /* .imageSlider {
           height: 100%;
           width: 100%;
           object-fit: cover;
           object-position: center;
+        } */
         }
 
          {
