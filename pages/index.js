@@ -8,6 +8,9 @@ import Footer from 'components/Footer'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
+//import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
+//import { Carousel } from 'react-responsive-carousel'
+
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //media queries
@@ -107,13 +110,23 @@ const Home = ({ dataParse }) => {
           autoPlay
           arrows={false}
           showDots={true}
+          containerClass="carouselContainer"
           customDot={<CustomDot />}
+          itemClass="carousel-item"
         >
+          {/* <Carousel
+          showThumbs={false}
+          showStatus={false}
+          showArrows={false}
+          className="presentation-mode"
+          infiniteLoop
+          autoPlay={3000}
+        > */}
           {mobileImages.map((image, key) => (
             <img
               style={{
                 width: '100%',
-                height: '100%',
+                height: '100vh',
               }}
               src={image}
               key={`${key} ${image}`}
@@ -128,12 +141,22 @@ const Home = ({ dataParse }) => {
           display: none;
         }
 
+         {
+          /* .react-multi-carousel-item.react-multi-carousel-item--active.carousel-item {
+          border: 3px solid green;
+        }
+        .react-multi-carousel-item {
+          height: 100vh;
+        }
+        .carousel-item {
+          height: 100vh;
+        } */
+        }
+
         .homeMobile {
           background: pink;
           height: 100vh;
-          border: 3px solid yellow;
           display: block;
-          overflow: hidden;
         }
 
         img {

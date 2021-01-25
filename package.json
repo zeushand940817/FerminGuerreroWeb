@@ -29,6 +29,7 @@
     "react-lazyload": "^3.1.0",
     "react-live-clock": "^5.0.13",
     "react-multi-carousel": "^2.6.1",
+    "react-responsive-carousel": "^3.2.11",
     "sass": "^1.32.5"
   },
   "devDependencies": {
