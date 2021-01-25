@@ -46,10 +46,13 @@ const Projects = ({ data }) => {
             <>
               {element.mp4 ? (
                 <video
-                  controls
                   autoplay
                   muted
                   loop
+                  playsinline
+                  webkit-playsinline
+                  controls
+                  controlsList="nofullscreen"
                   className={styles.mainVideo}
                 >
                   <source src={element.mp4Slug} type="video/mp4" />
