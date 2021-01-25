@@ -10,6 +10,8 @@ import Footer from 'components/Footer'
 import Grid from '@material-ui/core/Grid'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+
+//Lazyloading
 import LazyLoad from 'react-lazyload'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
@@ -120,12 +122,8 @@ const Projects = ({ data }) => {
                       rows={source.rows}
                     >
                       {source.type === 'img' ? (
-                        <Image
-                          layout="responsive"
-                          height="100%"
-                          width="100%"
-                          objectFit="cover"
-                          objectPosition="center"
+                        <LazyLoadImage
+                          style={{ width: '100%', height: '100%' }}
                           src={source.img}
                           alt="graphic-design"
                           srcSet={srcset(
@@ -136,26 +134,28 @@ const Projects = ({ data }) => {
                           )}
                         />
                       ) : (
-                        <video
-                          autoplay
-                          muted
-                          loop
-                          playsinline
-                          webkit-playsinline
-                          controls
-                          controlsList="nofullscreen"
-                          className={styles.video}
-                        >
-                          <source
-                            src={source.url}
-                            srcSet={srcset(
-                              source.url,
-                              121,
-                              source.rows,
-                              source.cols
-                            )}
-                          />
-                        </video>
+                        <LazyLoad>
+                          <video
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            webkit-playsinline
+                            controls
+                            controlsList="nofullscreen"
+                            className={styles.video}
+                          >
+                            <source
+                              src={source.url}
+                              srcSet={srcset(
+                                source.url,
+                                121,
+                                source.rows,
+                                source.cols
+                              )}
+                            />
+                          </video>
+                        </LazyLoad>
                       )}
                     </ImageListItem>
                   )
