@@ -51,7 +51,7 @@ const Home = ({ dataParse }) => {
           height: '15px',
           border: '2px solid white',
           borderRadius: '10px',
-          marginBottom: '50px',
+          marginBottom: '80px',
         }}
       >
         <button
