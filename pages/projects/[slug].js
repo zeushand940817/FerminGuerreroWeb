@@ -45,12 +45,9 @@ const Projects = ({ data }) => {
             <>
               {element.mp4 ? (
                 <video
-                  controlsList="nofullscreen"
                   webkit-playsinline
                   playsinline
-                  autoPlay
                   muted
-                  loop
                   controls
                   className={styles.video}
                 >
