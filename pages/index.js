@@ -110,12 +110,14 @@ const Home = ({ dataParse }) => {
           customDot={<CustomDot />}
         >
           {mobileImages.map((image, key) => (
-            <LazyLoadImage
-              style={{ width: '100%', height: '100%' }}
-              className="imageSlider"
-              src={image}
-              key={`${key} ${image}`}
-            />
+            <div className="photoMobileContainer">
+              <LazyLoadImage
+                style={{ width: '100%', height: '100%' }}
+                className="imageSlider"
+                src={image}
+                key={`${key} ${image}`}
+              />
+            </div>
           ))}
         </Carousel>
       </div>
@@ -129,6 +131,11 @@ const Home = ({ dataParse }) => {
         .homeMobile {
           display: block;
         }
+        .photoMobileContainer {
+          border: 3px solid tomato;
+
+          height: 100vh;
+        }
 
         img {
           width: 100%;
@@ -138,13 +145,14 @@ const Home = ({ dataParse }) => {
         }
 
         .imageSlider {
-          height: 100vh;
-          width: 100vw;
-          top: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
         }
+
         .carousel-with-custom-dots {
           margin-top: 100px;
-          padding-bottom: 100px;
         }
         .custom-dot {
           border: none;
@@ -171,9 +179,13 @@ const Home = ({ dataParse }) => {
             object-position: center;
           }
 
-          .imageSlider {
+           {
+            /* .imageSlider {
             height: 100vh;
-            top: 0;
+            width: 100vw;
+            object-fit: cover;
+            object-position: center;
+          } */
           }
           .carousel-with-custom-dots {
             margin-top: 100px;
