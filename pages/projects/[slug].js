@@ -44,13 +44,7 @@ const Projects = ({ data }) => {
           return (
             <>
               {element.mp4 ? (
-                <video
-                  webkit-playsinline
-                  playsinline
-                  muted
-                  controls
-                  className={styles.video}
-                >
+                <video muted controls className={styles.video}>
                   <source src={element.mp4Slug} type="video/mp4" />
                 </video>
               ) : (
