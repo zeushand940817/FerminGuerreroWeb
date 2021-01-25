@@ -4,51 +4,52 @@ import device from 'utils/media-queries'
 export default function Footer({ component }) {
   return (
     <>
-      <footer
-        className={component === 'home' ? 'footerHome' : 'footerComponent'}
-      >
-        <div>
-          ©2021 <span>&#8212; </span> Fermin Guerrero
-        </div>
-        <div>
-          Developed by{' '}
-          <a
-            className="lauraLink"
-            href="https://lauradiaz.vercel.app/"
-            target="_blank"
-          >
-            <u>Laura Diaz</u>
-          </a>
-        </div>
+        <footer
+          className={component === 'home' ? 'footerHome' : 'footerComponent'}
+        >
+          <div>
+            ©2021 <span>&#8212; </span> Fermin Guerrero
+          </div>
+          <div>
+            Developed by{' '}
+            <a
+              className="lauraLink"
+              href="https://lauradiaz.vercel.app/"
+              target="_blank"
+            >
+              <u>Laura Diaz</u>
+            </a>
+          </div>
 
-        <div>
-          <a
-            className="social"
-            href="https://twitter.com/fermin_guerrero"
-            target="_blank"
-          >
-            <u>Twitter</u>
-          </a>
-        </div>
-        <div>
-          <a
-            className="social"
-            href="https://www.instagram.com/ferminguerrero_design/"
-            target="_blank"
-          >
-            <u>Instagram</u>
-          </a>
-        </div>
-        <div>
-          <a
-            className="social"
-            href="https://www.linkedin.com/in/fermin-guerrero-616237173/"
-            target="_blank"
-          >
-            <u>Linkedin</u>
-          </a>
-        </div>
-      </footer>
+          <div>
+            <a
+              className="social"
+              href="https://twitter.com/fermin_guerrero"
+              target="_blank"
+            >
+              <u>Twitter</u>
+            </a>
+          </div>
+          <div>
+            <a
+              className="social"
+              href="https://www.instagram.com/ferminguerrero_design/"
+              target="_blank"
+            >
+              <u>Instagram</u>
+            </a>
+          </div>
+          <div>
+            <a
+              className="social"
+              href="https://www.linkedin.com/in/fermin-guerrero-616237173/"
+              target="_blank"
+            >
+              <u>Linkedin</u>
+            </a>
+          </div>
+        </footer>
+      
 
       <style jsx>{`
          
@@ -60,6 +61,8 @@ export default function Footer({ component }) {
           display:flex;
           flex-direction:column;
         }
+
+       
          a {
           outline: none;
           color: white;
@@ -146,6 +149,7 @@ export default function Footer({ component }) {
         .developer{
           display:none;
         }
+    
        
       `}</style>
     </>
