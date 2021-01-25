@@ -45,7 +45,13 @@ const Projects = ({ data }) => {
           return (
             <>
               {element.mp4 ? (
-                <video autoplay muted loop className={styles.mainVideo}>
+                <video
+                  controls
+                  autoplay
+                  muted
+                  loop
+                  className={styles.mainVideo}
+                >
                   <source src={element.mp4Slug} type="video/mp4" />
                 </video>
               ) : (
