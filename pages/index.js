@@ -51,6 +51,7 @@ const Home = ({ dataParse }) => {
           height: '15px',
           border: '2px solid white',
           borderRadius: '10px',
+          marginBottom: '50px',
         }}
       >
         <button
@@ -154,8 +155,7 @@ const Home = ({ dataParse }) => {
         }
 
         .homeMobile {
-          background: pink;
-          height: 100vh;
+          height: 100%;
           display: block;
         }
 
