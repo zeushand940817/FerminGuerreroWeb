@@ -41,12 +41,22 @@ const Projects = ({ data }) => {
     <>
       <div className={styles.container}>
         {data.map((element) => {
+          console.log(element.mp4Slug, 'SOY MP4SLUG')
           return (
             <>
               {element.mp4 ? (
-                <video muted controls className={styles.video}>
-                  <source src={element.mp4Slug} type="video/mp4" />
-                </video>
+                <LazyLoad>
+                  <video
+                    autoplay
+                    loop
+                    playsinline
+                    webkit-playsinline
+                    controlsList="nofullscreen"
+                    className={styles.mainVideo}
+                  >
+                    <source src={element.mp4Slug} type="video/mp4" />
+                  </video>
+                </LazyLoad>
               ) : (
                 <div>
                   <Image
