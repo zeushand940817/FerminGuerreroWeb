@@ -120,6 +120,7 @@ const Projects = ({ data }) => {
                       key={element.id}
                       cols={source.cols}
                       rows={source.rows}
+                      className={styles.imageListItem}
                     >
                       {source.type === 'img' ? (
                         <LazyLoadImage

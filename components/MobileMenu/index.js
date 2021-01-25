@@ -115,6 +115,7 @@ export default function MobileMenu() {
           justify-content: center;
           padding: 20px;
           align-items: center;
+          background: black;
         }
         .sectionClose {
           mix-blend-mode: difference;
@@ -126,6 +127,7 @@ export default function MobileMenu() {
           position: relative;
           mix-blend-mode: difference;
         }
+
         ul {
           padding: 0px;
         }
@@ -147,13 +149,17 @@ export default function MobileMenu() {
           position: fixed;
           width: 100%;
           mix-blend-mode: difference;
-          padding: 20px;
+          display: flex;
+          align-items: center;
+          padding-left: 20px;
         }
         .homeOpen {
           position: fixed;
           width: 100%;
           background: black;
-          padding: 20px;
+          display: flex;
+          align-items: center;
+          padding-left: 20px;
         }
         .burger {
           color: white;
@@ -166,7 +172,6 @@ export default function MobileMenu() {
           display: flex;
           flex-direction: column;
           list-style: none;
-          margin-top: 35px;
           z-index: 2;
           justify-content: left;
           font-size: 18px;
@@ -174,7 +179,6 @@ export default function MobileMenu() {
           color: white;
           padding-left: 20px;
           height: 50vh;
-          width: 100vw;
           display: flex;
           justify-content: space-between;
           position: fixed;
@@ -193,7 +197,7 @@ export default function MobileMenu() {
         .linksBurgerMenuContainerInactive {
           z-index: 2;
           position: absolute;
-          left: -1000px;
+          top: -1000px;
           width: 100%;
         }
         .socialMedia {
