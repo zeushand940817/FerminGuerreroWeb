@@ -10,12 +10,18 @@ export default function MobileMenu() {
   const handleClick = () => {
     setOpen(!isOpen)
   }
+  const handleClickHome = () => {
+    setOpen(false)
+  }
 
   return (
     <>
       <section className={isOpen == true ? 'sectionOpen' : 'sectionClose'}>
         <Link href="/">
-          <a className={isOpen !== true ? 'homeClose' : 'homeOpen'}>
+          <a
+            className={isOpen !== true ? 'homeClose' : 'homeOpen'}
+            onClick={() => handleClickHome()}
+          >
             Fermin Guerrero
           </a>
         </Link>

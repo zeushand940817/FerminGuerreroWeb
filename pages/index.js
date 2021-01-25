@@ -7,10 +7,6 @@ import { getLandingData } from '../utils/getData'
 import Footer from 'components/Footer'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-
-//import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-//import { Carousel } from 'react-responsive-carousel'
-
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //media queries
@@ -115,14 +111,6 @@ const Home = ({ dataParse }) => {
           customDot={<CustomDot />}
           itemClass="carousel-item"
         >
-          {/* <Carousel
-          showThumbs={false}
-          showStatus={false}
-          showArrows={false}
-          className="presentation-mode"
-          infiniteLoop
-          autoPlay={3000}
-        > */}
           {mobileImages.map((image, key) => (
             <img
               style={{
@@ -140,18 +128,6 @@ const Home = ({ dataParse }) => {
       <style jsx>{`
         .hero {
           display: none;
-        }
-
-         {
-          /* .react-multi-carousel-item.react-multi-carousel-item--active.carousel-item {
-          border: 3px solid green;
-        }
-        .react-multi-carousel-item {
-          height: 100vh;
-        }
-        .carousel-item {
-          height: 100vh;
-        } */
         }
 
         .homeMobile {
