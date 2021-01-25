@@ -8,8 +8,6 @@ import Footer from 'components/Footer'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
-// import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-// import { Carousel } from 'react-responsive-carousel'
 
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
@@ -112,19 +110,12 @@ const Home = ({ dataParse }) => {
           showDots={true}
           customDot={<CustomDot />}
         >
-          {/* <Carousel
-          showThumbs={false}
-          showStatus={false}
-          showArrows={false}
-          className="presentation-mode"
-          infiniteLoop
-          autoPlay={3000}
-        > */}
+  
           {mobileImages.map((image, key) => (
             <img
               style={{
                 width: '100%',
-                height: '100%',
+                height: '100vh',
               }}
               src={image}
               key={`${key} ${image}`}
@@ -140,14 +131,10 @@ const Home = ({ dataParse }) => {
         }
 
         .homeMobile {
-          display: block;
-        }
-
-         {
-          /* .photoMobileContainer {
+          background: pink;
           height: 100vh;
-          border: 3px solid tomato;
-        } */
+          border: 3px solid yellow;
+          display: block;
         }
 
         img {
@@ -157,14 +144,6 @@ const Home = ({ dataParse }) => {
           object-position: center;
         }
 
-         {
-          /* .imageSlider {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          object-position: center;
-        } */
-        }
 
         .carousel-with-custom-dots {
           margin-top: 100px;
@@ -194,14 +173,7 @@ const Home = ({ dataParse }) => {
             object-position: center;
           }
 
-           {
-            /* .imageSlider {
-            height: 100vh;
-            width: 100vw;
-            object-fit: cover;
-            object-position: center;
-          } */
-          }
+  
           .carousel-with-custom-dots {
             margin-top: 100px;
             padding-bottom: 100px;

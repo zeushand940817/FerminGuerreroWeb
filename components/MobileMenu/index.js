@@ -160,6 +160,7 @@ export default function MobileMenu() {
           display: flex;
           align-items: center;
           padding-left: 20px;
+          height: 50px;
         }
         .burger {
           color: white;
@@ -184,6 +185,7 @@ export default function MobileMenu() {
           position: fixed;
           top: 50;
           left: 0;
+          margin-top: 25px;
         }
         a {
           display: inline-block;
