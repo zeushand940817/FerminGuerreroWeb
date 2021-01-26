@@ -7,10 +7,10 @@ export default function Footer({ component }) {
       <footer
         className={component === 'home' ? 'footerHome' : 'footerComponent'}
       >
-        <div>
+        <div className="copyright">
           ©2021 <span>&#8212; </span> Fermin Guerrero
         </div>
-        <div>
+        <div className="developer">
           Developed by{' '}
           <a
             className="lauraLink"
@@ -21,7 +21,7 @@ export default function Footer({ component }) {
           </a>
         </div>
 
-        <div>
+        <div className="Twitter">
           <a
             className="social"
             href="https://twitter.com/fermin_guerrero"
@@ -30,7 +30,7 @@ export default function Footer({ component }) {
             <u>Twitter</u>
           </a>
         </div>
-        <div>
+        <div className="Instagram">
           <a
             className="social"
             href="https://www.instagram.com/ferminguerrero_design/"
@@ -39,7 +39,7 @@ export default function Footer({ component }) {
             <u>Instagram</u>
           </a>
         </div>
-        <div>
+        <div className="Linkedin">
           <a
             className="social"
             href="https://www.linkedin.com/in/fermin-guerrero-616237173/"
@@ -51,14 +51,50 @@ export default function Footer({ component }) {
       </footer>
 
       <style jsx>{`
-         
          .footerHome{
            display:none;
          }
 
          .footerComponent{
           color:white;
+          display:grid;
+         
+          
+          grid-template-columns: 2;
+          grid-template-rows:3;
         }
+
+        .copyright {
+          grid-column: 1;
+          grid-row:1;
+          color:white;
+        }
+
+        .developer {
+          grid-column: 1;
+          grid-row:2;
+          color: #424242;
+        }
+
+        .Twitter {
+          text-align:right;
+          grid-column: 2;
+          grid-row: 1;
+        }
+
+        .Instagram {
+          text-align:right;
+          grid-column: 2;
+          grid-row: 2;
+        }
+       .Linkedin {
+        text-align:right;
+        grid-column: 2;
+        grid-row: 3;
+        }
+      
+
+
          a {
           outline: none;
           color: white;
@@ -67,6 +103,7 @@ export default function Footer({ component }) {
         a:visited {
           color:white;
         }
+
      
    
         
@@ -108,30 +145,30 @@ export default function Footer({ component }) {
           color: white; 
         }
 
-        div:nth-child(1) {
+        .copyright {
           grid-column: 1/5;
+          grid-row:1;
           color:white;
-         
         }
-        div:nth-child(2) {
+
+        .developer {
           grid-column: 5/10;
+          grid-row:1;
           padding-left: 3px;
           color: #424242;
         }
-        div:nth-child(3) {
+        .Twitter {
           grid-column: 10;
+            grid-row:1;
         }
 
-        div:nth-child(4) {
+        .Instagram {
           grid-column: 11;
+          grid-row:1;
         }
-        div:nth-child(5) {
+       .Linkedin {
           grid-column: 12;
-          text-align: right;
-        }
-
-        div:nth-child(6) {
-          grid-column: 12;
+          grid-row:1;
           text-align: right;
         }
       

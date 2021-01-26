@@ -203,7 +203,7 @@ export default function Info({ data }) {
 
       <style jsx>{`
         .wrapper {
-          padding: 40px 10px 0px 10px;
+          padding: 20px 20px 0px 20px;
           height: 100%;
           width: 100%;
           display: flex;
