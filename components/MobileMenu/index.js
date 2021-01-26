@@ -158,6 +158,7 @@ export default function MobileMenu() {
           display: flex;
           align-items: center;
           padding-left: 20px;
+          padding-top: 5px;
         }
         .homeOpen {
           position: fixed;
@@ -167,6 +168,7 @@ export default function MobileMenu() {
           align-items: center;
           padding-left: 20px;
           height: 50px;
+          padding-top: 5px;
         }
         .burger {
           color: white;

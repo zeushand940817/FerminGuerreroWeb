@@ -64,7 +64,7 @@ export default function Animation({ data, path }) {
                         height="auto"
                         className={styles.videoClass}
                       >
-                        <source src={elem.mp4Video} type="video/mp4" />
+                        <source src={elem.mp4Gallery} type="video/mp4" />
                       </video>
                     )}
                     <div className={styles.text}>

@@ -124,7 +124,12 @@ const Projects = ({ data }) => {
                     >
                       {source.type === 'img' ? (
                         <LazyLoadImage
-                          style={{ width: '100%', height: '100%' }}
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            objectPosition: 'center',
+                          }}
                           src={source.img}
                           alt="graphic-design"
                           srcSet={srcset(
