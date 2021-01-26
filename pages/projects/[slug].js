@@ -41,7 +41,6 @@ const Projects = ({ data }) => {
     <>
       <div className={styles.container}>
         {data.map((element) => {
-          console.log(element.mp4Slug, 'SOY MP4SLUG')
           return (
             <>
               {element.mp4 ? (

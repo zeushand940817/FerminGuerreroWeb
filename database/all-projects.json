@@ -2821,12 +2821,25 @@
         "cols": 2
       },
       {
+        "type": "video",
+        "url": "/Architecture/S1/1.mp4",
+        "poster": "/Architecture/Poster/1.png",
+        "rows": 2,
+        "cols": 2
+      },
+      {
         "type": "img",
         "img": "/Architecture/S1/3.jpg",
         "rows": 2,
         "cols": 2
       },
-
+      {
+        "type": "video",
+        "url": "/Architecture/S1/4.mp4",
+        "poster": "/Architecture/Poster/3.png",
+        "rows": 2,
+        "cols": 2
+      },
       {
         "type": "img",
         "img": "/Architecture/S1/5.jpg",
@@ -2834,8 +2847,36 @@
         "cols": 2
       },
       {
+        "type": "video",
+        "url": "/Architecture/S1/6.mp4",
+        "poster": "/Architecture/Poster/4.png",
+        "rows": 2,
+        "cols": 2
+      },
+      {
         "type": "img",
         "img": "/Architecture/S1/7.jpg",
+        "rows": 2,
+        "cols": 2
+      },
+      {
+        "type": "video",
+        "url": "/Architecture/S1/9.mov",
+        "poster": "/Architecture/Poster/4.png",
+        "rows": 2,
+        "cols": 2
+      },
+      {
+        "type": "video",
+        "url": "/Architecture/S1/10.mp4",
+        "poster": "/Architecture/Poster/4.png",
+        "rows": 2,
+        "cols": 2
+      },
+      {
+        "type": "video",
+        "url": "/Architecture/S1/11.mp4",
+        "poster": "/Architecture/Poster/4.png",
         "rows": 2,
         "cols": 2
       },
@@ -2848,6 +2889,7 @@
       {
         "type": "video",
         "url": "/Architecture/S1/2.mp4",
+        "poster": "/Architecture/Poster/2.png",
         "rows": 2,
         "cols": 2
       },
@@ -2872,12 +2914,14 @@
       {
         "type": "video",
         "url": "/Architecture/S2/1.mp4",
+        "poster": "/Architecture/Poster/8.png",
         "rows": 2,
         "cols": 2
       },
       {
         "type": "video",
         "url": "/Architecture/S2/2.mp4",
+        "poster": "/Architecture/Poster/8.png",
         "rows": 2,
         "cols": 2
       },
@@ -2890,6 +2934,7 @@
       {
         "type": "video",
         "url": "/Architecture/S2/4.mp4",
+        "poster": "/Architecture/Poster/5.png",
         "rows": 2,
         "cols": 2
       },
@@ -2902,6 +2947,7 @@
       {
         "type": "video",
         "url": "/Architecture/S2/6.mp4",
+        "poster": "/Architecture/Poster/6.png",
         "rows": 2,
         "cols": 2
       },
@@ -2914,36 +2960,21 @@
       {
         "type": "video",
         "url": "/Architecture/S2/8.mp4",
-        "rows": 2,
-        "cols": 2
-      },
-      {
-        "type": "video",
-        "url": "/Architecture/S2/6.mp4",
-        "rows": 2,
-        "cols": 2
-      },
-      {
-        "type": "img",
-        "img": "/Architecture/S2/7.jpg",
-        "rows": 2,
-        "cols": 2
-      },
-      {
-        "type": "video",
-        "url": "/Architecture/S2/8.mp4",
+        "poster": "/Architecture/Poster/7.png",
         "rows": 2,
         "cols": 2
       },
       {
         "type": "video",
         "url": "/Architecture/S2/9.mp4",
+        "poster": "/Architecture/Poster/8.png",
         "rows": 2,
         "cols": 2
       },
       {
         "type": "video",
         "url": "/Architecture/S2/10.mp4",
+        "poster": "/Architecture/Poster/9.png",
         "rows": 2,
         "cols": 2
       },
@@ -2956,6 +2987,7 @@
       {
         "type": "video",
         "url": "/Architecture/S3/1.mp4",
+        "poster": "/Architecture/Poster/10.png",
         "rows": 2,
         "cols": 2
       },
@@ -2978,20 +3010,23 @@
         "cols": 2
       },
       {
-        "type": "img",
-        "img": "/Architecture/6.png",
+        "type": "video",
+        "url": "/Architecture/S3/Ali.mp4",
+        "poster": "/Architecture/Poster/10.png",
         "rows": 2,
         "cols": 2
       },
       {
         "type": "video",
-        "url": "/Architecture/forGallery.mp4",
+        "url": "/Architecture/S3/Comp.mp4",
+        "poster": "/Architecture/Poster/11.png",
         "rows": 2,
         "cols": 2
       },
       {
         "type": "video",
         "url": "/Architecture/S3/Mina.mp4",
+        "poster": "/Architecture/Poster/11.png",
         "rows": 2,
         "cols": 2
       },
@@ -3001,18 +3036,7 @@
         "rows": 2,
         "cols": 4
       },
-      {
-        "type": "video",
-        "url": "/Architecture/S3/Ali.mp4",
-        "rows": 2,
-        "cols": 2
-      },
-      {
-        "type": "video",
-        "url": "/Architecture/S3/Comp.mp4",
-        "rows": 2,
-        "cols": 2
-      },
+
       {
         "type": "img",
         "img": "/Architecture/2.png",
@@ -3034,6 +3058,12 @@
       {
         "type": "img",
         "img": "/Architecture/5.png",
+        "rows": 2,
+        "cols": 4
+      },
+      {
+        "type": "img",
+        "img": "/Architecture/6.png",
         "rows": 2,
         "cols": 4
       }
