@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
-import styles from 'pages/graphicDesign/node_modules/pages/TypefaceDesign/node_modules/styles/pages.module.scss'
+import styles from 'styles/pages.module.scss'
 
 //Components
 import ImageList from '@material-ui/core/ImageList'
