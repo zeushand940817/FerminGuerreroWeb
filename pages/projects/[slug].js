@@ -150,6 +150,7 @@ const Projects = ({ data }) => {
                             controls
                             controlsList="nofullscreen"
                             className={styles.video}
+                            poster={source.poster}
                           >
                             <source
                               src={source.url}
