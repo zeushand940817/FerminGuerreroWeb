@@ -15,7 +15,7 @@ export default function Header(props) {
           </Link>
         </div>
         <div>
-          <Link href="/all" activeClassName="active" passHref>
+          <Link href="/allProjects" activeClassName="active" passHref>
             &
           </Link>
         </div>

@@ -68,18 +68,7 @@ export default function Footer({ component }) {
           color:white;
         }
      
-        div:nth-child(1) {
-          text-align:right;
-          color:white;
-         
-        }
-        div:nth-child(2) {
-          text-align:right;
-         
-
-          color: #424242;
-        }
-
+   
         
         @media only Screen and ${device.tablet} {
           .footerHome {
@@ -151,11 +140,6 @@ export default function Footer({ component }) {
           text-decoration: none;
           font-size:20px;
         }
-
-        .developer{
-          display:none;
-        }
-    
        
       `}</style>
     </>

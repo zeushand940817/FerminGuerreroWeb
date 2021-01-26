@@ -56,11 +56,7 @@ export default function MobileMenu() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/all"
-                  as="/all-projects"
-                  onClick={() => handleClick()}
-                >
+                <Link href="/allProjects" onClick={() => handleClick()}>
                   <a>&</a>
                 </Link>
               </li>
@@ -168,7 +164,6 @@ export default function MobileMenu() {
           align-items: center;
           padding-left: 20px;
           height: 50px;
-          padding-top: 5px;
         }
         .burger {
           color: white;
