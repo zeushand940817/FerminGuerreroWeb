@@ -8,7 +8,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
-import styles from 'pages/graphicDesign/node_modules/pages/Tag/node_modules/pages/TypefaceDesign/node_modules/styles/pages.module.scss'
+import styles from 'styles/pages.module.scss'
 
 //Data fetching
 import { getProjectsData } from 'utils/getData'
