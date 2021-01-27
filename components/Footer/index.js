@@ -60,7 +60,7 @@ export default function Footer({ component }) {
           display:grid; 
           grid-template-columns: 2;
           grid-template-rows:3;
-          padding:0px 20px 20px 20px;
+          padding:0px 10px 10px 10px;
         }
 
         .copyright {
@@ -99,6 +99,12 @@ export default function Footer({ component }) {
 
         a:visited {
           color:white;
+        }
+
+        .developer, .lauraLink {
+          color: #424242 !important;
+          text-decoration: none;
+          font-size:16px;
         }
 
     
@@ -167,7 +173,7 @@ export default function Footer({ component }) {
           text-align: right;
         }
       
-        .lauraLink {
+        .developer, .lauraLink {
           color: #424242 !important;
           text-decoration: none;
           font-size:20px;
