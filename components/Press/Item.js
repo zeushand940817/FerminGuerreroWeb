@@ -31,18 +31,19 @@ export default function ({ description, year, index, articles, description2 }) {
     <>
       <section className={classes.wrapper} id="research">
         <Grid item xs={12} container>
-          <Grid
-            container
-            direction="row"
-            onMouseEnter={() => setActiveIndex(index)}
-            onMouseLeave={() => setActiveIndex(-1)}
-          >
+          <Grid container direction="row">
             <Grid item lg={2} />
             <Grid item lg={2} />
             <Grid item xs={3} lg={1}>
               <Box className={classes.box}>{year}</Box>
             </Grid>
-            <Grid item xs={6} lg={4}>
+            <Grid
+              item
+              xs={6}
+              lg={4}
+              onMouseEnter={() => setActiveIndex(index)}
+              onMouseLeave={() => setActiveIndex(-1)}
+            >
               <Box className={classes.content}>
                 <u>{description}</u>
               </Box>

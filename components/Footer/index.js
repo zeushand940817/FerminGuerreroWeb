@@ -60,7 +60,7 @@ export default function Footer({ component }) {
           display:grid; 
           grid-template-columns: 2;
           grid-template-rows:3;
-          padding:0px 10px 10px 10px;
+          padding-bottom:10px;
         }
 
         .copyright {

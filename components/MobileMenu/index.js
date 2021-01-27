@@ -204,6 +204,8 @@ export default function MobileMenu() {
           position: absolute;
           top: -1000px;
           width: 100%;
+          transform: translateY(-100%);
+          transition: 0.5s ease-in-out;
         }
         .socialMedia {
           padding-bottom: 20px;

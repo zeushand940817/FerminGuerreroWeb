@@ -50,7 +50,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.firstBox}>Colombia.</Box>
+            <Box className={classes.firstBox}>Bogotá, Colombia.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -69,7 +69,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.text}>Berlin.</Box>
+            <Box className={classes.text}>Berlin, Germany.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -89,7 +89,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.sameYearText}>Paris.</Box>
+            <Box className={classes.sameYearText}>Paris, France.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -105,7 +105,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.sameYearText}>Slovakia.</Box>
+            <Box className={classes.sameYearText}>Bratislava, Slovakia.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -124,7 +124,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.sameYearText}>China.</Box>
+            <Box className={classes.sameYearText}>Beijing, China.</Box>
           </Grid>
         </Grid>
       </Grid>
@@ -160,7 +160,7 @@ export default function Exhibitions({ data }) {
           </Grid>
           <Grid item lg={1} />
           <Grid item xs={3} lg={2}>
-            <Box className={classes.text}>China.</Box>
+            <Box className={classes.text}>Beijing, China.</Box>
           </Grid>
         </Grid>
       </Grid>

@@ -41,7 +41,19 @@ export default function About() {
             <Box component="p" className={classes.box}>
               Online platform for Fermin Guerrero's visual communication
               practice focusing on Graphic Design/Art Direction and Typeface
-              Design. <br />
+              Design.
+              <br />
+              <br />
+              Fermin was born in Uruguay in 1983. In 2010, after he finished his
+              bachelor in Industrial Design at Escuela Universitaria Centro de
+              Diseño - Uruguay, Fermin moved to Switzerland to study Visual
+              Communication at the Haute École d’Art et de Design (HEAD) -
+              Geneva, where he received his BA with first class honours. He
+              subsequently went on to complete a Masters in Typeface Design at
+              the University of Reading–UK, receiving his MA with Distinction in
+              September 2015.
+              <br />
+              <br />
               For over 10 years, Fermin has worked for renown international
               clients on a wide range of projects across different platforms and
               disciplines. His work has received many prestigious prizes and
@@ -54,14 +66,6 @@ export default function About() {
               express his ideas. He is currently based in the UAE, since 2018,
               where he has been appointed the Senior Graphic Designer at Sharjah
               Architecture Triennial.
-              <br /> Fermin was born in Uruguay in 1983. In 2010, after he
-              finished his bachelor in Industrial Design at Escuela
-              Universitaria Centro de Diseño - Uruguay, Fermin moved to
-              Switzerland to study Visual Communication at the Haute École d’Art
-              et de Design (HEAD) - Geneva, where he received his BA with first
-              class honours. He subsequently went on to complete a Masters in
-              Typeface Design at the University of Reading–UK, receiving his MA
-              with Distinction in September 2015.
             </Box>
           </Grid>
           <Grid item lg={2} sm={2} />
