@@ -21,7 +21,7 @@ export default function Footer({ component }) {
           </a>
         </div>
 
-        <div className="Twitter">
+        <div className="twitter">
           <a
             className="social"
             href="https://twitter.com/fermin_guerrero"
@@ -30,7 +30,7 @@ export default function Footer({ component }) {
             <u>Twitter</u>
           </a>
         </div>
-        <div className="Instagram">
+        <div className="instagram">
           <a
             className="social"
             href="https://www.instagram.com/ferminguerrero_design/"
@@ -39,7 +39,7 @@ export default function Footer({ component }) {
             <u>Instagram</u>
           </a>
         </div>
-        <div className="Linkedin">
+        <div className="linkedin">
           <a
             className="social"
             href="https://www.linkedin.com/in/fermin-guerrero-616237173/"
@@ -57,11 +57,10 @@ export default function Footer({ component }) {
 
          .footerComponent{
           color:white;
-          display:grid;
-         
-          
+          display:grid; 
           grid-template-columns: 2;
           grid-template-rows:3;
+          padding:0px 20px 20px 20px;
         }
 
         .copyright {
@@ -76,24 +75,22 @@ export default function Footer({ component }) {
           color: #424242;
         }
 
-        .Twitter {
+        .twitter {
           text-align:right;
           grid-column: 2;
           grid-row: 1;
         }
 
-        .Instagram {
+        .instagram {
           text-align:right;
           grid-column: 2;
           grid-row: 2;
         }
-       .Linkedin {
+       .linkedin {
         text-align:right;
         grid-column: 2;
         grid-row: 3;
         }
-      
-
 
          a {
           outline: none;
@@ -104,9 +101,7 @@ export default function Footer({ component }) {
           color:white;
         }
 
-     
-   
-        
+    
         @media only Screen and ${device.tablet} {
           .footerHome {
             display:none;
@@ -157,16 +152,16 @@ export default function Footer({ component }) {
           padding-left: 3px;
           color: #424242;
         }
-        .Twitter {
+        .twitter {
           grid-column: 10;
             grid-row:1;
         }
 
-        .Instagram {
+        .instagram {
           grid-column: 11;
           grid-row:1;
         }
-       .Linkedin {
+       .linkedin {
           grid-column: 12;
           grid-row:1;
           text-align: right;
