@@ -8,8 +8,6 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../utils/theme'
 import styles from 'styles/app.module.scss'
 
-import Mobile from 'components/Mobile'
-
 //Dynamic imports
 import dynamic from 'next/dynamic'
 
@@ -49,9 +47,7 @@ export default function MyApp(props) {
             <Header />
           </div>
           <div className={styles.mobile}>
-            {/* <NewMobile /> */}
             <MobileMenu />
-            {/* <Mobile /> */}
           </div>
           <Component {...pageProps} />
         </div>

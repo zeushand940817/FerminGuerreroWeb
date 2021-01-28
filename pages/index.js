@@ -6,15 +6,9 @@ import { getLandingData } from '../utils/getData'
 
 //components
 import Footer from 'components/Footer'
-// import Carousel from 'react-multi-carousel'
+import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
-import Flickity from 'react-flickity-component'
-import 'flickity/css/flickity.css'
-
-import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-import { Carousel } from 'react-responsive-carousel'
 
 //media queries
 import device from 'utils/media-queries'
@@ -72,6 +66,16 @@ const Home = ({ dataParse }) => {
     )
   }
 
+  const arrowStyles = {
+    position: 'absolute',
+    zIndex: 2,
+    top: 'calc(50% - 15px)',
+    width: 30,
+    height: 30,
+    cursor: 'pointer',
+    background: 'pink',
+  }
+
   return (
     <>
       <div className="hero" id="#home">
@@ -103,7 +107,7 @@ const Home = ({ dataParse }) => {
         ></div>
       </div>
       <div className="homeMobile">
-        {/* <Carousel
+        <Carousel
           responsive={responsive}
           ssr={true}
           infinite={true}
@@ -117,17 +121,11 @@ const Home = ({ dataParse }) => {
           containerClass="carouselContainer"
           customDot={<CustomDot />}
           itemClass="carousel-item"
-        > */}
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          useKeyboardArrows
-          className="presentation-mode"
         >
           {mobileImages.map((image, key) => (
-            <div>
+            <div style={{ height: '100vh' }}>
               <img
-                style={{ height: '100vh' }}
+                style={{ height: '100%' }}
                 src={image}
                 key={`${key} ${image}`}
               />
@@ -154,8 +152,6 @@ const Home = ({ dataParse }) => {
           object-position: center;
         }
 
-        .carousel-with-custom-dots {
-        }
         .custom-dot {
           border: none;
           outline: none;
@@ -163,10 +159,6 @@ const Home = ({ dataParse }) => {
         .custom-dot--active {
           transform: scale(1.3);
           outline: auto;
-        }
-
-        .carousel-item {
-          border: 3px solid red;
         }
 
         @media only Screen and ${device.tablet} {

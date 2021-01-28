@@ -61,6 +61,8 @@ export default function Footer({ component }) {
           grid-template-columns: 2;
           grid-template-rows:3;
           padding-bottom:10px;
+          border-top:1px solid white;
+          padding-top:5px;
         }
 
         .copyright {
@@ -134,6 +136,8 @@ export default function Footer({ component }) {
         }
         .footerComponent{
           width: 100%;
+          border-top:1px solid white;
+          padding-top:5px;
           height: 40px;
           background: none;
           bottom: 0;
