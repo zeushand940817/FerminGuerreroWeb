@@ -10,6 +10,9 @@ import Footer from 'components/Footer'
 import 'react-multi-carousel/lib/styles.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
+import Flickity from 'react-flickity-component'
+import 'flickity/css/flickity.css'
+
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel } from 'react-responsive-carousel'
 
@@ -122,16 +125,9 @@ const Home = ({ dataParse }) => {
           className="presentation-mode"
         >
           {mobileImages.map((image, key) => (
-            <div style={{ width: '100%', height: '100%' }}>
-              <Image
-                layout="responsive"
-                objectFit="contain"
-                width={320}
-                height={658}
-                // style={{
-                //   width: '100%',
-                //   height: '100%',
-                // }}
+            <div>
+              <img
+                style={{ height: '100vh' }}
                 src={image}
                 key={`${key} ${image}`}
               />
