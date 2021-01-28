@@ -24,49 +24,49 @@ const Home = ({ dataParse }) => {
     setImageNumber(Math.floor(Math.random() * desktopImages.length))
   }
 
-  // const responsive = {
-  //   tablet: {
-  //     breakpoint: { max: 1024, min: 677 },
-  //     items: 1,
-  //     slidesToSlide: 1,
-  //   },
-  //   mobile: {
-  //     breakpoint: { max: 677, min: 0 },
-  //     items: 1,
-  //     slidesToSlide: 1,
-  //   },
-  // }
+  const responsive = {
+    tablet: {
+      breakpoint: { max: 1024, min: 677 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 677, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  }
 
-  // const CustomDot = ({ onClick, active }) => {
-  //   return (
-  //     <li
-  //       style={{
-  //         background: active ? 'white' : 'transparent',
-  //         mixBlendMode: 'difference',
-  //         borderRadius: '100px',
-  //         marginBottom: '20px',
-  //         marginRight: '5px',
-  //         width: '15px',
-  //         height: '15px',
-  //         border: '2px solid white',
-  //         borderRadius: '10px',
-  //         marginBottom: '80px',
-  //       }}
-  //     >
-  //       <button
-  //         style={{
-  //           background: 'transparent',
-  //           mixBlendMode: 'difference',
-  //           borderRadius: '100px',
-  //           outline: 'none',
-  //           border: 'none',
-  //           height: '16px',
-  //         }}
-  //         onClick={() => onClick()}
-  //       />
-  //     </li>
-  //   )
-  // }
+  const CustomDot = ({ onClick, active }) => {
+    return (
+      <li
+        style={{
+          background: active ? 'white' : 'transparent',
+          mixBlendMode: 'difference',
+          borderRadius: '100px',
+          marginBottom: '20px',
+          marginRight: '5px',
+          width: '15px',
+          height: '15px',
+          border: '2px solid white',
+          borderRadius: '10px',
+          marginBottom: '80px',
+        }}
+      >
+        <button
+          style={{
+            background: 'transparent',
+            mixBlendMode: 'difference',
+            borderRadius: '100px',
+            outline: 'none',
+            border: 'none',
+            height: '16px',
+          }}
+          onClick={() => onClick()}
+        />
+      </li>
+    )
+  }
 
   return (
     <>
@@ -99,7 +99,7 @@ const Home = ({ dataParse }) => {
         ></div>
       </div>
       <div className="homeMobile">
-        {/* <Carousel
+        <Carousel
           responsive={responsive}
           ssr={true}
           infinite={true}
@@ -113,22 +113,21 @@ const Home = ({ dataParse }) => {
           containerClass="carouselContainer"
           customDot={<CustomDot />}
           itemClass="carousel-item"
-        > */}
-        <Flickity>
+        >
+          {/* <Flickity> */}
           {mobileImages.map((image, key) => (
             <img
               style={{
-                width: '100vw',
+                width: '100%',
                 //height: '100vh',
-                height: '100vh',
+                height: '100%',
               }}
               src={image}
               key={`${key} ${image}`}
             />
           ))}
-        </Flickity>
-
-        {/* </Carousel> */}
+          {/* </Flickity> */}
+        </Carousel>
       </div>
       <Footer component="home" />
 
@@ -150,7 +149,6 @@ const Home = ({ dataParse }) => {
         }
 
         .carousel-with-custom-dots {
-          margin-top: 100px;
         }
         .custom-dot {
           border: none;
@@ -178,8 +176,6 @@ const Home = ({ dataParse }) => {
           }
 
           .carousel-with-custom-dots {
-            margin-top: 100px;
-            padding-bottom: 100px;
           }
           .custom-dot {
             border: none;
