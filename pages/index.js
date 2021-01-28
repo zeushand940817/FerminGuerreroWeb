@@ -5,12 +5,12 @@ import { getLandingData } from '../utils/getData'
 
 //components
 import Footer from 'components/Footer'
-import Carousel from 'react-multi-carousel'
+// import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-import Flickity from 'react-flickity-component'
-import 'flickity/css/flickity.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
+import { Carousel } from 'react-responsive-carousel'
 
 //media queries
 import device from 'utils/media-queries'
@@ -99,7 +99,7 @@ const Home = ({ dataParse }) => {
         ></div>
       </div>
       <div className="homeMobile">
-        <Carousel
+        {/* <Carousel
           responsive={responsive}
           ssr={true}
           infinite={true}
@@ -113,20 +113,25 @@ const Home = ({ dataParse }) => {
           containerClass="carouselContainer"
           customDot={<CustomDot />}
           itemClass="carousel-item"
+        > */}
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          useKeyboardArrows
+          className="presentation-mode"
         >
-          {/* <Flickity> */}
           {mobileImages.map((image, key) => (
             <img
-              style={{
-                width: '100%',
-                //height: '100vh',
-                height: '100%',
-              }}
+              // style={{
+              //   width: '100%',
+              //   //height: '100vh',
+              //   height: '100vh',
+
+              // }}
               src={image}
               key={`${key} ${image}`}
             />
           ))}
-          {/* </Flickity> */}
         </Carousel>
       </div>
       <Footer component="home" />
@@ -157,6 +162,10 @@ const Home = ({ dataParse }) => {
         .custom-dot--active {
           transform: scale(1.3);
           outline: auto;
+        }
+
+        .carousel-item {
+          border: 3px solid red;
         }
 
         @media only Screen and ${device.tablet} {
