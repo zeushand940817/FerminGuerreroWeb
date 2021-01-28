@@ -18,6 +18,10 @@ const useStyles = makeStyles({
     marginBottom: 10,
     marginTop: 10,
     backgroundColor: 'transparent',
+    '&.MuiTreeItem-content': {
+      display: 'flex',
+      alingItems: 'left',
+    },
   },
   texto: {
     fontSize: 18,
@@ -44,11 +48,7 @@ const TreeItem1 = withStyles({
 export default function ExhibitionsMobile() {
   const classes = useStyles()
   return (
-    <TreeView
-      className={classes.root}
-      defaultCollapseIcon={<RemoveIcon />}
-      defaultExpandIcon={<AddIcon />}
-    >
+    <TreeView className={classes.root}>
       <TreeItem1 nodeId="1" label="2018" classes={{ label: classes.texto }}>
         <TreeItem1
           nodeId="2"

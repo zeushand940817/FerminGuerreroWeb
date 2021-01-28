@@ -56,8 +56,11 @@
   }
 }
 
+.tagYearContainer {
+  display: flex;
+  justify-content: space-between;
+}
 .description {
-  margin-bottom: 1em;
   padding-left: 6.5px;
 }
 

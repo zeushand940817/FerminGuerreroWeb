@@ -63,6 +63,7 @@ export default function Footer({ component }) {
           padding-bottom:10px;
           border-top:1px solid white;
           padding-top:5px;
+          
         }
 
         .copyright {

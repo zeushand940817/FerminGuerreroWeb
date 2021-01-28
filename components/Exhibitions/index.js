@@ -13,6 +13,11 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 50,
     lineHeight: 1.4,
     paddingLeft: '3px',
+    ['@media (max-width: 677px)']: {
+      background: 'pink',
+      display: 'flex',
+      flexDirection: 'column',
+    },
   },
   text: {
     marginBottom: 35,

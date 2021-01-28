@@ -44,8 +44,8 @@ const Home = ({ dataParse }) => {
           borderRadius: '100px',
           marginBottom: '20px',
           marginRight: '5px',
-          width: '15px',
-          height: '15px',
+          width: '10px',
+          height: '10px',
           border: '2px solid white',
           borderRadius: '10px',
           marginBottom: '80px',
@@ -58,7 +58,7 @@ const Home = ({ dataParse }) => {
             borderRadius: '100px',
             outline: 'none',
             border: 'none',
-            height: '16px',
+            height: '10px',
           }}
           onClick={() => onClick()}
         />

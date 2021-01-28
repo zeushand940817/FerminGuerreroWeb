@@ -74,9 +74,22 @@ const Projects = ({ data }) => {
                   <Grid item xs={12} lg={2}>
                     <div className={styles.name}>{element.name}</div>
                   </Grid>
-                  <Grid item xs={12} sm={12} lg={4}>
+                  <Grid
+                    item
+                    xs={12}
+                    sm={12}
+                    lg={4}
+                    className={styles.tagYearContainer}
+                  >
                     <div className={styles.yearandtags}>
-                      <p>{element.year}</p>
+                      <div>
+                        <p>{element.year}</p>
+                        {element.credits && (
+                          <p style={{ paddingTop: '10px' }}>
+                            {element.credits}
+                          </p>
+                        )}
+                      </div>
                       <div className={styles.tagName}>
                         {element.tags &&
                           element.tags.map((tag) => {

@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 
-
 //Data fetching
 import { getPressData } from 'utils/getData'
 
@@ -202,12 +201,12 @@ export default function Info({ data }) {
 
       <style jsx>{`
         .wrapper {
-          padding: 20px 20px 0px 20px;
+          padding: 40px 20px 0px 20px;
           height: 100%;
           width: 100%;
           display: flex;
           flex-direction: column;
-          height: 100vh;
+          height: 100%;
           justify-content: space-between;
         }
         .mobileAbout {
@@ -243,6 +242,8 @@ export default function Info({ data }) {
           display: none;
           font-size: 16;
         }
+
+  
 
         @media only Screen and ${device.tablet} {
           .pageWrapper {
