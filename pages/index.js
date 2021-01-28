@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Image from 'next/image'
 
 //Data fetching
 import { getLandingData } from '../utils/getData'
@@ -121,16 +122,20 @@ const Home = ({ dataParse }) => {
           className="presentation-mode"
         >
           {mobileImages.map((image, key) => (
-            <img
-              // style={{
-              //   width: '100%',
-              //   //height: '100vh',
-              //   height: '100vh',
-
-              // }}
-              src={image}
-              key={`${key} ${image}`}
-            />
+            <div style={{ width: '100%', height: '100%' }}>
+              <Image
+                layout="responsive"
+                objectFit="contain"
+                width={320}
+                height={658}
+                // style={{
+                //   width: '100%',
+                //   height: '100%',
+                // }}
+                src={image}
+                key={`${key} ${image}`}
+              />
+            </div>
           ))}
         </Carousel>
       </div>
