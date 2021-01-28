@@ -154,7 +154,7 @@ export default function MobileMenu() {
           display: flex;
           align-items: center;
           padding-left: 20px;
-          padding-top: 5px;
+          height: 50px;
         }
         .homeOpen {
           position: fixed;
@@ -182,13 +182,14 @@ export default function MobileMenu() {
           background-color: black;
           color: white;
           padding-left: 20px;
+          padding-right: 20px;
           height: 50vh;
           display: flex;
           justify-content: space-between;
           position: fixed;
           top: 50;
           left: 0;
-          margin-top: 25px;
+          margin-top: 12px;
         }
         a {
           display: inline-block;
@@ -197,15 +198,16 @@ export default function MobileMenu() {
           font-size: 20px;
         }
         li {
-          padding-bottom: 5px;
+          border-top: 1px solid white;
+          padding-top: 10px;
+          padding-bottom: 10px;
         }
+
         .linksBurgerMenuContainerInactive {
           z-index: 2;
           position: absolute;
           top: -1000px;
           width: 100%;
-          transform: translateY(-100%);
-          transition: 0.5s ease-in-out;
         }
         .socialMedia {
           padding-bottom: 20px;
