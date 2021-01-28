@@ -1,12 +1,11 @@
 import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 
-//Styles
-import styles from 'styles/info.module.scss'
 
 //Data fetching
 import { getPressData } from 'utils/getData'
 
+//Media queries
 import device from 'utils/media-queries'
 
 //Dynamic imports / Components

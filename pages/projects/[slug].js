@@ -72,7 +72,7 @@ const Projects = ({ data }) => {
               <Grid container>
                 <div className={styles.gridContainer}>
                   <Grid item xs={12} lg={2}>
-                    <div className="name">{element.name}</div>
+                    <div className={styles.name}>{element.name}</div>
                   </Grid>
                   <Grid item xs={12} sm={12} lg={4}>
                     <div className={styles.yearandtags}>

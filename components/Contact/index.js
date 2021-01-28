@@ -1,6 +1,8 @@
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 
+import { FiClock } from 'react-icons/fi'
+
 //Components
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
@@ -50,6 +52,17 @@ const useStyles = makeStyles((theme) => ({
   },
 
   text: {
+    fontSize: 20,
+    color: 'white',
+    marginBottom: 20,
+    ['@media (max-width:677px)']: {
+      fontSize: 18,
+      marginBottom: 5,
+    },
+  },
+  time: {
+    display: 'flex',
+    alignItems: 'center',
     fontSize: 20,
     color: 'white',
     marginBottom: 20,
@@ -109,7 +122,12 @@ export default function Contact() {
           <Grid item lg={2} />
           <Grid item xs={3} lg={1} sm={3} />
           <Grid item xs={9} lg={2} sm={1}>
-            <Box className={classes.text}>
+            <Box className={classes.time}>
+              <FiClock
+                color="white"
+                size={23}
+                style={{ paddingRight: '5px' }}
+              />{' '}
               <Time />
             </Box>
           </Grid>

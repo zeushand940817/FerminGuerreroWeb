@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+
 export default function Time() {
   let time = new Date().toLocaleTimeString()
   const [Ctime, setCtime] = useState(time)
