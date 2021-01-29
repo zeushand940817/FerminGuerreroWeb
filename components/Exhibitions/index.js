@@ -102,9 +102,7 @@ export default function Exhibitions({ data }) {
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
-          <Grid item xs={3} lg={1}>
-            <Box className={classes.sameYearText}></Box>
-          </Grid>
+          <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={4}>
             <Box className={classes.sameYearText}>Trnava Poster Triennial.</Box>
           </Grid>
@@ -118,9 +116,7 @@ export default function Exhibitions({ data }) {
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
-          <Grid item xs={3} lg={1}>
-            <Box className={classes.sameYearText}></Box>
-          </Grid>
+          <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={4}>
             <Box className={classes.sameYearText}>
               World’s best poster designers 2015, International Invitational
@@ -137,9 +133,7 @@ export default function Exhibitions({ data }) {
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
-          <Grid item xs={3} lg={1}>
-            <Box className={classes.text}></Box>
-          </Grid>
+          <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={4}>
             <Box className={classes.text}>
               These Woods Have Ears. Organized by Rock This Town.

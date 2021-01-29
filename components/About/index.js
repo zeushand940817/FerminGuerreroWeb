@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 10,
       marginBottom: 20,
       paddingTop: 0,
+      paddingLeft: '0px',
     },
     ['@media (min-width: 768px)']: {
       fontSize: 20,

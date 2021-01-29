@@ -24,7 +24,7 @@ export default function AwardsMobile() {
               Swiss Typefaces selected Thesaurus for their 40 pages specimen
               called Type Life 3, showcasing 19 non-SWTY typefaces they like.
             </p>
-            <p>Prize: Gold.</p>
+            
           </div>
           <div className="content">
             <p> Type 4: Typeface Design Competition by Graphis magazine.</p>

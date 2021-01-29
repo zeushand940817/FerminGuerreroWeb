@@ -92,9 +92,7 @@ export default function Awards() {
             </Box>
           </Grid>
           <Grid item lg={1} />
-          <Grid item xs={3} lg={2}>
-            <Box className={classes.text}>Gold</Box>
-          </Grid>
+          <Grid item xs={3} lg={2} />
         </Grid>
       </Grid>
 
