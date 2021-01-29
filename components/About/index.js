@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 1.4,
     ['@media (max-width:677px)']: {
       fontSize: 20,
-      lineHeight: 1.2,
+      lineHeight: 1.4,
       marginTop: 10,
       marginBottom: 20,
       paddingTop: 0,

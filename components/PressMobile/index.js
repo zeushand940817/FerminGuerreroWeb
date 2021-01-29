@@ -29,15 +29,15 @@ function PressMobile(props) {
               Monograms, A study of the development of monograms: From Ancient
               Greek coins to contemporary logos.
             </u>
-          </a>
-          <p>MATD’s dissertation.</p>
+          </a>{' '}
+          <span>MATD’s dissertation.</span>
         </div>
 
         <div className="textLink">
           <a href="/BachelorThesis.pdf" target="_blank">
             <u>An inside look at the creation process of Exentra.</u>
-          </a>
-          <p>MATD’s Reflection on Practice.</p>
+          </a>{' '}
+          <span>MATD’s Reflection on Practice.</span>
         </div>
       </div>
 
@@ -49,7 +49,6 @@ function PressMobile(props) {
           margin-bottom: 20px;
         }
         .textLink {
-          padding-left: 8px;
           padding-bottom: 10px;
         }
         a {

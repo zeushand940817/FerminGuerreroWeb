@@ -8,6 +8,7 @@ function Accordion(props) {
 
   function toggleAccordion() {
     setActiveState(setActive === '' ? 'active' : '')
+
     setHeightState(
       setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`
     )
@@ -32,6 +33,7 @@ function Accordion(props) {
           display: flex;
           flex-direction: column;
           font-size: 20px;
+          margin-bottom: 15px;
         }
         .accordion {
           background-color: black;

@@ -1,44 +1,75 @@
-import Accordion from 'components/Accordion'
-
 export default function AwardsMobile() {
   return (
     <>
-      <div>
-        <Accordion
-          title="2019"
-          content="LAD - Latin Design Awards. Typeface design category. Project: Thesaurus. Prize: Gold."
-        />
-        <Accordion
-          title="2018"
-          content="European Design Awards Typeface design category. Project: Thesaurus. Prize: Gold."
-        />
-        <Accordion
-          title=""
-          content="Type 4: Typeface Design Competition by Graphis magazine. Project: Thesaurus. Prize: Gold."
-        />
-        <Accordion
-          title=""
-          content="Latin-American typedesign biennial (Tipos Latinos). Superfamily category Project: Thesaurus."
-        />
+      <div className="awardsContainer">
+        <section>
+          <p>2019</p>
+          <div className="content">
+            <p>LAD - Latin Design Awards.</p>
+            <p>Typeface design category.</p>
+            <p> Project: Thesaurus.</p>
+            <p>Prize: Gold.</p>
+          </div>
+        </section>
+        <section>
+          <p>2018</p>
+          <div className="content">
+            <p>European Design Awards.</p>
+            <p> Typeface design category. </p>
+            <p>Project: Thesaurus.</p>
+            <p> Prize: Gold.</p>
+          </div>
+          <div className="content">
+            <p>
+              Swiss Typefaces selected Thesaurus for their 40 pages specimen
+              called Type Life 3, showcasing 19 non-SWTY typefaces they like.
+            </p>
+            <p>Prize: Gold.</p>
+          </div>
+          <div className="content">
+            <p> Type 4: Typeface Design Competition by Graphis magazine.</p>
+            <p>Project: Thesaurus. </p>
+            <p>Prize: Gold.</p>
+          </div>
 
-        <Accordion
-          title=""
-          content="
-          Swiss Typefaces selected Thesaurus for their 40 pages specimen called Type Life 3, showcasing 19 non-SWTY typefaces they like. Prize: Gold."
-        />
-        <Accordion
-          title="2015"
-          content="Trnava Poster Triennial International competition. Project: New Year, New Fight. Honorary mention."
-        />
-        <Accordion
-          title="2014"
-          content="Rolex's Foundation (Hans Wilsdorf) awarded me their schoolarship for my BA graduate project."
-        />
-        <Accordion
-          title="2013"
-          content="BEA fondation award for young artists."
-        />
+          <div className="content">
+            <p>Latin-American typedesign biennial (Tipos Latinos).</p>
+            <p> Superfamily category Project: Thesaurus.</p>
+            <p>Prize: Mention of Exellence (First Prize).</p>
+          </div>
+        </section>
+        <section>
+          <p>2015</p>
+          <div className="content">
+            <p>Trnava Poster Triennial International competition.</p>
+            <p>Project: New Year, New Fight.</p>
+            <p> Prize: Honorary mention.</p>
+          </div>
+        </section>
+        <section>
+          <p>2014</p>
+          <div className="content">
+            <p>
+              Rolex's Foundation (Hans Wilsdorf) awarded me their schoolarship
+              for my BA graduate project.
+            </p>
+            <p>BEA fondation award for young artists.</p>
+          </div>
+        </section>
       </div>
+      <style jsx>{`
+        .awardsContainer {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        section {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .content {
+          margin-bottom: 10px;
+        }
+      `}</style>
     </>
   )
 }

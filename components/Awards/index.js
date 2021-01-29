@@ -177,9 +177,7 @@ export default function Awards() {
         <Grid container direction="row">
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} sm={0} />
-          <Grid item xs={3} lg={1}>
-            <Box className={classes.secondBox}>2014</Box>
-          </Grid>
+          <Grid item xs={3} lg={1} />
           <Grid item xs={6} lg={4}>
             <Box className={classes.secondBox}>
               BEA fondation award for young artists.

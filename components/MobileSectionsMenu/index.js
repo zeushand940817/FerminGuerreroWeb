@@ -11,13 +11,19 @@ const ExhibitionsMobile = dynamic(() => import('@components/ExhibitionsMobile'))
 export default function MobileSectionsMenu() {
   return (
     <>
-      <div>
+      <div className="mainWrapper">
         <Accordion title="About" content={<About />} />
         <Accordion title="Contact" content={<Contact />} />
-        <Accordion title="Articles & papers" content={<PressMobile />} />
-        <Accordion title="Exhibitions" content={<ExhibitionsMobile />} />
         <Accordion title="Awards" content={<AwardsMobile />} />
+        <Accordion title="Research & Articles" content={<PressMobile />} />
+        <Accordion title="Exhibitions" content={<ExhibitionsMobile />} />
       </div>
+
+      <style jsx>{`
+        .mainWrapper {
+          min-height: 340px;
+        }
+      `}</style>
     </>
   )
 }

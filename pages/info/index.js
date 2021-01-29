@@ -92,6 +92,7 @@ export default function Info({ data }) {
         </div>
         <div className="mobileAbout">
           <MobileSectionsMenu />
+          {/* <MobileSectionsMenuNew /> */}
         </div>
         <div className="content">
           <div className="sticky">
@@ -208,6 +209,7 @@ export default function Info({ data }) {
           flex-direction: column;
           height: 100%;
           justify-content: space-between;
+          hyphens: auto;
         }
         .mobileAbout {
           display: block;
@@ -242,8 +244,6 @@ export default function Info({ data }) {
           display: none;
           font-size: 16;
         }
-
-  
 
         @media only Screen and ${device.tablet} {
           .pageWrapper {
