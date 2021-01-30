@@ -155,6 +155,7 @@ const Home = ({ dataParse }) => {
         .custom-dot {
           border: none;
           outline: none;
+          mix-blend-mode: difference;
         }
         .custom-dot--active {
           transform: scale(1.3);
@@ -177,8 +178,6 @@ const Home = ({ dataParse }) => {
             object-position: center;
           }
 
-          .carousel-with-custom-dots {
-          }
           .custom-dot {
             border: none;
             outline: none;

@@ -244,7 +244,7 @@ export default function Info({ data }) {
           font-size: 16;
         }
 
-        @media only Screen and ${device.tablet} {
+        {/* @media only Screen and ${device.tablet} {
           .pageWrapper {
             padding-top: 60px;
           }
@@ -341,7 +341,7 @@ export default function Info({ data }) {
           .mobileAbout {
             display: none;
           }
-        }
+        } */}
         @media only Screen and ${device.desktop} {
           .sticky {
             position: sticky;

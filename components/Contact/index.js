@@ -94,7 +94,7 @@ export default function Contact() {
           <Grid item xs={3} lg={1}>
             <Box className={classes.box}>Email</Box>
           </Grid>
-          <Grid item xs={9} lg={2} sm={3}>
+          <Grid item xs={9} lg={3} sm={5}>
             <Box className={classes.box}>
               <a className={classes.a} href="mailto:contact@ferminguerrero.com">
                 contact@ferminguerrero.com
@@ -110,7 +110,7 @@ export default function Contact() {
           <Grid item xs={0} lg={2} />
           <Grid item lg={2} />
           <Grid item xs={3} lg={1} sm={3} />
-          <Grid item xs={9} lg={2} sm={1}>
+          <Grid item xs={9} lg={2} sm={5}>
             <Box>Dubai, UAE.</Box>
           </Grid>
         </Grid>
@@ -121,7 +121,7 @@ export default function Contact() {
           <Grid item lg={2} />
           <Grid item lg={2} />
           <Grid item xs={3} lg={1} sm={3} />
-          <Grid item xs={9} lg={2} sm={1}>
+          <Grid item xs={9} lg={2} sm={5}>
             <Box className={classes.time}>
               <FiClock
                 color="white"
