@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
   wrapper: {
     fontSize: 20,
     color: 'white',
+    fontWeight: 300,
   },
   box: {
     marginTop: 60,

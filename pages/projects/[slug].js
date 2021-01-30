@@ -34,6 +34,7 @@ function srcset(image, size, rows = 1, cols = 1) {
   ${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
 }
 
+
 const Projects = ({ data }) => {
   const classes = useStyles()
 

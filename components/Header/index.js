@@ -48,7 +48,7 @@ export default function Header(props) {
           display: grid;
           grid-template-columns: repeat(12, 1fr);
           grid-template-rows: 1;
-          font-weight: bold;
+          font-weight: 300;
         }
 
         div:nth-child(1) {

@@ -92,7 +92,6 @@ export default function Info({ data }) {
         </div>
         <div className="mobileAbout">
           <MobileSectionsMenu />
-          {/* <MobileSectionsMenuNew /> */}
         </div>
         <div className="content">
           <div className="sticky">
@@ -302,7 +301,7 @@ export default function Info({ data }) {
 
           .selected {
             font-style: italic;
-            font-weight: bold;
+            font-weight: 700;
             color: white;
           }
           .section {

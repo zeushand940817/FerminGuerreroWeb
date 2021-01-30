@@ -1,5 +1,7 @@
-import Accordion from 'components/Accordion'
 import dynamic from 'next/dynamic'
+
+//Component
+import Accordion from 'components/Accordion'
 
 //Dynamic imports
 const About = dynamic(() => import('@components/About'))

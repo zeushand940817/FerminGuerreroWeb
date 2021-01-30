@@ -28,7 +28,6 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-     
         <link rel="shortcut icon" href="/fermin.gif" />
         <title>Fermin Guerrero</title>
         <meta
