@@ -189,7 +189,11 @@ export default function Info({ data }) {
               </div>
             </div>
           </section>
-          <section className="sectionInInfo" id="exhibitions" ref={exhibitionsRef}>
+          <section
+            className="sectionInInfo"
+            id="exhibitions"
+            ref={exhibitionsRef}
+          >
             <Exhibitions />
           </section>
           <div className="bottomSpacer" />
@@ -242,8 +246,7 @@ export default function Info({ data }) {
           display: none;
         }
 
-         
-          @media only Screen and ${device.desktop} {
+        @media only Screen and ${device.desktop} {
           .pageWrapper {
             padding-top: 60px;
           }
@@ -285,6 +288,7 @@ export default function Info({ data }) {
             justify-content: center;
             width: 100%;
             background-color: 'pink';
+            font-size: bold;
           }
 
           .header_link {
@@ -296,6 +300,7 @@ export default function Info({ data }) {
             border: none;
             cursor: pointer;
             outline: none;
+            padding: 0px;
           }
 
           .selected {
@@ -330,7 +335,6 @@ export default function Info({ data }) {
           #press {
             margin-top: 20px;
             display: block;
-            font-size: 16;
           }
           #exhibitions {
             display: block;
@@ -340,7 +344,7 @@ export default function Info({ data }) {
           .mobileAbout {
             display: none;
           }
-    
+
           .pageWrapper {
             padding-top: 60px;
           }
@@ -381,7 +385,6 @@ export default function Info({ data }) {
             flex-direction: row;
             justify-content: center;
             width: 100%;
-            background-color: 'pink';
           }
 
           .header_link {
@@ -396,7 +399,7 @@ export default function Info({ data }) {
           }
 
           .selected {
-            font-style: italic;
+            font-style: normal;
             font-weight: 700;
             color: white;
           }
@@ -427,7 +430,6 @@ export default function Info({ data }) {
           #press {
             margin-top: 20px;
             display: block;
-            font-size: 16;
           }
           #exhibitions {
             display: block;

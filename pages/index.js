@@ -77,7 +77,7 @@ const Home = ({ dataParse }) => {
             height: '100vh',
             top: '0',
           }}
-          src={desktopImages[0].image}
+          src={desktopImages[2].image}
         />
         <div
           className={styles.box}
