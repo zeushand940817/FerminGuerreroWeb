@@ -93,7 +93,10 @@ const Projects = ({ data }) => {
                         {element.externalLinkBrick && (
                           <p>
                             Get Brick at{' '}
-                            <a href={element.externalLinkBrick}>
+                            <a
+                              className={styles.tagLink}
+                              href={element.externalLinkBrick}
+                            >
                               <u>{element.nameExternalLink}</u>
                             </a>
                           </p>
@@ -102,7 +105,10 @@ const Projects = ({ data }) => {
                         {element.externalLinkThesaurus && (
                           <p>
                             Get Thesaurus at{' '}
-                            <a href={element.externalLinkThesaurus}>
+                            <a
+                              className={styles.tagLink}
+                              href={element.externalLinkThesaurus}
+                            >
                               <u>{element.nameExternalLink}</u>
                             </a>
                           </p>
@@ -135,7 +141,11 @@ const Projects = ({ data }) => {
                       )}{' '}
                       <span>
                         {element.urlDescription && (
-                          <a href={element.urlDescription} target="_blank">
+                          <a
+                            className={styles.tagLink}
+                            href={element.urlDescription}
+                            target="_blank"
+                          >
                             <u>here.</u>
                           </a>
                         )}
