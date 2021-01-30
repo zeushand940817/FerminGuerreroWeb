@@ -81,7 +81,7 @@ const Projects = ({ data }) => {
                     lg={4}
                     className={styles.tagYearContainer}
                   >
-                    <div className={styles.yearandtags}>
+                    {/* <div className={styles.yearandtags}> */}
                       <div>
                         <p>{element.year}</p>
                         {element.credits && <p>{element.credits}</p>}
@@ -124,7 +124,7 @@ const Projects = ({ data }) => {
                               </>
                             )
                           })}
-                      </div>
+                      {/* </div> */}
                     </div>
                   </Grid>
                   <Grid item xs={12} sm={12} lg={6}>

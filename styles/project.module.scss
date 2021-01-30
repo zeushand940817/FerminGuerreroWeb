@@ -42,31 +42,30 @@
       font-weight: bold;
       background: yellow;
     }
+
     .tagYearContainer {
-      display: flex;
-      justify-content: start;
-      background: tomato;
-      margin-bottom: 30px;
+      background: blueviolet;
 
       @include desktop {
-        padding-bottom: 0px;
+        background: tomato;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
       }
-
       .yearandtags {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-
         @include desktop {
           margin-bottom: 0px;
+          background-color: blue;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
         }
       }
       .tagName {
         display: flex;
         flex-direction: row;
-        margin-bottom: 20px;
+        padding-bottom: 30px;
+        padding-top: 20px;
 
         @include desktop {
           margin-bottom: 0px;
@@ -85,6 +84,7 @@
         }
       }
     }
+
     .description {
       padding-left: 0px;
       a {
