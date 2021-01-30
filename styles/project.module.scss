@@ -49,6 +49,17 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 20px;
+        a {
+          color: white;
+        }
+        a:selected {
+          color: white;
+        }
+
+        @include desktop {
+          margin-bottom: 0px;
+        }
       }
       .tagName {
         display: flex;

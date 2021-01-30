@@ -89,6 +89,24 @@ const Projects = ({ data }) => {
                             {element.credits}
                           </p>
                         )}
+
+                        {element.externalLinkBrick && (
+                          <p>
+                            Get Brick at{' '}
+                            <a href={element.externalLinkBrick}>
+                              <u>{element.nameExternalLink}</u>
+                            </a>
+                          </p>
+                        )}
+
+                        {element.externalLinkThesaurus && (
+                          <p>
+                            Get Thesaurus at{' '}
+                            <a href={element.externalLinkThesaurus}>
+                              <u>{element.nameExternalLink}</u>
+                            </a>
+                          </p>
+                        )}
                       </div>
                       <div className={styles.tagName}>
                         {element.tags &&

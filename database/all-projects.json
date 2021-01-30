@@ -495,6 +495,7 @@
     "imageSlag": "/FGC/FGC.jpg",
     "description1": "Re-branding of Fédération Genevoise de Coopération (FGC).",
     "description2": " The Fédération Genevoise de Coopération reassembles about fifty associations with headquarters in Geneva. The aim behind it is to aid developing countries and raise public awareness by financing and mentoring projects helping to battle inequality and provide freedom of choice to these communities.",
+    "urlDescription": "http://ferminguerrero.com/projects/thesaurus",
     "sources": [
       {
         "type": "img",
@@ -1274,7 +1275,7 @@
     "description1": "For a school project at HEAD - Geneva, in collaboration with the RATP (Parisian autonomous transport society), we were invited to create a 10 second long animation to wish the passengers a happy new year 2014.",
     "description2": "My intention was to confront the public with themselves and make them reflect on who they are and how they behave with others. I thought that I could address this premise in more than one way. Thus, I decided to also create two posters: one deriving from the animation and the other completely independent of it. Goes around, comes around, featured here, is the poster that was created independently from the animation, where I took a more explicit and, somewhat, empathic approach.",
     "description3": "Discover the other poster called “It’s up to you”",
-    "urlDescription": "http://localhost:3000/projects/its-up-to-you",
+    "urlDescription": "http://ferminguerrero.com/projects/its-up-to-you",
     "sources": [
       {
         "type": "img",
@@ -1312,7 +1313,7 @@
     "description2": "The animations were shown on the large HD screens at the Franklin Roosevelt and Europe metro stops in Paris, France. My intention was to confront the public with themselves and make them reflect on who they are and how they behave with others. I thought that I could address this premise in more than one way. Thus, I decided to also create two posters: one deriving from the animation and the other completely independent of it.",
     "description3": "It's up to you, featured in this page, which is based on the animation, I handled the subject in a more subtle, abstract and, somehow, poetic way. I inserted a small text in the center of the poster so that people would have to get very close to it, in order to read the text “it's up to you” while they will also see themselves reflected in the mirror at a really close range enhancing the effect of confrontation.",
     "description4": "Poster: 50x70cm / Screen printing: black and white on mirror paper / 20 copies. Discover the other poster, “Goes around, comes around”",
-    "urlDescription": "http://localhost:3000/projects/goes-around-comes-around",
+    "urlDescription": "http://ferminguerrero.com/projects/goes-around-comes-around",
     "sources": [
       {
         "type": "img",
@@ -2171,11 +2172,13 @@
     "year": "2017",
     "tags": ["Visual-Identity"],
     "credits": null,
+    "nameExternalLink": "Typotheque foundry",
+    "externalLinkThesaurus": "https://www.typotheque.com/search/thesaurus",
     "mp4": false,
     "image": "/CoverPhotos/Galleries/Thesaurus.jpg",
     "imageSlag": "/Thesaurus/5.jpg",
     "description1": "Thesaurus is a super type-family (16 styles) with one foot in the past & one foot in the present which was inspired by the typographic history of the city of Geneva.Thesaurus is based on the types that Robert Estienne brought from Paris to Geneva, which were later used by his son Henri II Estienne for printing the famous book \"Thesaurus Græcæ Linguæ\" in 1572. These metal types served, in some way, as a bridge between France and Switzerland, between Catholicism and Protestantism, and now, through Thesaurus, between past and present. Thesaurus had a first release in January 2017 and was further extended in 2018 adding the Display Italic styles, making Thesaurus sharper and even more dignified. These new styles were developed taking into consideration the feedback I've got from Thesaurus's first users. The creation of the Display Italic styles requested me to rethink many of the original terminations and remove optical compensations designed to enhance small sizes.",
-    "description2": "Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American type-design biennial by Tipos Latinos (TL8) – out of 444 projects submitted this year. It was selected in the Superfamily category. It has also been awarded with Gold in the Graphis Type 4: Typeface Design Competition. Get Thesaurus at Typotheque.com.",
+    "description2": "Thesaurus has received the Gold award (first prize) at the European Design Awards 2018 and the Gold Award & Best Project of Category at the LAD - Latin American Design Awards 2019. Furthermore, it was one of the 4 projects awarded with the Mention of Excellence at the 8th Latin-American type-design biennial by Tipos Latinos (TL8) – out of 444 projects submitted this year. It was selected in the Superfamily category. It has also been awarded with Gold in the Graphis Type 4: Typeface Design Competition.",
     "sources": [
       {
         "type": "img",
@@ -2370,7 +2373,8 @@
     "mp4": false,
     "image": "/CoverPhotos/Galleries/TimeOut.jpg",
     "imageSlag": "/TimeOut/2.jpg",
-    "description1": "The New York magazine TimeOut asked me to design the cover of its 'spring preview' issue (late February, 2013), and wanted me to reinvent my 'Beyond the Box' poster (link this). For me, spring is about flowers, paper windmills and kaleidoscopes, so my visual concept was inspired by this mood board.",
+    "description1": "The New York magazine TimeOut asked me to design the cover of its 'spring preview' issue (late February, 2013), and wanted me to reinvent my 'Beyond the Box' poster. For me, spring is about flowers, paper windmills and kaleidoscopes, so my visual concept was inspired by this mood board. See beyond the box poster ",
+    "urlDescription": "http://ferminguerrero.com/projects/beyond-the-box",
     "sources": [
       {
         "type": "img",
@@ -2734,6 +2738,8 @@
     "year": "2019",
     "tags": null,
     "credits": null,
+    "nameExternalLink": "Colophon Foundry",
+    "externalLinkBrick": "https://www.colophon-foundry.org/typefaces/brick/",
     "mp4": false,
     "image": "/CoverPhotos/Galleries/BrickTypefamilyLandscape.jpg",
     "imageSlag": "/Brick/1.jpg",
