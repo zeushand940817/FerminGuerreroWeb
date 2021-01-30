@@ -45,13 +45,18 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
-      background: pink;
+      background: tomato;
+      padding-bottom: 40px;
+      padding-top: 0px;
+
+      @include desktop {
+        padding-bottom: 0px;
+      }
 
       .yearandtags {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 20px;
 
         @include desktop {
           margin-bottom: 0px;
