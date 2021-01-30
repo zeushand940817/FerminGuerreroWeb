@@ -214,8 +214,8 @@ const Projects = ({ data }) => {
             </>
           )
         })}
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }

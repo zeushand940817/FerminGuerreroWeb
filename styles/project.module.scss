@@ -59,7 +59,7 @@
       .tagName {
         display: flex;
         flex-direction: row;
-        padding-bottom: 30px;
+        padding-bottom: 35px;
         padding-top: 10px;
 
         @include desktop {
@@ -81,6 +81,7 @@
       }
       .middleText {
         padding-top: 10px;
+        line-height: 1.4;
         @include desktop {
           padding-top: 0px;
         }

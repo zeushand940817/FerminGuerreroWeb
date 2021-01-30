@@ -63,6 +63,7 @@ export default function Footer({ component }) {
           padding-bottom:10px;
           border-top:1px solid white;
           padding-top:5px;
+          font-size: 16px;
         }
 
         .copyright {
@@ -128,6 +129,7 @@ export default function Footer({ component }) {
           font-size: 20px;
           color: white;
           position: fixed;
+       
         }
         .footerComponent{
           width: 100%;
@@ -143,6 +145,7 @@ export default function Footer({ component }) {
           grid-template-rows: 1;
           font-size: 20px;
           color: white; 
+      
         }
 
         .copyright {
