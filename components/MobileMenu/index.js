@@ -170,6 +170,7 @@ export default function MobileMenu() {
           display: flex;
           justify-content: flex-end;
           padding-right: 8px;
+          margin-top: -3px;
         }
         .linksBurgerMenuContainer {
           width: 100%;

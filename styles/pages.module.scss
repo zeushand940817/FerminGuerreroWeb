@@ -4,10 +4,6 @@
   width: 100%;
   padding: 22px 20px 0px 20px;
 
-  @include desktop {
-    padding: 30px 20px 0px 20px;
-  }
-
   .container:hover {
     opacity: 1;
     -webkit-animation: flash 1.5s;
