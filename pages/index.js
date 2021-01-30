@@ -8,10 +8,9 @@ import { getLandingData } from '../utils/getData'
 import Footer from 'components/Footer'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-//media queries
-import device from 'utils/media-queries'
+//Styles
+import styles from 'styles/home.module.scss'
 
 const Home = ({ dataParse }) => {
   const mobileImages = dataParse.mobile
@@ -66,21 +65,10 @@ const Home = ({ dataParse }) => {
     )
   }
 
-  const arrowStyles = {
-    position: 'absolute',
-    zIndex: 2,
-    top: 'calc(50% - 15px)',
-    width: 30,
-    height: 30,
-    cursor: 'pointer',
-    background: 'pink',
-  }
-
   return (
     <>
-      <div className="hero" id="#home">
+      <div className={styles.hero} id="#home">
         <img
-          className="backgroundImage"
           style={{
             backgroundPosition: 'center',
             backgroundSize: 'cover',
@@ -92,7 +80,7 @@ const Home = ({ dataParse }) => {
           src={desktopImages[0].image}
         />
         <div
-          className="box"
+          className={styles.box}
           style={{
             top: '0',
             width: '100vw',
@@ -106,7 +94,7 @@ const Home = ({ dataParse }) => {
           onMouseMove={handleMouseMove}
         ></div>
       </div>
-      <div className="homeMobile">
+      <div className={styles.homeMobile}>
         <Carousel
           responsive={responsive}
           ssr={true}
@@ -120,12 +108,16 @@ const Home = ({ dataParse }) => {
           showDots={true}
           containerClass="carouselContainer"
           customDot={<CustomDot />}
-          itemClass="carousel-item"
         >
           {mobileImages.map((image, key) => (
             <div style={{ height: '100vh' }}>
               <img
-                style={{ height: '100%' }}
+                style={{
+                  height: '100%',
+                  width: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'center',
+                }}
                 src={image}
                 key={`${key} ${image}`}
               />
@@ -134,78 +126,6 @@ const Home = ({ dataParse }) => {
         </Carousel>
       </div>
       <Footer component="home" />
-
-      <style jsx>{`
-        .hero {
-          display: none;
-        }
-
-        .homeMobile {
-          height: 100%;
-          display: block;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-        }
-
-        .custom-dot {
-          border: none;
-          outline: none;
-          mix-blend-mode: difference;
-        }
-        .custom-dot--active {
-          transform: scale(1.3);
-          outline: auto;
-        }
-
-        @media only Screen and ${device.tablet} {
-          .hero {
-            display: none;
-          }
-
-          .homeMobile {
-            display: block;
-          }
-
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-          }
-
-          .custom-dot {
-            border: none;
-            outline: none;
-          }
-          .custom-dot--active {
-            transform: scale(1.3);
-            outline: auto;
-          }
-        }
-        @media only Screen and ${device.desktop} {
-          .hero {
-            display: block;
-            width: 100vw;
-            height: 100vh;
-          }
-          .homeMobile {
-            display: none;
-          }
-
-          .mobileOnly {
-            display: none;
-          }
-
-          .box {
-            height: 100%;
-          }
-        }
-      `}</style>
     </>
   )
 }

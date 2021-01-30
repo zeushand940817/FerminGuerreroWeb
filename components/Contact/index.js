@@ -14,16 +14,20 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     lineHeight: 1.4,
     paddingLeft: '3px',
-    ['@media (min-width: 378px)']: {
+    ['@media (max-width: 480px)']: {
       fontSize: 18,
       lineHeight: 1.2,
       marginTop: 10,
       marginBottom: 20,
+      paddingLeft: 0,
+    },
+    ['@media (max-width:768px)']: {
+      paddingLeft: 0,
     },
   },
   li: {
     listStyle: 'none',
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:768px)']: {
       fontSize: 18,
       marginBottom: 5,
     },
@@ -31,14 +35,15 @@ const useStyles = makeStyles((theme) => ({
   box: {
     marginTop: 50,
     marginBottom: 10,
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       fontSize: 18,
       marginTop: 10,
       marginBottom: 10,
       paddingTop: 0,
     },
-    ['@media (min-width: 768px)']: {
+    ['@media (max-width: 768px)']: {
       fontSize: 18,
+      marginTop: 10,
     },
   },
   a: {
@@ -46,8 +51,9 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     color: 'white',
     borderBottom: '1px solid white',
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       fontSize: 18,
+      marginTop: 10,
     },
   },
 
@@ -55,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     color: 'white',
     marginBottom: 20,
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       fontSize: 18,
       marginBottom: 5,
     },
@@ -66,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     color: 'white',
     marginBottom: 20,
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       fontSize: 18,
       marginBottom: 5,
     },
@@ -75,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     color: 'white',
     marginBottom: 10,
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       fontSize: 18,
       marginBottom: 5,
       marginTop: 5,

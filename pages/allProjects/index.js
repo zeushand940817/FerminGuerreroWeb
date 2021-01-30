@@ -6,7 +6,6 @@ import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'styles/pages.module.scss'
@@ -20,7 +19,7 @@ const useStyles = makeStyles({
     height: '100%',
   },
   label: {
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       display: 'flex',
       flexDirection: 'column',
     },

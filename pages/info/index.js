@@ -4,6 +4,9 @@ import dynamic from 'next/dynamic'
 //Data fetching
 import { getPressData } from 'utils/getData'
 
+//Style
+import styles from 'styles/info.module.scss'
+
 //Media queries
 import device from 'utils/media-queries'
 
@@ -86,20 +89,20 @@ export default function Info({ data }) {
 
   return (
     <>
-      <div className="wrapper">
-        <div className="topSpacer">
-          <img className="image" src="/aboutmepicture.jpg" />
+      <div className={styles.wrapper}>
+        <div className={styles.topSpacer}>
+          <img className={styles.image} src="/aboutmepicture.jpg" />
         </div>
-        <div className="mobileAbout">
+        <div className={styles.mobileSections}>
           <MobileSectionsMenu />
         </div>
-        <div className="content">
-          <div className="sticky">
-            <div className="header" ref={sidenavRef}>
+        <div className={styles.content}>
+          <div className={styles.sticky}>
+            <div className={styles.header} ref={sidenavRef}>
               <button
                 type="button"
-                className={`header_link ${
-                  visibleSection === 'about' ? 'selected' : ''
+                className={`{styles.header_link} ${
+                  visibleSection === 'about' ? '{styles.selected}' : ''
                 }`}
                 onClick={() => {
                   scrollTo(aboutRef.current)
@@ -109,8 +112,8 @@ export default function Info({ data }) {
               </button>
               <button
                 type="button"
-                className={`header_link ${
-                  visibleSection === 'contact' ? 'selected' : ''
+                className={`{styles.header_link} ${
+                  visibleSection === 'contact' ? '{styles.selected}' : ''
                 }`}
                 onClick={() => {
                   scrollTo(contactRef.current)
@@ -120,8 +123,8 @@ export default function Info({ data }) {
               </button>
               <button
                 type="button"
-                className={`header_link ${
-                  visibleSection === 'awards' ? 'selected' : ''
+                className={`{styles.header_link} ${
+                  visibleSection === 'awards' ? '{styles.selected}' : ''
                 }`}
                 onClick={() => {
                   scrollTo(awardsRef.current)
@@ -131,8 +134,8 @@ export default function Info({ data }) {
               </button>
               <button
                 type="button"
-                className={`header_link ${
-                  visibleSection === 'press' ? 'selected' : ''
+                className={`{styles.header_link} ${
+                  visibleSection === 'press' ? '{styles.selected}' : ''
                 }`}
                 onClick={() => {
                   scrollTo(pressRef.current)
@@ -142,8 +145,8 @@ export default function Info({ data }) {
               </button>
               <button
                 type="button"
-                className={`header_link ${
-                  visibleSection === 'exhibitions' ? 'selected' : ''
+                className={`{styles.header_link} ${
+                  visibleSection === 'exhibitions' ? '{styles.selected}' : ''
                 }`}
                 onClick={() => {
                   scrollTo(exhibitionsRef.current)
@@ -154,19 +157,23 @@ export default function Info({ data }) {
             </div>
           </div>
 
-          <div className="section" id="about" ref={aboutRef}>
+          <section className={styles.sectionInInfo} id="about" ref={aboutRef}>
             <About />
-          </div>
-          <div className="section" id="contact" ref={contactRef}>
+          </section>
+          <section
+            className={styles.sectionInInfo}
+            id="contact"
+            ref={contactRef}
+          >
             <Contact />
-          </div>
-          <div className="section" id="awards" ref={awardsRef}>
+          </section>
+          <section className={styles.sectionInInfo} id="awards" ref={awardsRef}>
             <Awards />
-          </div>
-          <div className="section" id="press" ref={pressRef}>
-            <div className="boxPress">
-              <div className="pageWrapper">
-                <div className="projectList">
+          </section>
+          <section className={styles.sectionInInfo} id="press" ref={pressRef}>
+            <div className={styles.boxPress}>
+              <div className={styles.pageWrapper}>
+                <div className={styles.projectList}>
                   {articles.map((item, index) => (
                     <div key={item.id}>
                       <a
@@ -188,183 +195,20 @@ export default function Info({ data }) {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="section" id="exhibitions" ref={exhibitionsRef}>
+          </section>
+          <section
+            className={styles.sectionInInfo}
+            id="exhibitions"
+            ref={exhibitionsRef}
+          >
             <Exhibitions />
-          </div>
-          <div className="bottomSpacer" />
+          </section>
+          <div className={styles.bottomSpacer} />
         </div>
-        <div className="footerDiv">
+        <div className={styles.footerDiv}>
           <Footer />
         </div>
       </div>
-
-      <style jsx>{`
-        .wrapper {
-          padding: 40px 20px 0px 20px;
-          height: 100%;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          justify-content: space-between;
-          hyphens: auto;
-        }
-        .mobileAbout {
-          display: block;
-        }
-
-        .image {
-          width: 100%;
-        }
-        .header_link {
-          display: none;
-        }
-        .header {
-          display: none;
-        }
-
-        #about {
-          display: none;
-        }
-        #contact {
-          display: none;
-        }
-
-        #awards {
-          display: none;
-        }
-
-        #press {
-          display: none;
-          font-size: 16;
-        }
-        #exhibitions {
-          display: none;
-          font-size: 16;
-        }
-
-        {/* @media only Screen and ${device.tablet} {
-          .pageWrapper {
-            padding-top: 60px;
-          }
-          .footerDiv {
-            bottom: 0;
-          }
-          .wrapper {
-            font-size: 20px;
-            padding: 40px 20px 0px 20px;
-          }
-
-          .image {
-            width: 100%;
-          }
-
-          .content {
-            margin-top: 50px;
-          }
-
-          .topSpacer {
-            height: auto;
-          }
-
-          .bottomSpacer {
-            height: 40vh;
-          }
-
-          .sticky {
-            width: 100%;
-            background-color: black;
-            bottom: 0;
-            left: 0;
-            right: 0;
-          }
-
-          .header {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: 100%;
-            background-color: 'pink';
-          }
-
-          .header_link {
-            background-color: transparent;
-            display: flex;
-            justify-content: left;
-            font-size: 20px;
-            color: white;
-            border: none;
-            cursor: pointer;
-            outline: none;
-          }
-
-          .selected {
-            font-style: italic;
-            font-weight: 700;
-            color: white;
-          }
-          .section {
-            background: transparent;
-            height: auto;
-            margin-top: 50px;
-          }
-
-          .linkArticle {
-            outline: none;
-            color: white;
-          }
-
-          #about {
-            margin-top: 0px;
-            display: block;
-          }
-
-          #contact {
-            display: block;
-          }
-
-          #awards {
-            display: block;
-          }
-
-          #press {
-            margin-top: 20px;
-            display: block;
-            font-size: 16;
-          }
-          #exhibitions {
-            display: block;
-            height: 60vh;
-          }
-
-          .mobileAbout {
-            display: none;
-          }
-        } */}
-        @media only Screen and ${device.desktop} {
-          .sticky {
-            position: sticky;
-            top: 50px;
-            left: 0;
-            right: 0;
-            z-index: 10;
-            width: 400px;
-          }
-
-          .header {
-            background-color: transparent;
-            display: flex;
-            flex-direction: column;
-            margin-top: 50px;
-            width: 400px;
-          }
-
-          #about {
-            margin-top: -180px;
-          }
-        }
-      `}</style>
     </>
   )
 }

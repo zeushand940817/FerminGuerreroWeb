@@ -1,29 +1,25 @@
 @import './mixins';
 
-.desktop {
-  display: block;
-}
-.mobile {
-  display: none;
-}
+.mainAppWrapper {
+  height: 100%;
+  width: 100%;
 
-@include respond(tablet) {
   .desktop {
-    display: block;
-  }
-  .mobile {
     display: none;
-  }
-}
-@include respond(desktop) {
-  .mainAppWrapper {
-    height: 100%;
-    width: 100%;
-    .desktop {
+    @include tablet {
       display: none;
     }
-    .mobile {
+    @include desktop {
       display: block;
+    }
+  }
+  .mobile {
+    display: block;
+    @include tablet {
+      display: block;
+    }
+    @include desktop {
+      display: none;
     }
   }
 }

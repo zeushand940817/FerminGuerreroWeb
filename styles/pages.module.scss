@@ -4,6 +4,10 @@
   width: 100%;
   padding: 22px 20px 0px 20px;
 
+  @include desktop {
+    padding: 30px 20px 0px 20px;
+  }
+
   .container:hover {
     opacity: 1;
     -webkit-animation: flash 1.5s;
@@ -42,21 +46,14 @@
     color: white;
     padding-top: 20px;
     padding-bottom: 25px;
-  }
-}
 
-@include respond(tablet) {
-  .text {
-    font-size: 18px;
-    color: white;
-    line-height: 18px;
-    padding-top: 5px;
-  }
-}
-@include respond(desktop) {
-  .mainWrapper {
-    padding: 30px 20px 0px 20px;
-    .text {
+    @include tablet {
+      font-size: 18px;
+      color: white;
+      line-height: 18px;
+      padding-top: 5px;
+    }
+    @include desktop {
       font-size: 20px;
       line-height: 0px;
       padding-top: 20px;

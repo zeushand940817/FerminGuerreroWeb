@@ -1,5 +1,8 @@
 import { useState, useRef } from 'react'
 
+//Styles
+import styles from 'styles/accordion.module.scss'
+
 function Accordion(props) {
   const [setActive, setActiveState] = useState('')
   const [setHeight, setHeightState] = useState('0px')
@@ -16,53 +19,21 @@ function Accordion(props) {
 
   return (
     <>
-      <div className="accordionSection">
-        <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-          <p className="accordionTitle">{props.title}</p>
+      <div className={styles.accordionSection}>
+        <button
+          className={`{styles.accordion} ${setActive}`}
+          onClick={toggleAccordion}
+        >
+          <p className={styles.accordionTitle}>{props.title}</p>
         </button>
         <div
           ref={content}
           style={{ maxHeight: `${setHeight}` }}
-          className="accordionContent"
+          className={styles.accordionContent}
         >
-          <div className="accordionText">{props.content}</div>
+          <div className={styles.accordionText}>{props.content}</div>
         </div>
       </div>
-      <style jsx>{`
-        .accordionSection {
-          display: flex;
-          flex-direction: column;
-          font-size: 20px;
-          margin-bottom: 15px;
-        }
-        .accordion {
-          background-color: black;
-          color: white;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          border: none;
-          outline: none;
-          transition: all 0.6s ease;
-          padding: 0px;
-        }
-
-        .accordionTitle {
-          font-size: 20px;
-        }
-
-        .accordionTitle:hover,
-        .active {
-          font-weight: bold;
-        }
-
-        .accordionContent {
-          background-color: black;
-          color: white;
-          overflow: hidden;
-          transition: max-height 0.6s ease;
-        }
-      `}</style>
     </>
   )
 }

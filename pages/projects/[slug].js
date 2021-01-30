@@ -12,7 +12,7 @@ import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
 
 //Lazyloading
-import LazyLoad, { Widget } from 'react-lazyload'
+import LazyLoad from 'react-lazyload'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Data fetching
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   imageList: {
     width: '100%',
     height: '100%',
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       display: 'flex',
       flexDirection: 'column',
     },
@@ -33,7 +33,6 @@ function srcset(image, size, rows = 1, cols = 1) {
   return `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format 1x,
   ${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
 }
-
 
 const Projects = ({ data }) => {
   const classes = useStyles()

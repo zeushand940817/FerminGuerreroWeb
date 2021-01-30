@@ -1,0 +1,33 @@
+@import './mixins';
+
+.accordionSection {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-bottom: 15px;
+
+  .accordionTitle:hover,
+  .active {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: all 0.6s ease;
+    padding: 0px;
+    font-size: 20px;
+  }
+
+  .accordionContent {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+  }
+}

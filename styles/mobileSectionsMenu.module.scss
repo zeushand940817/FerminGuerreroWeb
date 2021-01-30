@@ -1,0 +1,23 @@
+@import './mixins';
+
+@include phone {
+  .mainWrapper {
+    border: 2px solid yellow;
+    display: block;
+    min-height: 340px;
+  }
+}
+
+@include tablet {
+  .mainWrapper {
+    border: 1px solid blue;
+    display: block;
+    min-height: 340px;
+  }
+}
+
+@include desktop {
+  .mainWrapper {
+    display: block;
+  }
+}

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 60,
     paddingLeft: '3px',
     lineHeight: 1.4,
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       fontSize: 20,
       lineHeight: 1.4,
       marginTop: 10,
@@ -22,9 +22,10 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: 0,
       paddingLeft: '0px',
     },
-    ['@media (min-width: 768px)']: {
+    ['@media (max-width: 768px)']: {
       fontSize: 20,
       lineHeight: 1.2,
+      marginTop: 10,
     },
   },
 }))

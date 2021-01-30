@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     height: '100%',
   },
   label: {
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       display: 'flex',
       flexDirection: 'column',
     },

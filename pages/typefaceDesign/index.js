@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     height: '100%',
   },
   imageList: {
-    ['@media (max-width:677px)']: {
+    ['@media (max-width:480px)']: {
       display: 'flex',
       flexDirection: 'column',
     },

@@ -2,20 +2,19 @@
 // 481px — 768px: iPads, Tablets.
 // 769px — 1024px: Small screens, laptops.
 
-@mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 480px) {
-      @content;
-    }
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
   }
-  @if $breakpoint == tablet {
-    @media (max-width: 768px) {
-      @content;
-    }
+}
+@mixin tablet {
+  @media (min-width: 600px) {
+    @content;
   }
-  @if $breakpoint == desktop {
-    @media (max-width: 1024px) {
-      @content;
-    }
+}
+
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
   }
 }

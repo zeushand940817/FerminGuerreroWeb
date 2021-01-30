@@ -1,145 +1,126 @@
 @import './mixins';
 
 .wrapper {
-  padding: 22px 20px 0px 20px;
+  padding: 40px 20px 0px 20px;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   justify-content: space-between;
-
+  hyphens: auto;
+  font-size: 20px;
   .topSpacer {
     .image {
       width: 100%;
     }
-  }
-  .mobileAbout {
-    display: block;
+    .mobileSections {
+      display: block;
+    }
   }
   .content {
     .sticky {
-      .header {
-        display: none;
-
-        .selected {
-        }
-      }
-    }
-
-    .section {
       display: none;
+    }
+    .sectionInInfo {
       #about {
+        display: none;
       }
       #contact {
+        display: none;
       }
       #awards {
+        display: none;
       }
       #press {
-        .boxPress {
-          .pageWrapper {
-            .projectList {
-              .linkArticle {
+        display: none;
+      }
+      #exhibitions {
+        display: none;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .wrapper {
+    .topSpacer {
+      height: auto;
+
+      .mobileSections {
+        display: none;
+        background-color: tomato;
+      }
+    }
+    .content {
+      margin-top: 50px;
+      .sticky {
+        position: sticky;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        width: 400px;
+        .header {
+          background-color: transparent;
+          display: flex;
+          flex-direction: column;
+          margin-top: 50px;
+          width: 400px;
+          .header_link {
+            background-color: transparent;
+            display: flex;
+            justify-content: left;
+            font-size: 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+          }
+          .selected {
+            font-style: italic;
+            font-weight: 700;
+            color: white;
+          }
+        }
+      }
+      .sectionInInfo {
+        background: transparent;
+        height: auto;
+        margin-top: 50px;
+        #about {
+          margin-top: -180px;
+          display: block;
+        }
+        #contact {
+          display: block;
+        }
+        #awards {
+          display: block;
+        }
+        #press {
+          .boxPress {
+            .pageWrapper {
+              padding-top: 60px;
+              .projectList {
+                .linkArticle {
+                  outline: none;
+                  color: white;
+                }
               }
             }
           }
         }
-      }
-      #exhibitions {
+        #exhibitions {
+          display: block;
+        }
       }
       .bottomSpacer {
-      }
-      .footerDiv {
+        height: 40vh;
       }
     }
-  }
-}
-
-@include respond(tablet) {
-  .mobileAbout {
-    display: none;
-  }
-  .content {
-    margin-top: 50px;
-    .sticky {
-      width: 100%;
-      background-color: black;
+    .footerDiv {
       bottom: 0;
-      left: 0;
-      right: 0;
     }
-
-    .header {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      background-color: 'pink';
-    }
-
-    .header_link {
-      background-color: transparent;
-      display: flex;
-      justify-content: left;
-      font-size: 20px;
-      color: white;
-      border: none;
-      cursor: pointer;
-      outline: none;
-    }
-
-    .selected {
-      font-style: italic;
-      font-weight: bold;
-      color: white;
-    }
-    .section {
-      background: transparent;
-      display: block;
-      height: auto;
-      margin-top: 50px;
-      #exhibitions {
-        display: block;
-        height: 60vh;
-      }
-    }
-
-    .linkArticle {
-      outline: none;
-      color: white;
-    }
-  }
-
-  .topSpacer {
-    height: auto;
-  }
-  .pageWrapper {
-    padding-top: 60px;
-  }
-
-  .bottomSpacer {
-    height: 40vh;
-  }
-}
-@include respond(desktop) {
-  .sticky {
-    position: sticky;
-    top: 50px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    width: 400px;
-  }
-
-  .header {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    width: 400px;
-  }
-
-  #about {
-    margin-top: -180px;
   }
 }
