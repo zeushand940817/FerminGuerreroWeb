@@ -40,14 +40,10 @@
       display: flex;
       flex-direction: row;
       font-weight: bold;
-      background: yellow;
     }
 
     .tagYearContainer {
-      background: blueviolet;
-
       @include desktop {
-        background: tomato;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -55,7 +51,6 @@
       .yearandtags {
         @include desktop {
           margin-bottom: 0px;
-          background-color: blue;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -64,11 +59,12 @@
       .tagName {
         display: flex;
         flex-direction: row;
-        padding-bottom: 30px;
-        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-top: 15px;
 
         @include desktop {
-          margin-bottom: 0px;
+          padding-bottom: 0px;
+          padding-top: 0px;
         }
 
         .tagLink {
@@ -81,6 +77,12 @@
         }
         .tagLink:selected {
           color: white;
+        }
+      }
+      .middleText {
+        padding-top: 15px;
+        @include desktop {
+          padding-top: 0px;
         }
       }
     }

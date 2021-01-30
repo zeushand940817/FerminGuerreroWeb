@@ -81,50 +81,50 @@ const Projects = ({ data }) => {
                     lg={4}
                     className={styles.tagYearContainer}
                   >
-                    {/* <div className={styles.yearandtags}> */}
-                      <div>
-                        <p>{element.year}</p>
-                        {element.credits && <p>{element.credits}</p>}
+                    <div>
+                      <p>{element.year}</p>
+                      {element.credits && (
+                        <p className={styles.middleText}>{element.credits}</p>
+                      )}
 
-                        {element.externalLinkBrick && (
-                          <p>
-                            Get Brick at{' '}
-                            <a
-                              className={styles.tagLink}
-                              href={element.externalLinkBrick}
-                            >
-                              <u>{element.nameExternalLink}</u>
-                            </a>
-                          </p>
-                        )}
+                      {element.externalLinkBrick && (
+                        <p className={styles.middleText}>
+                          Get Brick at{' '}
+                          <a
+                            className={styles.tagLink}
+                            href={element.externalLinkBrick}
+                          >
+                            <u>{element.nameExternalLink}</u>
+                          </a>
+                        </p>
+                      )}
 
-                        {element.externalLinkThesaurus && (
-                          <p>
-                            Get Thesaurus at{' '}
-                            <a
-                              className={styles.tagLink}
-                              href={element.externalLinkThesaurus}
-                            >
-                              <u>{element.nameExternalLink}</u>
-                            </a>
-                          </p>
-                        )}
-                      </div>
-                      <div className={styles.tagName}>
-                        {element.tags &&
-                          element.tags.map((tag) => {
-                            const transformName = tag.replace('-', ' ')
-                            return (
-                              <>
-                                <Link href={`/tag/${tag}`}>
-                                  <a className={styles.tagLink}>
-                                    <u>{transformName}</u>
-                                  </a>
-                                </Link>{' '}
-                              </>
-                            )
-                          })}
-                      {/* </div> */}
+                      {element.externalLinkThesaurus && (
+                        <p className={styles.middleText}>
+                          Get Thesaurus at{' '}
+                          <a
+                            className={styles.tagLink}
+                            href={element.externalLinkThesaurus}
+                          >
+                            <u>{element.nameExternalLink}</u>
+                          </a>
+                        </p>
+                      )}
+                    </div>
+                    <div className={styles.tagName}>
+                      {element.tags &&
+                        element.tags.map((tag) => {
+                          const transformName = tag.replace('-', ' ')
+                          return (
+                            <>
+                              <Link href={`/tag/${tag}`}>
+                                <a className={styles.tagLink}>
+                                  <u>{transformName}</u>
+                                </a>
+                              </Link>{' '}
+                            </>
+                          )
+                        })}
                     </div>
                   </Grid>
                   <Grid item xs={12} sm={12} lg={6}>
