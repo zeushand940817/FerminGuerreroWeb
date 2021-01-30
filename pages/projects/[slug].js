@@ -109,16 +109,19 @@ const Projects = ({ data }) => {
                   </Grid>
                   <Grid item xs={12} sm={12} lg={6}>
                     <div className={styles.description}>
-                      {element.description1 && element.description1}
-                      <br />
-                      {element.description2 && element.description2}
-                      <br />
-                      {element.description3 && element.description3}
-                      {element.urlDescription && (
-                        <a href={element.urlDescription} target="_blank">
-                          <u>here.</u>
-                        </a>
-                      )}
+                      {element.description1 && <p>{element.description1}</p>}
+                      {element.description2 && <p>{element.description2}</p>}
+                      {element.description3 && <p>{element.description3}</p>}
+                      {element.description3 && (
+                        <span>{element.description4}</span>
+                      )}{' '}
+                      <span>
+                        {element.urlDescription && (
+                          <a href={element.urlDescription} target="_blank">
+                            <u>here.</u>
+                          </a>
+                        )}
+                      </span>
                     </div>
                   </Grid>
                 </div>

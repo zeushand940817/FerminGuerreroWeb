@@ -21,6 +21,7 @@
     @include desktop {
     }
   }
+
   .gridContainer {
     width: 100%;
     display: flex;
@@ -73,6 +74,12 @@
     }
     .description {
       padding-left: 0px;
+      a {
+        color: white;
+      }
+      a:selected {
+        color: white;
+      }
 
       @include desktop {
         padding-left: 6.5px;
