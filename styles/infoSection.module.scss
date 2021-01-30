@@ -1,0 +1,14 @@
+@import './mixins';
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .content {
+      margin-bottom: 10px;
+    }
+  }
+}

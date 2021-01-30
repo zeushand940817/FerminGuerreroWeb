@@ -2,6 +2,7 @@
 // 481px — 768px: iPads, Tablets.
 // 769px — 1024px: Small screens, laptops.
 
+
 const size = {
   mobile: '480px',
   tablet: '768px',
@@ -11,7 +12,7 @@ const size = {
 export const device = {
   mobile: `(max-width: ${size.mobile})`,
   tablet: `(max-width: ${size.tablet})`,
-  desktop: `(max-width: ${size.desktop})`,
+  desktop: `(min-width: ${size.desktop})`,
 }
 
 module.exports = device

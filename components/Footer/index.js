@@ -63,6 +63,8 @@ export default function Footer({ component }) {
           padding-bottom:10px;
           border-top:1px solid white;
           padding-top:5px;
+          padding-left:10px;
+          padding-right:10px;
           
         }
 
@@ -111,11 +113,11 @@ export default function Footer({ component }) {
         }
 
     
-        @media only Screen and ${device.tablet} {
+        {/* @media only Screen and ${device.tablet} {
           .footerHome {
             display:none;
           }
-        }
+        } */}
 
         @media only Screen and ${device.desktop} {
         .footerHome {

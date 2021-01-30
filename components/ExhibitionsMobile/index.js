@@ -1,7 +1,9 @@
+import styles from 'styles/infoSection.module.scss'
+
 export default function ExhibitionsMobile() {
   return (
     <>
-      <div className="exhibitionsContainer">
+      <div className={styles.wrapper}>
         <section>
           <p>2018</p>
           <p>Latin-American typedesign biennial organized by Typos Latinos.</p>
@@ -16,18 +18,18 @@ export default function ExhibitionsMobile() {
         </section>
         <section>
           <p>2015</p>
-          <div className="individualPrize">
+          <div className={styles.content}>
             <p>
               50 Diplômes exhibition organized by Étapes magazine and RedBull
               Studios.
             </p>
             <p>Paris, France.</p>
           </div>
-          <div className="individualPrize">
+          <div className={styles.content}>
             <p>Trnava Poster Triennial.</p>
             <p>Bratislava, Slovakia.</p>
           </div>
-          <div className="individualPrize">
+          <div className={styles.content}>
             <p>
               World’s best poster designers 2015, International Invitational
               Exhibition. Organized by Guan Shanyue Art Museum.
@@ -46,19 +48,6 @@ export default function ExhibitionsMobile() {
           <p>Lucerne, Switzerland.</p>
         </section>
       </div>
-
-      <style jsx>{`
-        .exhibitionsContainer {
-          width: 100%;
-        }
-        section {
-          margin-top: 10px;
-          margin-bottom: 10px;
-        }
-        .individualPrize {
-          margin-bottom: 10px;
-        }
-      `}</style>
     </>
   )
 }

@@ -746,6 +746,7 @@
     "mp4": false,
     "image": "/CoverPhotos/Galleries/FreedomOfMovement.jpg",
     "imageSlag": "/FreedomOfMovement/2.jpg",
+    "description1": "The poster reflects on the position that USA has recently adopted with regards to foreign citizens. The jenga (board game) is an analogy for USA’s society from which the president is picking up people after their origins/nationality to decide whether they belong in or out its territory, with no regard for the impact these actions could have on those peoples’ lives as well as on USA's own society. The jenga echoes the increasing tension, weakening and instability taking place in USA's society, since each ‘move represents (through cultural impoverishment, international friction and the possibility of retaliation that comes with it, among other things) a higher risk of collapse.",
     "sources": [
       {
         "type": "img",
@@ -765,9 +766,7 @@
         "rows": 2,
         "cols": 2
       }
-    ],
-
-    "description": "The poster reflects on the position that USA has recently adopted with regards to foreign citizens. The jenga (board game) is an analogy for USA’s society from which the president is picking up people after their origins/nationality to decide whether they belong in or out its territory, with no regard for the impact these actions could have on those peoples’ lives as well as on USA's own society. The jenga echoes the increasing tension, weakening and instability taking place in USA's society, since each ‘move represents (through cultural impoverishment, international friction and the possibility of retaliation that comes with it, among other things) a higher risk of collapse."
+    ]
   },
 
   "genevamotor": {

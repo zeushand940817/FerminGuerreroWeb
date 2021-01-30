@@ -1,6 +1,7 @@
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 
+
 //Components
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
@@ -13,11 +14,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 50,
     lineHeight: 1.4,
     paddingLeft: '3px',
-    ['@media (max-width: 677px)']: {
-      background: 'pink',
-      display: 'flex',
-      flexDirection: 'column',
-    },
   },
   text: {
     marginBottom: 35,
@@ -29,10 +25,6 @@ const useStyles = makeStyles((theme) => ({
   firstBox: {
     paddingTop: 50,
     marginBottom: 35,
-
-    ['@media (min-width: 768px)']: {
-      marginTop: 0,
-    },
   },
 }))
 

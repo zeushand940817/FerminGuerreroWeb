@@ -17,9 +17,6 @@ const useStyles = makeStyles((theme) => ({
   text: {
     marginBottom: 10,
     marginTop: 10,
-    ['@media (min-width: 378px)']: {
-      paddingRight: 10,
-    },
   },
   textSectionLast: {
     marginBottom: 0,
