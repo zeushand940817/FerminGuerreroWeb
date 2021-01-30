@@ -159,12 +159,14 @@ export default function Footer({ component }) {
         }
         .twitter {
           grid-column: 10;
-            grid-row:1;
+          grid-row:1;
+          text-align:left;
         }
 
         .instagram {
           grid-column: 11;
           grid-row:1;
+          text-align:left;
         }
        .linkedin {
           grid-column: 12;
