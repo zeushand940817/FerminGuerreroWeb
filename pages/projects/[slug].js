@@ -84,11 +84,7 @@ const Projects = ({ data }) => {
                     <div className={styles.yearandtags}>
                       <div>
                         <p>{element.year}</p>
-                        {element.credits && (
-                          <p style={{ paddingTop: '10px' }}>
-                            {element.credits}
-                          </p>
-                        )}
+                        {element.credits && <p>{element.credits}</p>}
 
                         {element.externalLinkBrick && (
                           <p>

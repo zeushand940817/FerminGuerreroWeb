@@ -44,19 +44,13 @@
     .tagYearContainer {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 20px;
+      background: pink;
 
       .yearandtags {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 20px;
-        padding-bottom: 30px;
-        a {
-          color: white;
-        }
-        a:selected {
-          color: white;
-        }
 
         @include desktop {
           margin-bottom: 0px;
@@ -73,7 +67,7 @@
 
         .tagLink {
           color: white;
-          margin-right: 8px;
+          
 
           @include desktop {
             margin-right: 8px;
