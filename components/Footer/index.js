@@ -10,7 +10,7 @@ export default function Footer({ component }) {
         <div className="copyright">
           ©2021 <span>&#8212; </span> Fermin Guerrero
         </div>
-        <div className="developer">
+        <div className={component === 'home' ? 'developerHome' : 'developer'}>
           Developed by{' '}
           <a
             className="lauraLink"
@@ -116,12 +116,11 @@ export default function Footer({ component }) {
         .footerHome {
           padding: 0px 20px 0px 20px;
           width: 100%;
-          height: 40px;
+          height: 35px;
           mix-blend-mode: difference;
           background: none;
           bottom: 0;
           z-index: 1;
-          font-size: 20px;
           outline: none;
           display: grid;
           grid-template-columns: repeat(12, 1fr);
@@ -129,7 +128,6 @@ export default function Footer({ component }) {
           font-size: 20px;
           color: white;
           position: fixed;
-       
         }
         .footerComponent{
           width: 100%;
@@ -145,9 +143,11 @@ export default function Footer({ component }) {
           grid-template-rows: 1;
           font-size: 20px;
           color: white; 
-      
         }
 
+.developerHome{
+  display:none;
+}
         .copyright {
           grid-column: 1/5;
           grid-row:1;
