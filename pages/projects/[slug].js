@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -10,6 +11,7 @@ import Footer from 'components/Footer'
 import Grid from '@material-ui/core/Grid'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
+import CircularProgress from 'components/CircularProgress'
 
 //Lazyloading
 import LazyLoad from 'react-lazyload'
@@ -36,7 +38,11 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 const Projects = ({ data }) => {
   const classes = useStyles()
+  const router = useRouter()
 
+  if (router.isFallback) {
+    return <CircularProgress />
+  }
   return (
     <>
       <div className={styles.container}>
@@ -57,13 +63,13 @@ const Projects = ({ data }) => {
                 </video>
               ) : (
                 <div>
-                  <Image
+                  <img
                     alt="graphic-design"
-                    layout="responsive"
+                    // layout="responsive"
                     src={element.imageSlag}
-                    width={800}
-                    height={534}
-                    quality={100}
+                    width="800px"
+                    height="534px"
+                    // quality={100}
                     className={styles.mainImage}
                   />
                 </div>
@@ -222,7 +228,7 @@ const Projects = ({ data }) => {
 
 export async function getStaticPaths() {
   const paths = await getPaths()
-  return { paths, fallback: false }
+  return { paths, fallback: true }
 }
 
 export async function getStaticProps({ params }) {
