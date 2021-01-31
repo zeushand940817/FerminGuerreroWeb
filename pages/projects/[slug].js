@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'styles/project.module.scss'
@@ -11,7 +10,6 @@ import Footer from 'components/Footer'
 import Grid from '@material-ui/core/Grid'
 import ImageList from '@material-ui/core/ImageList'
 import ImageListItem from '@material-ui/core/ImageListItem'
-
 
 //Lazyloading
 import LazyLoad from 'react-lazyload'
@@ -224,7 +222,7 @@ const Projects = ({ data }) => {
 
 export async function getStaticPaths() {
   const paths = await getPaths()
-  return { paths, fallback: true }
+  return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
