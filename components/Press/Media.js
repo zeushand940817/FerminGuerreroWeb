@@ -9,7 +9,7 @@ export default function Media({ image }) {
       </div>
       <style jsx>{`
         img {
-          width: 150px;
+          width: 200px;
           height: auto;
           object-fit: contain;
           cursor: pointer;
@@ -18,13 +18,6 @@ export default function Media({ image }) {
         }
         .container {
           height: 100px;
-        }
-
-        @media only Screen and ${device.tablet} {
-          img {
-            padding-left: 10px;
-            width: 250px;
-          }
         }
       `}</style>
     </>

@@ -468,7 +468,7 @@ export default function Info({ data }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const press = await getPressData()
   return {
     props: {
