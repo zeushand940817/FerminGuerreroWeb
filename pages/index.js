@@ -72,25 +72,24 @@ const Home = ({ dataParse }) => {
           style={{
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            position: 'absolute',
-            width: '100vw',
-            height: '100vh',
+            position: 'relative',
+            width: '100%',
+            height: '100%',
             top: '0',
           }}
-          src={desktopImages[2].image}
+          src="/coverPhotos/Landing/TypographyH.jpg"
         />
         <div
           className={styles.box}
           style={{
             top: '0',
-            width: '100vw',
-            height: '100vh',
+            width: '100%',
+            height: '100%',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            position: 'relative',
+            position: 'absolute',
             backgroundImage: `url(${desktopImages[imageNumber]})`,
           }}
-          href=""
           onMouseMove={handleMouseMove}
         ></div>
       </div>

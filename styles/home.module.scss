@@ -8,11 +8,6 @@
     height: 100vh;
   }
 
-  .box {
-    @include desktop {
-      height: 100%;
-    }
-  }
   .homeMobile {
     height: 100%;
     display: block;
