@@ -49,6 +49,7 @@ export function getProject(path) {
 export function getPaths() {
   const projects = getProjectsData()
   const paths = projects.map((element) => element.slug)
+
   return paths.map((path) => {
     return {
       params: {

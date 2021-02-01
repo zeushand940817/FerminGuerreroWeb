@@ -1,8 +1,11 @@
-import Image from 'next/image'
-
-import device from 'utils/media-queries'
+import { useRouter } from 'next/router'
 
 export default function Custom404() {
+  const { asPath } = useRouter()
+  if (asPath.startsWith('/posts')) {
+    Router.push('/fallback', asPath)
+  }
+
   return (
     <>
       <div
