@@ -70,14 +70,14 @@ const Home = ({ dataParse }) => {
       <div className={styles.hero} id="#home">
         <img
           style={{
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
+            objectPosition: 'center',
+            objectFit: 'cover',
             position: 'relative',
             width: '100%',
             height: '100%',
             top: '0',
           }}
-          src="/coverPhotos/Landing/TypographyH.jpg"
+          src={desktopImages[1]}
         />
         <div
           className={styles.box}
