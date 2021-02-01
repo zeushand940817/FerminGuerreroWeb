@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -57,7 +56,7 @@ const Projects = ({ data }) => {
                 </video>
               ) : (
                 <div>
-                  <img
+                  <LazyLoadImage
                     alt="graphic-design"
                     src={element.imageSlag}
                     width="800px"

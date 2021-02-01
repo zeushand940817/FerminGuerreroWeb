@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { HiOutlineChevronDown } from 'react-icons/hi'
 
 //Styles
 import styles from 'styles/accordion.module.scss'
@@ -6,6 +7,7 @@ import styles from 'styles/accordion.module.scss'
 function Accordion(props) {
   const [setActive, setActiveState] = useState('')
   const [setHeight, setHeightState] = useState('0px')
+  const [setRotate, setRotateState] = useState('accordion__icon')
 
   const content = useRef(null)
 
@@ -14,6 +16,11 @@ function Accordion(props) {
 
     setHeightState(
       setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`
+    )
+    setRotateState(
+      setActive === 'active'
+        ? `${styles.accordionIcon}`
+        : `${styles.accordionIconRotate}`
     )
   }
 
@@ -25,6 +32,11 @@ function Accordion(props) {
           onClick={toggleAccordion}
         >
           <p className={styles.accordionTitle}>{props.title}</p>
+          <HiOutlineChevronDown
+            className={`${setRotate}`}
+            width={30}
+            color="white"
+          />
         </button>
         <div
           ref={content}

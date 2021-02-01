@@ -48,45 +48,12 @@ export function getProject(path) {
 // get paths
 export function getPaths() {
   const projects = getProjectsData()
-  //const paths = projects.map((element) => element.slug)
-  const slugs = [
-    'architecture-+',
-    'brick',
-    'book-fair',
-    'make-a-whish',
-    'flag-of-peace',
-    'freedom-of-movement',
-    'thesaurus',
-    'exentra',
-    'new-year-new-fight',
-    'din-machine',
-    'geneva-motor-show',
-    'geneve-typeface',
-    'goes-around-comes-around',
-    'its-up-to-you',
-    'the-lady-from-the-sea',
-    'tijuana-panthers',
-    'carte-blanche',
-    'letter-stamps-design',
-    'mi-mujer',
-    'paleo',
-    'time-out',
-    'tomorrow',
-    'typography-heroes',
-    'federation-genevoise-de-cooperation',
-    'jeu-de-regards',
-    'manifesta',
-    'point-de-fuite',
-    'post-tenebras-rock',
-    'circ',
-    'viga',
-    'weltformat',
-    'beyond-the-box',
-  ]
-  return slugs.map((slug) => {
+  const paths = projects.map((element) => element.slug)
+
+  return paths.map((path) => {
     return {
       params: {
-        slug,
+        slug: path,
       },
     }
   })
