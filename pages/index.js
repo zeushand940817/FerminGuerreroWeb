@@ -84,11 +84,7 @@ const Home = ({ dataParse }) => {
     <>
       <div className={styles.hero} id="#home">
         <div className={styles.image}>
-          <img
-            src={desktopImages[current]}
-            alt={desktopImages[current]}
-            loading="lazy"
-          />
+          <img src={desktopImages[current]} alt={desktopImages[current]} />
         </div>
         {desktopImages.map((image, key) => {
           return (
@@ -125,7 +121,6 @@ const Home = ({ dataParse }) => {
                   objectFit: 'cover',
                   objectPosition: 'center',
                 }}
-                loading="lazy"
                 src={image}
                 key={`${key} ${image}`}
               />
