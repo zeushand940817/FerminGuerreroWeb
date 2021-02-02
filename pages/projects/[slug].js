@@ -1,8 +1,12 @@
 import Link from 'next/link'
+// import { useState, useRouter } from 'react'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'styles/project.module.scss'
+// import { CgMenuGridR } from 'react-icons/cg'
+// import { VscArrowRight } from 'react-icons/vsc'
+// import { VscArrowLeft } from 'react-icons/vsc'
 
 //Components
 import Footer from 'components/Footer'
@@ -57,7 +61,6 @@ const Projects = ({ data, navigationProjects }) => {
               ) : (
                 <div>
                   <LazyLoadImage
-                    placeholder
                     alt="graphic-design"
                     src={element.imageSlag}
                     width="800px"
