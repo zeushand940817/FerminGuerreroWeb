@@ -32,9 +32,9 @@ const Home = ({ dataParse }) => {
     setCurrent(key)
   }
 
-  function handleMouseOut() {
-    setMouse(false)
-  }
+  // function handleMouseOut() {
+  //   setMouse(false)
+  // }
 
   const responsive = {
     tablet: {
@@ -91,8 +91,8 @@ const Home = ({ dataParse }) => {
             <div
               key={key}
               style={{ width: `calc(100% / ${desktopImages.length})` }}
-              onMouseOver={() => handleMouseOver(key)}
-              onMouseOut={handleMouseOut}
+              onMouseMove={() => handleMouseOver(key)}
+              // onMouseOut={handleMouseOut}
             />
           )
         })}
