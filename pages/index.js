@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 //Data fetching
 import { getLandingData } from '../utils/getData'
@@ -122,9 +121,25 @@ const Home = ({ dataParse }) => {
               />
             </div>
           ))}
-        </Carousel>
+        </Carousel>{' '}
+        */}
       </div>
       <Footer component="home" />
+
+      <style jsx>{`
+        .imageContainer {
+          height: 100%;
+          width: 100%;
+          border: 1px solid red;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: 'cover';
+          object-position: 'center';
+        }
+      `}</style>
     </>
   )
 }

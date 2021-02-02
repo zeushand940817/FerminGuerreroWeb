@@ -15,7 +15,7 @@ import LazyLoad from 'react-lazyload'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 //Data fetching
-import { getPaths, getProject } from 'utils/getData'
+import { getPaths, getProject, getProjectsData } from 'utils/getData'
 
 const useStyles = makeStyles({
   imageList: {
@@ -33,8 +33,9 @@ function srcset(image, size, rows = 1, cols = 1) {
   ${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
 }
 
-const Projects = ({ data }) => {
+const Projects = ({ data, navigationProjects }) => {
   const classes = useStyles()
+ 
 
   return (
     <>
@@ -211,6 +212,7 @@ const Projects = ({ data }) => {
             </>
           )
         })}
+
         <Footer />
       </div>
     </>
@@ -225,9 +227,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const path = params.slug
   const data = await getProject(path)
+  const navigationProjects = await getProjectsData()
+
   return {
     props: {
       data,
+      navigationProjects,
     },
   }
 }

@@ -1411,7 +1411,7 @@
   "jeude": {
     "name": "Jeu De Regards",
     "slug": "jeu-de-regards",
-    "id": "13",
+    "id": 13,
     "type": "graphic",
     "year": "2012",
     "tags": ["Poster"],
@@ -1817,7 +1817,7 @@
   "paleo": {
     "name": "Paléo",
     "slug": "paleo",
-    "id": "19",
+    "id": 19,
     "type": "graphic",
     "year": "2013",
     "tags": ["Visual-Identity", "Poster"],

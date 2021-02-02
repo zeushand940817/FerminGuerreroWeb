@@ -86,3 +86,5 @@ export function getPressData() {
   const parseData = parse('press.json')
   return parseData
 }
+
+

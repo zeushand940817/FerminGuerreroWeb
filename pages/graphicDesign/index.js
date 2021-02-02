@@ -28,6 +28,7 @@ const useStyles = makeStyles({
 
 export default function GraphicDesign({ data, extractVideo }) {
   const classes = useStyles()
+
   return (
     <>
       <div className={styles.mainWrapper}>

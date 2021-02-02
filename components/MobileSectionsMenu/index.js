@@ -19,7 +19,7 @@ export default function MobileSectionsMenu() {
       <div className={styles.mainWrapper}>
         <Accordion title="About" content={<About />} />
         <Accordion title="Contact" content={<Contact />} />
-        <Accordion title="Awards" content={<AwardsMobile />} />
+        <Accordion title="Awards & Distinctions" content={<AwardsMobile />} />
         <Accordion title="Research & Articles" content={<PressMobile />} />
         <Accordion title="Exhibitions" content={<ExhibitionsMobile />} />
       </div>
