@@ -14,13 +14,6 @@ import styles from 'styles/home.module.scss'
 const Home = ({ dataParse }) => {
   const mobileImages = dataParse.mobile
   const desktopImages = dataParse.desktop
-  const [imageNumber, setImageNumber] = useState(0)
-
-  function handleMouseMove() {
-    setImageNumber(Math.floor(Math.random() * desktopImages.length))
-  }
-
-  //
   const [current, setCurrent] = useState(0)
   const [mouse, setMouse] = useState(false)
 
@@ -43,7 +36,6 @@ const Home = ({ dataParse }) => {
     setMouse(false)
   }
 
-  //
   const responsive = {
     tablet: {
       breakpoint: { max: 1024, min: 677 },
