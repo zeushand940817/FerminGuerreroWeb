@@ -118,4 +118,15 @@
     object-position: center;
     outline-style: none;
   }
+  .navigation {
+    margin-bottom: 10px;
+    .buttonNavigation {
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
 }

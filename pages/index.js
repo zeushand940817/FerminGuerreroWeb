@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 
 //Data fetching
 import { getLandingData } from '../utils/getData'
@@ -20,6 +20,30 @@ const Home = ({ dataParse }) => {
     setImageNumber(Math.floor(Math.random() * desktopImages.length))
   }
 
+  //
+  const [current, setCurrent] = useState(0)
+  const [mouse, setMouse] = useState(false)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!mouse) {
+        setCurrent((current) => current + 1)
+      }
+    }, 2000)
+
+    return () => clearInterval(interval)
+  }, [mouse])
+
+  function handleMouseOver(key) {
+    setMouse(true)
+    setCurrent(key)
+  }
+
+  function handleMouseOut() {
+    setMouse(false)
+  }
+
+  //
   const responsive = {
     tablet: {
       breakpoint: { max: 1024, min: 677 },
@@ -67,30 +91,23 @@ const Home = ({ dataParse }) => {
   return (
     <>
       <div className={styles.hero} id="#home">
-        <img
-          style={{
-            objectPosition: 'center',
-            objectFit: 'cover',
-            position: 'relative',
-            width: '100%',
-            height: '100%',
-            top: '0',
-          }}
-          src={desktopImages[1]}
-        />
-        <div
-          className={styles.box}
-          style={{
-            top: '0',
-            width: '100%',
-            height: '100%',
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            position: 'absolute',
-            backgroundImage: `url(${desktopImages[imageNumber]})`,
-          }}
-          onMouseMove={handleMouseMove}
-        ></div>
+        <div className={styles.image}>
+          <img
+            src={desktopImages[current]}
+            alt={desktopImages[current]}
+            loading="lazy"
+          />
+        </div>
+        {desktopImages.map((image, key) => {
+          return (
+            <div
+              key={key}
+              style={{ width: `calc(100% / ${desktopImages.length})` }}
+              onMouseOver={() => handleMouseOver(key)}
+              onMouseOut={handleMouseOut}
+            />
+          )
+        })}
       </div>
       <div className={styles.homeMobile}>
         <Carousel
@@ -116,21 +133,20 @@ const Home = ({ dataParse }) => {
                   objectFit: 'cover',
                   objectPosition: 'center',
                 }}
+                loading="lazy"
                 src={image}
                 key={`${key} ${image}`}
               />
             </div>
           ))}
-        </Carousel>{' '}
-        */}
+        </Carousel>
       </div>
-      <Footer component="home" />
 
+      <Footer component="home" />
       <style jsx>{`
         .imageContainer {
           height: 100%;
           width: 100%;
-          border: 1px solid red;
         }
 
         img {

@@ -35,7 +35,6 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 const Projects = ({ data, navigationProjects }) => {
   const classes = useStyles()
- 
 
   return (
     <>
@@ -58,6 +57,7 @@ const Projects = ({ data, navigationProjects }) => {
               ) : (
                 <div>
                   <LazyLoadImage
+                    placeholder
                     alt="graphic-design"
                     src={element.imageSlag}
                     width="800px"

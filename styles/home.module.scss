@@ -3,8 +3,28 @@
 .hero {
   display: none;
   @include desktop {
-    display: block;
-    width: 100vw;
+    display: flex;
+    width: 100%;
+    color: white;
+  }
+  .image {
+    @include desktop {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -100;
+    }
+
+    img {
+      @include desktop {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @include desktop {
     height: 100vh;
   }
 

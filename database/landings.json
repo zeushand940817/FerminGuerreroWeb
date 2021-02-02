@@ -21,7 +21,7 @@
   },
   "landing5": {
     "id": 5,
-    "image": "/CoverPhotos/Lading/Exentra.jpg",
+    "image": "/CoverPhotos/Landing/Exentra.jpg",
     "type": "desktop"
   },
   "landing6": {
@@ -31,7 +31,7 @@
   },
   "landing7": {
     "id": 7,
-    "image": "/CoverPhotos/Landing/Lading/FGC.jpg",
+    "image": "/CoverPhotos/Landing/FGC.jpg",
     "type": "desktop"
   },
   "landing8": {

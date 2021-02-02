@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'styles/pages.module.scss'
@@ -29,6 +30,7 @@ export default function Animation({ data, path }) {
   const animation = data.filter(
     (project) => project.tags && project.tags.includes(path)
   )
+
 
   return (
     <div className={styles.mainWrapper}>
