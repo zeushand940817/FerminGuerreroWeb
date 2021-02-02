@@ -22,7 +22,7 @@ const Home = ({ dataParse }) => {
       if (!mouse) {
         setCurrent((current) => current + 1)
       }
-    }, 2000)
+    }, 1000)
 
     return () => clearInterval(interval)
   }, [mouse])
