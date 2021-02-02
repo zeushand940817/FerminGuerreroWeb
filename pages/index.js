@@ -14,27 +14,11 @@ import styles from 'styles/home.module.scss'
 const Home = ({ dataParse }) => {
   const mobileImages = dataParse.mobile
   const desktopImages = dataParse.desktop
-  const [current, setCurrent] = useState(0)
-  const [mouse, setMouse] = useState(false)
+  const [imageNumber, setImageNumber] = useState(0)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!mouse) {
-        setCurrent((current) => current + 1)
-      }
-    }, 1000)
-
-    return () => clearInterval(interval)
-  }, [mouse])
-
-  function handleMouseOver(key) {
-    setMouse(true)
-    setCurrent(key)
+  function handleMouseMove() {
+    setImageNumber(Math.floor(Math.random() * desktopImages.length))
   }
-
-  // function handleMouseOut() {
-  //   setMouse(false)
-  // }
 
   const responsive = {
     tablet: {
@@ -83,19 +67,30 @@ const Home = ({ dataParse }) => {
   return (
     <>
       <div className={styles.hero} id="#home">
-        <div className={styles.image}>
-          <img src={desktopImages[current]} alt={desktopImages[current]} />
-        </div>
-        {desktopImages.map((image, key) => {
-          return (
-            <div
-              key={key}
-              style={{ width: `calc(100% / ${desktopImages.length})` }}
-              onMouseMove={() => handleMouseOver(key)}
-              // onMouseOut={handleMouseOut}
-            />
-          )
-        })}
+        <img
+          style={{
+            objectPosition: 'center',
+            objectFit: 'cover',
+            position: 'relative',
+            width: '100%',
+            height: '100%',
+            top: '0',
+          }}
+          src={desktopImages[1]}
+        />
+        <div
+          className={styles.box}
+          style={{
+            top: '0',
+            width: '100%',
+            height: '100%',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            position: 'absolute',
+            backgroundImage: `url(${desktopImages[imageNumber]})`,
+          }}
+          onMouseMove={handleMouseMove}
+        ></div>
       </div>
       <div className={styles.homeMobile}>
         <Carousel
