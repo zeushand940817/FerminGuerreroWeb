@@ -12,11 +12,7 @@ export default function Footer({ component }) {
         </div>
         <div className={component === 'home' ? 'developerHome' : 'developer'}>
           Developed by{' '}
-          <a
-            className="lauraLink"
-            href="https://lauradiaz.vercel.app/"
-            target="_blank"
-          >
+          <a className="lauraLink" href="http://lauradiaz.dev/" target="_blank">
             <u>Laura Diaz</u>
           </a>
         </div>
