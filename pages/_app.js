@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
+import { AnimatePresence } from 'framer-motion'
 
 //Global styles
 import '../styles/globals.scss'
@@ -8,11 +9,19 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../utils/theme'
 import styles from 'styles/app.module.scss'
 
+import Burger from 'components/Burger'
+
 //Dynamic imports
 import dynamic from 'next/dynamic'
 
 const Header = dynamic(() => import('components/Header'))
 const MobileMenu = dynamic(() => import('components/MobileMenu'))
+
+function handleExitComplete() {
+  if (typeof window !== 'undefined') {
+    window.scrollTo({ top: 0 })
+  }
+}
 
 export default function MyApp(props) {
   const { Component, pageProps } = props
@@ -40,17 +49,20 @@ export default function MyApp(props) {
       </Head>
 
       <ThemeProvider theme={theme}>
-        <div className={styles.mainAppWrapper}>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
-          <div className={styles.desktop}>
-            <Header />
+        <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
+          <div className={styles.mainAppWrapper}>
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            <div className={styles.desktop}>
+              <Header />
+            </div>
+            <div className={styles.mobile}>
+              {/* <MobileMenu /> */}
+              <Burger />
+            </div>
+            <Component {...pageProps} />
           </div>
-          <div className={styles.mobile}>
-            <MobileMenu />
-          </div>
-          <Component {...pageProps} />
-        </div>
+        </AnimatePresence>
       </ThemeProvider>
     </React.Fragment>
   )
