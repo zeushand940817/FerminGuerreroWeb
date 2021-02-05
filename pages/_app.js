@@ -9,13 +9,11 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../utils/theme'
 import styles from 'styles/app.module.scss'
 
-import Burger from 'components/Burger'
-
 //Dynamic imports
 import dynamic from 'next/dynamic'
 
 const Header = dynamic(() => import('components/Header'))
-const MobileMenu = dynamic(() => import('components/MobileMenu'))
+const Burger = dynamic(() => import('components/Burger'))
 
 function handleExitComplete() {
   if (typeof window !== 'undefined') {
@@ -57,7 +55,6 @@ export default function MyApp(props) {
               <Header />
             </div>
             <div className={styles.mobile}>
-              {/* <MobileMenu /> */}
               <Burger />
             </div>
             <Component {...pageProps} />

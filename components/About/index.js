@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
   },
   box: {
-    marginTop: 45,
+    marginTop: 62,
     paddingLeft: '3px',
     lineHeight: 1.4,
     ['@media (max-width:480px)']: {
