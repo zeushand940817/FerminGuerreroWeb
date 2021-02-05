@@ -71,9 +71,9 @@ export default function Burger() {
                   </a>
                 </Link>
               </li>
-              <li className={styles.lastLi}>
+              <li className={styles.li}>
                 <Link href="/info">
-                  <a onClick={() => handleClickHome()} className={styles.lastA}>
+                  <a onClick={() => handleClickHome()} className={styles.a}>
                     Info
                   </a>
                 </Link>
