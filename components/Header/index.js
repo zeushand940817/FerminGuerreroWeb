@@ -72,11 +72,6 @@ export default function Header(props) {
           text-align: right;
         }
 
-        a {
-          text-decoration: none;
-          outline: none;
-        }
-
         .ampersan {
           padding-left: 8px;
           text-decoration: none;
