@@ -10,7 +10,6 @@
     font-size: 20px;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     z-index: 2;
     position: fixed;
     padding: 10px;
@@ -28,8 +27,6 @@
     z-index: 2;
     position: fixed;
     padding: 37px 8px 0px 20px;
-
-    width: 100%;
     height: auto;
     mix-blend-mode: difference;
     color: white;
@@ -45,12 +42,14 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .navigation {
       display: flex;
       flex-direction: column;
+      top: 15%;
       .ul {
+        padding-top: 25px;
         .li {
           border-top: 1px solid white;
           margin-left: 20px;
@@ -61,6 +60,7 @@
       }
     }
     .socialMedia {
+      padding-bottom: 10px;
       a {
         padding-left: 20px;
         text-decoration: underline;
