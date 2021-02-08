@@ -1,5 +1,5 @@
 import Link from 'next/link'
-// import { useState, useRouter } from 'react'
+import { useState, useRouter } from 'react'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -39,6 +39,24 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 const Projects = ({ data, navigationProjects }) => {
   const classes = useStyles()
+  // const currentId = data[0].id
+  // console.log({ currentId })
+  // const [current, setCurrent] = useState([])
+  // const mapNavigation = navigationProjects.map((nav) => nav.id)
+  // console.log({ mapNavigation })
+
+  // console.log(mapNavigation[current - 1], 'SOY NAVIGATION CURRENT -1')
+  // console.log(mapNavigation[current + 1], 'SOY NAV NEXT + 1')
+
+  // const handlePrev = () => {
+  //   // e.preventDefault()
+  //   setCurrent((current) => mapNavigation[current - 1])
+  // }
+
+  // const handleNext = () => {
+  //   // e.preventDefault()
+  //   setCurrent((current) => mapNavigation[current + 1])
+  // }
 
   return (
     <>
@@ -212,6 +230,51 @@ const Projects = ({ data, navigationProjects }) => {
                   )
                 })}
               </ImageList>
+              {/* <div className={styles.navigation}>
+                <Grid container>
+                  <Grid item xs={12} lg={2}>
+                    <button
+                      onClick={() => handlePrev()}
+                      className={styles.buttonNavigation}
+                    >
+                      <VscArrowLeft color="white" size={35} />
+                    </button>
+                  </Grid>
+                  <Grid item xs={12} sm={12} lg={3}>
+                    <div className={styles.tagName}>
+                      {element.tags &&
+                        element.tags.map((tag) => {
+                          const transformName = tag.replace('-', ' ')
+                          return (
+                            <>
+                              <Link href={`/tag/${tag}`}>
+                                <a className={styles.tagLink}>
+                                  <u>{transformName}</u>
+                                </a>
+                              </Link>{' '}
+                            </>
+                          )
+                        })}
+                    </div>
+                  </Grid>
+                  <Grid item xs={12} sm={12} lg={5}>
+                    <button
+                      onClick={() => router.back()}
+                      className={styles.buttonNavigation}
+                    >
+                      <CgMenuGridR color="white" size={35} />
+                    </button>
+                  </Grid>
+                  <Grid item xs={12} lg={2} style={{ textAlign: 'end' }}>
+                    <button
+                      onClick={() => handleNext()}
+                      className={styles.buttonNavigation}
+                    >
+                      <VscArrowRight color="white" size={35} />
+                    </button>
+                  </Grid>
+                </Grid>
+              </div> */}
             </>
           )
         })}

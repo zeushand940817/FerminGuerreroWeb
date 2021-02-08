@@ -21,7 +21,7 @@ export default function Header(props) {
         </div>
         <div>
           <Link href="/typefaceDesign" activeClassName="active" passHref>
-            Typeface Desgin
+            Typeface Design
           </Link>
         </div>
 
