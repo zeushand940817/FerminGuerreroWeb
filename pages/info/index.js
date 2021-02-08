@@ -455,12 +455,12 @@ export default function Info({ data }) {
             background-color: transparent;
             display: flex;
             flex-direction: column;
-            margin-top: 50px;
+
             width: 400px;
           }
 
           #about {
-            margin-top: -180px;
+            margin-top: -175px;
           }
         }
       `}</style>
