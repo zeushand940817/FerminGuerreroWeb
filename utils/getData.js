@@ -81,10 +81,14 @@ export function getPathTags() {
   return mapTags
 }
 
-// get press
+// get articles
+export function getArticlesData() {
+  const parseData = parse('articles.json')
+  return parseData
+}
+
+// get Press
 export function getPressData() {
   const parseData = parse('press.json')
   return parseData
 }
-
-

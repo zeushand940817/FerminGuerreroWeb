@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 
 //Data fetching
-import { getPressData } from 'utils/getData'
+import { getArticlesData, getPressData } from 'utils/getData'
 
 //Media queries
 import device from 'utils/media-queries'
@@ -10,7 +10,7 @@ import device from 'utils/media-queries'
 //Dynamic imports / Components
 const About = dynamic(() => import('@components/About'))
 const Awards = dynamic(() => import('components/Awards'))
-const Item = dynamic(() => import('../../components/Press/Item'))
+const Item = dynamic(() => import('../../components/HoverImage/Item'))
 const Contact = dynamic(() => import('components/Contact'))
 const Exhibitions = dynamic(() => import('components/Exhibitions'))
 const Footer = dynamic(() => import('components/Footer'))
@@ -37,8 +37,9 @@ const scrollTo = (ele) => {
   })
 }
 
-export default function Info({ data }) {
+export default function Info({ data, press }) {
   const articles = Object.values(data).map((element) => element)
+  const prensa = Object.values(press).map((elementPress) => elementPress)
 
   const [visibleSection, setVisibleSection] = useState()
 
@@ -46,15 +47,17 @@ export default function Info({ data }) {
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
   const awardsRef = useRef(null)
-  const pressRef = useRef(null)
+  const articlesRef = useRef(null)
   const exhibitionsRef = useRef(null)
+  const pressRef = useRef(null)
 
   const sectionRefs = [
     { section: 'about', ref: aboutRef },
     { section: 'contact', ref: contactRef },
     { section: 'awards', ref: awardsRef },
-    { section: 'press', ref: pressRef },
+    { section: 'articles', ref: articlesRef },
     { section: 'exhibitions', ref: exhibitionsRef },
+    { section: 'press', ref: pressRef },
   ]
 
   useEffect(() => {
@@ -121,6 +124,18 @@ export default function Info({ data }) {
               <button
                 type="button"
                 className={`header_link ${
+                  visibleSection === 'press' ? 'selected' : ''
+                }`}
+                onClick={() => {
+                  scrollTo(pressRef.current)
+                }}
+              >
+                Press
+              </button>
+
+              <button
+                type="button"
+                className={`header_link ${
                   visibleSection === 'awards' ? 'selected' : ''
                 }`}
                 onClick={() => {
@@ -132,10 +147,10 @@ export default function Info({ data }) {
               <button
                 type="button"
                 className={`header_link ${
-                  visibleSection === 'press' ? 'selected' : ''
+                  visibleSection === 'articles' ? 'selected' : ''
                 }`}
                 onClick={() => {
-                  scrollTo(pressRef.current)
+                  scrollTo(articlesRef.current)
                 }}
               >
                 Research & Articles
@@ -160,10 +175,31 @@ export default function Info({ data }) {
           <section className="sectionInInfo" id="contact" ref={contactRef}>
             <Contact />
           </section>
+
+          <section className="sectionInInfo" id="press" ref={pressRef}>
+            <div className="boxPress">
+              <div className="pageWrapper">
+                <div className="projectList">
+                  {prensa.map((item, index) => (
+                    <div key={item.id}>
+                      <Item
+                        description={item.description}
+                        description2={item.description2}
+                        year={item.year}
+                        index={index}
+                        prensa={prensa}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section className="sectionInInfo" id="awards" ref={awardsRef}>
             <Awards />
           </section>
-          <section className="sectionInInfo" id="press" ref={pressRef}>
+          <section className="sectionInInfo" id="articles" ref={articlesRef}>
             <div className="boxPress">
               <div className="pageWrapper">
                 <div className="projectList">
@@ -239,7 +275,7 @@ export default function Info({ data }) {
           display: none;
         }
 
-        #press {
+        #articles {
           display: none;
         }
         #exhibitions {
@@ -332,7 +368,7 @@ export default function Info({ data }) {
             display: block;
           }
 
-          #press {
+          #articles {
             margin-top: 20px;
             display: block;
           }
@@ -427,7 +463,7 @@ export default function Info({ data }) {
             display: block;
           }
 
-          #press {
+          #articles {
             margin-top: 20px;
             display: block;
           }
@@ -469,10 +505,14 @@ export default function Info({ data }) {
 }
 
 export async function getStaticProps() {
+  const articles = await getArticlesData()
   const press = await getPressData()
+  console.log({ press })
+
   return {
     props: {
-      data: press,
+      data: articles,
+      press,
     },
   }
 }

@@ -1,47 +1,115 @@
 {
-  "brick": {
-    "id": 1,
-    "title": "Brick",
-    "image": "/Articles/Brick.png",
-    "description": "Brick: A New Font Brewing.",
-    "description2": "Published at Medium.",
-    "year": "2020",
-    "url": "https://medium.com/@Colophon/brick-a-new-font-brewing-e2a982e39c8f"
-  },
-  "monograms": {
-    "title": "Monograms",
+  "yearbook": {
     "id": 2,
-    "image": "/Articles/Monograms.png",
-    "description": "A study of the development of monograms: from Ancient Greek coins to contemporary logos.",
-    "description2": "MATD’s dissertation.",
-    "year": "2020",
-    "url": "https://drive.google.com/file/d/1usq_4mDOYGLyk5rxxST_gO_g4D5YVc1w/view"
+    "title": "Yearbook of Type III",
+    "image": "/Press/YBT3/1.jpg",
+    "description": "",
+    "description2": "Yearbook of Type III",
+    "year": "2018"
   },
-  "thesaurus": {
-    "title": "Thesaurus",
+  "contemporay": {
     "id": 3,
-    "image": "/Articles/Thesaurus.png",
-    "description": "Thesaurus's development.",
-    "description2": "Published at I Love Typography.",
-    "year": "2017",
-    "url": "https://ilovetypography.com/2017/01/30/thesaurus-fonts/"
+    "title": "Contemporary Typefaces Booklet",
+    "image": "/Press/Slanted30/3.jpg",
+    "description": "",
+    "description2": "Slanted #30, Contemporary Typefaces Booklet.",
+    "year": "2017"
   },
-  "reflection": {
-    "title": "Reflection on Practice",
+  "novum17": {
     "id": 4,
-    "image": "/Articles/ReflectiononPractice.png",
-    "description": "Reflection on Practice: An inside look at the creation process of Exentra.",
-    "description2": "MATD’s R.O.P. (reflection on practice).",
-    "year": "2015",
-    "url": "/AninsideLookAtTheCreationProcessOfExentra.pdf"
+    "title": "Novum magazine",
+    "image": "/Press/Novum2017/3.jpg",
+    "description": "",
+    "description2": "Novum magazine",
+    "year": "2017"
   },
-  "geneve": {
-    "title": "Geneve",
+  "typodarium17": {
     "id": 5,
-    "image": "/Articles/Geneve.png",
-    "description": "If Geneva was a typeface.",
-    "description2": "Bachelor thesis at HEAD.",
-    "year": "2014",
-    "url": "/BachelorThesis.pdf"
+    "title": "Typodarium 2017",
+    "image": "/Press/Typodarium2017/1.jpg",
+    "description": "",
+    "description2": "Typodarium 2017",
+    "year": "2017"
+  },
+  "typodarium16": {
+    "id": 6,
+    "title": "Typodarium 2016",
+    "image": "/Press/Typodarium2016/2.jpg",
+    "description": "",
+    "description2": "Typodarium 2017",
+    "year": "2016"
+  },
+  "etapes": {
+    "id": 7,
+    "title": "Étapes magazine, special Graduate projects",
+    "image": "/Press/etapes2015/3.jpg",
+    "description": "",
+    "description2": "Étapes magazine, special Graduate projects",
+    "year": "2015"
+  },
+  "apresAvant": {
+    "id": 8,
+    "title": "AprèsAvant magazine No. 2.",
+    "image": "/Press/AA/1.jpg",
+    "description": "",
+    "description2": "AprèsAvant magazine No. 2.",
+    "year": "2014"
+  },
+  "idn": {
+    "id": 9,
+    "title": "IDN magazine Vol.21 No. 1",
+    "image": "/Press/idN/2.jpg",
+    "description": "",
+    "description2": "IDN magazine Vol.21 No. 1",
+    "year": "2014"
+  },
+  "eco": {
+    "id": 10,
+    "title": "Eco Style in Furniture Design, book",
+    "image": "/Press/Dopress/8.jpg",
+    "description": "",
+    "description2": "Eco Style in Furniture Design, book",
+    "year": "2013"
+  },
+  "plus81": {
+    "id": 11,
+    "title": "Plus81 magazine Vol.62",
+    "image": "/Press/Plus81/10.jpg",
+    "description": "",
+    "description2": "Plus81 magazine Vol.62",
+    "year": "2013"
+  },
+  "form": {
+    "id": 12,
+    "title": "Form magazine 247",
+    "image": "/Press/form2/2.jpg",
+    "description": "",
+    "description2": "Form magazine 247",
+    "year": "2013"
+  },
+  "typodarium": {
+    "id": 13,
+    "title": "Typodarium",
+    "image": "/Press/typodarium/3.jpg",
+    "description": "",
+    "description2": "Typodarium",
+    "year": "2013"
+  },
+  "novum": {
+    "id": 14,
+    "title": "Novum magazine",
+    "image": "/Press/novum/3.jpg",
+    "description": "",
+    "description2": "Novum magazine",
+    "year": "2012"
+  },
+
+  "form243": {
+    "id": 15,
+    "title": "Form magazine 243",
+    "image": "/Press/form/3.jpg",
+    "description": "",
+    "description2": "Form magazine 243",
+    "year": "2012"
   }
 }

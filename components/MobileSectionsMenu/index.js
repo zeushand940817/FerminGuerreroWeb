@@ -9,7 +9,7 @@ import Accordion from 'components/Accordion'
 //Dynamic imports
 const About = dynamic(() => import('@components/About'))
 const Contact = dynamic(() => import('@components/Contact'))
-const PressMobile = dynamic(() => import('@components/PressMobile'))
+const ArticlesMobile = dynamic(() => import('@components/ArticlesMobile'))
 const AwardsMobile = dynamic(() => import('@components/AwardsMobile'))
 const ExhibitionsMobile = dynamic(() => import('@components/ExhibitionsMobile'))
 
@@ -20,7 +20,7 @@ export default function MobileSectionsMenu() {
         <Accordion title="About" content={<About />} />
         <Accordion title="Contact" content={<Contact />} />
         <Accordion title="Awards & Distinctions" content={<AwardsMobile />} />
-        <Accordion title="Research & Articles" content={<PressMobile />} />
+        <Accordion title="Research & Articles" content={<ArticlesMobile />} />
         <Accordion title="Exhibitions" content={<ExhibitionsMobile />} />
       </div>
     </>
