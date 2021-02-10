@@ -2,7 +2,7 @@
   "yearbook": {
     "id": 2,
     "title": "Yearbook of Type III",
-    "image": "/Press/YBT3/1.jpg",
+    "image": "/Press/ybt3.jpg",
     "description": "",
     "description2": "Yearbook of Type III",
     "year": "2018"
@@ -10,7 +10,7 @@
   "contemporay": {
     "id": 3,
     "title": "Contemporary Typefaces Booklet",
-    "image": "/Press/Slanted30/3.jpg",
+    "image": "/Press/slanted30.jpg",
     "description": "",
     "description2": "Slanted #30, Contemporary Typefaces Booklet.",
     "year": "2017"
@@ -18,7 +18,7 @@
   "novum17": {
     "id": 4,
     "title": "Novum magazine",
-    "image": "/Press/Novum2017/3.jpg",
+    "image": "/Press/novum2017.jpg",
     "description": "",
     "description2": "Novum magazine",
     "year": "2017"
@@ -26,7 +26,7 @@
   "typodarium17": {
     "id": 5,
     "title": "Typodarium 2017",
-    "image": "/Press/Typodarium2017/1.jpg",
+    "image": "/Press/typodarium2017.jpg",
     "description": "",
     "description2": "Typodarium 2017",
     "year": "2017"
@@ -34,7 +34,7 @@
   "typodarium16": {
     "id": 6,
     "title": "Typodarium 2016",
-    "image": "/Press/Typodarium2016/2.jpg",
+    "image": "/Press/typodarium2016.jpg",
     "description": "",
     "description2": "Typodarium 2017",
     "year": "2016"
@@ -42,7 +42,7 @@
   "etapes": {
     "id": 7,
     "title": "Étapes magazine, special Graduate projects",
-    "image": "/Press/etapes2015/3.jpg",
+    "image": "/Press/etapes2015.jpg",
     "description": "",
     "description2": "Étapes magazine, special Graduate projects",
     "year": "2015"
@@ -50,7 +50,7 @@
   "apresAvant": {
     "id": 8,
     "title": "AprèsAvant magazine No. 2.",
-    "image": "/Press/AA/1.jpg",
+    "image": "/Press/AA.jpg",
     "description": "",
     "description2": "AprèsAvant magazine No. 2.",
     "year": "2014"
@@ -58,7 +58,7 @@
   "idn": {
     "id": 9,
     "title": "IDN magazine Vol.21 No. 1",
-    "image": "/Press/idN/2.jpg",
+    "image": "/Press/idn.jpg",
     "description": "",
     "description2": "IDN magazine Vol.21 No. 1",
     "year": "2014"
@@ -66,7 +66,7 @@
   "eco": {
     "id": 10,
     "title": "Eco Style in Furniture Design, book",
-    "image": "/Press/Dopress/8.jpg",
+    "image": "/Press/dopress.jpg",
     "description": "",
     "description2": "Eco Style in Furniture Design, book",
     "year": "2013"
@@ -74,7 +74,7 @@
   "plus81": {
     "id": 11,
     "title": "Plus81 magazine Vol.62",
-    "image": "/Press/Plus81/10.jpg",
+    "image": "/Press/plus81.jpg",
     "description": "",
     "description2": "Plus81 magazine Vol.62",
     "year": "2013"
@@ -82,7 +82,7 @@
   "form": {
     "id": 12,
     "title": "Form magazine 247",
-    "image": "/Press/form2/2.jpg",
+    "image": "/Press/form2.jpg",
     "description": "",
     "description2": "Form magazine 247",
     "year": "2013"
@@ -90,7 +90,7 @@
   "typodarium": {
     "id": 13,
     "title": "Typodarium",
-    "image": "/Press/typodarium/3.jpg",
+    "image": "/Press/typodarium.jpg",
     "description": "",
     "description2": "Typodarium",
     "year": "2013"
@@ -98,7 +98,7 @@
   "novum": {
     "id": 14,
     "title": "Novum magazine",
-    "image": "/Press/novum/3.jpg",
+    "image": "/Press/novum.jpg",
     "description": "",
     "description2": "Novum magazine",
     "year": "2012"
@@ -107,7 +107,7 @@
   "form243": {
     "id": 15,
     "title": "Form magazine 243",
-    "image": "/Press/form/3.jpg",
+    "image": "/Press/form.jpg",
     "description": "",
     "description2": "Form magazine 243",
     "year": "2012"
