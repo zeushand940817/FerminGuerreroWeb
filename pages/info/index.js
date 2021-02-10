@@ -2,13 +2,17 @@ import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 
 //Data fetching
-import { getArticlesData, getPressData } from 'utils/getData'
+import {
+  getArticlesData,
+  getExhibitionsData,
+  getPressData,
+} from 'utils/getData'
 
 //Media queries
 import device from 'utils/media-queries'
 
 //Dynamic imports / Components
-const About = dynamic(() => import('@components/About'))
+const About = dynamic(() => import('components/About'))
 const Awards = dynamic(() => import('components/Awards'))
 const Item = dynamic(() => import('../../components/HoverImage/Item'))
 const Contact = dynamic(() => import('components/Contact'))
@@ -37,7 +41,7 @@ const scrollTo = (ele) => {
   })
 }
 
-export default function Info({ data, press }) {
+export default function Info({ data, press, exhibitions }) {
   const articles = Object.values(data).map((element) => element)
   const prensa = Object.values(press).map((elementPress) => elementPress)
 
@@ -94,7 +98,11 @@ export default function Info({ data, press }) {
           <img className="image" src="/aboutmepicture.jpg" />
         </div>
         <div className="mobileAbout">
-          <MobileSectionsMenu press={press} />
+          <MobileSectionsMenu
+            press={press}
+            articles={articles}
+            exhibitions={exhibitions}
+          />
         </div>
         <div className="content">
           <div className="sticky">
@@ -230,7 +238,7 @@ export default function Info({ data, press }) {
             id="exhibitions"
             ref={exhibitionsRef}
           >
-            <Exhibitions />
+            <Exhibitions exhibitions={exhibitions} />
           </section>
           <div className="bottomSpacer" />
         </div>
@@ -309,8 +317,10 @@ export default function Info({ data, press }) {
             height: auto;
           }
 
-          .bottomSpacer {
+           {
+            /* .bottomSpacer {
             height: 40vh;
+          } */
           }
 
           .sticky {
@@ -370,7 +380,9 @@ export default function Info({ data, press }) {
           #awards {
             display: block;
           }
-
+          #press {
+            display: block;
+          }
           #articles {
             margin-top: 20px;
             display: block;
@@ -472,7 +484,6 @@ export default function Info({ data, press }) {
           }
           #exhibitions {
             display: block;
-            height: 60vh;
           }
 
           .mobileAbout {
@@ -494,7 +505,6 @@ export default function Info({ data, press }) {
             background-color: transparent;
             display: flex;
             flex-direction: column;
-
             width: 400px;
           }
 
@@ -510,12 +520,13 @@ export default function Info({ data, press }) {
 export async function getStaticProps() {
   const articles = await getArticlesData()
   const press = await getPressData()
-  console.log({ press })
+  const exhibitions = await getExhibitionsData()
 
   return {
     props: {
       data: articles,
       press,
+      exhibitions,
     },
   }
 }

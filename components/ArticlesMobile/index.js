@@ -1,44 +1,18 @@
-function PressMobile(props) {
+function ArticlesMobile({ articles }) {
+  const articlesMap = Object.values(articles)
+
   return (
     <>
       <div className="pressMobileWrapper">
-        <div className="textLink">
-          <a
-            href="https://medium.com/@Colophon/brick-a-new-font-brewing-e2a982e39c8f"
-            target="_blank"
-          >
-            <u>Brick; a New Font Brewing</u>
-          </a>
-        </div>
-
-        <div className="textLink">
-          <a
-            href="https://ilovetypography.com/2017/01/30/thesaurus-fonts/"
-            target="_blank"
-          >
-            <u>Thesaurus's development.</u>
-          </a>
-        </div>
-
-        <div className="textLink">
-          <a
-            href="/AninsideLookAtTheCreationProcessOfExentra.pdf"
-            target="_blank"
-          >
-            <u>
-              Monograms, A study of the development of monograms: From Ancient
-              Greek coins to contemporary logos.
-            </u>
-          </a>{' '}
-          <span>MATD’s dissertation.</span>
-        </div>
-
-        <div className="textLink">
-          <a href="/BachelorThesis.pdf" target="_blank">
-            <u>An inside look at the creation process of Exentra.</u>
-          </a>{' '}
-          <span>MATD’s Reflection on Practice.</span>
-        </div>
+        {articlesMap.map((article) => (
+          <>
+            <div className="textLink">
+              <a href={article.url} target="_blank">
+                {article.description}
+              </a>
+            </div>
+          </>
+        ))}
       </div>
 
       <style jsx>{`
@@ -49,10 +23,10 @@ function PressMobile(props) {
           margin-bottom: 20px;
         }
         .textLink {
+          text-decoration: underline;
           padding-bottom: 10px;
         }
         a {
-          text-decoration: none;
           color: white;
         }
       `}</style>
@@ -60,4 +34,4 @@ function PressMobile(props) {
   )
 }
 
-export default PressMobile
+export default ArticlesMobile

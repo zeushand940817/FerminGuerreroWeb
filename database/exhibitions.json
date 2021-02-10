@@ -1,0 +1,38 @@
+{
+  "latinamerican": {
+    "id": 1,
+    "title": "Latin-American typedesign biennial organized by Typos Latinos.",
+    "country": "Bogotá, Colombia.",
+    "year": "2018"
+  },
+  "typemasters": {
+    "id": 2,
+    "title": "Type Masters Exhibition organized by the Berliner Typostammtisch.",
+    "country": "Berlin, Germany.",
+    "year": "2016"
+  },
+  "trnava": {
+    "id": 3,
+    "title": "Trnava Poster Triennial.",
+    "country": "Bratislava, Slovakia.",
+    "year": "2015"
+  },
+  "these": {
+    "id": 4,
+    "title": "These Woods Have Ears. Organized by Rock This Town.",
+    "country": "Geneva, Switzerland.",
+    "year": "2015"
+  },
+  "100typo": {
+    "id": 5,
+    "title": "100 typographic posters International Invitational Exhibition.",
+    "country": "Beijing, China.",
+    "year": "2013"
+  },
+  "weltformat": {
+    "id": 6,
+    "title": "Weltformat Poster Festival.",
+    "country": "Lucerne, Switzerland.",
+    "year": "2011"
+  }
+}

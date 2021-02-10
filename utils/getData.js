@@ -92,3 +92,9 @@ export function getPressData() {
   const parseData = parse('press.json')
   return parseData
 }
+
+// get Exhibitions
+export function getExhibitionsData() {
+  const parseData = parse('exhibitions.json')
+  return parseData
+}
