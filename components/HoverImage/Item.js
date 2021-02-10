@@ -51,9 +51,7 @@ export default function ({
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(-1)}
             >
-              <Box className={classes.content}>
-                <u>{description}</u>
-              </Box>
+              <Box className={classes.content}>{description}</Box>
 
               <Box className={classes.descriptiontwo}>{description2}</Box>
             </Grid>

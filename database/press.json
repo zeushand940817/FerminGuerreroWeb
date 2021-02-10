@@ -1,115 +1,123 @@
 {
+  "": {
+    "id": 1,
+    "title": "Print (selected):",
+    "image": "",
+    "description": "",
+    "description2": "",
+    "year": "Print (selected):"
+  },
   "yearbook": {
     "id": 2,
     "title": "Yearbook of Type III",
     "image": "/Press/ybt3.jpg",
-    "description": "",
-    "description2": "Yearbook of Type III",
+    "description": "Yearbook of Type III.",
+    "description2": "Project: Thesaurus.",
     "year": "2018"
   },
   "contemporay": {
     "id": 3,
-    "title": "Contemporary Typefaces Booklet",
+    "title": "Contemporary Typefaces Booklet (Slanted #30)",
     "image": "/Press/slanted30.jpg",
-    "description": "",
-    "description2": "Slanted #30, Contemporary Typefaces Booklet.",
+    "description": "Contemporary Typefaces Booklet (Slanted #30).",
+    "description2": "Project: Thesaurus.",
     "year": "2017"
   },
   "novum17": {
     "id": 4,
     "title": "Novum magazine",
     "image": "/Press/novum2017.jpg",
-    "description": "",
-    "description2": "Novum magazine",
+    "description": "Novum magazine.",
+    "description2": "Project: Thesaurus.",
     "year": "2017"
   },
   "typodarium17": {
     "id": 5,
     "title": "Typodarium 2017",
     "image": "/Press/typodarium2017.jpg",
-    "description": "",
-    "description2": "Typodarium 2017",
+    "description": "Typodarium 2017.",
+    "description2": "Project: Exentra.",
     "year": "2017"
   },
   "typodarium16": {
     "id": 6,
     "title": "Typodarium 2016",
     "image": "/Press/typodarium2016.jpg",
-    "description": "",
-    "description2": "Typodarium 2017",
+    "description": "Typodarium 2017.",
+    "description2": "Proyect: Viga.",
     "year": "2016"
   },
   "etapes": {
     "id": 7,
-    "title": "Étapes magazine, special Graduate projects",
+    "title": "Étapes magazine (special graduate projects)",
     "image": "/Press/etapes2015.jpg",
-    "description": "",
-    "description2": "Étapes magazine, special Graduate projects",
+    "description": "Étapes magazine (special graduate projects).",
+    "description2": "Project: Exentra.",
     "year": "2015"
   },
   "apresAvant": {
     "id": 8,
-    "title": "AprèsAvant magazine No. 2.",
+    "title": "AprèsAvant magazine #2",
     "image": "/Press/AA.jpg",
-    "description": "",
-    "description2": "AprèsAvant magazine No. 2.",
+    "description": "AprèsAvant magazine #2.",
+    "description2": "Project: Viga.",
     "year": "2014"
   },
   "idn": {
     "id": 9,
-    "title": "IDN magazine Vol.21 No. 1",
+    "title": "IdN magazine Vol.21 #1",
     "image": "/Press/idn.jpg",
-    "description": "",
-    "description2": "IDN magazine Vol.21 No. 1",
+    "description": "IdN magazine Vol.21 #1.",
+    "description2": "Project: Various.",
     "year": "2014"
   },
   "eco": {
     "id": 10,
-    "title": "Eco Style in Furniture Design, book",
+    "title": "Eco Style in Furniture Design (book)",
     "image": "/Press/dopress.jpg",
-    "description": "",
-    "description2": "Eco Style in Furniture Design, book",
+    "description": "Eco Style in Furniture Design (book).",
+    "description2": "Project: Incaso.",
     "year": "2013"
   },
   "plus81": {
     "id": 11,
-    "title": "Plus81 magazine Vol.62",
+    "title": "Plus81 magazine (World’s Best Poster Design)",
     "image": "/Press/plus81.jpg",
-    "description": "",
-    "description2": "Plus81 magazine Vol.62",
+    "description": "Plus81 magazine (World’s Best Poster Design).",
+    "description2": "Project: Various.",
     "year": "2013"
   },
   "form": {
     "id": 12,
-    "title": "Form magazine 247",
+    "title": "Form magazine #247",
     "image": "/Press/form2.jpg",
-    "description": "",
-    "description2": "Form magazine 247",
+    "description": "Form magazine #247.",
+    "description2": "Project: Carte Blanche Poster.",
     "year": "2013"
   },
   "typodarium": {
     "id": 13,
     "title": "Typodarium",
     "image": "/Press/typodarium.jpg",
-    "description": "",
-    "description2": "Typodarium",
+    "description": "Typodarium.",
+    "description2": "Project: Viga.",
     "year": "2013"
   },
   "novum": {
     "id": 14,
-    "title": "Novum magazine",
+    "title": " Novum magazine",
     "image": "/Press/novum.jpg",
-    "description": "",
-    "description2": "Novum magazine",
+    "description": "Novum magazine.",
+    "description2": "Project: various.",
     "year": "2012"
   },
 
   "form243": {
     "id": 15,
-    "title": "Form magazine 243",
+    "title": "Form magazine #243",
     "image": "/Press/form.jpg",
-    "description": "",
-    "description2": "Form magazine 243",
+    "description": "Form magazine #243.",
+    "description2": "Project: Manifesta.",
     "year": "2012"
   }
 }

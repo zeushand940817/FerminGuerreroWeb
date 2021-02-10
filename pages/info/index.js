@@ -94,7 +94,7 @@ export default function Info({ data, press }) {
           <img className="image" src="/aboutmepicture.jpg" />
         </div>
         <div className="mobileAbout">
-          <MobileSectionsMenu />
+          <MobileSectionsMenu press={press} />
         </div>
         <div className="content">
           <div className="sticky">
@@ -279,6 +279,9 @@ export default function Info({ data, press }) {
           display: none;
         }
         #exhibitions {
+          display: none;
+        }
+        #press {
           display: none;
         }
 
