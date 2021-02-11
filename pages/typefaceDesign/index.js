@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 //Components
 import ImageList from '@material-ui/core/ImageList'
@@ -30,6 +31,13 @@ export default function TypefaceDesign({ data }) {
   const classes = useStyles()
   return (
     <>
+      <Head>
+        <title>Typeface Design • FG</title>
+        <meta
+          name="description"
+          content="Typeface design work from Fermin Guerrero"
+        />
+      </Head>
       <div className={styles.mainWrapper}>
         <div className={classes.root}>
           <ImageList

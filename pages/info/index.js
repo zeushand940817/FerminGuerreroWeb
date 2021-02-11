@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 
 //Data fetching
 import {
@@ -102,6 +103,13 @@ export default function Info({
 
   return (
     <>
+      <Head>
+        <title>Info • FG</title>
+        <meta
+          name="description"
+          content="Fermin Guerrero's graphic designer and typefase designer information, contact, press, articles."
+        />
+      </Head>
       <div className="wrapper">
         <div className="topSpacer">
           <img className="image" src="/aboutmepicture.jpg" />
@@ -230,7 +238,7 @@ export default function Info({
                         target="_blank"
                       >
                         <Item
-                          href={item.url}
+                          url={item.url}
                           description={item.description}
                           description2={item.description2}
                           year={item.year}

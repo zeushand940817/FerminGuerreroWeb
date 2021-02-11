@@ -52,7 +52,7 @@ export default function ({
               onMouseLeave={() => setActiveIndex(-1)}
             >
               <Box className={classes.content}>{description}</Box>
-
+              
               <Box className={classes.descriptiontwo}>{description2}</Box>
             </Grid>
             <Grid item xs={1} lg={1}>

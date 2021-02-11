@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 //Componets
 import Footer from 'components/Footer'
@@ -29,55 +30,64 @@ const useStyles = makeStyles({
 export default function All({ data, extractVideo }) {
   const classes = useStyles()
   return (
-    <div className={styles.mainWrapper}>
-      <div className={classes.root}>
-        <ImageList
-          variant="masonry"
-          cols={3}
-          gap={13}
-          className={classes.label}
-        >
-          {data.map((project) => (
-            <Link
-              key={project.id}
-              href={`/projects/[slug]`}
-              as={`/projects/${project.slug}`}
-            >
-              <a>
-                <div className={styles.container}>
-                  <ImageListItem key={project.id}>
-                    {project.id == 31 ? (
-                      <video
-                        preload="none"
-                        playsinline
-                        autoPlay
-                        muted
-                        loop
-                        width="100%"
-                        height="auto"
-                        className={classes.videoClass}
-                      >
-                        <source src={extractVideo} type="video/mp4" />
-                      </video>
-                    ) : (
-                      <LazyLoadImage
-                        className={styles.imagen}
-                        alt={project.name}
-                        src={project.image}
-                      />
-                    )}
-                    <div className={styles.text}>
-                      <p>{project.name}</p>
-                    </div>
-                  </ImageListItem>
-                </div>
-              </a>
-            </Link>
-          ))}
-        </ImageList>
+    <>
+      <Head>
+        <title>All Projects • FG</title>
+        <meta
+          name="description"
+          content="All projects from  Fermin Guerrero Graphic Designer and typeface designer"
+        />
+      </Head>
+      <div className={styles.mainWrapper}>
+        <div className={classes.root}>
+          <ImageList
+            variant="masonry"
+            cols={3}
+            gap={13}
+            className={classes.label}
+          >
+            {data.map((project) => (
+              <Link
+                key={project.id}
+                href={`/projects/[slug]`}
+                as={`/projects/${project.slug}`}
+              >
+                <a>
+                  <div className={styles.container}>
+                    <ImageListItem key={project.id}>
+                      {project.id == 31 ? (
+                        <video
+                          preload="none"
+                          playsinline
+                          autoPlay
+                          muted
+                          loop
+                          width="100%"
+                          height="auto"
+                          className={classes.videoClass}
+                        >
+                          <source src={extractVideo} type="video/mp4" />
+                        </video>
+                      ) : (
+                        <LazyLoadImage
+                          className={styles.imagen}
+                          alt={project.name}
+                          src={project.image}
+                        />
+                      )}
+                      <div className={styles.text}>
+                        <p>{project.name}</p>
+                      </div>
+                    </ImageListItem>
+                  </div>
+                </a>
+              </Link>
+            ))}
+          </ImageList>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   )
 }
 

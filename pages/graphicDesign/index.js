@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 //Components
 import Footer from 'components/Footer'
@@ -31,6 +32,13 @@ export default function GraphicDesign({ data, extractVideo }) {
 
   return (
     <>
+      <Head>
+        <title>Graphic Design • FG</title>
+        <meta
+          name="description"
+          content="Graphic design work from Fermin Guerrero"
+        />
+      </Head>
       <div className={styles.mainWrapper}>
         <div className={classes.root}>
           <ImageList

@@ -1,12 +1,21 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import { useState, useRouter } from 'react'
+
+//social media
+import {
+  FacebookIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from 'react-share'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'styles/project.module.scss'
-// import { CgMenuGridR } from 'react-icons/cg'
-// import { VscArrowRight } from 'react-icons/vsc'
-// import { VscArrowLeft } from 'react-icons/vsc'
+import { CgMenuGridR } from 'react-icons/cg'
+import { VscArrowRight } from 'react-icons/vsc'
+import { VscArrowLeft } from 'react-icons/vsc'
 
 //Components
 import Footer from 'components/Footer'
@@ -39,24 +48,23 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 const Projects = ({ data, navigationProjects }) => {
   const classes = useStyles()
-  // const currentId = data[0].id
-  // console.log({ currentId })
-  // const [current, setCurrent] = useState([])
-  // const mapNavigation = navigationProjects.map((nav) => nav.id)
-  // console.log({ mapNavigation })
+  const currentId = data[0].id
+  console.log({ currentId })
+  const [current, setCurrent] = useState([])
+  const mapNavigation = navigationProjects.map((nav) => nav.id)
 
-  // console.log(mapNavigation[current - 1], 'SOY NAVIGATION CURRENT -1')
-  // console.log(mapNavigation[current + 1], 'SOY NAV NEXT + 1')
+  console.log(mapNavigation[current - 1], 'SOY NAVIGATION CURRENT -1')
+  console.log(mapNavigation[current + 1], 'SOY NAV NEXT + 1')
 
-  // const handlePrev = () => {
-  //   // e.preventDefault()
-  //   setCurrent((current) => mapNavigation[current - 1])
-  // }
+  const handlePrev = () => {
+    e.preventDefault()
+    setCurrent((current) => mapNavigation[current - 1])
+  }
 
-  // const handleNext = () => {
-  //   // e.preventDefault()
-  //   setCurrent((current) => mapNavigation[current + 1])
-  // }
+  const handleNext = () => {
+    e.preventDefault()
+    setCurrent((current) => mapNavigation[current + 1])
+  }
 
   return (
     <>
@@ -64,6 +72,10 @@ const Projects = ({ data, navigationProjects }) => {
         {data.map((element) => {
           return (
             <>
+              <Head>
+                <title>{element.name}</title>
+                <meta name="description" content={element.description} />
+              </Head>
               {element.mp4 ? (
                 <video
                   loop
@@ -230,7 +242,7 @@ const Projects = ({ data, navigationProjects }) => {
                   )
                 })}
               </ImageList>
-              {/* <div className={styles.navigation}>
+              <div className={styles.navigation}>
                 <Grid container>
                   <Grid item xs={12} lg={2}>
                     <button
@@ -274,7 +286,7 @@ const Projects = ({ data, navigationProjects }) => {
                     </button>
                   </Grid>
                 </Grid>
-              </div> */}
+              </div>
             </>
           )
         })}

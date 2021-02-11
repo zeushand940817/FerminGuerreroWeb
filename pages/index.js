@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Head from 'next/head'
 
 //Data fetching
 import { getLandingData } from '../utils/getData'
@@ -66,6 +67,13 @@ const Home = ({ dataParse }) => {
 
   return (
     <>
+      <Head>
+        <title>Fermin Guerrero</title>
+        <meta
+          name="description"
+          content="Fermin Guerrero's graphic designer and typefase designer web/ portfolio."
+        />
+      </Head>
       <div className={styles.hero} id="#home">
         <img
           style={{
