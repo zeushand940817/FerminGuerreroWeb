@@ -122,6 +122,7 @@ export default function Info({
             articles={articles}
             exhibitions={exhibitions}
             awardsData={awardsData}
+            pressOnlineData={pressOnlineData}
           />
         </div>
         <div className="content">

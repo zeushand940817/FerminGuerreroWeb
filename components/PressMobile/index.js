@@ -1,5 +1,6 @@
-export default function PressMobile({ press }) {
+export default function PressMobile({ press, pressOnlineData }) {
   const pressData = Object.values(press)
+  const onlinePressData = Object.values(pressOnlineData)
 
   return (
     <>
@@ -17,6 +18,20 @@ export default function PressMobile({ press }) {
           ))}
         </section>
       </div>
+      <div style={{ paddingTop: '10px', paddingBottom: '10px' }}>
+        Online (selected):
+      </div>
+      <section>
+        {onlinePressData.map((element) => (
+          <div className="individualPress">
+            <p>{element.year}</p>
+            <a href={element.url}>
+              <p>{element.title}</p>
+            </a>
+          </div>
+        ))}
+      </section>
+
       <style jsx>{`
         .wrapper {
           width: 100%;
@@ -25,6 +40,9 @@ export default function PressMobile({ press }) {
         .individualPress {
           margin-bottom: 20px;
           line-height: 1.4;
+        }
+        a {
+          text-decoration: underline;
         }
       `}</style>
     </>

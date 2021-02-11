@@ -19,13 +19,19 @@ export default function MobileSectionsMenu({
   articles,
   exhibitions,
   awardsData,
+  pressOnlineData,
 }) {
   return (
     <>
       <div className={styles.mainWrapper}>
         <Accordion title="About" content={<About />} />
         <Accordion title="Contact" content={<Contact />} />
-        <Accordion title="Press" content={<PressMobile press={press} />} />
+        <Accordion
+          title="Press"
+          content={
+            <PressMobile press={press} pressOnlineData={pressOnlineData} />
+          }
+        />
         <Accordion
           title="Awards & Distinctions"
           content={<AwardsMobile awardsData={awardsData} />}
