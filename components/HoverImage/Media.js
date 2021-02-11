@@ -11,7 +11,6 @@ export default function Media({ image }) {
           object-fit: contain;
           cursor: pointer;
           pointer-events: none;
-          padding: 15px;
         }
         .container {
           height: 100px;

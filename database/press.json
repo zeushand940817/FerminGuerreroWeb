@@ -1,14 +1,6 @@
 {
-  "": {
-    "id": 1,
-    "title": "Print (selected):",
-    "image": "",
-    "description": "",
-    "description2": "",
-    "year": "Print (selected):"
-  },
   "yearbook": {
-    "id": 2,
+    "id": 1,
     "title": "Yearbook of Type III",
     "image": "/Press/ybt3.jpg",
     "description": "Yearbook of Type III.",
@@ -16,7 +8,7 @@
     "year": "2018"
   },
   "contemporay": {
-    "id": 3,
+    "id": 2,
     "title": "Contemporary Typefaces Booklet (Slanted #30)",
     "image": "/Press/slanted30.jpg",
     "description": "Contemporary Typefaces Booklet (Slanted #30).",
@@ -24,23 +16,23 @@
     "year": "2017"
   },
   "novum17": {
-    "id": 4,
+    "id": 3,
     "title": "Novum magazine",
     "image": "/Press/novum2017.jpg",
     "description": "Novum magazine.",
     "description2": "Project: Thesaurus.",
-    "year": "2017"
+    "year": ""
   },
   "typodarium17": {
-    "id": 5,
+    "id": 4,
     "title": "Typodarium 2017",
     "image": "/Press/typodarium2017.jpg",
     "description": "Typodarium 2017.",
     "description2": "Project: Exentra.",
-    "year": "2017"
+    "year": ""
   },
   "typodarium16": {
-    "id": 6,
+    "id": 5,
     "title": "Typodarium 2016",
     "image": "/Press/typodarium2016.jpg",
     "description": "Typodarium 2017.",
@@ -48,7 +40,7 @@
     "year": "2016"
   },
   "etapes": {
-    "id": 7,
+    "id": 6,
     "title": "Étapes magazine (special graduate projects)",
     "image": "/Press/etapes2015.jpg",
     "description": "Étapes magazine (special graduate projects).",
@@ -56,7 +48,7 @@
     "year": "2015"
   },
   "apresAvant": {
-    "id": 8,
+    "id": 7,
     "title": "AprèsAvant magazine #2",
     "image": "/Press/AA.jpg",
     "description": "AprèsAvant magazine #2.",
@@ -64,15 +56,15 @@
     "year": "2014"
   },
   "idn": {
-    "id": 9,
+    "id": 8,
     "title": "IdN magazine Vol.21 #1",
     "image": "/Press/idn.jpg",
     "description": "IdN magazine Vol.21 #1.",
     "description2": "Project: Various.",
-    "year": "2014"
+    "year": ""
   },
   "eco": {
-    "id": 10,
+    "id": 9,
     "title": "Eco Style in Furniture Design (book)",
     "image": "/Press/dopress.jpg",
     "description": "Eco Style in Furniture Design (book).",
@@ -80,31 +72,31 @@
     "year": "2013"
   },
   "plus81": {
-    "id": 11,
+    "id": 10,
     "title": "Plus81 magazine (World’s Best Poster Design)",
     "image": "/Press/plus81.jpg",
     "description": "Plus81 magazine (World’s Best Poster Design).",
     "description2": "Project: Various.",
-    "year": "2013"
+    "year": ""
   },
   "form": {
-    "id": 12,
+    "id": 11,
     "title": "Form magazine #247",
     "image": "/Press/form2.jpg",
     "description": "Form magazine #247.",
     "description2": "Project: Carte Blanche Poster.",
-    "year": "2013"
+    "year": ""
   },
   "typodarium": {
-    "id": 13,
+    "id": 12,
     "title": "Typodarium",
     "image": "/Press/typodarium.jpg",
     "description": "Typodarium.",
     "description2": "Project: Viga.",
-    "year": "2013"
+    "year": ""
   },
   "novum": {
-    "id": 14,
+    "id": 13,
     "title": " Novum magazine",
     "image": "/Press/novum.jpg",
     "description": "Novum magazine.",
@@ -113,11 +105,11 @@
   },
 
   "form243": {
-    "id": 15,
+    "id": 14,
     "title": "Form magazine #243",
     "image": "/Press/form.jpg",
     "description": "Form magazine #243.",
     "description2": "Project: Manifesta.",
-    "year": "2012"
+    "year": ""
   }
 }

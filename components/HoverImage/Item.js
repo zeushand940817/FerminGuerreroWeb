@@ -30,6 +30,7 @@ export default function ({
   articles,
   description2,
   press,
+  linkDescription,
 }) {
   const classes = useStyles()
   const [activeIndex, setActiveIndex] = useState(-1)
@@ -51,8 +52,12 @@ export default function ({
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(-1)}
             >
+              {linkDescription && (
+                <Box className={classes.content}>
+                  <u>{linkDescription}</u>
+                </Box>
+              )}
               <Box className={classes.content}>{description}</Box>
-              
               <Box className={classes.descriptiontwo}>{description2}</Box>
             </Grid>
             <Grid item xs={1} lg={1}>

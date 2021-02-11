@@ -1,83 +1,78 @@
 {
-  "online": {
-    "id": 1,
-    "title": "",
-    "year": "Online (selected):"
-  },
   "slantedOne": {
-    "id": 2,
+    "id": 1,
     "title": "Slanted magazine.",
     "url": "https://www.slanted.de/brick-typeface/",
     "year": "2020"
   },
   "people": {
-    "id": 3,
+    "id": 2,
     "title": "People of Print.",
     "url": "http://www.peopleofprint.com/solo-artist/fermin-guerrero/?utm_source=ReviveOldPost&utm_medium=social&utm_campaign=ReviveOldPost",
     "year": "2017"
   },
   "aiga": {
-    "id": 4,
+    "id": 3,
     "title": "AIGA Eye on Design.",
     "url": "http://eyeondesign.aiga.org/what-would-the-city-of-geneva-look-like-as-a-typeface/",
     "year": "2017"
   },
   "slantedTwo": {
-    "id": 5,
+    "id": 4,
     "title": "Slanted magazine.",
     "url": "https://www.slanted.de/beitrag/thesaurus/",
     "year": "2017"
   },
   "typeroom": {
-    "id": 6,
+    "id": 5,
     "title": "Typeroom.",
     "url": "https://www.typeroom.eu/article/thesaurus-inspired-genevas-estiennes-typographic-heritage",
     "year": "2017"
   },
   "ilove": {
-    "id": 7,
+    "id": 6,
     "title": "I Love Typography (ILT).",
     "url": "https://ilovetypography.com/2017/01/30/thesaurus-fonts/",
     "year": "2017"
   },
   "communication": {
-    "id": 8,
+    "id": 7,
     "title": "Communication Arts.",
     "url": "https://www.commarts.com/fresh/ferm-n-guerrero",
     "year": "2016"
   },
   "slantedThree": {
-    "id": 9,
+    "id": 8,
     "title": "Slanted magazine.",
     "url": "https://www.facebook.com/slanted.blog.magazine/posts/10152829556936568",
     "year": "2015"
   },
   "itsnice": {
-    "id": 10,
+    "id": 9,
     "title": "It’s Nice That.",
     "url": "https://www.itsnicethat.com/articles/fermin-guerrero-geneve",
     "year": "2014"
   },
   "idn": {
-    "id": 11,
+    "id": 10,
     "title": "IdN magazine.",
     "url": "https://www.idnworld.com/creators/FerminGuerrero",
     "year": "2013"
   },
   "etapes": {
-    "id": 12,
+    "id": 11,
     "title": "Étapes magazine.",
     "url": "https://etapes.com/manifesta-s-inspire-de-max-kisman/",
     "year": "2012"
   },
   "typo": {
-    "id": 13,
+    "id": 12,
     "title": "TYPO magazine.",
     "url": "http://www.typo.cz/en/font-of-the-week/?polozka=1400",
     "year": "2012"
   },
   "typoPosters": {
-    "id": 14,
+    "id": 13,
     "title": "TypographicPosters",
     "url": "https://www.typographicposters.com/fermin-guerrero",
     "year": "2012"

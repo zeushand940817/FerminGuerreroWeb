@@ -1,6 +1,8 @@
 import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
 
 //Data fetching
 import {
@@ -195,17 +197,37 @@ export default function Info({
             </div>
           </div>
 
-          <section className="sectionInInfo" id="about" ref={aboutRef}>
+          <section className="sectionInfo" id="about" ref={aboutRef}>
             <About />
           </section>
-          <section className="sectionInInfo" id="contact" ref={contactRef}>
+          <section className="sectionInfo" id="contact" ref={contactRef}>
             <Contact />
           </section>
 
-          <section className="sectionInInfo" id="press" ref={pressRef}>
+          <section className="sectionInfo" id="press" ref={pressRef}>
             <div className="boxPress">
               <div className="pageWrapper">
                 <div className="projectList">
+                  <Grid item xs={12} container>
+                    <Grid container direction="row">
+                      <Grid item lg={2} />
+                      <Grid item lg={2} />
+                      <Grid item xs={3} lg={3}>
+                        <Box
+                          style={{
+                            color: 'white',
+                            marginBottom: '35px',
+                            paddingTop: '50px',
+                          }}
+                        >
+                          Print (selected):
+                        </Box>
+                      </Grid>
+                      <Grid item xs={6} lg={4} />
+                      <Grid item xs={1} lg={1} />
+                    </Grid>
+                  </Grid>
+
                   {press.map((item, index) => (
                     <div key={item.id}>
                       <Item
@@ -220,15 +242,28 @@ export default function Info({
                 </div>
               </div>
             </div>
+            <Grid item xs={12} container>
+              <Grid container direction="row">
+                <Grid item lg={2} />
+                <Grid item lg={2} />
+                <Grid item xs={3} lg={3}>
+                  <Box style={{ color: 'white', marginBottom: '35px' }}>
+                    Online (selected):
+                  </Box>
+                </Grid>
+                <Grid item xs={6} lg={4} />
+                <Grid item xs={1} lg={1} />
+              </Grid>
+            </Grid>
             <OnlinePress pressOnlineData={pressOnlineData} />
           </section>
 
-          <section className="sectionInInfo" id="awards" ref={awardsRef}>
+          <section className="sectionInfo" id="awards" ref={awardsRef}>
             <Awards awardsData={awardsData} />
           </section>
-          <section className="sectionInInfo" id="articles" ref={articlesRef}>
+          <section className="sectionInfo" id="articles" ref={articlesRef}>
             <div className="boxPress">
-              <div className="pageWrapper">
+              <div className="pageWrapper" style={{ paddingTop: '50px' }}>
                 <div className="projectList">
                   {articles.map((item, index) => (
                     <div key={item.id}>
@@ -238,6 +273,7 @@ export default function Info({
                         target="_blank"
                       >
                         <Item
+                          linkDescription={item.linkDescription}
                           url={item.url}
                           description={item.description}
                           description2={item.description2}
@@ -253,7 +289,7 @@ export default function Info({
             </div>
           </section>
           <section
-            className="sectionInInfo"
+            className="sectionInfo"
             id="exhibitions"
             ref={exhibitionsRef}
           >
@@ -311,11 +347,11 @@ export default function Info({
         #press {
           display: none;
         }
-
+        .titlePress {
+          padding-bottom: 35px;
+          color: white;
+        }
         @media only Screen and ${device.desktop} {
-          .pageWrapper {
-            padding-top: 60px;
-          }
           .footerDiv {
             bottom: 0;
           }
@@ -334,12 +370,6 @@ export default function Info({
 
           .topSpacer {
             height: auto;
-          }
-
-           {
-            /* .bottomSpacer {
-            height: 40vh;
-          } */
           }
 
           .sticky {
@@ -416,7 +446,7 @@ export default function Info({
           }
 
           .pageWrapper {
-            padding-top: 60px;
+            margin-top: 60px;
           }
           .footerDiv {
             bottom: 0;
@@ -528,7 +558,11 @@ export default function Info({
           }
 
           #about {
-            margin-top: -175px;
+            margin-top: -195px;
+          }
+          .titlePress {
+            padding-bottom: 35px;
+            color: white;
           }
         }
       `}</style>

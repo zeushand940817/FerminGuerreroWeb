@@ -1,5 +1,5 @@
 export default function PressMobile({ press }) {
-  const pressWithoutTitle = Object.values(press).slice(1)
+  const pressData = Object.values(press)
 
   return (
     <>
@@ -8,7 +8,7 @@ export default function PressMobile({ press }) {
           Print (selected):
         </div>
         <section>
-          {pressWithoutTitle.map((element) => (
+          {pressData.map((element) => (
             <div className="individualPress">
               <p>{element.year}</p>
               <p>{element.description}</p>

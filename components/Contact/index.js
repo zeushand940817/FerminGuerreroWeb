@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   box: {
-    marginTop: 50,
+    marginTop: 60,
     marginBottom: 10,
     ['@media (max-width:480px)']: {
       fontSize: 18,
