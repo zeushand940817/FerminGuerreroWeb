@@ -42,7 +42,7 @@ export default function OnlinePress({ pressOnlineData }) {
                       textDecorationThickness: '0.5px',
                     }}
                     href={element.url}
-                    _blank
+                    target="_blank"
                   >
                     {element.title}
                   </a>

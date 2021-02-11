@@ -25,7 +25,7 @@ export default function PressMobile({ press, pressOnlineData }) {
         {onlinePressData.map((element) => (
           <div className="individualPress">
             <p>{element.year}</p>
-            <a href={element.url}>
+            <a href={element.url} target="_blank">
               <p>{element.title}</p>
             </a>
           </div>
