@@ -1,0 +1,75 @@
+{
+  "online": {
+    "id": 1,
+    "title": "",
+    "image": "",
+    "description": "",
+    "description2": "",
+    "year": "Online (selected):"
+  },
+  "slantedOne": {
+    "id": 2,
+    "title": "Slanted magazine.",
+    "url": "https://www.slanted.de/brick-typeface/"
+  },
+  "people": {
+    "id": 3,
+    "title": "People of Print.",
+    "url": "http://www.peopleofprint.com/solo-artist/fermin-guerrero/?utm_source=ReviveOldPost&utm_medium=social&utm_campaign=ReviveOldPost"
+  },
+  "aiga": {
+    "id": 4,
+    "title": "AIGA Eye on Design.",
+    "url": "http://eyeondesign.aiga.org/what-would-the-city-of-geneva-look-like-as-a-typeface/"
+  },
+  "slantedTwo": {
+    "id": 5,
+    "title": "Slanted magazine.",
+    "url": "https://www.slanted.de/beitrag/thesaurus/"
+  },
+  "typeroom": {
+    "id": 6,
+    "title": "Typeroom.",
+    "url": "https://www.typeroom.eu/article/thesaurus-inspired-genevas-estiennes-typographic-heritage"
+  },
+  "ilove": {
+    "id": 7,
+    "title": "I Love Typography (ILT).",
+    "url": "https://ilovetypography.com/2017/01/30/thesaurus-fonts/"
+  },
+  "ilove": {
+    "id": 8,
+    "title": "Communication Arts.",
+    "url": "https://www.commarts.com/fresh/ferm-n-guerrero"
+  },
+  "slantedThree": {
+    "id": 9,
+    "title": "Slanted magazine.",
+    "url": "https://www.facebook.com/slanted.blog.magazine/posts/10152829556936568"
+  },
+  "itsnice": {
+    "id": 10,
+    "title": "It’s Nice That.",
+    "url": "https://www.itsnicethat.com/articles/fermin-guerrero-geneve"
+  },
+  "idn": {
+    "id": 11,
+    "title": "IdN magazine.",
+    "url": "https://www.idnworld.com/creators/FerminGuerrero"
+  },
+  "etapes": {
+    "id": 12,
+    "title": "Étapes magazine.",
+    "url": "https://etapes.com/manifesta-s-inspire-de-max-kisman/"
+  },
+  "typo": {
+    "id": 13,
+    "title": "TYPO magazine.",
+    "url": "http://www.typo.cz/en/font-of-the-week/?polozka=1400"
+  },
+  "typoPosters": {
+    "id": 14,
+    "title": "TypographicPosters",
+    "url": "https://www.typographicposters.com/fermin-guerrero"
+  }
+}

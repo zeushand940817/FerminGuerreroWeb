@@ -100,8 +100,13 @@ export function getExhibitionsData() {
 }
 
 //get awards
-
 export function getAwardsData() {
   const parseData = parse('awards.json')
+  return parseData
+}
+
+//get Online press
+export function getOnlinePressData() {
+  const parseData = parse('pressOnline.json')
   return parseData
 }

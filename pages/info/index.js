@@ -7,6 +7,7 @@ import {
   getExhibitionsData,
   getPressData,
   getAwardsData,
+  getOnlinePressData,
 } from 'utils/getData'
 
 //Media queries
@@ -19,6 +20,7 @@ const Item = dynamic(() => import('../../components/HoverImage/Item'))
 const Contact = dynamic(() => import('components/Contact'))
 const Exhibitions = dynamic(() => import('components/Exhibitions'))
 const Footer = dynamic(() => import('components/Footer'))
+const OnlinePress = dynamic(() => import('components/OnlinePress'))
 const MobileSectionsMenu = dynamic(() =>
   import('components/MobileSectionsMenu')
 )
@@ -42,7 +44,13 @@ const scrollTo = (ele) => {
   })
 }
 
-export default function Info({ data, pressData, exhibitions, awardsData }) {
+export default function Info({
+  data,
+  pressData,
+  exhibitions,
+  awardsData,
+  pressOnlineData,
+}) {
   const articles = Object.values(data).map((element) => element)
   const press = Object.values(pressData).map((element) => element)
 
@@ -204,6 +212,7 @@ export default function Info({ data, pressData, exhibitions, awardsData }) {
                 </div>
               </div>
             </div>
+            <OnlinePress pressOnlineData={pressOnlineData} />
           </section>
 
           <section className="sectionInInfo" id="awards" ref={awardsRef}>
@@ -524,6 +533,7 @@ export async function getStaticProps() {
   const pressData = await getPressData()
   const exhibitions = await getExhibitionsData()
   const awardsData = await getAwardsData()
+  const pressOnlineData = await getOnlinePressData()
 
   return {
     props: {
@@ -531,6 +541,7 @@ export async function getStaticProps() {
       pressData,
       exhibitions,
       awardsData,
+      pressOnlineData,
     },
   }
 }
