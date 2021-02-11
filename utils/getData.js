@@ -98,3 +98,10 @@ export function getExhibitionsData() {
   const parseData = parse('exhibitions.json')
   return parseData
 }
+
+//get awards
+
+export function getAwardsData() {
+  const parseData = parse('awards.json')
+  return parseData
+}

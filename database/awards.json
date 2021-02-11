@@ -1,0 +1,66 @@
+{
+  "latin": {
+    "id": 1,
+    "title": "LAD - Latin Design Awards.",
+    "category": "Typeface design category.",
+    "project": "Project: Thesaurus.",
+    "year": "2019.",
+    "prize": "Gold."
+  },
+  "european": {
+    "id": 2,
+    "title": "European Design Awards.",
+    "category": "Typeface design category.",
+    "project": "Project: Thesaurus.",
+    "year": "2018.",
+    "prize": "Gold."
+  },
+  "swiss": {
+    "id": 3,
+    "title": "Swiss Typefaces selected Thesaurus for their 40 pages specimen called Type Life 3, showcasing 19 non-SWTY typefaces they like.",
+    "category": "",
+    "project": "",
+    "year": "",
+    "prize": ""
+  },
+  "type4": {
+    "id": 4,
+    "title": "Type 4: Typeface Design Competition by Graphis magazine.",
+    "category": "",
+    "project": "Project: Thesaurus.",
+    "year": "",
+    "prize": "Gold."
+  },
+  "typeFour": {
+    "id": 5,
+    "title": "Latin-American typedesign biennial (Tipos Latinos).",
+    "category": "Superfamily category.",
+    "project": "Project: Thesaurus.",
+    "year": "",
+    "prize": "Gold."
+  },
+  "trnava": {
+    "id": 5,
+    "title": "Trnava Poster Triennial International competition.",
+    "category": "",
+    "project": "Project: New Year, New Fight.",
+    "year": "2015.",
+    "prize": "Honorary mention."
+  },
+  "rolex": {
+    "id": 6,
+    "title": "Rolex's Foundation (Hans Wilsdorf) awarded me their schoolarship for my BA graduate project.",
+    "category": "",
+    "project": "",
+    "year": "2014.",
+    "prize": ""
+  },
+  "bea": {
+    "id": 7,
+    "title": "BEA fondation award for young artists.",
+    "category": "",
+    "project": "",
+    "year": "",
+    "prize": ""
+  }
+}

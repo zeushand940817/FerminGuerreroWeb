@@ -6,7 +6,7 @@ export default function Media({ image }) {
       </div>
       <style jsx>{`
         img {
-          width: 300px;
+          width: 290px;
           height: auto;
           object-fit: contain;
           cursor: pointer;

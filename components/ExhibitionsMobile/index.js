@@ -6,7 +6,7 @@ export default function ExhibitionsMobile({ exhibitions }) {
     <>
       <div className={styles.wrapper}>
         {exhibitionsMap.map((element) => (
-          <section>
+          <section className={styles.section}>
             <p>{element.year}</p>
             <p>{element.title}</p>
             <p>{element.country}</p>

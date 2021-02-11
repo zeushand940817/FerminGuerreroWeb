@@ -1,62 +1,21 @@
 import styles from 'styles/infoSection.module.scss'
 
-export default function AwardsMobile() {
+export default function AwardsMobile({ awardsData }) {
+  const awards = Object.values(awardsData)
   return (
     <>
       <div className={styles.wrapper}>
-        <section>
-          <p>2019</p>
-          <div className={styles.content}>
-            <p>LAD - Latin Design Awards.</p>
-            <p>Typeface design category.</p>
-            <p> Project: Thesaurus.</p>
-            <p>Prize: Gold.</p>
-          </div>
-        </section>
-        <section>
-          <p>2018</p>
-          <div className={styles.content}>
-            <p>European Design Awards.</p>
-            <p> Typeface design category. </p>
-            <p>Project: Thesaurus.</p>
-            <p> Prize: Gold.</p>
-          </div>
-          <div className={styles.content}>
-            <p>
-              Swiss Typefaces selected Thesaurus for their 40 pages specimen
-              called Type Life 3, showcasing 19 non-SWTY typefaces they like.
-            </p>
-          </div>
-          <div className={styles.content}>
-            <p> Type 4: Typeface Design Competition by Graphis magazine.</p>
-            <p>Project: Thesaurus. </p>
-            <p>Prize: Gold.</p>
-          </div>
-
-          <div className={styles.content}>
-            <p>Latin-American typedesign biennial (Tipos Latinos).</p>
-            <p> Superfamily category Project: Thesaurus.</p>
-            <p>Prize: Mention of Exellence (First Prize).</p>
-          </div>
-        </section>
-        <section>
-          <p>2015</p>
-          <div className={styles.content}>
-            <p>Trnava Poster Triennial International competition.</p>
-            <p>Project: New Year, New Fight.</p>
-            <p> Prize: Honorary mention.</p>
-          </div>
-        </section>
-        <section>
-          <p>2014</p>
-          <div className={styles.content}>
-            <p>
-              Rolex's Foundation (Hans Wilsdorf) awarded me their schoolarship
-              for my BA graduate project.
-            </p>
-            <p>BEA fondation award for young artists.</p>
-          </div>
-        </section>
+        {awards.map((element) => (
+          <section className={styles.section}>
+            <p>{element.year}</p>
+            <div className={styles.content}>
+              <p>{element.title}</p>
+              <p>{element.category}</p>
+              <p>{element.project}</p>
+              <p>{element.prize}</p>
+            </div>
+          </section>
+        ))}
       </div>
     </>
   )

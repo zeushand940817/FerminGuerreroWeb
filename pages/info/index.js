@@ -6,6 +6,7 @@ import {
   getArticlesData,
   getExhibitionsData,
   getPressData,
+  getAwardsData,
 } from 'utils/getData'
 
 //Media queries
@@ -41,9 +42,9 @@ const scrollTo = (ele) => {
   })
 }
 
-export default function Info({ data, press, exhibitions }) {
+export default function Info({ data, pressData, exhibitions, awardsData }) {
   const articles = Object.values(data).map((element) => element)
-  const prensa = Object.values(press).map((elementPress) => elementPress)
+  const press = Object.values(pressData).map((element) => element)
 
   const [visibleSection, setVisibleSection] = useState()
 
@@ -102,6 +103,7 @@ export default function Info({ data, press, exhibitions }) {
             press={press}
             articles={articles}
             exhibitions={exhibitions}
+            awardsData={awardsData}
           />
         </div>
         <div className="content">
@@ -188,14 +190,14 @@ export default function Info({ data, press, exhibitions }) {
             <div className="boxPress">
               <div className="pageWrapper">
                 <div className="projectList">
-                  {prensa.map((item, index) => (
+                  {press.map((item, index) => (
                     <div key={item.id}>
                       <Item
                         description={item.description}
                         description2={item.description2}
                         year={item.year}
                         index={index}
-                        prensa={prensa}
+                        press={press}
                       />
                     </div>
                   ))}
@@ -205,7 +207,7 @@ export default function Info({ data, press, exhibitions }) {
           </section>
 
           <section className="sectionInInfo" id="awards" ref={awardsRef}>
-            <Awards />
+            <Awards awardsData={awardsData} />
           </section>
           <section className="sectionInInfo" id="articles" ref={articlesRef}>
             <div className="boxPress">
@@ -519,14 +521,16 @@ export default function Info({ data, press, exhibitions }) {
 
 export async function getStaticProps() {
   const articles = await getArticlesData()
-  const press = await getPressData()
+  const pressData = await getPressData()
   const exhibitions = await getExhibitionsData()
+  const awardsData = await getAwardsData()
 
   return {
     props: {
       data: articles,
-      press,
+      pressData,
       exhibitions,
+      awardsData,
     },
   }
 }

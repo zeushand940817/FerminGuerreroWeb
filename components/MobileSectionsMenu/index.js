@@ -14,14 +14,22 @@ const AwardsMobile = dynamic(() => import('components/AwardsMobile'))
 const ExhibitionsMobile = dynamic(() => import('components/ExhibitionsMobile'))
 const PressMobile = dynamic(() => import('components/PressMobile'))
 
-export default function MobileSectionsMenu({ press, articles, exhibitions }) {
+export default function MobileSectionsMenu({
+  press,
+  articles,
+  exhibitions,
+  awardsData,
+}) {
   return (
     <>
       <div className={styles.mainWrapper}>
         <Accordion title="About" content={<About />} />
         <Accordion title="Contact" content={<Contact />} />
         <Accordion title="Press" content={<PressMobile press={press} />} />
-        <Accordion title="Awards & Distinctions" content={<AwardsMobile />} />
+        <Accordion
+          title="Awards & Distinctions"
+          content={<AwardsMobile awardsData={awardsData} />}
+        />
         <Accordion
           title="Research & Articles"
           content={<ArticlesMobile articles={articles} />}

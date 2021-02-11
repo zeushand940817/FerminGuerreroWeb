@@ -29,7 +29,7 @@ export default function ({
   index,
   articles,
   description2,
-  prensa,
+  press,
 }) {
   const classes = useStyles()
   const [activeIndex, setActiveIndex] = useState(-1)
@@ -57,7 +57,7 @@ export default function ({
             </Grid>
             <Grid item xs={1} lg={1}>
               {articles && <Media image={articles[activeIndex]?.image} />}
-              {prensa && <Media image={prensa[activeIndex]?.image} />}
+              {press && <Media image={press[activeIndex]?.image} />}
             </Grid>
           </Grid>
         </Grid>
