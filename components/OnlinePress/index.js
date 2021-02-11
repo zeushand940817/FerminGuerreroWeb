@@ -31,7 +31,9 @@ export default function OnlinePress({ pressOnlineData }) {
             <Grid container direction="row">
               <Grid item xs={false} lg={2} sm={false} />
               <Grid item lg={2} sm={false} xs={false} />
-              <Grid item xs={3} lg={1} />
+              <Grid item xs={3} lg={1}>
+                <Box className={classes.text}>{element.year}</Box>
+              </Grid>
               <Grid item xs={3} lg={2}>
                 <Box className={classes.text}>
                   <a

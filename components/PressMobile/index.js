@@ -4,7 +4,9 @@ export default function PressMobile({ press }) {
   return (
     <>
       <div className="wrapper">
-        <h4>Print (selected):</h4>
+        <div style={{ paddingTop: '10px', paddingBottom: '10px' }}>
+          Print (selected):
+        </div>
         <section>
           {pressWithoutTitle.map((element) => (
             <div className="individualPress">

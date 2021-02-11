@@ -13,9 +13,9 @@ import {
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'styles/project.module.scss'
-import { CgMenuGridR } from 'react-icons/cg'
-import { VscArrowRight } from 'react-icons/vsc'
-import { VscArrowLeft } from 'react-icons/vsc'
+// import { CgMenuGridR } from 'react-icons/cg'
+// import { VscArrowRight } from 'react-icons/vsc'
+// import { VscArrowLeft } from 'react-icons/vsc'
 
 //Components
 import Footer from 'components/Footer'
@@ -46,25 +46,23 @@ function srcset(image, size, rows = 1, cols = 1) {
   ${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
 }
 
-const Projects = ({ data, navigationProjects }) => {
+const Projects = ({ data, navigationProjects, path }) => {
   const classes = useStyles()
-  const currentId = data[0].id
-  console.log({ currentId })
-  const [current, setCurrent] = useState([])
-  const mapNavigation = navigationProjects.map((nav) => nav.id)
 
-  console.log(mapNavigation[current - 1], 'SOY NAVIGATION CURRENT -1')
-  console.log(mapNavigation[current + 1], 'SOY NAV NEXT + 1')
+  //console.log({ path })
 
-  const handlePrev = () => {
-    e.preventDefault()
-    setCurrent((current) => mapNavigation[current - 1])
-  }
+  // const [current, setCurrent] = useState(current)
+  // const mapNavigation = navigationProjects.map((nav) => nav)
 
-  const handleNext = () => {
-    e.preventDefault()
-    setCurrent((current) => mapNavigation[current + 1])
-  }
+  // const handlePrev = (e) => {
+  //   e.preventDefault()
+  //   setCurrent((current) => console.log(mapNavigation[current - 1])
+  // }
+
+  // const handleNext = (e) => {
+  //   e.preventDefault()
+  //   setCurrent((current) => console.log(mapNavigation[current + 1]))
+  // }
 
   return (
     <>
@@ -104,6 +102,12 @@ const Projects = ({ data, navigationProjects }) => {
                 <div className={styles.gridContainer}>
                   <Grid item xs={12} lg={2}>
                     <div className={styles.name}>{element.name}</div>
+                    {/* <div className={styles.socialShare}>
+                      <FacebookIcon round={true} iconFillColor="white"/>
+                      <LinkedinIcon round={true} iconFillColor="white" />
+                      <TwitterIcon round={true} iconFillColor="white" />
+                      <WhatsappIcon round={true} iconFillColor="white" />
+                    </div> */}
                   </Grid>
                   <Grid
                     item
@@ -242,11 +246,11 @@ const Projects = ({ data, navigationProjects }) => {
                   )
                 })}
               </ImageList>
-              <div className={styles.navigation}>
+              {/* <div className={styles.navigation}>
                 <Grid container>
                   <Grid item xs={12} lg={2}>
                     <button
-                      onClick={() => handlePrev()}
+                      onClick={(e) => handlePrev(e)}
                       className={styles.buttonNavigation}
                     >
                       <VscArrowLeft color="white" size={35} />
@@ -270,23 +274,20 @@ const Projects = ({ data, navigationProjects }) => {
                     </div>
                   </Grid>
                   <Grid item xs={12} sm={12} lg={5}>
-                    <button
-                      onClick={() => router.back()}
-                      className={styles.buttonNavigation}
-                    >
+                    <button className={styles.buttonNavigation}>
                       <CgMenuGridR color="white" size={35} />
                     </button>
                   </Grid>
                   <Grid item xs={12} lg={2} style={{ textAlign: 'end' }}>
                     <button
-                      onClick={() => handleNext()}
+                      onClick={(e) => handleNext(e)}
                       className={styles.buttonNavigation}
                     >
                       <VscArrowRight color="white" size={35} />
                     </button>
                   </Grid>
                 </Grid>
-              </div>
+              </div> */}
             </>
           )
         })}
@@ -311,6 +312,7 @@ export async function getStaticProps({ params }) {
     props: {
       data,
       navigationProjects,
+      path,
     },
   }
 }
