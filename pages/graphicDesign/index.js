@@ -33,7 +33,7 @@ export default function GraphicDesign({ data, extractVideo }) {
   return (
     <>
       <Head>
-        <title>Graphic Design • FG</title>
+        <title>FG • Graphic Design</title>
         <meta
           name="description"
           content="Graphic design work from Fermin Guerrero"

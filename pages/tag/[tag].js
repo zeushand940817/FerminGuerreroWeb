@@ -34,7 +34,7 @@ export default function Animation({ data, path }) {
   return (
     <>
       <Head>
-        <title>{path}</title>
+        <title>Fermin Guerrero • {path}</title>
         <meta name="description" content="tag graphic typeface design" />
       </Head>
       <div className={styles.mainWrapper}>

@@ -32,7 +32,7 @@ export default function TypefaceDesign({ data }) {
   return (
     <>
       <Head>
-        <title>Typeface Design • FG</title>
+      <title>FG • Typeface Design</title>
         <meta
           name="description"
           content="Typeface design work from Fermin Guerrero"

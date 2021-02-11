@@ -104,7 +104,7 @@ export default function Info({
   return (
     <>
       <Head>
-        <title>Info • FG</title>
+        <title>FG • Info</title>
         <meta
           name="description"
           content="Fermin Guerrero's graphic designer and typefase designer information, contact, press, articles."

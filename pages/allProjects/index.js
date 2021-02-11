@@ -32,7 +32,7 @@ export default function All({ data, extractVideo }) {
   return (
     <>
       <Head>
-        <title>All Projects • FG</title>
+        <title>FG • All</title>
         <meta
           name="description"
           content="All projects from  Fermin Guerrero Graphic Designer and typeface designer"
