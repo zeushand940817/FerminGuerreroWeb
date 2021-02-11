@@ -216,7 +216,7 @@ export default function Info({
                         <Box
                           style={{
                             color: 'white',
-                            marginBottom: '35px',
+                            marginBottom: '50px',
                             paddingTop: '50px',
                           }}
                         >
@@ -247,7 +247,12 @@ export default function Info({
                 <Grid item lg={2} />
                 <Grid item lg={2} />
                 <Grid item xs={3} lg={3}>
-                  <Box style={{ color: 'white', marginBottom: '35px' }}>
+                  <Box
+                    style={{
+                      color: 'white',
+                      marginBottom: '35px',
+                    }}
+                  >
                     Online (selected):
                   </Box>
                 </Grid>
@@ -410,6 +415,7 @@ export default function Info({
             background: transparent;
             height: auto;
             margin-top: 50px;
+            
           }
 
           .linkArticle {
@@ -438,7 +444,7 @@ export default function Info({
           }
           #exhibitions {
             display: block;
-            height: 60vh;
+            height: auto;
           }
 
           .mobileAbout {
