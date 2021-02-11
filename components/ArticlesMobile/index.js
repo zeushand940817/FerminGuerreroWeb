@@ -1,17 +1,20 @@
+import styles from 'styles/infoSection.module.scss'
+
 function ArticlesMobile({ articles }) {
   const articlesMap = Object.values(articles)
+  console.log({ articlesMap })
 
   return (
     <>
       <div className="pressMobileWrapper">
         {articlesMap.map((article) => (
-          <>
-            <div className="textLink">
-              <a href={article.url} target="_blank">
-                {article.description}
-              </a>
-            </div>
-          </>
+          <section style={{ marginTop: '20px', marginBottom: '20px' }}>
+            <p>{article.year}</p>
+            <a href={article.url} target="_blank">
+              <p>{article.linkDescription}</p>
+            </a>
+            <p>{article.description2}</p>
+          </section>
         ))}
       </div>
 
@@ -22,12 +25,8 @@ function ArticlesMobile({ articles }) {
           margin-top: 10px;
           margin-bottom: 20px;
         }
-        .textLink {
-          text-decoration: underline;
-          padding-bottom: 10px;
-        }
         a {
-          color: white;
+          text-decoration: underline;
         }
       `}</style>
     </>
