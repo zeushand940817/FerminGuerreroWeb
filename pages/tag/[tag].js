@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import Head from 'next/head'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -31,55 +31,60 @@ export default function Animation({ data, path }) {
     (project) => project.tags && project.tags.includes(path)
   )
 
-
   return (
-    <div className={styles.mainWrapper}>
-      <div className={classes.root}>
-        <ImageList
-          variant="masonry"
-          cols={3}
-          gap={13}
-          className={classes.label}
-        >
-          {animation.map((elem) => (
-            <Link
-              key={elem.id}
-              href={`/projects/[slug]`}
-              as={`/projects/${elem.slug}`}
-            >
-              <a>
-                <div className={styles.container}>
-                  <ImageListItem key={elem.id}>
-                    {elem.image && (
-                      <img
-                        className={styles.imagen}
-                        alt="graphic-design-photo"
-                        src={elem.image}
-                      />
-                    )}
-                    {elem.mp4 && (
-                      <video
-                        autoPlay
-                        muted
-                        loop
-                        width="100%"
-                        height="auto"
-                        className={styles.videoClass}
-                      >
-                        <source src={elem.mp4Gallery} type="video/mp4" />
-                      </video>
-                    )}
-                    <div className={styles.text}>
-                      <p>{elem.name}</p>
-                    </div>
-                  </ImageListItem>
-                </div>
-              </a>
-            </Link>
-          ))}
-        </ImageList>
+    <>
+      <Head>
+        <title>{path}</title>
+        <meta name="description" content="tag graphic typeface design" />
+      </Head>
+      <div className={styles.mainWrapper}>
+        <div className={classes.root}>
+          <ImageList
+            variant="masonry"
+            cols={3}
+            gap={13}
+            className={classes.label}
+          >
+            {animation.map((elem) => (
+              <Link
+                key={elem.id}
+                href={`/projects/[slug]`}
+                as={`/projects/${elem.slug}`}
+              >
+                <a>
+                  <div className={styles.container}>
+                    <ImageListItem key={elem.id}>
+                      {elem.image && (
+                        <img
+                          className={styles.imagen}
+                          alt="graphic-design-photo"
+                          src={elem.image}
+                        />
+                      )}
+                      {elem.mp4 && (
+                        <video
+                          autoPlay
+                          muted
+                          loop
+                          width="100%"
+                          height="auto"
+                          className={styles.videoClass}
+                        >
+                          <source src={elem.mp4Gallery} type="video/mp4" />
+                        </video>
+                      )}
+                      <div className={styles.text}>
+                        <p>{elem.name}</p>
+                      </div>
+                    </ImageListItem>
+                  </div>
+                </a>
+              </Link>
+            ))}
+          </ImageList>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
