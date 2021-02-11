@@ -24,6 +24,7 @@ function ArticlesMobile({ articles }) {
           font-size: 20px;
           margin-top: 10px;
           margin-bottom: 20px;
+          line-height: 1.4;
         }
         a {
           text-decoration: underline;
