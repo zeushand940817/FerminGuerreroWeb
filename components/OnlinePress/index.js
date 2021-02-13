@@ -41,6 +41,7 @@ export default function OnlinePress({ pressOnlineData }) {
                       textDecorationStyle: 'solid',
                       textDecorationThickness: '0.5px',
                     }}
+                    rel="noreferrer"
                     href={element.url}
                     target="_blank"
                   >

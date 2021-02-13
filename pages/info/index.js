@@ -106,7 +106,7 @@ export default function Info({
   return (
     <>
       <Head>
-        <title>FG • Info</title>
+        <title>Info</title>
         <meta
           name="description"
           content="Fermin Guerrero's graphic designer and typefase designer information, contact, press, articles."
@@ -114,7 +114,11 @@ export default function Info({
       </Head>
       <div className="wrapper">
         <div className="topSpacer">
-          <img className="image" src="/aboutmepicture.jpg" />
+          <img
+            className="image"
+            src="/aboutmepicture.jpg"
+            alt="image-info-graphic-designer"
+          />
         </div>
         <div className="mobileAbout">
           <MobileSectionsMenu
@@ -416,7 +420,6 @@ export default function Info({
             background: transparent;
             height: auto;
             margin-top: 50px;
-            
           }
 
           .linkArticle {

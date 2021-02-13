@@ -33,7 +33,7 @@ export default function GraphicDesign({ data, extractVideo }) {
   return (
     <>
       <Head>
-        <title>FG • Graphic Design</title>
+        <title>Graphic Design</title>
         <meta
           name="description"
           content="Graphic design work from Fermin Guerrero"
@@ -41,51 +41,55 @@ export default function GraphicDesign({ data, extractVideo }) {
       </Head>
       <div className={styles.mainWrapper}>
         <div className={classes.root}>
-          <ImageList
-            variant="masonry"
-            cols={3}
-            gap={13}
-            className={classes.label}
-          >
-            {data.map((projectFilter) => (
-              <Link
-                key={projectFilter.id}
-                href={`/projects/[slug]`}
-                as={`/projects/${projectFilter.slug}`}
-              >
-                <a>
-                  <div className={styles.container}>
-                    <ImageListItem key={projectFilter.id}>
-                      {projectFilter.id == 31 ? (
-                        <video
-                          preload="none"
-                          playsinline="0"
-                          webkit-playsinline="0"
-                          autoPlay
-                          muted
-                          loop
-                          width="100%"
-                          height="auto"
-                          className={styles.videoClass}
-                        >
-                          <source src={extractVideo} type="video/mp4" />
-                        </video>
-                      ) : (
-                        <LazyLoadImage
-                          className={styles.imagen}
-                          alt={projectFilter.name}
-                          src={projectFilter.image}
-                        />
-                      )}
-                      <div className={styles.text}>
-                        <p>{projectFilter.name}</p>
+          <ul>
+            <ImageList
+              variant="masonry"
+              cols={3}
+              gap={13}
+              className={classes.label}
+            >
+              {data.map((projectFilter) => (
+                <li>
+                  <Link
+                    key={projectFilter.id}
+                    href={`/projects/[slug]`}
+                    as={`/projects/${projectFilter.slug}`}
+                  >
+                    <a>
+                      <div className={styles.container}>
+                        <ImageListItem key={projectFilter.id}>
+                          {projectFilter.id == 31 ? (
+                            <video
+                              preload="none"
+                              playsinline="0"
+                              webkit-playsinline="0"
+                              autoPlay
+                              muted
+                              loop
+                              width="100%"
+                              height="auto"
+                              className={styles.videoClass}
+                            >
+                              <source src={extractVideo} type="video/mp4" />
+                            </video>
+                          ) : (
+                            <LazyLoadImage
+                              className={styles.imagen}
+                              alt={projectFilter.name}
+                              src={projectFilter.image}
+                            />
+                          )}
+                          <div className={styles.text}>
+                            <p>{projectFilter.name}</p>
+                          </div>
+                        </ImageListItem>
                       </div>
-                    </ImageListItem>
-                  </div>
-                </a>
-              </Link>
-            ))}
-          </ImageList>
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </ImageList>
+          </ul>
         </div>
         <Footer />
       </div>

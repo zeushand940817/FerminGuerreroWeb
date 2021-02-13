@@ -12,7 +12,12 @@ export default function Footer({ component }) {
         </div>
         <div className={component === 'home' ? 'developerHome' : 'developer'}>
           Developed by{' '}
-          <a className="lauraLink" href="http://lauradiaz.dev/" target="_blank">
+          <a
+            className="lauraLink"
+            rel="noreferrer"
+            href="http://lauradiaz.dev/"
+            target="_blank"
+          >
             <u>Laura Diaz</u>
           </a>
         </div>
@@ -20,6 +25,7 @@ export default function Footer({ component }) {
         <div className="twitter">
           <a
             className="social"
+            rel="noreferrer"
             href="https://twitter.com/fermin_guerrero"
             target="_blank"
           >
@@ -29,6 +35,7 @@ export default function Footer({ component }) {
         <div className="instagram">
           <a
             className="social"
+            rel="noreferrer"
             href="https://www.instagram.com/ferminguerrero_design/"
             target="_blank"
           >
@@ -38,6 +45,7 @@ export default function Footer({ component }) {
         <div className="linkedin">
           <a
             className="social"
+            rel="noreferrer"
             href="https://www.linkedin.com/in/fermin-guerrero-616237173/"
             target="_blank"
           >

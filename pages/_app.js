@@ -35,6 +35,7 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
+        <link rel="shortcut icon" href="/fermin.gif" />
         <meta
           property="og:title"
           content="Graphic Designer and Typography designer 's web page, works and projects"

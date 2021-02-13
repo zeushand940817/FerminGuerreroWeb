@@ -2,7 +2,7 @@ export default function Media({ image }) {
   return (
     <>
       <div className="container">
-        {image && <img src={image} alt="article image" />}
+        {image && <img src={image} alt="article-image" />}
       </div>
       <style jsx>{`
         img {

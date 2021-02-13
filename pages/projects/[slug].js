@@ -71,7 +71,7 @@ const Projects = ({ data, navigationProjects, path }) => {
           return (
             <>
               <Head>
-                <title>FG • {element.name} </title>
+                <title>{element.name} </title>
                 <meta name="description" content={element.description} />
               </Head>
               {element.mp4 ? (

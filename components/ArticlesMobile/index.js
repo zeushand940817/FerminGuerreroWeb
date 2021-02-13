@@ -10,7 +10,7 @@ function ArticlesMobile({ articles }) {
         {articlesMap.map((article) => (
           <section style={{ marginTop: '20px', marginBottom: '20px' }}>
             <p>{article.year}</p>
-            <a href={article.url} target="_blank">
+            <a href={article.url} target="_blank" rel="noreferrer">
               <p>{article.linkDescription}</p>
             </a>
             <p>{article.description2}</p>

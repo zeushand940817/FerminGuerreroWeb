@@ -68,7 +68,7 @@ const Home = ({ dataParse }) => {
   return (
     <>
       <Head>
-        <title>Fermin Guerrero</title>
+        <title>Home</title>
         <meta
           name="description"
           content="Fermin Guerrero's graphic designer and typefase designer web/ portfolio."
@@ -84,6 +84,7 @@ const Home = ({ dataParse }) => {
             height: '100%',
             top: '0',
           }}
+          alt="graphic-design-image"
           src={desktopImages[1]}
         />
         <div
@@ -124,6 +125,7 @@ const Home = ({ dataParse }) => {
                   objectFit: 'cover',
                   objectPosition: 'center',
                 }}
+                alt="graphic-design-image"
                 src={image}
                 key={`${key} ${image}`}
               />
