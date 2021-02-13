@@ -13,9 +13,9 @@ import {
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'styles/project.module.scss'
-// import { CgMenuGridR } from 'react-icons/cg'
-// import { VscArrowRight } from 'react-icons/vsc'
-// import { VscArrowLeft } from 'react-icons/vsc'
+import { CgMenuGridR } from 'react-icons/cg'
+import { VscArrowRight } from 'react-icons/vsc'
+import { VscArrowLeft } from 'react-icons/vsc'
 
 //Components
 import Footer from 'components/Footer'
@@ -49,25 +49,32 @@ function srcset(image, size, rows = 1, cols = 1) {
 const Projects = ({ data, navigationProjects, path }) => {
   const classes = useStyles()
 
-  //console.log({ path })
+  const currentId = data.map((current) => current.id)
 
-  // const [current, setCurrent] = useState(current)
-  // const mapNavigation = navigationProjects.map((nav) => nav)
+  console.log({ currentId })
 
-  // const handlePrev = (e) => {
-  //   e.preventDefault()
-  //   setCurrent((current) => console.log(mapNavigation[current - 1])
-  // }
+  const [current, setCurrent] = useState(currentId)
+  const mapNavigation = navigationProjects.map((nav) => nav.id)
+  console.log('soy map navigation', mapNavigation)
 
-  // const handleNext = (e) => {
-  //   e.preventDefault()
-  //   setCurrent((current) => console.log(mapNavigation[current + 1]))
-  // }
+  console.log('SOY MAP MENOS UNO', mapNavigation[current - 1])
+  console.log('SOY MAP MAS UNO', mapNavigation[current + 1])
+
+  //  const handlePrev = (e) => {
+  //     e.preventDefault()
+  //     setCurrent((current) => console.log(mapNavigation[current - 1])
+  //   };
+
+  //   const handleNext = (e) => {
+  //     e.preventDefault()
+  //    setCurrent((current) => console.log(mapNavigation[current + 1]))
+  //   };
 
   return (
     <>
       <div className={styles.container}>
         {data.map((element) => {
+          console.log('soy el id', element.id)
           return (
             <>
               <Head>
@@ -228,7 +235,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                             controls
                             controlsList="nofullscreen"
                             className={styles.video}
-                            poster={source.poster}
+                            // poster={source.poster}
                           >
                             <source
                               src={source.url}
@@ -246,7 +253,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                   )
                 })}
               </ImageList>
-              {/* <div className={styles.navigation}>
+              <div className={styles.navigation}>
                 <Grid container>
                   <Grid item xs={12} lg={2}>
                     <button
@@ -267,7 +274,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                                 <a className={styles.tagLink}>
                                   <u>{transformName}</u>
                                 </a>
-                              </Link>{' '}
+                              </Link>
                             </>
                           )
                         })}
@@ -287,7 +294,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                     </button>
                   </Grid>
                 </Grid>
-              </div> */}
+              </div>
             </>
           )
         })}

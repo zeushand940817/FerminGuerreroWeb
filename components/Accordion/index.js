@@ -28,7 +28,7 @@ function Accordion(props) {
     <>
       <div className={styles.accordionSection}>
         <button
-          className={`{styles.accordion} ${setActive}`}
+          className={`${styles.accordion} ${setActive}`}
           onClick={toggleAccordion}
         >
           <p className={styles.accordionTitle}>{props.title}</p>

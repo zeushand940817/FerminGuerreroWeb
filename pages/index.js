@@ -71,7 +71,7 @@ const Home = ({ dataParse }) => {
         <title>Home</title>
         <meta
           name="description"
-          content="Fermin Guerrero's graphic designer and typefase designer web/ portfolio."
+          content="Fermin Guerrero's graphic designer and typefase designer web/portfolio."
         />
       </Head>
       <div className={styles.hero} id="#home">

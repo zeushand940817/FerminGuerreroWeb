@@ -33,10 +33,7 @@ export default function All({ data, extractVideo }) {
     <>
       <Head>
         <title>All</title>
-        <meta
-          name="description"
-          content="All projects from  Fermin Guerrero Graphic Designer and typeface designer"
-        />
+        <meta name="description" content="Fermin Guerrero's projects." />
       </Head>
       <div className={styles.mainWrapper}>
         <div className={classes.root}>

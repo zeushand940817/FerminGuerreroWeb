@@ -36,7 +36,7 @@ export default function GraphicDesign({ data, extractVideo }) {
         <title>Graphic Design</title>
         <meta
           name="description"
-          content="Graphic design work from Fermin Guerrero"
+          content="Fermin Guerrero's Graphic Design Projects"
         />
       </Head>
       <div className={styles.mainWrapper}>

@@ -35,7 +35,7 @@ export default function TypefaceDesign({ data }) {
       <title>Typeface Design</title>
         <meta
           name="description"
-          content="Typeface design work from Fermin Guerrero"
+          content="Fermin Guerrero's typefaces"
         />
       </Head>
       <div className={styles.mainWrapper}>
