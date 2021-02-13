@@ -53,12 +53,12 @@ const Projects = ({ data, navigationProjects, path }) => {
 
   console.log({ currentId })
 
-  const [current, setCurrent] = useState(currentId)
+  const [current, setCurrent] = useState(currentId[0])
   const mapNavigation = navigationProjects.map((nav) => nav.id)
-  console.log('soy map navigation', mapNavigation)
 
-  console.log('SOY MAP MENOS UNO', mapNavigation[current - 1])
-  console.log('SOY MAP MAS UNO', mapNavigation[current + 1])
+  console.log('soy map navigation', mapNavigation)
+  console.log('SOY MAP NAVIGATION + 1', mapNavigation[current + 1])
+  console.log('SOY MAP NAVIGATION - 1', mapNavigation[current - 1])
 
   //  const handlePrev = (e) => {
   //     e.preventDefault()
@@ -126,7 +126,12 @@ const Projects = ({ data, navigationProjects, path }) => {
                     <div>
                       <p>{element.year}</p>
                       {element.credits && (
-                        <p className={styles.middleText}>{element.credits}</p>
+                        <p
+                          className={styles.middleText}
+                          dangerouslySetInnerHTML={{
+                            __html: element.credits,
+                          }}
+                        ></p>
                       )}
 
                       {element.externalLinkBrick && (
@@ -163,7 +168,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                                 <a className={styles.tagLink}>
                                   <u>{transformName}</u>
                                 </a>
-                              </Link>{' '}
+                              </Link>
                             </>
                           )
                         })}
@@ -171,23 +176,11 @@ const Projects = ({ data, navigationProjects, path }) => {
                   </Grid>
                   <Grid item xs={12} sm={12} lg={6}>
                     <div className={styles.description}>
-                      {element.description1 && <p>{element.description1}</p>}
-                      {element.description2 && <p>{element.description2}</p>}
-                      {element.description3 && <p>{element.description3}</p>}
-                      {element.description3 && (
-                        <span>{element.description4}</span>
-                      )}{' '}
-                      <span>
-                        {element.urlDescription && (
-                          <a
-                            className={styles.tagLink}
-                            href={element.urlDescription}
-                            target="_blank"
-                          >
-                            <u>here.</u>
-                          </a>
-                        )}
-                      </span>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: element.description,
+                        }}
+                      ></p>
                     </div>
                   </Grid>
                 </div>

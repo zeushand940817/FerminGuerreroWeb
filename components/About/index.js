@@ -48,12 +48,12 @@ export default function About() {
               <br />
               Fermin was born in Uruguay in 1983. In 2010, after he finished his
               bachelor in Industrial Design at Escuela Universitaria Centro de
-              Diseño - Uruguay, Guerrero moved to Switzerland to study Visual
-              Communication at the Haute École d’Art et de Design (HEAD) -
-              Geneva, where he received his BA with first class honours. He
-              subsequently went on to complete a Masters in Typeface Design at
-              the University of Reading–UK, receiving his MA with Distinction in
-              September 2015.
+              Diseño–Uruguay, Guerrero moved to Switzerland to study Visual
+              Communication at the School of Art and Design (HEAD), Geneva,
+              where he received his BA with first class honours. He subsequently
+              went on to complete a Masters in Typeface Design at the University
+              of Reading–UK, receiving his MA with Distinction in September
+              2015.
               <br />
               <br />
               For over 10 years, Fermin has worked for renown international
