@@ -49,16 +49,16 @@ function srcset(image, size, rows = 1, cols = 1) {
 const Projects = ({ data, navigationProjects, path }) => {
   const classes = useStyles()
 
-  const currentId = data.map((current) => current.id)
+  // const currentId = data.map((current) => current.id)
 
-  console.log({ currentId })
+  // console.log({ currentId })
 
-  const [current, setCurrent] = useState(currentId[0])
-  const mapNavigation = navigationProjects.map((nav) => nav.id)
+  // const [current, setCurrent] = useState(currentId[0])
+  // const mapNavigation = navigationProjects.map((nav) => nav.id)
 
-  console.log('soy map navigation', mapNavigation)
-  console.log('SOY MAP NAVIGATION + 1', mapNavigation[current + 1])
-  console.log('SOY MAP NAVIGATION - 1', mapNavigation[current - 1])
+  // console.log('soy map navigation', mapNavigation)
+  // console.log('SOY MAP NAVIGATION + 1', mapNavigation[current + 1])
+  // console.log('SOY MAP NAVIGATION - 1', mapNavigation[current - 1])
 
   //  const handlePrev = (e) => {
   //     e.preventDefault()
@@ -246,7 +246,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                   )
                 })}
               </ImageList>
-              <div className={styles.navigation}>
+              {/* <div className={styles.navigation}>
                 <Grid container>
                   <Grid item xs={12} lg={2}>
                     <button
@@ -273,7 +273,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                         })}
                     </div>
                   </Grid>
-                  <Grid item xs={12} sm={12} lg={5}>
+                 <Grid item xs={12} sm={12} lg={5}>
                     <button className={styles.buttonNavigation}>
                       <CgMenuGridR color="white" size={35} />
                     </button>
@@ -285,9 +285,9 @@ const Projects = ({ data, navigationProjects, path }) => {
                     >
                       <VscArrowRight color="white" size={35} />
                     </button>
-                  </Grid>
+                  </Grid> 
                 </Grid>
-              </div>
+              </div>*/}
             </>
           )
         })}
