@@ -228,7 +228,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                             controls
                             controlsList="nofullscreen"
                             className={styles.video}
-                            // poster={source.poster}
+                            poster={source.poster}
                           >
                             <source
                               src={source.url}
