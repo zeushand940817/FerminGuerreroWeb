@@ -409,6 +409,7 @@ export default function Info({
             cursor: pointer;
             outline: none;
             padding: 0px;
+            line-height: 1.4;
           }
 
           .selected {
@@ -568,7 +569,7 @@ export default function Info({
           }
 
           #about {
-            margin-top: -195px;
+            margin-top: -220px;
           }
           .titlePress {
             padding-bottom: 35px;
