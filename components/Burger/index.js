@@ -2,12 +2,18 @@ import { Spin as Hamburger } from 'hamburger-react'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { links, social } from '../../database/menuDB'
 
 //styles
 import styles from 'styles/burger.module.scss'
 
 export default function Burger() {
   const [isOpen, setOpen] = useState(false)
+
+  const index = links[0].text
+  if (index === 'Fermin Guerrero') {
+    links.splice(index, 1)
+  }
 
   const handleClickHome = () => {
     setOpen(false)
@@ -50,58 +56,31 @@ export default function Burger() {
         >
           <div className={styles.navigation}>
             <ul className={styles.ul}>
-              <li className={styles.li}>
-                <Link href="/graphicDesign">
-                  <a onClick={() => handleClickHome()} className={styles.a}>
-                    Graphic Design
-                  </a>
-                </Link>
-              </li>
-              <li className={styles.li}>
-                <Link href="/allProjects">
-                  <a onClick={() => handleClickHome()} className={styles.a}>
-                    &
-                  </a>
-                </Link>
-              </li>
-              <li className={styles.li}>
-                <Link href="/typefaceDesign">
-                  <a onClick={() => handleClickHome()} className={styles.a}>
-                    Typeface Design
-                  </a>
-                </Link>
-              </li>
-              <li className={styles.li}>
-                <Link href="/info">
-                  <a onClick={() => handleClickHome()} className={styles.lastA}>
-                    Info
-                  </a>
-                </Link>
-              </li>
+              {links.map((link) => {
+                const { id, url, text } = link
+                return (
+                  <li className={styles.li}>
+                    <Link href={url}>
+                      <a onClick={() => handleClickHome()} className={styles.a}>
+                        {text}
+                      </a>
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </div>
           <div className={styles.socialMedia}>
-            <span>
-              <a
-                href="https://www.instagram.com/ferminguerrero_design/"
-                target="_blank"
-              >
-                Instagram
-              </a>
-            </span>
-            <span>
-              <a href="https://twitter.com/fermin_guerrero" target="_blank">
-                Twitter
-              </a>
-            </span>
-            <span>
-              <a
-                href="https://www.linkedin.com/in/fermin-guerrero-616237173/"
-                target="_blank"
-              >
-                Linkedin
-              </a>
-            </span>
+            {social.map((media) => {
+              const { id, url, text } = media
+              return (
+                <span key={id}>
+                  <a href={url} target="_blank">
+                    {text}
+                  </a>
+                </span>
+              )
+            })}
           </div>
         </motion.div>
       </nav>

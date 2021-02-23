@@ -1,35 +1,20 @@
 import Link from '../ActiveLink'
+import { links } from '../../database/menuDB'
 
 export default function Header(props) {
   return (
     <>
       <div className="headerWrapper">
-        <div>
-          <Link href="/" activeClassName="active" passHref>
-            Fermin Guerrero
-          </Link>
-        </div>
-        <div>
-          <Link href="/graphicDesign" activeClassName="active" passHref>
-            Graphic Design
-          </Link>
-        </div>
-        <div>
-          <Link href="/allProjects" activeClassName="active" passHref>
-            &
-          </Link>
-        </div>
-        <div>
-          <Link href="/typefaceDesign" activeClassName="active" passHref>
-            Typeface Design
-          </Link>
-        </div>
-
-        <div>
-          <Link href="/info" activeClassName="active" passHref>
-            Info
-          </Link>
-        </div>
+        {links.map((link) => {
+          const { id, url, text } = link
+          return (
+            <div key={id}>
+              <Link href={url} activeClassName="active" passHref>
+                {text}
+              </Link>
+            </div>
+          )
+        })}
       </div>
 
       <style jsx>{`
