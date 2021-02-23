@@ -1,11 +1,8 @@
-import Link from 'next/link'
 import Head from 'next/head'
 
 //Components
-import ImageList from '@material-ui/core/ImageList'
-import ImageListItem from '@material-ui/core/ImageListItem'
 import Footer from 'components/Footer'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import Masonry from 'components/Masonry'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -32,44 +29,12 @@ export default function TypefaceDesign({ data }) {
   return (
     <>
       <Head>
-      <title>Typeface Design</title>
-        <meta
-          name="description"
-          content="Fermin Guerrero's typefaces"
-        />
+        <title>Typeface Design</title>
+        <meta name="description" content="Fermin Guerrero's typefaces" />
       </Head>
       <div className={styles.mainWrapper}>
         <div className={classes.root}>
-          <ImageList
-            variant="masonry"
-            cols={3}
-            gap={13}
-            className={classes.imageList}
-          >
-            {data.map((projectFilter) => (
-              <Link
-                key={projectFilter.id}
-                href={`/projects/[slug]`}
-                as={`/projects/${projectFilter.slug}`}
-              >
-                <a>
-                  <div className={styles.container}>
-                    <ImageListItem key={projectFilter.id}>
-                      <LazyLoadImage
-                        className={styles.imagen}
-                        alt={projectFilter.name}
-                        src={projectFilter.image}
-                      />
-
-                      <div className={styles.text}>
-                        <p>{projectFilter.name}</p>
-                      </div>
-                    </ImageListItem>
-                  </div>
-                </a>
-              </Link>
-            ))}
-          </ImageList>
+          <Masonry data={data} />
         </div>
         <Footer />
       </div>
