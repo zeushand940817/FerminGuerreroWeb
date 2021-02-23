@@ -10,10 +10,11 @@ import styles from 'styles/burger.module.scss'
 export default function Burger() {
   const [isOpen, setOpen] = useState(false)
 
-  const index = links[0].text
-  if (index === 'Fermin Guerrero') {
-    links.splice(index, 1)
-  }
+  // const index = links[0].text
+
+  //  if (index === 'Fermin Guerrero') {
+  //    links.splice(index, 1)
+  //  }
 
   const handleClickHome = () => {
     setOpen(false)
