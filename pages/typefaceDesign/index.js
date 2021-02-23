@@ -16,12 +16,6 @@ const useStyles = makeStyles({
     width: '100%',
     height: '100%',
   },
-  imageList: {
-    ['@media (max-width:480px)']: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-  },
 })
 
 export default function TypefaceDesign({ data }) {

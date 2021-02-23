@@ -11,7 +11,6 @@ import { VscArrowLeft } from 'react-icons/vsc'
 import Grid from '@material-ui/core/Grid'
 
 const NavigationProject = ({ element }) => {
-
   // const currentId = data.map((current) => current.id)
 
   // console.log({ currentId })
