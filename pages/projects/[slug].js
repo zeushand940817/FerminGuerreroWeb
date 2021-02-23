@@ -1,14 +1,6 @@
 import Head from 'next/head'
 import { useState, useRouter } from 'react'
 
-//social media
-import {
-  FacebookIcon,
-  LinkedinIcon,
-  TwitterIcon,
-  WhatsappIcon,
-} from 'react-share'
-
 //Styles
 import styles from 'styles/project.module.scss'
 
@@ -21,13 +13,12 @@ import Tags from 'components/Tags'
 import DescriptionProject from 'components/DescriptionProject'
 import Credits from 'components/Credits'
 import NavigationProject from 'components/NavigationProject'
+import SocialMedia from 'components/SocialMedia'
 
 //Data fetching
 import { getPaths, getProject, getProjectsData } from 'utils/getData'
-import NavigationProjects from '../../components/NavigationProject'
 
 const Projects = ({ data, navigationProjects, path }) => {
-
   return (
     <>
       <div className={styles.container}>
@@ -45,12 +36,7 @@ const Projects = ({ data, navigationProjects, path }) => {
                 <div className={styles.gridContainer}>
                   <Grid item xs={12} lg={2}>
                     <div className={styles.name}>{element.name}</div>
-                    {/* <div className={styles.socialShare}>
-                      <FacebookIcon round={true} iconFillColor="white"/>
-                      <LinkedinIcon round={true} iconFillColor="white" />
-                      <TwitterIcon round={true} iconFillColor="white" />
-                      <WhatsappIcon round={true} iconFillColor="white" />
-                    </div> */}
+                    {/* <SocialMedia element={element} /> */}
                   </Grid>
                   <Grid
                     item
@@ -77,7 +63,6 @@ const Projects = ({ data, navigationProjects, path }) => {
             </>
           )
         })}
-
         <Footer />
       </div>
     </>

@@ -1,11 +1,8 @@
-import Link from 'next/link'
 import Head from 'next/head'
 
 //Componets
 import Footer from 'components/Footer'
-import ImageList from '@material-ui/core/ImageList'
-import ImageListItem from '@material-ui/core/ImageListItem'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import Masonry from 'components/Masonry'
 
 //Styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -19,12 +16,6 @@ const useStyles = makeStyles({
     width: '100%',
     height: '100%',
   },
-  label: {
-    ['@media (max-width:480px)']: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-  },
 })
 
 export default function All({ data, extractVideo }) {
@@ -37,50 +28,7 @@ export default function All({ data, extractVideo }) {
       </Head>
       <div className={styles.mainWrapper}>
         <div className={classes.root}>
-          <ImageList
-            variant="masonry"
-            cols={3}
-            gap={13}
-            className={classes.label}
-          >
-            {data.map((project) => (
-              <Link
-                key={project.id}
-                href={`/projects/[slug]`}
-                as={`/projects/${project.slug}`}
-              >
-                <a>
-                  <div className={styles.container}>
-                    <ImageListItem key={project.id}>
-                      {project.id == 31 ? (
-                        <video
-                          preload="none"
-                          playsinline
-                          autoPlay
-                          muted
-                          loop
-                          width="100%"
-                          height="auto"
-                          className={classes.videoClass}
-                        >
-                          <source src={extractVideo} type="video/mp4" />
-                        </video>
-                      ) : (
-                        <LazyLoadImage
-                          className={styles.imagen}
-                          alt={project.name}
-                          src={project.image}
-                        />
-                      )}
-                      <div className={styles.text}>
-                        <p>{project.name}</p>
-                      </div>
-                    </ImageListItem>
-                  </div>
-                </a>
-              </Link>
-            ))}
-          </ImageList>
+          <Masonry data={data} extractVideo={extractVideo} />
         </div>
         <Footer />
       </div>
