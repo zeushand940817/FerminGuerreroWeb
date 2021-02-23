@@ -60,7 +60,7 @@ export default function Burger() {
               {links.map((link) => {
                 const { id, url, text } = link
                 return (
-                  <li className={styles.li}>
+                  <li className={styles.li} key={id}>
                     <Link href={url}>
                       <a onClick={() => handleClickHome()} className={styles.a}>
                         {text}

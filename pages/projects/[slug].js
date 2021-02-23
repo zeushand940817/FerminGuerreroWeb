@@ -17,6 +17,7 @@ import SocialMedia from 'components/SocialMedia'
 
 //Data fetching
 import { getPaths, getProject, getProjectsData } from 'utils/getData'
+import NavigationProjects from '../../components/NavigationProject'
 
 const Projects = ({ data, navigationProjects, path }) => {
   return (
@@ -58,11 +59,11 @@ const Projects = ({ data, navigationProjects, path }) => {
               <NavigationProject
                 element={element}
                 navigationProjects={navigationProjects}
-                path={path}
               />
             </>
           )
         })}
+
         <Footer />
       </div>
     </>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 //styles
 import styles from 'styles/project.module.scss'
 
@@ -10,27 +11,35 @@ import { VscArrowLeft } from 'react-icons/vsc'
 //Components
 import Grid from '@material-ui/core/Grid'
 
-const NavigationProject = ({ element }) => {
-  // const currentId = data.map((current) => current.id)
+const NavigationProject = ({ element, navigationProjects, path }) => {
+  const currentId = element.name
 
-  // console.log({ currentId })
+  const [current, setCurrent] = useState(currentId[0])
+  const mapNavigation = navigationProjects.map((nav) => nav)
 
-  // const [current, setCurrent] = useState(currentId[0])
-  // const mapNavigation = navigationProjects.map((nav) => nav.id)
+  const [message, setMessage] = useState('Default Content')
+  const [name, setName] = useState(currentId)
 
-  // console.log('soy map navigation', mapNavigation)
-  // console.log('SOY MAP NAVIGATION + 1', mapNavigation[current + 1])
-  // console.log('SOY MAP NAVIGATION - 1', mapNavigation[current - 1])
+  const updateContent = () => {
+    setMessage('Updated Content!')
+    setName('lolaaaa')
+  }
 
-  //  const handlePrev = (e) => {
-  //     e.preventDefault()
-  //     setCurrent((current) => console.log(mapNavigation[current - 1])
-  //   };
+  const handlePrev = (e) => {
+    e.preventDefault()
+    //   setCurrent(mapNavigation[2])
+    console.log('soy handlePrevvv', mapNavigation[2].name)
+    setCurrent({ name: mapNavigation[2].name })
+    //   setCurrent((current) => console.log(mapNavigation[0 - 1]))
+  }
 
-  //   const handleNext = (e) => {
-  //     e.preventDefault()
-  //    setCurrent((current) => console.log(mapNavigation[current + 1]))
-  //   };
+  const handleNext = (e) => {
+    e.preventDefault()
+    //   setCurrent(mapNavigation[3])
+    console.log('soy handlenexxxxt', mapNavigation[3].name)
+    //   setCurrent((current) => console.log(mapNavigation[0 + 1]))
+  }
+
   return (
     <div className={styles.navigation}>
       <Grid container>
